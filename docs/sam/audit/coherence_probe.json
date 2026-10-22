@@ -3,7 +3,7 @@
     "generated_by": "scripts/sam/hydro_inventory.js",
     "generator": {
       "path": "scripts/sam/hydro_inventory.js",
-      "sha256": "5ff26df96503d1abbfeb5e18462d45eafbe16e9eda8ee7112f547c000d194806"
+      "sha256": "15ed0df67e8985b1796d77d05b7c74528c02efcfa8dfab53837ca6c47fb373a6"
     },
     "inputs": {
       "geo": {

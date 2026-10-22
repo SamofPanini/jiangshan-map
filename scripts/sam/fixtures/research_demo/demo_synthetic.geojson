@@ -51,6 +51,20 @@
         "claims": [{ "claim_id": "claim-demo-absent", "source_id": "source-synthetic-demo", "supports": ["existence"], "locator": "Null-geometry fixture" }],
         "supersedes": []
       }
+    },
+    {
+      "type": "Feature",
+      "id": "demo-unknown-end",
+      "geometry": { "type": "LineString", "coordinates": [[117, 34], [117.25, 34.5], [117.5, 34], [117.75, 34.5]] },
+      "properties": {
+        "region": "cn", "feature_type": "river_branch", "waterbody_id": "synthetic-unknown-end", "segment_id": "segment-1", "interpretation_id": "demo-r1",
+        "valid": { "from": 1900, "to": null, "interval": "half_open", "from_status": "known", "to_status": "unknown" },
+        "original_dating": null, "evidence_mode": "schematic", "review_state": "proposed",
+        "dating_uncertainty": { "years": null, "reason": "deliberately unknown for visibility test" }, "spatial_error": { "meters": null, "reason": "synthetic demo" },
+        "geometry_absent_reason": null, "license_status": "unknown",
+        "claims": [{ "claim_id": "claim-demo-unknown-end", "source_id": "source-synthetic-demo", "supports": ["geometry"], "locator": "Unknown-end fixture" }],
+        "supersedes": []
+      }
     }
   ]
 }

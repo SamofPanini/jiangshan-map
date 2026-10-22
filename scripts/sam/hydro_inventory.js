@@ -5,6 +5,7 @@ const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const LegacyFingerprint = require('../../js/sam/legacy_fingerprint.js');
 
 const REQUIRED_OPTIONS = new Set(['--geo', '--map', '--out-dir', '--margin-deg']);
 
@@ -109,20 +110,6 @@ function labelName(item) {
   return item.zh;
 }
 
-function fingerprint(kind, item, coordinates) {
-  const name = kind === 'label' ? labelName(item) : item.name;
-  if (typeof name !== 'string') throw new Error(`${kind} must have a string name field`);
-  const canonical = {
-    kind,
-    name,
-    rank: nullable(item.rank),
-    appear: nullable(item.appear),
-    vanish: nullable(item.vanish),
-    coordinates,
-  };
-  return sha256(JSON.stringify(canonical)).slice(0, 12);
-}
-
 function makeHydroEntry(kind, item, index) {
   const name = kind === 'label' ? labelName(item) : item.name;
   let geometry;
@@ -142,7 +129,7 @@ function makeHydroEntry(kind, item, index) {
       bbox: stats.bbox,
     };
   }
-  const fp = fingerprint(kind, item, coordinates);
+  const fp = LegacyFingerprint.fingerprintNode(kind, item);
   return {
     kind,
     index,
