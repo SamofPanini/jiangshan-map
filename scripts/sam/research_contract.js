@@ -2,6 +2,9 @@
 
 const SCHEMA_VERSION = '0.1.0';
 const REGIONS = Object.freeze({ cn: Object.freeze({ bbox: Object.freeze([70, 15, 140, 56]) }) });
+const STAGES = Object.freeze(['draft', 'release']);
+const INTERVALS = Object.freeze(['half_open']);
+const ENDPOINT_STATUSES = Object.freeze(['known', 'open', 'unknown']);
 const FEATURE_TYPES = Object.freeze(['river_course', 'river_branch', 'flood_extent', 'lake', 'wetland', 'canal', 'coastline']);
 const EVIDENCE_MODES = Object.freeze(['attested', 'reconstructed', 'schematic', 'hypothesis']);
 const REVIEW_STATES = Object.freeze(['proposed', 'under_review', 'accepted', 'rejected', 'superseded']);
@@ -49,6 +52,11 @@ function validateDataset({ dataset, sources, legacyInventory }) {
   const finiteNumber = (value) => typeof value === 'number' && Number.isFinite(value);
   const integer = (value) => Number.isInteger(value);
 
+  if (!object(legacyInventory) || !Array.isArray(legacyInventory.entries)
+    || !legacyInventory.entries.every((entry) => object(entry) && typeof entry.legacy_id === 'string')) {
+    throw new TypeError('legacyInventory must be an object with entries containing string legacy_id values');
+  }
+
   if (!object(dataset) || dataset.type !== 'FeatureCollection' || !Array.isArray(dataset.features) || !object(dataset.meta)) {
     add('E_TOP_SHAPE', '', 'dataset must be a FeatureCollection with object meta and array features');
     return sorted(errors, warnings);
@@ -61,7 +69,7 @@ function validateDataset({ dataset, sources, legacyInventory }) {
   required(meta, META_KEYS, '/meta');
   if (own(meta, 'schema_version') && meta.schema_version !== SCHEMA_VERSION) add('E_SCHEMA_VERSION', '/meta/schema_version', `must equal ${SCHEMA_VERSION}`);
   for (const key of ['dataset_id', 'dataset_revision', 'description']) if (own(meta, key)) string(meta[key], pointer('/meta', key));
-  if (own(meta, 'stage')) enumeration(meta.stage, ['draft', 'release'], '/meta/stage');
+  if (own(meta, 'stage')) enumeration(meta.stage, STAGES, '/meta/stage');
   if (own(meta, 'synthetic') && typeof meta.synthetic !== 'boolean') add('E_TYPE', '/meta/synthetic', 'must be a boolean');
   if (own(meta, 'region')) {
     string(meta.region, '/meta/region');
@@ -97,9 +105,7 @@ function validateDataset({ dataset, sources, legacyInventory }) {
     });
   }
 
-  const legacyIds = new Set(Array.isArray(legacyInventory && legacyInventory.entries)
-    ? legacyInventory.entries.filter((entry) => object(entry) && typeof entry.legacy_id === 'string').map((entry) => entry.legacy_id)
-    : []);
+  const legacyIds = new Set(legacyInventory.entries.map((entry) => entry.legacy_id));
   const featureIds = new Set();
   const claimIds = new Set();
   const usedSourceIds = new Set();
@@ -188,7 +194,8 @@ function validateDataset({ dataset, sources, legacyInventory }) {
 function validateRelease(feature, properties, featurePath, add) {
   if (properties.review_state !== 'accepted') add('E_RELEASE', `${featurePath}/properties/review_state`, 'release feature must be accepted');
   if (properties.license_status !== 'cleared') add('E_RELEASE', `${featurePath}/properties/license_status`, 'release feature license must be cleared');
-  const supports = new Set((Array.isArray(properties.claims) ? properties.claims : []).flatMap((claim) => Array.isArray(claim.supports) ? claim.supports : []));
+  const supports = new Set((Array.isArray(properties.claims) ? properties.claims : [])
+    .flatMap((claim) => claim !== null && typeof claim === 'object' && !Array.isArray(claim) && Array.isArray(claim.supports) ? claim.supports : []));
   if (!supports.has('dating')) add('E_RELEASE', `${featurePath}/properties/claims`, 'release feature needs a dating claim');
   if (feature.geometry !== null && !supports.has('geometry')) add('E_RELEASE', `${featurePath}/properties/claims`, 'release geometry needs a geometry claim');
 }
@@ -200,11 +207,11 @@ function validateValid(valid, path, add, object, unknown, required, integer) {
   }
   unknown(valid, VALID_KEYS, path);
   required(valid, VALID_KEYS, path);
-  if (valid.interval !== 'half_open') add('E_INTERVAL', `${path}/interval`, 'interval must be half_open');
+  if (!INTERVALS.includes(valid.interval)) add('E_INTERVAL', `${path}/interval`, `interval must be one of: ${INTERVALS.join(', ')}`);
   for (const side of ['from', 'to']) {
     const status = valid[`${side}_status`];
     const value = valid[side];
-    if (!['known', 'open', 'unknown'].includes(status)) add('E_ENUM', `${path}/${side}_status`, 'status must be known, open, or unknown');
+    if (!ENDPOINT_STATUSES.includes(status)) add('E_ENUM', `${path}/${side}_status`, `status must be one of: ${ENDPOINT_STATUSES.join(', ')}`);
     if (status === 'known' && !integer(value)) add('E_INTERVAL', `${path}/${side}`, 'known endpoint needs an integer year');
     if ((status === 'open' || status === 'unknown') && value !== null) add('E_INTERVAL', `${path}/${side}`, 'open or unknown endpoint must be null');
     if (integer(value) && value === 0) add('E_INTERVAL', `${path}/${side}`, 'year zero is not allowed');
@@ -318,4 +325,22 @@ function sorted(errors, warnings) {
   return { errors: errors.sort(compare), warnings: warnings.sort(compare) };
 }
 
-module.exports = { SCHEMA_VERSION, REGIONS, FEATURE_TYPES, EVIDENCE_MODES, REVIEW_STATES, LICENSE_STATUSES, SOURCE_KINDS, ABSENT_REASONS, SUPPORTS, GEOMETRY_TYPES, validateDataset };
+const api = {
+  SCHEMA_VERSION,
+  REGIONS,
+  STAGES,
+  INTERVALS,
+  ENDPOINT_STATUSES,
+  FEATURE_TYPES,
+  EVIDENCE_MODES,
+  REVIEW_STATES,
+  LICENSE_STATUSES,
+  SOURCE_KINDS,
+  ABSENT_REASONS,
+  SUPPORTS,
+  GEOMETRY_TYPES,
+  validateDataset,
+};
+
+if (typeof module !== 'undefined' && module.exports) module.exports = api;
+if (typeof globalThis !== 'undefined') globalThis.SamResearchContract = api;

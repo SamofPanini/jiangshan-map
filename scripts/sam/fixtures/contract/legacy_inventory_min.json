@@ -1,11 +1,14 @@
 {
   "meta": {
     "generated_by": "scripts/sam/hydro_inventory.js",
-    "git_head": "46230baf5d47ac8e77afaf6a94449adc698445c7",
+    "generator": {
+      "path": "scripts/sam/hydro_inventory.js",
+      "sha256": "5ff26df96503d1abbfeb5e18462d45eafbe16e9eda8ee7112f547c000d194806"
+    },
     "inputs": {
       "geo": {
         "path": "js/china_geo_data.js",
-        "sha256": "fbf152b521745917aff59c4f7e6ef8b80402125977c6023799844476de4"
+        "sha256": "fbf152b521745917aff59c4d61c4f7e6ef8b80402125977c6023799844476de4"
       },
       "map": {
         "path": "js/map_data.js",

@@ -60,12 +60,18 @@ function testInvalidDataDoesNotWrite(map) {
 function testDeterminismAndFingerprints(geo, map, rivers) {
   const firstDir = path.join(tempRoot, 'first');
   const secondDir = path.join(tempRoot, 'second');
+  const forgedDir = path.join(tempRoot, 'forged');
   const options = { geoPath: geo, mapPath: map, marginDeg: 0, outDir: firstDir };
   tool.run(options);
   tool.run({ ...options, outDir: secondDir });
   for (const name of ['hydro_inventory.json', 'corridor_inventory.json', 'coherence_probe.json', 'P0a-1_INVENTORY.md']) {
     assert.equal(readOutput(firstDir, name), readOutput(secondDir, name), `${name} must be byte-identical`);
   }
+
+  fs.mkdirSync(forgedDir, { recursive: true });
+  fs.writeFileSync(path.join(forgedDir, 'hydro_inventory.json'), JSON.stringify({ meta: { git_head: 'FORGED-GIT-HEAD' } }));
+  tool.run({ ...options, outDir: forgedDir });
+  assert.deepEqual(JSON.parse(readOutput(forgedDir, 'hydro_inventory.json')).meta, JSON.parse(readOutput(firstDir, 'hydro_inventory.json')).meta, 'pre-existing output metadata must not affect regeneration');
 
   const original = tool.buildHydroEntries(JSON.parse(JSON.stringify({ rivers, lakes: [], labels: [] })));
   const mutatedRivers = JSON.parse(JSON.stringify(rivers));
@@ -125,6 +131,10 @@ function testPairingRules() {
   const sameIntervalFar = fixtureLabel('Same', [5, 5], 10, 20);
   const sameIntervalLine = fixtureEntry('river', 'Different', [[[0, 0], [0, 1]]], 10, 20);
   assert.equal(pairingCandidates(sameIntervalFar, sameIntervalLine, 1).length, 0, 'matching interval alone must not satisfy rule C');
+
+  const parenthesized = fixtureLabel('Alpha (old name) Beta', [5, 5]);
+  const beta = fixtureEntry('river', 'Beta', [[[0, 0], [0, 1]]]);
+  assert.deepEqual(pairingCandidates(parenthesized, beta, 0)[0].pairing_basis, [{ rule: 'A', shared_tokens: ['beta'] }], 'text after parentheses must remain eligible for rule A');
 }
 
 function testBoundarySentinel(geo, map) {
@@ -152,7 +162,7 @@ try {
   testIntervalSemantics();
   testPairingRules();
   testBoundarySentinel(geo, map);
-  console.log('hydro_inventory.test.js: 12 required cases passed');
+  console.log('hydro_inventory.test.js: 14 required cases passed');
 } finally {
   fs.rmSync(tempRoot, { recursive: true, force: true });
 }

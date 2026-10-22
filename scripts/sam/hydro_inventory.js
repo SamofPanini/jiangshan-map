@@ -4,7 +4,6 @@
 const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
-const childProcess = require('node:child_process');
 const vm = require('node:vm');
 
 const REQUIRED_OPTIONS = new Set(['--geo', '--map', '--out-dir', '--margin-deg']);
@@ -245,7 +244,7 @@ const TOKEN_STOP_WORDS = new Set(['r', 'l', 'river', 'lake', 'marsh', 'course', 
 const FIXED_TRANSLITERATIONS = { yellow: 'huang' };
 
 function outsideParentheses(text) {
-  return String(text || '').split('(', 1)[0];
+  return String(text || '').replace(/\([^)]*\)|（[^）]*）/g, '');
 }
 
 function tokens(text) {
@@ -402,33 +401,16 @@ function buildHuangVisibility(boundaries, hydroEntries) {
   }));
 }
 
-function gitHead() {
-  const result = childProcess.spawnSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' });
-  return result.status === 0 ? result.stdout.trim() : null;
-}
-
 function buildMeta(options, geo, map, hydro, corridors) {
-  const meta = {
+  return {
     generated_by: 'scripts/sam/hydro_inventory.js',
-    git_head: gitHead(),
+    generator: { path: 'scripts/sam/hydro_inventory.js', sha256: sha256(fs.readFileSync(__filename, 'utf8')) },
     inputs: {
       geo: { path: options.geoPath, sha256: geo.sha256 },
       map: { path: options.mapPath, sha256: map.sha256 },
     },
     counts: { rivers: hydro.rivers.length, lakes: hydro.lakes.length, labels: hydro.labels.length, corridors: corridors.length },
   };
-  const priorInventoryPath = path.join(options.outDir, 'hydro_inventory.json');
-  if (!fs.existsSync(priorInventoryPath)) return meta;
-  try {
-    const priorMeta = JSON.parse(fs.readFileSync(priorInventoryPath, 'utf8')).meta;
-    if (priorMeta && priorMeta.generated_by === meta.generated_by
-      && JSON.stringify(priorMeta.inputs) === JSON.stringify(meta.inputs)
-      && JSON.stringify(priorMeta.counts) === JSON.stringify(meta.counts)
-      && typeof priorMeta.git_head === 'string') meta.git_head = priorMeta.git_head;
-  } catch {
-    // An unusable pre-existing inventory cannot supply frozen provenance.
-  }
-  return meta;
 }
 
 function renderInventoryMarkdown(hydroEntries, staticSummary, corridors, coherence) {

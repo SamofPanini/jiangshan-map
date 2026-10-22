@@ -8,6 +8,24 @@
 
 数据集是 GeoJSON `FeatureCollection`，严格键为 `type`、`meta`、`features`。`meta` 的严格键为 `schema_version`（必须 `0.1.0`）、`dataset_id`、`dataset_revision`、`region`、`stage`（`draft` 或 `release`）、`synthetic`、`description`。区域表的唯一机读位置是 `REGIONS`；当前仅 `cn`，bbox 为 `[70, 15, 140, 56]`。不得在别处把 `cn` 当作有效区域表。
 
+## 机器可读枚举
+
+下表是契约模块导出的全部枚举；测试要求每行的值集合与对应导出完全一致。
+
+| 导出 | 值 |
+|---|---|
+| `STAGES` | `draft`, `release` |
+| `INTERVALS` | `half_open` |
+| `ENDPOINT_STATUSES` | `known`, `open`, `unknown` |
+| `FEATURE_TYPES` | `river_course`, `river_branch`, `flood_extent`, `lake`, `wetland`, `canal`, `coastline` |
+| `EVIDENCE_MODES` | `attested`, `reconstructed`, `schematic`, `hypothesis` |
+| `REVIEW_STATES` | `proposed`, `under_review`, `accepted`, `rejected`, `superseded` |
+| `LICENSE_STATUSES` | `unknown`, `restricted`, `cleared` |
+| `SOURCE_KINDS` | `original_map`, `editor_reconstruction`, `modern_baseline`, `text`, `dataset` |
+| `ABSENT_REASONS` | `not_located`, `unknown_extent`, `restricted` |
+| `SUPPORTS` | `geometry`, `dating`, `name`, `existence` |
+| `GEOMETRY_TYPES` | `LineString`, `MultiLineString`, `Polygon`, `MultiPolygon` |
+
 ## Feature 字段表
 
 | 位置 | 必填字段 | 规则 |
@@ -29,6 +47,16 @@ geometry 仅支持 `LineString`、`MultiLineString`、`Polygon`、`MultiPolygon`
 证据方式描述材料与重建方式，不等于置信度；审核状态描述流程位置；年代不确定性仅表达年代量化误差；空间误差仅表达空间量化误差。四者分别保存，防止把不同含义压缩成一个分数。无量化依据时误差数值为 null、并以 reason 说明原因。
 
 `draft` 中无 claim 是 `W_NO_CLAIMS` 警告，未知许可是 `W_LICENSE_UNKNOWN` 警告。`release` 要求数据集 non-synthetic、每个 feature 为 accepted 且 cleared、每个 feature 有 dating claim、非空几何另有 geometry claim，且所有被引用来源均 cleared 且 non-synthetic。
+
+## R1-07 裁定
+
+- Feature 的 `id` 即 `geometry_id`，不另设 `geometry_id` 字段。
+- 已知不存在、未调查、无权限、未加载四态属于覆盖层（数据集级）的显示状态；单个要素的 `geometry_absent_reason` 保持 `not_located`、`unknown_extent`、`restricted` 三值。
+- 派生方法与审核记录推迟到契约 v0.2；触发条件是 P0b 出现第一条真实几何。
+
+## 错误优先级
+
+坐标不是有限数或超出 WGS84 全球范围时，报告 `E_COORD`，并跳过该坐标的区域 bbox 检查；因此该坐标不再同时报告 `E_REGION_BBOX`。
 
 ## 错误码
 

@@ -2,7 +2,7 @@
 
 - task_id：`jsm-p0a3-layer`
 - 派发方：Sam's Agent(Opus-5.5)；执行：Codex GPT-5.6 Terra
-- 建立：2026-10-23；状态：draft（等 R1 审核结论后定稿派发）
+- 建立：2026-10-23；状态：active
 - 路线图位置：`docs/sam/ROADMAP.md` 第 5 项
 
 ## 0. 开工前必读

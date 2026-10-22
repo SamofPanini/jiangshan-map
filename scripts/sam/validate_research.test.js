@@ -5,7 +5,9 @@ const childProcess = require('node:child_process');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
-const { validateDataset } = require('./research_contract.js');
+const vm = require('node:vm');
+const contract = require('./research_contract.js');
+const { validateDataset } = contract;
 
 const root = path.resolve(__dirname, '..', '..');
 const fixtures = path.join(__dirname, 'fixtures', 'contract');
@@ -53,12 +55,47 @@ const repeatTwo = run(standardArgs(data));
 assert.equal(repeatOne.stdout, repeatTwo.stdout, 'stdout must be byte-for-byte deterministic');
 
 const memoryDataset = JSON.parse(fs.readFileSync(data, 'utf8'));
+const memorySources = JSON.parse(fs.readFileSync(sources, 'utf8'));
+const memoryLegacy = JSON.parse(fs.readFileSync(legacy, 'utf8'));
+const nodeValid = validateDataset({ dataset: memoryDataset, sources: memorySources, legacyInventory: memoryLegacy });
+assert.throws(() => validateDataset({ dataset: memoryDataset, sources: memorySources, legacyInventory: { bad: true } }), TypeError, 'direct API must reject malformed legacy inventory');
 memoryDataset.features[0].geometry.coordinates[0] = [200, 35];
-const direct = validateDataset({ dataset: memoryDataset, sources: JSON.parse(fs.readFileSync(sources, 'utf8')), legacyInventory: JSON.parse(fs.readFileSync(legacy, 'utf8')) });
+const direct = validateDataset({ dataset: memoryDataset, sources: memorySources, legacyInventory: memoryLegacy });
 assert.deepEqual(new Set(direct.errors.map((error) => error.code)), new Set(['E_COORD']));
 
-const documented = new Set([...fs.readFileSync(path.join(root, 'docs', 'sam', 'CONTRACT.md'), 'utf8').matchAll(/`(E_[A-Z_]+)`/g)].map((match) => match[1]));
+const releaseWithNullClaim = JSON.parse(fs.readFileSync(data, 'utf8'));
+const releaseSources = JSON.parse(fs.readFileSync(sources, 'utf8'));
+releaseWithNullClaim.meta.stage = 'release';
+releaseWithNullClaim.meta.synthetic = false;
+releaseSources[0].synthetic = false;
+for (const feature of releaseWithNullClaim.features) feature.properties.review_state = 'accepted';
+releaseWithNullClaim.features[0].properties.claims = [null];
+const releaseResult = validateDataset({ dataset: releaseWithNullClaim, sources: releaseSources, legacyInventory: memoryLegacy });
+assert.ok(releaseResult.errors.some((error) => error.code === 'E_TYPE' && error.path === '/features/0/properties/claims/0'), 'release null claim must be reported structurally');
+
+const browserSandbox = {};
+vm.createContext(browserSandbox);
+vm.runInContext(fs.readFileSync(path.join(__dirname, 'research_contract.js'), 'utf8'), browserSandbox, { filename: 'research_contract.js' });
+assert.equal(typeof browserSandbox.SamResearchContract.validateDataset, 'function', 'browser export must expose validateDataset');
+const browserValid = browserSandbox.SamResearchContract.validateDataset({ dataset: JSON.parse(fs.readFileSync(data, 'utf8')), sources: memorySources, legacyInventory: memoryLegacy });
+assert.deepEqual(JSON.parse(JSON.stringify(browserValid)), nodeValid, 'browser and Node validation results must match');
+
+const contractDocument = fs.readFileSync(path.join(root, 'docs', 'sam', 'CONTRACT.md'), 'utf8');
+const documented = new Set([...contractDocument.matchAll(/`(E_[A-Z_]+)`/g)].map((match) => match[1]));
 const implemented = new Set(['E_TOP_SHAPE', 'E_SCHEMA_VERSION', 'E_REQUIRED', 'E_UNKNOWN_KEY', 'E_TYPE', 'E_ENUM', 'E_REGION', 'E_DUP_ID', 'E_INTERVAL', 'E_NULL_REASON', 'E_GEOM_ABSENT', 'E_GEOM_TYPE', 'E_EMPTY', 'E_COORD', 'E_REGION_BBOX', 'E_LINE', 'E_RING', 'E_SELF_INTERSECT', 'E_SOURCE_REF', 'E_LEGACY_REF', 'E_RELEASE']);
 assert.deepEqual(documented, implemented, 'CONTRACT.md error-code table must match the implementation');
 
-process.stdout.write(`PASS valid + ${implemented.size} invalid fixtures + CLI fail-closed + determinism + direct API + documentation error-code parity\n`);
+const enumNames = ['STAGES', 'INTERVALS', 'ENDPOINT_STATUSES', 'FEATURE_TYPES', 'EVIDENCE_MODES', 'REVIEW_STATES', 'LICENSE_STATUSES', 'SOURCE_KINDS', 'ABSENT_REASONS', 'SUPPORTS', 'GEOMETRY_TYPES'];
+for (const name of enumNames) {
+  const row = contractDocument.match(new RegExp(`^\\| \`${name}\` \\| (.+) \\|$`, 'm'));
+  assert.ok(row, `CONTRACT.md must document ${name}`);
+  const documentedValues = new Set([...row[1].matchAll(/`([^`]+)`/g)].map((match) => match[1]));
+  assert.deepEqual(documentedValues, new Set(contract[name]), `CONTRACT.md ${name} must match exported enum`);
+}
+
+const miniLegacy = JSON.parse(fs.readFileSync(legacy, 'utf8'));
+const fullLegacy = JSON.parse(fs.readFileSync(realLegacy, 'utf8'));
+assert.deepEqual(miniLegacy.meta.inputs, fullLegacy.meta.inputs, 'mini legacy meta.inputs must match the real inventory');
+for (const entry of miniLegacy.entries) assert.deepEqual(fullLegacy.entries.find((candidate) => candidate.legacy_id === entry.legacy_id), entry, `mini legacy entry ${entry.legacy_id} must match the real inventory`);
+
+process.stdout.write(`PASS valid + ${implemented.size} invalid fixtures + CLI fail-closed + determinism + direct API + browser export + documentation parity\n`);
