@@ -12,7 +12,7 @@
 
 ## 1. 审查对象
 
-自 commit `c2b35f0` 以来的全部改动（`git diff c2b35f0` 加上未跟踪的新文件），即：
+commit `c2b35f0..8c17cee` 的全部改动（`git diff --stat c2b35f0 8c17cee` 可列出），即：
 
 - P0a-1b：`scripts/sam/hydro_inventory.js`、`scripts/sam/hydro_inventory.test.js`、重新生成的 `docs/sam/audit/coherence_probe.json` 与 `P0a-1_INVENTORY.md`
 - P0a-2：`scripts/sam/research_contract.js`、`scripts/sam/validate_research.js`、`scripts/sam/validate_research.test.js`、`scripts/sam/fixtures/contract/`、`docs/sam/CONTRACT.md`

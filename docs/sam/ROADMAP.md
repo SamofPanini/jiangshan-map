@@ -77,12 +77,12 @@
 
 1. **区间语义必须显式**：每个时间区间带 `interval: "half_open" | "closed"`；新数据统一半开，并给出与旧交通线闭区间的换算规则。无公元零年；保留原文纪年与规范化值；未知端点、开放端点、确定不存在三者分开。
 2. **必带 `region`**（当前只有 `cn`），为同图多区域预留。
-3. **对象分层 ID**：`waterbody_id`（水体）→ `segment_id`（河段）→ `geometry_id`（某次几何）→ `interpretation_id`（解释方案）→ `source_id`/`claim_id`。研究要素用 `supersedes` 指向 P0a-1 产出的 `legacy_id`。
+3. **对象分层 ID**：`waterbody_id`（水体）→ `segment_id`（河段）→ `geometry_id`（某次几何）→ `interpretation_id`（解释方案）→ `source_id`/`claim_id`。研究要素用 `supersedes` 指向 P0a-1 产出的 `legacy_id`。**契约 v0.1 中 GeoJSON Feature 的 `id` 即 `geometry_id`，不另设键**（R1-07 裁定）。
 4. **证据方式 ≠ 置信度**：`evidence_mode`（attested / reconstructed / schematic / hypothesis）、`review_state`（流程状态）、`dating_uncertainty`、`spatial_error` 分开；没有量化依据的误差留 `null` 并写原因，不折叠成一个米数。
-5. **版本**：`schema_version`、`dataset_revision`、派生方法、审核记录。
+5. **版本**：`schema_version`、`dataset_revision`（v0.1 已有）；派生方法、审核记录推迟到 v0.2，触发条件＝P0b 出现第一条真实几何。
 6. **几何规则按类型**：Polygon 查闭环/洞/自交；LineString 查最少点数、重复点、范围，不要求闭合；先支持 MultiLineString/MultiPolygon 与洞，避免导入时静默丢几何。
 7. **许可分层**：来源记录、衍生几何、原图文件各有许可状态；代码 GPL 不推定数据可再分发。
-8. **缺测四态**：已知不存在 / 未调查 / 无权限 / 未加载，不得都显示成"没有"。
+8. **缺测四态**：已知不存在 / 未调查 / 无权限 / 未加载，不得都显示成"没有"。这是**覆盖层（数据集级）的显示状态**，不是单个要素的属性；要素级的 `geometry_absent_reason` 只回答"这条要素为什么没有几何"（三值）。覆盖层对象随 P0a-3 之后的版本定义。
 
 ## 5｜交通层（原 P3"交通"拆出）
 
