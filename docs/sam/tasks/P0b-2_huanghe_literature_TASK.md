@@ -9,12 +9,12 @@
 
 - 研究对象：1938 年花园口决堤后黄河南泛、至 1947 年堵口复归期间的**河道走向与泛滥区范围**。目的是找到可以用来画这段河道的资料。
 - 第一轮核查结果：`docs/sam/audit/P0b_huanghe_1938_sources.md`（可读，作为线索起点）。结论是没有找到"画了这段河道＋能配准＋许可清楚"的公开资料。
-- Sam 的裁定：先走"读文献"这条路——读**荒武達郎（2016）关于「新黄河流域図」的论文**与 **Micah S. Muscolino, *The Ecology of War in China: Henan Province, the Yellow River, and Beyond, 1938–1950*（Cambridge University Press, 2015）**；去国会图书馆调阅原图是最后手段。
+- Sam 的裁定：先走"读文献"这条路——读**荒武達朗（2016）关于「新黄河流域図」的论文**与 **Micah S. Muscolino, *The Ecology of War in China: Henan Province, the Yellow River, and Beyond, 1938–1950*（Cambridge University Press, 2015）**；去国会图书馆调阅原图是最后手段。
 - 规则：仓库根 `AGENTS.md` §4（证据纪律）。
 
 ## 1. 要回答的问题
 
-### A. 荒武達郎（2016）
+### A. 荒武達朗（2016）
 1. 论文的完整书目（题名、刊名、卷期、页码、DOI 或机构库 URL）；能否读到全文。
 2. 「新黄河流域図」本身：编制者／机构、编制或印行时间、比例尺、覆盖范围、现藏何处、是否已数字化（给出数字化版本的 URL）。
 3. 论文里有没有复制这张图（图号、页码）；图上画的是**河道线**、**泛滥区**、还是两者都有。
