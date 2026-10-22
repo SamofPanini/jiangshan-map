@@ -1,0 +1,13 @@
+[
+  {
+    "source_id": "source-synthetic-demo",
+    "title": "Synthetic research-layer demonstration source",
+    "author_or_org": "Sam jiangshan-map test fixture",
+    "edition": null,
+    "url": null,
+    "source_kind": "dataset",
+    "license_status": "unknown",
+    "accessed": null,
+    "synthetic": true
+  }
+]

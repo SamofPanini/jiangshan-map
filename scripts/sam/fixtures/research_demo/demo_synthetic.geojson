@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "meta": {
+    "schema_version": "0.1.0",
+    "dataset_id": "sam-research-demo-synthetic",
+    "dataset_revision": "demo-r1",
+    "region": "cn",
+    "stage": "draft",
+    "synthetic": true,
+    "description": "synthetic demo geometry for layer mechanics, not historical"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "demo-square-wave-1938",
+      "geometry": { "type": "LineString", "coordinates": [[114, 36], [114.5, 36.6], [115, 36], [115.5, 36.6], [116, 36], [116.5, 36.6]] },
+      "properties": {
+        "region": "cn", "feature_type": "river_course", "waterbody_id": "synthetic-square-wave", "segment_id": "segment-1", "interpretation_id": "demo-r1",
+        "valid": { "from": 1938, "to": 1947, "interval": "half_open", "from_status": "known", "to_status": "known" },
+        "original_dating": null, "evidence_mode": "hypothesis", "review_state": "proposed",
+        "dating_uncertainty": { "years": null, "reason": "synthetic demo" }, "spatial_error": { "meters": null, "reason": "synthetic demo" },
+        "geometry_absent_reason": null, "license_status": "unknown",
+        "claims": [{ "claim_id": "claim-demo-wave", "source_id": "source-synthetic-demo", "supports": ["geometry", "dating"], "locator": "Synthetic square-wave fixture" }],
+        "supersedes": ["river:Huang:84327c8013cf"]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "demo-unknown-date",
+      "geometry": { "type": "LineString", "coordinates": [[110, 35], [110.4, 35.4]] },
+      "properties": {
+        "region": "cn", "feature_type": "river_branch", "waterbody_id": "synthetic-unknown", "segment_id": "segment-1", "interpretation_id": "demo-r1",
+        "valid": { "from": null, "to": 1950, "interval": "half_open", "from_status": "unknown", "to_status": "known" },
+        "original_dating": null, "evidence_mode": "schematic", "review_state": "proposed",
+        "dating_uncertainty": { "years": null, "reason": "deliberately unknown for visibility test" }, "spatial_error": { "meters": null, "reason": "synthetic demo" },
+        "geometry_absent_reason": null, "license_status": "unknown",
+        "claims": [{ "claim_id": "claim-demo-unknown", "source_id": "source-synthetic-demo", "supports": ["geometry"], "locator": "Unknown-date fixture" }],
+        "supersedes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "demo-no-geometry",
+      "geometry": null,
+      "properties": {
+        "region": "cn", "feature_type": "wetland", "waterbody_id": "synthetic-absent", "segment_id": "segment-1", "interpretation_id": "demo-r1",
+        "valid": { "from": 1938, "to": null, "interval": "half_open", "from_status": "known", "to_status": "open" },
+        "original_dating": null, "evidence_mode": "attested", "review_state": "proposed",
+        "dating_uncertainty": { "years": null, "reason": "synthetic demo" }, "spatial_error": { "meters": null, "reason": "no geometry" },
+        "geometry_absent_reason": "not_located", "license_status": "unknown",
+        "claims": [{ "claim_id": "claim-demo-absent", "source_id": "source-synthetic-demo", "supports": ["existence"], "locator": "Null-geometry fixture" }],
+        "supersedes": []
+      }
+    }
+  ]
+}
