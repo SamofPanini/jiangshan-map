@@ -1,0 +1,13 @@
+[
+  {
+    "source_id": "fixture-source",
+    "title": "synthetic fixture source",
+    "author_or_org": "synthetic fixture author",
+    "edition": null,
+    "url": null,
+    "source_kind": "dataset",
+    "license_status": "cleared",
+    "accessed": null,
+    "synthetic": true
+  }
+]

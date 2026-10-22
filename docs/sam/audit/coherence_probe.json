@@ -23,6 +23,8 @@
   "boundary_years": [
     {
       "year": -300,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_zhanguo",
@@ -33,6 +35,8 @@
     },
     {
       "year": -215,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_zhanguo",
@@ -43,6 +47,8 @@
     },
     {
       "year": -214,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_qin",
@@ -53,6 +59,8 @@
     },
     {
       "year": -212,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "zhidao",
@@ -63,6 +71,8 @@
     },
     {
       "year": -122,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_qin",
@@ -73,6 +83,8 @@
     },
     {
       "year": -121,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "silk_hexi",
@@ -88,6 +100,8 @@
     },
     {
       "year": -111,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_han_hexi",
@@ -98,6 +112,8 @@
     },
     {
       "year": -100,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "silk_south",
@@ -108,6 +124,8 @@
     },
     {
       "year": -60,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "silk_north",
@@ -118,6 +136,8 @@
     },
     {
       "year": 11,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "label:河水（禹贡故道）:95d5fc59fce8",
@@ -143,6 +163,8 @@
     },
     {
       "year": 220,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_han_hexi",
@@ -163,6 +185,8 @@
     },
     {
       "year": 317,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "label:云梦泽:4289bb370a73",
@@ -178,6 +202,8 @@
     },
     {
       "year": 605,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "canal_hangou",
@@ -193,6 +219,8 @@
     },
     {
       "year": 608,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "canal_yongji",
@@ -203,6 +231,8 @@
     },
     {
       "year": 618,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "sea_silk",
@@ -213,6 +243,8 @@
     },
     {
       "year": 900,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "label:巨野泽:c26d59ce785f",
@@ -228,6 +260,8 @@
     },
     {
       "year": 1000,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "silk_south",
@@ -238,6 +272,8 @@
     },
     {
       "year": 1048,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "label:大清河:7870606d59b1",
@@ -278,6 +314,8 @@
     },
     {
       "year": 1194,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "label:洪泽:abe4d8ce8a0c",
@@ -333,6 +371,8 @@
     },
     {
       "year": 1280,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "label:梁山泊:e8219459c192",
@@ -348,6 +388,8 @@
     },
     {
       "year": 1292,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "canal_hangou",
@@ -368,6 +410,8 @@
     },
     {
       "year": 1293,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "canal_jinghang",
@@ -378,6 +422,8 @@
     },
     {
       "year": 1368,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_ming",
@@ -388,6 +434,8 @@
     },
     {
       "year": 1400,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "silk_hexi",
@@ -403,6 +451,8 @@
     },
     {
       "year": 1405,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "zhenghe",
@@ -413,6 +463,8 @@
     },
     {
       "year": 1433,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "sea_silk",
@@ -428,6 +480,8 @@
     },
     {
       "year": 1442,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_ming_liaodong",
@@ -438,6 +492,8 @@
     },
     {
       "year": 1560,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "lake:Weishan Hu:db35f1373863",
@@ -448,6 +504,8 @@
     },
     {
       "year": 1580,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "river:Huang:3bc797712c20",
@@ -458,6 +516,8 @@
     },
     {
       "year": 1644,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "key": "wall_ming_liaodong",
@@ -468,6 +528,8 @@
     },
     {
       "year": 1855,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "label:大清河:7870606d59b1",
@@ -508,6 +570,8 @@
     },
     {
       "year": 1972,
+      "is_sentinel": false,
+      "meaning": null,
       "sources": [
         {
           "legacy_id": "label:蒲昌海·罗布泊:15a4fad7b0b0",
@@ -523,6 +587,8 @@
     },
     {
       "year": 9999,
+      "is_sentinel": true,
+      "meaning": "open_end",
       "sources": [
         {
           "key": "canal_jinghang",
@@ -959,6 +1025,7 @@
             "vanish": 1972
           },
           "interval_exact_match": true,
+          "distance_deg": "0.0000",
           "pairing_basis": [
             {
               "rule": "A",
@@ -969,7 +1036,11 @@
             },
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0000"
+            },
+            {
+              "rule": "C",
+              "interval_exact_match": true
             }
           ]
         }
@@ -987,6 +1058,27 @@
       },
       "candidates": [
         {
+          "legacy_id": "river:Huang:3bc797712c20",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1580
+          },
+          "interval_exact_match": false,
+          "distance_deg": "2.8229",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "legacy_id": "river:Huang:578a13a5f4d1",
           "kind": "river",
           "interval": {
@@ -994,10 +1086,45 @@
             "vanish": 11
           },
           "interval_exact_match": true,
+          "distance_deg": "0.2125",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.2125"
+            },
+            {
+              "rule": "C",
+              "interval_exact_match": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:754a2dd8dceb",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "3.0689",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1009,10 +1136,16 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.6267",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1024,10 +1157,16 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "1.2931",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1039,10 +1178,37 @@
             "vanish": 1048
           },
           "interval_exact_match": false,
+          "distance_deg": "0.9449",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:995ee3b69851",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "4.8077",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1054,25 +1220,62 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.2434",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.2434"
             }
           ]
         },
         {
-          "legacy_id": "river:Ji:e48052811063",
+          "legacy_id": "river:Huang:ca478d73b103",
           "kind": "river",
           "interval": {
             "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "18.0322",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:f0981e7773ba",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
             "vanish": 1855
           },
           "interval_exact_match": false,
+          "distance_deg": "2.7216",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         }
@@ -1090,6 +1293,27 @@
       },
       "candidates": [
         {
+          "legacy_id": "river:Huang:3bc797712c20",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1580
+          },
+          "interval_exact_match": false,
+          "distance_deg": "2.8409",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "legacy_id": "river:Huang:578a13a5f4d1",
           "kind": "river",
           "interval": {
@@ -1097,10 +1321,37 @@
             "vanish": 11
           },
           "interval_exact_match": false,
+          "distance_deg": "1.3675",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:754a2dd8dceb",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "3.2117",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1112,10 +1363,20 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.4935",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.4935"
             }
           ]
         },
@@ -1127,10 +1388,20 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "0.1496",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.1496"
             }
           ]
         },
@@ -1142,10 +1413,45 @@
             "vanish": 1048
           },
           "interval_exact_match": true,
+          "distance_deg": "0.1874",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.1874"
+            },
+            {
+              "rule": "C",
+              "interval_exact_match": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:995ee3b69851",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "5.9306",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1157,10 +1463,58 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.9150",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:ca478d73b103",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "18.8522",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:f0981e7773ba",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "distance_deg": "2.2364",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1172,27 +1526,11 @@
             "vanish": 1855
           },
           "interval_exact_match": false,
+          "distance_deg": "0.1874",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Jing:1cf30e1658f7",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": null
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "A",
-              "shared_tokens": [
-                "jing"
-              ]
+              "distance_deg": "0.1874"
             }
           ]
         }
@@ -1210,6 +1548,27 @@
       },
       "candidates": [
         {
+          "legacy_id": "river:Huang:3bc797712c20",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1580
+          },
+          "interval_exact_match": false,
+          "distance_deg": "3.1983",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "legacy_id": "river:Huang:578a13a5f4d1",
           "kind": "river",
           "interval": {
@@ -1217,10 +1576,41 @@
             "vanish": 11
           },
           "interval_exact_match": false,
+          "distance_deg": "0.3412",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.3412"
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:754a2dd8dceb",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "3.4702",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1232,10 +1622,16 @@
             "vanish": 1194
           },
           "interval_exact_match": true,
+          "distance_deg": "0.5524",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1247,10 +1643,16 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "1.1281",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1262,10 +1664,37 @@
             "vanish": 1048
           },
           "interval_exact_match": false,
+          "distance_deg": "0.8654",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:995ee3b69851",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "5.1031",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1277,41 +1706,65 @@
             "vanish": 1194
           },
           "interval_exact_match": true,
+          "distance_deg": "0.0450",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0450"
+            },
+            {
+              "rule": "C",
+              "interval_exact_match": true
             }
           ]
         },
         {
-          "legacy_id": "river:Ji:e48052811063",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": 1855
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Song’acha:b7ed7715501f",
+          "legacy_id": "river:Huang:ca478d73b103",
           "kind": "river",
           "interval": {
             "appear": null,
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "18.4547",
           "pairing_basis": [
             {
-              "rule": "A",
-              "shared_tokens": [
-                "song"
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:f0981e7773ba",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "distance_deg": "3.0201",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
               ]
             }
           ]
@@ -1330,6 +1783,22 @@
       },
       "candidates": [
         {
+          "legacy_id": "lake:Weishan Hu:db35f1373863",
+          "kind": "lake",
+          "interval": {
+            "appear": 1560,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "0.4559",
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "distance_deg": "0.4559"
+            }
+          ]
+        },
+        {
           "legacy_id": "river:Feihuang:411c124f166e",
           "kind": "river",
           "interval": {
@@ -1337,78 +1806,11 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "0.1329",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huai:09946cb0fddb",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": 1194
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "A",
-              "shared_tokens": [
-                "huai"
-              ]
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huai:41ea7d48299a",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": null
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "A",
-              "shared_tokens": [
-                "huai"
-              ]
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huai:9160decb9731",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": null
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "A",
-              "shared_tokens": [
-                "huai"
-              ]
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huai:c45450a9f014",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": null
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "A",
-              "shared_tokens": [
-                "huai"
-              ]
+              "distance_deg": "0.1329"
             }
           ]
         },
@@ -1420,10 +1822,184 @@
             "vanish": 1580
           },
           "interval_exact_match": false,
+          "distance_deg": "1.1690",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": false,
+          "distance_deg": "3.4709",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:754a2dd8dceb",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "3.7405",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "distance_deg": "3.0524",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "2.3407",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": false,
+          "distance_deg": "2.7140",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:995ee3b69851",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "7.2883",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "distance_deg": "2.9961",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:ca478d73b103",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "19.8109",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1435,10 +2011,24 @@
             "vanish": 1855
           },
           "interval_exact_match": true,
+          "distance_deg": "0.1329",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.1329"
+            },
+            {
+              "rule": "C",
+              "interval_exact_match": true
             }
           ]
         },
@@ -1450,10 +2040,27 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.1329",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.1329"
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Si:95b53b6ccacc",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "0.3920",
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "distance_deg": "0.3920"
             }
           ]
         }
@@ -1471,6 +2078,43 @@
       },
       "candidates": [
         {
+          "legacy_id": "lake:Juye Ze:8dfb5a5c82d8",
+          "kind": "lake",
+          "interval": {
+            "appear": null,
+            "vanish": 1280
+          },
+          "interval_exact_match": false,
+          "distance_deg": "0.4535",
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "distance_deg": "0.4535"
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:3bc797712c20",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1580
+          },
+          "interval_exact_match": false,
+          "distance_deg": "2.4774",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "legacy_id": "river:Huang:578a13a5f4d1",
           "kind": "river",
           "interval": {
@@ -1478,10 +2122,37 @@
             "vanish": 11
           },
           "interval_exact_match": false,
+          "distance_deg": "1.3946",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:754a2dd8dceb",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "2.8627",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1493,10 +2164,16 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.6502",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1508,10 +2185,24 @@
             "vanish": null
           },
           "interval_exact_match": true,
+          "distance_deg": "0.0154",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0154"
+            },
+            {
+              "rule": "C",
+              "interval_exact_match": true
             }
           ]
         },
@@ -1523,10 +2214,41 @@
             "vanish": 1048
           },
           "interval_exact_match": false,
+          "distance_deg": "0.3280",
           "pairing_basis": [
             {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            },
+            {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.3280"
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:995ee3b69851",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "5.8847",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1538,10 +2260,58 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.9630",
           "pairing_basis": [
             {
-              "rule": "B",
-              "coord_in_bbox": true
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:ca478d73b103",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "18.6280",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:f0981e7773ba",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "distance_deg": "1.8618",
+          "pairing_basis": [
+            {
+              "rule": "A2",
+              "translations": [
+                {
+                  "english": "yellow",
+                  "pinyin": "huang"
+                }
+              ]
             }
           ]
         },
@@ -1553,10 +2323,11 @@
             "vanish": 1855
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0308",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0308"
             }
           ]
         }
@@ -1574,36 +2345,6 @@
       },
       "candidates": [
         {
-          "legacy_id": "river:Huang:578a13a5f4d1",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": 11
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:759cbe42747f",
-          "kind": "river",
-          "interval": {
-            "appear": 1048,
-            "vanish": 1194
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
           "legacy_id": "river:Huang:84327c8013cf",
           "kind": "river",
           "interval": {
@@ -1611,10 +2352,11 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "0.1794",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.1794"
             }
           ]
         },
@@ -1626,25 +2368,11 @@
             "vanish": 1048
           },
           "interval_exact_match": false,
+          "distance_deg": "0.3967",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:b97bb865b483",
-          "kind": "river",
-          "interval": {
-            "appear": 1048,
-            "vanish": 1194
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.3967"
             }
           ]
         },
@@ -1656,6 +2384,7 @@
             "vanish": 1855
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0493",
           "pairing_basis": [
             {
               "rule": "A",
@@ -1665,7 +2394,7 @@
             },
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0493"
             }
           ]
         }
@@ -1683,36 +2412,6 @@
       },
       "candidates": [
         {
-          "legacy_id": "river:Huang:578a13a5f4d1",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": 11
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:759cbe42747f",
-          "kind": "river",
-          "interval": {
-            "appear": 1048,
-            "vanish": 1194
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
           "legacy_id": "river:Huang:84327c8013cf",
           "kind": "river",
           "interval": {
@@ -1720,10 +2419,11 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "0.1794",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.1794"
             }
           ]
         },
@@ -1735,25 +2435,11 @@
             "vanish": 1048
           },
           "interval_exact_match": false,
+          "distance_deg": "0.3967",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:b97bb865b483",
-          "kind": "river",
-          "interval": {
-            "appear": 1048,
-            "vanish": 1194
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.3967"
             }
           ]
         },
@@ -1765,10 +2451,11 @@
             "vanish": 1855
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0493",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0493"
             }
           ]
         }
@@ -1786,6 +2473,22 @@
       },
       "candidates": [
         {
+          "legacy_id": "lake:Gaoyou Hu:b9a32be9d10a",
+          "kind": "lake",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "0.3483",
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "distance_deg": "0.3483"
+            }
+          ]
+        },
+        {
           "legacy_id": "lake:Hongze Hu:68aaac829a28",
           "kind": "lake",
           "interval": {
@@ -1793,6 +2496,7 @@
             "vanish": null
           },
           "interval_exact_match": true,
+          "distance_deg": "0.0200",
           "pairing_basis": [
             {
               "rule": "A",
@@ -1802,24 +2506,11 @@
             },
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "lake:Khövsgöl Nuur:66c4a3a40024",
-          "kind": "lake",
-          "interval": {
-            "appear": null,
-            "vanish": null
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
+              "distance_deg": "0.0200"
+            },
             {
-              "rule": "A",
-              "shared_tokens": [
-                "l"
-              ]
+              "rule": "C",
+              "interval_exact_match": true
             }
           ]
         },
@@ -1831,10 +2522,11 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0373",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0373"
             }
           ]
         },
@@ -1846,10 +2538,43 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.1598",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.1598"
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huai:9160decb9731",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "0.0943",
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "distance_deg": "0.0943"
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huai:c45450a9f014",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "0.3111",
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "distance_deg": "0.3111"
             }
           ]
         },
@@ -1861,10 +2586,11 @@
             "vanish": 1855
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0373",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0373"
             }
           ]
         },
@@ -1876,10 +2602,11 @@
             "vanish": 1194
           },
           "interval_exact_match": false,
+          "distance_deg": "0.1506",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.1506"
             }
           ]
         }
@@ -1904,6 +2631,7 @@
             "vanish": 1280
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0000",
           "pairing_basis": [
             {
               "rule": "A",
@@ -1913,22 +2641,7 @@
             },
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:578a13a5f4d1",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": 11
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0000"
             }
           ]
         },
@@ -1940,40 +2653,11 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "0.3265",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:8ce628579d2b",
-          "kind": "river",
-          "interval": {
-            "appear": 11,
-            "vanish": 1048
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:b97bb865b483",
-          "kind": "river",
-          "interval": {
-            "appear": 1048,
-            "vanish": 1194
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.3265"
             }
           ]
         },
@@ -1985,10 +2669,11 @@
             "vanish": 1855
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0121",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0121"
             }
           ]
         }
@@ -2013,25 +2698,11 @@
             "vanish": 1280
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0000",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:578a13a5f4d1",
-          "kind": "river",
-          "interval": {
-            "appear": null,
-            "vanish": 11
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0000"
             }
           ]
         },
@@ -2043,40 +2714,11 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "0.3265",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:8ce628579d2b",
-          "kind": "river",
-          "interval": {
-            "appear": 11,
-            "vanish": 1048
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
-            }
-          ]
-        },
-        {
-          "legacy_id": "river:Huang:b97bb865b483",
-          "kind": "river",
-          "interval": {
-            "appear": 1048,
-            "vanish": 1194
-          },
-          "interval_exact_match": false,
-          "pairing_basis": [
-            {
-              "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.3265"
             }
           ]
         },
@@ -2088,10 +2730,11 @@
             "vanish": 1855
           },
           "interval_exact_match": false,
+          "distance_deg": "0.0121",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0121"
             }
           ]
         }
@@ -2109,6 +2752,22 @@
       },
       "candidates": [
         {
+          "legacy_id": "lake:Hong Hu:89300a685725",
+          "kind": "lake",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "0.3640",
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "distance_deg": "0.3640"
+            }
+          ]
+        },
+        {
           "legacy_id": "lake:Yunmeng Ze:370978e5de05",
           "kind": "lake",
           "interval": {
@@ -2116,6 +2775,7 @@
             "vanish": 317
           },
           "interval_exact_match": true,
+          "distance_deg": "0.0000",
           "pairing_basis": [
             {
               "rule": "A",
@@ -2125,7 +2785,11 @@
             },
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.0000"
+            },
+            {
+              "rule": "C",
+              "interval_exact_match": true
             }
           ]
         },
@@ -2137,10 +2801,27 @@
             "vanish": null
           },
           "interval_exact_match": false,
+          "distance_deg": "0.4002",
           "pairing_basis": [
             {
               "rule": "B",
-              "coord_in_bbox": true
+              "distance_deg": "0.4002"
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Han:d279761feac9",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "distance_deg": "0.1172",
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "distance_deg": "0.1172"
             }
           ]
         }

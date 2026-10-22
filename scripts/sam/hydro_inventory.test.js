@@ -91,6 +91,54 @@ function testIntervalSemantics() {
   assert.equal(tool.isCorridorVisible({ span: [605, 1292] }, 1293), false);
 }
 
+function fixtureEntry(kind, name, source, appear = null, vanish = null) {
+  const entry = tool.buildHydroEntries({
+    rivers: kind === 'river' ? [{ name, rank: 1, lines: source, ...(appear === null ? {} : { appear }), ...(vanish === null ? {} : { vanish }) }] : [],
+    lakes: kind === 'lake' ? [{ name, rank: 1, rings: source, ...(appear === null ? {} : { appear }), ...(vanish === null ? {} : { vanish }) }] : [],
+    labels: [],
+  })[0];
+  return entry;
+}
+
+function fixtureLabel(en, coord, appear = 0, vanish = null) {
+  return tool.buildHydroEntries({ rivers: [], lakes: [], labels: [{ zh: en, en, coord, ...(appear === null ? {} : { appear }), ...(vanish === null ? {} : { vanish }) }] })[0];
+}
+
+function pairingCandidates(label, geometry, marginDeg) {
+  return tool.buildLabelPairing([label, geometry], marginDeg).pairings[0].candidates;
+}
+
+function testPairingRules() {
+  const hongze = fixtureLabel('Hongze L.', [0, 0]);
+  const khovsgol = fixtureEntry('lake', 'Khövsgöl Nuur', [[[0, 0], [1, 0], [0, 1]]]);
+  assert.equal(pairingCandidates(hongze, khovsgol, 0).length, 1, 'distance can independently create a candidate');
+  assert.deepEqual(pairingCandidates(hongze, khovsgol, 0)[0].pairing_basis, [{ rule: 'B', distance_deg: '0.0000' }], 'single-letter token must not trigger rule A');
+
+  const yellow = fixtureLabel('Yellow R.', [0, 0]);
+  const huang = fixtureEntry('river', 'Huang', [[[3, 0], [4, 0]]]);
+  assert.deepEqual(pairingCandidates(yellow, huang, 0)[0].pairing_basis, [{ rule: 'A2', translations: [{ english: 'yellow', pinyin: 'huang' }] }], 'Yellow must pair with Huang through rule A2');
+
+  const lShape = fixtureEntry('river', 'Far', [[[0, 0], [0, 10], [10, 10]]]);
+  const inBboxButFar = fixtureLabel('Other', [5, 5]);
+  assert.equal(pairingCandidates(inBboxButFar, lShape, 1).length, 0, 'bbox inclusion must not satisfy rule B when line distance exceeds margin');
+
+  const sameIntervalFar = fixtureLabel('Same', [5, 5], 10, 20);
+  const sameIntervalLine = fixtureEntry('river', 'Different', [[[0, 0], [0, 1]]], 10, 20);
+  assert.equal(pairingCandidates(sameIntervalFar, sameIntervalLine, 1).length, 0, 'matching interval alone must not satisfy rule C');
+}
+
+function testBoundarySentinel(geo, map) {
+  const sentinelMap = writeFixture('sentinel-map.js', `window.CORRIDOR_DATA = ${JSON.stringify([
+    { key: 'open_road', kind: 'road', title: 'Open road', span: [10, 9999], segments: [[[0, 0], [2, 2]]] },
+  ])};`);
+  const outDir = path.join(tempRoot, 'sentinel');
+  const result = tool.run({ geoPath: geo, mapPath: sentinelMap, marginDeg: 0, outDir });
+  const sentinel = result.coherence.boundary_years.find((row) => row.year === 9999);
+  assert.equal(sentinel.is_sentinel, true, '9999 must be marked as sentinel');
+  assert.equal(sentinel.meaning, 'open_end');
+  assert.equal(result.coherence.boundary_years.find((row) => row.year === 10).is_sentinel, false, 'ordinary boundary years must not be sentinels');
+}
+
 try {
   const rivers = [
     { name: 'River A', rank: 1, lines: [[[0, 0], [1, 1]]], appear: 10, vanish: 20 },
@@ -102,7 +150,9 @@ try {
   testInvalidDataDoesNotWrite(map);
   testDeterminismAndFingerprints(geo, map, rivers);
   testIntervalSemantics();
-  console.log('hydro_inventory.test.js: 7 required cases passed');
+  testPairingRules();
+  testBoundarySentinel(geo, map);
+  console.log('hydro_inventory.test.js: 12 required cases passed');
 } finally {
   fs.rmSync(tempRoot, { recursive: true, force: true });
 }

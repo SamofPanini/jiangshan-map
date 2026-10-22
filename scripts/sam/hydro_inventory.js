@@ -239,14 +239,72 @@ function expandedBbox(bbox, margin) {
   return [bbox[0] - margin, bbox[1] - margin, bbox[2] + margin, bbox[3] + margin];
 }
 
+const TOKEN_STOP_WORDS = new Set(['r', 'l', 'river', 'lake', 'marsh', 'course', 'n', 's', 'e', 'w']);
+// Only English-name to pinyin-name pairs that can be verified verbatim in this data.
+// Additions require a task sheet.
+const FIXED_TRANSLITERATIONS = { yellow: 'huang' };
+
+function outsideParentheses(text) {
+  return String(text || '').split('(', 1)[0];
+}
+
 function tokens(text) {
-  return new Set(String(text || '').toLowerCase().match(/[a-z0-9]+/g) || []);
+  return new Set((String(text || '').toLowerCase().match(/[\p{L}\p{N}]+/gu) || [])
+    .filter((token) => token.length > 1 && !TOKEN_STOP_WORDS.has(token)));
 }
 
 function sharedTokens(left, right) {
   const leftTokens = tokens(left);
   const rightTokens = tokens(right);
   return [...leftTokens].filter((token) => rightTokens.has(token)).sort();
+}
+
+function translationMatches(labelText, geometryName) {
+  const labelTokens = tokens(outsideParentheses(labelText));
+  const geometryTokens = tokens(geometryName);
+  return Object.entries(FIXED_TRANSLITERATIONS)
+    .filter(([english, pinyin]) => labelTokens.has(english) && geometryTokens.has(pinyin))
+    .map(([english, pinyin]) => ({ english, pinyin }));
+}
+
+function pointToSegmentDistance(point, start, end) {
+  const dx = end[0] - start[0];
+  const dy = end[1] - start[1];
+  if (dx === 0 && dy === 0) return Math.hypot(point[0] - start[0], point[1] - start[1]);
+  const projection = ((point[0] - start[0]) * dx + (point[1] - start[1]) * dy) / (dx * dx + dy * dy);
+  const t = Math.max(0, Math.min(1, projection));
+  return Math.hypot(point[0] - (start[0] + t * dx), point[1] - (start[1] + t * dy));
+}
+
+function pointInRing(point, ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i, i += 1) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    if ((yi > point[1]) !== (yj > point[1]) && point[0] < ((xj - xi) * (point[1] - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+
+function pointToPartsDistance(point, parts, closeRings) {
+  let distance = Infinity;
+  for (const part of parts) {
+    if (part.length === 0) continue;
+    if (closeRings && pointInRing(point, part)) return 0;
+    if (part.length === 1) {
+      distance = Math.min(distance, Math.hypot(point[0] - part[0][0], point[1] - part[0][1]));
+      continue;
+    }
+    for (let i = 1; i < part.length; i += 1) distance = Math.min(distance, pointToSegmentDistance(point, part[i - 1], part[i]));
+    if (closeRings) distance = Math.min(distance, pointToSegmentDistance(point, part[part.length - 1], part[0]));
+  }
+  return distance;
+}
+
+function geometryDistance(labelCoord, geometry) {
+  return geometry.kind === 'river'
+    ? pointToPartsDistance(labelCoord, geometry._source.lines, false)
+    : pointToPartsDistance(labelCoord, geometry._source.rings, true);
 }
 
 function buildBoundaries(hydroEntries, corridors) {
@@ -265,6 +323,8 @@ function buildBoundaries(hydroEntries, corridors) {
   }
   return [...byYear.entries()].map(([year, sources]) => ({
     year: Number(year),
+    is_sentinel: Number(year) === 9999,
+    meaning: Number(year) === 9999 ? 'open_end' : null,
     sources: sources.sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b))),
   })).sort((a, b) => a.year - b.year);
 }
@@ -294,7 +354,7 @@ function buildCorridorHydroMatches(hydroEntries, corridors, marginDeg) {
   });
 }
 
-function buildLabelPairing(hydroEntries) {
+function buildLabelPairing(hydroEntries, marginDeg) {
   const geometries = hydroEntries.filter((entry) => entry.kind !== 'label');
   const timedLabels = hydroEntries.filter((entry) => entry.kind === 'label' && entry.timed);
   const pairings = [];
@@ -302,17 +362,23 @@ function buildLabelPairing(hydroEntries) {
   for (const label of timedLabels) {
     const candidates = [];
     for (const geometry of geometries) {
-      const commonTokens = sharedTokens(label.name.en, geometry.name);
-      const coordInBbox = label.coord[0] >= geometry._bbox[0] && label.coord[0] <= geometry._bbox[2] && label.coord[1] >= geometry._bbox[1] && label.coord[1] <= geometry._bbox[3];
-      if (commonTokens.length === 0 && !coordInBbox) continue;
+      const commonTokens = sharedTokens(outsideParentheses(label.name.en), geometry.name);
+      const translations = translationMatches(label.name.en, geometry.name);
+      const distance = geometryDistance(label.coord, geometry);
+      const withinMargin = distance <= marginDeg;
+      const intervalExactMatch = label.appear === geometry.appear && label.vanish === geometry.vanish;
+      if (commonTokens.length === 0 && translations.length === 0 && !withinMargin) continue;
       const pairing_basis = [];
       if (commonTokens.length) pairing_basis.push({ rule: 'A', shared_tokens: commonTokens });
-      if (coordInBbox) pairing_basis.push({ rule: 'B', coord_in_bbox: true });
+      if (translations.length) pairing_basis.push({ rule: 'A2', translations });
+      if (withinMargin) pairing_basis.push({ rule: 'B', distance_deg: distance.toFixed(4) });
+      if (intervalExactMatch && withinMargin) pairing_basis.push({ rule: 'C', interval_exact_match: true });
       candidates.push({
         legacy_id: geometry.legacy_id,
         kind: geometry.kind,
         interval: { appear: geometry.appear, vanish: geometry.vanish },
-        interval_exact_match: label.appear === geometry.appear && label.vanish === geometry.vanish,
+        interval_exact_match: intervalExactMatch,
+        distance_deg: distance.toFixed(4),
         pairing_basis,
       });
     }
@@ -342,7 +408,7 @@ function gitHead() {
 }
 
 function buildMeta(options, geo, map, hydro, corridors) {
-  return {
+  const meta = {
     generated_by: 'scripts/sam/hydro_inventory.js',
     git_head: gitHead(),
     inputs: {
@@ -351,6 +417,18 @@ function buildMeta(options, geo, map, hydro, corridors) {
     },
     counts: { rivers: hydro.rivers.length, lakes: hydro.lakes.length, labels: hydro.labels.length, corridors: corridors.length },
   };
+  const priorInventoryPath = path.join(options.outDir, 'hydro_inventory.json');
+  if (!fs.existsSync(priorInventoryPath)) return meta;
+  try {
+    const priorMeta = JSON.parse(fs.readFileSync(priorInventoryPath, 'utf8')).meta;
+    if (priorMeta && priorMeta.generated_by === meta.generated_by
+      && JSON.stringify(priorMeta.inputs) === JSON.stringify(meta.inputs)
+      && JSON.stringify(priorMeta.counts) === JSON.stringify(meta.counts)
+      && typeof priorMeta.git_head === 'string') meta.git_head = priorMeta.git_head;
+  } catch {
+    // An unusable pre-existing inventory cannot supply frozen provenance.
+  }
+  return meta;
 }
 
 function renderInventoryMarkdown(hydroEntries, staticSummary, corridors, coherence) {
@@ -387,6 +465,7 @@ function renderInventoryMarkdown(hydroEntries, staticSummary, corridors, coheren
     `- Corridor-to-hydro boundary matches: ${coherence.corridor_hydro_boundary_combinations.reduce((sum, row) => sum + row.matches.length, 0)}`,
     `- Timed label pairing records: ${coherence.timed_label_geometry_pairings.length}; unpaired labels: ${coherence.unpaired_timed_labels.length}`,
     `- Huang visibility probe years: ${coherence.huang_visible_at_boundary_years.length}`,
+    '- Timed-label geometry distances use a planar degree approximation (longitude/latitude treated as Cartesian coordinates), not geodesic distance.',
     '',
     '### Boundary-year sample (first 10)',
     '',
@@ -421,7 +500,7 @@ function run(options) {
   const corridorEntries = map.value.map(buildCorridorEntry);
   const meta = buildMeta(options, geo, map, geo.value, map.value);
   const boundaries = buildBoundaries(hydroEntries, corridorEntries);
-  const labelPairing = buildLabelPairing(hydroEntries);
+  const labelPairing = buildLabelPairing(hydroEntries, options.marginDeg);
   const coherence = {
     meta,
     margin_deg: options.marginDeg,
@@ -458,6 +537,8 @@ if (require.main === module) main();
 module.exports = {
   buildCorridorEntry,
   buildHydroEntries,
+  buildLabelPairing,
+  geometryDistance,
   isCorridorVisible,
   isHydroVisible,
   parseArgs,

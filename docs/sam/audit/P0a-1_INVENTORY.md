@@ -81,6 +81,7 @@ Generated deterministically by `scripts/sam/hydro_inventory.js` from the supplie
 - Corridor-to-hydro boundary matches: 30
 - Timed label pairing records: 12; unpaired labels: 0
 - Huang visibility probe years: 63
+- Timed-label geometry distances use a planar degree approximation (longitude/latitude treated as Cartesian coordinates), not geodesic distance.
 
 ### Boundary-year sample (first 10)
 
@@ -111,15 +112,15 @@ Generated deterministically by `scripts/sam/hydro_inventory.js` from the supplie
 ### Timed-label pairing sample (first 10)
 
 - label:蒲昌海·罗布泊:15a4fad7b0b0: lake:Lop Nur:4b517c58f936
-- label:河水（禹贡故道）:95d5fc59fce8: river:Huang:578a13a5f4d1, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:b97bb865b483, river:Ji:e48052811063
-- label:黄 河（王景故道）:5b192f987075: river:Huang:578a13a5f4d1, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:b97bb865b483, river:Ji:e48052811063, river:Jing:1cf30e1658f7
-- label:黄 河（北宋北流）:ce0588e08a22: river:Huang:578a13a5f4d1, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:b97bb865b483, river:Ji:e48052811063, river:Song’acha:b7ed7715501f
-- label:黄 河（夺淮故道）:5391aff5bc09: river:Feihuang:411c124f166e, river:Huai:09946cb0fddb, river:Huai:41ea7d48299a, river:Huai:9160decb9731, river:Huai:c45450a9f014, river:Huang:3bc797712c20, river:Huang:f0981e7773ba, river:Si:008c5794bb47
-- label:黄 河:1d17e603e785: river:Huang:578a13a5f4d1, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:b97bb865b483, river:Ji:e48052811063
-- label:济 水:cd85cc02ed1b: river:Huang:578a13a5f4d1, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:b97bb865b483, river:Ji:e48052811063
-- label:大清河:7870606d59b1: river:Huang:578a13a5f4d1, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:b97bb865b483, river:Ji:e48052811063
-- label:洪泽:abe4d8ce8a0c: lake:Hongze Hu:68aaac829a28, lake:Khövsgöl Nuur:66c4a3a40024, river:Feihuang:411c124f166e, river:Huai:09946cb0fddb, river:Huang:f0981e7773ba, river:Si:008c5794bb47
-- label:巨野泽:c26d59ce785f: lake:Juye Ze:8dfb5a5c82d8, river:Huang:578a13a5f4d1, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:b97bb865b483, river:Ji:e48052811063
+- label:河水（禹贡故道）:95d5fc59fce8: river:Huang:3bc797712c20, river:Huang:578a13a5f4d1, river:Huang:754a2dd8dceb, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:995ee3b69851, river:Huang:b97bb865b483, river:Huang:ca478d73b103, river:Huang:f0981e7773ba
+- label:黄 河（王景故道）:5b192f987075: river:Huang:3bc797712c20, river:Huang:578a13a5f4d1, river:Huang:754a2dd8dceb, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:995ee3b69851, river:Huang:b97bb865b483, river:Huang:ca478d73b103, river:Huang:f0981e7773ba, river:Ji:e48052811063
+- label:黄 河（北宋北流）:ce0588e08a22: river:Huang:3bc797712c20, river:Huang:578a13a5f4d1, river:Huang:754a2dd8dceb, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:995ee3b69851, river:Huang:b97bb865b483, river:Huang:ca478d73b103, river:Huang:f0981e7773ba
+- label:黄 河（夺淮故道）:5391aff5bc09: lake:Weishan Hu:db35f1373863, river:Feihuang:411c124f166e, river:Huang:3bc797712c20, river:Huang:578a13a5f4d1, river:Huang:754a2dd8dceb, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:995ee3b69851, river:Huang:b97bb865b483, river:Huang:ca478d73b103, river:Huang:f0981e7773ba, river:Si:008c5794bb47, river:Si:95b53b6ccacc
+- label:黄 河:1d17e603e785: lake:Juye Ze:8dfb5a5c82d8, river:Huang:3bc797712c20, river:Huang:578a13a5f4d1, river:Huang:754a2dd8dceb, river:Huang:759cbe42747f, river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Huang:995ee3b69851, river:Huang:b97bb865b483, river:Huang:ca478d73b103, river:Huang:f0981e7773ba, river:Ji:e48052811063
+- label:济 水:cd85cc02ed1b: river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Ji:e48052811063
+- label:大清河:7870606d59b1: river:Huang:84327c8013cf, river:Huang:8ce628579d2b, river:Ji:e48052811063
+- label:洪泽:abe4d8ce8a0c: lake:Gaoyou Hu:b9a32be9d10a, lake:Hongze Hu:68aaac829a28, river:Feihuang:411c124f166e, river:Huai:09946cb0fddb, river:Huai:9160decb9731, river:Huai:c45450a9f014, river:Huang:f0981e7773ba, river:Si:008c5794bb47
+- label:巨野泽:c26d59ce785f: lake:Juye Ze:8dfb5a5c82d8, river:Huang:84327c8013cf, river:Ji:e48052811063
 
 ## Interval semantics
 

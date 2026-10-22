@@ -1,0 +1,72 @@
+{
+  "type": "FeatureCollection",
+  "meta": {
+    "schema_version": "0.1.0",
+    "dataset_id": "synthetic-contract-fixture",
+    "dataset_revision": "1",
+    "region": "cn",
+    "stage": "draft",
+    "synthetic": true,
+    "description": "synthetic test geometry, not historical"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "fixture-line",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            100,
+            30
+          ],
+          [
+            105,
+            35
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "river_course",
+        "waterbody_id": 4,
+        "segment_id": "fixture-segment-line",
+        "interpretation_id": "fixture-interpretation-line",
+        "valid": {
+          "from": 1938,
+          "to": 1947,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known"
+        },
+        "original_dating": "synthetic fixture date",
+        "evidence_mode": "schematic",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": null,
+          "reason": "synthetic fixture has no quantified dating estimate"
+        },
+        "spatial_error": {
+          "meters": null,
+          "reason": "synthetic fixture has no quantified spatial estimate"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "cleared",
+        "claims": [
+          {
+            "claim_id": "fixture-claim-line",
+            "source_id": "fixture-source",
+            "supports": [
+              "geometry",
+              "dating"
+            ],
+            "locator": "synthetic fixture locator"
+          }
+        ],
+        "supersedes": [
+          "river:Huang:8ce628579d2b"
+        ]
+      }
+    }
+  ]
+}
