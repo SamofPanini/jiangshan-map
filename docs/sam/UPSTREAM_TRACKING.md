@@ -1,7 +1,7 @@
 # 江山时序｜Upstream Intake / Selective Sync Register
 > 初始审计日期：2026-10-22 JST；状态：**人工 review 规范，非已启动的监控/自动 merge**。
 > 上游：[DeanChensj/jiangshan-map](https://github.com/DeanChensj/jiangshan-map)；Fork：[SamofPanini/jiangshan-map](https://github.com/SamofPanini/jiangshan-map)。
-> 本地扩展计划：[HISTORICAL_GIS_EXTENSION_PLAN.md](./HISTORICAL_GIS_EXTENSION_PLAN.md)。
+> 路线图正典：[ROADMAP.md](./ROADMAP.md)（2026-10-23 起；旧计划 [HISTORICAL_GIS_EXTENSION_PLAN.md](./HISTORICAL_GIS_EXTENSION_PLAN.md) 仅作背景）。
 
 ## A. Frozen baseline（严格区分历史基线与现况）
 - 本 fork 创建后首次核验时 upstream/main 与 fork/main 完全一致：`a9cd67c3c4c5eef5902d31104df9b5a7ec83aa0e`，ahead/behind = 0/0（**仅指 2026-10-22 首次核验时刻**）。

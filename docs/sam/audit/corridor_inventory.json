@@ -1,0 +1,488 @@
+{
+  "meta": {
+    "generated_by": "scripts/sam/hydro_inventory.js",
+    "git_head": "46230baf5d47ac8e77afaf6a94449adc698445c7",
+    "inputs": {
+      "geo": {
+        "path": "js/china_geo_data.js",
+        "sha256": "fbf152b521745917aff59c4d61c4f7e6ef8b80402125977c6023799844476de4"
+      },
+      "map": {
+        "path": "js/map_data.js",
+        "sha256": "8fd8cb0fabb6bd201b535867307c3f49a287fb4b1e26393fdf9b8f181fee3684"
+      }
+    },
+    "counts": {
+      "rivers": 187,
+      "lakes": 62,
+      "labels": 41,
+      "corridors": 16
+    }
+  },
+  "entries": [
+    {
+      "key": "wall_zhanguo",
+      "kind": "wall",
+      "title": "战国长城（秦·赵·燕北长城）",
+      "span": [
+        -300,
+        -215
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 3,
+      "point_count": 18,
+      "bbox": [
+        103.9,
+        35.4,
+        123.6,
+        42.2
+      ],
+      "fp": "0aef9e44c93d",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "wall_qin",
+      "kind": "wall",
+      "title": "秦长城",
+      "span": [
+        -214,
+        -122
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 22,
+      "bbox": [
+        103.9,
+        35.4,
+        125.3,
+        42.3
+      ],
+      "fp": "0c13546f01eb",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "wall_han",
+      "kind": "wall",
+      "title": "汉长城",
+      "span": [
+        -121,
+        220
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 22,
+      "bbox": [
+        103.9,
+        35.4,
+        125.3,
+        42.3
+      ],
+      "fp": "f55a10913dda",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "wall_han_hexi",
+      "kind": "wall",
+      "title": "汉长城（河西段）",
+      "span": [
+        -111,
+        220
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 14,
+      "bbox": [
+        90.8,
+        35.4,
+        103.9,
+        40.7
+      ],
+      "fp": "2f3b1f58c358",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "wall_ming",
+      "kind": "wall",
+      "title": "明长城",
+      "span": [
+        1368,
+        9999
+      ],
+      "span_semantics": "closed",
+      "open_end": true,
+      "segment_count": 1,
+      "point_count": 27,
+      "bbox": [
+        98.2,
+        37.2,
+        119.8,
+        41.1
+      ],
+      "fp": "5d80a828aed1",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "wall_ming_liaodong",
+      "kind": "wall",
+      "title": "辽东边墙",
+      "span": [
+        1442,
+        1644
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 10,
+      "bbox": [
+        119.8,
+        40,
+        124.6,
+        42.6
+      ],
+      "fp": "aaacb89553f5",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "zhidao",
+      "kind": "road",
+      "title": "秦直道",
+      "span": [
+        -212,
+        220
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 9,
+      "bbox": [
+        108.6,
+        34.5,
+        109.9,
+        40.5
+      ],
+      "fp": "a3be5224d5a5",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "silk_hexi",
+      "kind": "road",
+      "title": "丝绸之路·河西道",
+      "span": [
+        -121,
+        1400
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 16,
+      "bbox": [
+        93.9,
+        34.34,
+        108.94,
+        40.5
+      ],
+      "fp": "f7b814ddd635",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "silk_north",
+      "kind": "road",
+      "title": "丝绸之路·天山南路",
+      "span": [
+        -60,
+        1400
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 18,
+      "bbox": [
+        67,
+        39.47,
+        93.9,
+        43.1
+      ],
+      "fp": "fb4fa042cf4f",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "silk_south",
+      "kind": "road",
+      "title": "丝绸之路·昆仑北路",
+      "span": [
+        -100,
+        1000
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 13,
+      "bbox": [
+        75.98,
+        37.11,
+        93.9,
+        40.5
+      ],
+      "fp": "37277f985a80",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "canal_tongji",
+      "kind": "canal",
+      "title": "隋唐大运河·通济渠",
+      "span": [
+        605,
+        1292
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 10,
+      "bbox": [
+        112.45,
+        33.1,
+        119.02,
+        34.85
+      ],
+      "fp": "ca99a6ddad33",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "canal_hangou",
+      "kind": "canal",
+      "title": "邗沟 · 江南河",
+      "span": [
+        605,
+        1292
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 9,
+      "bbox": [
+        119.02,
+        30.27,
+        120.75,
+        33.6
+      ],
+      "fp": "8b8e01919bcf",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "canal_yongji",
+      "kind": "canal",
+      "title": "隋唐大运河·永济渠",
+      "span": [
+        608,
+        1292
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 11,
+      "bbox": [
+        113.4,
+        34.9,
+        117.2,
+        39.9
+      ],
+      "fp": "44b77d7e3339",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "canal_jinghang",
+      "kind": "canal",
+      "title": "京杭大运河",
+      "span": [
+        1293,
+        9999
+      ],
+      "span_semantics": "closed",
+      "open_end": true,
+      "segment_count": 1,
+      "point_count": 18,
+      "bbox": [
+        115.7,
+        30.27,
+        120.75,
+        39.9
+      ],
+      "fp": "00a4be24967e",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "sea_silk",
+      "kind": "sea",
+      "title": "海上丝绸之路",
+      "span": [
+        618,
+        1433
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 14,
+      "bbox": [
+        102.25,
+        2.2,
+        118.6,
+        24.9
+      ],
+      "fp": "b6aac2fc241c",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    },
+    {
+      "key": "zhenghe",
+      "kind": "sea",
+      "title": "郑和下西洋航线",
+      "span": [
+        1405,
+        1433
+      ],
+      "span_semantics": "closed",
+      "open_end": false,
+      "segment_count": 1,
+      "point_count": 20,
+      "bbox": [
+        102.25,
+        2.2,
+        122,
+        32.1
+      ],
+      "fp": "8134ae8f52f8",
+      "fields": [
+        "key",
+        "kind",
+        "labelAt",
+        "segments",
+        "span",
+        "summary",
+        "title"
+      ]
+    }
+  ]
+}

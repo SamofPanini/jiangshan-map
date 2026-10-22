@@ -1,4 +1,5 @@
 # 江山时序｜历史 GIS 扩展研究与实现路线图
+> **2026-10-23 起，路线图正典改为 [ROADMAP.md](./ROADMAP.md)。** 本文件 §3（阶段规划）与 §4（契约草案）已被取代，仅作历史记录；§1 基线、§2 研究立场、§5 资料线索、§6 禁止事项仍可作背景参考，冲突时以 ROADMAP 为准。
 > Sam fork 的非侵入式研究文档。建立：2026-10-22；基于 upstream main `a9cd67c3c4c5eef5902d31104df9b5a7ec83aa0e`。**本文件是计划，非功能已实现声明。**
 > 上游：https://github.com/DeanChensj/jiangshan-map ；Fork：https://github.com/SamofPanini/jiangshan-map
 > 同步治理见 [UPSTREAM_TRACKING.md](./UPSTREAM_TRACKING.md)。

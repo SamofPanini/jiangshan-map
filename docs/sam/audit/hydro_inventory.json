@@ -1,0 +1,5565 @@
+{
+  "meta": {
+    "generated_by": "scripts/sam/hydro_inventory.js",
+    "git_head": "46230baf5d47ac8e77afaf6a94449adc698445c7",
+    "inputs": {
+      "geo": {
+        "path": "js/china_geo_data.js",
+        "sha256": "fbf152b521745917aff59c4d61c4f7e6ef8b80402125977c6023799844476de4"
+      },
+      "map": {
+        "path": "js/map_data.js",
+        "sha256": "8fd8cb0fabb6bd201b535867307c3f49a287fb4b1e26393fdf9b8f181fee3684"
+      }
+    },
+    "counts": {
+      "rivers": 187,
+      "lakes": 62,
+      "labels": 41,
+      "corridors": 16
+    }
+  },
+  "entries": [
+    {
+      "kind": "river",
+      "index": 0,
+      "name": "Irrawaddy Delta",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 5,
+      "point_count": 33,
+      "bbox": [
+        94.63,
+        16,
+        96.17,
+        17.91
+      ],
+      "fp": "4963f426abfc",
+      "legacy_id": "river:Irrawaddy Delta:4963f426abfc"
+    },
+    {
+      "kind": "river",
+      "index": 1,
+      "name": "Shishhid Gol",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 2,
+      "bbox": [
+        99.3,
+        51.35,
+        99.43,
+        51.41
+      ],
+      "fp": "1eaebf732312",
+      "legacy_id": "river:Shishhid Gol:1eaebf732312"
+    },
+    {
+      "kind": "river",
+      "index": 2,
+      "name": "Shishhid Gol",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 13,
+      "bbox": [
+        97.97,
+        50.52,
+        99.51,
+        51.5
+      ],
+      "fp": "27f1696ab1b9",
+      "legacy_id": "river:Shishhid Gol:27f1696ab1b9"
+    },
+    {
+      "kind": "river",
+      "index": 3,
+      "name": "Ob",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        81.28,
+        53.84,
+        83.03,
+        54.85
+      ],
+      "fp": "b418d2ca2c63",
+      "legacy_id": "river:Ob:b418d2ca2c63"
+    },
+    {
+      "kind": "river",
+      "index": 4,
+      "name": "Ob",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 94,
+      "bbox": [
+        68.86,
+        52.3,
+        85.06,
+        61.3
+      ],
+      "fp": "4bd99c59e889",
+      "legacy_id": "river:Ob:4bd99c59e889"
+    },
+    {
+      "kind": "river",
+      "index": 5,
+      "name": "Tuotuo",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        90.79,
+        34.05,
+        92.99,
+        34.3
+      ],
+      "fp": "7382b8ec9705",
+      "legacy_id": "river:Tuotuo:7382b8ec9705"
+    },
+    {
+      "kind": "river",
+      "index": 6,
+      "name": "Nmai",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 11,
+      "bbox": [
+        97.42,
+        25.51,
+        98.36,
+        28.42
+      ],
+      "fp": "55e441b1a154",
+      "legacy_id": "river:Nmai:55e441b1a154"
+    },
+    {
+      "kind": "river",
+      "index": 7,
+      "name": "Nanpan",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 28,
+      "bbox": [
+        102.98,
+        23.66,
+        106.88,
+        25.88
+      ],
+      "fp": "47dd65fc4667",
+      "legacy_id": "river:Nanpan:47dd65fc4667"
+    },
+    {
+      "kind": "river",
+      "index": 8,
+      "name": "Lena",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 69,
+      "bbox": [
+        104.61,
+        53.34,
+        120.65,
+        60.72
+      ],
+      "fp": "af93aeea675a",
+      "legacy_id": "river:Lena:af93aeea675a"
+    },
+    {
+      "kind": "river",
+      "index": 9,
+      "name": "Kyzyl-Khem",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 4,
+      "bbox": [
+        95.75,
+        51.27,
+        98,
+        51.51
+      ],
+      "fp": "9983d76a5fc4",
+      "legacy_id": "river:Kyzyl-Khem:9983d76a5fc4"
+    },
+    {
+      "kind": "river",
+      "index": 10,
+      "name": "Nu",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 21,
+      "bbox": [
+        91.52,
+        30.3,
+        96.59,
+        31.94
+      ],
+      "fp": "62007376b462",
+      "legacy_id": "river:Nu:62007376b462"
+    },
+    {
+      "kind": "river",
+      "index": 11,
+      "name": "Ayeyarwady",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 43,
+      "bbox": [
+        94.53,
+        15.86,
+        97.53,
+        25.7
+      ],
+      "fp": "20489632a766",
+      "legacy_id": "river:Ayeyarwady:20489632a766"
+    },
+    {
+      "kind": "river",
+      "index": 12,
+      "name": "Tongtian",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 27,
+      "bbox": [
+        92.99,
+        31.5,
+        98.53,
+        34.76
+      ],
+      "fp": "812454b34a4b",
+      "legacy_id": "river:Tongtian:812454b34a4b"
+    },
+    {
+      "kind": "river",
+      "index": 13,
+      "name": "Malyy Yenisey",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 3,
+      "bbox": [
+        94.44,
+        51.29,
+        95.78,
+        51.73
+      ],
+      "fp": "39fc64b83ada",
+      "legacy_id": "river:Malyy Yenisey:39fc64b83ada"
+    },
+    {
+      "kind": "river",
+      "index": 14,
+      "name": "Verkhniy Yenisey",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 9,
+      "bbox": [
+        90.9,
+        53.74,
+        92.38,
+        55.5
+      ],
+      "fp": "e10518478686",
+      "legacy_id": "river:Verkhniy Yenisey:e10518478686"
+    },
+    {
+      "kind": "river",
+      "index": 15,
+      "name": "Verkhniy Yenisey",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 37,
+      "bbox": [
+        91.23,
+        51.55,
+        94.46,
+        58.1
+      ],
+      "fp": "fc0ebc8bd55c",
+      "legacy_id": "river:Verkhniy Yenisey:fc0ebc8bd55c"
+    },
+    {
+      "kind": "river",
+      "index": 16,
+      "name": "Nu",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 35,
+      "bbox": [
+        96.6,
+        20.61,
+        99.1,
+        30.45
+      ],
+      "fp": "125b19a7a9e9",
+      "legacy_id": "river:Nu:125b19a7a9e9"
+    },
+    {
+      "kind": "river",
+      "index": 17,
+      "name": "Hongshui",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 20,
+      "bbox": [
+        106.97,
+        23.52,
+        109.51,
+        25.24
+      ],
+      "fp": "3719f67ab76e",
+      "legacy_id": "river:Hongshui:3719f67ab76e"
+    },
+    {
+      "kind": "river",
+      "index": 18,
+      "name": "Quan",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 3,
+      "bbox": [
+        109.53,
+        23.38,
+        110.09,
+        23.8
+      ],
+      "fp": "b5be8120560a",
+      "legacy_id": "river:Quan:b5be8120560a"
+    },
+    {
+      "kind": "river",
+      "index": 19,
+      "name": "Xun",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        110.09,
+        23.35,
+        111.3,
+        23.59
+      ],
+      "fp": "a902648aa953",
+      "legacy_id": "river:Xun:a902648aa953"
+    },
+    {
+      "kind": "river",
+      "index": 20,
+      "name": "Salween",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 18,
+      "bbox": [
+        97.27,
+        16.39,
+        98.69,
+        20.95
+      ],
+      "fp": "793d611e7ae0",
+      "legacy_id": "river:Salween:793d611e7ae0"
+    },
+    {
+      "kind": "river",
+      "index": 21,
+      "name": "Jinsha",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 54,
+      "bbox": [
+        98.54,
+        25.87,
+        103.81,
+        31.69
+      ],
+      "fp": "a961a32e8dee",
+      "legacy_id": "river:Jinsha:a961a32e8dee"
+    },
+    {
+      "kind": "river",
+      "index": 22,
+      "name": "Syr  Darya",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 6,
+      "bbox": [
+        67.94,
+        40.25,
+        70.35,
+        41.25
+      ],
+      "fp": "49b83cbc72a9",
+      "legacy_id": "river:Syr  Darya:49b83cbc72a9"
+    },
+    {
+      "kind": "river",
+      "index": 23,
+      "name": "Syr  Darya",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 57,
+      "bbox": [
+        61.31,
+        40.2,
+        69.83,
+        45.96
+      ],
+      "fp": "d85dbc5f8318",
+      "legacy_id": "river:Syr  Darya:d85dbc5f8318"
+    },
+    {
+      "kind": "river",
+      "index": 24,
+      "name": "Naryn",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 3,
+      "bbox": [
+        72.63,
+        41.66,
+        73.3,
+        41.79
+      ],
+      "fp": "e0c37bb6e0fd",
+      "legacy_id": "river:Naryn:e0c37bb6e0fd"
+    },
+    {
+      "kind": "river",
+      "index": 25,
+      "name": "Naryn",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 19,
+      "bbox": [
+        70.29,
+        40.37,
+        78.06,
+        41.88
+      ],
+      "fp": "a8d1ef2527cb",
+      "legacy_id": "river:Naryn:a8d1ef2527cb"
+    },
+    {
+      "kind": "river",
+      "index": 26,
+      "name": "Godävari",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 44,
+      "bbox": [
+        73.65,
+        16.02,
+        82.34,
+        20.04
+      ],
+      "fp": "08598e74b948",
+      "legacy_id": "river:Godävari:08598e74b948"
+    },
+    {
+      "kind": "river",
+      "index": 27,
+      "name": "Tobol",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 55,
+      "bbox": [
+        60.91,
+        51.41,
+        68.06,
+        58.15
+      ],
+      "fp": "aa7c11d6bfbe",
+      "legacy_id": "river:Tobol:aa7c11d6bfbe"
+    },
+    {
+      "kind": "river",
+      "index": 28,
+      "name": "Pamir",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 4,
+      "bbox": [
+        72.63,
+        37.01,
+        73.6,
+        37.46
+      ],
+      "fp": "3e4c17946227",
+      "legacy_id": "river:Pamir:3e4c17946227"
+    },
+    {
+      "kind": "river",
+      "index": 29,
+      "name": "Chang Jiang",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 45,
+      "bbox": [
+        103.85,
+        28.63,
+        113.12,
+        31.02
+      ],
+      "fp": "a875e9ce3f47",
+      "legacy_id": "river:Chang Jiang:a875e9ce3f47"
+    },
+    {
+      "kind": "river",
+      "index": 30,
+      "name": "Panj",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 27,
+      "bbox": [
+        68,
+        36.67,
+        72.66,
+        38.45
+      ],
+      "fp": "ed396b655adb",
+      "legacy_id": "river:Panj:ed396b655adb"
+    },
+    {
+      "kind": "river",
+      "index": 31,
+      "name": "Amu  Darya",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 38,
+      "bbox": [
+        58.72,
+        36.92,
+        68.21,
+        44.11
+      ],
+      "fp": "9036a6bff3e0",
+      "legacy_id": "river:Amu  Darya:9036a6bff3e0"
+    },
+    {
+      "kind": "river",
+      "index": 32,
+      "name": "Yangtze",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 35,
+      "bbox": [
+        113.13,
+        29.46,
+        119.61,
+        32.2
+      ],
+      "fp": "2cc45c86c0de",
+      "legacy_id": "river:Yangtze:2cc45c86c0de"
+    },
+    {
+      "kind": "river",
+      "index": 33,
+      "name": "Ishikari",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        141.29,
+        43.08,
+        143.07,
+        43.9
+      ],
+      "fp": "5fc7b9d26f1f",
+      "legacy_id": "river:Ishikari:5fc7b9d26f1f"
+    },
+    {
+      "kind": "river",
+      "index": 34,
+      "name": "Yarkant",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 28,
+      "bbox": [
+        75.83,
+        35.52,
+        80.78,
+        40.45
+      ],
+      "fp": "8b512c917a0b",
+      "legacy_id": "river:Yarkant:8b512c917a0b"
+    },
+    {
+      "kind": "river",
+      "index": 35,
+      "name": "Liao",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 16,
+      "bbox": [
+        122.02,
+        40.56,
+        123.87,
+        43.48
+      ],
+      "fp": "93e4abae6aa9",
+      "legacy_id": "river:Liao:93e4abae6aa9"
+    },
+    {
+      "kind": "river",
+      "index": 36,
+      "name": "Yuan",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 6,
+      "bbox": [
+        111.96,
+        28.8,
+        113.07,
+        29.39
+      ],
+      "fp": "a109ba8b4cb0",
+      "legacy_id": "river:Yuan:a109ba8b4cb0"
+    },
+    {
+      "kind": "river",
+      "index": 37,
+      "name": "Yuan",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 38,
+      "bbox": [
+        107.5,
+        26.14,
+        113.13,
+        29.46
+      ],
+      "fp": "871efe048b3d",
+      "legacy_id": "river:Yuan:871efe048b3d"
+    },
+    {
+      "kind": "river",
+      "index": 38,
+      "name": "Sutlej",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 5,
+      "bbox": [
+        76.42,
+        30.79,
+        81.29,
+        31.41
+      ],
+      "fp": "7b0672be71b1",
+      "legacy_id": "river:Sutlej:7b0672be71b1"
+    },
+    {
+      "kind": "river",
+      "index": 39,
+      "name": "Sutlej",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 37,
+      "bbox": [
+        70.86,
+        29.23,
+        81.38,
+        31.83
+      ],
+      "fp": "c666c5f1858e",
+      "legacy_id": "river:Sutlej:c666c5f1858e"
+    },
+    {
+      "kind": "river",
+      "index": 40,
+      "name": "Biya",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 3,
+      "bbox": [
+        87.37,
+        51.36,
+        87.76,
+        51.76
+      ],
+      "fp": "33387f3ffd6c",
+      "legacy_id": "river:Biya:33387f3ffd6c"
+    },
+    {
+      "kind": "river",
+      "index": 41,
+      "name": "Biya",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 11,
+      "bbox": [
+        84.97,
+        51.76,
+        87.39,
+        52.64
+      ],
+      "fp": "9e1a7be0ed6e",
+      "legacy_id": "river:Biya:9e1a7be0ed6e"
+    },
+    {
+      "kind": "river",
+      "index": 42,
+      "name": "Ideriyn",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        97.39,
+        48,
+        100.69,
+        49.24
+      ],
+      "fp": "1bc1b90ad2ac",
+      "legacy_id": "river:Ideriyn:1bc1b90ad2ac"
+    },
+    {
+      "kind": "river",
+      "index": 43,
+      "name": "Han",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 2,
+      "bbox": [
+        110.99,
+        32.57,
+        111.48,
+        32.74
+      ],
+      "fp": "bc9a8ef39278",
+      "legacy_id": "river:Han:bc9a8ef39278"
+    },
+    {
+      "kind": "river",
+      "index": 44,
+      "name": "Han",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 53,
+      "bbox": [
+        106.4,
+        30.21,
+        114.24,
+        33.22
+      ],
+      "fp": "d279761feac9",
+      "legacy_id": "river:Han:d279761feac9"
+    },
+    {
+      "kind": "river",
+      "index": 45,
+      "name": "Mahäna Nadï",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        83.26,
+        21.52,
+        83.86,
+        21.74
+      ],
+      "fp": "8f8a288cbf5f",
+      "legacy_id": "river:Mahäna Nadï:8f8a288cbf5f"
+    },
+    {
+      "kind": "river",
+      "index": 46,
+      "name": "Mahäna Nadï",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 20,
+      "bbox": [
+        80.63,
+        20.08,
+        86.15,
+        21.88
+      ],
+      "fp": "cd683f8670c4",
+      "legacy_id": "river:Mahäna Nadï:cd683f8670c4"
+    },
+    {
+      "kind": "river",
+      "index": 47,
+      "name": "Gan",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 2,
+      "bbox": [
+        115.98,
+        29.28,
+        116.2,
+        29.75
+      ],
+      "fp": "07f531d31b51",
+      "legacy_id": "river:Gan:07f531d31b51"
+    },
+    {
+      "kind": "river",
+      "index": 48,
+      "name": "Gan",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 21,
+      "bbox": [
+        114.41,
+        24.71,
+        115.95,
+        29.28
+      ],
+      "fp": "be2ee4be8504",
+      "legacy_id": "river:Gan:be2ee4be8504"
+    },
+    {
+      "kind": "river",
+      "index": 49,
+      "name": "Krishna",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 4,
+      "bbox": [
+        79,
+        16.23,
+        79.31,
+        16.58
+      ],
+      "fp": "dc4fe67c8a77",
+      "legacy_id": "river:Krishna:dc4fe67c8a77"
+    },
+    {
+      "kind": "river",
+      "index": 50,
+      "name": "Krishna",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 31,
+      "bbox": [
+        73.8,
+        15.8,
+        80.88,
+        17.99
+      ],
+      "fp": "19763a4a585f",
+      "legacy_id": "river:Krishna:19763a4a585f"
+    },
+    {
+      "kind": "river",
+      "index": 51,
+      "name": "Selenga",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 4,
+      "point_count": 31,
+      "bbox": [
+        100.7,
+        49.26,
+        107.55,
+        52.38
+      ],
+      "fp": "717fb5767ec2",
+      "legacy_id": "river:Selenga:717fb5767ec2"
+    },
+    {
+      "kind": "river",
+      "index": 52,
+      "name": "Angara",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 22,
+      "bbox": [
+        101.67,
+        51.77,
+        106.5,
+        56.28
+      ],
+      "fp": "3ac27415b46f",
+      "legacy_id": "river:Angara:3ac27415b46f"
+    },
+    {
+      "kind": "river",
+      "index": 53,
+      "name": "Angara",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 9,
+      "bbox": [
+        103.29,
+        51.87,
+        104.87,
+        53.11
+      ],
+      "fp": "9d61d1e60636",
+      "legacy_id": "river:Angara:9d61d1e60636"
+    },
+    {
+      "kind": "river",
+      "index": 54,
+      "name": "Ertis",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        83.36,
+        47.64,
+        84.33,
+        49.64
+      ],
+      "fp": "0ba83114b9cc",
+      "legacy_id": "river:Ertis:0ba83114b9cc"
+    },
+    {
+      "kind": "river",
+      "index": 55,
+      "name": "Ertis",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 4,
+      "point_count": 45,
+      "bbox": [
+        74.78,
+        47.71,
+        85.27,
+        53.99
+      ],
+      "fp": "499e04087f6a",
+      "legacy_id": "river:Ertis:499e04087f6a"
+    },
+    {
+      "kind": "river",
+      "index": 56,
+      "name": "Helmand",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 25,
+      "bbox": [
+        61.6,
+        30.14,
+        68.49,
+        34.57
+      ],
+      "fp": "d5a1ad7454ec",
+      "legacy_id": "river:Helmand:d5a1ad7454ec"
+    },
+    {
+      "kind": "river",
+      "index": 57,
+      "name": "Hong",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 21,
+      "bbox": [
+        99.98,
+        20.3,
+        106.5,
+        25.41
+      ],
+      "fp": "c5645da7e66e",
+      "legacy_id": "river:Hong:c5645da7e66e"
+    },
+    {
+      "kind": "river",
+      "index": 58,
+      "name": "Yamuna",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 56,
+      "bbox": [
+        77,
+        24.96,
+        81.83,
+        30.92
+      ],
+      "fp": "7750510f09f9",
+      "legacy_id": "river:Yamuna:7750510f09f9"
+    },
+    {
+      "kind": "river",
+      "index": 59,
+      "name": "Narmada",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 33,
+      "bbox": [
+        72.83,
+        21.57,
+        81.57,
+        23.1
+      ],
+      "fp": "a1461aa59583",
+      "legacy_id": "river:Narmada:a1461aa59583"
+    },
+    {
+      "kind": "river",
+      "index": 60,
+      "name": "Dadu",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 29,
+      "bbox": [
+        100.07,
+        29,
+        103.68,
+        33.01
+      ],
+      "fp": "8bb013b0dbb2",
+      "legacy_id": "river:Dadu:8bb013b0dbb2"
+    },
+    {
+      "kind": "river",
+      "index": 61,
+      "name": "Ertix",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 11,
+      "bbox": [
+        85.17,
+        46.95,
+        90.33,
+        47.95
+      ],
+      "fp": "1f28b7dc3156",
+      "legacy_id": "river:Ertix:1f28b7dc3156"
+    },
+    {
+      "kind": "river",
+      "index": 62,
+      "name": "Xar Moron",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        117.21,
+        42.59,
+        120.76,
+        43.41
+      ],
+      "fp": "c02893db90eb",
+      "legacy_id": "river:Xar Moron:c02893db90eb"
+    },
+    {
+      "kind": "river",
+      "index": 63,
+      "name": "Chenab",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 27,
+      "bbox": [
+        70.58,
+        28.97,
+        77.44,
+        33.38
+      ],
+      "fp": "ae0b78fc684c",
+      "legacy_id": "river:Chenab:ae0b78fc684c"
+    },
+    {
+      "kind": "river",
+      "index": 64,
+      "name": "Tom’",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 38,
+      "bbox": [
+        84.17,
+        53.39,
+        89.77,
+        56.85
+      ],
+      "fp": "26c127d2a5ae",
+      "legacy_id": "river:Tom’:26c127d2a5ae"
+    },
+    {
+      "kind": "river",
+      "index": 65,
+      "name": "Maquan",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 14,
+      "bbox": [
+        82.4,
+        29.02,
+        87.66,
+        30.41
+      ],
+      "fp": "81ee97dbabe2",
+      "legacy_id": "river:Maquan:81ee97dbabe2"
+    },
+    {
+      "kind": "river",
+      "index": 66,
+      "name": "Chulyshman",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        87.67,
+        50.5,
+        89.66,
+        51.35
+      ],
+      "fp": "63aafbabf301",
+      "legacy_id": "river:Chulyshman:63aafbabf301"
+    },
+    {
+      "kind": "river",
+      "index": 67,
+      "name": "Konqi",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 9,
+      "bbox": [
+        86.29,
+        40.63,
+        89.39,
+        41.33
+      ],
+      "fp": "dacf628c125b",
+      "legacy_id": "river:Konqi:dacf628c125b"
+    },
+    {
+      "kind": "river",
+      "index": 68,
+      "name": "Tarim",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 23,
+      "bbox": [
+        80.89,
+        40.47,
+        86.72,
+        41.79
+      ],
+      "fp": "04a8ac2ba1f8",
+      "legacy_id": "river:Tarim:04a8ac2ba1f8"
+    },
+    {
+      "kind": "river",
+      "index": 69,
+      "name": "Za",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 13,
+      "bbox": [
+        94.08,
+        31.87,
+        96.94,
+        33.22
+      ],
+      "fp": "877077fccdd8",
+      "legacy_id": "river:Za:877077fccdd8"
+    },
+    {
+      "kind": "river",
+      "index": 70,
+      "name": "Xiliao",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        120.76,
+        43.42,
+        123.55,
+        43.81
+      ],
+      "fp": "83b3f4347c15",
+      "legacy_id": "river:Xiliao:83b3f4347c15"
+    },
+    {
+      "kind": "river",
+      "index": 71,
+      "name": "Songhua",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 31,
+      "bbox": [
+        124.67,
+        45.36,
+        132.52,
+        47.71
+      ],
+      "fp": "6afe3e1a6c9a",
+      "legacy_id": "river:Songhua:6afe3e1a6c9a"
+    },
+    {
+      "kind": "river",
+      "index": 72,
+      "name": "Min",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        103.72,
+        28.74,
+        104.6,
+        29.56
+      ],
+      "fp": "60d1a0e76825",
+      "legacy_id": "river:Min:60d1a0e76825"
+    },
+    {
+      "kind": "river",
+      "index": 73,
+      "name": "Jhelum",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 4,
+      "bbox": [
+        73.6,
+        33.13,
+        74.59,
+        34.38
+      ],
+      "fp": "5f04462f8deb",
+      "legacy_id": "river:Jhelum:5f04462f8deb"
+    },
+    {
+      "kind": "river",
+      "index": 74,
+      "name": "Jhelum",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 17,
+      "bbox": [
+        72.09,
+        31.12,
+        75.37,
+        34.38
+      ],
+      "fp": "dbf9f4475214",
+      "legacy_id": "river:Jhelum:dbf9f4475214"
+    },
+    {
+      "kind": "river",
+      "index": 75,
+      "name": "Chulym",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 48,
+      "bbox": [
+        84.76,
+        53.98,
+        91.6,
+        57.76
+      ],
+      "fp": "8eb010559823",
+      "legacy_id": "river:Chulym:8eb010559823"
+    },
+    {
+      "kind": "river",
+      "index": 76,
+      "name": "Vitim",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 61,
+      "bbox": [
+        111.32,
+        53.14,
+        116.88,
+        59.27
+      ],
+      "fp": "bf9dba39900c",
+      "legacy_id": "river:Vitim:bf9dba39900c"
+    },
+    {
+      "kind": "river",
+      "index": 77,
+      "name": "Fuchun",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 2,
+      "bbox": [
+        118.71,
+        29.5,
+        119.2,
+        29.73
+      ],
+      "fp": "3ba4441a82e4",
+      "legacy_id": "river:Fuchun:3ba4441a82e4"
+    },
+    {
+      "kind": "river",
+      "index": 78,
+      "name": "Fuchun",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 12,
+      "bbox": [
+        117.79,
+        29.5,
+        120.15,
+        30.2
+      ],
+      "fp": "f0a7e4e787d4",
+      "legacy_id": "river:Fuchun:f0a7e4e787d4"
+    },
+    {
+      "kind": "river",
+      "index": 79,
+      "name": "Mae Klong",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        99.03,
+        14.37,
+        99.14,
+        15.04
+      ],
+      "fp": "26941f50c827",
+      "legacy_id": "river:Mae Klong:26941f50c827"
+    },
+    {
+      "kind": "river",
+      "index": 80,
+      "name": "Mae Klong",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 10,
+      "bbox": [
+        98.8,
+        13.33,
+        99.99,
+        16.18
+      ],
+      "fp": "65f586577813",
+      "legacy_id": "river:Mae Klong:65f586577813"
+    },
+    {
+      "kind": "river",
+      "index": 81,
+      "name": "Yom",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 3,
+      "bbox": [
+        100.46,
+        17.76,
+        100.61,
+        18.04
+      ],
+      "fp": "fcad9252805b",
+      "legacy_id": "river:Yom:fcad9252805b"
+    },
+    {
+      "kind": "river",
+      "index": 82,
+      "name": "Yom",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 17,
+      "bbox": [
+        100.04,
+        15.62,
+        101.18,
+        19.55
+      ],
+      "fp": "7264df4b0e52",
+      "legacy_id": "river:Yom:7264df4b0e52"
+    },
+    {
+      "kind": "river",
+      "index": 83,
+      "name": "Chambal",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 7,
+      "bbox": [
+        75.34,
+        24.22,
+        75.59,
+        24.92
+      ],
+      "fp": "f112967e8fbd",
+      "legacy_id": "river:Chambal:f112967e8fbd"
+    },
+    {
+      "kind": "river",
+      "index": 84,
+      "name": "Chambal",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 27,
+      "bbox": [
+        75.22,
+        22.47,
+        79.24,
+        26.85
+      ],
+      "fp": "1ba4d52410f8",
+      "legacy_id": "river:Chambal:1ba4d52410f8"
+    },
+    {
+      "kind": "river",
+      "index": 85,
+      "name": "Zeya",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        127.32,
+        53.75,
+        129.23,
+        54.69
+      ],
+      "fp": "7b7c8aadda31",
+      "legacy_id": "river:Zeya:7b7c8aadda31"
+    },
+    {
+      "kind": "river",
+      "index": 86,
+      "name": "Zeya",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 31,
+      "bbox": [
+        126.91,
+        50.04,
+        130.68,
+        55.57
+      ],
+      "fp": "7c1766350109",
+      "legacy_id": "river:Zeya:7c1766350109"
+    },
+    {
+      "kind": "river",
+      "index": 87,
+      "name": "Lancang",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 64,
+      "bbox": [
+        96.94,
+        17.24,
+        102.08,
+        31.97
+      ],
+      "fp": "e13f44d73a7b",
+      "legacy_id": "river:Lancang:e13f44d73a7b"
+    },
+    {
+      "kind": "river",
+      "index": 88,
+      "name": "Huai",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 12,
+      "bbox": [
+        117.7,
+        32.72,
+        119.34,
+        33.24
+      ],
+      "fp": "9160decb9731",
+      "legacy_id": "river:Huai:9160decb9731"
+    },
+    {
+      "kind": "river",
+      "index": 89,
+      "name": "Huai",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 15,
+      "bbox": [
+        116.52,
+        32.35,
+        119.62,
+        33.1
+      ],
+      "fp": "c45450a9f014",
+      "legacy_id": "river:Huai:c45450a9f014"
+    },
+    {
+      "kind": "river",
+      "index": 90,
+      "name": "Ping",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 2,
+      "bbox": [
+        98.9,
+        17.23,
+        98.96,
+        17.39
+      ],
+      "fp": "939cb807c585",
+      "legacy_id": "river:Ping:939cb807c585"
+    },
+    {
+      "kind": "river",
+      "index": 91,
+      "name": "Ping",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 16,
+      "bbox": [
+        98.56,
+        15.67,
+        100.16,
+        19.78
+      ],
+      "fp": "1a540d289620",
+      "legacy_id": "river:Ping:1a540d289620"
+    },
+    {
+      "kind": "river",
+      "index": 92,
+      "name": "Ile",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 3,
+      "bbox": [
+        77.13,
+        43.81,
+        78.18,
+        43.91
+      ],
+      "fp": "a9bc2c662e44",
+      "legacy_id": "river:Ile:a9bc2c662e44"
+    },
+    {
+      "kind": "river",
+      "index": 93,
+      "name": "Ile",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 20,
+      "bbox": [
+        73.98,
+        43.62,
+        81.75,
+        45.42
+      ],
+      "fp": "21a135807c6f",
+      "legacy_id": "river:Ile:21a135807c6f"
+    },
+    {
+      "kind": "river",
+      "index": 94,
+      "name": "Sanggan",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 2,
+      "bbox": [
+        115.57,
+        40.23,
+        115.59,
+        40.3
+      ],
+      "fp": "bef5b394a1e4",
+      "legacy_id": "river:Sanggan:bef5b394a1e4"
+    },
+    {
+      "kind": "river",
+      "index": 95,
+      "name": "Sanggan",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 9,
+      "bbox": [
+        112.34,
+        39.17,
+        115.57,
+        40.36
+      ],
+      "fp": "8bf9d1561a5a",
+      "legacy_id": "river:Sanggan:8bf9d1561a5a"
+    },
+    {
+      "kind": "river",
+      "index": 96,
+      "name": "Wujia",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 4,
+      "bbox": [
+        108.7,
+        40.79,
+        108.86,
+        40.95
+      ],
+      "fp": "caa03cbab07f",
+      "legacy_id": "river:Wujia:caa03cbab07f"
+    },
+    {
+      "kind": "river",
+      "index": 97,
+      "name": "Wujia",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 16,
+      "point_count": 43,
+      "bbox": [
+        106.93,
+        40.31,
+        108.86,
+        41.27
+      ],
+      "fp": "5c1fb35375fc",
+      "legacy_id": "river:Wujia:5c1fb35375fc"
+    },
+    {
+      "kind": "river",
+      "index": 98,
+      "name": "Yarlung",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 18,
+      "bbox": [
+        87.66,
+        28.92,
+        94.36,
+        29.4
+      ],
+      "fp": "b7c0a95b1a72",
+      "legacy_id": "river:Yarlung:b7c0a95b1a72"
+    },
+    {
+      "kind": "river",
+      "index": 99,
+      "name": "Irtysh",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 56,
+      "bbox": [
+        67.9,
+        53.99,
+        74.99,
+        58.1
+      ],
+      "fp": "6aeff740c9fc",
+      "legacy_id": "river:Irtysh:6aeff740c9fc"
+    },
+    {
+      "kind": "river",
+      "index": 100,
+      "name": "Ghäghara",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 36,
+      "bbox": [
+        80.92,
+        25.44,
+        84.61,
+        30.55
+      ],
+      "fp": "a5526e7f0bfa",
+      "legacy_id": "river:Ghäghara:a5526e7f0bfa"
+    },
+    {
+      "kind": "river",
+      "index": 101,
+      "name": "Chindwin",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 34,
+      "bbox": [
+        94.14,
+        21.15,
+        97.05,
+        26.64
+      ],
+      "fp": "f7d14f1c60bd",
+      "legacy_id": "river:Chindwin:f7d14f1c60bd"
+    },
+    {
+      "kind": "river",
+      "index": 102,
+      "name": "Krong",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        107.32,
+        11.89,
+        108.12,
+        13.24
+      ],
+      "fp": "56e89e507b0f",
+      "legacy_id": "river:Krong:56e89e507b0f"
+    },
+    {
+      "kind": "river",
+      "index": 103,
+      "name": "Wu",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 33,
+      "bbox": [
+        104.59,
+        26.32,
+        108.49,
+        29.67
+      ],
+      "fp": "420a8847faca",
+      "legacy_id": "river:Wu:420a8847faca"
+    },
+    {
+      "kind": "river",
+      "index": 104,
+      "name": "Xiang",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 32,
+      "bbox": [
+        110.62,
+        25.49,
+        113.09,
+        29.08
+      ],
+      "fp": "c03f313ab026",
+      "legacy_id": "river:Xiang:c03f313ab026"
+    },
+    {
+      "kind": "river",
+      "index": 105,
+      "name": "Huai",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 14,
+      "bbox": [
+        113.72,
+        32.22,
+        116.52,
+        32.61
+      ],
+      "fp": "41ea7d48299a",
+      "legacy_id": "river:Huai:41ea7d48299a"
+    },
+    {
+      "kind": "river",
+      "index": 106,
+      "name": "Ingoda",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 20,
+      "bbox": [
+        111.03,
+        49.8,
+        115.81,
+        52
+      ],
+      "fp": "9ed63c492267",
+      "legacy_id": "river:Ingoda:9ed63c492267"
+    },
+    {
+      "kind": "river",
+      "index": 107,
+      "name": "Olëkma",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 43,
+      "bbox": [
+        117.39,
+        53.89,
+        121.68,
+        60.04
+      ],
+      "fp": "93851e30c146",
+      "legacy_id": "river:Olëkma:93851e30c146"
+    },
+    {
+      "kind": "river",
+      "index": 108,
+      "name": "Künes",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        81.7,
+        43.23,
+        84.96,
+        43.65
+      ],
+      "fp": "9eedc469e2f9",
+      "legacy_id": "river:Künes:9eedc469e2f9"
+    },
+    {
+      "kind": "river",
+      "index": 109,
+      "name": "Sapt",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 21,
+      "bbox": [
+        85.75,
+        25.07,
+        87.68,
+        28.8
+      ],
+      "fp": "e034c8975506",
+      "legacy_id": "river:Sapt:e034c8975506"
+    },
+    {
+      "kind": "river",
+      "index": 110,
+      "name": "Mekong",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 45,
+      "bbox": [
+        101.56,
+        11.46,
+        106.03,
+        18.44
+      ],
+      "fp": "969abdf4fd85",
+      "legacy_id": "river:Mekong:969abdf4fd85"
+    },
+    {
+      "kind": "river",
+      "index": 111,
+      "name": "Min",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 12,
+      "bbox": [
+        117.33,
+        26.06,
+        119.08,
+        27.87
+      ],
+      "fp": "8aad5873f768",
+      "legacy_id": "river:Min:8aad5873f768"
+    },
+    {
+      "kind": "river",
+      "index": 112,
+      "name": "Dihang",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 18,
+      "bbox": [
+        94.36,
+        27.9,
+        95.43,
+        29.88
+      ],
+      "fp": "bd161818da57",
+      "legacy_id": "river:Dihang:bd161818da57"
+    },
+    {
+      "kind": "river",
+      "index": 113,
+      "name": "Sreng",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        103.4,
+        13.18,
+        104.26,
+        14.26
+      ],
+      "fp": "8c090fc839b4",
+      "legacy_id": "river:Sreng:8c090fc839b4"
+    },
+    {
+      "kind": "river",
+      "index": 114,
+      "name": "Mamas",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        90.59,
+        26.12,
+        91.83,
+        28.29
+      ],
+      "fp": "e6caa64fa218",
+      "legacy_id": "river:Mamas:e6caa64fa218"
+    },
+    {
+      "kind": "river",
+      "index": 115,
+      "name": "Ou",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 15,
+      "bbox": [
+        101.76,
+        19.92,
+        102.76,
+        22.43
+      ],
+      "fp": "ee8276cfded9",
+      "legacy_id": "river:Ou:ee8276cfded9"
+    },
+    {
+      "kind": "river",
+      "index": 116,
+      "name": "Buh",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        98.58,
+        36.96,
+        99.82,
+        38.16
+      ],
+      "fp": "c2844b6f98f8",
+      "legacy_id": "river:Buh:c2844b6f98f8"
+    },
+    {
+      "kind": "river",
+      "index": 117,
+      "name": "Esil",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 31,
+      "bbox": [
+        66.07,
+        50.63,
+        73.07,
+        53.27
+      ],
+      "fp": "e40ff920633e",
+      "legacy_id": "river:Esil:e40ff920633e"
+    },
+    {
+      "kind": "river",
+      "index": 118,
+      "name": "Katun",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 26,
+      "bbox": [
+        85.01,
+        49.6,
+        86.69,
+        52.49
+      ],
+      "fp": "d200741561bb",
+      "legacy_id": "river:Katun:d200741561bb"
+    },
+    {
+      "kind": "river",
+      "index": 119,
+      "name": "Brahmaputra",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 31,
+      "bbox": [
+        89.44,
+        23.27,
+        95.46,
+        28
+      ],
+      "fp": "d6a28f166ce9",
+      "legacy_id": "river:Brahmaputra:d6a28f166ce9"
+    },
+    {
+      "kind": "river",
+      "index": 120,
+      "name": "Bhima",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 30,
+      "bbox": [
+        73.69,
+        16.2,
+        77.23,
+        19.01
+      ],
+      "fp": "d19e78131479",
+      "legacy_id": "river:Bhima:d19e78131479"
+    },
+    {
+      "kind": "river",
+      "index": 121,
+      "name": "Tista",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        88.4,
+        25.34,
+        89.67,
+        27.7
+      ],
+      "fp": "c9a1169da1db",
+      "legacy_id": "river:Tista:c9a1169da1db"
+    },
+    {
+      "kind": "river",
+      "index": 122,
+      "name": "Kong",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 16,
+      "bbox": [
+        105.92,
+        13.43,
+        107.37,
+        16.23
+      ],
+      "fp": "cbe2bfc4595e",
+      "legacy_id": "river:Kong:cbe2bfc4595e"
+    },
+    {
+      "kind": "river",
+      "index": 123,
+      "name": "Jialing",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 31,
+      "bbox": [
+        105.61,
+        29.31,
+        106.88,
+        34.21
+      ],
+      "fp": "fd05cc834ec6",
+      "legacy_id": "river:Jialing:fd05cc834ec6"
+    },
+    {
+      "kind": "river",
+      "index": 124,
+      "name": "Dong",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 5,
+      "point_count": 20,
+      "bbox": [
+        113.61,
+        22.94,
+        115.74,
+        25.06
+      ],
+      "fp": "97cc45823e79",
+      "legacy_id": "river:Dong:97cc45823e79"
+    },
+    {
+      "kind": "river",
+      "index": 125,
+      "name": "Yalong",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 36,
+      "bbox": [
+        97.15,
+        26.3,
+        101.96,
+        34.06
+      ],
+      "fp": "cd712a51b957",
+      "legacy_id": "river:Yalong:cd712a51b957"
+    },
+    {
+      "kind": "river",
+      "index": 126,
+      "name": "",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 4,
+      "bbox": [
+        79.65,
+        31.39,
+        80.94,
+        32.5
+      ],
+      "fp": "511de0b385c2",
+      "legacy_id": "river::511de0b385c2"
+    },
+    {
+      "kind": "river",
+      "index": 127,
+      "name": "Sittong",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        95.79,
+        17.39,
+        96.87,
+        20.22
+      ],
+      "fp": "2770dc042d07",
+      "legacy_id": "river:Sittong:2770dc042d07"
+    },
+    {
+      "kind": "river",
+      "index": 128,
+      "name": "You",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 18,
+      "bbox": [
+        105.26,
+        22.75,
+        108.08,
+        24.45
+      ],
+      "fp": "16667724f308",
+      "legacy_id": "river:You:16667724f308"
+    },
+    {
+      "kind": "river",
+      "index": 129,
+      "name": "Mahi",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 15,
+      "bbox": [
+        72.91,
+        22.28,
+        75,
+        23.91
+      ],
+      "fp": "e01ae6b41628",
+      "legacy_id": "river:Mahi:e01ae6b41628"
+    },
+    {
+      "kind": "river",
+      "index": 130,
+      "name": "Tapi",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 16,
+      "bbox": [
+        72.58,
+        21.01,
+        78.13,
+        21.82
+      ],
+      "fp": "8de0e098a7e7",
+      "legacy_id": "river:Tapi:8de0e098a7e7"
+    },
+    {
+      "kind": "river",
+      "index": 131,
+      "name": "Sankh",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        83.9,
+        22.22,
+        84.66,
+        23.2
+      ],
+      "fp": "5b097c29eace",
+      "legacy_id": "river:Sankh:5b097c29eace"
+    },
+    {
+      "kind": "river",
+      "index": 132,
+      "name": "Bei",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 13,
+      "bbox": [
+        112.53,
+        23.05,
+        113.57,
+        25.37
+      ],
+      "fp": "c7af53d63917",
+      "legacy_id": "river:Bei:c7af53d63917"
+    },
+    {
+      "kind": "river",
+      "index": 133,
+      "name": "Ussuri",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 14,
+      "bbox": [
+        133.33,
+        43.59,
+        134.32,
+        45.56
+      ],
+      "fp": "ceab431058d7",
+      "legacy_id": "river:Ussuri:ceab431058d7"
+    },
+    {
+      "kind": "river",
+      "index": 134,
+      "name": "Namhan",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 14,
+      "bbox": [
+        127.07,
+        36.88,
+        128.88,
+        37.51
+      ],
+      "fp": "d9a9167e1237",
+      "legacy_id": "river:Namhan:d9a9167e1237"
+    },
+    {
+      "kind": "river",
+      "index": 135,
+      "name": "Ganges",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 15,
+      "point_count": 139,
+      "bbox": [
+        77.91,
+        21.94,
+        90.39,
+        30.89
+      ],
+      "fp": "ae5a8fd216f2",
+      "legacy_id": "river:Ganges:ae5a8fd216f2"
+    },
+    {
+      "kind": "river",
+      "index": 136,
+      "name": "Penner",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 15,
+      "bbox": [
+        77.26,
+        13.41,
+        80.13,
+        14.96
+      ],
+      "fp": "b94b289a58d7",
+      "legacy_id": "river:Penner:b94b289a58d7"
+    },
+    {
+      "kind": "river",
+      "index": 137,
+      "name": "Indus",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 4,
+      "bbox": [
+        72.69,
+        34.06,
+        72.85,
+        34.62
+      ],
+      "fp": "30f3e78f4d8e",
+      "legacy_id": "river:Indus:30f3e78f4d8e"
+    },
+    {
+      "kind": "river",
+      "index": 138,
+      "name": "Indus",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 12,
+      "point_count": 103,
+      "bbox": [
+        67.26,
+        23.62,
+        79.73,
+        35.82
+      ],
+      "fp": "3a62e648894e",
+      "legacy_id": "river:Indus:3a62e648894e"
+    },
+    {
+      "kind": "river",
+      "index": 139,
+      "name": "Shilka",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 12,
+      "bbox": [
+        115.83,
+        51.72,
+        121.48,
+        53.51
+      ],
+      "fp": "a661814bae36",
+      "legacy_id": "river:Shilka:a661814bae36"
+    },
+    {
+      "kind": "river",
+      "index": 140,
+      "name": "",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        120.59,
+        31.13,
+        121.56,
+        31.38
+      ],
+      "fp": "816b81bdeb75",
+      "legacy_id": "river::816b81bdeb75"
+    },
+    {
+      "kind": "river",
+      "index": 141,
+      "name": "",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 5,
+      "point_count": 10,
+      "bbox": [
+        90.46,
+        22.33,
+        90.86,
+        22.96
+      ],
+      "fp": "47a1ff711112",
+      "legacy_id": "river::47a1ff711112"
+    },
+    {
+      "kind": "river",
+      "index": 142,
+      "name": "Yong",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        108.09,
+        22.7,
+        108.9,
+        22.86
+      ],
+      "fp": "e3dcf0e368c0",
+      "legacy_id": "river:Yong:e3dcf0e368c0"
+    },
+    {
+      "kind": "river",
+      "index": 143,
+      "name": "Brahmani",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 17,
+      "bbox": [
+        84.67,
+        20.49,
+        86.91,
+        22.27
+      ],
+      "fp": "9de75d2c9e13",
+      "legacy_id": "river:Brahmani:9de75d2c9e13"
+    },
+    {
+      "kind": "river",
+      "index": 144,
+      "name": "Srepok",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        105.88,
+        13.24,
+        107.38,
+        13.55
+      ],
+      "fp": "40d58f5400dd",
+      "legacy_id": "river:Srepok:40d58f5400dd"
+    },
+    {
+      "kind": "river",
+      "index": 145,
+      "name": "Yongding",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        115.59,
+        39.27,
+        117.02,
+        40.24
+      ],
+      "fp": "905a896d669b",
+      "legacy_id": "river:Yongding:905a896d669b"
+    },
+    {
+      "kind": "river",
+      "index": 146,
+      "name": "Song’acha",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        132.84,
+        45.01,
+        133.41,
+        45.56
+      ],
+      "fp": "b7ed7715501f",
+      "legacy_id": "river:Song’acha:b7ed7715501f"
+    },
+    {
+      "kind": "river",
+      "index": 147,
+      "name": "Ussuri",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 18,
+      "bbox": [
+        133.41,
+        45.57,
+        135.03,
+        48.48
+      ],
+      "fp": "da4a0924763a",
+      "legacy_id": "river:Ussuri:da4a0924763a"
+    },
+    {
+      "kind": "river",
+      "index": 148,
+      "name": "Ishim",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 23,
+      "bbox": [
+        67.01,
+        53.34,
+        71.16,
+        57.7
+      ],
+      "fp": "223b1e33e07b",
+      "legacy_id": "river:Ishim:223b1e33e07b"
+    },
+    {
+      "kind": "river",
+      "index": 149,
+      "name": "Yu",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        108.9,
+        22.6,
+        110.08,
+        23.37
+      ],
+      "fp": "4908bb8abff0",
+      "legacy_id": "river:Yu:4908bb8abff0"
+    },
+    {
+      "kind": "river",
+      "index": 150,
+      "name": "Han",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 3,
+      "bbox": [
+        126.74,
+        37.5,
+        127.18,
+        37.63
+      ],
+      "fp": "0e9527afbce4",
+      "legacy_id": "river:Han:0e9527afbce4"
+    },
+    {
+      "kind": "river",
+      "index": 151,
+      "name": "Hai",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 3,
+      "bbox": [
+        117.03,
+        38.96,
+        117.71,
+        39.33
+      ],
+      "fp": "e7309d9eb7a1",
+      "legacy_id": "river:Hai:e7309d9eb7a1"
+    },
+    {
+      "kind": "river",
+      "index": 152,
+      "name": "Chao Phraya",
+      "rank": 7,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 20,
+      "bbox": [
+        100.01,
+        13.44,
+        100.57,
+        15.71
+      ],
+      "fp": "7bb4db2cd330",
+      "legacy_id": "river:Chao Phraya:7bb4db2cd330"
+    },
+    {
+      "kind": "river",
+      "index": 153,
+      "name": "Shiquan",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        79.65,
+        31.38,
+        81.64,
+        32.54
+      ],
+      "fp": "f020bcd49485",
+      "legacy_id": "river:Shiquan:f020bcd49485"
+    },
+    {
+      "kind": "river",
+      "index": 154,
+      "name": "Huang",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 5,
+      "bbox": [
+        97.06,
+        34.84,
+        97.76,
+        35.09
+      ],
+      "fp": "ca478d73b103",
+      "legacy_id": "river:Huang:ca478d73b103"
+    },
+    {
+      "kind": "river",
+      "index": 155,
+      "name": "Huang",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 109,
+      "bbox": [
+        96.16,
+        33.19,
+        111.26,
+        40.67
+      ],
+      "fp": "995ee3b69851",
+      "legacy_id": "river:Huang:995ee3b69851"
+    },
+    {
+      "kind": "river",
+      "index": 156,
+      "name": "Amur",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 2,
+      "point_count": 7,
+      "bbox": [
+        136.74,
+        49.72,
+        140.11,
+        51.76
+      ],
+      "fp": "fd2a4067a9e2",
+      "legacy_id": "river:Amur:fd2a4067a9e2"
+    },
+    {
+      "kind": "river",
+      "index": 157,
+      "name": "Amur",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 3,
+      "point_count": 66,
+      "bbox": [
+        127.14,
+        47.52,
+        140.71,
+        53.21
+      ],
+      "fp": "2d61abdc29bc",
+      "legacy_id": "river:Amur:2d61abdc29bc"
+    },
+    {
+      "kind": "river",
+      "index": 158,
+      "name": "Hailar",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 11,
+      "bbox": [
+        117.87,
+        49.14,
+        122.29,
+        49.8
+      ],
+      "fp": "a4ea5553fdc3",
+      "legacy_id": "river:Hailar:a4ea5553fdc3"
+    },
+    {
+      "kind": "river",
+      "index": 159,
+      "name": "Argun’",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 21,
+      "bbox": [
+        117.72,
+        49.32,
+        121.41,
+        53.32
+      ],
+      "fp": "a75ae083e3c4",
+      "legacy_id": "river:Argun’:a75ae083e3c4"
+    },
+    {
+      "kind": "river",
+      "index": 160,
+      "name": "Heilong Jiang",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 34,
+      "bbox": [
+        121.19,
+        50.21,
+        127.59,
+        53.51
+      ],
+      "fp": "c452ae72b275",
+      "legacy_id": "river:Heilong Jiang:c452ae72b275"
+    },
+    {
+      "kind": "river",
+      "index": 161,
+      "name": "Huang",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 9,
+      "bbox": [
+        110.27,
+        34.57,
+        113.87,
+        35.09
+      ],
+      "fp": "754a2dd8dceb",
+      "legacy_id": "river:Huang:754a2dd8dceb"
+    },
+    {
+      "kind": "river",
+      "index": 162,
+      "name": "Huang",
+      "rank": 1,
+      "appear": null,
+      "vanish": 11,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        113.87,
+        34.85,
+        117.48,
+        38.98
+      ],
+      "fp": "578a13a5f4d1",
+      "legacy_id": "river:Huang:578a13a5f4d1"
+    },
+    {
+      "kind": "river",
+      "index": 163,
+      "name": "Huang",
+      "rank": 1,
+      "appear": 11,
+      "vanish": 1048,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 11,
+      "bbox": [
+        113.87,
+        34.85,
+        118.88,
+        37.82
+      ],
+      "fp": "8ce628579d2b",
+      "legacy_id": "river:Huang:8ce628579d2b"
+    },
+    {
+      "kind": "river",
+      "index": 164,
+      "name": "Huang",
+      "rank": 1,
+      "appear": 1048,
+      "vanish": 1194,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 11,
+      "bbox": [
+        113.87,
+        34.85,
+        117.52,
+        39.06
+      ],
+      "fp": "b97bb865b483",
+      "legacy_id": "river:Huang:b97bb865b483"
+    },
+    {
+      "kind": "river",
+      "index": 165,
+      "name": "Huang",
+      "rank": 3,
+      "appear": 1048,
+      "vanish": 1194,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        115.22,
+        36.25,
+        117.82,
+        37.82
+      ],
+      "fp": "759cbe42747f",
+      "legacy_id": "river:Huang:759cbe42747f"
+    },
+    {
+      "kind": "river",
+      "index": 166,
+      "name": "Huang",
+      "rank": 1,
+      "appear": 1194,
+      "vanish": 1855,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 12,
+      "bbox": [
+        113.87,
+        33.29,
+        120.22,
+        34.86
+      ],
+      "fp": "f0981e7773ba",
+      "legacy_id": "river:Huang:f0981e7773ba"
+    },
+    {
+      "kind": "river",
+      "index": 167,
+      "name": "Huang",
+      "rank": 3,
+      "appear": 1194,
+      "vanish": 1580,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        114.32,
+        32.68,
+        117.76,
+        34.86
+      ],
+      "fp": "3bc797712c20",
+      "legacy_id": "river:Huang:3bc797712c20"
+    },
+    {
+      "kind": "river",
+      "index": 168,
+      "name": "Huang",
+      "rank": 1,
+      "appear": 1855,
+      "vanish": null,
+      "timed": true,
+      "line_count": 2,
+      "point_count": 24,
+      "bbox": [
+        113.87,
+        34.85,
+        119.03,
+        37.82
+      ],
+      "fp": "84327c8013cf",
+      "legacy_id": "river:Huang:84327c8013cf"
+    },
+    {
+      "kind": "river",
+      "index": 169,
+      "name": "Ji",
+      "rank": 3,
+      "appear": null,
+      "vanish": 1855,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        114.85,
+        35.18,
+        118.95,
+        37.72
+      ],
+      "fp": "e48052811063",
+      "legacy_id": "river:Ji:e48052811063"
+    },
+    {
+      "kind": "river",
+      "index": 170,
+      "name": "Xi",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 6,
+      "point_count": 23,
+      "bbox": [
+        111.3,
+        22.49,
+        113.56,
+        23.48
+      ],
+      "fp": "9e170fca9857",
+      "legacy_id": "river:Xi:9e170fca9857"
+    },
+    {
+      "kind": "river",
+      "index": 171,
+      "name": "Yangtze Estuary",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        119.61,
+        31.39,
+        121.92,
+        32.2
+      ],
+      "fp": "3b8b95ad62a6",
+      "legacy_id": "river:Yangtze Estuary:3b8b95ad62a6"
+    },
+    {
+      "kind": "river",
+      "index": 172,
+      "name": "Huai",
+      "rank": 1,
+      "appear": null,
+      "vanish": 1194,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 8,
+      "bbox": [
+        117.76,
+        33.03,
+        120.22,
+        34.26
+      ],
+      "fp": "09946cb0fddb",
+      "legacy_id": "river:Huai:09946cb0fddb"
+    },
+    {
+      "kind": "river",
+      "index": 173,
+      "name": "Wei",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 13,
+      "bbox": [
+        104.2,
+        34.2,
+        110.27,
+        35.12
+      ],
+      "fp": "c6c3a2921de0",
+      "legacy_id": "river:Wei:c6c3a2921de0"
+    },
+    {
+      "kind": "river",
+      "index": 174,
+      "name": "Jing",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        106.32,
+        34.35,
+        109.02,
+        35.62
+      ],
+      "fp": "1cf30e1658f7",
+      "legacy_id": "river:Jing:1cf30e1658f7"
+    },
+    {
+      "kind": "river",
+      "index": 175,
+      "name": "Bei Luo",
+      "rank": 4,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        107.85,
+        34.56,
+        110.12,
+        37.1
+      ],
+      "fp": "b5a9150718f8",
+      "legacy_id": "river:Bei Luo:b5a9150718f8"
+    },
+    {
+      "kind": "river",
+      "index": 176,
+      "name": "Fen",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        110.55,
+        35.5,
+        112.53,
+        38.85
+      ],
+      "fp": "b624f1c12c1b",
+      "legacy_id": "river:Fen:b624f1c12c1b"
+    },
+    {
+      "kind": "river",
+      "index": 177,
+      "name": "Luo",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        110.18,
+        34.01,
+        113.02,
+        34.83
+      ],
+      "fp": "ea478dcc71c4",
+      "legacy_id": "river:Luo:ea478dcc71c4"
+    },
+    {
+      "kind": "river",
+      "index": 178,
+      "name": "Ying",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        113.05,
+        32.44,
+        116.52,
+        34.42
+      ],
+      "fp": "02a4e76b3ec5",
+      "legacy_id": "river:Ying:02a4e76b3ec5"
+    },
+    {
+      "kind": "river",
+      "index": 179,
+      "name": "Si",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        116.63,
+        34.22,
+        117.28,
+        35.68
+      ],
+      "fp": "95b53b6ccacc",
+      "legacy_id": "river:Si:95b53b6ccacc"
+    },
+    {
+      "kind": "river",
+      "index": 180,
+      "name": "Si",
+      "rank": 3,
+      "appear": null,
+      "vanish": 1194,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 4,
+      "bbox": [
+        117.16,
+        33.29,
+        118.86,
+        34.22
+      ],
+      "fp": "008c5794bb47",
+      "legacy_id": "river:Si:008c5794bb47"
+    },
+    {
+      "kind": "river",
+      "index": 181,
+      "name": "Feihuang",
+      "rank": 4,
+      "appear": 1855,
+      "vanish": null,
+      "timed": true,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        117.16,
+        33.29,
+        120.22,
+        34.26
+      ],
+      "fp": "411c124f166e",
+      "legacy_id": "river:Feihuang:411c124f166e"
+    },
+    {
+      "kind": "river",
+      "index": 182,
+      "name": "Zi",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        110.65,
+        26.25,
+        112.59,
+        28.78
+      ],
+      "fp": "3771f440cbc3",
+      "legacy_id": "river:Zi:3771f440cbc3"
+    },
+    {
+      "kind": "river",
+      "index": 183,
+      "name": "Nen",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        123.92,
+        45.4,
+        125.4,
+        50.6
+      ],
+      "fp": "e0edd7aa31f1",
+      "legacy_id": "river:Nen:e0edd7aa31f1"
+    },
+    {
+      "kind": "river",
+      "index": 184,
+      "name": "Ruo Shui",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        99.53,
+        38.25,
+        101.22,
+        42.19
+      ],
+      "fp": "4580e850b7c6",
+      "legacy_id": "river:Ruo Shui:4580e850b7c6"
+    },
+    {
+      "kind": "river",
+      "index": 185,
+      "name": "Orkhon",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        102.25,
+        46.85,
+        106.16,
+        50.25
+      ],
+      "fp": "274bd51d781f",
+      "legacy_id": "river:Orkhon:274bd51d781f"
+    },
+    {
+      "kind": "river",
+      "index": 186,
+      "name": "Kherlen",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        109.1,
+        47.34,
+        117.07,
+        48.53
+      ],
+      "fp": "d37adcd7c74f",
+      "legacy_id": "river:Kherlen:d37adcd7c74f"
+    },
+    {
+      "kind": "lake",
+      "index": 0,
+      "name": "Lake Balkhash",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 106,
+      "bbox": [
+        73.06,
+        44.69,
+        79.05,
+        46.6
+      ],
+      "fp": "db287c3ffebd",
+      "legacy_id": "lake:Lake Balkhash:db287c3ffebd"
+    },
+    {
+      "kind": "lake",
+      "index": 1,
+      "name": "Lake Baikal",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 63,
+      "bbox": [
+        103.46,
+        51.19,
+        109.96,
+        55.72
+      ],
+      "fp": "98910c54f29a",
+      "legacy_id": "lake:Lake Baikal:98910c54f29a"
+    },
+    {
+      "kind": "lake",
+      "index": 2,
+      "name": "Hongze Hu",
+      "rank": 1,
+      "appear": 1194,
+      "vanish": null,
+      "timed": true,
+      "ring_count": 1,
+      "point_count": 38,
+      "bbox": [
+        117.67,
+        32.84,
+        118.75,
+        33.52
+      ],
+      "fp": "68aaac829a28",
+      "legacy_id": "lake:Hongze Hu:68aaac829a28"
+    },
+    {
+      "kind": "lake",
+      "index": 3,
+      "name": "Khövsgöl Nuur",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 16,
+      "bbox": [
+        100.11,
+        50.4,
+        100.77,
+        51.57
+      ],
+      "fp": "66c4a3a40024",
+      "legacy_id": "lake:Khövsgöl Nuur:66c4a3a40024"
+    },
+    {
+      "kind": "lake",
+      "index": 4,
+      "name": "Lake Khanka",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 18,
+      "bbox": [
+        131.88,
+        44.49,
+        132.84,
+        45.26
+      ],
+      "fp": "134b5c9aac44",
+      "legacy_id": "lake:Lake Khanka:134b5c9aac44"
+    },
+    {
+      "kind": "lake",
+      "index": 5,
+      "name": "Tonlé Sap",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 17,
+      "bbox": [
+        103.62,
+        12.34,
+        104.62,
+        13.23
+      ],
+      "fp": "76fcc3477ed2",
+      "legacy_id": "lake:Tonlé Sap:76fcc3477ed2"
+    },
+    {
+      "kind": "lake",
+      "index": 6,
+      "name": "Lake Chany",
+      "rank": 4,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 26,
+      "bbox": [
+        76.61,
+        54.51,
+        78.06,
+        55.06
+      ],
+      "fp": "8845dcb53213",
+      "legacy_id": "lake:Lake Chany:8845dcb53213"
+    },
+    {
+      "kind": "lake",
+      "index": 7,
+      "name": "Hulun Nuur",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 22,
+      "bbox": [
+        116.95,
+        48.52,
+        118.01,
+        49.37
+      ],
+      "fp": "5d6eb223843f",
+      "legacy_id": "lake:Hulun Nuur:5d6eb223843f"
+    },
+    {
+      "kind": "lake",
+      "index": 8,
+      "name": "Tai Hu",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 19,
+      "bbox": [
+        119.87,
+        30.9,
+        120.59,
+        31.53
+      ],
+      "fp": "f15ed1be3c77",
+      "legacy_id": "lake:Tai Hu:f15ed1be3c77"
+    },
+    {
+      "kind": "lake",
+      "index": 9,
+      "name": "Nam Co",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 16,
+      "bbox": [
+        90.26,
+        30.45,
+        91,
+        30.91
+      ],
+      "fp": "868947f80e46",
+      "legacy_id": "lake:Nam Co:868947f80e46"
+    },
+    {
+      "kind": "lake",
+      "index": 10,
+      "name": "Bosten Hu",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        86.66,
+        41.81,
+        87.43,
+        42.12
+      ],
+      "fp": "0b2832e285fc",
+      "legacy_id": "lake:Bosten Hu:0b2832e285fc"
+    },
+    {
+      "kind": "lake",
+      "index": 11,
+      "name": "Poyang Hu",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 50,
+      "bbox": [
+        115.78,
+        28.72,
+        116.72,
+        29.66
+      ],
+      "fp": "66cc2a96a261",
+      "legacy_id": "lake:Poyang Hu:66cc2a96a261"
+    },
+    {
+      "kind": "lake",
+      "index": 12,
+      "name": "Daguan Hu",
+      "rank": 4,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 12,
+      "bbox": [
+        116.18,
+        29.91,
+        116.52,
+        30.1
+      ],
+      "fp": "87aec719e8fe",
+      "legacy_id": "lake:Daguan Hu:87aec719e8fe"
+    },
+    {
+      "kind": "lake",
+      "index": 13,
+      "name": "Long Hu",
+      "rank": 4,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 10,
+      "bbox": [
+        115.91,
+        29.85,
+        116.26,
+        30.05
+      ],
+      "fp": "86c3db969b80",
+      "legacy_id": "lake:Long Hu:86c3db969b80"
+    },
+    {
+      "kind": "lake",
+      "index": 14,
+      "name": "Liangzi Hu",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 19,
+      "bbox": [
+        114.26,
+        30.02,
+        114.62,
+        30.37
+      ],
+      "fp": "500022f5b968",
+      "legacy_id": "lake:Liangzi Hu:500022f5b968"
+    },
+    {
+      "kind": "lake",
+      "index": 15,
+      "name": "Siling Co",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 14,
+      "bbox": [
+        88.49,
+        31.53,
+        89.34,
+        31.89
+      ],
+      "fp": "efba34d94f9f",
+      "legacy_id": "lake:Siling Co:efba34d94f9f"
+    },
+    {
+      "kind": "lake",
+      "index": 16,
+      "name": "Har Us Nuur",
+      "rank": 4,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 21,
+      "bbox": [
+        91.9,
+        47.73,
+        92.82,
+        48.34
+      ],
+      "fp": "108a671a953a",
+      "legacy_id": "lake:Har Us Nuur:108a671a953a"
+    },
+    {
+      "kind": "lake",
+      "index": 17,
+      "name": "Ayakkum Hu",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 7,
+      "bbox": [
+        89.05,
+        37.47,
+        89.67,
+        37.62
+      ],
+      "fp": "f527e1a79b57",
+      "legacy_id": "lake:Ayakkum Hu:f527e1a79b57"
+    },
+    {
+      "kind": "lake",
+      "index": 18,
+      "name": "Ngoring Hu",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 12,
+      "bbox": [
+        97.51,
+        34.76,
+        97.9,
+        35.07
+      ],
+      "fp": "c7ad2bb1829d",
+      "legacy_id": "lake:Ngoring Hu:c7ad2bb1829d"
+    },
+    {
+      "kind": "lake",
+      "index": 19,
+      "name": "Gaoyou Hu",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 21,
+      "bbox": [
+        118.74,
+        32.65,
+        119.41,
+        33.17
+      ],
+      "fp": "b9a32be9d10a",
+      "legacy_id": "lake:Gaoyou Hu:b9a32be9d10a"
+    },
+    {
+      "kind": "lake",
+      "index": 20,
+      "name": "Gyaring Hu",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 6,
+      "bbox": [
+        97.03,
+        34.81,
+        97.49,
+        34.99
+      ],
+      "fp": "de3df88dec41",
+      "legacy_id": "lake:Gyaring Hu:de3df88dec41"
+    },
+    {
+      "kind": "lake",
+      "index": 21,
+      "name": "Langa Co",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 9,
+      "bbox": [
+        81.09,
+        30.58,
+        81.32,
+        30.83
+      ],
+      "fp": "0202afd5c8c0",
+      "legacy_id": "lake:Langa Co:0202afd5c8c0"
+    },
+    {
+      "kind": "lake",
+      "index": 22,
+      "name": "Mapam Yumco",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 6,
+      "bbox": [
+        81.34,
+        30.55,
+        81.6,
+        30.77
+      ],
+      "fp": "3bb361678e10",
+      "legacy_id": "lake:Mapam Yumco:3bb361678e10"
+    },
+    {
+      "kind": "lake",
+      "index": 23,
+      "name": "Po Hu",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        116.29,
+        30.07,
+        116.53,
+        30.27
+      ],
+      "fp": "3e6151e45982",
+      "legacy_id": "lake:Po Hu:3e6151e45982"
+    },
+    {
+      "kind": "lake",
+      "index": 24,
+      "name": "Buyr Nuur",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 6,
+      "bbox": [
+        117.5,
+        47.64,
+        117.86,
+        47.97
+      ],
+      "fp": "43d66115a2e2",
+      "legacy_id": "lake:Buyr Nuur:43d66115a2e2"
+    },
+    {
+      "kind": "lake",
+      "index": 25,
+      "name": "Ngangla Ringeo",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 10,
+      "bbox": [
+        82.78,
+        31.41,
+        83.35,
+        31.65
+      ],
+      "fp": "cb0b77927c32",
+      "legacy_id": "lake:Ngangla Ringeo:cb0b77927c32"
+    },
+    {
+      "kind": "lake",
+      "index": 26,
+      "name": "Tangra Yumco",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 10,
+      "bbox": [
+        86.34,
+        30.73,
+        86.8,
+        31.31
+      ],
+      "fp": "043c6d278f1c",
+      "legacy_id": "lake:Tangra Yumco:043c6d278f1c"
+    },
+    {
+      "kind": "lake",
+      "index": 27,
+      "name": "Yamzho Yumco",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 26,
+      "bbox": [
+        90.26,
+        28.74,
+        91.02,
+        29.15
+      ],
+      "fp": "d2ce43f5aeb3",
+      "legacy_id": "lake:Yamzho Yumco:d2ce43f5aeb3"
+    },
+    {
+      "kind": "lake",
+      "index": 28,
+      "name": "Shijiu Hu",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        118.66,
+        31.37,
+        118.94,
+        31.56
+      ],
+      "fp": "b2e58db646d2",
+      "legacy_id": "lake:Shijiu Hu:b2e58db646d2"
+    },
+    {
+      "kind": "lake",
+      "index": 29,
+      "name": "Hong Hu",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 7,
+      "bbox": [
+        113.2,
+        29.74,
+        113.44,
+        29.95
+      ],
+      "fp": "89300a685725",
+      "legacy_id": "lake:Hong Hu:89300a685725"
+    },
+    {
+      "kind": "lake",
+      "index": 30,
+      "name": "Chao Hu",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 10,
+      "bbox": [
+        117.25,
+        31.42,
+        117.96,
+        31.7
+      ],
+      "fp": "9a8f0e19ff4c",
+      "legacy_id": "lake:Chao Hu:9a8f0e19ff4c"
+    },
+    {
+      "kind": "lake",
+      "index": 31,
+      "name": "",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 7,
+      "bbox": [
+        114.62,
+        30.19,
+        114.85,
+        30.34
+      ],
+      "fp": "a7ecc4e72048",
+      "legacy_id": "lake::a7ecc4e72048"
+    },
+    {
+      "kind": "lake",
+      "index": 32,
+      "name": "",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        114.54,
+        30.57,
+        114.79,
+        30.76
+      ],
+      "fp": "be5c7ceccdc3",
+      "legacy_id": "lake::be5c7ceccdc3"
+    },
+    {
+      "kind": "lake",
+      "index": 33,
+      "name": "Weishan Hu",
+      "rank": 2,
+      "appear": 1560,
+      "vanish": null,
+      "timed": true,
+      "ring_count": 1,
+      "point_count": 4,
+      "bbox": [
+        117.1,
+        34.46,
+        117.33,
+        34.73
+      ],
+      "fp": "db35f1373863",
+      "legacy_id": "lake:Weishan Hu:db35f1373863"
+    },
+    {
+      "kind": "lake",
+      "index": 34,
+      "name": "",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 12,
+      "bbox": [
+        114.46,
+        30.3,
+        114.73,
+        30.5
+      ],
+      "fp": "58cfaa8258ca",
+      "legacy_id": "lake::58cfaa8258ca"
+    },
+    {
+      "kind": "lake",
+      "index": 35,
+      "name": "Huangtang Hu",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        114.12,
+        29.87,
+        114.29,
+        30.12
+      ],
+      "fp": "f6efef916087",
+      "legacy_id": "lake:Huangtang Hu:f6efef916087"
+    },
+    {
+      "kind": "lake",
+      "index": 36,
+      "name": "",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        113.9,
+        29.84,
+        114.16,
+        30.02
+      ],
+      "fp": "cc60fdaa7e5e",
+      "legacy_id": "lake::cc60fdaa7e5e"
+    },
+    {
+      "kind": "lake",
+      "index": 37,
+      "name": "Hoh Xil Hu",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 5,
+      "bbox": [
+        90.91,
+        35.5,
+        91.34,
+        35.63
+      ],
+      "fp": "31992a91a92d",
+      "legacy_id": "lake:Hoh Xil Hu:31992a91a92d"
+    },
+    {
+      "kind": "lake",
+      "index": 38,
+      "name": "",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 9,
+      "bbox": [
+        85.27,
+        30.73,
+        85.89,
+        31.05
+      ],
+      "fp": "a8be49eb514d",
+      "legacy_id": "lake::a8be49eb514d"
+    },
+    {
+      "kind": "lake",
+      "index": 39,
+      "name": "",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        139.6,
+        53.31,
+        139.95,
+        53.57
+      ],
+      "fp": "2f1af37c9242",
+      "legacy_id": "lake::2f1af37c9242"
+    },
+    {
+      "kind": "lake",
+      "index": 40,
+      "name": "Biwa Ko",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 12,
+      "bbox": [
+        135.85,
+        34.95,
+        136.28,
+        35.45
+      ],
+      "fp": "5268382fa5ca",
+      "legacy_id": "lake:Biwa Ko:5268382fa5ca"
+    },
+    {
+      "kind": "lake",
+      "index": 41,
+      "name": "Reg Nuur",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 6,
+      "bbox": [
+        90.86,
+        50.07,
+        91.13,
+        50.22
+      ],
+      "fp": "9f366667f3cb",
+      "legacy_id": "lake:Reg Nuur:9f366667f3cb"
+    },
+    {
+      "kind": "lake",
+      "index": 42,
+      "name": "",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        89.97,
+        33.29,
+        90.39,
+        33.72
+      ],
+      "fp": "18498a9e1b18",
+      "legacy_id": "lake::18498a9e1b18"
+    },
+    {
+      "kind": "lake",
+      "index": 43,
+      "name": "",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 7,
+      "bbox": [
+        89.63,
+        33.24,
+        89.96,
+        33.51
+      ],
+      "fp": "efff70209390",
+      "legacy_id": "lake::efff70209390"
+    },
+    {
+      "kind": "lake",
+      "index": 44,
+      "name": "",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        75.89,
+        31.83,
+        76.2,
+        32.18
+      ],
+      "fp": "4ef00472df13",
+      "legacy_id": "lake::4ef00472df13"
+    },
+    {
+      "kind": "lake",
+      "index": 45,
+      "name": "",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 5,
+      "bbox": [
+        91.39,
+        31.91,
+        91.53,
+        32.12
+      ],
+      "fp": "4c92e7785d11",
+      "legacy_id": "lake::4c92e7785d11"
+    },
+    {
+      "kind": "lake",
+      "index": 46,
+      "name": "",
+      "rank": 6,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 5,
+      "bbox": [
+        87.4,
+        31.82,
+        87.61,
+        31.95
+      ],
+      "fp": "9601b086d469",
+      "legacy_id": "lake::9601b086d469"
+    },
+    {
+      "kind": "lake",
+      "index": 47,
+      "name": "Banggong Co",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 5,
+      "bbox": [
+        78.42,
+        33.67,
+        78.96,
+        33.97
+      ],
+      "fp": "28b2ca532031",
+      "legacy_id": "lake:Banggong Co:28b2ca532031"
+    },
+    {
+      "kind": "lake",
+      "index": 48,
+      "name": "Puma Yumco",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 6,
+      "bbox": [
+        90.21,
+        28.52,
+        90.53,
+        28.62
+      ],
+      "fp": "9a805f47b38a",
+      "legacy_id": "lake:Puma Yumco:9a805f47b38a"
+    },
+    {
+      "kind": "lake",
+      "index": 49,
+      "name": "Lake Zaysan",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 38,
+      "bbox": [
+        82.94,
+        47.67,
+        84.56,
+        49.66
+      ],
+      "fp": "df72ec5814cd",
+      "legacy_id": "lake:Lake Zaysan:df72ec5814cd"
+    },
+    {
+      "kind": "lake",
+      "index": 50,
+      "name": "Issyk-Kul",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 19,
+      "bbox": [
+        76.1,
+        42.1,
+        78.33,
+        42.67
+      ],
+      "fp": "41d7e41f7402",
+      "legacy_id": "lake:Issyk-Kul:41d7e41f7402"
+    },
+    {
+      "kind": "lake",
+      "index": 51,
+      "name": "Uvs Nuur",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 18,
+      "bbox": [
+        92.23,
+        49.9,
+        93.37,
+        50.69
+      ],
+      "fp": "73ac8a02c0c4",
+      "legacy_id": "lake:Uvs Nuur:73ac8a02c0c4"
+    },
+    {
+      "kind": "lake",
+      "index": 52,
+      "name": "Qinghai Hu",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 17,
+      "bbox": [
+        99.55,
+        36.5,
+        100.77,
+        37.17
+      ],
+      "fp": "d4e3f12ae080",
+      "legacy_id": "lake:Qinghai Hu:d4e3f12ae080"
+    },
+    {
+      "kind": "lake",
+      "index": 53,
+      "name": "Alakol",
+      "rank": 4,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 11,
+      "bbox": [
+        81.35,
+        45.74,
+        82.13,
+        46.47
+      ],
+      "fp": "e3eb2a3e4103",
+      "legacy_id": "lake:Alakol:e3eb2a3e4103"
+    },
+    {
+      "kind": "lake",
+      "index": 54,
+      "name": "Khyargas Nuur",
+      "rank": 5,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 15,
+      "bbox": [
+        92.76,
+        48.92,
+        93.79,
+        49.31
+      ],
+      "fp": "6b656e4dc007",
+      "legacy_id": "lake:Khyargas Nuur:6b656e4dc007"
+    },
+    {
+      "kind": "lake",
+      "index": 55,
+      "name": "Dongting Hu",
+      "rank": 1,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 19,
+      "bbox": [
+        112.15,
+        28.71,
+        113.18,
+        29.46
+      ],
+      "fp": "9b24fabcc68a",
+      "legacy_id": "lake:Dongting Hu:9b24fabcc68a"
+    },
+    {
+      "kind": "lake",
+      "index": 56,
+      "name": "Dian Chi",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        102.55,
+        24.62,
+        102.77,
+        25.02
+      ],
+      "fp": "3d94a5b72091",
+      "legacy_id": "lake:Dian Chi:3d94a5b72091"
+    },
+    {
+      "kind": "lake",
+      "index": 57,
+      "name": "Er Hai",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 8,
+      "bbox": [
+        100.09,
+        25.55,
+        100.27,
+        25.94
+      ],
+      "fp": "1eb7c143e1c2",
+      "legacy_id": "lake:Er Hai:1eb7c143e1c2"
+    },
+    {
+      "kind": "lake",
+      "index": 58,
+      "name": "Lop Nur",
+      "rank": 2,
+      "appear": null,
+      "vanish": 1972,
+      "timed": true,
+      "ring_count": 1,
+      "point_count": 10,
+      "bbox": [
+        90.02,
+        39.68,
+        90.9,
+        40.52
+      ],
+      "fp": "4b517c58f936",
+      "legacy_id": "lake:Lop Nur:4b517c58f936"
+    },
+    {
+      "kind": "lake",
+      "index": 59,
+      "name": "Juyan Hai",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "ring_count": 1,
+      "point_count": 6,
+      "bbox": [
+        101.08,
+        42.16,
+        101.42,
+        42.38
+      ],
+      "fp": "1910e1aeeb6d",
+      "legacy_id": "lake:Juyan Hai:1910e1aeeb6d"
+    },
+    {
+      "kind": "lake",
+      "index": 60,
+      "name": "Juye Ze",
+      "rank": 2,
+      "appear": null,
+      "vanish": 1280,
+      "timed": true,
+      "ring_count": 1,
+      "point_count": 9,
+      "bbox": [
+        115.72,
+        35.36,
+        116.42,
+        35.86
+      ],
+      "fp": "8dfb5a5c82d8",
+      "legacy_id": "lake:Juye Ze:8dfb5a5c82d8"
+    },
+    {
+      "kind": "lake",
+      "index": 61,
+      "name": "Yunmeng Ze",
+      "rank": 2,
+      "appear": null,
+      "vanish": 317,
+      "timed": true,
+      "ring_count": 1,
+      "point_count": 9,
+      "bbox": [
+        112.38,
+        29.88,
+        113.56,
+        30.45
+      ],
+      "fp": "370978e5de05",
+      "legacy_id": "lake:Yunmeng Ze:370978e5de05"
+    },
+    {
+      "kind": "label",
+      "index": 0,
+      "name": {
+        "zh": "黄 河",
+        "en": "Yellow R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        108.35,
+        40.78
+      ],
+      "fp": "51b67a17eaac",
+      "legacy_id": "label:黄 河:51b67a17eaac"
+    },
+    {
+      "kind": "label",
+      "index": 1,
+      "name": {
+        "zh": "长 江",
+        "en": "Yangtze R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        107.65,
+        30.15
+      ],
+      "fp": "26a5bbd63394",
+      "legacy_id": "label:长 江:26a5bbd63394"
+    },
+    {
+      "kind": "label",
+      "index": 2,
+      "name": {
+        "zh": "长 江",
+        "en": "Yangtze R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        117.15,
+        30.58
+      ],
+      "fp": "8e049b3581fd",
+      "legacy_id": "label:长 江:8e049b3581fd"
+    },
+    {
+      "kind": "label",
+      "index": 3,
+      "name": {
+        "zh": "淮 水",
+        "en": "Huai R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        116.05,
+        32.52
+      ],
+      "fp": "5431c9d1e745",
+      "legacy_id": "label:淮 水:5431c9d1e745"
+    },
+    {
+      "kind": "label",
+      "index": 4,
+      "name": {
+        "zh": "渭 水",
+        "en": "Wei R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        107.55,
+        34.34
+      ],
+      "fp": "a0433ed9206a",
+      "legacy_id": "label:渭 水:a0433ed9206a"
+    },
+    {
+      "kind": "label",
+      "index": 5,
+      "name": {
+        "zh": "汉 水",
+        "en": "Han R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        111.15,
+        32.58
+      ],
+      "fp": "0a511d0b58f6",
+      "legacy_id": "label:汉 水:0a511d0b58f6"
+    },
+    {
+      "kind": "label",
+      "index": 6,
+      "name": {
+        "zh": "汾 水",
+        "en": "Fen R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        111.82,
+        36.75
+      ],
+      "fp": "f8938f211674",
+      "legacy_id": "label:汾 水:f8938f211674"
+    },
+    {
+      "kind": "label",
+      "index": 7,
+      "name": {
+        "zh": "珠 江",
+        "en": "Pearl R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        111.15,
+        23.42
+      ],
+      "fp": "195476ba5f5f",
+      "legacy_id": "label:珠 江:195476ba5f5f"
+    },
+    {
+      "kind": "label",
+      "index": 8,
+      "name": {
+        "zh": "湘 水",
+        "en": "Xiang R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        112.78,
+        27.35
+      ],
+      "fp": "094055757e24",
+      "legacy_id": "label:湘 水:094055757e24"
+    },
+    {
+      "kind": "label",
+      "index": 9,
+      "name": {
+        "zh": "赣 江",
+        "en": "Gan R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        115.25,
+        27.55
+      ],
+      "fp": "597ab91d1b93",
+      "legacy_id": "label:赣 江:597ab91d1b93"
+    },
+    {
+      "kind": "label",
+      "index": 10,
+      "name": {
+        "zh": "辽 河",
+        "en": "Liao R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        122.75,
+        41.85
+      ],
+      "fp": "9c6f713d77ff",
+      "legacy_id": "label:辽 河:9c6f713d77ff"
+    },
+    {
+      "kind": "label",
+      "index": 11,
+      "name": {
+        "zh": "松花江",
+        "en": "Songhua R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        128.15,
+        46.12
+      ],
+      "fp": "3f9735d48598",
+      "legacy_id": "label:松花江:3f9735d48598"
+    },
+    {
+      "kind": "label",
+      "index": 12,
+      "name": {
+        "zh": "黑龙江",
+        "en": "Amur R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        127.15,
+        50.85
+      ],
+      "fp": "99556f4ac1f2",
+      "legacy_id": "label:黑龙江:99556f4ac1f2"
+    },
+    {
+      "kind": "label",
+      "index": 13,
+      "name": {
+        "zh": "塔里木河",
+        "en": "Tarim R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        83.65,
+        41.08
+      ],
+      "fp": "2ab62be0a86b",
+      "legacy_id": "label:塔里木河:2ab62be0a86b"
+    },
+    {
+      "kind": "label",
+      "index": 14,
+      "name": {
+        "zh": "伊犁河",
+        "en": "Ili R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        79.25,
+        43.92
+      ],
+      "fp": "81f4d00a1e17",
+      "legacy_id": "label:伊犁河:81f4d00a1e17"
+    },
+    {
+      "kind": "label",
+      "index": 15,
+      "name": {
+        "zh": "弱 水",
+        "en": "Ruo R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        100.35,
+        40.55
+      ],
+      "fp": "a0fdecc8ba8a",
+      "legacy_id": "label:弱 水:a0fdecc8ba8a"
+    },
+    {
+      "kind": "label",
+      "index": 16,
+      "name": {
+        "zh": "雅鲁藏布江",
+        "en": "Yarlung Tsangpo"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        90.25,
+        29.28
+      ],
+      "fp": "2e026ec295b8",
+      "legacy_id": "label:雅鲁藏布江:2e026ec295b8"
+    },
+    {
+      "kind": "label",
+      "index": 17,
+      "name": {
+        "zh": "洞庭",
+        "en": "Dongting L."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        112.78,
+        29.15
+      ],
+      "fp": "ef9fd21bd4d7",
+      "legacy_id": "label:洞庭:ef9fd21bd4d7"
+    },
+    {
+      "kind": "label",
+      "index": 18,
+      "name": {
+        "zh": "彭蠡·鄱阳",
+        "en": "Poyang L."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        116.32,
+        29.18
+      ],
+      "fp": "80e79da2d25d",
+      "legacy_id": "label:彭蠡·鄱阳:80e79da2d25d"
+    },
+    {
+      "kind": "label",
+      "index": 19,
+      "name": {
+        "zh": "太湖",
+        "en": "Tai L."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        120.22,
+        31.22
+      ],
+      "fp": "25f4cca42f6c",
+      "legacy_id": "label:太湖:25f4cca42f6c"
+    },
+    {
+      "kind": "label",
+      "index": 20,
+      "name": {
+        "zh": "巢湖",
+        "en": "Chao L."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        117.58,
+        31.56
+      ],
+      "fp": "bf6574bcfc63",
+      "legacy_id": "label:巢湖:bf6574bcfc63"
+    },
+    {
+      "kind": "label",
+      "index": 21,
+      "name": {
+        "zh": "青海",
+        "en": "Qinghai L."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        100.18,
+        36.88
+      ],
+      "fp": "577a6ca547de",
+      "legacy_id": "label:青海:577a6ca547de"
+    },
+    {
+      "kind": "label",
+      "index": 22,
+      "name": {
+        "zh": "滇池",
+        "en": "Dianchi L."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        102.68,
+        24.82
+      ],
+      "fp": "e99ae5785bb3",
+      "legacy_id": "label:滇池:e99ae5785bb3"
+    },
+    {
+      "kind": "label",
+      "index": 23,
+      "name": {
+        "zh": "北海（贝加尔）",
+        "en": "L. Baikal"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        107.85,
+        53.45
+      ],
+      "fp": "9290d625adc8",
+      "legacy_id": "label:北海（贝加尔）:9290d625adc8"
+    },
+    {
+      "kind": "label",
+      "index": 24,
+      "name": {
+        "zh": "蒲昌海·罗布泊",
+        "en": "Lop Nur (Puchanghai)"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": 1972,
+      "timed": true,
+      "coord": [
+        90.48,
+        40.08
+      ],
+      "fp": "15a4fad7b0b0",
+      "legacy_id": "label:蒲昌海·罗布泊:15a4fad7b0b0"
+    },
+    {
+      "kind": "label",
+      "index": 25,
+      "name": {
+        "zh": "博斯腾湖",
+        "en": "Bosten L."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        87.05,
+        41.97
+      ],
+      "fp": "74a5aaf1d28c",
+      "legacy_id": "label:博斯腾湖:74a5aaf1d28c"
+    },
+    {
+      "kind": "label",
+      "index": 26,
+      "name": {
+        "zh": "热海（伊塞克）",
+        "en": "Issyk-Kul (Rehai)"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        77.22,
+        42.39
+      ],
+      "fp": "efc789a9916b",
+      "legacy_id": "label:热海（伊塞克）:efc789a9916b"
+    },
+    {
+      "kind": "label",
+      "index": 27,
+      "name": {
+        "zh": "夷播海（巴尔喀什）",
+        "en": "L. Balkhash"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        75.95,
+        46.05
+      ],
+      "fp": "01d2ee096ff2",
+      "legacy_id": "label:夷播海（巴尔喀什）:01d2ee096ff2"
+    },
+    {
+      "kind": "label",
+      "index": 28,
+      "name": {
+        "zh": "斋桑泊",
+        "en": "L. Zaysan"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        83.75,
+        48.05
+      ],
+      "fp": "c4af506e919b",
+      "legacy_id": "label:斋桑泊:c4af506e919b"
+    },
+    {
+      "kind": "label",
+      "index": 29,
+      "name": {
+        "zh": "居延泽",
+        "en": "Juyan L."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        101.25,
+        42.27
+      ],
+      "fp": "acbeff8de73e",
+      "legacy_id": "label:居延泽:acbeff8de73e"
+    },
+    {
+      "kind": "label",
+      "index": 30,
+      "name": {
+        "zh": "河水（禹贡故道）",
+        "en": "Yellow R. (Yugong Course)"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": 11,
+      "timed": true,
+      "coord": [
+        115.65,
+        37.35
+      ],
+      "fp": "95d5fc59fce8",
+      "legacy_id": "label:河水（禹贡故道）:95d5fc59fce8"
+    },
+    {
+      "kind": "label",
+      "index": 31,
+      "name": {
+        "zh": "黄 河（王景故道）",
+        "en": "Yellow R. (Wang Jing Course)"
+      },
+      "rank": null,
+      "appear": 11,
+      "vanish": 1048,
+      "timed": true,
+      "coord": [
+        116.55,
+        36.62
+      ],
+      "fp": "5b192f987075",
+      "legacy_id": "label:黄 河（王景故道）:5b192f987075"
+    },
+    {
+      "kind": "label",
+      "index": 32,
+      "name": {
+        "zh": "黄 河（北宋北流）",
+        "en": "Yellow R. (Song N. Course)"
+      },
+      "rank": null,
+      "appear": 1048,
+      "vanish": 1194,
+      "timed": true,
+      "coord": [
+        116.05,
+        37.55
+      ],
+      "fp": "ce0588e08a22",
+      "legacy_id": "label:黄 河（北宋北流）:ce0588e08a22"
+    },
+    {
+      "kind": "label",
+      "index": 33,
+      "name": {
+        "zh": "黄 河（夺淮故道）",
+        "en": "Yellow R. (Huai Course)"
+      },
+      "rank": null,
+      "appear": 1194,
+      "vanish": 1855,
+      "timed": true,
+      "coord": [
+        117.55,
+        34.18
+      ],
+      "fp": "5391aff5bc09",
+      "legacy_id": "label:黄 河（夺淮故道）:5391aff5bc09"
+    },
+    {
+      "kind": "label",
+      "index": 34,
+      "name": {
+        "zh": "黄 河",
+        "en": "Yellow R."
+      },
+      "rank": null,
+      "appear": 1855,
+      "vanish": null,
+      "timed": true,
+      "coord": [
+        116.35,
+        36.28
+      ],
+      "fp": "1d17e603e785",
+      "legacy_id": "label:黄 河:1d17e603e785"
+    },
+    {
+      "kind": "label",
+      "index": 35,
+      "name": {
+        "zh": "济 水",
+        "en": "Ji R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": 1048,
+      "timed": true,
+      "coord": [
+        117.35,
+        36.85
+      ],
+      "fp": "cd85cc02ed1b",
+      "legacy_id": "label:济 水:cd85cc02ed1b"
+    },
+    {
+      "kind": "label",
+      "index": 36,
+      "name": {
+        "zh": "大清河",
+        "en": "Daqing R."
+      },
+      "rank": null,
+      "appear": 1048,
+      "vanish": 1855,
+      "timed": true,
+      "coord": [
+        117.35,
+        36.85
+      ],
+      "fp": "7870606d59b1",
+      "legacy_id": "label:大清河:7870606d59b1"
+    },
+    {
+      "kind": "label",
+      "index": 37,
+      "name": {
+        "zh": "洪泽",
+        "en": "Hongze L."
+      },
+      "rank": null,
+      "appear": 1194,
+      "vanish": null,
+      "timed": true,
+      "coord": [
+        118.52,
+        33.32
+      ],
+      "fp": "abe4d8ce8a0c",
+      "legacy_id": "label:洪泽:abe4d8ce8a0c"
+    },
+    {
+      "kind": "label",
+      "index": 38,
+      "name": {
+        "zh": "巨野泽",
+        "en": "Juye Marsh"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": 900,
+      "timed": true,
+      "coord": [
+        116.08,
+        35.62
+      ],
+      "fp": "c26d59ce785f",
+      "legacy_id": "label:巨野泽:c26d59ce785f"
+    },
+    {
+      "kind": "label",
+      "index": 39,
+      "name": {
+        "zh": "梁山泊",
+        "en": "Liangshan Marsh"
+      },
+      "rank": null,
+      "appear": 900,
+      "vanish": 1280,
+      "timed": true,
+      "coord": [
+        116.08,
+        35.62
+      ],
+      "fp": "e8219459c192",
+      "legacy_id": "label:梁山泊:e8219459c192"
+    },
+    {
+      "kind": "label",
+      "index": 40,
+      "name": {
+        "zh": "云梦泽",
+        "en": "Yunmeng Marsh"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": 317,
+      "timed": true,
+      "coord": [
+        112.98,
+        30.18
+      ],
+      "fp": "4289bb370a73",
+      "legacy_id": "label:云梦泽:4289bb370a73"
+    }
+  ],
+  "static_summary": [
+    {
+      "kind": "label",
+      "rank": null,
+      "count": 29
+    },
+    {
+      "kind": "lake",
+      "rank": 1,
+      "count": 6
+    },
+    {
+      "kind": "lake",
+      "rank": 2,
+      "count": 15
+    },
+    {
+      "kind": "lake",
+      "rank": 3,
+      "count": 8
+    },
+    {
+      "kind": "lake",
+      "rank": 4,
+      "count": 5
+    },
+    {
+      "kind": "lake",
+      "rank": 5,
+      "count": 15
+    },
+    {
+      "kind": "lake",
+      "rank": 6,
+      "count": 8
+    },
+    {
+      "kind": "river",
+      "rank": 1,
+      "count": 12
+    },
+    {
+      "kind": "river",
+      "rank": 2,
+      "count": 25
+    },
+    {
+      "kind": "river",
+      "rank": 3,
+      "count": 46
+    },
+    {
+      "kind": "river",
+      "rank": 4,
+      "count": 1
+    },
+    {
+      "kind": "river",
+      "rank": 5,
+      "count": 30
+    },
+    {
+      "kind": "river",
+      "rank": 6,
+      "count": 17
+    },
+    {
+      "kind": "river",
+      "rank": 7,
+      "count": 45
+    }
+  ]
+}

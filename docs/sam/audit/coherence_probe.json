@@ -1,0 +1,2741 @@
+{
+  "meta": {
+    "generated_by": "scripts/sam/hydro_inventory.js",
+    "git_head": "46230baf5d47ac8e77afaf6a94449adc698445c7",
+    "inputs": {
+      "geo": {
+        "path": "js/china_geo_data.js",
+        "sha256": "fbf152b521745917aff59c4d61c4f7e6ef8b80402125977c6023799844476de4"
+      },
+      "map": {
+        "path": "js/map_data.js",
+        "sha256": "8fd8cb0fabb6bd201b535867307c3f49a287fb4b1e26393fdf9b8f181fee3684"
+      }
+    },
+    "counts": {
+      "rivers": 187,
+      "lakes": 62,
+      "labels": 41,
+      "corridors": 16
+    }
+  },
+  "margin_deg": 0.5,
+  "boundary_years": [
+    {
+      "year": -300,
+      "sources": [
+        {
+          "key": "wall_zhanguo",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": -215,
+      "sources": [
+        {
+          "key": "wall_zhanguo",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": -214,
+      "sources": [
+        {
+          "key": "wall_qin",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": -212,
+      "sources": [
+        {
+          "key": "zhidao",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": -122,
+      "sources": [
+        {
+          "key": "wall_qin",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": -121,
+      "sources": [
+        {
+          "key": "silk_hexi",
+          "endpoint": "span_start",
+          "interval": "closed"
+        },
+        {
+          "key": "wall_han",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": -111,
+      "sources": [
+        {
+          "key": "wall_han_hexi",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": -100,
+      "sources": [
+        {
+          "key": "silk_south",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": -60,
+      "sources": [
+        {
+          "key": "silk_north",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 11,
+      "sources": [
+        {
+          "legacy_id": "label:河水（禹贡故道）:95d5fc59fce8",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:黄 河（王景故道）:5b192f987075",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "endpoint": "appear",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 220,
+      "sources": [
+        {
+          "key": "wall_han_hexi",
+          "endpoint": "span_end",
+          "interval": "closed"
+        },
+        {
+          "key": "wall_han",
+          "endpoint": "span_end",
+          "interval": "closed"
+        },
+        {
+          "key": "zhidao",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 317,
+      "sources": [
+        {
+          "legacy_id": "label:云梦泽:4289bb370a73",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "lake:Yunmeng Ze:370978e5de05",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 605,
+      "sources": [
+        {
+          "key": "canal_hangou",
+          "endpoint": "span_start",
+          "interval": "closed"
+        },
+        {
+          "key": "canal_tongji",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 608,
+      "sources": [
+        {
+          "key": "canal_yongji",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 618,
+      "sources": [
+        {
+          "key": "sea_silk",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 900,
+      "sources": [
+        {
+          "legacy_id": "label:巨野泽:c26d59ce785f",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:梁山泊:e8219459c192",
+          "endpoint": "appear",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 1000,
+      "sources": [
+        {
+          "key": "silk_south",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1048,
+      "sources": [
+        {
+          "legacy_id": "label:大清河:7870606d59b1",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:济 水:cd85cc02ed1b",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:黄 河（北宋北流）:ce0588e08a22",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:黄 河（王景故道）:5b192f987075",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "endpoint": "appear",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 1194,
+      "sources": [
+        {
+          "legacy_id": "label:洪泽:abe4d8ce8a0c",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:黄 河（北宋北流）:ce0588e08a22",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:黄 河（夺淮故道）:5391aff5bc09",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "lake:Hongze Hu:68aaac829a28",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huai:09946cb0fddb",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:3bc797712c20",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:f0981e7773ba",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Si:008c5794bb47",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 1280,
+      "sources": [
+        {
+          "legacy_id": "label:梁山泊:e8219459c192",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "lake:Juye Ze:8dfb5a5c82d8",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 1292,
+      "sources": [
+        {
+          "key": "canal_hangou",
+          "endpoint": "span_end",
+          "interval": "closed"
+        },
+        {
+          "key": "canal_tongji",
+          "endpoint": "span_end",
+          "interval": "closed"
+        },
+        {
+          "key": "canal_yongji",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1293,
+      "sources": [
+        {
+          "key": "canal_jinghang",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1368,
+      "sources": [
+        {
+          "key": "wall_ming",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1400,
+      "sources": [
+        {
+          "key": "silk_hexi",
+          "endpoint": "span_end",
+          "interval": "closed"
+        },
+        {
+          "key": "silk_north",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1405,
+      "sources": [
+        {
+          "key": "zhenghe",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1433,
+      "sources": [
+        {
+          "key": "sea_silk",
+          "endpoint": "span_end",
+          "interval": "closed"
+        },
+        {
+          "key": "zhenghe",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1442,
+      "sources": [
+        {
+          "key": "wall_ming_liaodong",
+          "endpoint": "span_start",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1560,
+      "sources": [
+        {
+          "legacy_id": "lake:Weishan Hu:db35f1373863",
+          "endpoint": "appear",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 1580,
+      "sources": [
+        {
+          "legacy_id": "river:Huang:3bc797712c20",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 1644,
+      "sources": [
+        {
+          "key": "wall_ming_liaodong",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    },
+    {
+      "year": 1855,
+      "sources": [
+        {
+          "legacy_id": "label:大清河:7870606d59b1",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:黄 河:1d17e603e785",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "label:黄 河（夺淮故道）:5391aff5bc09",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Feihuang:411c124f166e",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "endpoint": "appear",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Huang:f0981e7773ba",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 1972,
+      "sources": [
+        {
+          "legacy_id": "label:蒲昌海·罗布泊:15a4fad7b0b0",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        },
+        {
+          "legacy_id": "lake:Lop Nur:4b517c58f936",
+          "endpoint": "vanish",
+          "interval": "half-open"
+        }
+      ]
+    },
+    {
+      "year": 9999,
+      "sources": [
+        {
+          "key": "canal_jinghang",
+          "endpoint": "span_end",
+          "interval": "closed"
+        },
+        {
+          "key": "wall_ming",
+          "endpoint": "span_end",
+          "interval": "closed"
+        }
+      ]
+    }
+  ],
+  "corridor_hydro_boundary_combinations": [
+    {
+      "corridor_key": "wall_zhanguo",
+      "matches": []
+    },
+    {
+      "corridor_key": "wall_qin",
+      "matches": []
+    },
+    {
+      "corridor_key": "wall_han",
+      "matches": [
+        {
+          "corridor_key": "wall_han",
+          "hydro_legacy_id": "river:Huang:578a13a5f4d1",
+          "hydro_endpoint": "vanish",
+          "year": 11,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "wall_han",
+          "hydro_legacy_id": "river:Huang:8ce628579d2b",
+          "hydro_endpoint": "appear",
+          "year": 11,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        }
+      ]
+    },
+    {
+      "corridor_key": "wall_han_hexi",
+      "matches": []
+    },
+    {
+      "corridor_key": "wall_ming",
+      "matches": [
+        {
+          "corridor_key": "wall_ming",
+          "hydro_legacy_id": "river:Huang:84327c8013cf",
+          "hydro_endpoint": "appear",
+          "year": 1855,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "wall_ming",
+          "hydro_legacy_id": "river:Ji:e48052811063",
+          "hydro_endpoint": "vanish",
+          "year": 1855,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        }
+      ]
+    },
+    {
+      "corridor_key": "wall_ming_liaodong",
+      "matches": []
+    },
+    {
+      "corridor_key": "zhidao",
+      "matches": []
+    },
+    {
+      "corridor_key": "silk_hexi",
+      "matches": []
+    },
+    {
+      "corridor_key": "silk_north",
+      "matches": []
+    },
+    {
+      "corridor_key": "silk_south",
+      "matches": []
+    },
+    {
+      "corridor_key": "canal_tongji",
+      "matches": [
+        {
+          "corridor_key": "canal_tongji",
+          "hydro_legacy_id": "river:Huang:8ce628579d2b",
+          "hydro_endpoint": "vanish",
+          "year": 1048,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_tongji",
+          "hydro_legacy_id": "river:Huang:b97bb865b483",
+          "hydro_endpoint": "appear",
+          "year": 1048,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_tongji",
+          "hydro_legacy_id": "lake:Hongze Hu:68aaac829a28",
+          "hydro_endpoint": "appear",
+          "year": 1194,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_tongji",
+          "hydro_legacy_id": "river:Huai:09946cb0fddb",
+          "hydro_endpoint": "vanish",
+          "year": 1194,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_tongji",
+          "hydro_legacy_id": "river:Huang:3bc797712c20",
+          "hydro_endpoint": "appear",
+          "year": 1194,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_tongji",
+          "hydro_legacy_id": "river:Huang:b97bb865b483",
+          "hydro_endpoint": "vanish",
+          "year": 1194,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_tongji",
+          "hydro_legacy_id": "river:Huang:f0981e7773ba",
+          "hydro_endpoint": "appear",
+          "year": 1194,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_tongji",
+          "hydro_legacy_id": "river:Si:008c5794bb47",
+          "hydro_endpoint": "vanish",
+          "year": 1194,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        }
+      ]
+    },
+    {
+      "corridor_key": "canal_hangou",
+      "matches": [
+        {
+          "corridor_key": "canal_hangou",
+          "hydro_legacy_id": "lake:Hongze Hu:68aaac829a28",
+          "hydro_endpoint": "appear",
+          "year": 1194,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_hangou",
+          "hydro_legacy_id": "river:Huai:09946cb0fddb",
+          "hydro_endpoint": "vanish",
+          "year": 1194,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_hangou",
+          "hydro_legacy_id": "river:Huang:f0981e7773ba",
+          "hydro_endpoint": "appear",
+          "year": 1194,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_hangou",
+          "hydro_legacy_id": "river:Si:008c5794bb47",
+          "hydro_endpoint": "vanish",
+          "year": 1194,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        }
+      ]
+    },
+    {
+      "corridor_key": "canal_yongji",
+      "matches": [
+        {
+          "corridor_key": "canal_yongji",
+          "hydro_legacy_id": "river:Huang:759cbe42747f",
+          "hydro_endpoint": "appear",
+          "year": 1048,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_yongji",
+          "hydro_legacy_id": "river:Huang:8ce628579d2b",
+          "hydro_endpoint": "vanish",
+          "year": 1048,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_yongji",
+          "hydro_legacy_id": "river:Huang:b97bb865b483",
+          "hydro_endpoint": "appear",
+          "year": 1048,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_yongji",
+          "hydro_legacy_id": "river:Huang:3bc797712c20",
+          "hydro_endpoint": "appear",
+          "year": 1194,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_yongji",
+          "hydro_legacy_id": "river:Huang:759cbe42747f",
+          "hydro_endpoint": "vanish",
+          "year": 1194,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_yongji",
+          "hydro_legacy_id": "river:Huang:b97bb865b483",
+          "hydro_endpoint": "vanish",
+          "year": 1194,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_yongji",
+          "hydro_legacy_id": "river:Huang:f0981e7773ba",
+          "hydro_endpoint": "appear",
+          "year": 1194,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_yongji",
+          "hydro_legacy_id": "lake:Juye Ze:8dfb5a5c82d8",
+          "hydro_endpoint": "vanish",
+          "year": 1280,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        }
+      ]
+    },
+    {
+      "corridor_key": "canal_jinghang",
+      "matches": [
+        {
+          "corridor_key": "canal_jinghang",
+          "hydro_legacy_id": "lake:Weishan Hu:db35f1373863",
+          "hydro_endpoint": "appear",
+          "year": 1560,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_jinghang",
+          "hydro_legacy_id": "river:Huang:3bc797712c20",
+          "hydro_endpoint": "vanish",
+          "year": 1580,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_jinghang",
+          "hydro_legacy_id": "river:Feihuang:411c124f166e",
+          "hydro_endpoint": "appear",
+          "year": 1855,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_jinghang",
+          "hydro_legacy_id": "river:Huang:84327c8013cf",
+          "hydro_endpoint": "appear",
+          "year": 1855,
+          "hydro_visible_at_endpoint": true,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_jinghang",
+          "hydro_legacy_id": "river:Huang:f0981e7773ba",
+          "hydro_endpoint": "vanish",
+          "year": 1855,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        },
+        {
+          "corridor_key": "canal_jinghang",
+          "hydro_legacy_id": "river:Ji:e48052811063",
+          "hydro_endpoint": "vanish",
+          "year": 1855,
+          "hydro_visible_at_endpoint": false,
+          "rules": {
+            "hydro": "[appear, vanish)",
+            "corridor": "[span[0], span[1]]"
+          }
+        }
+      ]
+    },
+    {
+      "corridor_key": "sea_silk",
+      "matches": []
+    },
+    {
+      "corridor_key": "zhenghe",
+      "matches": []
+    }
+  ],
+  "timed_label_geometry_pairings": [
+    {
+      "label_legacy_id": "label:蒲昌海·罗布泊:15a4fad7b0b0",
+      "label": {
+        "zh": "蒲昌海·罗布泊",
+        "en": "Lop Nur (Puchanghai)",
+        "interval": {
+          "appear": null,
+          "vanish": 1972
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "lake:Lop Nur:4b517c58f936",
+          "kind": "lake",
+          "interval": {
+            "appear": null,
+            "vanish": 1972
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "lop",
+                "nur"
+              ]
+            },
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:河水（禹贡故道）:95d5fc59fce8",
+      "label": {
+        "zh": "河水（禹贡故道）",
+        "en": "Yellow R. (Yugong Course)",
+        "interval": {
+          "appear": null,
+          "vanish": 11
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:黄 河（王景故道）:5b192f987075",
+      "label": {
+        "zh": "黄 河（王景故道）",
+        "en": "Yellow R. (Wang Jing Course)",
+        "interval": {
+          "appear": 11,
+          "vanish": 1048
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Jing:1cf30e1658f7",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "jing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:黄 河（北宋北流）:ce0588e08a22",
+      "label": {
+        "zh": "黄 河（北宋北流）",
+        "en": "Yellow R. (Song N. Course)",
+        "interval": {
+          "appear": 1048,
+          "vanish": 1194
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Song’acha:b7ed7715501f",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "song"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:黄 河（夺淮故道）:5391aff5bc09",
+      "label": {
+        "zh": "黄 河（夺淮故道）",
+        "en": "Yellow R. (Huai Course)",
+        "interval": {
+          "appear": 1194,
+          "vanish": 1855
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "river:Feihuang:411c124f166e",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huai:09946cb0fddb",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "huai"
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huai:41ea7d48299a",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "huai"
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huai:9160decb9731",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "huai"
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huai:c45450a9f014",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "huai"
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:3bc797712c20",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1580
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:f0981e7773ba",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1855
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Si:008c5794bb47",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:黄 河:1d17e603e785",
+      "label": {
+        "zh": "黄 河",
+        "en": "Yellow R.",
+        "interval": {
+          "appear": 1855,
+          "vanish": null
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:济 水:cd85cc02ed1b",
+      "label": {
+        "zh": "济 水",
+        "en": "Ji R.",
+        "interval": {
+          "appear": null,
+          "vanish": 1048
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "ji"
+              ]
+            },
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:大清河:7870606d59b1",
+      "label": {
+        "zh": "大清河",
+        "en": "Daqing R.",
+        "interval": {
+          "appear": 1048,
+          "vanish": 1855
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:759cbe42747f",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:洪泽:abe4d8ce8a0c",
+      "label": {
+        "zh": "洪泽",
+        "en": "Hongze L.",
+        "interval": {
+          "appear": 1194,
+          "vanish": null
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "lake:Hongze Hu:68aaac829a28",
+          "kind": "lake",
+          "interval": {
+            "appear": 1194,
+            "vanish": null
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "hongze"
+              ]
+            },
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "lake:Khövsgöl Nuur:66c4a3a40024",
+          "kind": "lake",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "l"
+              ]
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Feihuang:411c124f166e",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huai:09946cb0fddb",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:f0981e7773ba",
+          "kind": "river",
+          "interval": {
+            "appear": 1194,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Si:008c5794bb47",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:巨野泽:c26d59ce785f",
+      "label": {
+        "zh": "巨野泽",
+        "en": "Juye Marsh",
+        "interval": {
+          "appear": null,
+          "vanish": 900
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "lake:Juye Ze:8dfb5a5c82d8",
+          "kind": "lake",
+          "interval": {
+            "appear": null,
+            "vanish": 1280
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "juye"
+              ]
+            },
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:梁山泊:e8219459c192",
+      "label": {
+        "zh": "梁山泊",
+        "en": "Liangshan Marsh",
+        "interval": {
+          "appear": 900,
+          "vanish": 1280
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "lake:Juye Ze:8dfb5a5c82d8",
+          "kind": "lake",
+          "interval": {
+            "appear": null,
+            "vanish": 1280
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:578a13a5f4d1",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 11
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:84327c8013cf",
+          "kind": "river",
+          "interval": {
+            "appear": 1855,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:8ce628579d2b",
+          "kind": "river",
+          "interval": {
+            "appear": 11,
+            "vanish": 1048
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Huang:b97bb865b483",
+          "kind": "river",
+          "interval": {
+            "appear": 1048,
+            "vanish": 1194
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Ji:e48052811063",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": 1855
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label_legacy_id": "label:云梦泽:4289bb370a73",
+      "label": {
+        "zh": "云梦泽",
+        "en": "Yunmeng Marsh",
+        "interval": {
+          "appear": null,
+          "vanish": 317
+        }
+      },
+      "candidates": [
+        {
+          "legacy_id": "lake:Yunmeng Ze:370978e5de05",
+          "kind": "lake",
+          "interval": {
+            "appear": null,
+            "vanish": 317
+          },
+          "interval_exact_match": true,
+          "pairing_basis": [
+            {
+              "rule": "A",
+              "shared_tokens": [
+                "yunmeng"
+              ]
+            },
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        },
+        {
+          "legacy_id": "river:Chang Jiang:a875e9ce3f47",
+          "kind": "river",
+          "interval": {
+            "appear": null,
+            "vanish": null
+          },
+          "interval_exact_match": false,
+          "pairing_basis": [
+            {
+              "rule": "B",
+              "coord_in_bbox": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unpaired_timed_labels": [],
+  "huang_visible_at_boundary_years": [
+    {
+      "year": -301,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -300,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -216,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -215,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -214,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -213,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -212,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -123,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -122,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -121,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -112,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -111,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -101,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -100,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -61,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": -60,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 10,
+      "visible_legacy_ids": [
+        "river:Huang:578a13a5f4d1",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 11,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 219,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 220,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 316,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 317,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 604,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 605,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 607,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 608,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 617,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 618,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 899,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 900,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 999,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 1000,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 1047,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:8ce628579d2b",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 1048,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:759cbe42747f",
+        "river:Huang:995ee3b69851",
+        "river:Huang:b97bb865b483",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 1193,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:759cbe42747f",
+        "river:Huang:995ee3b69851",
+        "river:Huang:b97bb865b483",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 1194,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1279,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1280,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1291,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1292,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1293,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1367,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1368,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1399,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1400,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1404,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1405,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1432,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1433,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1441,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1442,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1559,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1560,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1579,
+      "visible_legacy_ids": [
+        "river:Huang:3bc797712c20",
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1580,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1643,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1644,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1854,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103",
+        "river:Huang:f0981e7773ba"
+      ]
+    },
+    {
+      "year": 1855,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:84327c8013cf",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 1971,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:84327c8013cf",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 1972,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:84327c8013cf",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 9998,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:84327c8013cf",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    },
+    {
+      "year": 9999,
+      "visible_legacy_ids": [
+        "river:Huang:754a2dd8dceb",
+        "river:Huang:84327c8013cf",
+        "river:Huang:995ee3b69851",
+        "river:Huang:ca478d73b103"
+      ]
+    }
+  ]
+}
