@@ -1,0 +1,9 @@
+[
+  {"name_on_map":"Alpha","modern_name":"Alpha","lat":34.10,"lon":112.20,"status":"FOUND","source_url":"https://example.invalid/georef-demo/alpha"},
+  {"name_on_map":"Bravo","modern_name":"Bravo","lat":34.31,"lon":112.82,"status":"FOUND","source_url":"https://example.invalid/georef-demo/bravo"},
+  {"name_on_map":"Charlie","modern_name":"Charlie","lat":34.22,"lon":113.54,"status":"FOUND","source_url":"https://example.invalid/georef-demo/charlie"},
+  {"name_on_map":"Delta","modern_name":"Delta","lat":33.26,"lon":112.44,"status":"FOUND","source_url":"https://example.invalid/georef-demo/delta"},
+  {"name_on_map":"Echo","modern_name":"Echo","lat":33.56,"lon":113.26,"status":"FOUND","source_url":"https://example.invalid/georef-demo/echo"},
+  {"name_on_map":"Foxtrot","modern_name":"Foxtrot","lat":32.98,"lon":113.98,"status":"FOUND","source_url":"https://example.invalid/georef-demo/foxtrot"},
+  {"name_on_map":"Missing","modern_name":"Missing","lat":0,"lon":0,"status":"UNVERIFIED","source_url":"https://example.invalid/georef-demo/missing"}
+]

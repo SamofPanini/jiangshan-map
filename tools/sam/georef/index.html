@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>配准工作台</title>
+  <link rel="stylesheet" href="georef.css">
+</head>
+<body>
+  <header><strong>配准工作台</strong><span id="status" aria-live="polite">载入一张图片开始。</span><button id="sidebar-toggle" type="button">☰ 面板</button></header>
+  <main id="main">
+    <section id="map-pane" aria-label="地图工作区"><canvas id="map" aria-label="地图画布"></canvas><div id="empty-map">用 URL 参数 <code>?img=…&amp;gaz=…</code>，或从右侧选择图片。<br>示例：<a href="?img=scripts/sam/fixtures/georef_demo/demo.svg&amp;gaz=scripts/sam/fixtures/georef_demo/gazetteer.json">打开合成演示</a></div></section>
+    <aside id="sidebar">
+      <section><h2>载入</h2><label>图像短名 <input id="image-label" type="text" placeholder="D5-p05"></label><label>选择图片 <input id="image-file" type="file" accept="image/*"></label><label>载入 GCP 集 <input id="gcp-file" type="file" accept="application/json,.json"></label><label>载入 GeoJSON <input id="geojson-file" type="file" accept="application/geo+json,application/json,.geojson,.json"></label><dl><dt>SHA-256</dt><dd id="image-sha">未载入</dd><dt>图像尺寸</dt><dd id="image-size">—</dd></dl></section>
+      <section><h2>模式</h2><div class="button-row"><button id="control-mode" class="active" type="button">十字 控制点</button><button id="point-mode" type="button">● 点要素</button><button id="line-mode" type="button">⌁ 连线</button></div><p class="hint">控制点：点击空白处新建，拖动已有点微调。数字化：点击添加；“连线”结束当前折线。</p><button id="finish-line" type="button">结束连线</button></section>
+      <section><h2>变换</h2><div class="button-row"><button id="affine" class="active" type="button">仿射（至少 3）</button><button id="poly2" type="button">二次（至少 6）</button></div><dl><dt>总 RMS</dt><dd id="rms">—</dd><dt>留一法最大</dt><dd id="loo-max">—</dd></dl><div id="transform-warning" class="warning"></div><div id="loo-note" class="loo-note"></div></section>
+      <section><h2>控制点</h2><div id="control-editor" hidden><label>搜索地名 <input id="gaz-search" type="search" placeholder="图名或今名"></label><select id="gaz-results" size="4"></select><label>名称 <input id="control-name" type="text"></label><div class="two"><label>纬度（度）<input id="control-lat" inputmode="decimal" type="number" step="any"></label><label>经度（度）<input id="control-lon" inputmode="decimal" type="number" step="any"></label></div><div class="button-row"><button id="save-control" type="button">保存控制点</button><button id="cancel-control" type="button">取消</button></div></div><ol id="controls"></ol></section>
+      <section><h2>要素属性</h2><div id="feature-editor"><label>类型 <select id="feature-type"><option value="flood_front">flood_front</option><option value="river_course">river_course</option><option value="river_branch">river_branch</option><option value="flood_extent">flood_extent</option><option value="lake">lake</option><option value="wetland">wetland</option><option value="canal">canal</option><option value="coastline">coastline</option></select></label><label>原文日期 <input id="as-written" type="text"></label><div class="two"><label>自 <input id="date-from" type="date"></label><label>至（半开）<input id="date-to" type="date"></label></div><label>时段 <input id="part-of-day" type="text"></label><label>定位 <input id="locator" type="text" placeholder="D5 p05 左上"></label><label>备注 <textarea id="feature-note"></textarea></label><button id="save-feature" type="button">保存当前要素属性</button></div><ol id="features"></ol></section>
+      <section><h2>导出</h2><label>GCP 集 ID <input id="gcp-set-id" type="text"></label><label>来源 source_id <input id="source-id" type="text" placeholder="map-d5-p05"></label><label>数据集 ID <input id="dataset-id" type="text"></label><div class="button-row"><button id="export-gcp" type="button">下载 gcp_set.json</button><button id="export-geojson" type="button">下载 GeoJSON</button></div><pre id="export-errors" aria-live="polite"></pre></section>
+    </aside>
+  </main>
+  <script src="../../../scripts/sam/research_contract.js"></script>
+  <script src="georef_core.js"></script>
+  <script src="georef_ui.js"></script>
+</body>
+</html>

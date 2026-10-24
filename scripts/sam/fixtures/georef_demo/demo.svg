@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f7f3e8"/>
+  <g stroke="#d6d0bd" stroke-width="1"> <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200M0 600H1200M0 700H1200M100 0V800M200 0V800M300 0V800M400 0V800M500 0V800M600 0V800M700 0V800M800 0V800M900 0V800M1000 0V800M1100 0V800"/> </g>
+  <g fill="#344e41" stroke="#fff" stroke-width="3" font-family="system-ui" font-size="24" text-anchor="middle"><circle cx="160" cy="140" r="13"/><text x="160" y="105">Alpha</text><circle cx="470" cy="210" r="13"/><text x="470" y="175">Bravo</text><circle cx="830" cy="155" r="13"/><text x="830" y="120">Charlie</text><circle cx="280" cy="570" r="13"/><text x="280" y="535">Delta</text><circle cx="690" cy="470" r="13"/><text x="690" y="435">Echo</text><circle cx="1050" cy="630" r="13"/><text x="1050" y="595">Foxtrot</text></g>
+  <text x="48" y="752" font-family="system-ui" font-size="19" fill="#665f52">Synthetic demonstration image — all names and coordinates are invented.</text>
+</svg>
