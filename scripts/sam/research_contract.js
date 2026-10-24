@@ -148,6 +148,10 @@ function validateDataset({ dataset, sources, legacyInventory }) {
       const featureTypes = isV02 ? FEATURE_TYPES : FEATURE_TYPES.filter((type) => type !== 'flood_front');
       enumeration(properties.feature_type, featureTypes, `${propsPath}/feature_type`);
     }
+    if (isV02 && properties.feature_type === 'flood_front' && feature.geometry !== null
+      && !['Point', 'MultiPoint', 'LineString', 'MultiLineString'].includes(feature.geometry && feature.geometry.type)) {
+      add('E_GEOM_FEATURE', `${path}/geometry/type`, 'flood_front geometry must be Point, MultiPoint, LineString, MultiLineString, or null');
+    }
     if (own(properties, 'evidence_mode')) enumeration(properties.evidence_mode, EVIDENCE_MODES, `${propsPath}/evidence_mode`);
     if (own(properties, 'review_state')) enumeration(properties.review_state, REVIEW_STATES, `${propsPath}/review_state`);
     if (own(properties, 'license_status')) enumeration(properties.license_status, LICENSE_STATUSES, `${propsPath}/license_status`);
@@ -234,9 +238,15 @@ function validateObserved(observed, path, properties, add, object, unknown, requ
   if (!(observed.part_of_day === null || typeof observed.part_of_day === 'string')) add('E_TYPE', `${path}/part_of_day`, 'must be a string or null');
   if (typeof observed.as_written !== 'string') add('E_TYPE', `${path}/as_written`, 'must be a string');
   const valid = properties.valid;
-  if (fromValid && object(valid) && valid.from_status !== 'unknown' && valid.to_status !== 'unknown') {
-    const year = Number(observed.date_from.slice(0, 4));
-    if ((valid.from_status === 'known' && year < valid.from) || (valid.to_status === 'known' && year >= valid.to)) add('E_OBSERVED', `${path}/date_from`, 'observed date_from year must fall within valid half-open interval');
+  if (object(valid)) {
+    if (fromValid && valid.from_status === 'known' && Number(observed.date_from.slice(0, 4)) < valid.from) {
+      add('E_OBSERVED', `${path}/date_from`, 'observed date_from must not precede valid from year');
+    }
+    if (toValid && valid.to_status === 'known') {
+      const year = Number(observed.date_to.slice(0, 4));
+      const monthDay = observed.date_to.slice(5);
+      if (year > valid.to || (year === valid.to && monthDay > '01-01')) add('E_OBSERVED', `${path}/date_to`, 'observed date_to must not exceed valid to year boundary');
+    }
   }
 }
 
@@ -257,7 +267,9 @@ function validateDerivation(derivation, path, add, object, unknown, required) {
 function isIsoDate(value) {
   if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
   const [year, month, day] = value.split('-').map(Number);
-  const parsed = new Date(Date.UTC(year, month - 1, day));
+  if (year < 1 || year > 9999) return false;
+  const parsed = new Date(0);
+  parsed.setUTCFullYear(year, month - 1, day);
   return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day;
 }
 

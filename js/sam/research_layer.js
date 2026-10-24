@@ -42,15 +42,17 @@
     const app = window.atlasApp;
     const year = app ? app.year : '—';
     const visible = state.ready ? Core.computeVisible(state.dataset, year, state.researchDate) : [];
+    const yearVisible = state.ready ? Core.computeVisible(state.dataset, year) : [];
     const drawable = visible.filter((feature) => feature.geometry !== null);
     const withoutGeometry = visible.length - drawable.length;
     const suppressed = state.ready ? Core.computeSuppressed(visible, state.enabled) : [];
     const unknown = state.ready ? state.dataset.features.filter((feature) => (feature.properties.valid.from_status === 'unknown' || feature.properties.valid.to_status === 'unknown') && feature.properties.review_state !== 'rejected' && feature.properties.review_state !== 'superseded').length : 0;
     const meta = state.dataset.meta;
-    const fronts = visible.filter((feature) => feature.properties.feature_type === 'flood_front' && feature.properties.observed);
-    const starts = fronts.map((feature) => feature.properties.observed.date_from).filter(Boolean).sort();
-    const ends = fronts.map((feature) => feature.properties.observed.date_to).filter(Boolean).sort();
-    const frontSummary = `本年泛滥前锋 ${fronts.length}${starts.length ? `；观测日期 [${starts[0]}, ${ends[ends.length - 1]}) 半开` : ''}${state.researchDate ? `；筛选日期 ${state.researchDate}` : ''}`;
+    const yearFronts = yearVisible.filter((feature) => feature.properties.feature_type === 'flood_front' && feature.properties.observed);
+    const starts = yearFronts.map((feature) => feature.properties.observed.date_from).filter(Boolean).sort();
+    const ends = yearFronts.map((feature) => feature.properties.observed.date_to).filter(Boolean).sort();
+    const visibleFronts = visible.filter((feature) => feature.properties.feature_type === 'flood_front' && feature.properties.observed);
+    const frontSummary = `本年 flood_front ${yearFronts.length} 个（日期范围 ${starts.length ? `[${starts[0]}, ${ends[ends.length - 1]}) 半开` : '无'}）${state.researchDate ? `；${state.researchDate} 可见 ${visibleFronts.length} 个` : ''}`;
     return `${meta.dataset_id}\nrevision ${meta.dataset_revision}; ${meta.stage}${meta.synthetic === true ? '\nSYNTHETIC / 非史料' : ''}\n年份 ${year}；可见 ${visible.length}；可绘制要素 ${drawable.length}；无几何要素 ${withoutGeometry}；压制旧条目 ${suppressed.length}；年代未知未显示 ${unknown}\n${frontSummary}${drawable.length === 0 ? '\n本年无研究数据' : ''}`;
   }
 
@@ -81,12 +83,13 @@
 
   if (parsed.error) { reportError('配置错误', [{ code: 'E_CONFIG', path: '/', message: parsed.error }]); return; }
   const Controller = window.HistoricalAtlasController;
-  if (!Controller || !Controller.prototype || typeof Controller.prototype._hydroMask !== 'function' || typeof Controller.prototype._buildTerrainRivers !== 'function') {
+  if (!Controller || !Controller.prototype || typeof Controller.prototype._hydroMask !== 'function' || typeof Controller.prototype._buildTerrainRivers !== 'function' || typeof Controller.prototype._rescaleSvgTypography !== 'function') {
     reportError('与当前上游版本不兼容', [{ code: 'E_COMPAT', path: '/HistoricalAtlasController' }]);
     return;
   }
   const originalHydroMask = Controller.prototype._hydroMask;
   const originalBuildTerrainRivers = Controller.prototype._buildTerrainRivers;
+  const originalRescaleSvgTypography = Controller.prototype._rescaleSvgTypography;
   const wrapperMarker = typeof Symbol === 'function' ? Symbol('samResearchLayerWrapper') : '__samResearchLayerWrapper__';
 
   const wrappedHydroMask = function wrappedHydroMask(year) {
@@ -99,6 +102,22 @@
   };
   wrappedHydroMask[wrapperMarker] = true;
   Controller.prototype._hydroMask = wrappedHydroMask;
+  const updateResearchMarkerScale = (controller) => {
+    const svg = controller.grpRivers && controller.grpRivers.ownerSVGElement;
+    const group = svg && typeof svg.querySelector === 'function' ? svg.querySelector('#grp-sam-research') : null;
+    if (!group || typeof group.querySelectorAll !== 'function') return;
+    const viewportWidth = typeof window.innerWidth === 'number' ? window.innerWidth : 1280;
+    const scale = Core.researchMarkerScale(controller.camera && controller.camera.w, viewportWidth);
+    group.querySelectorAll('.sam-research-point').forEach((point) => point.setAttribute('r', (2.8 * scale).toFixed(3)));
+    group.querySelectorAll('.sam-research-front-label').forEach((label) => { label.style.fontSize = `${(6.2 * scale).toFixed(3)}px`; });
+  };
+  const wrappedRescaleSvgTypography = function wrappedRescaleSvgTypography(...args) {
+    const result = originalRescaleSvgTypography.apply(this, args);
+    updateResearchMarkerScale(this);
+    return result;
+  };
+  wrappedRescaleSvgTypography[wrapperMarker] = true;
+  Controller.prototype._rescaleSvgTypography = wrappedRescaleSvgTypography;
   const wrappedBuildTerrainRivers = function wrappedBuildTerrainRivers() {
     if (!state.ready) return originalBuildTerrainRivers.call(this);
     const visible = Core.computeVisible(state.dataset, this.year, state.researchDate);
@@ -131,9 +150,11 @@
           const claims = feature.properties.claims.map((claim) => { const source = sourceById.get(claim.source_id); return `${source ? source.title : claim.source_id}: ${claim.locator}`; }).join('\n');
           const observed = feature.properties.observed;
           const derivation = feature.properties.derivation;
-          const observedText = observed === null || observed === undefined ? 'observed null' : `observed [${observed.date_from}, ${observed.date_to}) half-open; part_of_day=${observed.part_of_day}; as_written=${observed.as_written}`;
-          const derivationText = derivation === null || derivation === undefined ? 'derivation null' : `derivation method=${derivation.method}; gcp_set_id=${derivation.gcp_set_id}; note=${derivation.note}`;
-          return `${feature.id}\nvalid [${valid.from_status === 'known' ? valid.from : valid.from_status}, ${valid.to_status === 'known' ? valid.to : valid.to_status}) half-open\n${observedText}\n${derivationText}\n${feature.properties.evidence_mode}\n${feature.properties.review_state}\n${claims}`;
+          const details = [feature.id, `valid [${valid.from_status === 'known' ? valid.from : valid.from_status}, ${valid.to_status === 'known' ? valid.to : valid.to_status}) half-open`];
+          if (state.dataset.meta.schema_version === '0.2.0' && observed !== null && observed !== undefined) details.push(`observed [${observed.date_from}, ${observed.date_to}) half-open; part_of_day=${observed.part_of_day}; as_written=${observed.as_written}`);
+          if (state.dataset.meta.schema_version === '0.2.0' && derivation !== null && derivation !== undefined) details.push(`derivation method=${derivation.method}; gcp_set_id=${derivation.gcp_set_id}; note=${derivation.note}`);
+          details.push(feature.properties.evidence_mode, feature.properties.review_state, claims);
+          return details.join('\n');
         };
         const appendTitle = (node, feature) => {
           const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
@@ -176,6 +197,7 @@
             group.appendChild(label);
           }
         }
+        updateResearchMarkerScale(this);
       }
       this.activeHydroMask = this._hydroMask(this.year);
     } catch (error) {
@@ -221,7 +243,7 @@
       const ids = dataset.features.flatMap((feature) => feature.properties.supersedes);
       const drift = await Core.checkLegacyDrift(inventory, window.HYDRO_DATA, ids);
       if (drift.length) return reportError('上游水系数据已变动，替代关系需重核', drift);
-      if (Controller.prototype._hydroMask !== wrappedHydroMask || Controller.prototype._buildTerrainRivers !== wrappedBuildTerrainRivers) {
+      if (Controller.prototype._hydroMask !== wrappedHydroMask || Controller.prototype._buildTerrainRivers !== wrappedBuildTerrainRivers || Controller.prototype._rescaleSvgTypography !== wrappedRescaleSvgTypography) {
         return reportError('与当前上游版本不兼容', [{ code: 'E_COMPAT', path: '/HistoricalAtlasController', message: 'research layer wrappers were replaced after installation' }]);
       }
       state.dataset = dataset; state.sources = sources; state.inventory = inventory; state.ready = true;

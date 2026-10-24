@@ -16,6 +16,7 @@
 
 | 导出 | 值 |
 |---|---|
+| `SUPPORTED_SCHEMA_VERSIONS` | `0.1.0`, `0.2.0` |
 | `STAGES` | `draft`, `release` |
 | `INTERVALS` | `half_open` |
 | `ENDPOINT_STATUSES` | `known`, `open`, `unknown` |
@@ -34,7 +35,7 @@
 | 位置 | 必填字段 | 规则 |
 |---|---|---|
 | Feature | `type`, `id`, `geometry`, `properties` | `type` 为 `Feature`；`id` 全文件唯一。geometry 可为 null。 |
-| properties | `region`, `feature_type`, `waterbody_id`, `segment_id`, `interpretation_id` | region 必须与 meta 一致；feature_type 为 `river_course`、`river_branch`、`flood_extent`、`flood_front`、`lake`、`wetland`、`canal`、`coastline` 之一。`flood_front` 是某一观测时刻泛滥水边已到达的位置（点或线）；它不是泛区范围（那是 `flood_extent`），两者不得互相推导。 |
+| properties | `region`, `feature_type`, `waterbody_id`, `segment_id`, `interpretation_id` | region 必须与 meta 一致；feature_type 为 `river_course`、`river_branch`、`flood_extent`、`flood_front`、`lake`、`wetland`、`canal`、`coastline` 之一。`flood_front` 是某一观测时刻泛滥水边已到达的位置（Point、MultiPoint、LineString、MultiLineString 或 null）；它不是泛区范围（那是 `flood_extent`），两者不得互相推导。`flood_front` 若有其他非 null geometry 类型，报 `E_GEOM_FEATURE`。 |
 | properties | `valid`, `original_dating`, `evidence_mode`, `review_state` | original_dating 为 string 或 null；evidence_mode 为 `attested`、`reconstructed`、`schematic`、`hypothesis`；review_state 为 `proposed`、`under_review`、`accepted`、`rejected`、`superseded`。 |
 | properties | `dating_uncertainty`, `spatial_error`, `geometry_absent_reason`, `license_status` | 两个误差对象均有数值（或 null）和 reason（或 null），但不能同时 null；缺图理由为 null 或 `not_located`、`unknown_extent`、`restricted`；许可为 `unknown`、`restricted`、`cleared`。 |
 | properties | `claims`, `supersedes` | claim 有唯一 `claim_id`、`source_id`、`supports`、`locator`；supports 只能为 `geometry`、`dating`、`name`、`existence`。supersedes 的每项必须命中传入 legacy inventory 的 `legacy_id`。 |
@@ -44,7 +45,7 @@ v0.2 geometry 支持 `Point`、`MultiPoint`、`LineString`、`MultiLineString`�
 
 ## v0.2 观测与派生
 
-`observed` 为 null 或严格对象 `{date_from, date_to, part_of_day, as_written}`。`date_from` 和 `date_to` 是真实存在的公历 `YYYY-MM-DD` 日期，且是半开区间 `[date_from, date_to)` 的两端；单日 d 写为 `[d, d+1)`。`part_of_day` 是 string/null，保留原图时段写法；`as_written` 是原图日期写法的 string。`date_to` 必须大于 `date_from`。`flood_front` 的 `observed` 必须非 null。除 valid 任一端为 `unknown` 外，`date_from` 的年份必须落在该 feature 的 `valid` 半开区间内；open 端视为无穷。日期格式/日期真实性/端点顺序/年份不合格都报 `E_OBSERVED`。
+`observed` 为 null 或严格对象 `{date_from, date_to, part_of_day, as_written}`。`date_from` 和 `date_to` 是 0001–9999 年内真实存在的公历 `YYYY-MM-DD` 日期，且是半开区间 `[date_from, date_to)` 的两端；单日 d 写为 `[d, d+1)`。`part_of_day` 是 string/null，保留原图时段写法；`as_written` 是原图日期写法的 string。`date_to` 必须大于 `date_from`。`flood_front` 的 `observed` 必须非 null。观测区间整体必须落在该 feature 的 `valid` 内：若 `from_status` 为 known，`date_from` 年份不得早于 `valid.from`；若 `to_status` 为 known，`date_to` 不得晚于 `valid.to` 年 1 月 1 日。unknown 或 open 的端点只跳过该端检查，不跳过另一已知端。日期格式/日期真实性/端点顺序/上述范围关系不合格都报 `E_OBSERVED`。
 
 `derivation` 为 null 或严格对象 `{method, gcp_set_id, note}`。`method` 是 `DERIVATION_METHODS`；`gcp_set_id` 与 `note` 均为 string/null。`georef_affine` 和 `georef_polynomial` 必须给出 string `gcp_set_id`，否则 `E_DERIVATION`。v0.2 的非空 geometry 若 `derivation: null`，draft 报 `W_NO_DERIVATION`；release 报 `E_RELEASE`。
 
@@ -84,6 +85,7 @@ v0.2 geometry 支持 `Point`、`MultiPoint`、`LineString`、`MultiLineString`�
 | `E_NULL_REASON` | 误差数值/reason 同空，或数值为负/非有限。 |
 | `E_GEOM_ABSENT` | geometry 与缺图理由不一致。 |
 | `E_GEOM_TYPE` | 几何类型未获支持。 |
+| `E_GEOM_FEATURE` | flood_front 使用了该要素类型不允许的非 null geometry。 |
 | `E_EMPTY` | 坐标或 Multi 部件为空。 |
 | `E_COORD` | 坐标不是两个有限数或越出全球坐标范围。 |
 | `E_REGION_BBOX` | 坐标越出该区域 bbox。 |

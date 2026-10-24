@@ -27,7 +27,7 @@ function feature(id, geometry, supersedes = []) {
 }
 
 function node(name) {
-  return {
+  const value = {
     name, attributes: {}, children: [], style: {}, parentNode: null,
     appendChild(child) { child.parentNode = this; this.children.push(child); return child; },
     append(...children) { children.forEach((child) => typeof child === 'string' ? this.children.push(child) : this.appendChild(child)); },
@@ -35,9 +35,22 @@ function node(name) {
     setAttribute(key, value) { this.attributes[key] = String(value); },
     addEventListener() {},
   };
+  value.querySelectorAll = (selector) => {
+    const className = selector.startsWith('.') ? selector.slice(1) : null;
+    const descendants = [];
+    const visit = (item) => {
+      for (const child of item.children || []) {
+        if (className && (child.attributes.class || '').split(/\s+/).includes(className)) descendants.push(child);
+        visit(child);
+      }
+    };
+    visit(value);
+    return descendants;
+  };
+  return value;
 }
 
-function makeGlueHarness({ dataset = demo, failInsert = false, deferredFetch = false } = {}) {
+function makeGlueHarness({ dataset = demo, failInsert = false, deferredFetch = false, search = '?research=demo.geojson&research_sources=sources.json' } = {}) {
   const errors = [];
   const document = { head: node('head'), body: node('body'), createElement: (name) => node(name), createElementNS: (_namespace, name) => node(name) };
   const svg = node('svg');
@@ -55,13 +68,14 @@ function makeGlueHarness({ dataset = demo, failInsert = false, deferredFetch = f
     this.renderedLegacy = this.hydroData.rivers.map((item) => item.name);
     this.activeHydroMask = this._hydroMask(this.year);
   };
-  const app = Object.assign(Object.create(Controller.prototype), { year: 1938, hydroData: loadHydro(), grpRivers: rivers, projector: { toScreen: (x, y) => [x, y] } });
+  Controller.prototype._rescaleSvgTypography = function originalRescaleSvgTypography() { this.rescaleCalls = (this.rescaleCalls || 0) + 1; };
+  const app = Object.assign(Object.create(Controller.prototype), { year: 1938, camera: { w: 1000 }, hydroData: loadHydro(), grpRivers: rivers, projector: { toScreen: (x, y) => [x, y] } });
   const responses = [dataset, sources, inventory];
   let release;
   const gate = deferredFetch ? new Promise((resolve) => { release = resolve; }) : Promise.resolve();
   let responseIndex = 0;
   const window = {
-    location: { search: '?research=demo.geojson&research_sources=sources.json', href: 'https://example.test/atlas/' },
+    location: { search, href: 'https://example.test/atlas/' }, innerWidth: 1280,
     HistoricalAtlasController: Controller, atlasApp: app, HYDRO_DATA: app.hydroData,
     SamResearchLayerCore: Core, SamResearchContract: Contract,
     addEventListener() {},
@@ -83,9 +97,13 @@ async function main() {
   for (const bad of ['https://x.geojson', 'HTTP://evil.example/demo.geojson', '\\\\evil.example/demo.geojson', 'data:application/json,{}', '/abs.geojson', 'a/../b.geojson', 'a//b.geojson', 'a%2fb.geojson', 'a.txt']) assert.ok(Core.parseResearchParams(`?research=${encodeURIComponent(bad)}&research_sources=s.json`).error, bad);
   assert.deepEqual(Core.parseResearchParams('?research=a/b.geojson&research_sources=c/d.json'), { enabled: true, dataPath: 'a/b.geojson', sourcesPath: 'c/d.json', error: null });
   assert.equal(Core.parseResearchDate(''), null);
-  assert.equal(Core.parseResearchDate('?research_date=1938-06-13'), '1938-06-13');
+  for (const isoDate of ['0001-06-13', '0099-12-31', '0100-01-01', '1938-06-13', '2000-02-29']) assert.equal(Core.parseResearchDate(`?research_date=${isoDate}`), isoDate);
   assert.throws(() => Core.parseResearchDate('?research_date=1938-6-1'), /YYYY-MM-DD/);
   assert.throws(() => Core.parseResearchDate('?research_date=1938-13-01'), /YYYY-MM-DD/);
+  assert.throws(() => Core.parseResearchDate('?research_date=1900-02-29'), /YYYY-MM-DD/);
+  assert.equal(Core.researchMarkerScale(1000, 1280), 1);
+  assert.ok(Math.abs(Core.researchMarkerScale(100, 1280) - (1 / Math.sqrt(10))) < 1e-12);
+  assert.equal(Core.researchMarkerScale(1000, 900), 1.22);
 
   const front = { properties: { feature_type: 'flood_front', observed: { date_from: '1938-06-13', as_written: '13日夕', part_of_day: '夕' } } };
   assert.equal(Core.isFrontVisibleOn(front, '1938-06-12'), false);
@@ -110,6 +128,8 @@ async function main() {
   assert.deepEqual(Core.computeSuppressed(Core.computeVisible(demo, 1937), true), []);
   assert.deepEqual(Core.computeSuppressed(Core.computeVisible(demo, 1938), true), ['river:Huang:84327c8013cf']);
   assert.deepEqual(Core.computeSuppressed(Core.computeVisible(demo, 1938), false), []);
+  assert.deepEqual(Core.computeVisible(fronts, 1938, '1938-06-19').map((item) => item.id), ['demo-front-1938-06-13', 'demo-front-1938-06-19'], 'research_date must filter flood_fronts cumulatively');
+  assert.equal(Core.computeVisible(fronts, 1938).length, 4, 'without research_date all front features remain visible');
   const nullGeometrySupersedes = structuredClone(demo);
   nullGeometrySupersedes.features[0].properties.review_state = 'rejected';
   nullGeometrySupersedes.features[2].properties.supersedes = ['river:Huang:84327c8013cf'];
@@ -152,6 +172,7 @@ async function main() {
   const polygonGroup = filled.svg.querySelector('#grp-sam-research');
   assert.ok(polygonGroup, filled.errors.join('\n'));
   assert.equal(polygonGroup.children[0].attributes['fill-rule'], 'evenodd', 'R2-05 Polygon must use evenodd fill');
+  assert.doesNotMatch(polygonGroup.children[0].children[0].textContent, /observed|derivation/, 'v0.1 titles must not gain v0.2 lines');
 
   const frontHarness = makeGlueHarness({ dataset: fronts });
   await flush();
@@ -163,6 +184,23 @@ async function main() {
   assert.ok(labels.some((label) => label.textContent === '13日夕'), 'front label must not repeat part_of_day');
   assert.match(circles[0].children[0].textContent, /observed \[1938-06-13, 1938-06-14\) half-open/, 'point titles must document observed half-open interval');
   assert.match(circles[0].children[0].textContent, /derivation method=place_anchor/, 'point titles must document derivation');
+  assert.equal(circles[0].attributes.r, '2.800', 'initial point radius must use the shared scale at z=1');
+  frontHarness.app.camera.w = 100;
+  frontHarness.app._rescaleSvgTypography();
+  assert.equal(circles[0].attributes.r, (2.8 / Math.sqrt(10)).toFixed(3), 'rescale wrapper must update point radius');
+  assert.equal(labels[0].style.fontSize, `${(6.2 / Math.sqrt(10)).toFixed(3)}px`, 'rescale wrapper must update label font size');
+  const dateFilteredHarness = makeGlueHarness({ dataset: fronts, search: '?research=demo.geojson&research_sources=sources.json&research_date=1938-06-19' });
+  await flush();
+  const dateFilteredGroup = dateFilteredHarness.svg.querySelector('#grp-sam-research');
+  assert.equal(dateFilteredGroup.children.filter((child) => child.name === 'circle').length, 2, 'glue layer must use parseResearchDate result for rendering');
+  const v02NullDetails = structuredClone(fronts);
+  v02NullDetails.features[0].properties.feature_type = 'river_course';
+  v02NullDetails.features[0].properties.observed = null;
+  v02NullDetails.features[0].properties.derivation = null;
+  const nullDetailHarness = makeGlueHarness({ dataset: v02NullDetails });
+  await flush();
+  const nullDetailGroup = nullDetailHarness.svg.querySelector('#grp-sam-research');
+  assert.doesNotMatch(nullDetailGroup.children.find((child) => child.name === 'circle').children[0].textContent, /observed|derivation/, 'null v0.2 details must be omitted from titles');
 
   const failedDom = makeGlueHarness({ failInsert: true });
   await flush();

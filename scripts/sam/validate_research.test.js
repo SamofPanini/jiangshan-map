@@ -101,15 +101,42 @@ observedFeature.properties.feature_type = 'flood_front';
 observedFeature.properties.valid = { from: 1938, to: 1939, interval: 'half_open', from_status: 'known', to_status: 'known' };
 observedFeature.properties.observed = { date_from: '1938-06-13', date_to: '1938-06-14', part_of_day: null, as_written: '13日' };
 assert.ok(!resultCodes(observedDataset).has('E_OBSERVED'), 'a one-day observed interval must pass');
+for (const [dateFrom, dateTo, from, to] of [
+  ['0001-06-13', '0001-06-14', 1, 2],
+  ['0099-12-31', '0100-01-01', 99, 100],
+  ['0100-01-01', '0100-01-02', 100, 101],
+  ['1938-06-13', '1938-06-14', 1938, 1939],
+  ['2000-02-29', '2000-03-01', 2000, 2001],
+]) {
+  const acceptedDate = structuredClone(observedDataset);
+  acceptedDate.features[0].properties.valid = { from, to, interval: 'half_open', from_status: 'known', to_status: 'known' };
+  acceptedDate.features[0].properties.observed = { date_from: dateFrom, date_to: dateTo, part_of_day: null, as_written: dateFrom };
+  assert.ok(!resultCodes(acceptedDate).has('E_OBSERVED'), `${dateFrom} must be accepted as a real Gregorian date`);
+}
 const invalidCalendar = structuredClone(observedDataset);
-invalidCalendar.features[0].properties.observed.date_from = '2026-02-30';
-assert.ok(resultCodes(invalidCalendar).has('E_OBSERVED'), 'invalid calendar date must fail');
+invalidCalendar.features[0].properties.observed = { date_from: '1938-02-30', date_to: '1938-03-02', part_of_day: null, as_written: '2月30日' };
+assert.ok(resultCodes(invalidCalendar).has('E_OBSERVED'), 'isolated invalid calendar date must fail');
+const nonLeapCentury = structuredClone(observedDataset);
+nonLeapCentury.features[0].properties.valid = { from: 1900, to: 1901, interval: 'half_open', from_status: 'known', to_status: 'known' };
+nonLeapCentury.features[0].properties.observed = { date_from: '1900-02-29', date_to: '1900-03-01', part_of_day: null, as_written: '2月29日' };
+assert.ok(resultCodes(nonLeapCentury).has('E_OBSERVED'), '1900-02-29 must fail');
 const emptyObservedInterval = structuredClone(observedDataset);
 emptyObservedInterval.features[0].properties.observed.date_to = '1938-06-13';
 assert.ok(resultCodes(emptyObservedInterval).has('E_OBSERVED'), 'empty observed interval must fail');
 const observedOutsideValid = structuredClone(observedDataset);
 observedOutsideValid.features[0].properties.valid = { from: 1939, to: 1940, interval: 'half_open', from_status: 'known', to_status: 'known' };
 assert.ok(resultCodes(observedOutsideValid).has('E_OBSERVED'), 'observed year outside valid must fail');
+const observedCrossesValidEnd = structuredClone(observedDataset);
+observedCrossesValidEnd.features[0].properties.observed = { date_from: '1938-12-31', date_to: '1939-01-02', part_of_day: null, as_written: '年末' };
+assert.ok(resultCodes(observedCrossesValidEnd).has('E_OBSERVED'), 'observed interval crossing a known valid end must fail');
+const openEndKnownStart = structuredClone(observedDataset);
+openEndKnownStart.features[0].properties.valid = { from: 1938, to: null, interval: 'half_open', from_status: 'known', to_status: 'open' };
+openEndKnownStart.features[0].properties.observed = { date_from: '1937-12-31', date_to: '1938-01-01', part_of_day: null, as_written: '年末' };
+assert.ok(resultCodes(openEndKnownStart).has('E_OBSERVED'), 'known valid start must still constrain observed when end is open');
+const unknownStartKnownEnd = structuredClone(observedDataset);
+unknownStartKnownEnd.features[0].properties.valid = { from: null, to: 1939, interval: 'half_open', from_status: 'unknown', to_status: 'known' };
+unknownStartKnownEnd.features[0].properties.observed = { date_from: '1938-12-31', date_to: '1939-01-02', part_of_day: null, as_written: '年末' };
+assert.ok(resultCodes(unknownStartKnownEnd).has('E_OBSERVED'), 'known valid end must still constrain observed when start is unknown');
 
 const missingGcp = structuredClone(observedDataset);
 missingGcp.features[0].properties.derivation = { method: 'georef_affine', gcp_set_id: null, note: null };
@@ -133,6 +160,13 @@ assert.ok(resultCodes(outsideRegionPoint).has('E_REGION_BBOX'), 'points outside 
 const nanPoint = structuredClone(observedDataset);
 nanPoint.features[0].geometry = { type: 'Point', coordinates: [NaN, 35] };
 assert.deepEqual(resultCodes(nanPoint), new Set(['E_COORD']), 'NaN point must report only E_COORD');
+const frontPolygon = structuredClone(observedDataset);
+frontPolygon.features[0].geometry = { type: 'Polygon', coordinates: [[[114, 35], [115, 35], [115, 36], [114, 35]]] };
+assert.deepEqual(resultCodes(frontPolygon), new Set(['E_GEOM_FEATURE']), 'v0.2 flood_front Polygon must fail with E_GEOM_FEATURE');
+const nullFront = structuredClone(observedDataset);
+nullFront.features[0].geometry = null;
+nullFront.features[0].properties.geometry_absent_reason = 'not_located';
+assert.ok(!resultCodes(nullFront).has('E_GEOM_FEATURE'), 'v0.2 flood_front null geometry remains allowed with an absent reason');
 
 const releaseWithNullClaim = JSON.parse(fs.readFileSync(data, 'utf8'));
 const releaseSources = JSON.parse(fs.readFileSync(sources, 'utf8'));
@@ -153,7 +187,7 @@ assert.deepEqual(JSON.parse(JSON.stringify(browserValid)), nodeValid, 'browser a
 
 const contractDocument = fs.readFileSync(path.join(root, 'docs', 'sam', 'CONTRACT.md'), 'utf8');
 const documented = new Set([...contractDocument.matchAll(/`(E_[A-Z_]+)`/g)].map((match) => match[1]));
-const implemented = new Set(['E_TOP_SHAPE', 'E_SCHEMA_VERSION', 'E_REQUIRED', 'E_UNKNOWN_KEY', 'E_TYPE', 'E_ENUM', 'E_REGION', 'E_DUP_ID', 'E_INTERVAL', 'E_NULL_REASON', 'E_GEOM_ABSENT', 'E_GEOM_TYPE', 'E_EMPTY', 'E_COORD', 'E_REGION_BBOX', 'E_LINE', 'E_POINT_DUP', 'E_RING', 'E_SELF_INTERSECT', 'E_SOURCE_REF', 'E_LEGACY_REF', 'E_OBSERVED', 'E_DERIVATION', 'E_RELEASE']);
+const implemented = new Set(['E_TOP_SHAPE', 'E_SCHEMA_VERSION', 'E_REQUIRED', 'E_UNKNOWN_KEY', 'E_TYPE', 'E_ENUM', 'E_REGION', 'E_DUP_ID', 'E_INTERVAL', 'E_NULL_REASON', 'E_GEOM_ABSENT', 'E_GEOM_TYPE', 'E_GEOM_FEATURE', 'E_EMPTY', 'E_COORD', 'E_REGION_BBOX', 'E_LINE', 'E_POINT_DUP', 'E_RING', 'E_SELF_INTERSECT', 'E_SOURCE_REF', 'E_LEGACY_REF', 'E_OBSERVED', 'E_DERIVATION', 'E_RELEASE']);
 assert.deepEqual(documented, implemented, 'CONTRACT.md error-code table must match the implementation');
 
 const enumNames = ['STAGES', 'INTERVALS', 'ENDPOINT_STATUSES', 'FEATURE_TYPES', 'EVIDENCE_MODES', 'REVIEW_STATES', 'LICENSE_STATUSES', 'SOURCE_KINDS', 'ABSENT_REASONS', 'SUPPORTS', 'GEOMETRY_TYPES', 'DERIVATION_METHODS'];
@@ -163,6 +197,9 @@ for (const name of enumNames) {
   const documentedValues = new Set([...row[1].matchAll(/`([^`]+)`/g)].map((match) => match[1]));
   assert.deepEqual(documentedValues, new Set(contract[name]), `CONTRACT.md ${name} must match exported enum`);
 }
+const supportedVersions = contractDocument.match(/^\| `SUPPORTED_SCHEMA_VERSIONS` \| (.+) \|$/m);
+assert.ok(supportedVersions, 'CONTRACT.md must document SUPPORTED_SCHEMA_VERSIONS');
+assert.deepEqual(new Set([...supportedVersions[1].matchAll(/`([^`]+)`/g)].map((match) => match[1])), new Set(contract.SUPPORTED_SCHEMA_VERSIONS), 'CONTRACT.md SUPPORTED_SCHEMA_VERSIONS must match export');
 
 const miniLegacy = JSON.parse(fs.readFileSync(legacy, 'utf8'));
 const fullLegacy = JSON.parse(fs.readFileSync(realLegacy, 'utf8'));

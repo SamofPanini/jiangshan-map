@@ -2,7 +2,7 @@
 
 - task_id：`jsm-p1-1-contract02`
 - 派发方：Sam's Agent(Opus-5.5)；执行：Codex GPT-5.6 Terra
-- 建立：2026-10-24；状态：active
+- 建立：2026-10-24；状态：done（r1 2026-10-24 验收；R3 审核后 r2 返工 2026-10-25 验收，见 `docs/sam/audit/R3_REVIEW.md`）
 - 路线图位置：`docs/sam/ROADMAP.md` §6 黄河 P1（第一组逐日前锋点）
 
 ## 0. 开工前必读

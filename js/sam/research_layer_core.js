@@ -69,6 +69,15 @@
     return Array.isArray(coordinate) && coordinate.length === 2 ? toScreen(coordinate[0], coordinate[1]) : null;
   }
 
+  function researchMarkerScale(cameraWidth, viewportWidth) {
+    if (!(typeof cameraWidth === 'number' && Number.isFinite(cameraWidth) && cameraWidth > 0)) return 1;
+    const z = 1000 / cameraWidth;
+    const isNarrowMobile = viewportWidth <= 640;
+    const isMobile = viewportWidth <= 900;
+    const mobileTypoBoost = isNarrowMobile ? 1.46 : isMobile ? 1.22 : 1;
+    return (1 / Math.sqrt(z)) * mobileTypoBoost;
+  }
+
   function computeSuppressed(visibleFeatures, enabled) {
     if (!enabled) return [];
     const ids = new Set();
@@ -140,11 +149,13 @@
   function isIsoDate(value) {
     if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
     const [year, month, day] = value.split('-').map(Number);
-    const parsed = new Date(Date.UTC(year, month - 1, day));
+    if (year < 1 || year > 9999) return false;
+    const parsed = new Date(0);
+    parsed.setUTCFullYear(year, month - 1, day);
     return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day;
   }
 
-  const api = { parseResearchParams, parseResearchDate, isFeatureVisible, computeVisible, isFrontVisibleOn, frontLabel, pointMarks, featureLabelAnchor, computeSuppressed, checkLegacyDrift, researchMask, featurePathData };
+  const api = { parseResearchParams, parseResearchDate, isFeatureVisible, computeVisible, isFrontVisibleOn, frontLabel, pointMarks, featureLabelAnchor, researchMarkerScale, computeSuppressed, checkLegacyDrift, researchMask, featurePathData };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.SamResearchLayerCore = api;
 })(globalThis);
