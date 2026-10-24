@@ -130,3 +130,22 @@
 4. 「本单里的数与你实测有出入吗？」
 5. 你认为 §2 设计有缺陷的地方（尤其半开日期区间、`observed` 年份与 `valid` 的关系），给具体反例，不要擅自换方案。
 6. 最后一行：`P1-1 DONE`。
+
+## 8. r2 返工（R3 审核处置；续同一 thread）
+
+R3 审核（Codex 6.1-sol·只读）与主会话处置见 `docs/sam/audit/R3_REVIEW.md` 末节「我方逐条处置」。本节是执行清单；与 §2／§3 冲突处以本节为准。白名单同 §4，另加 `docs/sam/audit/R3_REVIEW.md` **只读**。
+
+| # | 级别 | 要求 |
+|---|---|---|
+| 1 | BLOCKING | 0.2.0 中 `feature_type: flood_front` 的几何只许 `Point`／`MultiPoint`／`LineString`／`MultiLineString`（以及 `null`＋`geometry_absent_reason`）；其他 ⇒ 新码 `E_GEOM_FEATURE`。0.1.0 行为不变。CONTRACT.md 同步（错误码表＋§2.3 那段） |
+| 2 | BLOCKING | 契约层与图层层的「真实公历日期」判定都改为对 0001–9999 年正确（`Date.UTC` 会把 0–99 年当 1900–1999）。测试：`0001-06-13`、`0099-12-31`、`0100-01-01`、`1938-06-13` 受理；`1900-02-29` 拒、`2000-02-29` 受理；`parseResearchDate` 同一组 |
+| 3 | BLOCKING | 前锋点半径与日期标签字号要跟上游同一缩放机制：上游 `_rescaleSvgTypography`（`js/app.js` 约 5255 行起，只读该函数前 30 行）按 `s = (1/√z)·移动端系数`、`z = 1000 / camera.w` 反缩放文字。研究图层的点半径（基准 2.8）与标签字号（基准 6.2px）乘同一个 `s`，并在相机变化时随之更新（可仿照现有 `_buildTerrainRivers` 的包装法包装该方法，先调原方法再更新研究图层；`app.js` 仍不得改）。`s` 的计算写成纯函数并测试 z=1、z=10、移动端三例 |
+| 4 | COSMETIC | `<title>`：`observed`／`derivation` 为 null 或文件为 0.1.0 时不写这两行 |
+| 5 | COSMETIC | CONTRACT.md 导出枚举表补 `SUPPORTED_SCHEMA_VERSIONS` |
+| 6 | ADVISORY | 测试补强（每条都要能失败，报告里写你怎么确认它能失败）：① 孤立反例 `[1938-02-30, 1938-03-02)`（valid 1938）⇒ `E_OBSERVED`；② 带 `research_date` 时 `computeVisible` 的结果（拿掉日期筛选必须失败）；③ 胶水层确实用 `parseResearchDate` 的结果（方式自选：抽出可测入口或 DOM 桩） |
+| 7 | ADVISORY（改规则） | `observed` 与 `valid` 的关系改为：观测区间整体落在 `valid` 内——`date_from` 的年 ≥ `valid.from`，且 `date_to` ≤ `valid.to` 年的 1 月 1 日。只跳过 unknown／open 的那一端，已知端照查（原文「为 unknown 时跳过此检查」作废）。违反 ⇒ `E_OBSERVED`。CONTRACT.md 同步，测试含 R3 的两个反例 |
+| 8 | ADVISORY（改显示） | 横幅改为「本年 flood_front N 个（日期范围 …）」；带 `research_date` 时再加「{date} 可见 M 个」 |
+
+不做：多日区间「其间某日／持续」的区分（R3 5c）推迟到 v0.3。
+
+报告：在 `docs/sam/audit/P1-1_REPORT.md` 末尾追加「## r2」节（不改前文），逐条写改了什么、怎么验的、测试真实输出；浏览器内的缩放效果写「待主会话浏览器终验」并给检查步骤。最后一行改为 `P1-1 r2 DONE`。
