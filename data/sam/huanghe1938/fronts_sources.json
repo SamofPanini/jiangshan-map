@@ -1,0 +1,35 @@
+[
+ {
+  "source_id": "src-jacar-d5-1939",
+  "title": "昭和十三年度ニ於ケル新黄河氾濫經過概況（其一）送付ノ件（附 新黄河氾濫經過要圖 其一・其二）",
+  "author_or_org": "杉山部隊本部（北支那方面軍）",
+  "edition": "1939-07-07；JACAR Ref. C04121393700（按标题对应，PDF 内未见编码）",
+  "url": null,
+  "source_kind": "original_map",
+  "license_status": "unknown",
+  "accessed": "2026-10-24",
+  "synthetic": false
+ },
+ {
+  "source_id": "src-jacar-d4-1938",
+  "title": "方軍地資第三十三號 黄河氾濫其後ノ變化ニ就テ 附表・附圖",
+  "author_or_org": "北支那方面軍司令部",
+  "edition": "1938-09-25；JACAR Ref. C13032691500（按标题对应，PDF 内未见编码）",
+  "url": null,
+  "source_kind": "original_map",
+  "license_status": "unknown",
+  "accessed": "2026-10-24",
+  "synthetic": false
+ },
+ {
+  "source_id": "src-wikidata",
+  "title": "Wikidata（地名条目的 P625 坐标）",
+  "author_or_org": "Wikimedia Foundation / Wikidata contributors",
+  "edition": null,
+  "url": "https://www.wikidata.org/",
+  "source_kind": "modern_baseline",
+  "license_status": "cleared",
+  "accessed": "2026-10-24",
+  "synthetic": false
+ }
+]
