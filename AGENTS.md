@@ -59,6 +59,7 @@
 - 本地：`~/Documents/Explore/project/jiangshan-map`；`origin`＝Sam fork，`upstream`＝DeanChensj。
 - 运行：`python3 -m http.server 8765 --bind 127.0.0.1 --directory <仓库根>`（纯静态，约 18 MB 内存，不写盘）；Node 22 可用。Sam 自用的开关命令见 `docs/sam/ROADMAP.md` §2。
 - PDF 读取：`scripts/sam/tools/pdftext.swift`（文字层）、`pdfpages.swift`（逐页渲染 PNG）——macOS 自带 PDFKit，无需安装。文字层无 Unicode 映射时只能渲染成图再读。图片：`contactsheet.swift`（把 `pNN.png` 拼成带页码的缩略总览，先判断每页是什么）、`imgcrop.swift`（按像素裁图，可缩到给定长边；`sips --cropOffset` 的原点不可靠，勿用）。
+- 读图派法（2026-10-24 实测，详见 `docs/sam/audit/P0b-5`～`P0b-7`）：整页分类与编目派 `gpt-6-luna` high；图题字段（图番、图幅名、页码、日期）与手写注记、文书抄录派 `gpt-6.1-sol` high。一律把页渲染成图后用 `-i` 附上，禁止执行者用 shell 自开图，取值域要含「読めない」。冷僻地名与淡色页是主要错处：有第二份抄本或重叠分拍的拿来比对，不一致处由主会话看原图定。分界按质量，不按 token。
 - 机器磁盘长期紧张：不安装大型依赖、不复制大批图像；产物放在任务单指定位置。
 
 ## 7. 第三方文献与缓存
