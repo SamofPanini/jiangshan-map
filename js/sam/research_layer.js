@@ -24,7 +24,9 @@
   const parsed = Core.parseResearchParams(window.location.search);
   if (!parsed.enabled && !parsed.error) return;
 
-  const state = { ready: false, enabled: true, dataset: null, sources: null, inventory: null, error: parsed.error, errors: [] };
+  let researchDate = null;
+  try { researchDate = Core.parseResearchDate(window.location.search); } catch (error) { parsed.error = error.message; }
+  const state = { ready: false, enabled: true, dataset: null, sources: null, inventory: null, researchDate, error: parsed.error, errors: [] };
   let panel;
 
   function reportError(category, errors) {
@@ -39,13 +41,17 @@
     if (state.error) return `研究图层未启用\n${state.error}\n${state.errors.slice(0, 5).map((item) => `${item.code || 'E_CONFIG'} ${item.path || item.legacy_id || '/'}`).join('\n')}`;
     const app = window.atlasApp;
     const year = app ? app.year : '—';
-    const visible = state.ready ? Core.computeVisible(state.dataset, year) : [];
+    const visible = state.ready ? Core.computeVisible(state.dataset, year, state.researchDate) : [];
     const drawable = visible.filter((feature) => feature.geometry !== null);
     const withoutGeometry = visible.length - drawable.length;
     const suppressed = state.ready ? Core.computeSuppressed(visible, state.enabled) : [];
     const unknown = state.ready ? state.dataset.features.filter((feature) => (feature.properties.valid.from_status === 'unknown' || feature.properties.valid.to_status === 'unknown') && feature.properties.review_state !== 'rejected' && feature.properties.review_state !== 'superseded').length : 0;
     const meta = state.dataset.meta;
-    return `${meta.dataset_id}\nrevision ${meta.dataset_revision}; ${meta.stage}${meta.synthetic === true ? '\nSYNTHETIC / 非史料' : ''}\n年份 ${year}；可见 ${visible.length}；可绘制要素 ${drawable.length}；无几何要素 ${withoutGeometry}；压制旧条目 ${suppressed.length}；年代未知未显示 ${unknown}${drawable.length === 0 ? '\n本年无研究数据' : ''}`;
+    const fronts = visible.filter((feature) => feature.properties.feature_type === 'flood_front' && feature.properties.observed);
+    const starts = fronts.map((feature) => feature.properties.observed.date_from).filter(Boolean).sort();
+    const ends = fronts.map((feature) => feature.properties.observed.date_to).filter(Boolean).sort();
+    const frontSummary = `本年泛滥前锋 ${fronts.length}${starts.length ? `；观测日期 [${starts[0]}, ${ends[ends.length - 1]}) 半开` : ''}${state.researchDate ? `；筛选日期 ${state.researchDate}` : ''}`;
+    return `${meta.dataset_id}\nrevision ${meta.dataset_revision}; ${meta.stage}${meta.synthetic === true ? '\nSYNTHETIC / 非史料' : ''}\n年份 ${year}；可见 ${visible.length}；可绘制要素 ${drawable.length}；无几何要素 ${withoutGeometry}；压制旧条目 ${suppressed.length}；年代未知未显示 ${unknown}\n${frontSummary}${drawable.length === 0 ? '\n本年无研究数据' : ''}`;
   }
 
   function renderPanel() {
@@ -95,7 +101,7 @@
   Controller.prototype._hydroMask = wrappedHydroMask;
   const wrappedBuildTerrainRivers = function wrappedBuildTerrainRivers() {
     if (!state.ready) return originalBuildTerrainRivers.call(this);
-    const visible = Core.computeVisible(state.dataset, this.year);
+    const visible = Core.computeVisible(state.dataset, this.year, state.researchDate);
     const suppressed = new Set(Core.computeSuppressed(visible, state.enabled));
     const originalData = this.hydroData;
     const filteredData = {};
@@ -112,8 +118,47 @@
         if (!group) { group = document.createElementNS('http://www.w3.org/2000/svg', 'g'); group.id = 'grp-sam-research'; this.grpRivers.parentNode.insertBefore(group, this.grpRivers.nextSibling); }
         group.replaceChildren();
         const sourceById = new Map(state.sources.map((source) => [source.source_id, source]));
+        const frontDates = visible.filter((feature) => feature.properties.feature_type === 'flood_front' && feature.properties.observed).map((feature) => feature.properties.observed.date_from).filter(Boolean).sort();
+        const frontColor = (feature) => {
+          if (feature.properties.feature_type !== 'flood_front' || !frontDates.length) return '#c96b79';
+          const index = frontDates.indexOf(feature.properties.observed.date_from);
+          const factor = frontDates.length < 2 ? 0.5 : index / (frontDates.length - 1);
+          const channel = (light, dark) => Math.round(light + (dark - light) * factor).toString(16).padStart(2, '0');
+          return `#${channel(216, 157)}${channel(143, 31)}${channel(154, 49)}`;
+        };
+        const titleText = (feature) => {
+          const valid = feature.properties.valid;
+          const claims = feature.properties.claims.map((claim) => { const source = sourceById.get(claim.source_id); return `${source ? source.title : claim.source_id}: ${claim.locator}`; }).join('\n');
+          const observed = feature.properties.observed;
+          const derivation = feature.properties.derivation;
+          const observedText = observed === null || observed === undefined ? 'observed null' : `observed [${observed.date_from}, ${observed.date_to}) half-open; part_of_day=${observed.part_of_day}; as_written=${observed.as_written}`;
+          const derivationText = derivation === null || derivation === undefined ? 'derivation null' : `derivation method=${derivation.method}; gcp_set_id=${derivation.gcp_set_id}; note=${derivation.note}`;
+          return `${feature.id}\nvalid [${valid.from_status === 'known' ? valid.from : valid.from_status}, ${valid.to_status === 'known' ? valid.to : valid.to_status}) half-open\n${observedText}\n${derivationText}\n${feature.properties.evidence_mode}\n${feature.properties.review_state}\n${claims}`;
+        };
+        const appendTitle = (node, feature) => {
+          const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+          title.textContent = titleText(feature);
+          node.appendChild(title);
+        };
         for (const feature of visible) {
           if (!state.enabled || !feature.geometry) continue;
+          if (feature.geometry.type === 'Point' || feature.geometry.type === 'MultiPoint') {
+            for (const mark of Core.pointMarks(feature.geometry, (lon, lat) => this.projector.toScreen(lon, lat))) {
+              const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+              circle.setAttribute('cx', mark[0]); circle.setAttribute('cy', mark[1]); circle.setAttribute('r', '2.8');
+              circle.setAttribute('data-feature-id', feature.id); circle.setAttribute('class', 'sam-research-point');
+              circle.setAttribute('style', `--sam-front-fill:${frontColor(feature)}`);
+              appendTitle(circle, feature); group.appendChild(circle);
+              const labelText = feature.properties.feature_type === 'flood_front' ? Core.frontLabel(feature) : '';
+              if (labelText) {
+                const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                label.setAttribute('x', mark[0] + 4.5); label.setAttribute('y', mark[1] - 4.5);
+                label.setAttribute('class', 'sam-research-front-label'); label.textContent = labelText;
+                group.appendChild(label);
+              }
+            }
+            continue;
+          }
           const d = Core.featurePathData(feature.geometry, (lon, lat) => this.projector.toScreen(lon, lat));
           if (!d) continue;
           const shape = feature.geometry.type.includes('Polygon') ? 'polygon' : 'line';
@@ -121,11 +166,15 @@
           path.setAttribute('d', d); path.setAttribute('data-feature-id', feature.id);
           path.setAttribute('class', `sam-research-${shape} sam-evidence-${feature.properties.evidence_mode}`);
           if (shape === 'polygon') path.setAttribute('fill-rule', 'evenodd');
-          const valid = feature.properties.valid;
-          const claims = feature.properties.claims.map((claim) => { const source = sourceById.get(claim.source_id); return `${source ? source.title : claim.source_id}: ${claim.locator}`; }).join('\n');
-          const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
-          title.textContent = `${feature.id}\nvalid [${valid.from_status === 'known' ? valid.from : valid.from_status}, ${valid.to_status === 'known' ? valid.to : valid.to_status}) half-open\n${feature.properties.evidence_mode}\n${feature.properties.review_state}\n${claims}`;
-          path.appendChild(title); group.appendChild(path);
+          appendTitle(path, feature); group.appendChild(path);
+          const labelText = feature.properties.feature_type === 'flood_front' ? Core.frontLabel(feature) : '';
+          const labelMark = labelText ? Core.featureLabelAnchor(feature.geometry, (lon, lat) => this.projector.toScreen(lon, lat)) : null;
+          if (labelMark) {
+            const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            label.setAttribute('x', labelMark[0] + 4.5); label.setAttribute('y', labelMark[1] - 4.5);
+            label.setAttribute('class', 'sam-research-front-label'); label.textContent = labelText;
+            group.appendChild(label);
+          }
         }
       }
       this.activeHydroMask = this._hydroMask(this.year);
@@ -148,7 +197,7 @@
   Controller.prototype._buildTerrainRivers = wrappedBuildTerrainRivers;
 
   const style = document.createElement('style');
-  style.textContent = '.sam-research-line,.sam-research-polygon{fill:none;stroke:#9d1f31;stroke-width:2.2;pointer-events:stroke}.sam-research-polygon{fill:#9d1f3133;pointer-events:all}.sam-evidence-reconstructed{stroke-dasharray:12 6}.sam-evidence-schematic{stroke-dasharray:2 5}.sam-evidence-hypothesis{stroke-dasharray:1 5;stroke-width:1.2;opacity:.55}';
+  style.textContent = '.sam-research-line,.sam-research-polygon{fill:none;stroke:#9d1f31;stroke-width:2.2;pointer-events:stroke}.sam-research-polygon{fill:#9d1f3133;pointer-events:all}.sam-research-point{fill:var(--sam-front-fill,#d98f9a);stroke:#9d1f31;stroke-width:.65;vector-effect:non-scaling-stroke;pointer-events:all}.sam-research-front-label{font-family:var(--serif-stack);font-size:6.2px;font-weight:600;fill:#9d1f31;pointer-events:none;paint-order:stroke fill;stroke:#fff7e6;stroke-width:1.3px;stroke-linejoin:round}.sam-evidence-reconstructed{stroke-dasharray:12 6}.sam-evidence-schematic{stroke-dasharray:2 5}.sam-evidence-hypothesis{stroke-dasharray:1 5;stroke-width:1.2;opacity:.55}';
   document.head.appendChild(style);
 
   let urls;

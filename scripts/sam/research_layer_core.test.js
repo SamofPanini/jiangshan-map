@@ -12,6 +12,7 @@ const Contract = require('./research_contract.js');
 const root = path.resolve(__dirname, '..', '..');
 const inventory = JSON.parse(fs.readFileSync(path.join(root, 'docs/sam/audit/hydro_inventory.json'), 'utf8'));
 const demo = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures/research_demo/demo_synthetic.geojson'), 'utf8'));
+const fronts = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures/research_demo/demo_fronts_v02.geojson'), 'utf8'));
 const sources = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures/research_demo/demo_sources.json'), 'utf8'));
 
 function loadHydro() {
@@ -81,6 +82,20 @@ async function main() {
   assert.match(Core.parseResearchParams('?research=a.geojson').error, /together/);
   for (const bad of ['https://x.geojson', 'HTTP://evil.example/demo.geojson', '\\\\evil.example/demo.geojson', 'data:application/json,{}', '/abs.geojson', 'a/../b.geojson', 'a//b.geojson', 'a%2fb.geojson', 'a.txt']) assert.ok(Core.parseResearchParams(`?research=${encodeURIComponent(bad)}&research_sources=s.json`).error, bad);
   assert.deepEqual(Core.parseResearchParams('?research=a/b.geojson&research_sources=c/d.json'), { enabled: true, dataPath: 'a/b.geojson', sourcesPath: 'c/d.json', error: null });
+  assert.equal(Core.parseResearchDate(''), null);
+  assert.equal(Core.parseResearchDate('?research_date=1938-06-13'), '1938-06-13');
+  assert.throws(() => Core.parseResearchDate('?research_date=1938-6-1'), /YYYY-MM-DD/);
+  assert.throws(() => Core.parseResearchDate('?research_date=1938-13-01'), /YYYY-MM-DD/);
+
+  const front = { properties: { feature_type: 'flood_front', observed: { date_from: '1938-06-13', as_written: '13日夕', part_of_day: '夕' } } };
+  assert.equal(Core.isFrontVisibleOn(front, '1938-06-12'), false);
+  assert.equal(Core.isFrontVisibleOn(front, '1938-06-13'), true);
+  assert.equal(Core.isFrontVisibleOn({ properties: { feature_type: 'river_course' } }, '1938-06-12'), true);
+  assert.equal(Core.frontLabel(front), '13日夕');
+  assert.equal(Core.frontLabel({ properties: { observed: { as_written: '18日', part_of_day: '15:00' } } }), '18日 15:00');
+  assert.deepEqual(Core.pointMarks({ type: 'Point', coordinates: [114, 35] }, (x, y) => [x + 1, y + 2]), [[115, 37]]);
+  assert.deepEqual(Core.pointMarks({ type: 'MultiPoint', coordinates: [[114, 35], [115, 36]] }, (x, y) => [x + 1, y + 2]), [[115, 37], [116, 38]]);
+  assert.deepEqual(Core.featureLabelAnchor({ type: 'LineString', coordinates: [[114, 35], [115, 36]] }, (x, y) => [x + 1, y + 2]), [115, 37]);
 
   const timed = demo.features[0];
   assert.equal(Core.isFeatureVisible(timed, 1937), false);
@@ -137,6 +152,17 @@ async function main() {
   const polygonGroup = filled.svg.querySelector('#grp-sam-research');
   assert.ok(polygonGroup, filled.errors.join('\n'));
   assert.equal(polygonGroup.children[0].attributes['fill-rule'], 'evenodd', 'R2-05 Polygon must use evenodd fill');
+
+  const frontHarness = makeGlueHarness({ dataset: fronts });
+  await flush();
+  const frontGroup = frontHarness.svg.querySelector('#grp-sam-research');
+  const circles = frontGroup.children.filter((child) => child.name === 'circle');
+  const labels = frontGroup.children.filter((child) => child.name === 'text');
+  assert.equal(circles.length, 5, 'Point and MultiPoint must render one circle per coordinate');
+  assert.equal(labels.length, 5, 'front labels must render beside every point mark');
+  assert.ok(labels.some((label) => label.textContent === '13日夕'), 'front label must not repeat part_of_day');
+  assert.match(circles[0].children[0].textContent, /observed \[1938-06-13, 1938-06-14\) half-open/, 'point titles must document observed half-open interval');
+  assert.match(circles[0].children[0].textContent, /derivation method=place_anchor/, 'point titles must document derivation');
 
   const failedDom = makeGlueHarness({ failInsert: true });
   await flush();

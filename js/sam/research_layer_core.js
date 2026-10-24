@@ -16,6 +16,13 @@
     return { enabled: true, dataPath: data, sourcesPath: sources, error: null };
   }
 
+  function parseResearchDate(search) {
+    const value = new URLSearchParams(search || '').get('research_date');
+    if (value === null) return null;
+    if (!isIsoDate(value)) throw new Error('research_date must be a real YYYY-MM-DD date');
+    return value;
+  }
+
   function isFeatureVisible(feature, year) {
     const valid = feature && feature.properties && feature.properties.valid;
     const props = feature && feature.properties;
@@ -26,8 +33,40 @@
     return true;
   }
 
-  function computeVisible(dataset, year) {
-    return (dataset && Array.isArray(dataset.features) ? dataset.features : []).filter((feature) => isFeatureVisible(feature, year));
+  function computeVisible(dataset, year, isoDate = null) {
+    return (dataset && Array.isArray(dataset.features) ? dataset.features : []).filter((feature) => isFeatureVisible(feature, year) && isFrontVisibleOn(feature, isoDate));
+  }
+
+  function isFrontVisibleOn(feature, isoDate) {
+    const props = feature && feature.properties;
+    if (!isoDate || !props || props.feature_type !== 'flood_front') return true;
+    return Boolean(props.observed && typeof props.observed.date_from === 'string' && props.observed.date_from <= isoDate);
+  }
+
+  function frontLabel(feature) {
+    const observed = feature && feature.properties && feature.properties.observed;
+    if (!observed || typeof observed.as_written !== 'string') return '';
+    if (!observed.part_of_day || observed.as_written.includes(observed.part_of_day)) return observed.as_written;
+    return `${observed.as_written} ${observed.part_of_day}`;
+  }
+
+  function pointMarks(geometry, toScreen) {
+    if (!geometry || typeof toScreen !== 'function') return [];
+    const coordinates = geometry.type === 'Point' ? [geometry.coordinates] : geometry.type === 'MultiPoint' ? geometry.coordinates : [];
+    if (!Array.isArray(coordinates)) return [];
+    return coordinates.filter((coordinate) => Array.isArray(coordinate) && coordinate.length === 2).map((coordinate) => toScreen(coordinate[0], coordinate[1]));
+  }
+
+  function featureLabelAnchor(geometry, toScreen) {
+    if (!geometry || typeof toScreen !== 'function') return null;
+    const marks = pointMarks(geometry, toScreen);
+    if (marks.length) return marks[0];
+    let coordinate = null;
+    if (geometry.type === 'LineString') coordinate = geometry.coordinates && geometry.coordinates[0];
+    if (geometry.type === 'MultiLineString') coordinate = geometry.coordinates && geometry.coordinates[0] && geometry.coordinates[0][0];
+    if (geometry.type === 'Polygon') coordinate = geometry.coordinates && geometry.coordinates[0] && geometry.coordinates[0][0];
+    if (geometry.type === 'MultiPolygon') coordinate = geometry.coordinates && geometry.coordinates[0] && geometry.coordinates[0][0] && geometry.coordinates[0][0][0];
+    return Array.isArray(coordinate) && coordinate.length === 2 ? toScreen(coordinate[0], coordinate[1]) : null;
   }
 
   function computeSuppressed(visibleFeatures, enabled) {
@@ -98,7 +137,14 @@
     return '';
   }
 
-  const api = { parseResearchParams, isFeatureVisible, computeVisible, computeSuppressed, checkLegacyDrift, researchMask, featurePathData };
+  function isIsoDate(value) {
+    if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+    const [year, month, day] = value.split('-').map(Number);
+    const parsed = new Date(Date.UTC(year, month - 1, day));
+    return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day;
+  }
+
+  const api = { parseResearchParams, parseResearchDate, isFeatureVisible, computeVisible, isFrontVisibleOn, frontLabel, pointMarks, featureLabelAnchor, computeSuppressed, checkLegacyDrift, researchMask, featurePathData };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.SamResearchLayerCore = api;
 })(globalThis);

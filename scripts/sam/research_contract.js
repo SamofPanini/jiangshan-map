@@ -1,26 +1,31 @@
 'use strict';
 
-const SCHEMA_VERSION = '0.1.0';
+const SCHEMA_VERSION = '0.2.0';
+const SUPPORTED_SCHEMA_VERSIONS = Object.freeze(['0.1.0', '0.2.0']);
 const REGIONS = Object.freeze({ cn: Object.freeze({ bbox: Object.freeze([70, 15, 140, 56]) }) });
 const STAGES = Object.freeze(['draft', 'release']);
 const INTERVALS = Object.freeze(['half_open']);
 const ENDPOINT_STATUSES = Object.freeze(['known', 'open', 'unknown']);
-const FEATURE_TYPES = Object.freeze(['river_course', 'river_branch', 'flood_extent', 'lake', 'wetland', 'canal', 'coastline']);
+const FEATURE_TYPES = Object.freeze(['river_course', 'river_branch', 'flood_extent', 'flood_front', 'lake', 'wetland', 'canal', 'coastline']);
 const EVIDENCE_MODES = Object.freeze(['attested', 'reconstructed', 'schematic', 'hypothesis']);
 const REVIEW_STATES = Object.freeze(['proposed', 'under_review', 'accepted', 'rejected', 'superseded']);
 const LICENSE_STATUSES = Object.freeze(['unknown', 'restricted', 'cleared']);
 const SOURCE_KINDS = Object.freeze(['original_map', 'editor_reconstruction', 'modern_baseline', 'text', 'dataset']);
 const ABSENT_REASONS = Object.freeze(['not_located', 'unknown_extent', 'restricted']);
 const SUPPORTS = Object.freeze(['geometry', 'dating', 'name', 'existence']);
-const GEOMETRY_TYPES = Object.freeze(['LineString', 'MultiLineString', 'Polygon', 'MultiPolygon']);
+const GEOMETRY_TYPES = Object.freeze(['Point', 'MultiPoint', 'LineString', 'MultiLineString', 'Polygon', 'MultiPolygon']);
+const DERIVATION_METHODS = Object.freeze(['place_anchor', 'georef_affine', 'georef_polynomial', 'digitized_modern', 'manual_sketch']);
 
 const TOP_KEYS = ['type', 'meta', 'features'];
 const META_KEYS = ['schema_version', 'dataset_id', 'dataset_revision', 'region', 'stage', 'synthetic', 'description'];
 const FEATURE_KEYS = ['type', 'id', 'geometry', 'properties'];
 const PROPERTIES_KEYS = ['region', 'feature_type', 'waterbody_id', 'segment_id', 'interpretation_id', 'valid', 'original_dating', 'evidence_mode', 'review_state', 'dating_uncertainty', 'spatial_error', 'geometry_absent_reason', 'license_status', 'claims', 'supersedes'];
+const PROPERTIES_V02_KEYS = [...PROPERTIES_KEYS, 'observed', 'derivation'];
 const VALID_KEYS = ['from', 'to', 'interval', 'from_status', 'to_status'];
 const CLAIM_KEYS = ['claim_id', 'source_id', 'supports', 'locator'];
 const GEOMETRY_KEYS = ['type', 'coordinates'];
+const OBSERVED_KEYS = ['date_from', 'date_to', 'part_of_day', 'as_written'];
+const DERIVATION_KEYS = ['method', 'gcp_set_id', 'note'];
 const SOURCE_KEYS = ['source_id', 'title', 'author_or_org', 'edition', 'url', 'source_kind', 'license_status', 'accessed', 'synthetic'];
 
 function pointer(path, part) {
@@ -67,7 +72,9 @@ function validateDataset({ dataset, sources, legacyInventory }) {
   const meta = dataset.meta;
   unknown(meta, META_KEYS, '/meta');
   required(meta, META_KEYS, '/meta');
-  if (own(meta, 'schema_version') && meta.schema_version !== SCHEMA_VERSION) add('E_SCHEMA_VERSION', '/meta/schema_version', `must equal ${SCHEMA_VERSION}`);
+  const schemaVersion = meta.schema_version;
+  const isV02 = schemaVersion === SCHEMA_VERSION;
+  if (own(meta, 'schema_version') && !SUPPORTED_SCHEMA_VERSIONS.includes(schemaVersion)) add('E_SCHEMA_VERSION', '/meta/schema_version', `must be one of: ${SUPPORTED_SCHEMA_VERSIONS.join(', ')}`);
   for (const key of ['dataset_id', 'dataset_revision', 'description']) if (own(meta, key)) string(meta[key], pointer('/meta', key));
   if (own(meta, 'stage')) enumeration(meta.stage, STAGES, '/meta/stage');
   if (own(meta, 'synthetic') && typeof meta.synthetic !== 'boolean') add('E_TYPE', '/meta/synthetic', 'must be a boolean');
@@ -125,23 +132,32 @@ function validateDataset({ dataset, sources, legacyInventory }) {
         featureIds.add(feature.id);
       }
     }
-    validateGeometry(feature.geometry, `${path}/geometry`, meta.region, add, object, unknown, required, finiteNumber);
+    validateGeometry(feature.geometry, `${path}/geometry`, meta.region, isV02, add, object, unknown, required, finiteNumber);
     const properties = feature.properties;
     if (!object(properties)) {
       add('E_TYPE', `${path}/properties`, 'properties must be an object');
       return;
     }
     const propsPath = `${path}/properties`;
-    unknown(properties, PROPERTIES_KEYS, propsPath);
-    required(properties, PROPERTIES_KEYS, propsPath);
+    const propertyKeys = isV02 ? PROPERTIES_V02_KEYS : PROPERTIES_KEYS;
+    unknown(properties, propertyKeys, propsPath);
+    required(properties, propertyKeys, propsPath);
     for (const key of ['region', 'waterbody_id', 'segment_id', 'interpretation_id']) if (own(properties, key)) string(properties[key], pointer(propsPath, key));
     if (own(properties, 'original_dating')) string(properties.original_dating, `${propsPath}/original_dating`, true);
-    if (own(properties, 'feature_type')) enumeration(properties.feature_type, FEATURE_TYPES, `${propsPath}/feature_type`);
+    if (own(properties, 'feature_type')) {
+      const featureTypes = isV02 ? FEATURE_TYPES : FEATURE_TYPES.filter((type) => type !== 'flood_front');
+      enumeration(properties.feature_type, featureTypes, `${propsPath}/feature_type`);
+    }
     if (own(properties, 'evidence_mode')) enumeration(properties.evidence_mode, EVIDENCE_MODES, `${propsPath}/evidence_mode`);
     if (own(properties, 'review_state')) enumeration(properties.review_state, REVIEW_STATES, `${propsPath}/review_state`);
     if (own(properties, 'license_status')) enumeration(properties.license_status, LICENSE_STATUSES, `${propsPath}/license_status`);
     if (properties.region !== meta.region) add('E_REGION', `${propsPath}/region`, 'feature region must equal meta.region');
     validateValid(properties.valid, `${propsPath}/valid`, add, object, unknown, required, integer);
+    if (isV02) {
+      validateObserved(properties.observed, `${propsPath}/observed`, properties, add, object, unknown, required);
+      validateDerivation(properties.derivation, `${propsPath}/derivation`, add, object, unknown, required);
+      if (meta.stage === 'draft' && feature.geometry !== null && properties.derivation === null) warn('W_NO_DERIVATION', `${propsPath}/derivation`, 'draft feature geometry has no derivation');
+    }
     validateMeasure(properties.dating_uncertainty, `${propsPath}/dating_uncertainty`, 'years', add, object, unknown, required, finiteNumber);
     validateMeasure(properties.spatial_error, `${propsPath}/spatial_error`, 'meters', add, object, unknown, required, finiteNumber);
     if (!(properties.geometry_absent_reason === null || ABSENT_REASONS.includes(properties.geometry_absent_reason))) add('E_ENUM', `${propsPath}/geometry_absent_reason`, `must be null or one of: ${ABSENT_REASONS.join(', ')}`);
@@ -180,7 +196,7 @@ function validateDataset({ dataset, sources, legacyInventory }) {
       else if (!legacyIds.has(legacyId)) add('E_LEGACY_REF', `${propsPath}/supersedes/${legacyIndex}`, `unknown legacy_id: ${legacyId}`);
     });
     if (meta.stage === 'draft' && properties.license_status === 'unknown') warn('W_LICENSE_UNKNOWN', `${propsPath}/license_status`, 'draft feature license is unknown');
-    if (meta.stage === 'release') validateRelease(feature, properties, path, add);
+    if (meta.stage === 'release') validateRelease(feature, properties, path, isV02, add);
   });
   if (meta.stage === 'release') {
     if (meta.synthetic !== false) add('E_RELEASE', '/meta/synthetic', 'release dataset must be non-synthetic');
@@ -191,13 +207,58 @@ function validateDataset({ dataset, sources, legacyInventory }) {
   return sorted(errors, warnings);
 }
 
-function validateRelease(feature, properties, featurePath, add) {
+function validateRelease(feature, properties, featurePath, isV02, add) {
   if (properties.review_state !== 'accepted') add('E_RELEASE', `${featurePath}/properties/review_state`, 'release feature must be accepted');
   if (properties.license_status !== 'cleared') add('E_RELEASE', `${featurePath}/properties/license_status`, 'release feature license must be cleared');
   const supports = new Set((Array.isArray(properties.claims) ? properties.claims : [])
     .flatMap((claim) => claim !== null && typeof claim === 'object' && !Array.isArray(claim) && Array.isArray(claim.supports) ? claim.supports : []));
   if (!supports.has('dating')) add('E_RELEASE', `${featurePath}/properties/claims`, 'release feature needs a dating claim');
   if (feature.geometry !== null && !supports.has('geometry')) add('E_RELEASE', `${featurePath}/properties/claims`, 'release geometry needs a geometry claim');
+  if (isV02 && feature.geometry !== null && properties.derivation === null) add('E_RELEASE', `${featurePath}/properties/derivation`, 'release feature geometry requires derivation');
+}
+
+function validateObserved(observed, path, properties, add, object, unknown, required) {
+  if (observed === null) {
+    if (properties.feature_type === 'flood_front') add('E_OBSERVED', path, 'flood_front requires a non-null observed value');
+    return;
+  }
+  if (!object(observed)) {
+    add('E_TYPE', path, 'observed must be an object or null');
+    return;
+  }
+  unknown(observed, OBSERVED_KEYS, path);
+  required(observed, OBSERVED_KEYS, path);
+  const fromValid = isIsoDate(observed.date_from);
+  const toValid = isIsoDate(observed.date_to);
+  if (!fromValid || !toValid || (fromValid && toValid && observed.date_to <= observed.date_from)) add('E_OBSERVED', path, 'observed dates must be real YYYY-MM-DD values with date_to after date_from');
+  if (!(observed.part_of_day === null || typeof observed.part_of_day === 'string')) add('E_TYPE', `${path}/part_of_day`, 'must be a string or null');
+  if (typeof observed.as_written !== 'string') add('E_TYPE', `${path}/as_written`, 'must be a string');
+  const valid = properties.valid;
+  if (fromValid && object(valid) && valid.from_status !== 'unknown' && valid.to_status !== 'unknown') {
+    const year = Number(observed.date_from.slice(0, 4));
+    if ((valid.from_status === 'known' && year < valid.from) || (valid.to_status === 'known' && year >= valid.to)) add('E_OBSERVED', `${path}/date_from`, 'observed date_from year must fall within valid half-open interval');
+  }
+}
+
+function validateDerivation(derivation, path, add, object, unknown, required) {
+  if (derivation === null) return;
+  if (!object(derivation)) {
+    add('E_TYPE', path, 'derivation must be an object or null');
+    return;
+  }
+  unknown(derivation, DERIVATION_KEYS, path);
+  required(derivation, DERIVATION_KEYS, path);
+  if (!DERIVATION_METHODS.includes(derivation.method)) add('E_ENUM', `${path}/method`, `must be one of: ${DERIVATION_METHODS.join(', ')}`);
+  if (!(derivation.gcp_set_id === null || typeof derivation.gcp_set_id === 'string')) add('E_TYPE', `${path}/gcp_set_id`, 'must be a string or null');
+  if (!(derivation.note === null || typeof derivation.note === 'string')) add('E_TYPE', `${path}/note`, 'must be a string or null');
+  if (typeof derivation.method === 'string' && derivation.method.startsWith('georef_') && typeof derivation.gcp_set_id !== 'string') add('E_DERIVATION', `${path}/gcp_set_id`, 'georef methods require a string gcp_set_id');
+}
+
+function isIsoDate(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [year, month, day] = value.split('-').map(Number);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day;
 }
 
 function validateValid(valid, path, add, object, unknown, required, integer) {
@@ -234,7 +295,7 @@ function validateMeasure(measure, path, numberKey, add, object, unknown, require
   if (typeof value === 'number' && (!finiteNumber(value) || value < 0)) add('E_NULL_REASON', `${path}/${numberKey}`, 'numeric value must be finite and non-negative');
 }
 
-function validateGeometry(geometry, path, region, add, object, unknown, required, finiteNumber) {
+function validateGeometry(geometry, path, region, isV02, add, object, unknown, required, finiteNumber) {
   if (geometry === null) return;
   if (!object(geometry)) {
     add('E_TYPE', path, 'geometry must be an object or null');
@@ -242,8 +303,9 @@ function validateGeometry(geometry, path, region, add, object, unknown, required
   }
   unknown(geometry, GEOMETRY_KEYS, path);
   required(geometry, GEOMETRY_KEYS, path);
-  if (!GEOMETRY_TYPES.includes(geometry.type)) {
-    add('E_GEOM_TYPE', `${path}/type`, `must be one of: ${GEOMETRY_TYPES.join(', ')}`);
+  const geometryTypes = isV02 ? GEOMETRY_TYPES : GEOMETRY_TYPES.filter((type) => type !== 'Point' && type !== 'MultiPoint');
+  if (!geometryTypes.includes(geometry.type)) {
+    add('E_GEOM_TYPE', `${path}/type`, `must be one of: ${geometryTypes.join(', ')}`);
     return;
   }
   if (!Array.isArray(geometry.coordinates)) {
@@ -281,6 +343,20 @@ function validateGeometry(geometry, path, region, add, object, unknown, required
     if (coordinates.length < 2) add('E_LINE', linePath, 'line needs at least two points');
     for (let i = 1; i < coordinates.length; i += 1) if (samePoint(coordinates[i - 1], coordinates[i])) add('E_LINE', `${linePath}/${i}`, 'line has consecutive duplicate points');
   };
+  const multiPoint = (coordinates, multiPointPath) => {
+    if (!Array.isArray(coordinates)) {
+      add('E_TYPE', multiPointPath, 'MultiPoint coordinates must be an array');
+      return;
+    }
+    if (coordinates.length === 0) {
+      add('E_EMPTY', multiPointPath, 'MultiPoint cannot be empty');
+      return;
+    }
+    coordinates.forEach((coordinate, index) => point(coordinate, `${multiPointPath}/${index}`));
+    for (let i = 1; i < coordinates.length; i += 1) for (let j = 0; j < i; j += 1) {
+      if (samePoint(coordinates[j], coordinates[i])) add('E_POINT_DUP', `${multiPointPath}/${i}`, 'MultiPoint has duplicate points');
+    }
+  };
   const ring = (coordinates, ringPath) => {
     if (!Array.isArray(coordinates)) {
       add('E_TYPE', ringPath, 'ring must be an array');
@@ -300,6 +376,8 @@ function validateGeometry(geometry, path, region, add, object, unknown, required
       if (segmentsIntersect(coordinates[i], coordinates[i + 1], coordinates[j], coordinates[j + 1])) add('E_SELF_INTERSECT', ringPath, 'ring has non-adjacent intersecting edges');
     }
   };
+  if (geometry.type === 'Point') point(geometry.coordinates, `${path}/coordinates`);
+  if (geometry.type === 'MultiPoint') multiPoint(geometry.coordinates, `${path}/coordinates`);
   if (geometry.type === 'LineString') line(geometry.coordinates, `${path}/coordinates`);
   if (geometry.type === 'MultiLineString') geometry.coordinates.forEach((coordinates, index) => line(coordinates, `${path}/coordinates/${index}`));
   if (geometry.type === 'Polygon') geometry.coordinates.forEach((coordinates, index) => ring(coordinates, `${path}/coordinates/${index}`));
@@ -327,6 +405,7 @@ function sorted(errors, warnings) {
 
 const api = {
   SCHEMA_VERSION,
+  SUPPORTED_SCHEMA_VERSIONS,
   REGIONS,
   STAGES,
   INTERVALS,
@@ -339,6 +418,7 @@ const api = {
   ABSENT_REASONS,
   SUPPORTS,
   GEOMETRY_TYPES,
+  DERIVATION_METHODS,
   validateDataset,
 };
 
