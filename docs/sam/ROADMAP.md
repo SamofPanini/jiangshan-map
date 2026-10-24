@@ -43,6 +43,12 @@
 - `CORRIDOR_DATA`（`js/map_data.js:18532`）16 条：长城 6、陆路 4（直道、丝路 3）、运河 4、海路 2（海上丝路、郑和）；字段只有 key/kind/title/span/summary/labelAt/segments，**无方向、无出处**。这是交通层"路段"的现成种子。
 - 校验脚本对水系的断言只覆盖 5 个采样年（-200/500/1100/1500/2000，各恰好 4 段黄河干流）＋洪泽湖、巨野泽、罗布泊，**不在任何边界年上采样**。它是原版回归，不是史料验证。
 - 自带命令行工具默认链接指向上游公开站（`JIANGSHAN_PUBLIC_URL`）。
+- **本地查看（2026-10-24 实测）**：Python 3.9 自带静态服务，常驻约 18.5 MB 内存、载入一次页面后不变；不写盘；一次页面载入取 11 个文件约 1.7 MB。仓库 141 MB，其中 115 MB 是 git 历史（上游全历史，比对上游要用，不压缩）。没有值得优化的地方。
+  - 前台开（关终端或 Ctrl-C 即停）：`python3 -m http.server 8765 --bind 127.0.0.1 --directory ~/Documents/Explore/project/jiangshan-map`
+  - 后台开：`nohup python3 -m http.server 8765 --bind 127.0.0.1 --directory ~/Documents/Explore/project/jiangshan-map >/dev/null 2>&1 &`
+  - 后台关：`lsof -ti tcp:8765 -sTCP:LISTEN | xargs kill`
+  - 看是否在开：`lsof -nP -iTCP:8765 -sTCP:LISTEN`
+  - 研究演示：`http://localhost:8765/?research=scripts/sam/fixtures/research_demo/demo_synthetic.geojson&research_sources=scripts/sam/fixtures/research_demo/demo_sources.json`
 
 ## 3｜优先序与验收
 
