@@ -86,19 +86,39 @@ def find_local_repo_root():
 def normalize_years(year_str):
   if not year_str:
     return ""
-  return ",".join(
-      str(int(y.strip()))
-      for y in re.split(r"[,，、;\s]+", str(year_str).strip())
-      if y.strip()
-  )
+  tracks = [
+      ",".join(
+          str(int(y.strip()))
+          for y in re.split(r"[,，、\s]+", seg.strip())
+          if y.strip()
+      )
+      for seg in re.split(r"[;；]+", str(year_str).strip())
+      if seg.strip()
+  ]
+  return ";".join(t for t in tracks if t)
 
 
 def normalize_places(place_str):
   if not place_str:
     return ""
+  tracks = [
+      ",".join(
+          p.strip()
+          for p in re.split(r"\s*(?:,|，|、|→|->)\s*", seg.strip())
+          if p.strip()
+      )
+      for seg in re.split(r"\s*[;；]+\s*", place_str.strip())
+      if seg.strip()
+  ]
+  return ";".join(t for t in tracks if t)
+
+
+def normalize_persons(person_str):
+  if not person_str:
+    return ""
   return ",".join(
       p.strip()
-      for p in re.split(r"\s*(?:,|，|、|→|->)\s*", place_str.strip())
+      for p in re.split(r"\s*(?:,|，|、|×|\+|&)\s*", person_str.strip())
       if p.strip()
   )
 
@@ -108,8 +128,9 @@ def build_query(args):
   years = normalize_years(args.year)
   if years:
     params.append(("year", years))
-  if getattr(args, "person", ""):
-    params.append(("person", args.person.strip()))
+  normalized_person = normalize_persons(getattr(args, "person", ""))
+  if normalized_person:
+    params.append(("person", normalized_person))
     if getattr(args, "stop", None) is not None and args.stop >= 0:
       params.append(("stop", str(args.stop)))
   normalized_place = normalize_places(args.place)
@@ -119,7 +140,9 @@ def build_query(args):
     params.append(("hover", args.hover.strip()))
   if args.lang == "en":
     params.append(("lang", "en"))
-  return urllib.parse.urlencode(params, safe=",")
+  elif args.lang in ("zh-tw", "tw", "hk", "zh-hk", "zh-hant", "hant"):
+    params.append(("lang", "zh-tw"))
+  return urllib.parse.urlencode(params, safe=",;")
 
 
 def _check_remote_reachable(url):
@@ -153,12 +176,14 @@ def _write_offline_html(repo_root):
       rf'\1src="{TRANSPARENT_GIF_DATA_URI}"',
       html_local,
   )
-  html_local = html_local.replace(
-      '<script src="js/app.js',
+  html_local = re.sub(
+      r'(<script\b[^>]*\bsrc="js/app\.js)',
       '<style>.fade-enter { animation: none !important; opacity: 1 !important; }</style>\n'
       '  <script src="js/atlas_snapshots.js"></script>\n'
       '  <script src="js/i18n_dict.js"></script>\n'
-      '  <script src="js/app.js',
+      r'  \1',
+      html_local,
+      count=1,
   )
   tmp_html = os.path.join(repo_root, f"_snap_skill_tmp_{os.getpid()}.html")
   try:
@@ -201,16 +226,28 @@ def _chrome_common_flags():
 
 
 def _validate_inspect_result(data, args):
-  if getattr(args, "person", "") and not data.get("person"):
-    raise RuntimeError(
-        f"Could not resolve historical figure '{args.person}' in the atlas. "
-        "Use a canonical Chinese, English, or Pinyin figure name or key "
-        "(e.g. sushi / 苏轼 / Su Shi, zhugeliang / 诸葛亮, libai / 李白)."
-    )
+  normalized_person = normalize_persons(getattr(args, "person", ""))
+  if normalized_person:
+    person_data = data.get("person")
+    if not person_data:
+      raise RuntimeError(
+          f"Could not resolve historical figure '{args.person}' in the atlas. "
+          "Use a canonical Chinese, English, or Pinyin figure name or key "
+          "(e.g. sushi / 苏轼 / Su Shi, zhugeliang / 诸葛亮, libai,dufu / 李白,杜甫)."
+      )
+    req_people = [p for p in normalized_person.split(",") if p]
+    if len(req_people) >= 2 and (
+        not person_data.get("isMulti")
+        or len(person_data.get("profiles") or []) < 2
+    ):
+      raise RuntimeError(
+          f"Could not resolve all figures in '{args.person}'. "
+          "Ensure each comma-separated token is a valid historical figure name or key."
+      )
   normalized_place = normalize_places(args.place)
   if not normalized_place:
     return
-  stops = [s for s in normalized_place.split(",") if s]
+  stops = [s for s in re.split(r"[,;]+", normalized_place) if s]
   if len(stops) >= 2:
     resolved_route = data.get("route") or []
     resolved_places = {s.get("place") for s in resolved_route}
@@ -255,13 +292,21 @@ const sandbox = {
 };
 sandbox.window = sandbox;
 vm.createContext(sandbox);
+let ctrlScripts = ["js/app.js"];
+try {
+  const sv = require(path.join(root, "scripts", "sync_version.js"));
+  if (sv && Array.isArray(sv.CONTROLLER_SCRIPTS) && sv.CONTROLLER_SCRIPTS.length) {
+    ctrlScripts = sv.CONTROLLER_SCRIPTS;
+  }
+} catch (_) {}
 for (const rel of [
   "js/china_geo_data.js",
   "js/map_data.js",
   "js/atlas_snapshots.js",
   "js/i18n_dict.js",
   "js/lore_data.js",
-  "js/app.js"
+  "js/zh_hant.js",
+  ...ctrlScripts
 ]) {
   vm.runInContext(fs.readFileSync(path.join(root, rel), "utf8"), sandbox);
 }
@@ -269,7 +314,7 @@ const ctrl = Object.create(sandbox.HistoricalAtlasController.prototype);
 ctrl.minYear = -403;
 ctrl.maxYear = 2026;
 ctrl.year = 1102;
-ctrl.locale = process.env.JS_LANG === "en" ? "en" : "zh";
+ctrl.locale = process.env.JS_LANG === "en" ? "en" : process.env.JS_LANG === "zh-tw" ? "zh-tw" : "zh";
 ctrl.enLocale = sandbox.EN_LOCALE;
 ctrl.dynasties = sandbox.DYNASTY_DATA;
 ctrl.snapshots = sandbox.ATLAS_SNAPSHOTS;
@@ -294,7 +339,7 @@ process.stdout.write(JSON.stringify(res));
     env["JS_REPO_ROOT"] = repo_root
     env["JS_YEAR"] = normalized_years
     env["JS_PLACE"] = normalized_place
-    env["JS_PERSON"] = (getattr(args, "person", "") or "").strip()
+    env["JS_PERSON"] = normalize_persons(getattr(args, "person", "") or "")
     env["JS_STOP"] = (
         str(args.stop)
         if getattr(args, "stop", None) is not None and args.stop >= 0
@@ -486,7 +531,7 @@ def main():
       "--person",
       type=str,
       default="",
-      help="Historical figure key or name in Chinese, English, or Pinyin (e.g. sushi / 苏轼 / Su Shi, zhugeliang / 诸葛亮, libai / 李白) to open the Person Chronicle trajectory",
+      help="Single figure or comma-separated figures (2–4) in Chinese, English, or Pinyin (e.g. sushi / 苏轼, or libai,dufu / 李白,杜甫 / zhugeliang,simayi) to open Person Chronicle or Shared Encounters / Parallel Lives comparison",
   )
   parser.add_argument(
       "--stop",
@@ -502,9 +547,9 @@ def main():
   )
   parser.add_argument(
       "--lang",
-      choices=["zh", "en"],
+      choices=["zh", "zh-tw", "en"],
       default="zh",
-      help="UI language; 'en' renders the English atlas",
+      help="UI language; 'zh-tw' renders Traditional Chinese, 'en' renders English",
   )
   parser.add_argument(
       "--inspect",

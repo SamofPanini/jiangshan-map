@@ -8,6 +8,8 @@
 
 [**立即在线把玩 → https://deanchen.me/jiangshan-map/**](https://deanchen.me/jiangshan-map/)
 
+*作者自述：[从历史课本里的插图，到 GitHub 1k star：「江山时序」背后的故事](https://deanchen.me/history/atlas/2026/10/25/jiangshan-map-story.html)*
+
 <p align="center">
   <a href="https://deanchen.me/jiangshan-map/">
     <img src="assets/hero_demo_zh.webp" alt="江山时序 15 秒实机演示：秦扫六合、两千年疆域流转、长安十八朝沿革与苏东坡贬谪行迹" width="100%" />
@@ -60,7 +62,7 @@
 - **秦始皇一统六国行迹（前 238 — 前 221 年）**：从咸阳亲政平乱、王翦攻赵邺城拉开序幕，到内史腾灭韩、王翦克邯郸灭赵、易水破燕拔蓟城、王贲水灌大梁灭魏、王翦六十万大军破楚、远征辽东灭燕平代，直至南下临淄齐王建出降、六国一统——每点下一处史事，地图上的韩、赵、魏、楚、燕、齐便随之一步步并入大秦版图！
 - **张骞凿空西域行迹（前 138 — 前 126 年）**：从长安出发，被匈奴羁留十余载不改其志，持汉节一路走到大宛、康居、大月氏。
 - **诸葛亮出山北伐行迹（207 — 234 年）**：从襄阳隆中三顾茅庐、柴桑联吴破曹、溯江入蜀、白帝托孤、五月渡泸南征，到进驻汉中上《出师表》、祁山北伐与五丈原秋风星落。
-- **玄奘西行求法行迹（627 — 645 年）**：孤身出玉门关，涉莫贺延碛、越凌山雪隘、渡印度河，抵那烂陀寺求法归唐。
+- **玄奘西行求法行迹（627 — 645 年）**：孤身出玉门关，涉莫贺延碛、越凌山雪隘、渡印度河，抵那烂陀寺求法、赴曲女城讲论，载誉归唐。
 - **李白仗剑壮游行迹（701 — 762 年）**：自安西碎叶入蜀居青莲，二十四岁仗剑出三峡、漫游扬州散金三十万、酒隐安陆、仰天大笑入长安供奉翰林、洛阳逢杜甫、白帝城遇赦放舟，终老当涂青山。
 - **苏轼宦海贬谪行迹（1056 — 1101 年）**：从出川赴京、密州超然台赏月，到乌台诗案后贬谪黄州写下《赤壁赋》，再到惠州、跨海远谪海南儋州。
 - **王阳明心学立功行迹（1472 — 1529 年）**：从余姚瑞云楼降生、京师抗疏下诏狱，到贬谪贵州修文「龙场悟道」始倡知行合一、庐陵讲学、巡抚南赣破山贼、三十五日生擒宁王朱宸濠、绍兴天泉证道揭出「致良知」，直至总督两广归途舟次南安留下「此心光明，亦复何言」。
@@ -76,7 +78,7 @@
 ### 玩法四：彩蛋 · 舆图寻址挑战 —— 测测你在古代能当几品官？
 
 觉得自己历史地理很熟？点开左上角 **搜索框** 引导栏右下角的 **「古地名小试 ›」**（或直接搜 `小试` / `寻址` 开启 **「舆图寻址 · 古地名小试」**）试试身手：
-- **当朝掌故线索 + 舆图盲猜扎针**：地图隐去所有城池标注，题目给出「西汉时期的武威（凉州）」「南宋时期的泉州」或「六朝古都建康」，并附上**当朝掌故与史事线索**（不剧透现代城市名），凭你的山河水系直觉在舆图上扎针（手机端支持「先落针微调、再确认作答」防误触），系统按你的落点与真实古城的球面距离打分！
+- **当朝掌故线索 + 舆图盲猜扎针**：地图隐去所有城池标注，十道题按梯度递进，给出「西汉时期的姑臧（凉州）」「南宋时期的泉州」或「六朝古都建康」，并附上**当朝掌故与史事线索**（不剧透现代城市名），凭你的山河水系直觉在舆图上落针预览、点击图钉内嵌的**「`✓ 确定`」**揭晓同心圆环距离得分！
 - 十道题答完，系统会根据总分授予你 **「太史令 · 舆图大家」「职方郎中」「州郡从事」** 等传统官阶封号。
 
 > [点击直达：西汉武帝元狩二年（前 121 年）· 开启「舆图寻址」挑战模式 →](https://deanchen.me/jiangshan-map/?year=-121&quiz=locate)
@@ -107,15 +109,57 @@
 - **画一条自定义诗词/行军路线**：[`?year=763&place=剑外,巴峡,巫峡,襄阳,洛阳`](https://deanchen.me/jiangshan-map/?year=763&place=剑外,巴峡,巫峡,襄阳,洛阳)（杜甫《闻官军收河南河北》同年归乡路） / [`?year=1079,1080,1094,1097&place=湖州,黄州,惠州,儋州`](https://deanchen.me/jiangshan-map/?year=1079,1080,1094,1097&place=湖州,黄州,惠州,儋州)（苏轼「黄州惠州儋州」跨年贬谪路）
 - **展阅历史人物生平与行迹**：[`?person=qinshihuang`](https://deanchen.me/jiangshan-map/?person=qinshihuang)（秦始皇一统六国） / [`?person=zhangqian`](https://deanchen.me/jiangshan-map/?person=zhangqian)（张骞凿空西域） / [`?person=zhugeliang`](https://deanchen.me/jiangshan-map/?person=zhugeliang)（诸葛亮出山北伐） / [`?person=xuanzang`](https://deanchen.me/jiangshan-map/?person=xuanzang)（玄奘西行求法） / [`?person=libai`](https://deanchen.me/jiangshan-map/?person=libai)（李白仗剑壮游） / [`?person=sushi`](https://deanchen.me/jiangshan-map/?person=sushi)（苏轼宦海贬谪） / [`?person=wangyangming`](https://deanchen.me/jiangshan-map/?person=wangyangming)（王阳明心学立功）
 - **直接开一局挑战**：[`?year=-121&quiz=locate`](https://deanchen.me/jiangshan-map/?year=-121&quiz=locate)（舆图寻址挑战）
-- **切换英文版界面**：[`?lang=en`](https://deanchen.me/jiangshan-map/?lang=en)
+- **切换繁简与英文界面**：[`?lang=zh-tw`](https://deanchen.me/jiangshan-map/?lang=zh-tw)（繁体中文） / [`?lang=en`](https://deanchen.me/jiangshan-map/?lang=en)（英文版）
+
+### 嵌入到你的网页
+
+把地图的任意画面放进博客文章、Notion 页面或课程网站：
+
+1. 打开江山时序，调到你想展示的画面（某一年、某个政权档案、某个地点卡片或某个人物的轨迹）。地址栏会实时反映当前画面。
+2. 复制网址，在后面加上 `&embed=1`。
+3. 放进 `<iframe>`：
+
+```html
+<iframe
+  src="https://deanchen.me/jiangshan-map/?embed=1&year=1104&trace=101.778,36.617&from=1072&to=1126"
+  width="100%" height="480" loading="lazy" style="border:0"
+  title="江山时序 · 公元1104年 北宋"></iframe>
+```
+
+嵌入后的地图会隐藏网站的导航和侧栏，只保留地图、精简时间轴、左上角的标题牌、右上角的「在江山时序中打开 ↗」链接，以及「历史疆域为示意性近似」的说明。读者需要先点一下地图才能拖动和缩放，滚动文章时不会被地图卡住。
+
+| 参数 | 作用 |
+|---|---|
+| `embed=1` | 开启嵌入模式（必填） |
+| `year`、`polity`、`person`、`stop`、`trace`、`lang` | 和上面的分享链接相同 |
+| `from=1072&to=1126` | 把时间轴限定在这个范围，时间轴会放大到只显示这一段 |
+| `lock=1` | 把地图固定在 `year` 指定的年份，并隐藏时间轴 |
+| `autoplay=1` | 自动逐站播放人物轨迹（配合 `person`），或自动播放时间轴 |
+
+微信公众号、知乎、小红书不支持网页嵌入，在这些平台请直接分享链接。
 
 ---
 
-## AI Agent & LLM 接入指南
+## AI Agent、MCP & LLM 接入指南
 
-「江山时序」原生支持作为大语言模型（LLM）与 AI Agent 的**历史地理可视化工具**。模型**无需猜测经纬度坐标**，只需从诗词或史料中提取 **`year`（年份）** 与 **`place`（古今地名）** 两个语义参数，地图即可自动完成地名解析、镜头聚焦、疆域政区渲染、轨迹连线与「点地溯源」卡片展开：
+「江山时序」原生支持作为大语言模型（LLM）、MCP 客户端与 AI Agent 的**历史地理可视化工具**。模型**无需猜测经纬度坐标**，只需从诗词或史料中提取 **`year`（年份）** 与 **`place`（古今地名）** 两个语义参数，地图即可自动完成地名解析、镜头聚焦、疆域政区渲染、轨迹连线与「点地溯源」卡片展开：
 
 - **机器可读说明文档**：[`llms.txt`](llms.txt)
+- **零依赖本地 MCP Server (`stdio`)**：[`scripts/mcp_server.js`](scripts/mcp_server.js) —— 可直接接入 Claude Desktop、Cursor、Windsurf 或 Gemini CLI 的 `mcpServers` 配置（0 第三方依赖，单次查询 `<5ms`）：
+  ```json
+  {
+    "mcpServers": {
+      "jiangshan-atlas": {
+        "command": "node",
+        "args": ["/absolute/path/to/jiangshan-map/scripts/mcp_server.js"]
+      }
+    }
+  }
+  ```
+  原生提供 3 个 MCP 工具：
+  - `inspect_place({ year, place, lang? })`：查询任意年份与古今地名/多站路线的在位君主年号、所属政权、州郡政区、现代省市、两千四百年沿革判词与可点击深链 URL。
+  - `inspect_person({ person, stop?, lang? })`：查询历史人物或历代帝王的生平纪事时空落点与深链 URL。
+  - `search_atlas({ query, limit?, lang? })`：跨全朝代检索古城、地标、名关、历史人物、帝王年号与编年大事。
 - **开箱即用 Agent Skill**：[`skills/jiangshan-atlas/SKILL.md`](skills/jiangshan-atlas/SKILL.md)（含零依赖 CLI 渲染脚本 [`skills/jiangshan-atlas/scripts/jiangshan.py`](skills/jiangshan-atlas/scripts/jiangshan.py)）
   ```bash
   # 一键安装至 Claude Code / Gemini / Jetski 全局技能目录：
@@ -143,12 +187,13 @@ python3 skills/jiangshan-atlas/scripts/jiangshan.py --year 763 --place 剑外,�
 python3 skills/jiangshan-atlas/scripts/jiangshan.py --year 1079,1080,1094,1097 --place 湖州,黄州,惠州,儋州 --out /tmp/sushi_exile.png
 ```
 
-### 3. 浏览器端 JavaScript API（`window.atlasAPI`）
+### 3. 浏览器端 JavaScript API（`window.atlasAPI`）与浏览器内建 WebMCP（`navigator.modelContext`）
 
-在浏览器自动化环境（Playwright / WebMCP）中可直接调用：
+在浏览器自动化环境（Playwright）或支持 WebMCP 协议的 AI 浏览器（`navigator.modelContext`）中，页面会自动注册 `jiangshan_locate`、`jiangshan_inspect`、`jiangshan_open_person` 三个工具，并挂载 `window.atlasAPI`：
 - `window.atlasAPI.locate({ year, place, zoom? })`：驱动地图跳转并渲染单点落针或跨年轨迹，同时返回结构化历史地理信息。
-- `window.atlasAPI.inspect({ year, place })`：只读查询指定时空点（或多站路线）所属政权、州郡政区、现代省市、各站里程与标准分享链接。
+- `window.atlasAPI.inspect({ year, place, person?, stop? })`：只读查询指定时空点、多站路线或人物纪事的所属政权、州郡政区、现代省市、各站里程与标准分享链接。
 - `window.atlasAPI.resolvePlace(place, year?)`：解析历代城池、天下名关、诗词名胜与古战场古今地名。
+- `window.atlasAPI.openPerson(person, stop?)` & `window.atlasAPI.search(query)`：在地图上展开人物生平纪事或执行全局检索。
 
 ---
 
@@ -163,6 +208,50 @@ python3 -m http.server 8000
 ```
 
 随后在浏览器打开 `http://localhost:8000`。
+
+## 使用 Docker 运行
+
+无需本地依赖，用 Docker Compose 一条命令构建并启动：
+
+```bash
+docker compose up -d --build
+```
+
+随后在浏览器打开 `http://localhost:8008`（端口映射为 `docker-compose.yml` 中的 `8008:80`）。
+
+镜像基于 `nginx:alpine` 做静态托管：`Dockerfile` 把整个仓库复制到 `/usr/share/nginx/html`；`.dockerignore` 排除 `.git`、`.github`、`docs/`、`scripts/`、`skills/`、Markdown 文件与 `geojson/demo.html`，以减小构建上下文，页面运行不依赖这些内容。
+
+要换端口：修改 `docker-compose.yml` 的 `ports`（如 `"9000:80"`），再执行 `docker compose up -d`。
+
+拉取上游更新后重新构建：`docker compose up -d --build`。不用 Compose 时：`docker build -t jiangshan-map:latest .`，再 `docker run -d -p 8008:80 --name jiangshan-map jiangshan-map:latest`。
+
+说明：镜像在本地构建，未发布到任何镜像仓库。
+
+---
+
+## GeoJSON 导出（供 Leaflet / MapLibre / QGIS 使用）
+
+程序内置的几何数据是拓扑去重的 VLQ 紧凑编码。如需在其他项目中使用矢量图层，可在本地生成标准 RFC 7946 GeoJSON（EPSG:4326，经度/纬度），输出到 `geojson/`，不纳入版本库。导出范围为公元前 403 年至 1948 年，不含此后年份及现代省界图层：
+
+```bash
+node scripts/export_geojson.js            # 或：node scripts/export_geojson.js <输出目录>
+```
+
+- `snapshots/<id>.geojson`：每个疆域阶段一个文件；每个要素带 `bbox`，属性含 `layer`（`polity` 政权 / `region` 一级政区 / `prefecture` 州郡）、`title`、`title_en`、`category`、`tint`、`anchor`。
+- `index.json`：各朝代阶段的起止年份 `from` / `to`（负数为公元前，无公元 0 年）及对应快照文件。
+- `corridors.geojson`（长城、运河、道路、海路）、`settlements.geojson`、`milestones.geojson`、`neighbors.geojson`，以及 `modern/`（河流、湖泊、水系注记；`appear` / `vanish` 表示古河道与古湖泊显示的起止年份）。
+
+按坐标查询时无需加载全部阶段：[`geojson/jiangshan-locate.js`](geojson/jiangshan-locate.js) 只加载 `index.json` 和覆盖该年份的那一个快照，再用包围盒预筛加点在多边形内判断。
+
+```js
+const atlas = JiangshanLocate.create(); // 或 create({ base: '<geojson/ 目录的 URL>' })
+const hit = await atlas.locate(118.78, 32.06, 1415); // 经度, 纬度, 年份
+hit.polity.properties.title;     // 明
+hit.region.properties.title;     // 南直隶
+hit.prefecture.properties.title; // 应天府（本身是 GeoJSON Feature，可直接 L.geoJSON(hit.prefecture)）
+```
+
+导出后启动本地服务（`python3 -m http.server 8000`），打开 `http://localhost:8000/geojson/demo.html` 即可查看 Leaflet 示例：拖动年份滑块、点击地图，或打开 `demo.html?year=1415&lon=118.78&lat=32.06` 自动加载、高亮并缩放到该处。数据采用 GPL-3.0 协议，历史疆域为示意性近似。
 
 ---
 

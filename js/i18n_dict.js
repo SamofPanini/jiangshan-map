@@ -1,3 +1,4 @@
+// Auto-generated English localization dictionary for Jiangshan Atlas
 window.EN_LOCALE = {
   "strings": {
     "title": "Chronicles of the Realm · Historical Atlas of China",
@@ -111,7 +112,7 @@ window.EN_LOCALE = {
       "name": "Tang",
       "short": "Tang",
       "capital": "Chang'an",
-      "desc": "High Tang established protectorates across the Tarim Basin, Zungharia, Mongolia, Liaodong, and Annam, making Chang’an the world’s largest metropolis. After the An Lushan Rebellion (755), Hexi and the Western Regions fell to the Tibetan Empire and regional military governors dominated until 907."
+      "desc": "High Tang established protectorates across the Tarim Basin, Zungharia, Mongolia, Liaodong, and Annam, making Chang’an the world’s largest metropolis; from 690 to 705 Wu Zetian ruled as the Wu Zhou dynasty from Shendu Luoyang. After the An Lushan Rebellion (755), Hexi and the Western Regions fell to the Tibetan Empire and regional military governors dominated until 907."
     },
     "wudai": {
       "name": "Five Dynasties & Ten Kingdoms",
@@ -164,7 +165,7 @@ window.EN_LOCALE = {
   },
   "milestones": {
     "qin:-221": [
-      "King Ying Zheng unifies the six states as the First Emperor",
+      "First Emperor unifies the six states; commanderies, one script, axle widths and measures",
       "Xianyang"
     ],
     "qin:-215": [
@@ -172,20 +173,20 @@ window.EN_LOCALE = {
       "Jiuyuan (Ordos)"
     ],
     "qin:-214": [
-      "Qin digs the Lingqu Canal and pacifies Lingnan, establishing Guilin, Xiang, and Nanhai",
+      "First Emperor digs the Lingqu Canal and pacifies Lingnan, founding Guilin, Xiang, and Nanhai",
       "Lingqu & Panyu"
     ],
     "qin:-209": [
-      "Chen Sheng and Wu Guang launch the Dazexiang Uprising",
+      "Chen Sheng & Wu Guang rise at Dazexiang; nobles restore the kingdoms of Zhao, Yan, and Qi",
       "Dazexiang"
     ],
     "xihan:-202": [
-      "Liu Bang defeats Xiang Yu at Gaixia and ascends the throne as Emperor Gaozu of Western Han",
+      "Han Xin and Liu Bang defeat Xiang Yu at Gaixia; Liu Bang ascends as Emperor Gaozu of Western Han",
       "Gaixia & Chang'an"
     ],
     "xihan:-154": [
-      "Rebellion of the Seven States suppressed; central authority consolidated",
-      "Suiyang (Liang)"
+      "Emperor Jing's fief cuts spark the Rebellion of the Seven States; Zhou Yafu crushes the revolt",
+      "Suiyang (Shangqiu)"
     ],
     "xihan:-138": [
       "Zhang Qian sets out for the Western Regions, opening the Silk Road",
@@ -196,35 +197,39 @@ window.EN_LOCALE = {
       "Shuofang & Chang'an"
     ],
     "xihan:-121": [
-      "Huo Qubing’s Hexi campaigns; the Four Hexi Commanderies founded",
+      "Huo Qubing’s Hexi campaigns; Wuwei and Jiuquan commanderies founded",
       "Yanzhi Mts. (Hexi)"
     ],
     "xihan:-111": [
-      "Conquest of Nanyue; nine southern commanderies established",
-      "Panyu"
+      "Conquest of Nanyue (nine commanderies); Zhangye and Dunhuang founded",
+      "Panyu & Dunhuang"
     ],
     "xihan:-108": [
-      "Conquest of Wiman Joseon; Lelang and three other commanderies established",
+      "Emperor Wu conquers Wiman Joseon and establishes Lelang, Xuantu, and two other commanderies",
       "Wanggeom-seong (Lelang)"
     ],
     "xihan:-60": [
-      "Protectorate of the Western Regions established at Wulei",
-      "Wulei (Protectorate HQ)"
+      "Emperor Xuan establishes the Protectorate of the Western Regions under Zheng Ji at Wulei",
+      "Wulei (Luntai)"
     ],
     "xihan:8": [
       "Wang Mang usurps the throne and proclaims the Xin dynasty",
       "Chang'an"
     ],
+    "xihan:17": [
+      "Lülin rebels rise; Red Eyebrows follow in Langya as late-Xin peasant revolts spread",
+      "Mt. Lülin (Jingshan)"
+    ],
     "xihan:23": [
-      "Battle of Kunyang; collapse of the Xin dynasty",
-      "Kunyang"
+      "Lülin rebels crown Gengshi Emperor Liu Xuan; Liu Xiu routs Xin at Kunyang, ending Wang Mang",
+      "Kunyang & Chang'an"
     ],
     "donghan:25": [
       "Liu Xiu (Emperor Guangwu) proclaims the Eastern Han at Luoyang",
       "Luoyang"
     ],
     "donghan:36": [
-      "Defeat of Gongsun Shu in Sichuan completes reunification",
+      "Wu Han takes Chengdu and destroys Gongsun Shu; Emperor Guangwu (Liu Xiu) reunifies the empire",
       "Chengdu"
     ],
     "donghan:48": [
@@ -252,12 +257,24 @@ window.EN_LOCALE = {
       "Julu"
     ],
     "donghan:189": [
-      "Dong Zhuo seizes Luoyang and burns the capital the next year",
-      "Luoyang"
+      "Dong Zhuo seizes Luoyang, deposes Emperor Shao for Emperor Xian, and moves the capital",
+      "Luoyang & Chang'an"
+    ],
+    "donghan:195": [
+      "Sun Ce crosses the Yangtze to conquer Jiangdong; Emperor Xian flees east from Chang'an",
+      "Qu'a & Luoyang"
+    ],
+    "donghan:198": [
+      "Battle of Xiapi: Cao Cao floods Xiapi with the Si and Yi rivers, capturing and executing Lu Bu",
+      "Xiapi (Suining)"
     ],
     "donghan:200": [
-      "Battle of Guandu: Cao Cao unifies northern China",
-      "Guandu"
+      "Battle of Guandu: Cao Cao burns Yuan Shao's supply depot at Wuchao; Sun Quan succeeds Sun Ce",
+      "Guandu · Jingkou"
+    ],
+    "donghan:204": [
+      "Cao Cao captures Ye City and consolidates control over Hebei's four northern provinces",
+      "Ye (Anyang)"
     ],
     "donghan:208": [
       "Battle of Red Cliffs: Sun-Liu alliance defeats Cao Cao; Liu Bei holds Jingzhou",
@@ -284,60 +301,128 @@ window.EN_LOCALE = {
       "Jianye"
     ],
     "xijin:280": [
-      "Western Jin conquers Eastern Wu, reunifying China",
+      "Western Jin conquers Wu to reunify China, enacts land laws, and disarms local commanderies",
       "Jianye"
     ],
+    "xijin:289": [
+      "Emperor Wu enfeoffs princes with regional armies and appoints Liu Yuan over Bingzhou Xiongnu",
+      "Jinyang · Luoyang"
+    ],
     "xijin:291": [
-      "Empress Jia Nanfeng seizes power, sparking the War of the Eight Princes",
+      "After Emperor Wu dies, Empress Jia Nanfeng purges regents, sparking the War of the Eight Princes",
       "Luoyang"
+    ],
+    "xijin:299": [
+      "Qi Wannian's uprising triggers Guanzhong famine; Jiang Tong warns of frontier settlement perils",
+      "Chang'an · Guanzhong"
+    ],
+    "xijin:301": [
+      "Di leader Li Te leads Guanzhong refugees south into Shu and rises against Jin at Mianzhu",
+      "Mianzhu (Chengdu)"
+    ],
+    "xijin:303": [
+      "After Sima Lun's usurpation, Princes Sima Ying at Ye and Sima Yong at Chang'an march on Luoyang",
+      "Ye (Anyang)"
     ],
     "xijin:304": [
-      "Liu Yuan proclaims the kingdom of Han, opening the Sixteen Kingdoms era",
-      "Zuoguocheng (Lishi)"
+      "Released to Bingzhou by Sima Ying, Liu Yuan proclaims Han Zhao as Li Xiong claims Chengdu",
+      "Zuoguocheng (Lishi) · Chengdu"
+    ],
+    "xijin:306": [
+      "Li Xiong proclaims Cheng Han emperor as Prince Yue prevails",
+      "Chengdu · Luoyang"
+    ],
+    "xijin:307": [
+      "Sima Rui and Wang Dao assume command of Jianye to stabilize Jiangdong",
+      "Jianye"
     ],
     "xijin:311": [
-      "Disaster of Yongjia: Luoyang falls and Emperor Huai is captured",
+      "Disaster of Yongjia: Han Zhao captures Luoyang and Emperor Huai",
       "Luoyang"
     ],
+    "xijin:313": [
+      "Emperor Min enthroned in Chang'an; Zu Ti launches northern expedition",
+      "Chang'an · Jingkou"
+    ],
     "xijin:316": [
-      "Chang'an falls; end of Western Jin",
+      "Han-Zhao takes Chang'an, ending Western Jin; Zhang, Tuoba & Murong hold North",
       "Chang'an"
     ],
     "dongjin:317": [
-      "Sima Rui establishes the Eastern Jin court at Jiankang",
+      "Sima Rui founds Eastern Jin at Jiankang alongside Former Liang, Dai & Murong Yan",
       "Jiankang"
     ],
     "dongjin:319": [
-      "Shi Le proclaims himself King of Zhao, founding Later Zhao",
-      "Xiangguo (Xingtai)"
+      "Liu Yao renames Han to Former Zhao at Chang'an; Shi Le founds Later Zhao at Xiangguo",
+      "Chang'an · Xiangguo"
+    ],
+    "dongjin:322": [
+      "Rebellion of Wang Dun: Wang Dun marches from Wuchang into Jiankang and controls the court",
+      "Wuchang · Jiankang"
+    ],
+    "dongjin:328": [
+      "Su Jun Rebellion: rebel forces seize Jiankang palace before defeat",
+      "Jiankang"
     ],
     "dongjin:329": [
       "Shi Le destroys Former Zhao; Later Zhao unifies most of northern China",
       "Luoyang"
     ],
+    "dongjin:335": [
+      "Shi Hu moves Later Zhao capital to Ye; Murong Huang proclaims Former Yan at Jicheng",
+      "Ye · Jicheng"
+    ],
     "dongjin:347": [
       "Huan Wen conquers Cheng-Han and recovers Sichuan",
       "Chengdu"
+    ],
+    "dongjin:350": [
+      "Ran Min overthrows Later Zhao and founds Ran Wei at Ye",
+      "Ye (Anyang)"
     ],
     "dongjin:351": [
       "Fu Jian proclaims the Former Qin at Chang’an",
       "Chang'an"
     ],
+    "dongjin:352": [
+      "Former Yan destroys Ran Wei; Murong Jun proclaims emperor at Ye",
+      "Weichang · Ye"
+    ],
+    "dongjin:353": [
+      "Wang Xizhi and Xie An gather at the Orchid Pavilion in Kuaiji, composing Preface to Lanting",
+      "Lanting (Kuaiji)"
+    ],
     "dongjin:354": [
-      "Huan Wen’s first northern expedition reaches Bashang; Wang Meng meets Huan Wen",
-      "Bashang (east of Chang'an)"
+      "Huan Wen’s first northern expedition reaches Bashang; Wang Meng meets Huan",
+      "Bashang (Chang'an)"
+    ],
+    "dongjin:356": [
+      "Huan Wen's second northern expedition recovers Luoyang and repairs imperial tombs",
+      "Luoyang"
+    ],
+    "dongjin:369": [
+      "Battle of Fangtou: Murong Chui defeats Huan Wen before fleeing to Qin",
+      "Fangtou (Xunxian)"
     ],
     "dongjin:370": [
       "Fu Jian of Former Qin sends Wang Meng to capture Ye and destroy Former Yan",
       "Ye"
     ],
     "dongjin:376": [
-      "Former Qin conquers Former Liang and Dai; Fu Jian unifies northern China",
-      "Guzang (Liangzhou)"
+      "Former Qin takes Ba-Shu from Jin and conquers Former Liang & Dai to unify North",
+      "Guzang · Chengdu"
     ],
     "dongjin:383": [
       "Battle of Fei River: Xie An & Xie Xuan’s Beifu army routs Fu Jian; Former Qin collapses",
-      "Fei River (Shouyang · Mt. Bagong)"
+      "Fei River (Shouyang)"
+    ],
+    "dongjin:384": [
+      "Murong Chui founds Later Yan & Yao Chang founds Later Qin; Jin retakes Ba-Shu",
+      "Zhongshan · Chang'an"
+    ],
+    "dongjin:385": [
+      "Qifu Guoren founds Western Qin; Lü Guang founds Later Liang",
+      "Fuhan (Linxia)"
     ],
     "dongjin:386": [
       "Tuoba Gui restores Dai and founds Northern Wei",
@@ -345,27 +430,55 @@ window.EN_LOCALE = {
     ],
     "dongjin:395": [
       "Battle of Canhe Slope: Northern Wei crushes the Later Yan army",
-      "Canhe Slope (east of Datong)"
+      "Canhe Slope (Datong)"
+    ],
+    "dongjin:397": [
+      "Tufa Wugu founds Southern Liang at Ledu; Duan Ye & Juqu Mengxun found Northern Liang",
+      "Ledu · Zhangye"
+    ],
+    "dongjin:398": [
+      "Tuoba Gui moves Northern Wei capital to Pingcheng and takes imperial title",
+      "Pingcheng (Datong)"
+    ],
+    "dongjin:399": [
+      "Murong De founds Southern Yan; Sun En uprising shakes Jiangdong",
+      "Guanggu · Kuaiji"
+    ],
+    "dongjin:404": [
+      "Liu Yu rises at Jingkou to crush usurper Huan Xuan; Qiao Zong founds Qiao Shu in Chengdu",
+      "Jingkou · Jiankang · Chengdu"
     ],
     "dongjin:407": [
-      "Helian Bobo founds the Xia kingdom and builds Tongwancheng",
-      "Tongwancheng"
+      "Helian Bobo founds Hu Xia at Tongwancheng; Feng Ba & Gao Yun found Northern Yan",
+      "Tongwancheng · Longcheng"
     ],
     "dongjin:410": [
       "Liu Yu’s northern expedition captures Guanggu and destroys Southern Yan",
       "Guanggu (Qingzhou)"
     ],
+    "dongjin:413": [
+      "Liu Yu dispatches Zhu Lingshi to conquer Qiao Shu and recover Ba-Shu",
+      "Chengdu"
+    ],
     "dongjin:417": [
       "Liu Yu's northern expedition destroys Later Qin and retakes Luoyang & Chang'an",
       "Chang'an"
+    ],
+    "dongjin:420": [
+      "Emperor Gong abdicates to Liu Yu, ending Eastern Jin and opening Liu Song",
+      "Jiankang"
     ],
     "nanbei:420": [
       "Liu Yu replaces Jin with Liu Song, beginning the Southern Dynasties",
       "Jiankang"
     ],
     "nanbei:427": [
-      "Emperor Taiwu of Northern Wei captures Tongwancheng; destroys Xia in 431",
-      "Tongwancheng"
+      "Northern Wei takes Henan & Guanzhong and captures Hu Xia's capital Tongwancheng",
+      "Tongwancheng · Luoyang"
+    ],
+    "nanbei:431": [
+      "Helian Ding captured, Northern Wei conquers Xia; Era of Yuanjia in Liu Song",
+      "Tongwancheng / Jiankang"
     ],
     "nanbei:436": [
       "Northern Wei marches into Longcheng, ending Northern Yan",
@@ -397,11 +510,11 @@ window.EN_LOCALE = {
     ],
     "nanbei:528": [
       "Heyin Incident plunges Northern Wei into civil war",
-      "Heyin (north of Luoyang)"
+      "Heyin (Luoyang)"
     ],
     "nanbei:534": [
       "Northern Wei splits into Eastern Wei and Western Wei",
-      "Ye (Eastern Wei)"
+      "Ye (Anyang)"
     ],
     "nanbei:548": [
       "Hou Jing's Rebellion storms Jiankang Palace; aged Emperor Wu starves as Jiangnan is ravaged",
@@ -424,7 +537,7 @@ window.EN_LOCALE = {
       "Ye"
     ],
     "sui:581": [
-      "Yang Jian founds the Sui dynasty at Daxing",
+      "Yang Jian founds Sui at Daxing; Three Departments, Six Ministries and the Kaihuang Code",
       "Daxing"
     ],
     "sui:589": [
@@ -480,8 +593,12 @@ window.EN_LOCALE = {
       "Bianzhou"
     ],
     "wudai:907": [
-      "Zhu Wen founds Later Liang; Abaoji becomes Khitan khan",
-      "Bianzhou"
+      "Zhu Wen replaces Tang with Later Liang; Wang Jian founds Former Shu and Abaoji leads Khitan",
+      "Bianzhou · Chengdu"
+    ],
+    "wudai:911": [
+      "Liu Shouguang proclaims Great Yan in Youzhou; Li Cunxu campaigns against Yan (falls in 913)",
+      "Youzhou"
     ],
     "wudai:923": [
       "Li Cunxu destroys Later Liang and founds Later Tang",
@@ -504,12 +621,16 @@ window.EN_LOCALE = {
       "Bianzhou"
     ],
     "wudai:951": [
-      "Guo Wei founds Later Zhou; Liu Chong founds Northern Han at Taiyuan",
-      "Taiyuan"
+      "Guo Wei founds Later Zhou and Liu Chong founds Northern Han; Southern Tang annexes Ma Chu",
+      "Bianzhou · Taiyuan · Tanzhou"
+    ],
+    "wudai:954": [
+      "Battle of Gaoping: Chai Rong and Zhao Kuangyin crush the combined Northern Han and Liao army",
+      "Gaoping (Zezhou)"
     ],
     "wudai:955": [
-      "Emperor Shizong of Later Zhou launches reunification campaigns",
-      "Shouzhou (Huainan)"
+      "Shizong of Later Zhou recovers Qin, Feng, Cheng, and Jie from Later Shu and attacks Huainan",
+      "Qinzhou · Shouzhou"
     ],
     "wudai:958": [
       "Shizong of Later Zhou compels Southern Tang to cede all 14 prefectures north of the Yangtze",
@@ -552,7 +673,7 @@ window.EN_LOCALE = {
       "Xingqingfu"
     ],
     "beisong:1044": [
-      "Qingli Peace Accord between Song and Western Xia",
+      "Song and Western Xia sign the Qingli Peace Accord: Yuanhao submits in return for annual gifts",
       "Xingqingfu"
     ],
     "beisong:1069": [
@@ -565,7 +686,7 @@ window.EN_LOCALE = {
     ],
     "beisong:1120": [
       "Alliance on the Sea between Song and Jin against Liao",
-      "Dengzhou"
+      "Dengzhou (Penglai)"
     ],
     "beisong:1125": [
       "Jurchen Jin general Wanyan Loushi captures Emperor Tianzuo, ending Liao",
@@ -589,7 +710,7 @@ window.EN_LOCALE = {
     ],
     "nansong:1227": [
       "Genghis Khan dies at Mount Liupan as Mongol forces annihilate Western Xia",
-      "Xingqingfu"
+      "Mount Liupan · Xingqingfu"
     ],
     "nansong:1234": [
       "Song-Mongol forces destroy Jin at Caizhou; failed Duanping Expedition sparks Song-Mongol war",
@@ -624,12 +745,12 @@ window.EN_LOCALE = {
       "Yashan"
     ],
     "yuan:1279": [
-      "Battle of Yashan destroys Southern Song; Yuan reunifies China",
+      "Zhang Hongfan destroys the Southern Song fleet at the Battle of Yashan; Yuan reunifies China",
       "Yashan"
     ],
     "yuan:1288": [
       "Yuan court establishes Xuanzheng Yuan, integrating Tibet into central imperial administration",
-      "Sakya (Bureau Domain)"
+      "Sakya"
     ],
     "yuan:1293": [
       "Beijing–Hangzhou Grand Canal fully opened via Shandong",
@@ -643,8 +764,12 @@ window.EN_LOCALE = {
       "Zhu Yuanzhang founds the Ming in Yingtian; Xu Da captures Dadu as Yuan retreats north",
       "Yingtian (Nanjing) · Dadu (Beijing)"
     ],
+    "ming:1369": [
+      "Chang Yuchun takes Shangdu and Xu Da secures Shaanxi as the Northern Yuan retreats north",
+      "Kaiping (Shangdu) · Xi'an"
+    ],
     "ming:1380": [
-      "Hu Weiyong case: the office of Grand Chancellor is abolished",
+      "Hongwu Emperor purges Chancellor Hu Weiyong and abolishes the Secretariat and chancellorship",
       "Yingtian (Nanjing)"
     ],
     "ming:1399": [
@@ -656,16 +781,16 @@ window.EN_LOCALE = {
       "Liujiagang (Taicang)"
     ],
     "ming:1407": [
-      "Jiaozhi Province established in Vietnam; Nurgan Commandery established in 1409",
+      "Yongle Emperor establishes Jiaozhi Province in Annam and founds the Nurgan Commandery in 1409",
       "Jiaozhi"
     ],
     "ming:1421": [
-      "Yongle Emperor formally moves the primary Ming capital to Beijing",
+      "Yongle moves the capital to Beijing; the Eastern Depot (1420) joins the Embroidered Guard",
       "Beijing"
     ],
     "ming:1433": [
       "Zheng He's seventh and final voyage; maritime restrictions follow",
-      "Changle"
+      "Changle (Fuzhou)"
     ],
     "ming:1449": [
       "Tumu Crisis: Oirat leader Esen routs the Ming army and captures Emperor Yingzong",
@@ -680,7 +805,7 @@ window.EN_LOCALE = {
       "Taizhou"
     ],
     "ming:1571": [
-      "Longqing Peace Accord opens frontier horse markets with the Mongols",
+      "Longqing Peace Accord: Ming invests Altan Khan as Prince Shunyi and opens Datong horse markets",
       "Datong"
     ],
     "ming:1592": [
@@ -696,15 +821,15 @@ window.EN_LOCALE = {
       "Sarhū"
     ],
     "ming:1627": [
-      "Shaanxi peasant uprisings begin; rise of Li Zicheng",
+      "Wang Er rises at Chengcheng; Shaanxi peasant revolts open the late-Ming rebellions",
       "Mizhi"
     ],
     "ming:1643": [
-      "Li Zicheng takes Xi'an as King of Xinshun; Zhang Xianzhong seizes Wuchang and enters Shu",
+      "Li Zicheng breaks through Tongguan into Xi'an; Zhang Xianzhong holds Wuchang as King of Daxi",
       "Xi'an · Wuchang"
     ],
     "ming:1644": [
-      "Li Zicheng takes Beijing; Qing armies enter Shanhai Pass",
+      "Li Zicheng takes Beijing and topples the Ming; Qing armies enter Shanhai Pass",
       "Beijing"
     ],
     "qing:1644": [
@@ -720,7 +845,7 @@ window.EN_LOCALE = {
       "Kunming · Hengzhou"
     ],
     "qing:1681": [
-      "Qing forces capture Kunming, suppressing the Revolt of the Three Feudatories",
+      "Qing forces capture Kunming as Kangxi Emperor fully quells Three Feudatories",
       "Kunming"
     ],
     "qing:1683": [
@@ -740,11 +865,11 @@ window.EN_LOCALE = {
       "Xining"
     ],
     "qing:1727": [
-      "Imperial Resident in Tibet established; Treaty of Kyakhta signed",
+      "Yongzheng Emperor establishes Imperial Resident in Tibet; Qing and Russia sign Treaty of Kyakhta",
       "Lhasa"
     ],
     "qing:1759": [
-      "Pacification of the Dzungars and Altishahr; General of Ili established",
+      "Qianlong Emperor pacifies the Dzungars and Altishahr Khojas, establishing the General of Ili",
       "Ili"
     ],
     "qing:1840": [
@@ -764,15 +889,15 @@ window.EN_LOCALE = {
       "Wuchang"
     ],
     "roc:1912": [
-      "Sun Yat-sen is inaugurated in Nanjing, founding the Republic of China",
-      "Nanjing"
+      "Sun Yat-sen founds the Republic of China in Nanjing; Puyi abdicates, ending imperial rule",
+      "Nanjing · Beijing"
     ],
     "roc:1919": [
       "May Fourth Movement erupts in Beijing over the Treaty of Versailles",
       "Beijing"
     ],
     "roc:1928": [
-      "Northern Expedition completed; Nationalist government at Nanjing",
+      "NRA completes the Northern Expedition; Zhang Xueliang's Flag Replacement nominally unifies China",
       "Nanjing"
     ],
     "roc:1931": [
@@ -785,7 +910,7 @@ window.EN_LOCALE = {
     ],
     "roc:1945": [
       "Victory over Japan: China formally recovers Taiwan Island and the Penghu Archipelago",
-      "Taipei (Zhongshan Hall) · Nanjing"
+      "Taipei · Nanjing"
     ],
     "prc:1949": [
       "Mao Zedong proclaims the founding of the People’s Republic of China in Beijing",
@@ -812,7 +937,7 @@ window.EN_LOCALE = {
       "Shanghai"
     ],
     "qin:-212": [
-      "Meng Tian builds the 700 km Qin Direct Road from Xianyang to Jiuyuan",
+      "First Emperor orders Meng Tian to build the 700 km Qin Direct Road from Xianyang to Jiuyuan",
       "Xianyang / Jiuyuan"
     ],
     "qin:-210": [
@@ -820,15 +945,15 @@ window.EN_LOCALE = {
       "Shaqiu (Guangzong)"
     ],
     "qin:-207": [
-      "Xiang Yu crushes Qin main forces at Julu; Liu Bang marches on Xianyang",
-      "Julu (Pingxiang)"
+      "Xiang Yu crushes Qin at Julu; Nanhai official Zhao Tuo unites Lingnan as autonomous Nanyue",
+      "Julu & Panyu"
     ],
     "qin:-206": [
-      "Qin ruler Ziying surrenders; Feast at Hong Gate begins Chu–Han Contention",
+      "Ziying surrenders and Qin falls; Xiang Yu enfeoffs 18 Kingdoms as Wuzhu restores Minyue",
       "Hongmen (Xianyang)"
     ],
     "xihan:-200": [
-      "Siege of Baideng; Han adopts Heqin marriage-alliance policy",
+      "Emperor Gaozu is besieged at Baideng; early Han adopts the Heqin marriage-alliance policy",
       "Pingcheng (Datong)"
     ],
     "xihan:-180": [
@@ -842,6 +967,10 @@ window.EN_LOCALE = {
     "xihan:-119": [
       "Mobei Campaign; Wei Qing & Huo Qubing rout the Xiongnu",
       "Mt. Langjuxu (Khentii)"
+    ],
+    "xihan:-118": [
+      "Emperor Wu mints five-zhu coins, monopolizes salt and iron, and adds price stabilization",
+      "Chang'an"
     ],
     "xihan:-100": [
       "Li Guangli's Dayuan campaign secures the Southern Tarim Silk Road",
@@ -868,7 +997,7 @@ window.EN_LOCALE = {
       "Luoyang"
     ],
     "donghan:196": [
-      "Cao Cao escorts Emperor Xian to Xuchang",
+      "Cao Cao welcomes Emperor Xian to Xu (Xuchang) and establishes military-agricultural colonies",
       "Xu (Xuchang)"
     ],
     "donghan:219": [
@@ -895,57 +1024,33 @@ window.EN_LOCALE = {
       "Sima Yi holds firm for over 100 days; Zhuge Liang dies on Wuzhang Plains and Shu retreats",
       "Wuzhang Plains (Qishan)"
     ],
+    "sanguo:244": [
+      "Battle of Xingshi: Wang Ping repels Cao Shuang's invasion; Guanqiu Jian sacks Goguryeo's Wandu",
+      "Xingshi (Yangxian) & Wandu"
+    ],
     "sanguo:249": [
       "Incident at the Gaoping Tombs; Sima Yi seizes power in Wei",
       "Luoyang"
+    ],
+    "sanguo:255": [
+      "Guanqiu Jian's Shouchun rebellion is crushed by Sima Shi; Jiang Wei routs Wang Jing at Taoxi",
+      "Shouchun & Didao"
+    ],
+    "sanguo:264": [
+      "Zhong Hui and Jiang Wei fall in the Chengdu mutiny; Wei creates Liangzhou, Wu creates Guangzhou",
+      "Chengdu & Panyu"
     ],
     "sanguo:265": [
       "Sima Yan replaces Cao Wei and establishes Western Jin",
       "Luoyang"
     ],
+    "sanguo:272": [
+      "Battle of Xiling: Wu commander Lu Kang repels Jin forces under Yang Hu and retakes Xiling",
+      "Xiling (Yichang)"
+    ],
     "sanguo:279": [
       "Western Jin launches six-pronged invasion of Eastern Wu",
       "Jiangling / Jianye"
-    ],
-    "xijin:290": [
-      "Emperor Wu dies; Empress Jia Nanfeng's court intrigues begin",
-      "Luoyang"
-    ],
-    "xijin:301": [
-      "Sima Lun usurps the throne; War of the Eight Princes escalates",
-      "Luoyang"
-    ],
-    "xijin:306": [
-      "Li Xiong proclaims Cheng-Han in Chengdu; Sima Yue controls Luoyang court",
-      "Chengdu / Luoyang"
-    ],
-    "xijin:313": [
-      "Emperor Min enthroned in Chang'an; Zu Ti crosses the Yangtze north",
-      "Chang'an / Jingkou"
-    ],
-    "dongjin:335": [
-      "Shi Hu moves the Later Zhao capital from Xiangguo to Ye",
-      "Ye (Anyang)"
-    ],
-    "dongjin:384": [
-      "Murong Chui founds Later Yan and Yao Chang founds Later Qin",
-      "Zhongshan / Chang'an"
-    ],
-    "dongjin:385": [
-      "Qifu Guoren founds Western Qin; Lü Guang founds Later Liang",
-      "Fuhan (Linxia)"
-    ],
-    "dongjin:398": [
-      "Tuoba Gui moves the Northern Wei capital to Pingcheng and takes imperial title",
-      "Pingcheng (Datong)"
-    ],
-    "dongjin:399": [
-      "Murong De founds Southern Yan in Shandong with Guanggu as capital",
-      "Guanggu (Qingzhou)"
-    ],
-    "nanbei:431": [
-      "Helian Ding captured, Northern Wei conquers Xia; Era of Yuanjia in Liu Song",
-      "Tongwancheng / Jiankang"
     ],
     "nanbei:550": [
       "Gao Yang replaces Eastern Wei and establishes Northern Qi",
@@ -984,8 +1089,8 @@ window.EN_LOCALE = {
       "Chang'an"
     ],
     "tang:630": [
-      "Li Jing conquers Eastern Tujue; Taizong hailed as Heavenly Qaghan",
-      "Yin Mountains"
+      "Li Jing conquers Eastern Tujue; steppe rulers hail Emperor Taizong as Heavenly Qaghan",
+      "Yin Mountains · Dingxiang"
     ],
     "tang:641": [
       "Princess Wencheng enters Tibet to marry Songtsen Gampo",
@@ -1004,7 +1109,7 @@ window.EN_LOCALE = {
       "Liaodong (Liaoyang)"
     ],
     "tang:679": [
-      "Protectorate General to Pacify the South (Annam) established at Jiaozhou",
+      "Emperor Gaozong reorganizes Jiaozhou Area Command into the Annam Protectorate General",
       "Jiaozhou (Hanoi)"
     ],
     "tang:690": [
@@ -1018,6 +1123,10 @@ window.EN_LOCALE = {
     "tang:751": [
       "Battle of Talas; papermaking spreads to the Islamic world",
       "Talas"
+    ],
+    "tang:753": [
+      "Jianzhen sails from Yangzhou on his sixth voyage, bringing Vinaya and Tang culture to Japan",
+      "Yangzhou"
     ],
     "tang:764": [
       "Liangzhou falls to Tibet, severing Hexi; Anxi & Beiting hold out as exclaves",
@@ -1035,12 +1144,16 @@ window.EN_LOCALE = {
       "Li Su takes Caizhou in a snowy night raid; Yuanhe Restoration",
       "Caizhou (Runan)"
     ],
+    "tang:822": [
+      "Changqing Treaty sworn again at Lhasa after Chang'an; treaty pillar raised at Jokhang in 823",
+      "Luoxie (Lhasa)"
+    ],
     "tang:848": [
       "Zhang Yichao's Guiyi Circuit recovers Dunhuang, Guazhou and eleven Hexi prefectures",
       "Shazhou / Guazhou"
     ],
     "wudai:909": [
-      "Wang Shenzhi enfeoffed as Prince of Min at Fuzhou",
+      "Later Liang invests Wang Shenzhi as King of Min at Fuzhou",
       "Fuzhou (Changle)"
     ],
     "wudai:916": [
@@ -1068,7 +1181,7 @@ window.EN_LOCALE = {
       "Waqiao Pass (Xiongzhou)"
     ],
     "beisong:961": [
-      "Disarming generals over wine; civil supremacy policy established",
+      "Emperor Taizu disarms generals over wine and appoints vice-prefects and fiscal commissioners",
       "Kaifeng"
     ],
     "beisong:978": [
@@ -1077,7 +1190,7 @@ window.EN_LOCALE = {
     ],
     "beisong:986": [
       "Yongxi Northern Expedition fails; Yang Ye falls at Chenjiagu",
-      "Shuozhou (Chenjiagu)"
+      "Shuozhou"
     ],
     "beisong:1014": [
       "Yingtianfu (Shangqiu) elevated to Southern Capital of Song",
@@ -1088,7 +1201,7 @@ window.EN_LOCALE = {
       "Chengdu"
     ],
     "beisong:1042": [
-      "Damingfu elevated to Northern Capital to guard against Liao",
+      "Song and Liao conclude Chongxi silver-silk increase; Renzong makes Damingfu Northern Capital",
       "Beijing Damingfu"
     ],
     "beisong:1043": [
@@ -1117,7 +1230,7 @@ window.EN_LOCALE = {
     ],
     "nansong:1163": [
       "Emperor Xiaozong's Longxing Northern Expedition and Peace Accord",
-      "Suzhou (Fuli)"
+      "Suzhou · Fuli"
     ],
     "nansong:1215": [
       "Mongols capture Jin capital Zhongdu; Jin moves south to Bianjing, losing half its territory",
@@ -1128,7 +1241,7 @@ window.EN_LOCALE = {
       "Diaoyu Fortress (Hechuan)"
     ],
     "yuan:1281": [
-      "Penghu Inspection Office established; second eastern campaign to Japan",
+      "Kublai Khan sets up Penghu Inspection Office over Penghu and Ryukyu and launches 2nd Japan raid",
       "Penghu / Quanzhou"
     ],
     "yuan:1287": [
@@ -1136,19 +1249,27 @@ window.EN_LOCALE = {
       "Liaoyang"
     ],
     "yuan:1307": [
-      "Central Secretariat and Ten Branch Secretariats system consolidated",
-      "Dadu"
+      "Emperor Wuzong establishes Karakorum (Lingbei) Province, finalizing the provincial system",
+      "Dadu · Karakorum"
     ],
     "yuan:1313": [
       "Emperor Renzong restores the civil exams with Zhu Xi's Neo-Confucian canon as the standard",
       "Dadu (Beijing)"
     ],
+    "yuan:1355": [
+      "Liu Futong enthrones Han Lin'er at Bozhou as Emperor of Great Song (Longfeng era)",
+      "Bozhou"
+    ],
     "yuan:1356": [
-      "Zhu Yuanzhang captures Jiqing (Nanjing), renaming it Yingtianfu",
+      "Zhu Yuanzhang takes Jiqing (Yingtianfu); Zhang Shicheng makes Pingjiang his capital",
       "Jiqing (Nanjing)"
     ],
+    "yuan:1360": [
+      "Chen Youliang kills Xu Shouhui at Caishi, proclaims Han, and is repelled at Longwan",
+      "Caishi · Yingtian"
+    ],
     "yuan:1363": [
-      "Battle of Lake Poyang: Zhu Yuanzhang defeats Chen Youliang",
+      "Battle of Lake Poyang: Zhu Yuanzhang defeats Chen Youliang; Ming Yuzhen founds Xia",
       "Lake Poyang"
     ],
     "ming:1442": [
@@ -1156,7 +1277,7 @@ window.EN_LOCALE = {
       "Liaoyang / Guangning"
     ],
     "ming:1567": [
-      "Longqing Opening lifts maritime ban at Yuegang in Fujian",
+      "Longqing Emperor lifts the maritime trade ban at Yuegang in Fujian (the Longqing Opening)",
       "Yuegang (Zhangzhou)"
     ],
     "ming:1581": [
@@ -1172,7 +1293,7 @@ window.EN_LOCALE = {
       "Chengtianfu (Tainan)"
     ],
     "qing:1685": [
-      "Siege of Albazin (Yakesa) against Russian Cossack incursions",
+      "Kangxi orders the Siege of Albazin (Yakesa) against Russian Cossack incursions",
       "Yakesa (Albazin)"
     ],
     "qing:1720": [
@@ -1180,7 +1301,7 @@ window.EN_LOCALE = {
       "Lhasa"
     ],
     "qing:1722": [
-      "Yongzheng Emperor ascends; tax reform and Southwest gaitu guiliu launched",
+      "Kangxi dies; Yongzheng Emperor ascends, launching tax and southwest reforms",
       "Beijing"
     ],
     "qing:1735": [
@@ -1192,7 +1313,7 @@ window.EN_LOCALE = {
       "Ili / Chengde"
     ],
     "qing:1792": [
-      "Gorkha campaign concluded; 29-Article Ordinance and Golden Urn instituted",
+      "Fuk'anggan repels Gorkhas; 29-Article Ordinance and Golden Urn instituted",
       "Lhasa"
     ],
     "qing:1796": [
@@ -1212,7 +1333,7 @@ window.EN_LOCALE = {
       "Dihua (Ürümqi)"
     ],
     "qing:1895": [
-      "Treaty of Shimonoseki cedes Taiwan and Penghu to Japan",
+      "Defeated in the First Sino-Japanese War, Qing signs Treaty of Shimonoseki ceding Taiwan & Penghu",
       "Taiwanfu (Tainan)"
     ],
     "roc:1915": [
@@ -1233,7 +1354,7 @@ window.EN_LOCALE = {
     ],
     "roc:1924": [
       "First KMT-CCP United Front; Whampoa Military Academy founded",
-      "Guangzhou (Whampoa)"
+      "Guangzhou"
     ],
     "roc:1926": [
       "National Revolutionary Army launches the Northern Expedition",
@@ -1256,11 +1377,11 @@ window.EN_LOCALE = {
       "Jinzhou / Xuzhou / Beiping"
     ],
     "roc:1949": [
-      "Yangtze River Crossing Campaign takes Nanjing",
+      "PLA crosses the Yangtze and captures Nanjing; the Nationalist government retreats to Taipei",
       "Nanjing"
     ],
     "prc:1951": [
-      "Seventeen-Point Agreement signed; peaceful liberation of Tibet",
+      "Central Government and Tibet sign the 17-Point Agreement for the peaceful liberation of Tibet",
       "Lhasa"
     ],
     "prc:1964": [
@@ -1268,16 +1389,16 @@ window.EN_LOCALE = {
       "Lop Nur"
     ],
     "prc:1971": [
-      "UN General Assembly Resolution 2758 restores PRC's lawful seat",
+      "26th UN General Assembly adopts Resolution 2758, restoring the PRC's lawful seat in the UN",
       "Beijing"
     ],
     "prc:1980": [
-      "Shenzhen, Zhuhai, Shantou, and Xiamen Special Economic Zones established",
+      "Central government establishes the Shenzhen, Zhuhai, Shantou, and Xiamen Special Economic Zones",
       "Shenzhen"
     ],
     "prc:1990": [
-      "Development and opening of Pudong New Area in Shanghai",
-      "Shanghai (Pudong)"
+      "Central government announces the development and opening of Shanghai's Pudong New Area",
+      "Shanghai"
     ],
     "prc:2001": [
       "China joins the World Trade Organization (WTO); Qinghai–Tibet Railway begins",
@@ -1304,11 +1425,11 @@ window.EN_LOCALE = {
       "Yunnan-fu (Kunming)"
     ],
     "ming:1388": [
-      "Feng Sheng pacifies Liaodong (1387); Lan Yu crushes the Northern Yuan court at Lake Buir",
-      "Liaoyang · Lake Buir"
+      "Feng Sheng subdues Naghachu at Jinshan (1387); Lan Yu crushes the Northern Yuan at Lake Buir",
+      "Jinshan · Lake Buir"
     ],
     "ming:1427": [
-      "Emperor Xuanzong abolishes Jiaozhi Province and withdraws from Vietnam; Le Loi founds Later Le",
+      "Emperor Xuanzong abolishes Jiaozhi and withdraws from Vietnam; Le Loi soon founds the Later Le",
       "Jiaozhi (Hanoi)"
     ],
     "tang:727": [
@@ -1324,7 +1445,7 @@ window.EN_LOCALE = {
       "Taihecheng (Dali)"
     ],
     "tang:742": [
-      "Tianbao era begins; Ten Frontier Military Commands (Jiedushi) established along the borders",
+      "Emperor Xuanzong inaugurates the Tianbao era and establishes the Ten Frontier Military Commands",
       "Chang'an · Fanyang"
     ],
     "tang:744": [
@@ -1340,7 +1461,7 @@ window.EN_LOCALE = {
       "Yansui Garrison (Yulin)"
     ],
     "ming:1513": [
-      "Turpan occupies Hami Guard; the Ming court closes Jiayuguan Pass and halts western tribute",
+      "Mansur of Turpan seizes Hami Guard; the Ming guards west of Jiayuguan gradually withdraw",
       "Hami Guard"
     ],
     "ming:1519": [
@@ -1368,8 +1489,12 @@ window.EN_LOCALE = {
       "Chengdu · Hanzhong"
     ],
     "zhanguo:-307": [
-      "King Wuling of Zhao adopts cavalry archery and conquers Zhongshan; Chu annexes Yue (306 BCE)",
+      "King Wuling of Zhao adopts cavalry archery and conquers Zhongshan",
       "Handan"
+    ],
+    "zhanguo:-306": [
+      "King Huai of Chu annexes Yue, absorbing the former Wu heartland to the sea",
+      "Kuaiji (Shaoxing)"
     ],
     "zhanguo:-284": [
       "Yan general Yue Yi leads a five-state coalition to crush Qi, capturing over 70 cities",
@@ -1433,10 +1558,10 @@ window.EN_LOCALE = {
     ],
     "xihan:-109": [
       "Emperor Wu pacifies the Southwestern Yi; King of Dian submits and Yizhou Commandery is set",
-      "Dianchi (Yizhou)"
+      "Dianchi (Kunming)"
     ],
     "xihan:-51": [
-      "Chanyu Huhanye pays homage to Emperor Xuan; 11 ministers honored in Qilin Pavilion",
+      "Chanyu Huhanye pays homage at Chang'an; Emperor Xuan honors 11 ministers in the Qilin Pavilion",
       "Chang'an"
     ],
     "donghan:123": [
@@ -1461,7 +1586,7 @@ window.EN_LOCALE = {
     ],
     "tang:705": [
       "Shenlong Coup: Chancellor Zhang Jianzhi restores Emperor Zhongzong in Luoyang, reviving Tang",
-      "Luoyang"
+      "Shendu Luoyang"
     ],
     "tang:840": [
       "Uyghur Khaganate collapses; Emperor Wuzong and Li Deyu defeat Uyghurs and Zelu (Huichang Era)",
@@ -1495,6 +1620,10 @@ window.EN_LOCALE = {
       "Eight-Nation Alliance occupies Beijing as Cixi flees to Xi’an; southern governors keep peace",
       "Beijing"
     ],
+    "qing:1901": [
+      "Qing signs the Boxer Protocol with 11 powers: 450M-tael indemnity and legation garrisons",
+      "Beijing"
+    ],
     "xihan:-8": [
       "Emperor Cheng establishes Three Excellencies; Wang Mang becomes Grand Marshal",
       "Chang'an"
@@ -1508,7 +1637,7 @@ window.EN_LOCALE = {
       "Xining (Qingtang)"
     ],
     "ming:1479": [
-      "Emperor Xianzong sets up the Western Depot; Ming-Joseon forces launch the Chenghua Campaign",
+      "Wang Zhi and Zhu Yong join Joseon forces against the Jianzhou Jurchens in the Chenghua Campaign",
       "Beijing · Hetu Ala"
     ],
     "ming:1524": [
@@ -1517,11 +1646,11 @@ window.EN_LOCALE = {
     ],
     "qing:1813": [
       "Guiyou Incident: Lin Qing’s rebels storm the Forbidden City to Longzong Gate and are repelled",
-      "Forbidden City, Beijing"
+      "Beijing"
     ],
     "xihan:11": [
       "Yellow River breaches at Yuancheng, ending the ancient northern course and flooding the east",
-      "Weijun (Daming)"
+      "Yuancheng (Daming)"
     ],
     "donghan:69": [
       "Wang Jing builds a 500-km Yellow River levee system, stabilizing its course for a millennium",
@@ -1537,7 +1666,7 @@ window.EN_LOCALE = {
     ],
     "qing:1855": [
       "Yellow River breaches at Tongwaxiang, shifting north into the Bohai Sea along its modern path",
-      "Tongwaxiang (Lankao)"
+      "Lanyang (Lankao)"
     ],
     "zhanguo:-300": [
       "Yan general Qin Kai routs the Donghu, builds the Northern Wall, and sets five commanderies",
@@ -1557,7 +1686,7 @@ window.EN_LOCALE = {
     ],
     "tang:635": [
       "Li Jing leads a six-column expedition to Lake Baihai, forcing Tuyuhun King Buyun to submit",
-      "Fusicheng (West Qinghai Lake)"
+      "Fusicheng (Qinghai)"
     ],
     "tang:648": [
       "Wang Xuance leads Tibetan-Nepalese forces to defeat Arunāśva in Central India",
@@ -1577,11 +1706,11 @@ window.EN_LOCALE = {
     ],
     "xihan:-91": [
       "Witchcraft Crisis drives Prince Liu Ju to suicide; Sima Qian completes the Shiji chronicle",
-      "Chang'an"
+      "Huxian · Chang'an"
     ],
     "xihan:-74": [
       "Regent Huo Guang deposes Liu He after 27 days and enthrones Emperor Xuan (Zhaoxuan Restoration)",
-      "Chang'an (Weiyang Palace)"
+      "Chang'an"
     ],
     "donghan:92": [
       "Prosperity of Yongyuan: Emperor He ousts Regent Dou Xian and brings Eastern Han to its zenith",
@@ -1593,23 +1722,15 @@ window.EN_LOCALE = {
     ],
     "sanguo:260": [
       "Coup of Ganlu: Wei Emperor Cao Mao marches against Sima Zhao and is slain at the palace gate",
-      "Luoyang (Southern Gate)"
-    ],
-    "dongjin:322": [
-      "Rebellion of Wang Dun: Wang Dun marches from Wuchang into Jiankang and controls the court",
-      "Wuchang · Jiankang"
-    ],
-    "dongjin:404": [
-      "Liu Yu rises at Jingkou to crush usurper Huan Xuan and restore the Eastern Jin court",
-      "Jingkou · Jiankang · Jiangling"
+      "Luoyang"
     ],
     "tang:707": [
       "Jinglong Coup: Crown Prince Li Chongjun slays Wu Sansi with palace guards but falls in battle",
-      "Chang'an (Xuanwu Gate)"
+      "Chang'an"
     ],
     "tang:710": [
       "Tanglong Coup: Li Longji and Princess Taiping eliminate Empress Wei and restore Ruizong",
-      "Chang'an (Taiji Palace)"
+      "Chang'an"
     ],
     "tang:756": [
       "Mawei Mutiny: guards execute Yang Guozhong and Consort Yang; Suzong ascends at Lingwu",
@@ -1621,31 +1742,31 @@ window.EN_LOCALE = {
     ],
     "tang:835": [
       "Sweet Dew Incident: Emperor Wenzong and Li Xun’s failed plot against Qiu Shiliang ends in purge",
-      "Chang'an (Daming Palace)"
+      "Chang'an"
     ],
     "wudai:926": [
       "Xingjiao Gate Incident: Zhuangzong Li Cunxu dies in a Luoyang mutiny; Li Siyuan ascends",
-      "Luoyang (Xingjiao Gate) · Yedu"
+      "Luoyang · Yedu"
     ],
     "beisong:976": [
       "Candlelight and Axe-Sound Mystery: Emperor Taizu dies suddenly; brother Taizong ascends",
-      "Kaifeng (Wansui Hall)"
+      "Kaifeng"
     ],
     "nansong:1129": [
       "Miao-Liu Mutiny: Miao Fu and Liu Zhengyan depose Gaozong; Han Shizhong restores him",
-      "Hangzhou (Lin'an)"
+      "Hangzhou"
     ],
     "yuan:1323": [
       "Coup at Nanpo: Censor Tegshi assassinates reformist Emperor Yingzong and Chancellor Baiju",
-      "Nanpo (south of Shangdu)"
+      "Shangdu (Duolun)"
     ],
     "ming:1457": [
       "Wresting the Gate Coup: Shi Heng and Xu Youzhen restore Emperor Yingzong and execute Yu Qian",
-      "Beijing (Southern Palace)"
+      "Beijing"
     ],
     "ming:1542": [
       "RenYin Palace Rebellion: palace women led by Yang Jinying fail to strangle the Jiajing Emperor",
-      "Forbidden City, Beijing"
+      "Beijing"
     ],
     "qing:1861": [
       "Xinyou Coup: Cixi, Ci’an, and Prince Gong oust Sushun’s Eight Regents to begin the Regency",
@@ -1676,7 +1797,7 @@ window.EN_LOCALE = {
       "Chigu (Issyk-Kul)"
     ],
     "xihan:24": [
-      "Gengshi Emperor moves his court to Chang’an while Liu Xiu captures Handan and pacifies Hebei",
+      "Gengshi Emperor enters Chang’an; Liu Xiu crosses north to pacify Hebei and slays Wang Lang",
       "Handan & Chang'an"
     ],
     "donghan:144": [
@@ -1697,7 +1818,7 @@ window.EN_LOCALE = {
     ],
     "nanbei:552": [
       "Bumin Qaghan crushes the Rouran north of Huaihuang and founds the First Turkic Khaganate",
-      "North of Huaihuang (Zhangbei)"
+      "Huaihuang (Zhangbei)"
     ],
     "nanbei:580": [
       "Regent Yang Jian has Wei Xiaokuan crush Yuchi Jiong and razes the old capital of Ye",
@@ -1707,13 +1828,17 @@ window.EN_LOCALE = {
       "Pang Xun leads the Guilin garrison mutiny north to seize Xuzhou and sever the Grand Canal",
       "Xuzhou & Guilin"
     ],
+    "tang:885": [
+      "Emperor Xizong returns to Chang'an as warlords Zhu Wen and Li Keyong carve out rival domains",
+      "Chang'an & Bianzhou"
+    ],
     "tang:895": [
       "Li Keyong marches into Guanzhong as Wang Jian and Yang Xingmi carve out warlord regimes",
       "Jinyang & Fengxiang"
     ],
     "beisong:1057": [
       "Ouyang Xiu presides over the 1057 exam, graduating Su Shi, Su Zhe, Zeng Gong, and Zhang Zai",
-      "Kaifeng (Imperial Exam Hall)"
+      "Kaifeng"
     ],
     "yuan:1344": [
       "Yellow River breaches the Baimaodi dike at Caoxian; Jia Lu’s massive corvée sparks unrest",
@@ -1741,11 +1866,11 @@ window.EN_LOCALE = {
     ],
     "qing:1696": [
       "Emperor Kangxi personally leads campaigns into Outer Mongolia, routing Galdan at Jao Modo",
-      "Jao Modo (South of Ulaanbaatar)"
+      "Jao Modo (Ulaanbaatar)"
     ],
     "qing:1729": [
       "Emperor Yongzheng creates the Grand Council, concentrating state power in the throne",
-      "Forbidden City (Beijing)"
+      "Beijing"
     ],
     "qing:1755": [
       "Qing armies march into Ili in two columns, destroying the Dzungar Khanate and Dawachi",
@@ -1756,7 +1881,7 @@ window.EN_LOCALE = {
       "Canton (Guangzhou)"
     ],
     "qing:1787": [
-      "Fuk’anggan crosses the strait to suppress Lin Shuangwen’s uprising; Zhuluo is renamed Jiayi",
+      "Fuk'anggan suppresses Lin Shuangwen in Taiwan; Qianlong renames Zhuluo to Jiayi",
       "Jiayi (Zhuluo)"
     ],
     "qing:1826": [
@@ -1784,12 +1909,8 @@ window.EN_LOCALE = {
       "Linqiang · Huangshui (Xining)"
     ],
     "donghan:215": [
-      "Sun-Liu Xiang River pact divides Jingzhou; Zhang Liao routs Sun Quan at Xiaoyao Ford",
-      "Linxiang & Hefei"
-    ],
-    "dongjin:397": [
-      "Tufa Wugu founds Southern Liang in the Hehuang valley with capitals at Ledu and Xiping",
-      "Ledu · Xiping (Qinghai)"
+      "Cao Cao takes Hanzhong; Sun Quan and Liu Bei divide Jingzhou; Zhang Liao holds Xiaoyao Ford",
+      "Nanzheng · Linxiang · Hefei"
     ],
     "tang:670": [
       "Battle of Dafeichuan: Xue Rengui's Tang army is defeated by Tibet, which annexes Tuyuhun",
@@ -1801,7 +1922,7 @@ window.EN_LOCALE = {
     ],
     "ming:1413": [
       "Yongle Emperor establishes Guizhou Province, completing the Ming thirteen-province system",
-      "Guiyang (Guizhou)"
+      "Guiyang"
     ],
     "qing:1885": [
       "Battle of Zhennan Pass: General Feng Zicai routs French forces and recaptures Lang Son",
@@ -1824,8 +1945,8 @@ window.EN_LOCALE = {
       "Qufu · Luoyang"
     ],
     "donghan:207": [
-      "Liu Bei visits Zhuge Liang for the Longzhong Plan; Cao Cao routs the Wuhuan at Mt. Bailang",
-      "Longzhong & Mt. Bailang"
+      "Liu Bei makes three visits to Zhuge Liang at Longzhong, adopting the Longzhong Plan",
+      "Longzhong (Xiangyang)"
     ],
     "donghan:211": [
       "Battle of Tong Pass: Cao Cao defeats Ma Chao and Han Sui to pacify Guanzhong",
@@ -1834,10 +1955,6 @@ window.EN_LOCALE = {
     "sanguo:223": [
       "Liu Bei dies at White Emperor City in Yong'an, entrusting the state to Zhuge Liang",
       "Yong'an (Baidi City)"
-    ],
-    "dongjin:353": [
-      "Wang Xizhi and Xie An gather at the Orchid Pavilion in Kuaiji, composing Preface to Lanting",
-      "Lanting (Kuaiji)"
     ],
     "nanbei:529": [
       "Liang general Chen Qingzhi leads 7,000 White-Robe troops north, taking 32 cities and Luoyang",
@@ -1877,11 +1994,15 @@ window.EN_LOCALE = {
     ],
     "qing:1669": [
       "Young Kangxi Emperor seizes regent Oboi at Wuying Hall to assume personal rule",
-      "Forbidden City, Beijing"
+      "Beijing"
+    ],
+    "qing:1662": [
+      "Wu Sangui executes the Southern Ming Yongli Emperor in Kunming; Prince Li Dingguo dies",
+      "Yunnan Fu (Kunming)"
     ],
     "qing:1793": [
       "British envoy Lord Macartney meets the Qianlong Emperor at Chengde; trade demands refused",
-      "Chengde Mountain Resort"
+      "Chengde (Jehol)"
     ],
     "qing:1799": [
       "Following Qianlong's death, the Jiaqing Emperor executes corrupt minister Heshen",
@@ -1905,14 +2026,14 @@ window.EN_LOCALE = {
     ],
     "zhanguo:-246": [
       "Hydraulic engineer Zheng Guo builds the 300-li Zheng Guo Canal, turning Guanzhong fertile",
-      "Jingyang (Zheng Guo Canal)"
+      "Jingyang"
     ],
     "qin:-213": [
       "First Emperor decrees the Burning of Books on Li Si advice, executing scholars next year",
       "Xianyang"
     ],
     "qin:-203": [
-      "Chu-Han stalemate ends in the Hong Canal Pact dividing the realm before Han pursues Chu",
+      "After a long stalemate, the Hong Canal Pact divides the realm before Liu Bang pursues Xiang Yu",
       "Chenggao & Hong Canal"
     ],
     "xihan:-134": [
@@ -1927,9 +2048,61 @@ window.EN_LOCALE = {
       "Liangzhou Accord: Sakya Pandita meets Mongol prince Godan, bringing Tibet into the realm",
       "Liangzhou (Wuwei)"
     ],
+    "beisong:1002": [
+      "Li Jiqian captures Song Lingzhou as Xiping Prefecture, securing the Hetao Plain",
+      "Lingzhou (Xiping Pref.)"
+    ],
+    "beisong:1123": [
+      "Jin hands over six stripped Yanjing prefectures; Song establishes Yanshan Circuit",
+      "Yanshan Pref. (Beijing)"
+    ],
+    "nansong:1134": [
+      "Yue Fei recovers the six commanderies of Xiangyang, Suizhou, Yingzhou, Tangzhou, and Dengzhou",
+      "Xiangyang"
+    ],
+    "nansong:1153": [
+      "Jin ruler Wanyan Liang moves the imperial capital from Shangjing to Zhongdu (Beijing)",
+      "Zhongdu Daxing Pref. (Beijing)"
+    ],
+    "nansong:1235": [
+      "Ögedei Khan launches a three-pronged Mongol invasion across Sichuan, Jingxiang, and Jianghuai",
+      "Xiangyang · Chengdu · Yangping Pass"
+    ],
     "yuan:1368": [
       "Ming generals Xu Da and Chang Yuchun capture Dadu as Toghon Temur flees north, ending Yuan",
       "Dadu (Beijing)"
+    ],
+    "zhanguo:-286": [
+      "King Min of Qi annexes Song; Qi, Chu, and Wei partition its territory",
+      "Shangqiu & Dingtao"
+    ],
+    "xihan:-36": [
+      "Chen Tang storms Zhizhi in Kangju and slays Zhizhi Chanyu, proclaiming Han's reach afar",
+      "Zhizhi (Kangju / Taraz)"
+    ],
+    "beisong:997": [
+      "Emperor Taizong divides the realm into Fifteen Circuits, establishing Song circuit rule",
+      "Dongjing Kaifeng Fu"
+    ],
+    "nanbei:551": [
+      "Wang Sengbian and Chen Baxian crush Hou Jing; Emperor Yuan ascends at Jiangling",
+      "Jiankang · Jiangling"
+    ],
+    "nanbei:578": [
+      "Northern Zhou captures Wu Mingche at Luliang and seizes Huainan north of the Yangtze",
+      "Pengcheng · Shouyang"
+    ],
+    "tang:783": [
+      "Jingyuan Mutiny besieges Emperor Dezong at Fengtian; Penitential Edict appeases garrisons",
+      "Fengtian (Qianxian) · Chang'an"
+    ],
+    "wudai:910": [
+      "Qian Liu builds Qiantang sea walls in Wuyue; Xu Wen consolidates Yang Wu in Jianghuai",
+      "Hangzhou · Yangzhou"
+    ],
+    "wudai:927": [
+      "Later Tang invests Ma Yin as King of Chu alongside Jingnan astride middle Yangtze trade",
+      "Tanzhou · Jiangling"
     ]
   },
   "corridors": {
@@ -2165,7 +2338,7 @@ window.EN_LOCALE = {
     "交趾布政司（1407—1427）": "Jiaozhi Prov. (1407–27)",
     "后金（1636 年起称清）": "Later Jin (Qing from 1636)",
     "清": "Qing",
-    "郑氏台湾": "Kingdom of Tungning (Koxinga)",
+    "郑氏台湾": "Tungning Taiwan",
     "西藏（驻藏大臣）": "Tibet (Qing Amban)",
     "中华民国": "Republic of China",
     "伪满洲国（日占）": "Manchukuo (Japanese puppet)",
@@ -2259,6 +2432,7 @@ window.EN_LOCALE = {
     "乌思藏": "Ü-Tsang (Tibet)",
     "南越": "Nanyue",
     "闽越": "Minyue",
+    "西南夷（滇 · 夜郎）": "Southwest Yi (Dian & Yelang)",
     "台湾原住民": "Formosan Indigenous Peoples",
     "高句丽": "Goguryeo",
     "百济": "Baekje",
@@ -2323,7 +2497,8 @@ window.EN_LOCALE = {
     "479 — 502 · 北魏 / 南齐": "479–502 · Northern Wei / Southern Qi",
     "502 — 534 · 北魏 / 梁": "502–534 · Northern Wei / Liang",
     "907 — 960 · 五代十国：中原五代更迭，南方十国并立": "907–960 · Five Dynasties in the North, Ten Kingdoms in the South",
-    "1449 — 1616 · 土木堡之变后：收缩至长城、辽东": "1449–1616 · Post-Tumu Crisis: Ming Frontier along the Great Wall & Liaodong",
+    "1513 — 1616 · 吐鲁番据哈密，关西诸卫内迁，北边收缩至长城、辽东": "1513–1616 · Turpan Holds Hami; Ming Frontier Withdraws to the Great Wall & Liaodong",
+    "1449 — 1513 · 土木堡之变后：九边防线成形，哈密卫仍为关西七卫之首": "1449–1513 · After the Tumu Crisis: The Nine Frontier Garrisons Take Shape, with Hami Leading the Seven Guards West of Jiayuguan",
     "1616 — 1644 · 明末：后金崛起，萨尔浒后辽东尽失": "1616–1644 · Late Ming: Rise of Later Jin and Loss of Liaodong",
     "太平天国": "Taiping Heavenly Kingdom",
     "天京（太平天国）": "Tianjing (Taiping)",
@@ -2389,9 +2564,9 @@ window.EN_LOCALE = {
     "乐浪": "Lelang",
     "朔方": "Shuofang",
     "寿春": "Shouchun",
-    "宛": "Wan (Nanyang)",
+    "宛": "Wan",
     "邺": "Ye",
-    "许": "Xu (Xuchang)",
+    "许": "Xu",
     "襄阳": "Xiangyang",
     "龟兹": "Kucha",
     "赤壁": "Red Cliffs",
@@ -2417,7 +2592,7 @@ window.EN_LOCALE = {
     "寿阳": "Shouyang",
     "京口": "Jingkou",
     "龙城": "Longcheng",
-    "晋阳": "Jinyang (Taiyuan)",
+    "晋阳": "Jinyang",
     "广州": "Guang Zhou",
     "大兴": "Daxing",
     "东都洛阳": "Eastern Capital Luoyang",
@@ -2441,10 +2616,10 @@ window.EN_LOCALE = {
     "杭州（西府）": "Hangzhou (Xifu)",
     "长沙（潭州）": "Changsha (Tanzhou)",
     "福州（长乐府）": "Fuzhou (Changle)",
-    "兴王府": "Xingwang Fu (Guangzhou)",
+    "兴王府": "Xingwang Fu",
     "交州": "Jiao Zhou",
     "东京（汴梁）": "Dongjing (Bianliang)",
-    "西京": "Xijing (Luoyang)",
+    "西京": "Xijing",
     "南京应天府": "Nanjing Yingtian Fu",
     "北京大名府": "Beijing Daming Fu",
     "杭州": "Hang Zhou",
@@ -2463,14 +2638,14 @@ window.EN_LOCALE = {
     "会宁府": "Huining Fu",
     "哈拉和林": "Karakorum",
     "大都": "Dadu",
-    "上都": "Shangdu (Xanadu)",
+    "上都": "Shangdu",
     "集庆": "Jiqing",
     "汴梁": "Bianliang",
     "中庆": "Zhongqing",
     "萨迦": "Sakya",
     "辽阳": "Liaoyang",
     "顺天府": "Shuntian Fu",
-    "应天府": "Yingtian Fu",
+    "应天府": "Yingtian Pref.",
     "刘家港": "Liujiagang",
     "苏州": "Su Zhou",
     "月港": "Yuegang",
@@ -2488,7 +2663,7 @@ window.EN_LOCALE = {
     "拉萨": "Lhasa",
     "库伦": "Kulun (Urga)",
     "台湾府": "Taiwan Fu",
-    "承天府（郑氏）": "Chengtian Fu (Koxinga)",
+    "承天府（郑氏）": "Chengtian Fu (House of Zheng)",
     "瑷珲": "Aigun",
     "雅克萨": "Albazin (Yakesa)",
     "南京": "Nanjing",
@@ -2529,7 +2704,7 @@ window.EN_LOCALE = {
     "吉木萨尔": "Jimsar",
     "邢台": "Xingtai",
     "呼和浩特·和林格尔": "Hohhot · Horinger",
-    "榆林·靖边": "Yulin · Jingbian",
+    "榆林·靖边": "Yulin (Jingbian)",
     "临夏": "Linxia",
     "长沙": "Changsha",
     "福州": "Fu Zhou",
@@ -2584,25 +2759,40 @@ window.EN_LOCALE = {
     "诸葛亮北伐基地": "Forward base for Zhuge Liang's northern expeditions",
     "魏吴反复争夺": "Repeatedly contested between Wei and Wu",
     "西晋都城": "Western Jin capital",
+    "西晋都城（280–311），311年永嘉之乱陷落": "Western Jin imperial capital (280–311); sacked in the Yongjia Disaster of 311",
+    "关中及雍州治所重镇；永嘉之乱洛阳沦陷后，晋愍帝建兴元年至四年（313–316）建都于此": "Seat of Guanzhong and Yongzhou; after the fall of Luoyang, capital of Emperor Min (313–316)",
+    "益州治所；永兴元年李雄克成都称王，306年称帝建立大成（成汉）": "Seat of Yizhou; captured by Li Xiong in 304, proclaimed emperor of Cheng-Han in 306",
     "原吴都，后为东晋建康": "Former Wu capital; later Eastern Jin Jiankang",
     "汉赵都城": "Capital of Han-Zhao",
     "东晋都城": "Eastern Jin capital",
+    "东晋都城（317–420）": "Eastern Jin imperial capital (317–420)",
     "前秦、后秦都城": "Capital of Former Qin and Later Qin",
     "前赵、前秦、后秦都城": "Capital of Former Zhao, Former Qin, and Later Qin",
+    "前赵（319–329）、前秦（351–385）、后秦（386–417）都城；417年刘裕北伐收复": "Capital of Former Zhao (319–329), Former Qin (351–385), and Later Qin (386–417); recovered by Liu Yu in 417",
     "石勒后赵初都（335 年迁邺）": "First capital of Shi Le’s Later Zhao (moved to Ye in 335)",
+    "石勒后赵初都（319–335，335年迁邺）": "First capital of Later Zhao under Shi Le (319–335; moved to Ye in 335)",
     "后赵、冉魏、前燕都城": "Capital of Later Zhao, Ran Wei, and Former Yan",
+    "后赵（335–350）、冉魏（350–352）、前燕（357–370）都城": "Capital of Later Zhao (335–350), Ran Wei (350–352), and Former Yan (357–370)",
     "代国及北魏早期都城": "Early capital of Tuoba Dai and Northern Wei",
+    "代国及北魏早期都城（386–398）": "Early capital of Tuoba Dai and Northern Wei (386–398)",
     "北魏都城（398 年拓跋珪迁都于此）": "Northern Wei capital (moved here by Tuoba Gui in 398)",
+    "北魏都城（398年拓跋珪迁都于此）": "Northern Wei imperial capital (established by Tuoba Gui in 398)",
     "后燕都城": "Capital of Later Yan",
+    "后燕都城（386–397，397年魏攻破后燕迁龙城）": "Capital of Later Yan (386–397; fell to Northern Wei in 397 as Yan moved to Longcheng)",
     "南燕都城": "Capital of Southern Yan",
+    "南燕都城（399–410），410年刘裕北伐攻灭": "Capital of Southern Yan (399–410); destroyed by Liu Yu's northern expedition in 410",
     "赫连勃勃胡夏都城": "Capital of Helian Bobo’s Xia kingdom",
+    "赫连勃勃胡夏都城（413–427）": "Capital of Helian Bobo’s Xia kingdom (413–427)",
     "乞伏氏西秦都城": "Capital of Qifu’s Western Qin",
     "前凉、后凉、北凉都城": "Capital of Former Liang, Later Liang, and Northern Liang",
+    "前凉（320–376）、后凉（386–403）、北凉（412–420...）都城": "Capital of Former Liang (320–376), Later Liang (386–403), and Northern Liang (412–420...)",
     "成汉都城（304—347）": "Capital of Cheng-Han (304–347)",
+    "成汉都城（304–347），347年桓温西征收复": "Capital of Cheng-Han (304–347); recovered by Huan Wen's western expedition in 347",
+    "前燕、后燕、北燕都城": "Capital of Former, Later, and Northern Yan",
+    "前燕（341–357）、后燕（397–407）、北燕（407–420...）都城": "Capital of Former Yan (341–357), Later Yan (397–407), and Northern Yan (407–420...)",
     "东晋北伐重镇，379 年一度为前秦攻占": "Key Eastern Jin northern fortress; briefly taken by Former Qin in 379",
     "383 年淝水之战（八公山）所在": "Site of the Battle of Fei River (Mt. Bagong, 383 CE)",
     "谢玄北府兵大本营": "Headquarters of Xie Xuan’s elite Beifu (Northern Headquarters) Army",
-    "前燕、后燕、北燕都城": "Capital of Former, Later, and Northern Yan",
     "北魏都城（494—534）；龙门石窟": "Northern Wei capital (494–534); Longmen Grottoes",
     "南朝宋、齐、梁、陈都城": "Capital of the Southern Dynasties (Song, Qi, Liang, Chen)",
     "北魏494年前都城；云冈石窟": "Northern Wei capital until 494; Yungang Grottoes",
@@ -2613,6 +2803,9 @@ window.EN_LOCALE = {
     "北齐别都与军事中枢": "Secondary capital and military hub of Northern Qi",
     "554 年后为西魏附庸后梁都城": "Capital of Western Liang (vassal of Western Wei) from 554",
     "北凉都城，439 年北魏克姑臧统一北方": "Northern Liang capital; its fall in 439 completed Northern Wei’s unification of the north",
+    "北燕都城，436 年为北魏所灭": "Capital of Northern Yan; conquered by Northern Wei in 436 CE",
+    "南朝青州刺史部治所东阳城，469 年为北魏慕容白曜攻克": "Seat of Qingzhou under the Southern Dynasties (Dongyang); conquered by Northern Wei general Murong Baiyao in 469 CE",
+    "507 年钟离之战所在，南朝淮南御敌要冲": "Site of the Battle of Zhongli (507 CE), crucial Southern Dynasties defense along the Huai River",
     "莫高窟开凿": "Mogao Caves",
     "隋都，唐长安城前身": "Sui capital, predecessor of Tang Chang'an",
     "大运河中枢": "Central hub of the Grand Canal",
@@ -2689,8 +2882,8 @@ window.EN_LOCALE = {
     "伊犁将军驻地（1762 年设）": "Seat of the General of Ili (est. 1762)",
     "1727 年设驻藏大臣": "Seat of the Qing Imperial Resident in Tibet (from 1727)",
     "库伦办事大臣": "Seat of the Imperial Resident at Urga",
-    "1683 年施琅平台后设府；1895 年割让日本": "Conquered 1683, prefecture est. 1684; ceded to Japan in 1895",
-    "郑成功驱逐荷兰人后据台": "Seat of Koxinga’s regime after expelling the Dutch in 1662",
+    "1683 年施琅平台后设府；1895 年割让日本": "Prefecture founded after Shi Lang pacified Taiwan in 1683; ceded to Japan in 1895",
+    "郑成功驱逐荷兰人后据台": "Held by Koxinga after expelling the Dutch",
     "1858 年《瑷珲条约》": "Site of the 1858 Treaty of Aigun",
     "1685—86 年雅克萨之战": "Site of the Sino-Russian Siege of Albazin (1685–86)",
     "国民政府首都": "Capital of the Nationalist Government",
@@ -2783,7 +2976,7 @@ window.EN_LOCALE = {
     "岳州": "Yue Zhou",
     "朗州": "Lang Zhou",
     "澧州": "Li Zhou",
-    "叙州": "Xu Zhou (Yibin)",
+    "叙州": "Xu Zhou",
     "溪州": "Xi Zhou",
     "辰州": "Chen Zhou",
     "琼州": "Qiong Zhou",
@@ -3329,7 +3522,7 @@ window.EN_LOCALE = {
     "建康府": "Jiankang Fu",
     "广德军": "Guangde Jun",
     "太平州": "Taiping Zhou",
-    "徽州": "Hui Zhou (Shexian)",
+    "徽州": "Hui Zhou",
     "南安军": "Nan'an Jun",
     "赣州": "Gan Zhou",
     "临江军": "Linjiang Jun",
@@ -3831,6 +4024,9 @@ window.EN_LOCALE = {
     "前 202 — 前 127 · 汉初：郡国并行与文景之治，匈奴据河套河西，南越自立": "202–127 BCE · Early Western Han: Xiongnu Holds Ordos; Nanyue Independent",
     "前 127 — 前 121 · 武帝北击匈奴：卫青收复河套，置朔方、五原郡": "127–121 BCE · Wei Qing Recovers the Ordos Loop (Shuofang Commandery)",
     "前 121 — 前 111 · 河西之战：霍去病受降浑邪王，开河西走廊设武威、酒泉郡": "121–111 BCE · Huo Qubing Secures the Hexi Corridor",
+    "前 111 — 前 110 · 平定南越与列河西四郡：设南海、交趾等郡，分置张掖、敦煌郡": "111–110 BCE · Conquest of Nanyue & Four Hexi Commanderies (Zhangye, Dunhuang)",
+    "前 110 — 前 109 · 东平闽越与经略琼州：灭闽越迁民江淮，于海南岛置珠崖、儋耳二郡": "110–109 BCE · Annexation of Minyue & Establishment of Zhuya and Dan'er on Hainan",
+    "前 109 — 前 108 · 经营西南夷：滇王降汉，置益州郡赐金印": "109–108 BCE · Southwest Campaign: King of Dian Submits; Yizhou Commandery Established",
     "前 111 — 前 108 · 平定南越与西南夷：设南海、交趾等九郡，分置张掖、敦煌郡": "111–108 BCE · Conquest of Nanyue (Nine Commanderies) & Four Hexi Commanderies",
     "前 108 — 前 60 · 灭卫氏朝鲜：置乐浪、玄菟、真番、临屯四郡": "108–60 BCE · Conquest of Wiman Joseon (Four Korean Commanderies)",
     "前 60 — 公元 8 · 设西域都护府：西域三十六国正式纳入版图": "60 BCE–8 CE · Protectorate of the Western Regions Established",
@@ -4251,6 +4447,9 @@ window.EN_LOCALE = {
     "辽东京道治所": "Seat of Liao Dongjing Circuit",
     "辽东郡治": "Seat of Liaodong Commandery",
     "辽东都司治所": "Seat of Liaodong Regional Military Commission",
+    "沈阳（盛京）": "Shenyang (Mukden)",
+    "辽东都司治所；1621 年后金攻占并迁都于此（东京）": "Seat of the Liaodong Regional Military Commission; taken by the Later Jin in 1621 and made its Eastern Capital",
+    "1625 年努尔哈赤迁都于此，1634 年改称盛京，1636 年皇太极在此称帝改国号大清": "Nurhaci moved his capital here in 1625; renamed Mukden in 1634, where Hong Taiji proclaimed the Qing in 1636",
     "辽西京道治所": "Seat of Liao Xijing Circuit",
     "金东京路治所": "Seat of Jin Dongjing Circuit",
     "金京兆府路治所": "Seat of Jin Jingzhaofu Circuit",
@@ -4299,7 +4498,8 @@ window.EN_LOCALE = {
     "763 — 764 · 安史之乱平定：史朝义败亡，降将田承嗣、李怀仙、李宝臣分领魏博、幽州、成德，藩镇割据肇端": "763–764 · Rebellion Ends: Shi Chaoyi falls; surrendered generals Tian Chengsi, Li Huaixian and Li Baochen keep Weibo, Youzhou and Chengde, opening the age of regional warlords",
     "764 — 790 · 吐蕃陷河陇与孤悬西域：凉州失守河西走廊被截断，安西、北庭孤悬绝域坚守": "764–790 · Fall of Hexi & Isolated Protectorates: Tubo captures Liangzhou and severs the Hexi Corridor; Anxi and Beiting hold out in isolation",
     "1644 — 1661 · 清军入关与南明抗清：清廷定都北京经略中原，南明据南方抗清，台湾尚为荷占": "1644–1661 · Qing Entry & Southern Ming Resistance: Qing establishes rule from Beijing while Southern Ming resists in the south and Taiwan remains Dutch-ruled",
-    "1661 — 1681 · 郑成功收复台湾与三藩之乱：明郑驱逐荷兰殖民者设承天府，吴三桂等三藩于南方举兵": "1661–1681 · Koxinga Recovers Taiwan & Revolt of the Three Feudatories: Kingdom of Tungning established in Taiwan; Three Feudatories rebel in the south",
+    "1661 — 1673 · 郑成功收复台湾与康熙亲政：明郑设承天府据台，清廷内地底定，三藩起兵前夕": "1661–1673 · Koxinga Recovers Taiwan & Kangxi Reigns: Kingdom of Tungning established in Taiwan; mainland consolidated prior to the Three Feudatories revolt",
+    "1673 — 1681 · 三藩之乱与明郑抗清：吴三桂起兵建立吴周据西南，耿精忠、尚之信及郑经响应": "1673–1681 · Revolt of the Three Feudatories & Ming Zheng Resistance: Wu Sangui proclaims Wu Zhou in the southwest; Geng, Shang, and Zheng Jing join in revolt",
     "熙河路": "Xihe Circuit",
     "前赵": "Former Zhao",
     "台湾（荷占）": "Taiwan (Dutch-ruled)",
@@ -4389,8 +4589,8 @@ window.EN_LOCALE = {
     "1369—1371 年 · 徐达克定晋陕与北元南北对峙": "1369–1371 CE · Pacifying Shanxi-Shaanxi & Standoff with Northern Yuan",
     "徐达、常遇春西下太原、关中与陇右，李文忠克应昌；元廷退居漠北史称“北元”，故元平章纳哈出仍盘踞辽东，西南四川为明夏政权、云南为元梁王据守。": "Xu Da and Chang Yuchun conquered Taiyuan, Guanzhong, and Longyou while Li Wenzhong took Yingchang; the Yuan court retreated to the steppe as Northern Yuan while Naghachu held Liaodong, Ming Xia held Sichuan, and the Yuan Prince of Liang held Yunnan.",
     "1371—1382 年 · 平定四川明夏与经营西番": "1371–1382 CE · Conquest of Sichuan Ming Xia & Administration of Tibet",
-    "1382—1388 年 · 平定云南与北伐辽东前夕": "1382–1388 CE · Pacification of Yunnan & Eve of the Liaodong Campaign",
-    "1382 年傅友德、蓝玉、沐英平定云南元梁王与大理段氏，西南一统；东北辽东仍由北元纳哈出所部据守，直至 1387 年纳哈出降明、1388 年捕鱼儿海大捷。": "In 1382 Fu Youde, Lan Yu, and Mu Ying pacified the Yuan Prince of Liang and the Duan clan in Yunnan; Naghachu held Liaodong for Northern Yuan until his surrender in 1387 and the Battle of Buir Lake in 1388.",
+    "1382—1388 年 · 平定云南与北征金山前夕": "1382–1388 CE · Pacification of Yunnan & Eve of the Jinshan Campaign",
+    "1382 年傅友德、蓝玉、沐英平定云南元梁王与大理段氏，西南一统；辽东都司已据辽阳、沈阳，辽北金山仍由北元纳哈出所部据守，直至 1387 年纳哈出降明、1388 年捕鱼儿海大捷。": "In 1382 Fu Youde, Lan Yu, and Mu Ying pacified the Yuan Prince of Liang and the Duan clan in Yunnan; the Liaodong Commission already held Liaoyang and Shenyang, while Naghachu held Jinshan in northern Liaodong until his surrender in 1387 and the Battle of Buir Lake in 1388.",
     "1388—1407 年 · 洪武一统版图与北元（鞑靼·瓦剌）并立": "1388–1407 CE · Complete Hongwu Unification & Northern Yuan (Tatars & Oirats)",
     "1387 年收复辽东置辽东都司，1388 年蓝玉于捕鱼儿海大破北元汗廷，洪武两京十三省核心版图最终完成；漠北北元（1402 年后称鞑靼、瓦剌）与明廷隔长城南北对峙。": "After recovering Liaodong (1387) and crushing the Northern Yuan court at Lake Buir (1388), the Hongwu core realm was complete, facing Northern Yuan (Tatars and Oirats after 1402) across the Great Wall.",
     "1407—1427 年 · 永乐极盛疆域（设交趾布政司与奴儿干都司）": "1407–1427 CE · Yongle Zenith (Jiaozhi Province & Nurgan Commission)",
@@ -4476,16 +4676,16 @@ window.EN_LOCALE = {
     "前223年王翦、蒙武统六十万大军破楚拔寿春，俘楚王负刍；前222年王贲攻灭辽东燕王喜与代王嘉，王翦悉定江南置会稽郡，六国唯余东海之滨的齐国孤悬。": "In 223 BCE Wang Jian and Meng Wu conquered Chu at Shouchun; in 222 BCE Wang Ben extinguished Yan in Liaodong and Dai while Wang Jian pacified Jiangnan, leaving Qi isolated on the eastern coast.",
     "洛阳（王城）": "Luoyang (Royal Zhou)",
     "新郑": "Xinzheng",
-    "郢都": "Ying (Jiangling)",
-    "蓟城": "Jicheng (Beijing)",
+    "郢都": "Ying",
+    "蓟城": "Jicheng",
     "雍城": "Yongcheng",
     "安邑": "Anyi",
     "阳翟": "Yangzhai",
-    "陈郢": "Chen (Huaiyang)",
+    "陈郢": "Chen",
     "吴（姑苏）": "Wu (Suzhou)",
     "江州（巴）": "Jiangzhou (Chongqing)",
     "灵寿（中山）": "Lingshou (Zhongshan)",
-    "上党": "Shangdang (Changzhi)",
+    "上党": "Shangdang",
     "云中": "Yunzhong",
     "即墨": "Jimo",
     "秦都（前350孝公迁此）": "Qin capital (moved here by Duke Xiao in 350 BCE)",
@@ -4571,13 +4771,13 @@ window.EN_LOCALE = {
     "1279 — 1287 · 崖山灭宋与元初创制：灭南宋统一全国，置总制院统辖吐蕃军政": "1279–1287 CE · Reunification after Yashan & Early Yuan Institutions: Zongzhiyuan Administers Tibet",
     "1288 — 1351 · 大元大一统：1288 年改总制院为宣政院，西藏正式纳入中央宣政院直辖": "1288–1351 CE · Great Yuan Realm: Zongzhiyuan Renamed Xuanzhengyuan (1288) for Direct Rule of Tibet",
     "伊犁（沙俄侵占）": "Ili (Tsarist Russian Occupation)",
-    "1864 — 1880 · 同治平乱与左宗棠西征：1871 沙俄强占伊犁，1876 左宗棠收复新疆南北路": "1864–1880 CE · Zuo Zongtang Reconquers Xinjiang while Tsarist Russia Occupies Ili (1871–1880)",
+    "1864 — 1881 · 同治平乱与左宗棠西征：1871 沙俄强占伊犁，1876 左宗棠收复新疆南北路": "1864–1881 CE · Zuo Zongtang Reconquers Xinjiang while Tsarist Russia Occupies Ili (1871–1881)",
     "1881 — 1895 · 曾纪泽改订条约收复伊犁与新疆建省：1881 签约收回伊犁九城，1884 新疆建省": "1881–1895 CE · Zeng Jize Recovers Ili (Treaty of St. Petersburg, 1881) & Xinjiang Province Established (1884)",
     "胶州湾（德租）": "Jiaozhou Bay (German Lease)",
     "威海卫（英租）": "Weihaiwei (British Lease)",
     "旅大（俄租）": "Lüshun–Dalian (Russian Lease)",
     "九龙新界（英租）": "New Territories, Kowloon (British Lease)",
-    "1895 — 1897 · 马关条约后：甲午战败割让台湾、澎湖予日本": "1895–1897 CE · Post-Treaty of Shimonoseki: Taiwan and Penghu Ceded to Japan",
+    "1895 — 1898 · 甲午战败与马关条约：割让台湾、澎湖予日本，列强瓜分狂潮前夕": "1895–1898 CE · Post-Treaty of Shimonoseki: Taiwan and Penghu Ceded to Japan, Eve of Scramble for Concessions",
     "1898 — 1912 · 戊戌瓜分狂潮与晚清危局：德租胶州湾、俄租旅大、英租威海卫与九龙新界": "1898–1912 CE · Scramble for Concessions: German Jiaozhou Bay, Russian Lüda & British Weihaiwei and New Territories",
     "外蒙古（自治/苏控）": "Outer Mongolia (Autonomous / Soviet-Controlled)",
     "蒙古人民共和国": "Mongolian People's Republic",
@@ -4636,10 +4836,11 @@ window.EN_LOCALE = {
     "武安（马殷）": "Wu'an (Ma Yin)",
     "威武（王审知）": "Weiwu (Wang Shenzhi)",
     "岭南（刘隐）": "Lingnan (Liu Yin)",
+    "静海军（交州）": "Jinghai Circuit (Jiaozhou)",
     "前 214 — 前 206 · 秦平百越与大一统鼎盛：设桂林、象、南海三郡，北筑万里长城": "214–206 BCE · Apex of the Qin Empire: Guilin, Xiang & Nanhai Commanderies in Lingnan and the Great Wall",
-    "前 206 — 前 202 · 秦亡与楚汉相争：项羽分封十八诸侯称霸西楚，刘邦自汉中还定三秦，楚汉相争于荥阳成皋": "206–202 BCE · Fall of Qin & Chu–Han Contention: Xiang Yu's Eighteen Kingdoms vs. Liu Bang's Han from Guanzhong to Xingyang",
+    "前 206 — 前 202 · 秦亡与楚汉相争：陈胜起义后赵、燕、齐复国，项羽分封十八诸侯，秦将赵佗据岭南立南越、无诸复立闽越，刘邦还定三秦与项羽争霸": "206–202 BCE · Fall of Qin & Chu–Han Contention: Zhao, Yan & Qi Restored, Xiang Yu's 18 Kingdoms, Zhao Tuo's Nanyue, Wuzhu's Minyue & Liu Bang vs. Xiang Yu",
     "8 — 23 · 王莽代汉建新：托古改制与西域断绝，北疆匈奴复叛，绿林赤眉起兵": "8–23 CE · Wang Mang's Xin Dynasty: Archaisms, Loss of the Western Regions & Lulin–Chimei Uprisings",
-    "23 — 25 · 绿林赤眉起义与更始政权：昆阳大捷诛王莽，更始帝入洛阳长安，赤眉军、河北刘秀与陇蜀群雄并起": "23–25 CE · Fall of Xin & Gengshi Regime: Victory at Kunyang, Chimei Army, Liu Xiu in Hebei & Regional Warlords",
+    "23 — 25 · 绿林赤眉起义与更始政权：绿林军拥立汉宗室刘玄为更始帝入长安，宗室刘秀以大司马徇河北独立发展，赤眉军与陇蜀群雄并起": "23–25 CE · Fall of Xin & Gengshi Regime: Lülin Army Crowns Gengshi Emperor Liu Xuan, Liu Xiu Pacifies Hebei Independently, Chimei Army & Regional Warlords",
     "848 — 880 · 张议潮归义军收复河西：沙州起义驱逐吐蕃，收复瓜沙等十一州归唐": "848–880 CE · Zhang Yichao's Guiyi Circuit Recovers Hexi: Eleven Prefectures Restored to Tang",
     "880 — 884 · 黄巢攻入长安称帝大齐：黄巢大军渡江破洛阳、入长安建国号大齐，唐僖宗奔蜀，李克用等会诸镇收复长安": "880–884 CE · Huang Chao's Rebellion: Huang Chao Captures Chang'an and Proclaims Great Qi; Emperor Xizong Flees to Shu",
     "885 — 907 · 唐末藩镇彻底裂解：朱温据宣武河南、李克用据河东、王建据西川、杨行密据淮南、钱镠据两浙，唐室仅存关中一隅": "885–907 CE · Late Tang Warlord Fragmentation: Zhu Wen, Li Keyong, Wang Jian, Yang Xingmi & Qian Liu Divide the Realm",
@@ -4743,7 +4944,7 @@ window.EN_LOCALE = {
     "蒲州（河中府）": "Pu Zhou (Hezhong Pref.)",
     "乾封（泰山）": "Qianfeng (Mt. Tai)",
     "邓州": "Deng Zhou",
-    "播州": "Bo Zhou (Zunyi)",
+    "播州": "Bo Zhou",
     "西州（高昌）": "Xi Zhou (Gaochang)",
     "碎叶": "Suyab",
     "瓜州（晋昌）": "Gua Zhou (Jinchang)",
@@ -5171,6 +5372,34 @@ window.EN_LOCALE = {
     "山东潍坊青州": "Qingzhou, Weifang, Shandong",
     "山东潍坊诸城": "Zhucheng, Weifang, Shandong",
     "潍坊·青州": "Qingzhou, Weifang",
+    "滁州·凤阳": "Fengyang, Chuzhou",
+    "乐寿（夏都）": "Leshou (Xia Capital)",
+    "历阳（和县）": "Liyang (Hexian)",
+    "洛口仓（兴洛仓）": "Luokou Granary (Xingluo Granary)",
+    "金城（秦都）": "Jincheng (Qin Capital)",
+    "马邑（朔州）": "Mayi (Shuozhou)",
+    "单于大都护府（和林格尔）": "Chanyu Grand Protectorate (Horinger)",
+    "洺州（夏都）": "Mingzhou (Xia Capital)",
+    "历阳（吴都）": "Liyang (Wu Capital)",
+    "金城（兰州）": "Jincheng (Lanzhou)",
+    "沧州·献县": "Xianxian, Cangzhou",
+    "马鞍山·和县": "Hexian, Ma'anshan",
+    "郑州·巩义": "Gongyi, Zhengzhou",
+    "蒙古·哈拉和林": "Karakorum, Mongolia",
+    "邯郸·永年": "Yongnian, Handan",
+    "隋东都（605年始建），运河与天下之中": "Eastern Capital of Sui (built 605 CE), central hub of the Grand Canal",
+    "窦建德建立夏国，初都乐寿": "Initial capital of Dou Jiande’s Xia state",
+    "杜伏威据江淮称吴王，治历阳": "Seat of Du Fuwei’s Jianghuai Wu state",
+    "隋代天下第一大仓；李密瓦岗军开仓济民，建魏称公": "Largest imperial granary of Sui; opened by Li Mi’s Wagang army to feed the people, founding the Wei state",
+    "薛举自称西秦霸王，称帝建都金城": "Capital of Xue Ju’s Western Qin empire",
+    "刘武周依附突厥起兵马邑，自称定阳可汗": "Where Liu Wuzhou rebelled aligned with the Turks as Dingyang Khagan",
+    "武周时为神都（690—705）；天祐中唐室迁都洛阳（904—907）": "Divine Capital (Shendu) under Wu Zhou (690–705); final capital of Tang (904–907)",
+    "李唐龙兴之地；开元十一年升为北都，河东节度使治所": "Ancestral cradle of Li Tang; elevated to Northern Capital in 723 CE, seat of Hedong Jiedushi",
+    "永徽元年设单于都护府于云中金河，统辖漠南突厥诸羁縻府州": "Established in 650 CE at Jinhe to administer the southern Turkic tributary prefectures",
+    "贞观二十一年设燕然都护府，总章二年改安北都护府，统领漠北铁勒回纥诸部": "Established as Yanran in 647 CE and renamed Anbei in 669 CE, governing the northern Tiele and Uyghur tribes",
+    "窦建德迁都洺州，后刘黑闼据此建汉东国": "Later capital of Dou Jiande's Xia state; later base of Liu Heita's Handong state",
+    "杜伏威建立江淮吴政权，降唐封吴王": "Seat of Du Fuwei's Jianghuai Wu regime; surrendered to Tang and created Prince of Wu",
+    "薛举西秦都城，唐武德二年平薛仁杲置兰州": "Capital of Xue Ju's Western Qin; Lanzhou established in 619 CE after defeating Xue Rengao",
     "潍坊·诸城": "Zhucheng, Weifang",
     "潍坊": "Weifang",
     "四川广元": "Guangyuan, Sichuan",
@@ -5243,7 +5472,7 @@ window.EN_LOCALE = {
     "荆门·当阳": "Dangyang, Jingmen",
     "荆门": "Jingmen",
     "湖北十堰丹江口": "Danjiangkou, Shiyan, Hubei",
-    "十堰·丹江口": "Danjiangkou, Shiyan",
+    "十堰·丹江口": "Shiyan (Danjiangkou)",
     "十堰": "Shiyan",
     "湖南邵阳": "Shaoyang, Hunan",
     "邵阳": "Shaoyang",
@@ -5289,7 +5518,7 @@ window.EN_LOCALE = {
     "兴化（莆田）": "Xinghua (Putian)",
     "当阳（荆门）": "Dangyang (Jingmen)",
     "当阳": "Dangyang",
-    "均州（武当）": "Jun Zhou (Wudang)",
+    "均州（武当）": "Junzhou (Wudang)",
     "宝庆（邵阳）": "Baoqing (Shaoyang)",
     "沅州（怀化）": "Yuan Zhou (Huaihua)",
     "肇庆（端州）": "Zhaoqing (Duan Zhou)",
@@ -5985,7 +6214,7 @@ window.EN_LOCALE = {
     "朝歌": "Zhaoge",
     "桂陵之战": "Battle of Guiling",
     "围魏救赵": "Besiege Wei to Rescue Zhao",
-    "马陵": "Maling",
+    "马陵": "Maling (Daming)",
     "马陵之战": "Battle of Maling",
     "井陉之战": "Battle of Jingxing",
     "背水一战": "Battle with Back to the River (Jingxing)",
@@ -6020,7 +6249,7 @@ window.EN_LOCALE = {
     "阳谷": "Yanggu",
     "大名": "Daming",
     "燕京": "Yanjing",
-    "东京": "Dongjing (Kaifeng)",
+    "东京": "Dongjing",
     "东京汴梁": "Bianliang (Kaifeng)",
     "岳王庙": "Yue Fei Temple",
     "栖霞岭": "Qixia Ridge",
@@ -6054,7 +6283,7 @@ window.EN_LOCALE = {
     "楚蒂亚王国": "Chutia (Sutiya) Kingdom",
     "苏摩王朝": "Somavamshi Dynasty",
     "荥阳 · 千乘": "Xingyang · Qiancheng",
-    "1371 年汤和、傅友德水陆并进灭四川明夏，巴蜀并入明廷并设乌斯藏都司；北方北元与辽东纳哈出尚存，西南云南仍由元梁王把匝剌瓦尔密割据。": "In 1371 Tang He and Fu Youde conquered Ming Xia in Sichuan and established the Ü-Tsang Commission, while Northern Yuan and Naghachu held the north and Liaodong, and the Yuan Prince of Liang still held Yunnan.",
+    "1371 年汤和、傅友德水陆并进灭四川明夏，巴蜀并入明廷并设乌斯藏都司；同年元辽阳行省平章刘益降明，置定辽都卫于辽阳。北方北元尚存，纳哈出据辽北金山，西南云南仍由元梁王把匝剌瓦尔密割据。": "In 1371 Tang He and Fu Youde conquered Ming Xia in Sichuan and established the Ü-Tsang Commission; the same year the Yuan Liaoyang official Liu Yi surrendered and the Dingliao Garrison was set up at Liaoyang. Northern Yuan still held the north, Naghachu held Jinshan in northern Liaodong, and the Yuan Prince of Liang still held Yunnan.",
     "前256—前249年秦灭两周置三川郡，前247年置太原郡，前242年置东郡与齐接界，彻底腰斩六国南北合纵通道；前238年秦王政亲政，部署十年灭六国之战。": "Qin annexed the Eastern Zhou domain (256–249 BCE), established Taiyuan (247 BCE) and Dongjun (242 BCE) to sever the north-south coalition corridor, and in 238 BCE King Zheng assumed personal rule to launch the unification campaigns.",
     "前 300 — 前 297 · 燕将秦开却东胡辟燕北五郡、赵武灵王辟云中雁门": "300–297 BCE · Yan General Qin Kai Opens Five Northern Frontier Commanderies; King Wuling of Zhao Opens Yunzhong & Yanmen",
     "战国中期后叶（前300 — 前297 · 燕将秦开辟燕北五郡与赵略中山）": "Late Mid-Warring States (300–297 BCE · Yan General Qin Kai Expands into Liaodong)",
@@ -6181,6 +6410,592 @@ window.EN_LOCALE = {
     "朔方 · 长安": "Shuofang & Chang'an",
     "长安 · 湖县": "Chang'an",
     "凉州（武威）": "Liangzhou (Wuwei)",
-    "大都（北京）": "Dadu (Beijing)"
+    "大都（北京）": "Dadu (Beijing)",
+    "大长和": "Dachanghe",
+    "汴州 · 成都": "Bianzhou · Chengdu",
+    "汴州 · 太原 · 潭州": "Bianzhou · Taiyuan · Tanzhou",
+    "高平（泽州）": "Gaoping (Zezhou)",
+    "秦州 · 寿州（淮南）": "Qinzhou · Shouzhou (Huainan)",
+    "洛阳（兴教门） · 邺都": "Luoyang (Xingjiao Gate) · Yedu",
+    "福州 · 建州": "Fuzhou · Jianzhou",
+    "瓦桥关（雄州）": "Waqiao Pass (Xiongzhou)",
+    "兴王府（广州）": "Xingwangfu (Guangzhou)",
+    "临潢（上京）": "Linhuang (Supreme Capital)",
+    "刘繇·孙氏(江东)": "Liu Yao & Sun Clan (Jiangdong)",
+    "士燮(交州)": "Shi Xie (Jiaozhou)",
+    "公孙氏(辽东)": "Gongsun Clan (Liaodong)",
+    "马腾·韩遂(关陇)": "Ma Teng & Han Sui (Guanlong)",
+    "张鲁(汉中)": "Zhang Lu (Hanzhong)",
+    "洛阳 · 长安": "Luoyang & Chang'an",
+    "曲阿 · 历阳": "Qu'a & Liyang",
+    "下邳（睢宁）": "Xiapi (Suining)",
+    "邺（安阳）": "Ye (Anyang)",
+    "隆中（襄阳）": "Longzhong (Xiangyang)",
+    "南郑 · 临湘 · 合肥": "Nanzheng · Linxiang · Hefei",
+    "兴势（洋县） · 丸都": "Xingshi (Yangxian) & Wandu",
+    "寿春 · 狄道": "Shouchun & Didao",
+    "成都 · 番禺": "Chengdu & Panyu",
+    "西陵（宜昌）": "Xiling (Yichang)",
+    "东汉帝都（25–190），初平元年董卓焚洛西迁": "Eastern Han imperial capital (25–190 CE); burned when Dong Zhuo moved the court west in 190 CE",
+    "西京重镇，献帝初平元年至兴平二年（190–195）西迁都此": "Western capital where Emperor Xian held court after relocating from Luoyang (190–195 CE)",
+    "冀州治所，建安九年曹操平河北定霸府，十八年封魏公都邺": "Seat of Ji Province; Cao Cao established his headquarters here in 204 CE and became Duke of Wei at Ye in 213 CE",
+    "建安元年至二十五年（196–220）曹操奉汉献帝都许": "Imperial capital of Emperor Xian under Cao Cao's regency from 196 to 220 CE",
+    "曹魏及西晋都城": "Imperial capital of Cao Wei and Western Jin",
+    "蜀汉都城（221–263），263年魏灭蜀后为益州治所": "Imperial capital of Shu Han (221–263 CE); seat of Yi Province after the Wei conquest in 263 CE",
+    "黄龙元年（229）孙权自武昌迁都于此，孙吴帝都": "Imperial capital of Eastern Wu after Sun Quan moved the court from Wuchang in 229 CE",
+    "曹魏南阳郡治及荆州军事重镇，诸葛亮《出师表》“宛、洛”所指": "Seat of Nanyang Commandery and key Cao Wei northern Jingzhou fortress cited in Zhuge Liang's Northern Memorial",
+    "孙权黄武元年（221–229）及孙皓甘露元年（265–266）定都于此，后为孙吴陪都": "Eastern Wu capital under Sun Quan (221–229 CE) and Sun Hao (265–266 CE), serving as Wu's western secondary capital",
+    "方国珍": "Fang Guozhen",
+    "天完 · 陈友谅": "Tianwan · Chen Youliang",
+    "征东行省": "Zhengdong Province",
+    "开京（征东行省）": "Kaesong (Zhengdong Province)",
+    "开城": "Kaesong",
+    "大都 · 和林": "Dadu · Karakorum",
+    "采石 · 应天": "Caishi · Yingtian",
+    "安西路": "Anxi Route",
+    "延安路": "Yan'an Route",
+    "怀庆路": "Huaiqing Route",
+    "顺元路": "Shunyuan Route",
+    "辽阳路": "Liaoyang Route",
+    "沈阳路": "Shenyang Route",
+    "广宁府路": "Guangningfu Route",
+    "大宁路": "Daning Route",
+    "开元路": "Kaiyuan Route",
+    "水达达路": "Shuidada Route",
+    "兴和路": "Xinghe Route",
+    "和林路": "Helin (Karakorum) Route",
+    "冀宁路": "Jining (Taiyuan) Route",
+    "集庆路": "Jiqing (Nanjing) Route",
+    "江浙行省重镇、江南财赋之冠，元末张士诚定都于此": "Premier tax hub of Jiangzhe Province and Jiangnan; capital of Zhang Shicheng's Zhou regime in the late Yuan",
+    "河南江北行省淮西重镇，元末红巾军韩林儿龙凤大宋后期都城": "Key Huaixi stronghold in Henan-Jiangbei Province; later capital of Han Lin'er's Red Turban Song regime",
+    "征东等处行中书省治所，高丽国王兼领征东行省左丞相": "Seat of the Zhengdong Branch Secretariat, where the King of Goryeo concurrently served as Left Grand Councilor",
+    "1279 — 1287 · 崖山灭宋统一全国、置北庭都护府与征东行省，设总制院辖吐蕃": "1279 — 1287 · Reunification at Yashan, Beiting Protectorate & Zhengdong Province established, Zongzhi Yuan over Tibet",
+    "1288 — 1350 · 改总制院为宣政院、置和林（岭北）行省：中书省与诸行省大一统盛世": "1288 — 1350 · Xuanzheng Yuan & Karakorum (Lingbei) Province established: High Yuan under Central & Branch Secretariats",
+    "1351 — 1362 · 红巾大起义与群雄并起：龙凤大宋、徐寿辉（陈友谅）、朱元璋、张士诚、方国珍、明玉珍割据": "1351 — 1362 · Red Turban Uprising & Rival Warlords: Song (Han Lin'er), Tianwan/Chen Youliang, Zhu Yuanzhang, Zhang Shicheng, Fang Guozhen, Ming Yuzhen",
+    "1363 — 1368 · 鄱阳湖决战后群雄兼并：朱元璋灭陈友谅与张士诚、方国珍，陈友定据福建、梁王守云南": "1363 — 1368 · Post-Poyang Consolidation: Zhu Yuanzhang conquers Chen Youliang, Zhang Shicheng & Fang Guozhen; Chen Youding in Fujian, Prince of Liang in Yunnan",
+    "武平（湖南）": "Wuping (Hunan)",
+    "荆南（南平）": "Jingnan (Nanping)",
+    "燕京路": "Yanjing Circuit",
+    "辽东路": "Liaodong Circuit",
+    "河南路": "Henan Circuit",
+    "夏州（统万城）": "Xiazhou (Tongwancheng)",
+    "定难军节度使治所，淳化五年毁城迁民": "Seat of Dingnan Jiedushi; razed by Song in 994",
+    "京西南路汉水重镇，绍兴和议后宋金前哨": "Han River stronghold in SW Jingxi Circuit along the Song–Jin frontier",
+    "灵州（西平府）": "Lingzhou (Xiping Pref.)",
+    "燕山府（北京）": "Yanshan Pref. (Beijing)",
+    "中都大兴府（北京）": "Zhongdu Daxing Pref. (Beijing)",
+    "襄阳 · 成都 · 阳平关": "Xiangyang · Chengdu · Yangping Pass",
+    "李继迁攻陷北宋灵州改西平府，党项尽据河套平原": "Li Jiqian captures Song Lingzhou as Xiping Prefecture, securing the Hetao Plain",
+    "金依海上之盟交割燕京六州空城，北宋置燕山府路": "Jin hands over six stripped Yanjing prefectures; Song establishes Yanshan Circuit",
+    "岳飞挥师北伐收复襄阳、随、郢、唐、邓、信阳六郡": "Yue Fei recovers the six commanderies of Xiangyang, Suizhou, Yingzhou, Tangzhou, and Dengzhou",
+    "金海陵王完颜亮自上京迁都燕京，改名中都大兴府": "Jin ruler Wanyan Liang moves the imperial capital from Shangjing to Zhongdu (Beijing)",
+    "窝阔台汗分兵三路全面伐宋，川陕、荆襄、江淮战火延烧": "Ögedei Khan launches a three-pronged Mongol invasion across Sichuan, Jingxiang, and Jianghuai",
+    "960 — 963 · 陈桥兵变立宋与杯酒释兵权：十国割据尚存，北宋先取荆湖": "960–963 · Founding of Song at Chenqiao & Disarming Generals: Ten Kingdoms remain prior to the Jinghu campaign",
+    "963 — 965 · 假道灭虢平荆湖：荆南、武平入宋，继发兵伐后蜀": "963–965 · Annexation of Jingnan & Wuping (Hunan), followed by the invasion of Later Shu",
+    "965 — 971 · 王全斌灭后蜀与潘美平南汉：巴蜀、岭南次第归宋": "965–971 · Conquest of Later Shu in Sichuan and Southern Han in Lingnan",
+    "971 — 975 · 曹彬浮桥渡江攻灭南唐：江南、江西、闽北入宋": "971–975 · Cao Bin crosses the Yangtze and conquers Southern Tang across Jiangnan and northern Fujian",
+    "975 — 978 · 泉漳清源军陈洪进与吴越王钱俶纳土归宋前夕": "975–978 · Eve of the peaceful submission of Qingyuanjun (Quanzhou/Zhangzhou) and Wuyue",
+    "978 — 979 · 吴越与清源军纳土、太宗灭北汉：中原江南复归统一": "978–979 · Submission of Wuyue & Qingyuanjun and Emperor Taizong’s conquest of Northern Han",
+    "979 — 1038 · 高梁河与雍熙北伐、1002 李继迁陷灵州与 1004 澶渊之盟": "979–1038 · Northern expeditions against Liao, loss of Lingzhou (1002), and Treaty of Chanyuan (1004)",
+    "1038 — 1072 · 元昊建西夏、宋夏三川口与好水川之战及庆历和议：宋辽夏三足鼎立": "1038–1072 · Founding of Western Xia, Song–Xia wars, and the Song–Liao–Xia tripartite balance",
+    "1072 — 1104 · 王安石变法与王韶熙河开边：收复熙河洮岷兰，新置熙河路": "1072–1104 · New Policies & Wang Shao’s Xihe Expansion: recovery of Xi, He, Tao, Min, and Lan prefectures",
+    "1104 — 1115 · 崇宁河湟开边：王厚、童贯收复青唐吐蕃，置西宁州、廓州": "1104–1115 · Hehuang Expansion: recovery of Qingtang (Xiningzhou) and the Huangshui valley",
+    "1115 — 1125 · 阿骨打建金与海上之盟：金军席卷辽土，北宋宣和伐辽": "1115–1125 · Founding of Jin by Aguda & Alliance on the Sea against the Liao Empire",
+    "1125 — 1127 · 金灭辽、耶律大石西征建西辽与靖康之变：金军两度南下围汴京": "1125–1127 · Jin destroys Liao, Yelü Dashi founds Western Liao, and the Jingkang Incident ends Northern Song",
+    "1127 — 1141 · 康王赵构南渡、岳飞收复襄阳六郡与北伐中原、吴玠和尚原抗金": "1127–1141 · Southern transition under Emperor Gaozong, Yue Fei’s northern campaigns, and defense of Sichuan",
+    "1141 — 1206 · 绍兴和议划淮河—大散关为界、1153 金迁都中都与隆兴和议南北对峙": "1141–1206 · Treaty of Shaoxing along the Huai–Dasanguan line, Jin capital move to Zhongdu (1153), and Longxing Peace",
+    "1206 — 1215 · 铁木真统一蒙古建大蒙古国、韩侂胄开禧北伐与嘉定和议": "1206–1215 · Rise of Genghis Khan’s Mongol Empire, Kaixi Northern Expedition, and Treaty of Jiading",
+    "1215 — 1227 · 蒙古攻陷金中都、金宣宗南迁汴京与成吉思汗西征灭西辽": "1215–1227 · Mongols capture Jin Zhongdu, Jin relocates its capital to Bianjing, and Mongols annex Western Liao",
+    "1227 — 1234 · 蒙古灭西夏、三峰山之战与宋蒙联军蔡州灭金：金亡于蔡州": "1227–1234 · Mongols destroy Western Xia and ally with Southern Song to conquer Jin at Caizhou (1234)",
+    "1234 — 1253 · 端平入洛、1235 宋蒙全面战争爆发与 1247 凉州会盟吐蕃归附": "1234–1253 · Duanping campaign, outbreak of the Song–Mongol War (1235), and Liangzhou Accord with Tibet (1247)",
+    "1253 — 1276 · 忽必烈灭大理、1259 钓鱼城蒙哥战死、1273 襄阳陷落与伯颜入临安": "1253–1276 · Conquest of Dali, siege of Diaoyucheng (1259), fall of Xiangyang (1273), and surrender of Lin’an (1276)",
+    "1276 — 1279 · 文天祥陆秀夫张世杰拥二王闽粤抗元与 1279 崖山海战南宋覆亡": "1276–1279 · Loyalist resistance in Fujian and Guangdong culminating in the Naval Battle of Yashan (1279)",
+    "漕矩咤": "Zabulistan",
+    "来远城": "Laiyuan Cheng",
+    "长岭府": "Changling Fu",
+    "宁江州": "Ningjiang Zhou",
+    "完颜部": "Wanyan Tribe",
+    "突吕不室韦部": "Tulübu Shiwei Tribe",
+    "铁骊部": "Tieli Tribe",
+    "嫔州": "Pin Zhou",
+    "汤州": "Tang Zhou",
+    "铜州": "Tong Zhou",
+    "铁州": "Tie Zhou",
+    "卢州": "Lu Zhou",
+    "双州": "Shuang Zhou",
+    "韩州": "Han Zhou",
+    "渌州": "Lu Zhou",
+    "贵德州": "Guide Zhou",
+    "沈州": "Shen Zhou",
+    "银州": "Yin Zhou",
+    "五国部": "Five Nations Tribes",
+    "室韦": "Shiwei",
+    "镇海府": "Zhenhai Fu",
+    "倒塌岭节度使司": "Daotaling Governorate",
+    "闾州": "Lü Zhou",
+    "静边城": "Jingbian Cheng",
+    "静州": "Jing Zhou",
+    "长春州": "Changchun Zhou",
+    "凤州": "Feng Zhou",
+    "仪坤州": "Yikun Zhou",
+    "丰州": "Feng Zhou",
+    "龙化州": "Longhua Zhou",
+    "乌州": "Wu Zhou",
+    "临潢府": "Linhuang Fu",
+    "河清军": "Heqing Jun",
+    "云内州": "Yunnei Zhou",
+    "天德军": "Tiande Jun",
+    "奉圣州": "Fengsheng Zhou",
+    "东胜州": "Dongsheng Zhou",
+    "兴中府": "Xingzhong Fu",
+    "来州": "Lai Zhou",
+    "乌古迪烈部": "Wugu Dilie Tribe",
+    "义州": "Yi Zhou",
+    "广宁府": "Guangning Fu",
+    "兴州": "Xing Zhou",
+    "来远州": "Laiyuan Zhou",
+    "盖州": "Gai Zhou",
+    "德顺州": "Deshun Zhou",
+    "镇戎州": "Zhenrong Zhou",
+    "浚州": "Xun Zhou",
+    "卫州": "Wei Zhou",
+    "岢岚州": "Kelan Zhou",
+    "宁化州": "Ninghua Zhou",
+    "会州": "Hui Zhou",
+    "积石州": "Jishi Zhou",
+    "巩州": "Gong Zhou",
+    "陈州": "Chen Zhou",
+    "单州": "Shan Zhou",
+    "潍州": "Wei Zhou",
+    "滨州": "Bin Zhou",
+    "莱州": "Lai Zhou",
+    "东平府": "Dongping Fu",
+    "济州": "Ji Zhou",
+    "合懒路": "Helan Lu",
+    "蒲与路": "Puyu Lu",
+    "宁边州": "Ningbian Zhou",
+    "净州": "Jing Zhou",
+    "德兴州": "Dexing Zhou",
+    "大兴府": "Daxing Fu",
+    "蓟州": "Ji Zhou",
+    "滦州": "Luan Zhou",
+    "府州政区：复盖内地十八省及东北": "Prefectures: covers the 18 interior provinces & Northeast",
+    "州郡政区：仅复盖东南核心诸郡": "Commanderies: covers southeastern core commanderies only",
+    "府州政区：复盖两京十三布政使司": "Prefectures: covers the Two Capitals & Thirteen Provinces",
+    "路府政区：复盖内地行省": "Circuits & Prefectures: covers interior provinces",
+    "1759 — 1796 · 干隆极盛疆域：平定准噶尔与回部，设伊犁将军统辖天山南北": "1759–1796 · Qianlong Zenith: Conquest of Dzungaria & Tarim, Ili Generalship Established",
+    "前230年（秦王政十七年），秦内史腾攻韩，俘韩王安，尽纳其地置颍川郡。韩国成为六国中第一个复灭的诸侯国。": "In 230 BCE Qin Governor Teng captured King An of Han at Xinzheng and established Yingchuan Commandery, making Han the first of the six states to fall.",
+    "干封（泰山）": "Qianfeng (Mt. Tai)",
+    "曲氏高昌国都": "Royal capital of the Qu-ruled Kingdom of Gaochang",
+    "曲氏高昌": "Qu-clan Kingdom of Gaochang",
+    "干封元年高宗封禅，改博城为干封": "Emperor Gaozong performed Mt. Tai Fengshan in 666 CE, renaming Bocheng to Qianfeng",
+    "南汉干亨元年置祯州": "Zhen Zhou established by Southern Han in 917 CE",
+    "大中祥符元年真宗封禅，改干封为奉符": "Emperor Zhenzong performed Mt. Tai Fengshan in 1008 CE, renaming Qianfeng to Fengfu",
+    "干道元年升常德府，始得今名": "Elevated to Changde Prefecture in 1165 CE, origin of its modern name",
+    "干道二年升宁国府": "Elevated to Ningguo Prefecture in 1166 CE",
+    "干隆间置吐鲁番厅": "Turpan Subprefecture established during the Qianlong era",
+    "干元元年析饶、衡、建、抚四州地置信州": "Established as Xin Zhou in 758 CE from parts of four neighboring prefectures",
+    "干隆元年升沅州为府，湘黔驿道咽喉": "Elevated to Yuanzhou Prefecture in 1736 CE, commanding the post road between Hunan and Guizhou",
+    "干隆平大小和卓置阿克苏办事大臣，光绪置温宿府": "Seat of the Qing Imperial Resident at Aksu and reorganized as Wensu Prefecture in the late Qing",
+    "干隆二十四年置库车办事大臣，光绪置库车直隶州": "Seat of the Qing Imperial Resident at Kuqa from 1759 CE and later Kuqa Directly-Governed Zhou",
+    "干隆五十六年升荆门直隶州，领当阳、远安二县": "Elevated to Jingmen Directly-Governed Zhou in 1791 CE governing Dangyang and Yuan'an",
+    "干隆年间安置旧土尔扈特部游牧于额济纳河流域": "Pastoral homeland along the Ejin River settled by the Old Torghut Mongols under Emperor Qianlong",
+    "江苏巡抚及江苏布政使驻地，干隆《盛世滋生图》所绘天下繁华首府": "Seat of the Governor of Jiangsu, celebrated in Qianlong's Prosperous Suzhou scroll",
+    "干隆二十八年筑迪化城，光绪十年新疆建省定为省会": "Fortified as Dihua under Qianlong in 1763 and designated provincial capital when Xinjiang Province was established in 1884",
+    "降圣州": "Jiangsheng Zhou",
+    "乌隈于厥部": "Wuwei Yujue Tribe",
+    "1276 — 1279 · 文天祥陆秀夫张世杰拥二王闽粤抗元与 1279 崖山海战南宋复亡": "1276–1279 · Loyalist resistance in Fujian and Guangdong culminating in the Naval Battle of Yashan (1279)",
+    "宋州": "Song Zhou",
+    "喀什噶尔": "Kashgar",
+    "台北府": "Taipei Prefecture",
+    "齐齐哈尔": "Qiqihar",
+    "福建省八府之一，附郭南平县，控扼闽江建溪、富屯溪水陆咽喉": "One of the eight prefectures of Fujian, centered at Nanping County and commanding the Min River water transport hub",
+    "南疆八城之首，乾隆设总理回疆事务参赞大臣，光绪建省设喀什噶尔道": "Premier city of the Eight Muslim Cities of southern Xinjiang; seat of the Grand Minister Resident and later Kashgar Circuit",
+    "光绪元年沈葆桢奏设台北府；光绪十一年台湾建省，为巡抚驻地及省会": "Established as Taipei Prefecture in 1875; designated as the provincial capital and governor's seat upon Taiwan's elevation to province in 1885",
+    "康熙三十八年黑龙江将军移驻齐齐哈尔城（卜奎），为黑龙江军政首府": "Designated in 1699 as the official seat of the Military Governor of Heilongjiang at Bukui (Qiqihar), serving as the regional capital",
+    "道光二十三年开埠，设苏松太道（上海道），晚清近代工商业与外贸首埠": "Opened as a treaty port in 1843; seat of the Su-Song-Tai (Shanghai) Circuit, becoming modern China's premier commercial and financial hub",
+    "直隶海防总汇，雍正三年置天津府，同治后直隶总督兼北洋通商大臣驻地": "Major maritime defense hub of Zhili elevated to prefecture in 1725; later seat of the Viceroy of Zhili and Minister of Beiyang",
+    "后金": "Later Jin",
+    "南明（明郑）": "Southern Ming (Koxinga / Tungning)",
+    "1616 — 1636 · 明末后金崛起：努尔哈赤称汗建后金，萨尔浒之战后明失辽东": "1616–1636 · Rise of Later Jin: Nurhaci Founds Later Jin and Captures Liaodong after Sarhū",
+    "1636 — 1643 · 皇太极改国号大清：清并漠南蒙古频入塞，中原流民起义烽起": "1636–1643 · Hong Taiji Proclaims the Qing Dynasty: Subjugation of Inner Mongolia and Peasant Uprisings in Central China",
+    "1643 — 1644 · 李自成破潼关入秦与张献忠据湖广：大顺据秦豫、大西据湘鄂": "1643–1644 · Li Zicheng Takes Shaanxi & Henan as Zhang Xianzhong Seizes Huguang",
+    "1644 — 1645 · 清军入关与南明、大顺、大西并立：清廷定都北京控制北方，弘光立于南京，李自成据陕甘、张献忠据四川": "1644–1645 · Qing Enters Shanhaiguan: Beijing Made Capital while Southern Ming (Hongguang), Dashun, and Daxi Hold the South and West",
+    "1645 — 1661 · 清军下江南与南明抗清：清军平定陕川江南，南明隆武、永历政权与李定国、郑成功据南方抗清": "1645–1661 · Qing Conquest of Jiangnan & Southern Ming Resistance under the Longwu and Yongli Courts",
+    "1661 — 1662 · 郑成功收复台湾与南明永历终局：明郑设承天府奉永历正朔，李定国于滇西抗清": "1661–1662 · Koxinga Recovers Taiwan (Upholding the Southern Ming Yongli Era) & Final Mainland Resistance in Western Yunnan",
+    "1662 — 1673 · 永历蒙难与康熙亲政：南明大陆抗清终结，台湾明郑奉永历正朔，三藩起兵前夕": "1662–1673 · End of Mainland Southern Ming & Kangxi's Personal Rule: Ming-Zheng Holds Taiwan under the Yongli Calendar",
+    "两京十三布政使司：1616 年努尔哈赤建后金，辽东沦陷": "Two Capitals & Thirteen Provinces: Nurhaci founds Later Jin in 1616 and takes Liaodong",
+    "两京十三布政使司：1636 年皇太极称帝改国号大清": "Two Capitals & Thirteen Provinces: Hong Taiji proclaims the Qing Empire in 1636",
+    "两京十三布政使司：李自成据秦豫鄂北，张献忠据湖广": "Two Capitals & Thirteen Provinces: Li Zicheng holds Shaanxi & Henan; Zhang Xianzhong holds Huguang",
+    "府州政区：清控直鲁晋及东北，南明弘光据淮南及江南湖广闽粤云贵，大顺据陕甘，大西据四川": "Prefectures: Qing holds North & Northeast; Southern Ming holds the South; Dashun holds Shaanxi–Gansu; Daxi holds Sichuan",
+    "府州政区：清廷经略中原江南，南明永历政权据两广云贵及湘南抗清": "Prefectures: Qing consolidates Central China & Jiangnan while the Southern Ming Yongli court holds the Southwest",
+    "府州政区：郑成功复台奉南明永历正朔，永历帝与李定国据滇西最后抗清": "Prefectures: Koxinga establishes Chengtian Fu on Taiwan under the Yongli calendar; Li Dingguo makes a final stand in western Yunnan",
+    "府州政区：覆盖内地十八省及东北，台湾明郑奉南明永历正朔": "Prefectures: covers the 18 interior provinces & Northeast; Ming-Zheng in Taiwan upholds the Southern Ming Yongli calendar",
+    "蜀": "Shu",
+    "巴": "Ba",
+    "定陶": "Dingtao",
+    "少梁": "Shaoliang",
+    "战国初期（前403—前341年 · 三家分晋、田氏代齐与魏霸中原）": "Early Warring States (403–341 BCE: Partition of Jin, Tian Qi & Hegemony of Wei)",
+    "前403年周威烈王册命韩、赵、魏为诸侯（《资治通鉴》开篇），前386年田氏代齐，战国七雄格局确立；魏文侯、武侯任李悝、吴起率先称雄中原（西跨洛水置河西郡、上郡），宋、巴、蜀、越、中山、义渠与东周王畿并存。": "In 403 BCE King Weilie of Zhou recognized Han, Zhao, and Wei as marquises (opening Zizhi Tongjian), and in 386 BCE the Tian clan took Qi. Marquises Wen and Wu of Wei achieved early hegemony across the Central Plains and Hexi Commandery, alongside Song, Ba, Shu, Yue, Zhongshan, Yiqu, and Eastern Zhou.",
+    "前 403 — 前 341 · 三家分晋、田氏代齐与魏霸中原：七雄并立，宋、巴、蜀、越、中山尚存": "403–341 BCE · Partition of Jin, Tian Qi & Hegemony of Wei: Seven Powers with Song, Ba, Shu, Yue & Zhongshan",
+    "前 340 — 前 317 · 商鞅收河西、魏迁大梁与五国相王：宋、巴、蜀、越、中山、义渠尚存": "340–317 BCE · Shang Yang Recovers Hexi, Wei Moves to Daliang & Five-State Accord: Song, Ba, Shu, Yue, Zhongshan & Yiqu",
+    "前 316 — 前 307 · 秦司马错灭巴蜀、丹阳之战取汉中：宋、越、中山、义渠尚存": "316–307 BCE · Qin Conquers Ba-Shu & Takes Hanzhong at Danyang: Song, Yue, Zhongshan & Yiqu Survive",
+    "前 306 — 前 301 · 楚怀王灭越尽取旧吴之地：宋、中山、义渠尚存，燕尚未东辟辽东": "306–301 BCE · King Huai of Chu Conquers Yue: Song, Zhongshan & Yiqu Survive; Prior to Yan’s Liaodong Expansion",
+    "前 300 — 前 297 · 燕将秦开辟燕北五郡、赵武灵王辟云中：劲宋尚存": "300–297 BCE · Qin Kai Establishes Five Northern Yan Commanderies & King Wuling of Zhao Founds Yunzhong: Song Survives",
+    "前 296 — 前 279 · 赵灭中山、齐湣王灭宋与五国伐齐：齐楚魏三分宋地，乐毅破齐": "296–279 BCE · Zhao Annexes Zhongshan, Qi Annexes Song & Yue Yi’s Coalition Against Qi: Qi, Chu & Wei Partition Song",
+    "宋国都城（前286齐湣王灭宋，魏得商丘）": "Capital of the State of Song (annexed by Qi in 286 BCE; Shangqiu taken by Wei)",
+    "天下之中，范蠡经商陶朱公驻地，后为秦穰侯魏冉封邑": "Commercial hub of the Central Plains where Fan Li settled as Lord Tao Zhu; later fief of Marquis Rang (Wei Ran) of Qin",
+    "魏置河西郡重镇，吴起任西河守拒秦，前340后入秦更名夏阳": "Stronghold of Wei’s Hexi Commandery defended by Wu Qi against Qin; annexed by Qin after 340 BCE and renamed Xiayang",
+    "古陈国故都，楚襄王自郢东迁都此（前278—前241）": "Former capital of Chen; King Qingxiang of Chu moved the Chu capital here after losing Ying (278–241 BCE)",
+    "鲁国都城，孔子故里；前249年楚考烈王灭鲁并入楚境": "Capital of the State of Lu and hometown of Confucius; annexed by King Kaolie of Chu in 249 BCE",
+    "韩成皋荥阳重镇，鸿沟水运枢纽，前249入秦置三川郡": "Strategic Han fortress of Chenggao and Xingyang at the Honggou Canal hub; taken by Qin in 249 BCE to form Sanchuan Commandery",
+    "菏泽·定陶": "Dingtao, Heze",
+    "天下之中商业重镇，范蠡终老之地，前286年齐灭宋后入齐，后入秦为穰侯魏冉封邑": "Major commercial hub at the center of the realm where Fan Li retired; annexed by Qi after the fall of Song in 286 BCE, later fief of Marquis Rang (Wei Ran) of Qin",
+    "渭南·韩城": "Hancheng, Weinan",
+    "河西重镇，前354年魏伐赵围邯郸之际秦乘虚袭取少梁，前327年更名夏阳": "Key Hexi fortress seized by Qin in 354 BCE while Wei besieged Handan; renamed Xiayang in 327 BCE",
+    "韩城": "Hancheng, Shaanxi",
+    "唐山": "Tangshan",
+    "廊坊": "Langfang",
+    "衡水": "Hengshui",
+    "阳泉": "Yangquan",
+    "晋城": "Jincheng",
+    "晋中": "Jinzhong",
+    "吕梁": "Lüliang",
+    "乌海": "Wuhai",
+    "通辽": "Tongliao",
+    "鄂尔多斯": "Ordos",
+    "呼伦贝尔": "Hulunbuir",
+    "乌兰察布": "Ulanqab",
+    "兴安盟": "Hinggan League",
+    "鞍山": "Anshan",
+    "本溪": "Benxi",
+    "丹东": "Dandong",
+    "营口": "Yingkou",
+    "阜新": "Fuxin",
+    "盘锦": "Panjin",
+    "铁岭": "Tieling",
+    "四平": "Siping",
+    "辽源": "Liaoyuan",
+    "白山": "Baishan",
+    "松原": "Songyuan",
+    "白城": "Baicheng",
+    "延边": "Yanbian",
+    "鸡西": "Jixi",
+    "鹤岗": "Hegang",
+    "双鸭山": "Shuangyashan",
+    "大庆": "Daqing",
+    "伊春": "Yichun (Heilongjiang)",
+    "佳木斯": "Jiamusi",
+    "七台河": "Qitaihe",
+    "绥化": "Suihua",
+    "大兴安岭": "Daxing'anling",
+    "宿迁": "Suqian",
+    "舟山": "Zhoushan",
+    "芜湖": "Wuhu",
+    "蚌埠": "Bengbu",
+    "淮北": "Huaibei",
+    "铜陵": "Tongling",
+    "六安": "Lu'an",
+    "宁德": "Ningde",
+    "萍乡": "Pingxiang",
+    "新余": "Xinyu",
+    "鹰潭": "Yingtan",
+    "枣庄": "Zaozhuang",
+    "东营": "Dongying",
+    "日照": "Rizhao",
+    "临沂": "Linyi",
+    "聊城": "Liaocheng",
+    "菏泽": "Heze",
+    "平顶山": "Pingdingshan",
+    "鹤壁": "Hebi",
+    "焦作": "Jiaozuo",
+    "漯河": "Luohe",
+    "信阳": "Xinyang",
+    "济源": "Jiyuan",
+    "黄石": "Huangshi",
+    "孝感": "Xiaogan",
+    "咸宁": "Xianning",
+    "恩施": "Enshi",
+    "株洲": "Zhuzhou",
+    "湘潭": "Xiangtan",
+    "张家界": "Zhangjiajie",
+    "益阳": "Yiyang",
+    "娄底": "Loudi",
+    "湘西": "Xiangxi",
+    "佛山": "Foshan",
+    "汕尾": "Shanwei",
+    "河源": "Heyuan",
+    "阳江": "Yangjiang",
+    "清远": "Qingyuan",
+    "东莞": "Dongguan",
+    "揭阳": "Jieyang",
+    "云浮": "Yunfu",
+    "防城港": "Fangchenggang",
+    "贵港": "Guigang",
+    "玉林": "Yulin (Guangxi)",
+    "百色": "Baise",
+    "河池": "Hechi",
+    "来宾": "Laibin",
+    "三沙": "Sansha",
+    "自贡": "Zigong",
+    "攀枝花": "Panzhihua",
+    "德阳": "Deyang",
+    "遂宁": "Suining",
+    "内江": "Neijiang",
+    "广安": "Guang'an",
+    "雅安": "Ya'an",
+    "巴中": "Bazhong",
+    "资阳": "Ziyang",
+    "阿坝": "Ngawa (Aba)",
+    "甘孜": "Garzê (Ganzi)",
+    "六盘水": "Liupanshui",
+    "安顺": "Anshun",
+    "毕节": "Bijie",
+    "铜仁": "Tongren",
+    "黔西南": "Qianxinan",
+    "黔东南": "Qiandongnan",
+    "黔南": "Qiannan",
+    "玉溪": "Yuxi",
+    "昭通": "Zhaotong",
+    "丽江": "Lijiang",
+    "普洱": "Pu'er",
+    "临沧": "Lincang",
+    "楚雄": "Chuxiong",
+    "文山": "Wenshan",
+    "西双版纳": "Xishuangbanna",
+    "德宏": "Dehong",
+    "怒江": "Nujiang",
+    "迪庆": "Diqing (Dêqên)",
+    "昌都": "Chamdo",
+    "林芝": "Nyingchi",
+    "那曲": "Nagqu",
+    "铜川": "Tongchuan",
+    "渭南": "Weinan",
+    "安康": "Ankang",
+    "金昌": "Jinchang",
+    "白银": "Baiyin",
+    "甘南": "Gannan",
+    "海北": "Haibei",
+    "黄南": "Huangnan",
+    "海南州": "Hainan Zhou (Qinghai)",
+    "果洛": "Golog",
+    "玉树": "Yushu",
+    "海西": "Haixi",
+    "石嘴山": "Shizuishan",
+    "固原": "Guyuan",
+    "中卫": "Zhongwei",
+    "克拉玛依": "Karamay",
+    "昌吉": "Changji",
+    "博尔塔拉": "Bortala",
+    "巴音郭楞": "Bayingolin",
+    "克孜勒苏": "Kizilsu",
+    "塔城": "Tacheng",
+    "阿勒泰": "Altay",
+    "高雄": "Kaohsiung",
+    "台中": "Taichung",
+    "新竹": "Hsinchu",
+    "基隆": "Keelung",
+    "嘉义": "Chiayi",
+    "花莲": "Hualien",
+    "台东": "Taitung",
+    "金陵邑": "Jinlingyi",
+    "楚威王七年（前333年）灭越后于石头山置金陵邑，为南京建城正名之始": "Founded on Stone Hill by King Wei of Chu in 333 BCE after conquering Yue — the earliest named urban foundation of Nanjing",
+    "秣陵": "Moling",
+    "秦始皇东巡改金陵邑为秣陵县，属鄣郡与会稽郡之江东津要": "Renamed Moling County from Jinlingyi during Qin Shi Huang's eastern tour, guarding the lower Yangtze crossing",
+    "西汉属扬州刺史部丹阳郡，扼长江下游南岸津渡": "Subordinate to Danyang Commandery in Yangzhou Inspectoral Region during Western Han, commanding the south bank of the lower Yangtze",
+    "东汉末建安十六年（211年）孙权自京口徙治秣陵，翌年筑石头城改称建业": "In 211 CE Sun Quan moved his seat from Jingkou to Moling, fortifying Stone City and renaming it Jianye the next year",
+    "升州（上元）": "Shengzhou (Shangyuan)",
+    "唐初为润州上元、江宁县，至德二载置升州，李白刘禹锡金陵怀古之地": "Shangyuan and Jiangning counties under Runzhou in early Tang; elevated to Shengzhou in 757 CE and celebrated in Tang poetry on Jinling",
+    "江南东道重镇、浙西观察使（镇海军节度使）治所，扼大运河与长江交汇锁钥": "Seat of the Zhexi Military Commissioner in Jiangnan East Circuit, guarding the junction of the Grand Canal and the Yangtze River",
+    "杨吴与南唐京口江防重镇，拱卫东都江都与国都金陵之北门": "Yangtze river-defense stronghold of Yang Wu and Southern Tang at Jingkou, shielding the northern approaches to Jinling",
+    "两浙路重镇（政和三年升镇江府），王安石瓜洲渡江赋诗与沈括梦溪园所在地": "Major prefecture of Liangzhe Circuit (elevated to Zhenjiang Prefecture in 1113 CE), site of Shen Kuo's Dream Pool Garden",
+    "两浙西路江防要塞，韩世忠黄天荡抗金与辛弃疾北固亭登临处": "Liangzhe West Circuit Yangtze fortress where Han Shizhong fought Jin forces at Huangtiandang and Xin Qiji composed lyrics at Beigu Pavilion",
+    "左国城（离石）": "Zuoguocheng (Lishi)",
+    "并州匈奴五部驻地，永兴元年刘渊自邺归并州于此起兵称汉王": "Seat of the Five Xiongnu Divisions in Bingzhou; Liu Yuan returned from Ye to proclaim King of Han here in 304 CE",
+    "晋阳 · 洛阳": "Jinyang · Luoyang",
+    "长安 · 关中": "Chang'an · Guanzhong",
+    "绵竹（成都）": "Mianzhu (Chengdu)",
+    "邺城（安阳）": "Ye (Anyang)",
+    "汉赵都城（309–318），318年靳准之乱后刘曜迁都长安": "Capital of Han-Zhao (309–318 CE); Liu Yao moved the capital to Chang'an in 318 CE",
+    "代国（315–376）及北魏早期（386–398）都城": "Capital of Dai (315–376 CE) and early Northern Wei (386–398 CE)",
+    "棘城": "Jicheng",
+    "锦州·义县": "Jinzhou · Yixian",
+    "慕容部大棘城，337年慕容皝于此称燕王建前燕，342年迁都龙城": "Murong stronghold of Dajicheng where Murong Huang proclaimed Prince of Yan in 337 CE before moving the capital to Longcheng in 342 CE",
+    "317 — 319 · 东晋初立与汉赵、成汉、前凉、代、前燕并立：司马睿建晋于建康，北方汉赵尚未分裂": "317–319 · Founding of Eastern Jin: Sima Rui at Jiankang alongside Han-Zhao, Cheng-Han, Former Liang, Dai & Murong Yan before the Two Zhaos split",
+    "长安 · 襄国": "Chang'an · Xiangguo",
+    "邺城 · 棘城": "Ye · Jicheng",
+    "乐都 · 张掖": "Ledu · Zhangye",
+    "统万城 · 龙城": "Tongwancheng · Longcheng",
+    "京口 · 建康 · 成都": "Jingkou · Jiankang · Chengdu",
+    "冉魏": "Ran Wei",
+    "南凉": "Southern Liang",
+    "谯蜀": "Qiao Shu",
+    "成汉（304–347）、谯蜀（405–413）都城，413年刘裕遣朱龄石收复": "Capital of Cheng-Han (304–347 CE) and Qiao Shu (405–413 CE); recovered by Zhu Lingshi in 413 CE",
+    "秃发乌孤建南凉，定都乐都、西平（397–414）": "Capital of Southern Liang (397–414 CE) founded by Tufa Wugu at Ledu and Xiping",
+    "347 — 350 · 桓温灭成汉：东晋收复巴蜀，北方后赵、前凉、代、前燕并立": "347–350 · Huan Wen Conquers Cheng-Han: Eastern Jin Recovers Ba-Shu Alongside Later Zhao, Former Liang, Dai & Former Yan",
+    "350 — 351 · 冉闵代赵建冉魏：冉闵于邺城灭后赵建冉魏，与东晋、前凉、代、辽东前燕并立": "350–351 · Ran Min Founds Ran Wei at Ye: Overthrow of Later Zhao Alongside Eastern Jin, Former Liang, Dai & Former Yan",
+    "351 — 352 · 苻健建前秦：苻健据长安称天王建前秦，与中原冉魏、辽东前燕、河西前凉、代北代国并立": "351–352 · Fu Jian Founds Former Qin at Chang'an: Former Qin in Guanzhong Alongside Ran Wei, Former Yan, Former Liang & Dai",
+    "352 — 370 · 前燕灭冉魏入据中原：前秦与前燕东西对峙，东晋北伐争衡": "352–370 · Former Yan Destroys Ran Wei: East–West Standoff Between Former Yan and Former Qin",
+    "384 — 385 · 慕容垂建后燕、姚苌建后秦：淝水战后关中河北分裂，前秦余部退保陇右河西": "384–385 · Founding of Later Yan & Later Qin After Fei River: Former Qin Remnants Hold Longyou & Hexi",
+    "385 — 386 · 乞伏国仁建西秦、吕光建后凉：关中后秦与陇西西秦分立，吕光据姑臧建后凉": "385–386 · Qifu Guoren Founds Western Qin & Lü Guang Founds Later Liang Alongside Later Qin and Later Yan",
+    "386 — 397 · 拓跋珪复代建北魏：北魏据代北崛起，与后燕、后秦、西秦、后凉并立": "386–397 · Tuoba Gui Founds Northern Wei in Dai-North Alongside Later Yan, Later Qin, Western Qin & Later Liang",
+    "397 — 398 · 秃发乌孤建南凉、段业与沮渠蒙逊建北凉：河西裂为南凉与北凉，北魏南下中原": "397–398 · Founding of Southern Liang at Ledu & Northern Liang in Hexi as Northern Wei Advances South",
+    "398 — 399 · 北魏迁都平城称帝：拓跋珪入据中原迁都平城，后燕截为南北两部，河西南凉、北凉并立": "398–399 · Northern Wei Moves Capital to Pingcheng: Later Yan Split in Two Alongside Southern & Northern Liang",
+    "399 — 404 · 慕容德据广固建南燕：南燕割据青齐兖，与北魏、后秦、西秦、南凉、北凉、后燕并立": "399–404 · Murong De Founds Southern Yan at Guanggu Alongside Northern Wei, Later Qin, Western Qin, Southern/Northern Liang & Later Yan",
+    "404 — 407 · 刘裕平桓玄与谯纵建谯蜀：刘裕起兵复晋，谯纵据巴蜀建谯蜀": "404–407 · Liu Yu Restores Jin & Qiao Zong Founds Qiao Shu in Ba-Shu",
+    "407 — 410 · 赫连勃勃建胡夏、冯跋建北燕：胡夏据朔方、北燕代后燕，与北魏、后秦、西秦、南燕、南凉、北凉、谯蜀并立": "407–410 · Helian Bobo Founds Hu Xia & Feng Ba Founds Northern Yan Alongside Northern Wei, Later/Western Qin, Southern Yan, Southern/Northern Liang & Qiao Shu",
+    "410 — 413 · 刘裕北伐灭南燕：攻克广固收复山东青齐，巴蜀谯蜀尚存": "410–413 · Liu Yu Conquers Southern Yan: Eastern Jin Recovers Shandong While Qiao Shu Holds Ba-Shu",
+    "413 — 417 · 朱龄石平谯蜀收复巴蜀：东晋尽复四川，北方北魏、后秦、西秦、胡夏、北燕、北凉并立": "413–417 · Zhu Lingshi Conquers Qiao Shu: Eastern Jin Recovers Sichuan Alongside Northern Wei, Later/Western Qin, Hu Xia, Northern Yan & Northern Liang",
+    "姑臧 · 成都": "Guzang · Chengdu",
+    "统万城 · 洛阳": "Tongwancheng · Luoyang",
+    "376 — 384 · 苻坚统一北方并取巴蜀：前秦尽兼北方与巴蜀，与东晋沿淮水—淝水对峙（383 淝水之战）": "376–384 · Fu Jian Unifies North & Takes Ba-Shu: Former Qin Holds Northern China & Sichuan Against Eastern Jin (383 Fei River)",
+    "384 — 385 · 慕容垂建后燕、姚苌建后秦：淝水战后东晋收复巴蜀荆襄，北方再度分裂": "384–385 · Founding of Later Yan & Later Qin After Fei River: Eastern Jin Recovers Ba-Shu & Jing-Xiang as North Fragments",
+    "420 — 427 · 刘裕代晋建宋：南朝刘宋立国，北方北魏、胡夏、西秦、北燕、北凉并立": "420–427 · Liu Yu Founds Liu Song: Southern Dynasty Song Alongside Northern Wei, Hu Xia, Western Qin, Northern Yan & Northern Liang",
+    "427 — 431 · 北魏攻克统万城并取关中河南：胡夏退保陇东，与北魏、刘宋、西秦、北燕、北凉并立": "427–431 · Northern Wei Captures Tongwancheng, Guanzhong & Henan: Hu Xia Retreats to Longdong Alongside Western Qin, Northern Yan & Northern Liang",
+    "431 — 436 · 西秦与胡夏相继败亡：北魏尽取关中陇右，与刘宋、北燕、北凉并立": "431–436 · Fall of Western Qin & Hu Xia: Northern Wei Secures Guanzhong & Longyou Alongside Liu Song, Northern Yan & Northern Liang",
+    "商邑": "Shangyi (Shangluo)",
+    "狄道": "Didao (Lintao)",
+    "湖县": "Huxian (Lingbao)",
+    "溆浦": "Xupu (Hunan)",
+    "鸿门": "Hongmen (Lintong)",
+    "玉门关": "Yumen Pass",
+    "阳平关": "Yangping Pass",
+    "大利城": "Dalicheng (Horinger)",
+    "辽东": "Liaodong",
+    "定襄": "Dingxiang",
+    "凤翔": "Fengxiang",
+    "思明州（厦门）": "Siming Zhou (Xiamen)",
+    "思明州": "Siming Zhou (Xiamen)",
+    "文家市": "Wenjiashi (Liuyang)",
+    "喜峰口": "Xifengkou Pass",
+    "京师广渠门": "Guangqumen, Beijing",
+    "郾城": "Yancheng (Luohe)",
+    "金田": "Jintian (Guiping)",
+    "郅支城（康居）": "Zhizhi (Kangju / Taraz)",
+    "姚州": "Yao Zhou",
+    "楚雄·姚安": "Yao'an, Chuxiong",
+    "姚安": "Yao'an",
+    "武德四年置姚州都督府，唐朝经略滇西洱海枢纽": "Seat of Yao Zhou Area Command founded in 621 CE, Tang's hub for the Erhai region",
+    "澎湖巡检司": "Penghu Patrol Inspectorate",
+    "澎湖": "Penghu",
+    "至元十八年置澎湖巡检司隶泉州路，中央首次于台澎设治": "Penghu Patrol Inspectorate established in 1281 CE under Quanzhou Circuit, first central administration over Penghu and Taiwan",
+    "乌思藏都司": "U-Tsang Regional Military Commission",
+    "洪武六年置乌思藏都指挥使司，统摄卫藏政教朝贡": "U-Tsang Regional Military Commission established in 1373 CE to administer central Tibetan tribute and governance",
+    "特林（俄罗斯）": "Tyr (Lower Amur, Russia)",
+    "永乐七年置奴儿干都指挥使司，亦失哈巡视立永宁寺碑": "Nurgan Regional Military Commission founded in 1409 CE; eunuch admiral Yishiha erected the Yongning Temple steles",
+    "大员（赤嵌）": "Tayouan (Chikan)",
+    "1624年荷人筑热兰遮城，1662年郑成功收复改东都明京": "Fort Zeelandia built by Dutch in 1624; retaken by Koxinga as Dongdu Mingjing in 1662",
+    "乌里雅苏台（蒙古国）": "Uliastai (Mongolia)",
+    "雍正十一年设定边左副将军驻节，统辖喀尔喀四部与唐努乌梁海": "Seat of the General for Pacifying the Frontier (1733), governing the Four Khalkha Aimags and Tannu Uriankhai",
+    "科布多": "Khovd",
+    "科布多（蒙古国）": "Khovd (Mongolia)",
+    "乾隆二十七年设科布多参赞大臣，镇抚阿尔泰西北部落": "Seat of the Khovd Imperial Resident (1762), administering the Altai northwestern frontier",
+    "灵寿": "Lingshou",
+    "南郑": "Nanzheng",
+    "随": "Sui",
+    "肤施": "Fushi",
+    "临湘": "Linxiang",
+    "东冶": "Dongye",
+    "郴县": "Chen County",
+    "由拳": "Youquan",
+    "滇池": "Dianchi",
+    "临沅": "Linyuan",
+    "交河": "Jiaohe",
+    "临羌": "Linqiang",
+    "鲁县": "Lu County",
+    "东瓯": "Dong'ou",
+    "越嶲": "Yuexi",
+    "广信": "Guangxin",
+    "东莱": "Donglai",
+    "山阴": "Shanyin",
+    "泉陵": "Quanling",
+    "侯官": "Houguan",
+    "西都": "Xidu",
+    "姑臧": "Guzang",
+    "柴桑": "Chaisang",
+    "建宁": "Jianning",
+    "永安": "Yong'an",
+    "建安": "Jian'an",
+    "江阳": "Jiangyang",
+    "左国城": "Zuoguocheng",
+    "上邽": "Shanggui",
+    "寻阳": "Xunyang",
+    "赣": "Gan",
+    "乐都": "Ledu",
+    "东阳城": "Dongyangcheng",
+    "钟离": "Zhongli",
+    "历城": "Licheng",
+    "悬瓠": "Xuanhu",
+    "东阳": "Dongyang",
+    "博城": "Bocheng",
+    "高凉": "Gaoliang",
+    "历阳": "Liyang",
+    "金城": "Jincheng",
+    "马邑": "Mayi",
+    "安南都护府": "Annam Protectorate",
+    "兴元": "Xingyuan",
+    "乾封": "Qianfeng",
+    "西州": "Xi Zhou",
+    "龙标": "Longbiao",
+    "雅砻": "Yarlung",
+    "单于大都护府": "Chanyu Grand Protectorate",
+    "金陵": "Jinling",
+    "青唐": "Qingtang",
+    "鼎州": "Ding Zhou",
+    "奉符": "Fengfu",
+    "西平府": "Xiping Prefecture",
+    "古格": "Guge",
+    "开德府": "Kaide Pref.",
+    "顺昌府": "Shunchang Prefecture",
+    "火州": "Huo Zhou",
+    "帕竹": "Phagmodrupa",
+    "开京": "Kaesong",
+    "大员": "Tayouan",
+    "开平卫": "Kaiping Garrison",
+    "天京": "Tianjing",
+    "承天府": "Chengtian Fu",
+    "兴京": "Xingjing",
+    "定远营": "Dingyuanying",
+    "和阗": "Hotan",
+    "辑安": "Ji'an",
+    "噶尔": "Gar",
+    "黑城": "Khara-Khoto",
+    "井陉关": "Jingxing Pass",
+    "冥阨": "Ming'e Pass",
+    "武阳关": "Wuyang Pass",
+    "临渝关": "Linyu Pass",
+    "横浦关": "Hengpu Pass",
+    "娘子关": "Niangzi Pass",
+    "武胜关": "Wusheng Pass",
+    "梅关": "Meiguan Pass",
+    "建昌": "Jianchang",
+    "兴化": "Xinghua",
+    "宝庆": "Baoqing",
+    "建水": "Jianshui",
+    "武周": "Wu Zhou",
+    "神都": "Shendu",
+    "神都洛阳": "Shendu Luoyang",
+    "州郡政区：武周十道与州府政区": "Prefectures: Wu Zhou Circuits & Prefectures",
+    "676 — 690 · 安东内迁与设安南都护府：安东都护府移驻辽东，调露元年设安南都护府": "676–690 · Andong Moves Inland & Annam Protectorate: Andong Relocated to Liaodong; Annam Founded in 679",
+    "690 — 702 · 武周改制：武则天改唐为周定都神都洛阳，王孝杰大破吐蕃复安西四镇": "690–702 · Wu Zhou Dynasty: Wu Zetian Proclaims Zhou at Shendu Luoyang; Wang Xiaojie Recovers Four Garrisons of Anxi",
+    "702 — 705 · 武周设北庭：武则天于庭州置北庭都护府，与安西都护府分辖天山南北": "702–705 · Wu Zhou Establishes Beiting: Wu Zetian Sets Beiting Protectorate Alongside Anxi Across the Tianshan",
+    "705 — 755 · 神龙复唐与开元盛世：中宗复唐国号，玄宗励精图治，安西、北庭分辖天山南北": "705–755 · Tang Restoration & Kaiyuan Heyday: Zhongzong Restores Tang; High Tang Flourishes Under Xuanzong",
+    "岛夷诸部": "Island Yi Tribes",
+    "小琉球": "Xiaoliuqiu",
+    "承天府（东宁）": "Chengtian Fu (Dongning)",
+    "东宁": "Dongning",
+    "东都": "Dongdu",
+    "赤嵌": "Chikan",
+    "热兰遮城": "Fort Zeelandia",
+    "安平": "Anping",
+    "台湾台南": "Tainan, Taiwan",
+    "夷洲（台湾）": "Yizhou (Taiwan)",
+    "荷属台湾": "Dutch Formosa",
+    "大员（荷占）": "Tayouan (Dutch-ruled)",
+    "前 214 — 前 210 · 秦平百越与大一统鼎盛：设桂林、象、南海三郡，北筑万里长城": "214–210 BCE · Apex of the Qin Empire: Guilin, Xiang & Nanhai Commanderies in Lingnan and the Great Wall",
+    "前 209 — 前 208 · 大泽乡起义与六国复立：陈胜建张楚，楚、赵、燕、齐复国反秦，秦廷退守关中河洛与巴蜀岭南": "209–208 BCE · Dazexiang Uprising & Six Kingdoms Restored: Chen Sheng’s Zhangchu, Restored Chu, Zhao, Yan & Qi vs. Qin",
+    "前 207 · 巨鹿之战与赵佗据岭南：项羽巨鹿破秦主力，南海尉赵佗绝秦道并桂林、象郡自立": "207 BCE · Battle of Julu & Zhao Tuo’s Lingnan Secession: Xiang Yu Shatters the Qin Army While Zhao Tuo Seizes Lingnan",
+    "楚（张楚 · 怀王）": "Chu (Zhangchu & King Huai)",
+    "楚（怀王 · 项羽）": "Chu (King Huai & Xiang Yu)"
   }
 };
