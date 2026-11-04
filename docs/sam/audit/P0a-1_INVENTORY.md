@@ -39,7 +39,7 @@ Generated deterministically by `scripts/sam/hydro_inventory.js` from the supplie
 
 | kind | rank | count |
 |---|---:|---:|
-| label | null | 29 |
+| label | null | 55 |
 | lake | 1 | 6 |
 | lake | 2 | 15 |
 | lake | 3 | 8 |
@@ -47,12 +47,12 @@ Generated deterministically by `scripts/sam/hydro_inventory.js` from the supplie
 | lake | 5 | 15 |
 | lake | 6 | 8 |
 | river | 1 | 12 |
-| river | 2 | 25 |
-| river | 3 | 46 |
+| river | 2 | 28 |
+| river | 3 | 51 |
 | river | 4 | 1 |
 | river | 5 | 30 |
 | river | 6 | 17 |
-| river | 7 | 45 |
+| river | 7 | 44 |
 
 ## Corridors
 

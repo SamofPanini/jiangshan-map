@@ -83,14 +83,25 @@
 
   if (parsed.error) { reportError('配置错误', [{ code: 'E_CONFIG', path: '/', message: parsed.error }]); return; }
   const Controller = window.HistoricalAtlasController;
-  if (!Controller || !Controller.prototype || typeof Controller.prototype._hydroMask !== 'function' || typeof Controller.prototype._buildTerrainRivers !== 'function' || typeof Controller.prototype._rescaleSvgTypography !== 'function') {
+  if (!Controller || !Controller.prototype || typeof Controller.prototype._hydroMask !== 'function' || typeof Controller.prototype._buildTerrainRivers !== 'function' || typeof Controller.prototype._rescaleSvgTypography !== 'function' || typeof Controller.prototype._urlStateParams !== 'function') {
     reportError('与当前上游版本不兼容', [{ code: 'E_COMPAT', path: '/HistoricalAtlasController' }]);
     return;
   }
+  const originalUrlStateParams = Controller.prototype._urlStateParams;
   const originalHydroMask = Controller.prototype._hydroMask;
   const originalBuildTerrainRivers = Controller.prototype._buildTerrainRivers;
   const originalRescaleSvgTypography = Controller.prototype._rescaleSvgTypography;
   const wrapperMarker = typeof Symbol === 'function' ? Symbol('samResearchLayerWrapper') : '__samResearchLayerWrapper__';
+
+  const wrappedUrlStateParams = function wrappedUrlStateParams(...args) {
+    const params = originalUrlStateParams.apply(this, args);
+    params.set('research', parsed.dataPath);
+    params.set('research_sources', parsed.sourcesPath);
+    if (researchDate !== null) params.set('research_date', researchDate);
+    return params;
+  };
+  wrappedUrlStateParams[wrapperMarker] = true;
+  Controller.prototype._urlStateParams = wrappedUrlStateParams;
 
   const wrappedHydroMask = function wrappedHydroMask(year) {
     const original = originalHydroMask.call(this, year);
@@ -243,7 +254,7 @@
       const ids = dataset.features.flatMap((feature) => feature.properties.supersedes);
       const drift = await Core.checkLegacyDrift(inventory, window.HYDRO_DATA, ids);
       if (drift.length) return reportError('上游水系数据已变动，替代关系需重核', drift);
-      if (Controller.prototype._hydroMask !== wrappedHydroMask || Controller.prototype._buildTerrainRivers !== wrappedBuildTerrainRivers || Controller.prototype._rescaleSvgTypography !== wrappedRescaleSvgTypography) {
+      if (Controller.prototype._urlStateParams !== wrappedUrlStateParams || Controller.prototype._hydroMask !== wrappedHydroMask || Controller.prototype._buildTerrainRivers !== wrappedBuildTerrainRivers || Controller.prototype._rescaleSvgTypography !== wrappedRescaleSvgTypography) {
         return reportError('与当前上游版本不兼容', [{ code: 'E_COMPAT', path: '/HistoricalAtlasController', message: 'research layer wrappers were replaced after installation' }]);
       }
       state.dataset = dataset; state.sources = sources; state.inventory = inventory; state.ready = true;

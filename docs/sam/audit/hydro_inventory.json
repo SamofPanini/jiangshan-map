@@ -8,17 +8,17 @@
     "inputs": {
       "geo": {
         "path": "js/china_geo_data.js",
-        "sha256": "fbf152b521745917aff59c4d61c4f7e6ef8b80402125977c6023799844476de4"
+        "sha256": "cd5b0736376b352b7cf906e087d7830726530b4794ff7d9b4c5207fed1229fc6"
       },
       "map": {
         "path": "js/map_data.js",
-        "sha256": "8fd8cb0fabb6bd201b535867307c3f49a287fb4b1e26393fdf9b8f181fee3684"
+        "sha256": "fc9035efcd99d736dd86b042e7058c55aaf5eb368860491e598b3a25606d7227"
       }
     },
     "counts": {
-      "rivers": 187,
+      "rivers": 194,
       "lakes": 62,
-      "labels": 41,
+      "labels": 67,
       "corridors": 16
     }
   },
@@ -2573,7 +2573,7 @@
       "kind": "river",
       "index": 134,
       "name": "Namhan",
-      "rank": 7,
+      "rank": 3,
       "appear": null,
       "vanish": null,
       "timed": false,
@@ -2585,8 +2585,8 @@
         128.88,
         37.51
       ],
-      "fp": "d9a9167e1237",
-      "legacy_id": "river:Namhan:d9a9167e1237"
+      "fp": "8d0e175c7890",
+      "legacy_id": "river:Namhan:8d0e175c7890"
     },
     {
       "kind": "river",
@@ -3575,6 +3575,139 @@
       ],
       "fp": "d37adcd7c74f",
       "legacy_id": "river:Kherlen:d37adcd7c74f"
+    },
+    {
+      "kind": "river",
+      "index": 187,
+      "name": "Yalu",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 10,
+      "bbox": [
+        124.35,
+        39.95,
+        128.18,
+        42
+      ],
+      "fp": "3a60ebd33508",
+      "legacy_id": "river:Yalu:3a60ebd33508"
+    },
+    {
+      "kind": "river",
+      "index": 188,
+      "name": "Tumen",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        128.18,
+        42.02,
+        130.65,
+        42.95
+      ],
+      "fp": "359b7c75395f",
+      "legacy_id": "river:Tumen:359b7c75395f"
+    },
+    {
+      "kind": "river",
+      "index": 189,
+      "name": "Chongchon",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 5,
+      "bbox": [
+        125.38,
+        39.56,
+        126.75,
+        40.58
+      ],
+      "fp": "812bb1867290",
+      "legacy_id": "river:Chongchon:812bb1867290"
+    },
+    {
+      "kind": "river",
+      "index": 190,
+      "name": "Taedong",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        125.18,
+        38.68,
+        126.88,
+        40.18
+      ],
+      "fp": "120a8d1a4778",
+      "legacy_id": "river:Taedong:120a8d1a4778"
+    },
+    {
+      "kind": "river",
+      "index": 191,
+      "name": "Daling",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        119.72,
+        40.82,
+        121.36,
+        41.66
+      ],
+      "fp": "063476688723",
+      "legacy_id": "river:Daling:063476688723"
+    },
+    {
+      "kind": "river",
+      "index": 192,
+      "name": "Luan",
+      "rank": 3,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 7,
+      "bbox": [
+        115.92,
+        39.42,
+        119.2,
+        42.15
+      ],
+      "fp": "21b649561179",
+      "legacy_id": "river:Luan:21b649561179"
+    },
+    {
+      "kind": "river",
+      "index": 193,
+      "name": "Min Upper",
+      "rank": 2,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "line_count": 1,
+      "point_count": 6,
+      "bbox": [
+        103.62,
+        29.56,
+        103.85,
+        32.72
+      ],
+      "fp": "5c07599da4e4",
+      "legacy_id": "river:Min Upper:5c07599da4e4"
     },
     {
       "kind": "lake",
@@ -5491,13 +5624,481 @@
       ],
       "fp": "4289bb370a73",
       "legacy_id": "label:云梦泽:4289bb370a73"
+    },
+    {
+      "kind": "label",
+      "index": 41,
+      "name": {
+        "zh": "秦岭",
+        "en": "Qinling Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        107.4,
+        33.62
+      ],
+      "fp": "006651318b45",
+      "legacy_id": "label:秦岭:006651318b45"
+    },
+    {
+      "kind": "label",
+      "index": 42,
+      "name": {
+        "zh": "大巴山",
+        "en": "Daba Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        109.6,
+        31.75
+      ],
+      "fp": "2fbc71a88efc",
+      "legacy_id": "label:大巴山:2fbc71a88efc"
+    },
+    {
+      "kind": "label",
+      "index": 43,
+      "name": {
+        "zh": "太行山",
+        "en": "Taihang Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        113.4,
+        35.95
+      ],
+      "fp": "f14215354a18",
+      "legacy_id": "label:太行山:f14215354a18"
+    },
+    {
+      "kind": "label",
+      "index": 44,
+      "name": {
+        "zh": "燕山",
+        "en": "Yan Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        119,
+        40.55
+      ],
+      "fp": "befb41a288e9",
+      "legacy_id": "label:燕山:befb41a288e9"
+    },
+    {
+      "kind": "label",
+      "index": 45,
+      "name": {
+        "zh": "阴山",
+        "en": "Yin Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        109.3,
+        41.3
+      ],
+      "fp": "61d3bda32afd",
+      "legacy_id": "label:阴山:61d3bda32afd"
+    },
+    {
+      "kind": "label",
+      "index": 46,
+      "name": {
+        "zh": "贺兰山",
+        "en": "Helan Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        105.72,
+        38.85
+      ],
+      "fp": "7ad2d6ac6846",
+      "legacy_id": "label:贺兰山:7ad2d6ac6846"
+    },
+    {
+      "kind": "label",
+      "index": 47,
+      "name": {
+        "zh": "祁连山",
+        "en": "Qilian Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        97.9,
+        38.55
+      ],
+      "fp": "2e7d3e08fe62",
+      "legacy_id": "label:祁连山:2e7d3e08fe62"
+    },
+    {
+      "kind": "label",
+      "index": 48,
+      "name": {
+        "zh": "天山",
+        "en": "Tian Shan"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        80.5,
+        42.3
+      ],
+      "fp": "e5bdbb112e99",
+      "legacy_id": "label:天山:e5bdbb112e99"
+    },
+    {
+      "kind": "label",
+      "index": 49,
+      "name": {
+        "zh": "昆仑山",
+        "en": "Kunlun Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        86.5,
+        36.1
+      ],
+      "fp": "425f3af35a25",
+      "legacy_id": "label:昆仑山:425f3af35a25"
+    },
+    {
+      "kind": "label",
+      "index": 50,
+      "name": {
+        "zh": "南岭",
+        "en": "Nanling Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        112.4,
+        25.15
+      ],
+      "fp": "325f3606e60d",
+      "legacy_id": "label:南岭:325f3606e60d"
+    },
+    {
+      "kind": "label",
+      "index": 51,
+      "name": {
+        "zh": "武夷山",
+        "en": "Wuyi Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        117.95,
+        27.8
+      ],
+      "fp": "0a87fc542d62",
+      "legacy_id": "label:武夷山:0a87fc542d62"
+    },
+    {
+      "kind": "label",
+      "index": 52,
+      "name": {
+        "zh": "大兴安岭",
+        "en": "Greater Khingan"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        121.2,
+        47.5
+      ],
+      "fp": "3d0535c6d939",
+      "legacy_id": "label:大兴安岭:3d0535c6d939"
+    },
+    {
+      "kind": "label",
+      "index": 53,
+      "name": {
+        "zh": "长白山",
+        "en": "Changbai Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        128.05,
+        41.92
+      ],
+      "fp": "23d1f3e376e6",
+      "legacy_id": "label:长白山:23d1f3e376e6"
+    },
+    {
+      "kind": "label",
+      "index": 54,
+      "name": {
+        "zh": "岷山",
+        "en": "Min Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        103.52,
+        32.85
+      ],
+      "fp": "0c311e6d6de1",
+      "legacy_id": "label:岷山:0c311e6d6de1"
+    },
+    {
+      "kind": "label",
+      "index": 55,
+      "name": {
+        "zh": "大别山",
+        "en": "Dabie Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        115.45,
+        31.15
+      ],
+      "fp": "d71b2fbdf443",
+      "legacy_id": "label:大别山:d71b2fbdf443"
+    },
+    {
+      "kind": "label",
+      "index": 56,
+      "name": {
+        "zh": "陇山",
+        "en": "Long Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        106.28,
+        35.55
+      ],
+      "fp": "301fb7034906",
+      "legacy_id": "label:陇山:301fb7034906"
+    },
+    {
+      "kind": "label",
+      "index": 57,
+      "name": {
+        "zh": "巫山",
+        "en": "Wu Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        109.95,
+        30.85
+      ],
+      "fp": "1ddff1d17122",
+      "legacy_id": "label:巫山:1ddff1d17122"
+    },
+    {
+      "kind": "label",
+      "index": 58,
+      "name": {
+        "zh": "葱岭",
+        "en": "Pamirs"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        73.9,
+        38.6
+      ],
+      "fp": "516e3cf0734c",
+      "legacy_id": "label:葱岭:516e3cf0734c"
+    },
+    {
+      "kind": "label",
+      "index": 59,
+      "name": {
+        "zh": "燕然山",
+        "en": "Khangai Mts."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        100.3,
+        47.3
+      ],
+      "fp": "74a4ca97fed2",
+      "legacy_id": "label:燕然山:74a4ca97fed2"
+    },
+    {
+      "kind": "label",
+      "index": 60,
+      "name": {
+        "zh": "大 漠",
+        "en": "Gobi"
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        106.5,
+        43.9
+      ],
+      "fp": "78db8ff0320f",
+      "legacy_id": "label:大 漠:78db8ff0320f"
+    },
+    {
+      "kind": "label",
+      "index": 61,
+      "name": {
+        "zh": "鸭绿江",
+        "en": "Yalu R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        126.35,
+        41.48
+      ],
+      "fp": "e0d33d6c9f4c",
+      "legacy_id": "label:鸭绿江:e0d33d6c9f4c"
+    },
+    {
+      "kind": "label",
+      "index": 62,
+      "name": {
+        "zh": "大同江",
+        "en": "Taedong R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        125.85,
+        39.02
+      ],
+      "fp": "9ed313c2a1c6",
+      "legacy_id": "label:大同江:9ed313c2a1c6"
+    },
+    {
+      "kind": "label",
+      "index": 63,
+      "name": {
+        "zh": "大渡河",
+        "en": "Dadu R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        102.62,
+        29.28
+      ],
+      "fp": "40db3df51448",
+      "legacy_id": "label:大渡河:40db3df51448"
+    },
+    {
+      "kind": "label",
+      "index": 64,
+      "name": {
+        "zh": "金沙江",
+        "en": "Jinsha R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        102.65,
+        26.75
+      ],
+      "fp": "061231c4d6d7",
+      "legacy_id": "label:金沙江:061231c4d6d7"
+    },
+    {
+      "kind": "label",
+      "index": 65,
+      "name": {
+        "zh": "澜沧江",
+        "en": "Lancang R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        99.28,
+        25.25
+      ],
+      "fp": "ab073d677b41",
+      "legacy_id": "label:澜沧江:ab073d677b41"
+    },
+    {
+      "kind": "label",
+      "index": 66,
+      "name": {
+        "zh": "怒江",
+        "en": "Nu R."
+      },
+      "rank": null,
+      "appear": null,
+      "vanish": null,
+      "timed": false,
+      "coord": [
+        98.85,
+        26.55
+      ],
+      "fp": "d0ce70b35fc6",
+      "legacy_id": "label:怒江:d0ce70b35fc6"
     }
   ],
   "static_summary": [
     {
       "kind": "label",
       "rank": null,
-      "count": 29
+      "count": 55
     },
     {
       "kind": "lake",
@@ -5537,12 +6138,12 @@
     {
       "kind": "river",
       "rank": 2,
-      "count": 25
+      "count": 28
     },
     {
       "kind": "river",
       "rank": 3,
-      "count": 46
+      "count": 51
     },
     {
       "kind": "river",
@@ -5562,7 +6163,7 @@
     {
       "kind": "river",
       "rank": 7,
-      "count": 45
+      "count": 44
     }
   ]
 }

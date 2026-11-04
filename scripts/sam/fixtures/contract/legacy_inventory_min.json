@@ -8,11 +8,11 @@
     "inputs": {
       "geo": {
         "path": "js/china_geo_data.js",
-        "sha256": "fbf152b521745917aff59c4d61c4f7e6ef8b80402125977c6023799844476de4"
+        "sha256": "cd5b0736376b352b7cf906e087d7830726530b4794ff7d9b4c5207fed1229fc6"
       },
       "map": {
         "path": "js/map_data.js",
-        "sha256": "8fd8cb0fabb6bd201b535867307c3f49a287fb4b1e26393fdf9b8f181fee3684"
+        "sha256": "fc9035efcd99d736dd86b042e7058c55aaf5eb368860491e598b3a25606d7227"
       }
     },
     "counts": {

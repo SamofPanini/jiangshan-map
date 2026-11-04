@@ -33,7 +33,7 @@ function node(name) {
     append(...children) { children.forEach((child) => typeof child === 'string' ? this.children.push(child) : this.appendChild(child)); },
     replaceChildren(...children) { this.children = []; children.forEach((child) => this.appendChild(child)); },
     setAttribute(key, value) { this.attributes[key] = String(value); },
-    addEventListener() {},
+    addEventListener(type, callback) { this["on" + type] = callback; },
   };
   value.querySelectorAll = (selector) => {
     const className = selector.startsWith('.') ? selector.slice(1) : null;
@@ -63,6 +63,7 @@ function makeGlueHarness({ dataset = demo, failInsert = false, deferredFetch = f
   const rivers = node('rivers');
   rivers.ownerSVGElement = svg; rivers.parentNode = riverParent; rivers.nextSibling = null;
   function Controller() {}
+  Controller.prototype._urlStateParams = function originalUrlStateParams() { return new URLSearchParams('year=' + this.year); };
   Controller.prototype._hydroMask = function originalHydroMask() { return 'legacy-mask'; };
   Controller.prototype._buildTerrainRivers = function originalBuildTerrainRivers() {
     this.renderedLegacy = this.hydroData.rivers.map((item) => item.name);
@@ -83,7 +84,7 @@ function makeGlueHarness({ dataset = demo, failInsert = false, deferredFetch = f
   const context = { window, document, URL, URLSearchParams, Map, Set, Symbol, Promise, console: { error: (...args) => errors.push(args.map((value) => typeof value === 'object' ? JSON.stringify(value) : value).join(' ')) }, fetch: () => gate.then(() => ({ ok: true, url: 'https://example.test/data', json: async () => responses[responseIndex++] })) };
   vm.createContext(context);
   vm.runInContext(fs.readFileSync(path.join(root, 'js/sam/research_layer.js'), 'utf8'), context, { filename: 'research_layer.js' });
-  return { app, Controller, document, errors, release, svg };
+  return { app, Controller, document, errors, release, svg, window, rivers };
 }
 
 async function flush() {
@@ -140,8 +141,44 @@ async function main() {
   assert.match(noDrawablePanel.children[0].textContent, /可绘制要素 0；无几何要素 1；压制旧条目 0/);
   assert.match(noDrawablePanel.children[0].textContent, /本年无研究数据/, 'R2-01 panel must distinguish no drawable research data');
 
+  const urlHarness = makeGlueHarness({ search: '?year=1938&research=demo.geojson&research_sources=sources.json&research_date=1938-06-19' });
+  urlHarness.window.history = { replaceState(_state, _title, url) { urlHarness.window.location.search = new URL(url).search; } };
+  urlHarness.window.history.replaceState(null, '', 'https://example.test/atlas/?year=1940');
+  const urlParams = urlHarness.app._urlStateParams();
+  assert.equal(urlParams.toString(), 'year=1938&research=demo.geojson&research_sources=sources.json&research_date=1938-06-19');
+  const noDate = makeGlueHarness();
+  assert.equal(noDate.app._urlStateParams().has('research_date'), false);
+  const plain = makeGlueHarness({ search: '?year=1938' });
+  assert.equal(plain.app._urlStateParams().toString(), 'year=1938');
+  for (const bad of ['../bad.geojson', 'https://evil.test/a.geojson']) {
+    const invalid = makeGlueHarness({ search: '?research=' + encodeURIComponent(bad) + '&research_sources=sources.json' });
+    assert.equal(invalid.app._urlStateParams().toString(), 'year=1938');
+    assert.ok(invalid.errors.some((message) => message.includes('配置错误')));
+  }
+  const invalidDate = makeGlueHarness({ search: '?research=a.geojson&research_sources=b.json&research_date=bad' });
+  assert.equal(invalidDate.app._urlStateParams().toString(), 'year=1938');
+  const tamperUrl = makeGlueHarness({ deferredFetch: true });
+  tamperUrl.Controller.prototype._urlStateParams = () => new URLSearchParams();
+  tamperUrl.release(); await flush();
+  assert.ok(tamperUrl.errors.some((message) => message.includes('与当前上游版本不兼容')));
+
+  for (const terrain of [true, false]) for (const enabled of [true, false]) {
+    const h = makeGlueHarness(); await flush();
+    h.rivers.hidden = !terrain;
+    const panel = h.document.body.children.find((child) => child.id === 'sam-research-layer-status');
+    if (!enabled) { const checkbox = panel.children[1].children[0]; checkbox.checked = false; checkbox.onchange(); }
+    const group = h.svg.querySelector('#grp-sam-research');
+    assert.equal(group.children.length > 0, enabled, `research visibility terrain=${terrain} enabled=${enabled}`);
+    assert.equal(!h.rivers.hidden && h.app.renderedLegacy.length < h.app.hydroData.rivers.length, terrain && enabled, `legacy suppression terrain=${terrain} enabled=${enabled}`);
+    if (!terrain && enabled) {
+      const before = h.app._hydroMask(1938); h.app.year = 1947;
+      if (h.app._hydroMask(1947) !== before) h.app._buildTerrainRivers();
+      assert.equal(group.children.length, 0, 'hidden terrain must still update research on year change');
+    }
+  }
+
   const hydro = loadHydro();
-  assert.equal((await Core.checkLegacyDrift(inventory, hydro, inventory.entries.map((entry) => entry.legacy_id))).length, 0, 'R2-04 all 290 current entries must match inventory fingerprints');
+  assert.equal((await Core.checkLegacyDrift(inventory, hydro, inventory.entries.map((entry) => entry.legacy_id))).length, 0, 'R2-04 all 323 current entries must match inventory fingerprints');
   for (const entry of inventory.entries) {
     const collection = hydro[entry.kind === 'river' ? 'rivers' : entry.kind === 'lake' ? 'lakes' : 'labels'];
     assert.equal(LegacyFingerprint.fingerprintNode(entry.kind, collection[entry.index]), entry.fp, entry.legacy_id);
