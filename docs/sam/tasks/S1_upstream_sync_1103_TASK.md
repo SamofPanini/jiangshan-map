@@ -11,13 +11,16 @@
 1. 仓库根 `AGENTS.md`；`docs/sam/UPSTREAM_TRACKING.md` §C–E。
 2. 研究层四个文件可整份读：`js/sam/research_layer.js`、`js/sam/research_layer_core.js`、`js/sam/legacy_fingerprint.js`、`scripts/sam/research_layer_core.test.js`。
 3. **`js/app.js` 不得整份读入**（约 420KB）。只按本单 §3 给出的函数名用 `grep -n` 定位后，读该函数前后各约 40 行。
-4. 不运行 `git status`／`git diff` 以外的全库扫描；不 commit、不切分支、不 merge；不安装依赖；不访问网络。
+4. 不 commit、不切分支、不 merge；不安装依赖；不访问网络。**明确允许**：`git status`、`git diff`、`git log`、`git show`（§4 查出处、§6 分组和复核要用，只限 `4748ca2..7c5cfe3` 范围内的提交或 §1 列出的提交）；对具体文件 `grep -n`；用临时 node／python 脚本比对大 JSON（不要把清单整份读进上下文）；在 `/tmp` 或 `$TMPDIR` 写临时文件。其余全库扫描不做。
 5. **上游文件一律不改**。可写范围（白名单）只有：
    - `js/sam/**`、`scripts/sam/**`
-   - `docs/sam/audit/hydro_inventory.json`、`docs/sam/audit/corridor_inventory.json`、`docs/sam/audit/P0a-1_INVENTORY.md`（仅由 §4 的生成命令改写，不手改）
+   - `docs/sam/audit/hydro_inventory.json`、`docs/sam/audit/corridor_inventory.json`、`docs/sam/audit/coherence_probe.json`、`docs/sam/audit/P0a-1_INVENTORY.md`（仅由 §4 的生成命令改写，不手改）
+   - `docs/sam/audit/_pre_s1/**`（§4 的备份，不提交）
    - `docs/sam/UPSTREAM_TRACKING.md`、`docs/sam/UPSTREAM_FEEDBACK.md`
    - 新建 `docs/sam/audit/S1_REPORT.md`
    `index.html`、`AGENTS.md`、`js/*.js`（非 sam）、`scripts/*.js`（非 sam）、`css/` 都在白名单外。白名单外有必须改的地方 ⇒ 不改，写进报告。
+6. **本单只跑 `validate_atlas.js --fast`。** AGENTS §2 要求的全量 `node scripts/validate_atlas.js` 耗时长，由派发方在验收时跑，你不用跑，也不算偏差。
+7. **小冲突不要整单停机**：只有「必须写白名单外的文件才能继续」和 §4 判定里的 BLOCKING 才停。其余的（数字对不上、某条写法有歧义）选保守解释，写进报告的「规格偏差」，然后继续做其他项。
 
 ## 1. 背景（已由派发方完成，不需要重做）
 
@@ -67,7 +70,7 @@ hover／命中：上游有一处按 `grpRivers` 是否 `is-hidden` 判断 hover�
 
 - 用 P0a-1 的同一条命令重新生成：
   `node scripts/sam/hydro_inventory.js --geo js/china_geo_data.js --map js/map_data.js --out-dir docs/sam/audit --margin-deg 0.5`
-- **生成前**先把三份旧产物复制到 `docs/sam/audit/_pre_s1/`，这个目录不提交。生成后逐项比对，只报事实：
+- **生成前**先把四份旧产物（白名单列出的 `hydro_inventory.json`、`corridor_inventory.json`、`coherence_probe.json`、`P0a-1_INVENTORY.md`）复制到 `docs/sam/audit/_pre_s1/`，这个目录不提交。生成后逐项比对，只报事实：
   1. entry 条数前后各多少；
   2. 哪些 `legacy_id` 消失、新增、指纹改变（全部列出，不截断）；
   3. 对每条指纹改变的 entry，说明改了什么（坐标点数、名称、区间……），并对照 §1 列出的上游提交找出处。
@@ -119,4 +122,4 @@ hover／命中：上游有一处按 `grpRivers` 是否 `is-hidden` 判断 hover�
 - 白名单外想改但没改的地方
 - 本单数字与实测的出入
 
-最后一行写 `S1 DONE`。
+最后一行：§2–§6 全部做完才写 `S1 DONE`；停在 BLOCKING 或有未完成项，一律写 `S1 BLOCKED`。
