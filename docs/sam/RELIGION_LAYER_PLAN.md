@@ -137,7 +137,7 @@ UI 上它和研究水系层一样：独立 SVG group、可关闭、关掉即恢�
 
 | # | 资料 | URL | 时期/地域 | 粒度 | API／批量 | 许可（元数据／影像／文字分开） | 能否作卷页级边出处 | 访问实测 |
 |---|---|---|---|---|---|---|---|---|
-| 1 | 法鼓文理学院「中国佛教寺庙志数位典藏」 | https://buddhistinformatics.dila.edu.tw/fosizhi/ | 寺志成书 16–20 世纪（最早 1512 刊本），全国 | 237 部寺志影像；其中约 15 部有 TEI 全文（站内中英文说明数字不一，13 或 15） | 每部一个 zip（JPEG＋METS/MIX；有标记者附 TEI＋schema）；书目 TEI；寺志位置 KML；**未见 API** | 页面声明 **CC BY-SA 3.0 Unported**；底本来自《中國佛寺史志彙刊》（杜洁祥编，台北 1980–94，110 册）与《中国佛寺志丛刊》（广陵书社 2006，130 册）的影印——**影印本自身版权与 DILA 授权的关系须另核** | **能**（寺志卷页；TEI 本可到段） | WebFetch 200 |
+| 1 | 法鼓文理学院「中国佛教寺庙志数位典藏」 | https://buddhistinformatics.dila.edu.tw/fosizhi/ | 寺志成书 16–20 世纪（最早 1512 刊本），全国 | 237 部寺志影像；站内称 13 或 15 部有 TEI；**RL0-1 实测杭州 20 部全部带 TEI 全文**，但人名、地名、时间实体标注（带 DILA 权威 key）只有 g017、g032、y109 | 每部一个 zip（JPEG＋METS/MIX；有标记者附 TEI＋schema）；书目 TEI；寺志位置 KML；**未见 API** | 页面与包内 README/COPYING 均为 **CC BY-SA 3.0 Unported**（README 原文对象是「The data」）；包内文件未提影印底本或影像权利来源（RL0-1）；底本来自《中國佛寺史志彙刊》（杜洁祥编，台北 1980–94，110 册）与《中国佛寺志丛刊》（广陵书社 2006，130 册）的影印——**影印本自身版权与 DILA 授权的关系须另核** | **能**（寺志卷页；TEI 本可到段） | WebFetch 200 |
 | 2 | DILA 佛学规范资料库・地名（Place Authority） | https://authority.dila.edu.tw/place/ | 全亚洲佛教地名，含寺院 | 地名条目（据 2011 年资料，DDBC 自建约 15,000 条有 TEI 下载；完整库走在线/API） | 历史上有 XML/TEI zip 与 API；**现状未核** | **未核**（找到的 CC0 说明属另一份词汇表仓库，不能外推）。DR 回写：开放内容 CC BY-SA 2.5 TW；下载/API 只含 DILA 自建约 18,000 条，在线另含中研院约 40,000 条不在开放范围；坐标分精确/估计/待考，旧 Z 码为 GRS67（**主会话未能复核，站点 503**） | 否（权威记录，不是史料；可作 ID 与坐标候选） | **容器不可达**（curl 000；WebFetch 503） |
 | 3 | CBDB 中国历代人物传记资料库 | https://cbdb.hsites.harvard.edu/ ；SQLite：github.com/cbdb-project/cbdb_sqlite、Hugging Face cbdb/cbdb-sqlite | 主要 7–19 世纪，全国；约 65.8 万人（2026-05） | 人物、地址（含寺院作为地址的情况待核）、社会关系、任官 | 单机 SQLite 下载；在线 API（`cbdbapi/person.php` 实测 200） | 数据 **CC BY-NC-SA 4.0**（须注明版本；衍生同许可；非商业）。DR 回写：自 2026-08-20 起分层——standalone `BJ 20260602` 范围内为 CC BY-NC-SA 4.0，在线新增数据为 BY-NC-ND 且禁止再分发（**主会话复核：条款页 403，未核**）⇒ 只用固定版本 standalone | 部分：CBDB 记录自带出处文献字段，但精度参差，**不可直接当卷页出处**，须回原书 | API 200；GitHub 页面 403（代理），下载渠道未实测 |
 | 4 | CBETA 电子佛典 | https://www.cbeta.org/ | 藏经＋续藏＋禅籍（灯录：《景德传灯录》《五灯会元》等）、部分寺志 | 卷/页/栏/行（CBETA 行首标记） | XML P5（GitHub cbeta-org/xml-p5）；有在线 API（cbetaonline）——**本会话未实测通** | ~~CC BY-NC-SA 3.0 TW~~ **更正**：XML P5 文件头 `<availability>` 实为「Available for non-commercial use when distributed with this header intact」（主会话 2026-11-05 实测 `T51n2076.xml`）；不能统一标 CC。各藏底本授权另计 | **能**（灯录法嗣边可精确到卷页栏行）——这是人—人边最好的出处 | cbeta.org 301；api.cbetaonline.cn 容器不可达；GitHub 403 |
@@ -152,7 +152,7 @@ UI 上它和研究水系层一样：独立 SVG group、可关闭、关掉即恢�
 
 **评估结论**：
 
-- **边的出处**：人—人法嗣边以 CBETA 灯录最好（行级定位、文本开放）；寺—寺与寺—事件边要靠寺志（DILA #1 有 15 部 TEI 可直接解析，其余是影像）、方志寺观门、碑刻——后两者大概率需要 OCR/抄录。
+- **边的出处**：人—人法嗣边以 CBETA 灯录最好（行级定位、文本开放）；寺—寺与寺—事件边要靠寺志（DILA #1 杭州 20 部都有 TEI 全文；其中 3 部带实体标注，可直接解析，另 17 部需在 TEI 全文上补实体标注，不需要 OCR）、方志寺观门、碑刻——后两者大概率需要 OCR/抄录。
 - **点位**：没有一份「古代寺观坐标」可直接用的开放数据。DILA 地名库可能有坐标（**未核**）；Wikidata/OSM 只给现代位置。⇒ 定位要走现有 `derivation.method: place_anchor`（以 CHGIS 治所＋方志里距的锚定，误差显式写），沿用 P1 黄河前锋的做法。
 - **最先要核的三件事**：DILA 地名库许可与坐标字段；DILA 寺志影像的再利用边界（CC BY-SA 是否覆盖影印底本）；CBETA 灯录类文本是否在 CC 范围内。
 
@@ -166,7 +166,7 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
 | 田汝成《西湖游览志余》卷十四「嘉定间品第江南诸寺」，禅院五山＝径山、灵隐、净慈、天童、育王 | 维基文库四库本 餘卷14 原文一致；**同段另列「教院五山」「教院十刹」，并称律院不在五山十刹之列** | **采纳**；新增：试点不能只建「禅院」等级，教院等级同段同源 |
 | 名单是明代后出追述（田汝成、宋濂） | 与上条原文「嘉定间」一致（田为明人） | 采纳：`asserted_period` 与 `source_date` 分栏 |
 | fosizhi 的 CC BY-SA 不能推定覆盖现代影印 JPEG | 与本方案初稿判断一致 | 采纳：Source 许可拆三栏，影像暂 `unknown` |
-| fosizhi 杭州寺志清单（g007、g015–g032、y109；确认有实体标注 TEI 的至少 g017、g032、y109） | 未逐 ZIP 核 | 列为 R2 前置任务（Codex 清点） |
+| fosizhi 杭州寺志清单（g007、g015–g032、y109；确认有实体标注 TEI 的至少 g017、g032、y109） | RL0-1 已逐 ZIP 核（2026-11-05 验收） | 20 部全部有 TEI；实体标注只有 3 部；y109 也属杭州（径山），见 §6.5 |
 | DILA Place：CC BY-SA 2.5 TW、开放部分约 18,000 条、坐标三态、GRS67 | 站点 503，未能复核 | 暂存为「DR 称」；契约照此预留坐标状态与原始 CRS |
 | CBDB 2026-08-20 起许可分层 | 条款页 403，未能复核 | 暂存为「DR 称」；规则：只用固定 standalone 版本号 |
 | 《中国道观志丛刊》广陵书社 36 册、合计约 97 种 | NDL/CiNii：正编出版者江苏古籍 2000.4；册数、种数未见 | **出版社一项 DR 有误**；册数未核 |
@@ -182,7 +182,7 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
 
 - **规模**：临安府及余杭（径山）境内 30–50 所寺院；其中五山（径山、灵隐、净慈、天童、育王中的杭州部分 3 所＋明州 2 所可作外延）与若干十刹。
 - **为什么是它**：
-  1. 资料密度高：DILA 典藏收有杭州多部寺志（灵隐、净慈、径山、天竺等——**具体哪几部有 TEI，待逐部核**），CBETA 灯录对南宋杭州住持的法嗣记载密集；
+  1. 资料密度高：DILA 典藏收有杭州 20 部寺志，全部有 TEI 全文；径山（g032 径山志、y109 径山集）与慧因高丽寺（g017）带人名、地名、时间实体标注及 DILA 权威 key（RL0-1 实测），CBETA 灯录对南宋杭州住持的法嗣记载密集；
   2. 能同时检验本方案最难的三类问题：**十方丛林宗属随住持变**、**敕额改名**（如灵隐/净慈的赐额史）、**五山十刹制度等级的时效**（南宋成形、元续、明初改制）；
   3. **跨区域同图的天然样本**：径山无准师范—圆尔辨圆等中日僧侣往来，日本五山制度仿照南宋。这让「终局多区域同图」第一次有可验收的跨区域边（`dharma_heir_of` 跨 `cn`/`jp`），且与 Japan-s-Temple 能互通检验。
 - **验收门槛（R2）**：
@@ -202,6 +202,7 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
 - **R0 后的修订**（2026-11-05）：
   - 等级体系同时建「禅院五山十刹」与「教院五山十刹」（同一出处同段并列）；律院按原文记为「不在其列」，不建等级边。
   - 导入顺序按 DR 建议：《咸淳临安志》寺观门（同时代）→ DILA 杭州寺志（后出，记转引链）→ CBETA 住持/法嗣 → 最后才接 DILA Place、CHGIS、Wikidata、OSM 作为地点候选。证据方向始终是「史料 → 实体假说 → 现代外键」。
+  - **RL0-1 后的修订**：DILA 杭州寺志分两档导入。第一档是 g032、y109、g017，直接解析 `persName/placeName/date@key`，`pb@n` 作卷页 locator。第二档是其余 17 部（灵隐 g021–g023、净慈 g016 等），只有分页分行，在 TEI 全文上做实体标注，人名、地名对到 DILA 权威 key。两档都**不需要 OCR**；OCR／抄录只用于《咸淳临安志》寺观门、碑刻等没有全文的来源。§7 推翻条件（多数包没有人地时标注 ⇒ 改以 OCR 为主）前半成立，但这些包有全文，所以缺的是标注，不是文字，结论不按推翻条件改。
   - 《乾道临安志》现存仅三卷、《淳祐临安志》按佚书处理（DR 称，未核），不作主数据。
   - DR 的估计（机构 30–50、边 15–30）只是估计，不作为验收数字；验收仍按下列门槛。
 - **主要风险**：杭州寺院多次毁于兵火与迁移，南宋位置大多只能锚到「西湖某山某坞」级别；寺志多为明清编纂，对南宋事实是二手——须在 claim 里写「来源年代晚于事件」。
@@ -243,7 +244,7 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
 | R0 资料调查 | ✅ DR 回写已逐条核验 | §3.1；Notion [DR prompt 页](https://app.notion.com/p/40fad0c2efeb812c9237ed62440154e1)（Status＝完了） |
 | R1 契约 profile | ✅ r2 文档＋合成样例；D1/D2 已裁（跟 JP） | [RESEARCH_ENTITIES_PROFILE.md](./RESEARCH_ENTITIES_PROFILE.md)；`scripts/sam/fixtures/research_entities/` |
 | 对 JP 的提案 P-1～P-7 | ⏸ 挂起到 R2 启动前 | profile §8 |
-| RL0-1 fosizhi 清点 | 🔄 已派 Codex，等分支 `codex/fosizhi-tei-inventory` 与 Notion 第 8 章回写 | Notion [任务单](https://app.notion.com/p/40fad0c2efeb8114bbb9f8a12d1eaf73)；仓库 `tasks/RL0-1_…` 只是指针 |
+| RL0-1 fosizhi 清点 | ✅ 2026-11-05 验收通过（附验收修正：y109 属杭州；edition 字段不可用；HTTP 字节由验收人补测），分支 `codex/fosizhi-tei-inventory`@9cc7369 未并入 main | Notion [任务单](https://app.notion.com/p/40fad0c2efeb8114bbb9f8a12d1eaf73)；仓库 `tasks/RL0-1_…` 只是指针 |
 | R2 校验器＋试点数据 | ⬜ 排在 P1 第 6 项通过之后 | ROADMAP §1 |
 
 **RL0-1 验收时要做**：从分支取 `docs/sam/audit/RL0-1_fosizhi_inventory.json` 与报告；自己用 Range 抽查 g032 和另一个 TEI 状态不明的包，比对成员清单、sha256、元素计数；核对探针 `FOSIZHI-TEI-INVENTORY_DONE`；通过后在 Notion 页第 9 章签收、改 Status，再据结果修订本文件 §3 第 1 行与 §4.1 的导入顺序（推翻条件：多数包没有人地时标注 ⇒ 改为以 OCR 为主）。
@@ -259,6 +260,22 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
 7. **提交授权**：自动权限会拦下「未经要求的 commit/push」，stop hook 也会催提交。遇到这种情况要请 Sam 明确说「提交并推送」，不要绕过。修改 `AGENTS.md` 也会被当作 agent 自我修改而拦下，规则变更要交 Sam 来改。
 8. **概念上最容易错的地方**（写契约和验收都要盯）：十方丛林的宗属随住持变，不是寺院属性；五山名单是明人追述，`asserted_period`（嘉定间）和来源年代要分开；同段原文还有「教院五山十刹」；嗣法 ≠ 剃度 ≠ 参学；同址同名重建默认是新实体。
 
+## 6.6｜RL0-1 验收记录（2026-11-05）
+
+- **交付**：分支 `codex/fosizhi-tei-inventory`，commit `9cc7369`，共 4 个文件；探针 `FOSIZHI-TEI-INVENTORY_DONE` 在位。
+- **复跑**：在分支上运行 `python3 -I scripts/sam/fosizhi_zip_inventory_test.py`，5 项全部 OK；`node scripts/validate_atlas.js` exit 0。
+- **独立 Range 抽查**：用标准库 `zipfile` 加 Range 读取器，与 Codex 的清点器独立。
+  - g032：成员 1093（jpg 1081、gif 5、xml 3、txt 3、rng 1），与 JSON 一致；`g032.tei.xml`、`README.txt`、`COPYING.txt` 的 sha256 均一致；全文档 persName 4639、placeName 3987、pb 1078、lb 9289，与 JSON 一致。date 全文档 535，JSON 为 532：JSON 只计 `<text>` 内，口径不同，不算出入。
+  - g021：成员 660，sha256 一致；persName 0、placeName 0、pb 654，与 JSON 一致。
+  - 抽查两包的 HTTP 累计读取为 **2,395,539 字节**，两包合计 213 MB。Codex 取了全部非图像成员，解压后共 34.6 MB，所以全量读取量的上界约为这个数，远小于 1.37 GB。这一项按验收人补测计。
+- **验收修正**（分支上的文件不改，以本节为准）：
+  1. **y109《径山集》属于杭州**。目录条目里的「金華」是 `respStmt` 中编者释宗凈的籍贯；所在地著录在 `<p><placeName>` 中，为「浙江省杭州市區(徑山-興聖萬壽禪寺…)」。清点器取的是条目中的第一个 `placeName`，所以判错了。由此 20/20 都属杭州。
+  2. `catalog.edition_or_year` 取的是条目中的第一个 `<date>`，结果只得到朝代（「明」「清」），**该字段整列不可用**。版本应读 `<edition>`，例如 g032 是「明天啓四年原刊本」。
+  3. g018 目录著录为「桐廬縣」，但坐标在西湖凤凰山，属于目录本身的错误。记为观察，不改判。
+  4. 执行者建议「混合解析与 OCR」，不采纳。17 部有 TEI 全文，缺的是实体标注，不是文字（见 §4.1）。
+- **许可**：g032 的 README 写明「The data is distributed under CC BY-SA 3.0 Unported」，同时称界面提供「scanned images of the woodblock prints」，但没有说明影像的权利来源。Source 的 `license_scan` 维持 `unknown`。
+- **结论**：review_state=passed，附上述修正。修正后的数据只以本节为准；分支是否并入 main 由 Sam 定。
+
 ## 7｜变更记录
 
 | 日期 | 变更 | 署名 |
@@ -266,3 +283,4 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
 | 2026-11-05 | 建立草稿 v0.1；记入 Sam 四点裁定；Deep Research prompt 写入 Notion | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | R0 完成：DR 回写核验（§3.1，更正 CBETA 许可、道观志出版者；新增教院五山）；§4.1 修订；起草 R1 profile | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | 新增 §6.5 经验教训与交接（现状表、RL0-1 验收步骤、8 条教训） | Sam's Agent(Opus-5.5) |
+| 2026-11-05 | RL0-1 验收（见 §6.6）：§3 第 1 行、§3.1、§4.1 按实测修订；DILA 杭州寺志分两档导入，不改为以 OCR 为主 | Sam's Agent(Opus-5.5) |
