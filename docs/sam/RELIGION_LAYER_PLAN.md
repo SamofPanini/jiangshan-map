@@ -234,9 +234,35 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
 3. 是否先做 GPT Deep Research？→ **先做**；prompt：[Notion](https://app.notion.com/p/40fad0c2efeb812c9237ed62440154e1)，回写后修订 §3/§4
 4. 契约落点：独立 profile `research_entities` 0.1.0，还是并入 CONTRACT v0.3？→ **独立 profile**
 
+## 6.5｜经验教训与交接（2026-11-05，compact 前整理）
+
+### 现状（接手时先看这里）
+
+| 项 | 状态 | 位置 |
+|---|---|---|
+| R0 资料调查 | ✅ DR 回写已逐条核验 | §3.1；Notion [DR prompt 页](https://app.notion.com/p/40fad0c2efeb812c9237ed62440154e1)（Status＝完了） |
+| R1 契约 profile | ✅ r2 文档＋合成样例；D1/D2 已裁（跟 JP） | [RESEARCH_ENTITIES_PROFILE.md](./RESEARCH_ENTITIES_PROFILE.md)；`scripts/sam/fixtures/research_entities/` |
+| 对 JP 的提案 P-1～P-7 | ⏸ 挂起到 R2 启动前 | profile §8 |
+| RL0-1 fosizhi 清点 | 🔄 已派 Codex，等分支 `codex/fosizhi-tei-inventory` 与 Notion 第 8 章回写 | Notion [任务单](https://app.notion.com/p/40fad0c2efeb8114bbb9f8a12d1eaf73)；仓库 `tasks/RL0-1_…` 只是指针 |
+| R2 校验器＋试点数据 | ⬜ 排在 P1 第 6 项通过之后 | ROADMAP §1 |
+
+**RL0-1 验收时要做**：从分支取 `docs/sam/audit/RL0-1_fosizhi_inventory.json` 与报告；自己用 Range 抽查 g032 和另一个 TEI 状态不明的包，比对成员清单、sha256、元素计数；核对探针 `FOSIZHI-TEI-INVENTORY_DONE`；通过后在 Notion 页第 9 章签收、改 Status，再据结果修订本文件 §3 第 1 行与 §4.1 的导入顺序（推翻条件：多数包没有人地时标注 ⇒ 改为以 OCR 为主）。
+
+### 教训
+
+1. **跨仓契约先读原文，再起草**。r1 只依据 Notion 摘要起草，读到 JP `docs/CONTRACT.md` 后大半要撤回（前缀、Site 模型、Event、名称证据、证据方式枚举），见 profile §10。另一个仓库读不到时先申请 `add_repo`（第一次被自动权限拦下，Sam 明确要求后才成功）。
+2. **对齐要用对方的校验器实测**。把 cn 扩展剥掉后跑 JP 的 `tools/validate.py`，结果 0 错误；不剥则报 62 处 `E_UNKNOWN_KEY`。这比逐键对表可靠，profile §8 已记录方法。
+3. **DR 回写要逐条核，双向都会错**：我初稿把 CBETA 写成 CC BY-NC-SA 3.0 TW，是 DR 指出后从 XML 文件头确认更正的；DR 则把《中国道观志丛刊》正编的出版社写错了（实为江苏古籍 2000）。DILA Place、CBDB 的许可分层从容器访问不到（503/403），只能记为「DR 称」，不能写成已核。
+4. **数字要实数**：口头说的「19 部」实为 20 部（g007、g015–g032、y109）。fosizhi 站内 TEI 部数自己也有 13/15 两种说法，留给 RL0-1 实测。
+5. **大文件先探测 Range**：fosizhi 20 包共 1.37 GB；用 Range 只读 ZIP 中央目录就能拿到结构和 TEI，还发现每个包自带 COPYING/README——影印底本许可问题可能就在包里得到回答。
+6. **派发通道**：Codex 读不到云端会话。任务单正文写 Notion，建为 GitHub Repos 库中本仓库页的子项目，结构按「Agent Tasks｜写入正典 v1.1」§5（十章模板、task_id 用 kebab-case 且不超过 4 词、不带日期、末行探针由派发方指定、done 只由 verify_by 签）；本仓库不进 Agent Tasks DB（它只收 chat 端 LLM 任务，project 词表里也没有 jiangshan）。产物推 `codex/<task_id>` 分支（逐单授权的 push 例外，不推 main），仓库 `tasks/` 只留指针。**仓库里写的任务单如果不同步到 Notion，等于没派。**
+7. **提交授权**：自动权限会拦下「未经要求的 commit/push」，stop hook 也会催提交。遇到这种情况要请 Sam 明确说「提交并推送」，不要绕过。修改 `AGENTS.md` 也会被当作 agent 自我修改而拦下，规则变更要交 Sam 来改。
+8. **概念上最容易错的地方**（写契约和验收都要盯）：十方丛林的宗属随住持变，不是寺院属性；五山名单是明人追述，`asserted_period`（嘉定间）和来源年代要分开；同段原文还有「教院五山十刹」；嗣法 ≠ 剃度 ≠ 参学；同址同名重建默认是新实体。
+
 ## 7｜变更记录
 
 | 日期 | 变更 | 署名 |
 |---|---|---|
 | 2026-11-05 | 建立草稿 v0.1；记入 Sam 四点裁定；Deep Research prompt 写入 Notion | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | R0 完成：DR 回写核验（§3.1，更正 CBETA 许可、道观志出版者；新增教院五山）；§4.1 修订；起草 R1 profile | Sam's Agent(Opus-5.5) |
+| 2026-11-05 | 新增 §6.5 经验教训与交接（现状表、RL0-1 验收步骤、8 条教训） | Sam's Agent(Opus-5.5) |
