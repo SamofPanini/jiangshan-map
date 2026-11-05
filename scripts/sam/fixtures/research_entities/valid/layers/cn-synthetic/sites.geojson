@@ -1,0 +1,172 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "site:cn-p1",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.0,
+     30.0
+    ]
+   },
+   "properties": {
+    "institution_id": "tmp:cn-t1",
+    "valid": {
+     "interval": "half_open",
+     "from": 1100,
+     "to": null,
+     "from_status": "known",
+     "to_status": "unknown"
+    },
+    "address_as_written": "合成山之南",
+    "geometry_absent_reason": null,
+    "spatial_error": {
+     "value_m": null,
+     "reason": "synthetic"
+    },
+    "derivation": {
+     "method": "manual",
+     "note": "synthetic"
+    },
+    "evidence_mode": "reconstructed",
+    "review_state": "proposed",
+    "claims": [
+     {
+      "source_id": "src:cn-s1",
+      "locator": {
+       "volume": "1",
+       "entry_heading": null,
+       "folio": "3",
+       "image_frame": null,
+       "archive_id": null,
+       "persistent_url": null,
+       "edition_page": null,
+       "verification_state": "unverified",
+       "column": null,
+       "line": null,
+       "canonical_ref": null
+      },
+      "supports": "geometry"
+     }
+    ],
+    "note": null,
+    "anchor": null,
+    "precision_class": "mountain_or_valley",
+    "coordinate_status": "estimated",
+    "original_crs": null
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site:cn-p2",
+   "geometry": null,
+   "properties": {
+    "institution_id": "tmp:cn-t2",
+    "valid": {
+     "interval": "half_open",
+     "from": 1120,
+     "to": 1300,
+     "from_status": "known",
+     "to_status": "known"
+    },
+    "address_as_written": "距县治三十里",
+    "geometry_absent_reason": "not_located",
+    "spatial_error": {
+     "value_m": null,
+     "reason": "not located"
+    },
+    "derivation": null,
+    "evidence_mode": "attested",
+    "review_state": "proposed",
+    "claims": [
+     {
+      "source_id": "src:cn-s1",
+      "locator": {
+       "volume": "1",
+       "entry_heading": null,
+       "folio": "4",
+       "image_frame": null,
+       "archive_id": null,
+       "persistent_url": null,
+       "edition_page": null,
+       "verification_state": "unverified",
+       "column": null,
+       "line": null,
+       "canonical_ref": null
+      },
+      "supports": "existence"
+     }
+    ],
+    "note": null,
+    "anchor": {
+     "anchor": "chgis:0000",
+     "relation": "distance_direction",
+     "distance_text": "三十里",
+     "direction_text": "东南"
+    },
+    "precision_class": "county",
+    "coordinate_status": "none",
+    "original_crs": null
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "site:cn-p3",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.01,
+     30.01
+    ]
+   },
+   "properties": {
+    "institution_id": "tmp:cn-t3",
+    "valid": {
+     "interval": "half_open",
+     "from": 1950,
+     "to": null,
+     "from_status": "known",
+     "to_status": "unknown"
+    },
+    "address_as_written": null,
+    "geometry_absent_reason": null,
+    "spatial_error": {
+     "value_m": null,
+     "reason": "synthetic"
+    },
+    "derivation": {
+     "method": "wikidata_coord",
+     "note": "synthetic modern"
+    },
+    "evidence_mode": "hypothesis",
+    "review_state": "proposed",
+    "claims": [
+     {
+      "source_id": "src:cn-s5",
+      "locator": {
+       "volume": null,
+       "entry_heading": null,
+       "folio": null,
+       "image_frame": null,
+       "archive_id": null,
+       "persistent_url": "https://example.invalid/q0",
+       "edition_page": null,
+       "verification_state": "unverified",
+       "column": null,
+       "line": null,
+       "canonical_ref": null
+      },
+      "supports": "geometry"
+     }
+    ],
+    "note": "现代位置只用于 ≥1900",
+    "anchor": null,
+    "precision_class": "exact_site",
+    "coordinate_status": "precise",
+    "original_crs": null
+   }
+  }
+ ]
+}

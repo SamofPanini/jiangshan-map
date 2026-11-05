@@ -1,0 +1,50 @@
+[
+ {
+  "id": "den:cn-buddhism",
+  "label": "合成教",
+  "level": "umbrella",
+  "valid": {
+   "interval": "half_open",
+   "from": null,
+   "to": null,
+   "from_status": "unknown",
+   "to_status": "unknown"
+  },
+  "source_id": "src:cn-s4",
+  "note": "synthetic",
+  "tradition": "buddhist",
+  "label_basis": "retrospective"
+ },
+ {
+  "id": "den:cn-a",
+  "label": "合成宗",
+  "level": "school",
+  "valid": {
+   "interval": "half_open",
+   "from": null,
+   "to": null,
+   "from_status": "unknown",
+   "to_status": "unknown"
+  },
+  "source_id": "src:cn-s4",
+  "note": "synthetic",
+  "tradition": "buddhist",
+  "label_basis": "retrospective"
+ },
+ {
+  "id": "den:cn-a1",
+  "label": "合成宗甲派",
+  "level": "branch",
+  "valid": {
+   "interval": "half_open",
+   "from": null,
+   "to": null,
+   "from_status": "unknown",
+   "to_status": "unknown"
+  },
+  "source_id": "src:cn-s4",
+  "note": "synthetic",
+  "tradition": "buddhist",
+  "label_basis": "contemporary_external"
+ }
+]

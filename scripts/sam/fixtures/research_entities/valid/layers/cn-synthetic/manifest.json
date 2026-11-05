@@ -1,0 +1,24 @@
+{
+ "schema_version": "0.1.0",
+ "layer_id": "cn-synthetic",
+ "title": "合成样例",
+ "theme": "temples",
+ "region": "cn",
+ "area": "合成府",
+ "time_slice": {
+  "interval": "half_open",
+  "from": 1100,
+  "to": 1400,
+  "from_status": "known",
+  "to_status": "known"
+ },
+ "time_slice_as_written": null,
+ "stage": "draft",
+ "synthetic": true,
+ "depends_on": [],
+ "files": {
+  "sites": "sites.geojson",
+  "claims": "claims.jsonl"
+ },
+ "description": "research_entities r2 合成样例，不是史料"
+}

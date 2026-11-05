@@ -59,6 +59,8 @@ UI 上它和研究水系层一样：独立 SVG group、可关闭、关掉即恢�
 
 ### 2.2 对象（与 Japan-s-Temple 同构）
 
+> **2026-11-05 注**：本节与 §2.3 的前缀与对象设计已被 [RESEARCH_ENTITIES_PROFILE.md](./RESEARCH_ENTITIES_PROFILE.md) r2 取代（对照 JP 契约原文后改用 `tmp:`/`den:`、JP 的地点断言模型，撤回 Event 等，见该文件 §10）。以下保留为初稿记录。
+
 | 对象 | jiangshan 拟用前缀 | Japan-s-Temple 对应 | 说明 |
 |---|---|---|---|
 | 机构（寺院、宫观、庵、精舍、书院化寺院…） | `inst:` | `tmp:` | **名称不是主键**。同一机构可有多段名称、多次迁址、多次改宗。区域码进 ID（`inst:cn-…`），防同图碰撞 |
@@ -126,7 +128,7 @@ UI 上它和研究水系层一样：独立 SVG group、可关闭、关掉即恢�
 
 ### 2.6 契约落地的前置条件
 
-- 对照 `Japan-s-Temple-v2/docs/CONTRACT.md` 原文核对字段名、枚举与 ID 规则（本会话没读到；需 Sam 授权本会话读取该仓库，或由有权限的会话把原文贴入）。
+- ~~对照 `Japan-s-Temple-v2/docs/CONTRACT.md` 原文~~ 2026-11-05 已完成（profile r2）。
 - 由 ROADMAP 决定是 **v0.3 中加 profile**，还是**单独一个 profile 版本号**（推荐后者：`research_entities` 0.1.0，与 Feature 契约版本解耦）。
 
 ## 3｜资料源矩阵（调查与评估，不批量下载）

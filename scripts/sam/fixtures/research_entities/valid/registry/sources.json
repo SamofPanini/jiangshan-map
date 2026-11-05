@@ -1,0 +1,129 @@
+[
+ {
+  "source_id": "src:cn-s1",
+  "title": "合成来源1",
+  "author_or_org": "synthetic",
+  "edition": null,
+  "url": null,
+  "source_kind": "archive_original",
+  "license_status": "unknown",
+  "license_note": "synthetic fixture",
+  "accessed": null,
+  "synthetic": true,
+  "witness_genre": "gazetteer_local",
+  "work_date": {
+   "interval": "half_open",
+   "from": 1200,
+   "to": 1201,
+   "from_status": "known",
+   "to_status": "known"
+  },
+  "edition_date": null,
+  "license_metadata": "cleared",
+  "license_transcription": "unknown",
+  "license_scan": "unknown",
+  "cites": []
+ },
+ {
+  "source_id": "src:cn-s2",
+  "title": "合成来源2",
+  "author_or_org": "synthetic",
+  "edition": null,
+  "url": null,
+  "source_kind": "modern_edition",
+  "license_status": "unknown",
+  "license_note": "synthetic fixture",
+  "accessed": null,
+  "synthetic": true,
+  "witness_genre": "gazetteer_monastic",
+  "work_date": {
+   "interval": "half_open",
+   "from": 1650,
+   "to": 1651,
+   "from_status": "known",
+   "to_status": "known"
+  },
+  "edition_date": null,
+  "license_metadata": "cleared",
+  "license_transcription": "unknown",
+  "license_scan": "unknown",
+  "cites": [
+   "src:cn-s3"
+  ]
+ },
+ {
+  "source_id": "src:cn-s3",
+  "title": "合成来源3",
+  "author_or_org": "synthetic",
+  "edition": null,
+  "url": null,
+  "source_kind": "archive_original",
+  "license_status": "unknown",
+  "license_note": "synthetic fixture",
+  "accessed": null,
+  "synthetic": true,
+  "witness_genre": "inscription",
+  "work_date": {
+   "interval": "half_open",
+   "from": 1150,
+   "to": 1151,
+   "from_status": "known",
+   "to_status": "known"
+  },
+  "edition_date": null,
+  "license_metadata": "cleared",
+  "license_transcription": "unknown",
+  "license_scan": "unknown",
+  "cites": []
+ },
+ {
+  "source_id": "src:cn-s4",
+  "title": "合成来源4",
+  "author_or_org": "synthetic",
+  "edition": null,
+  "url": null,
+  "source_kind": "modern_edition",
+  "license_status": "unknown",
+  "license_note": "synthetic fixture",
+  "accessed": null,
+  "synthetic": true,
+  "witness_genre": "lamp_record",
+  "work_date": {
+   "interval": "half_open",
+   "from": 1250,
+   "to": 1251,
+   "from_status": "known",
+   "to_status": "known"
+  },
+  "edition_date": null,
+  "license_metadata": "cleared",
+  "license_transcription": "unknown",
+  "license_scan": "unknown",
+  "cites": []
+ },
+ {
+  "source_id": "src:cn-s5",
+  "title": "合成来源5",
+  "author_or_org": "synthetic",
+  "edition": null,
+  "url": null,
+  "source_kind": "dataset",
+  "license_status": "unknown",
+  "license_note": "synthetic fixture",
+  "accessed": null,
+  "synthetic": true,
+  "witness_genre": "catalogue_modern",
+  "work_date": {
+   "interval": "half_open",
+   "from": 2020,
+   "to": 2021,
+   "from_status": "known",
+   "to_status": "known"
+  },
+  "edition_date": null,
+  "license_metadata": "cleared",
+  "license_transcription": "unknown",
+  "license_scan": "unknown",
+  "cites": []
+ }
+]

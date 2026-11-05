@@ -1,101 +1,102 @@
 [
  {
-  "case": "ID 中前缀与对象类型不符",
-  "expect": "RE_ID",
+  "case": "ID 前缀与对象种类不符",
+  "expect": "E_ID_PREFIX",
+  "file": "registry/institutions.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/institutions/0/id",
-    "value": "sch:cn-t1"
+    "path": "/0/id",
+    "value": "den:cn-t1"
    }
   ]
  },
  {
   "case": "ID 重复",
-  "expect": "RE_DUP_ID",
+  "expect": "E_DUP_ID",
+  "file": "registry/persons.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/persons/1/id",
+    "path": "/1/id",
     "value": "per:cn-m1"
    }
   ]
  },
  {
   "case": "claim 指向不存在的机构",
-  "expect": "RE_REF",
+  "expect": "E_REF",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/9/subject",
-    "value": "inst:cn-zz"
+    "path": "/0/subject",
+    "value": "tmp:cn-zz"
    }
   ]
  },
  {
-  "case": "谓词主宾类型不符（abbot_of 宾语是人物）",
-  "expect": "RE_PREDICATE",
+  "case": "谓词主宾种类不符：abbot_of 宾语是人物",
+  "expect": "E_PREDICATE_KIND",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/12/object",
+    "path": "/1/object",
     "value": "per:cn-m2"
    }
   ]
  },
  {
   "case": "未登记的谓词",
-  "expect": "RE_PREDICATE",
+  "expect": "E_PREDICATE_KIND",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/13/predicate",
+    "path": "/2/predicate",
     "value": "teacher_of"
    }
   ]
  },
  {
-  "case": "locator 全空",
+  "case": "JP 保留谓词",
+  "expect": "E_PREDICATE_RESERVED",
+  "file": "layers/cn-synthetic/claims.jsonl",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/0/predicate",
+    "value": "historical_rank"
+   }
+  ]
+ },
+ {
+  "case": "release 下 claim 无 locator",
   "expect": "RE_LOCATOR",
+  "file": "layers/cn-synthetic/manifest.json",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/9/locator",
-    "value": {
-     "juan": null,
-     "page": null,
-     "column": null,
-     "line": null,
-     "frame": null,
-     "note": null
-    }
+    "path": "/stage",
+    "value": "release"
    }
   ]
  },
  {
-  "case": "source_id 写成外键",
-  "expect": "RE_SOURCE",
-  "patch": [
-   {
-    "op": "replace",
-    "path": "/claims/9/source_id",
-    "value": "ext:wikidata:Q0"
-   }
-  ]
- },
- {
-  "case": "现代候选点回填古代",
+  "case": "现代坐标回填古代",
   "expect": "RE_MODERN_BACKFILL",
+  "file": "layers/cn-synthetic/sites.geojson",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/16/valid",
+    "path": "/features/2/properties/valid",
     "value": {
+     "interval": "half_open",
      "from": 1200,
-     "from_status": "known",
      "to": null,
-     "to_status": "unknown",
-     "interval": "half_open"
+     "from_status": "known",
+     "to_status": "unknown"
     }
    }
   ]
@@ -103,185 +104,155 @@
  {
   "case": "灯录嗣法标 attested",
   "expect": "RE_EVIDENCE_GATE",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/13/evidence_mode",
+    "path": "/2/evidence_mode",
     "value": "attested"
    }
   ]
  },
  {
-  "case": "现代目录支撑 affiliated_with=attested",
+  "case": "现代目录支撑宗属 attested",
   "expect": "RE_EVIDENCE_GATE",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/14/source_id",
+    "path": "/3/source_id",
     "value": "src:cn-s5"
    },
    {
     "op": "replace",
-    "path": "/claims/14/evidence_mode",
+    "path": "/3/evidence_mode",
     "value": "attested"
-   },
-   {
-    "op": "add",
-    "path": "/sources/-",
-    "value": {
-     "source_id": "src:cn-s5",
-     "title": "合成来源5",
-     "author_or_org": "synthetic",
-     "edition": null,
-     "url": null,
-     "accessed": null,
-     "synthetic": true,
-     "witness_genre": "catalogue_modern",
-     "work_date": {
-      "from": 2020,
-      "from_status": "known",
-      "to": 2021,
-      "to_status": "known",
-      "interval": "half_open"
-     },
-     "edition_date": null,
-     "license_metadata": "cleared",
-     "license_transcription": "unknown",
-     "license_scan": "unknown",
-     "license_note": "synthetic fixture",
-     "cites": []
-    }
    }
   ]
  },
  {
   "case": "source_later_than_claim 与 work_date 矛盾",
   "expect": "RE_SOURCE_DATE",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/17/source_later_than_claim",
+    "path": "/4/source_later_than_claim",
     "value": false
    }
   ]
  },
  {
-  "case": "未授权录文却填 quote",
+  "case": "录文许可未定却填 as_written",
   "expect": "RE_QUOTE",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/9/quote",
+    "path": "/0/as_written",
     "value": "合成引文"
    }
   ]
  },
  {
-  "case": "geometry 为 null 但 coordinate_status=estimated",
-  "expect": "RE_SITE",
+  "case": "as_written 超过 40 字",
+  "expect": "RE_QUOTE",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/sites/features/1/properties/coordinate_status",
+    "path": "/0/as_written",
+    "value": "合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合合"
+   }
+  ]
+ },
+ {
+  "case": "无几何但 coordinate_status=estimated",
+  "expect": "RE_SITE",
+  "file": "layers/cn-synthetic/sites.geojson",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/features/1/properties/coordinate_status",
     "value": "estimated"
    }
   ]
  },
  {
-  "case": "机构无名称段",
-  "expect": "RE_NAME",
+  "case": "license_status=cleared 但影像栏 unknown",
+  "expect": "RE_LICENSE",
+  "file": "registry/sources.json",
   "patch": [
    {
     "op": "replace",
-    "path": "/institutions/1/names",
-    "value": []
-   }
-  ]
- },
- {
-  "case": "idc accepted 但未填 merged_into",
-  "expect": "RE_IDENTITY",
-  "patch": [
-   {
-    "op": "replace",
-    "path": "/identity_candidates/0/status",
-    "value": "accepted"
+    "path": "/0/license_status",
+    "value": "cleared"
    }
   ]
  },
  {
   "case": "逆向区间",
-  "expect": "RE_INTERVAL",
+  "expect": "E_INTERVAL",
+  "file": "layers/cn-synthetic/claims.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/claims/12/valid",
+    "path": "/1/valid",
     "value": {
+     "interval": "half_open",
      "from": 1200,
-     "from_status": "known",
      "to": 1190,
-     "to_status": "known",
-     "interval": "half_open"
+     "from_status": "known",
+     "to_status": "known"
     }
    }
   ]
  },
  {
   "case": "公元 0 年",
-  "expect": "RE_INTERVAL",
+  "expect": "E_INTERVAL",
+  "file": "registry/institutions.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/institutions/0/existence/from",
+    "path": "/0/valid/from",
     "value": 0
    }
   ]
  },
  {
-  "case": "闭区间",
-  "expect": "RE_INTERVAL",
-  "patch": [
-   {
-    "op": "replace",
-    "path": "/events/0/when/interval",
-    "value": "closed"
-   }
-  ]
- },
- {
   "case": "未知键",
-  "expect": "RE_UNKNOWN_KEY",
+  "expect": "E_UNKNOWN_KEY",
+  "file": "registry/institutions.jsonl",
   "patch": [
    {
     "op": "add",
-    "path": "/institutions/0/sect",
+    "path": "/0/sect",
     "value": "合成宗"
    }
   ]
  },
  {
-  "case": "release 下来源影像许可 unknown 却有 quote",
-  "expect": "RE_RELEASE",
+  "case": "cbdb 外键缺版本号",
+  "expect": "E_TYPE",
+  "file": "registry/persons.jsonl",
   "patch": [
    {
     "op": "replace",
-    "path": "/meta/stage",
-    "value": "release"
-   },
+    "path": "/0/external_ids/cbdb/0",
+    "value": "0"
+   }
+  ]
+ },
+ {
+  "case": "RankSet 成员指向不存在的机构",
+  "expect": "E_REF",
+  "file": "registry/rank_sets.jsonl",
+  "patch": [
    {
     "op": "replace",
-    "path": "/meta/synthetic",
-    "value": false
-   },
-   {
-    "op": "replace",
-    "path": "/claims/9/quote",
-    "value": "合成"
-   },
-   {
-    "op": "replace",
-    "path": "/sources/0/license_transcription",
-    "value": "cleared"
+    "path": "/0/members/0/institution_id",
+    "value": "tmp:cn-zz"
    }
   ]
  }
