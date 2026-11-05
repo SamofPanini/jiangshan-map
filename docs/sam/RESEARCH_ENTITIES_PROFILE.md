@@ -164,10 +164,10 @@ JP 已有的错误码沿用（`E_TOP_SHAPE` … `E_RELEASE`、`W_NO_LOCATOR` 等
 
 **待 Sam 裁定**：
 
-- **D1 证据方式枚举分叉**：jiangshan 是 `attested/reconstructed/schematic/hypothesis`，JP 是 `attested/reconstructed/inferred/hypothesis`。本 profile 跟 JP，因为 `inferred` 正好表达「由住持×法嗣推出的宗属」「同址同名推定」。代价是 research_entities 和 jiangshan 水系契约各用一套，共同读取方须按 profile 区分。备选方案是四者合并成五值超集，两份契约都改。**推荐：跟 JP，水系契约不动**。
-- **D2 空间误差键名**：jiangshan 用 `{value, reason}`，JP 用 `{value_m, reason}`。本 profile 跟 JP（单位写进键名更清楚）。水系契约不动。
+- **D1 证据方式枚举分叉**：jiangshan 是 `attested/reconstructed/schematic/hypothesis`，JP 是 `attested/reconstructed/inferred/hypothesis`。本 profile 跟 JP，因为 `inferred` 正好表达「由住持×法嗣推出的宗属」「同址同名推定」。代价是 research_entities 和 jiangshan 水系契约各用一套，共同读取方须按 profile 区分。备选方案是四者合并成五值超集，两份契约都改。**2026-11-05 Sam 裁：跟 JP，水系契约不动。**
+- **D2 空间误差键名**（随 D1 一并按「跟 JP」处理）：jiangshan 用 `{value, reason}`，JP 用 `{value_m, reason}`。本 profile 跟 JP（单位写进键名更清楚）。水系契约不动。
 
-**对 JP 的提案**（JP 仓库本会话只读，以下只是建议，由 Sam 决定是否在 JP 侧立项）：
+**对 JP 的提案**（2026-11-05 Sam 裁：**先挂着，R2 启动前再议**；不打断 JP 当前工作，JP 契约保持 v0.1.0）：
 
 - P-1：把 Source 的 `witness_genre`、`work_date`、`edition_date`、三栏许可、`cites` 作为**可选键**加入 JP。JP 自己也有需要：江户写本《扶桑五山记》、转引《芝區誌》的二次资料。
 - P-2：Locator 加入可选键 `column`、`line`、`canonical_ref`。
@@ -212,3 +212,4 @@ JP 的 validator 是严格键：在 JP 采纳 P-1～P-3 之前，cn 数据带扩
 | 2026-11-05 | r1：起草，纳入 R0 回写核验结论 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | r2：对照 JP 契约原文（`3fd5611`）重写为「JP 底＋cn 扩展」；登记待裁 D1/D2 与对 JP 的提案 P-1～P-7 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | 样例按 r2 结构重写（registry＋layer、20 个反例）；JP 校验器兼容性实测 | Sam's Agent(Opus-5.5) |
+| 2026-11-05 | Sam 裁 D1/D2＝跟 JP（水系契约不动）；对 JP 提案 P-1～P-7 挂起至 R2 前 | Sam's Agent(Opus-5.5) |
