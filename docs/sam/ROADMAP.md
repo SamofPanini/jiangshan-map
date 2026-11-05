@@ -153,4 +153,5 @@
 | 2026-11-05 | 寺观层 RL0-1 任务单（fosizhi 杭州 20 包 TEI/许可清点，只用 HTTP Range，不下载图像）派 Codex；更正：相关寺志为 20 部而非 19 部 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | RL0-1 任务单正文移入 Notion（jiangshan 页子项目，按 Agent Tasks 正典 v1.1 §5 的结构），仓库改为指针；交付通道改为分支 `codex/fosizhi-tei-inventory` | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | RL0-1 验收通过（Range 独立抽查 g032/g021，sha256 与计数一致）；修正：y109 属杭州、edition 字段不可用；方案 §3/§4.1 按实测修订 | Sam's Agent(Opus-5.5) |
+| 2026-11-05 | RL0-1 分支按原样并入 main（44a8b14）；验收教训补入方案 §6.5 第 9–13 条 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | 寺观层经验教训与交接写入 RELIGION_LAYER_PLAN §6.5（含 Codex 任务单写 Notion 的派发通道）；`AGENTS.md` §6 对应两条待 Sam 自行写入 | Sam's Agent(Opus-5.5) |
