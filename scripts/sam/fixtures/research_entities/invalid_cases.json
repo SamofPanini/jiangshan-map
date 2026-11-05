@@ -1,0 +1,288 @@
+[
+ {
+  "case": "ID 中前缀与对象类型不符",
+  "expect": "RE_ID",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/institutions/0/id",
+    "value": "sch:cn-t1"
+   }
+  ]
+ },
+ {
+  "case": "ID 重复",
+  "expect": "RE_DUP_ID",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/persons/1/id",
+    "value": "per:cn-m1"
+   }
+  ]
+ },
+ {
+  "case": "claim 指向不存在的机构",
+  "expect": "RE_REF",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/9/subject",
+    "value": "inst:cn-zz"
+   }
+  ]
+ },
+ {
+  "case": "谓词主宾类型不符（abbot_of 宾语是人物）",
+  "expect": "RE_PREDICATE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/12/object",
+    "value": "per:cn-m2"
+   }
+  ]
+ },
+ {
+  "case": "未登记的谓词",
+  "expect": "RE_PREDICATE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/13/predicate",
+    "value": "teacher_of"
+   }
+  ]
+ },
+ {
+  "case": "locator 全空",
+  "expect": "RE_LOCATOR",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/9/locator",
+    "value": {
+     "juan": null,
+     "page": null,
+     "column": null,
+     "line": null,
+     "frame": null,
+     "note": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "source_id 写成外键",
+  "expect": "RE_SOURCE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/9/source_id",
+    "value": "ext:wikidata:Q0"
+   }
+  ]
+ },
+ {
+  "case": "现代候选点回填古代",
+  "expect": "RE_MODERN_BACKFILL",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/16/valid",
+    "value": {
+     "from": 1200,
+     "from_status": "known",
+     "to": null,
+     "to_status": "unknown",
+     "interval": "half_open"
+    }
+   }
+  ]
+ },
+ {
+  "case": "灯录嗣法标 attested",
+  "expect": "RE_EVIDENCE_GATE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/13/evidence_mode",
+    "value": "attested"
+   }
+  ]
+ },
+ {
+  "case": "现代目录支撑 affiliated_with=attested",
+  "expect": "RE_EVIDENCE_GATE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/14/source_id",
+    "value": "src:cn-s5"
+   },
+   {
+    "op": "replace",
+    "path": "/claims/14/evidence_mode",
+    "value": "attested"
+   },
+   {
+    "op": "add",
+    "path": "/sources/-",
+    "value": {
+     "source_id": "src:cn-s5",
+     "title": "合成来源5",
+     "author_or_org": "synthetic",
+     "edition": null,
+     "url": null,
+     "accessed": null,
+     "synthetic": true,
+     "witness_genre": "catalogue_modern",
+     "work_date": {
+      "from": 2020,
+      "from_status": "known",
+      "to": 2021,
+      "to_status": "known",
+      "interval": "half_open"
+     },
+     "edition_date": null,
+     "license_metadata": "cleared",
+     "license_transcription": "unknown",
+     "license_scan": "unknown",
+     "license_note": "synthetic fixture",
+     "cites": []
+    }
+   }
+  ]
+ },
+ {
+  "case": "source_later_than_claim 与 work_date 矛盾",
+  "expect": "RE_SOURCE_DATE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/17/source_later_than_claim",
+    "value": false
+   }
+  ]
+ },
+ {
+  "case": "未授权录文却填 quote",
+  "expect": "RE_QUOTE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/9/quote",
+    "value": "合成引文"
+   }
+  ]
+ },
+ {
+  "case": "geometry 为 null 但 coordinate_status=estimated",
+  "expect": "RE_SITE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/sites/features/1/properties/coordinate_status",
+    "value": "estimated"
+   }
+  ]
+ },
+ {
+  "case": "机构无名称段",
+  "expect": "RE_NAME",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/institutions/1/names",
+    "value": []
+   }
+  ]
+ },
+ {
+  "case": "idc accepted 但未填 merged_into",
+  "expect": "RE_IDENTITY",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/identity_candidates/0/status",
+    "value": "accepted"
+   }
+  ]
+ },
+ {
+  "case": "逆向区间",
+  "expect": "RE_INTERVAL",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/claims/12/valid",
+    "value": {
+     "from": 1200,
+     "from_status": "known",
+     "to": 1190,
+     "to_status": "known",
+     "interval": "half_open"
+    }
+   }
+  ]
+ },
+ {
+  "case": "公元 0 年",
+  "expect": "RE_INTERVAL",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/institutions/0/existence/from",
+    "value": 0
+   }
+  ]
+ },
+ {
+  "case": "闭区间",
+  "expect": "RE_INTERVAL",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/events/0/when/interval",
+    "value": "closed"
+   }
+  ]
+ },
+ {
+  "case": "未知键",
+  "expect": "RE_UNKNOWN_KEY",
+  "patch": [
+   {
+    "op": "add",
+    "path": "/institutions/0/sect",
+    "value": "合成宗"
+   }
+  ]
+ },
+ {
+  "case": "release 下来源影像许可 unknown 却有 quote",
+  "expect": "RE_RELEASE",
+  "patch": [
+   {
+    "op": "replace",
+    "path": "/meta/stage",
+    "value": "release"
+   },
+   {
+    "op": "replace",
+    "path": "/meta/synthetic",
+    "value": false
+   },
+   {
+    "op": "replace",
+    "path": "/claims/9/quote",
+    "value": "合成"
+   },
+   {
+    "op": "replace",
+    "path": "/sources/0/license_transcription",
+    "value": "cleared"
+   }
+  ]
+ }
+]

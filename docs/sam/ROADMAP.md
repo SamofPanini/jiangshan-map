@@ -69,7 +69,7 @@
 | T1 | 交通小样本：一个枢纽或有限河段、两个有证据时段的入流/出流卡（候选：京杭大运河） | ⬜（排在 P2 之后） | 见 §5 |
 | P2 | 江汉平原—云梦泽多解释试验 | 🔄 第一轮资料核查完（[结果](./audit/P2_yunmeng_sources.md)）：无开放且可配准的范围图；已核实分歧 3 项（"云梦"与"云梦泽"之别、是否跨江、分期口径不一 ⇒ 不给单一消失年）；建议首批：谭其骧 1980、顾延生等 2025、杨守敬图（公有领域，待开 PDF 核） | 资料不足就如实标缺测，不为满足验收制造第二套解释 |
 | JP-01 | 日本板块首个试点（候选：近代东京低地水道/海岸线） | ⬜（中国 P1 通过后启动立项） | 先填区域立项卡（Notion 模板 A/B 节），再谈编码 |
-| R0/R1 | **寺观与派系层**：R0 外部资料调查（GPT Deep Research，[prompt](https://app.notion.com/p/40fad0c2efeb812c9237ed62440154e1)）→ R1 契约 profile `research_entities` 0.1.0 文档＋有效/应拒绝样例（与 Japan-s-Temple 词表对齐） | ⬜ R0 待 DR 回写 | 资料矩阵每项有 URL、许可分层、能否作卷页出处；profile 不硬编码中国专用假设；先对照 Japan-s-Temple-v2 `docs/CONTRACT.md` 原文核字段 |
+| R0/R1 | **寺观与派系层**：R0 外部资料调查（GPT Deep Research，[prompt](https://app.notion.com/p/40fad0c2efeb812c9237ed62440154e1)）→ R1 契约 profile `research_entities` 0.1.0 文档＋有效/应拒绝样例（与 Japan-s-Temple 词表对齐） | ✅ R0 2026-11-05（DR 回写已核，见方案 §3.1）；🔄 R1 草案 [RESEARCH_ENTITIES_PROFILE.md](./RESEARCH_ENTITIES_PROFILE.md)＋合成样例（`scripts/sam/fixtures/research_entities/`）待 Sam 审阅与 Japan-s-Temple 原文对照 | 资料矩阵每项有 URL、许可分层、能否作卷页出处；profile 不硬编码中国专用假设；先对照 Japan-s-Temple-v2 `docs/CONTRACT.md` 原文核字段 |
 | P3 / T2 / T3 / EU | 海岸线、城址迁治、宗教/人口/粮赋、运输成本模拟、欧洲板块 | ⬜ 暂缓 | 各自证明证据、许可、时空尺度可比后再逐项立项 |
 
 **暂缓且不提前做**：3D、动画插值、自动推导因果、全域高精度复原、全文聊天机器人、PostGIS/向量库、重写地图引擎、Playwright（到第 5 项再引入）、QGIS（有可用扫描图再装）、任何 schedule/watch job。
@@ -146,3 +146,4 @@
 | 2026-10-24 | P1-2 配准工具 r1 验收（修 CSS 一处，退回 r2：2 BLOCKING＋4 ADVISORY）；r2 验收通过（补 `id="main"`） | Sam's Agent(Opus-5.5) |
 | 2026-10-25 | R3 审核 P1-1（6.1-sol：3 BLOCKING 全复现）；P1-1 r2 返工验收（前锋几何限点线、公元 1–99 年日期、前锋点随上游缩放、观测区间须落在 valid 内）；v0.3 待议：多日区间语义 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | 新建寺观与派系层方案草稿 [RELIGION_LAYER_PLAN.md](./RELIGION_LAYER_PLAN.md)，登记 §6 第 4 条；同日 Sam 裁定（§1）：立项到 R0＋R1、试点南宋临安五山、先 Deep Research、独立 profile。P3 中「宗教」其余部分仍暂缓 | Sam's Agent(Opus-5.5) |
+| 2026-11-05 | 寺观层 R0 完成（DR 回写核验：更正 CBETA 许可为「非商业＋保留文件头」、道观志正编出版者；新增教院五山）；R1 profile 0.1.0 草案与合成样例（valid 1＋invalid 20），未写校验器 | Sam's Agent(Opus-5.5) |
