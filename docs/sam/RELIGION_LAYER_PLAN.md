@@ -244,7 +244,7 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
 | R0 资料调查 | ✅ DR 回写已逐条核验 | §3.1；Notion [DR prompt 页](https://app.notion.com/p/40fad0c2efeb812c9237ed62440154e1)（Status＝完了） |
 | R1 契约 profile | ✅ r2 文档＋合成样例；D1/D2 已裁（跟 JP） | [RESEARCH_ENTITIES_PROFILE.md](./RESEARCH_ENTITIES_PROFILE.md)；`scripts/sam/fixtures/research_entities/` |
 | 对 JP 的提案 P-1～P-7 | ⏸ 挂起到 R2 启动前 | profile §8 |
-| RL0-1 fosizhi 清点 | ✅ 2026-11-05 验收通过（附验收修正：y109 属杭州；edition 字段不可用；HTTP 字节由验收人补测），分支 `codex/fosizhi-tei-inventory`@9cc7369 未并入 main | Notion [任务单](https://app.notion.com/p/40fad0c2efeb8114bbb9f8a12d1eaf73)；仓库 `tasks/RL0-1_…` 只是指针 |
+| RL0-1 fosizhi 清点 | ✅ 2026-11-05 验收通过（附验收修正：y109 属杭州；edition 字段不可用；HTTP 字节由验收人补测），分支 `codex/fosizhi-tei-inventory`@9cc7369 已按原样并入 main（44a8b14） | Notion [任务单](https://app.notion.com/p/40fad0c2efeb8114bbb9f8a12d1eaf73)；仓库 `tasks/RL0-1_…` 只是指针 |
 | R2 校验器＋试点数据 | ⬜ 排在 P1 第 6 项通过之后 | ROADMAP §1 |
 
 **RL0-1 验收时要做**：从分支取 `docs/sam/audit/RL0-1_fosizhi_inventory.json` 与报告；自己用 Range 抽查 g032 和另一个 TEI 状态不明的包，比对成员清单、sha256、元素计数；核对探针 `FOSIZHI-TEI-INVENTORY_DONE`；通过后在 Notion 页第 9 章签收、改 Status，再据结果修订本文件 §3 第 1 行与 §4.1 的导入顺序（推翻条件：多数包没有人地时标注 ⇒ 改为以 OCR 为主）。
@@ -274,7 +274,7 @@ GPT Deep Research 结果见 [Notion 回写区](https://app.notion.com/p/40fad0c2
   3. g018 目录著录为「桐廬縣」，但坐标在西湖凤凰山，属于目录本身的错误。记为观察，不改判。
   4. 执行者建议「混合解析与 OCR」，不采纳。17 部有 TEI 全文，缺的是实体标注，不是文字（见 §4.1）。
 - **许可**：g032 的 README 写明「The data is distributed under CC BY-SA 3.0 Unported」，同时称界面提供「scanned images of the woodblock prints」，但没有说明影像的权利来源。Source 的 `license_scan` 维持 `unknown`。
-- **结论**：review_state=passed，附上述修正。修正后的数据只以本节为准；分支是否并入 main 由 Sam 定。
+- **结论**：review_state=passed，附上述修正。修正后的数据只以本节为准。分支已按 Sam 裁定原样并入 main（44a8b14）。
 
 ## 7｜变更记录
 
