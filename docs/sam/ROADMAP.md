@@ -70,7 +70,7 @@
 | T1 | 交通小样本：一个枢纽或有限河段、两个有证据时段的入流/出流卡（候选：京杭大运河） | ⬜（排在 P2 之后） | 见 §5 |
 | P2 | 江汉平原—云梦泽多解释试验 | 🔄 第一轮资料核查完（[结果](./audit/P2_yunmeng_sources.md)）：无开放且可配准的范围图；已核实分歧 3 项（"云梦"与"云梦泽"之别、是否跨江、分期口径不一 ⇒ 不给单一消失年）；建议首批：谭其骧 1980、顾延生等 2025、杨守敬图（公有领域，待开 PDF 核） | 资料不足就如实标缺测，不为满足验收制造第二套解释 |
 | JP-01 | 日本板块首个试点（候选：近代东京低地水道/海岸线） | ⬜（中国 P1 通过后启动立项） | 先填区域立项卡（Notion 模板 A/B 节），再谈编码 |
-| R0/R1 | **寺观与派系层**：R0 外部资料调查（GPT Deep Research，[prompt](https://app.notion.com/p/40fad0c2efeb812c9237ed62440154e1)）→ R1 契约 profile `research_entities` 0.1.0 文档＋有效/应拒绝样例（与 Japan-s-Temple 词表对齐） | ✅ R0 2026-11-05（DR 回写已核，见方案 §3.1）；🔄 R1 草案 r2 [RESEARCH_ENTITIES_PROFILE.md](./RESEARCH_ENTITIES_PROFILE.md)：已对照 Japan-s-Temple-v2 契约原文改为「JP 底＋cn 扩展」，剥掉扩展键后过 JP 校验器 0 错误；2026-11-05 Sam 裁 D1/D2＝跟 JP（水系契约不动），对 JP 提案 P-1～P-7 挂起至 R2 前；R1 文档阶段完成，余下工作随 R2（P1 第 6 项之后）；R0 收尾任务 RL0-1（[任务单](./tasks/RL0-1_fosizhi_hangzhou_tei_inventory_TASK.md)：DILA 杭州相关 20 部寺志 ZIP 的 Range 只读清点）已派 Codex | 资料矩阵每项有 URL、许可分层、能否作卷页出处；profile 不硬编码中国专用假设；先对照 Japan-s-Temple-v2 `docs/CONTRACT.md` 原文核字段 |
+| R0/R1 | **寺观与派系层**：R0 外部资料调查（GPT Deep Research，[prompt](https://app.notion.com/p/40fad0c2efeb812c9237ed62440154e1)）→ R1 契约 profile `research_entities` 0.1.0 文档＋有效/应拒绝样例（与 Japan-s-Temple 词表对齐） | ✅ R0 2026-11-05（DR 回写已核，见方案 §3.1）；🔄 R1 草案 r2 [RESEARCH_ENTITIES_PROFILE.md](./RESEARCH_ENTITIES_PROFILE.md)：已对照 Japan-s-Temple-v2 契约原文改为「JP 底＋cn 扩展」，剥掉扩展键后过 JP 校验器 0 错误；2026-11-05 Sam 裁 D1/D2＝跟 JP（水系契约不动），对 JP 提案 P-1～P-7 挂起至 R2 前；R1 文档阶段完成，余下工作随 R2（P1 第 6 项之后）；R0 收尾任务 RL0-1（[任务单](./tasks/RL0-1_fosizhi_hangzhou_tei_inventory_TASK.md)：DILA 杭州相关 20 部寺志 ZIP 的 Range 只读清点）已派 Codex（正文在 [Notion](https://app.notion.com/p/40fad0c2efeb8114bbb9f8a12d1eaf73)，仓库只留指针） | 资料矩阵每项有 URL、许可分层、能否作卷页出处；profile 不硬编码中国专用假设；先对照 Japan-s-Temple-v2 `docs/CONTRACT.md` 原文核字段 |
 | P3 / T2 / T3 / EU | 海岸线、城址迁治、宗教/人口/粮赋、运输成本模拟、欧洲板块 | ⬜ 暂缓 | 各自证明证据、许可、时空尺度可比后再逐项立项 |
 
 **暂缓且不提前做**：3D、动画插值、自动推导因果、全域高精度复原、全文聊天机器人、PostGIS/向量库、重写地图引擎、Playwright（到第 5 项再引入）、QGIS（有可用扫描图再装）、任何 schedule/watch job。
@@ -151,3 +151,4 @@
 | 2026-11-05 | 寺观层 R1 r2：对照 Japan-s-Temple-v2 `docs/CONTRACT.md`（`3fd5611`）重写 profile 为「JP 底＋cn 扩展」；撤回 r1 的 Event、物理 Site＋`located_at`、`inst:`/`sch:` 前缀等；样例重写；JP 校验器兼容性实测 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | 记入 Sam 裁定：profile D1/D2 跟 JP；JP 提案挂起 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | 寺观层 RL0-1 任务单（fosizhi 杭州 20 包 TEI/许可清点，只用 HTTP Range，不下载图像）派 Codex；更正：相关寺志为 20 部而非 19 部 | Sam's Agent(Opus-5.5) |
+| 2026-11-05 | RL0-1 任务单正文移入 Notion（jiangshan 页子项目，按 Agent Tasks 正典 v1.1 §5 的结构），仓库改为指针；交付通道改为分支 `codex/fosizhi-tei-inventory` | Sam's Agent(Opus-5.5) |
