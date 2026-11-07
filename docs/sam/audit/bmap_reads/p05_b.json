@@ -1,0 +1,230 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "柳園口渡場",
+      "symbol": "その他",
+      "x": 436,
+      "y": 701,
+      "confidence": "中",
+      "note": "舟形に見える記号。"
+    },
+    {
+      "name": "大井",
+      "symbol": "小円",
+      "x": 93,
+      "y": 1001,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "開封",
+      "symbol": "四角",
+      "x": 422,
+      "y": 962,
+      "confidence": "高",
+      "note": "斜線入りの四角。"
+    },
+    {
+      "name": "李長庄",
+      "symbol": "小円",
+      "x": 542,
+      "y": 966,
+      "confidence": "高",
+      "note": "地名は縦書き。"
+    },
+    {
+      "name": "十里鋪",
+      "symbol": "小円",
+      "x": 608,
+      "y": 969,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "曲興集",
+      "symbol": "小円",
+      "x": 1088,
+      "y": 977,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "蘭封",
+      "symbol": "小円",
+      "x": 1344,
+      "y": 1014,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "蘆花岡",
+      "symbol": "小円",
+      "x": 370,
+      "y": 1066,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "岳店",
+      "symbol": "小円",
+      "x": 327,
+      "y": 1148,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "王家庄",
+      "symbol": "小円",
+      "x": 675,
+      "y": 1268,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "陳留",
+      "symbol": "小円",
+      "x": 775,
+      "y": 1341,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "朱仙鎮",
+      "symbol": "小円",
+      "x": 221,
+      "y": 1413,
+      "confidence": "中",
+      "note": "記号が濃いハッチと重なる。"
+    },
+    {
+      "name": "張庄",
+      "symbol": "小円",
+      "x": 999,
+      "y": 1477,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "双王府",
+      "symbol": "小円",
+      "x": 135,
+      "y": 1548,
+      "confidence": "中",
+      "note": "地名は縦書き。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "7月11日",
+      "text_x": 567,
+      "text_y": 510,
+      "has_arrow": true,
+      "tip_x": 433,
+      "tip_y": 846,
+      "points_to": "線",
+      "nearest_place": "開封",
+      "confidence": "中",
+      "note": "増水橋梁流失ス。対象側の端は開封北側の線付近。"
+    },
+    {
+      "as_written": "7月11日",
+      "text_x": 774,
+      "text_y": 851,
+      "has_arrow": true,
+      "tip_x": 609,
+      "tip_y": 978,
+      "points_to": "線",
+      "nearest_place": "十里鋪",
+      "confidence": "中",
+      "note": "擴大ス。対象側の端は十里鋪の円に近接する線付近で、円との区別は不鮮明。"
+    },
+    {
+      "as_written": "13日夕",
+      "text_x": 72,
+      "text_y": 941,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "大井",
+      "confidence": "中",
+      "note": "文字付近に複数の線が重なる。独立した引出し矢印は確認できない。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 197,
+      "text_y": 932,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "大井",
+      "confidence": "中",
+      "note": "大井の右上にある日付。"
+    },
+    {
+      "as_written": "19日",
+      "text_x": 417,
+      "text_y": 1229,
+      "has_arrow": true,
+      "tip_x": 386,
+      "tip_y": 1177,
+      "points_to": "ハッチ領域",
+      "nearest_place": "岳店",
+      "confidence": "中",
+      "note": "対象側の端は岳店東側の小さなハッチ付近。"
+    },
+    {
+      "as_written": "25～28日",
+      "text_x": 805,
+      "text_y": 1174,
+      "has_arrow": true,
+      "tip_x": 620,
+      "tip_y": 1159,
+      "points_to": "線",
+      "nearest_place": "十里鋪",
+      "confidence": "中",
+      "note": "破線状の引出し線。対象側の端が薄く、座標は概略。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 117,
+      "text_y": 1240,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "岳店",
+      "confidence": "中",
+      "note": "画像左側の下方にある日付。"
+    },
+    {
+      "as_written": "24日",
+      "text_x": 521,
+      "text_y": 1427,
+      "has_arrow": true,
+      "tip_x": 291,
+      "tip_y": 1637,
+      "points_to": "線",
+      "nearest_place": "朱仙鎮",
+      "confidence": "中",
+      "note": "地上並空中偵察。対象側の端は朱仙鎮南側、画像下端に近い線付近。"
+    },
+    {
+      "as_written": "29日",
+      "text_x": 1065,
+      "text_y": 1434,
+      "has_arrow": true,
+      "tip_x": 989,
+      "tip_y": 1474,
+      "points_to": "線",
+      "nearest_place": "張庄",
+      "confidence": "中",
+      "note": "対象側の端は張庄の円の左上にある線付近。円・ハッチとの接触部分は不鮮明。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "座標は添付の表示画像から元画像2400×1697へ換算した概略値。標題の年代・期間表記は地図内の日付注記に含めていない。"
+}

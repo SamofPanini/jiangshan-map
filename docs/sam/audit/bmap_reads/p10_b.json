@@ -1,0 +1,190 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "小呉家",
+      "symbol": "小円",
+      "x": 2101,
+      "y": 89,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "道陵岡",
+      "symbol": "小円",
+      "x": 1882,
+      "y": 216,
+      "confidence": "中",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "陳賢店",
+      "symbol": "小円",
+      "x": 2077,
+      "y": 239,
+      "confidence": "中",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "夏亭",
+      "symbol": "小円",
+      "x": 2118,
+      "y": 351,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "四個樓",
+      "symbol": "小円",
+      "x": 2254,
+      "y": 380,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "大春李",
+      "symbol": "小円",
+      "x": 1945,
+      "y": 499,
+      "confidence": "中",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "清河驛",
+      "symbol": "小円",
+      "x": 2151,
+      "y": 497,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "西華",
+      "symbol": "小円",
+      "x": 1837,
+      "y": 546,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "周家口",
+      "symbol": "小円",
+      "x": 2185,
+      "y": 951,
+      "confidence": "高",
+      "note": "縦書き。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "18日 15.0[0?]",
+      "text_x": 2335,
+      "text_y": 178,
+      "has_arrow": true,
+      "tip_x": 2154,
+      "tip_y": 218,
+      "points_to": "線",
+      "nearest_place": "陳賢店",
+      "confidence": "中",
+      "note": "時刻の末尾は不鮮明。対象側の端は、夏亭北東の曲線付近。"
+    },
+    {
+      "as_written": "六月十二日",
+      "text_x": 957,
+      "text_y": 1282,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の線見本に付いた日付。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十三日夕",
+      "text_x": 899,
+      "text_y": 1296,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の線見本に付いた日付。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十四日夕",
+      "text_x": 839,
+      "text_y": 1296,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の線見本に付いた日付。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 957,
+      "text_y": 1576,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例のハッチ見本に付いた日付。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十七日",
+      "text_x": 896,
+      "text_y": 1580,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例のハッチ見本に付いた日付。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十八日",
+      "text_x": 838,
+      "text_y": 1587,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例のハッチ見本に付いた日付。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 1151,
+      "text_y": 1213,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "備考本文中の日付。「西岡大尉偵察」に伴う。地図上の個別対象を指さない。"
+    },
+    {
+      "as_written": "六月二十四日",
+      "text_x": 1145,
+      "text_y": 1542,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "備考本文中の日付。地図上の個別対象を指さない。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "なし"
+}

@@ -1,0 +1,446 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "京水鎮",
+      "symbol": "小円",
+      "x": 622,
+      "y": 594,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "楊橋",
+      "symbol": "小円",
+      "x": 890,
+      "y": 623,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "万庄",
+      "symbol": "小円",
+      "x": 1279,
+      "y": 585,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "開市口",
+      "symbol": "小円",
+      "x": 1227,
+      "y": 633,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "浦灘",
+      "symbol": "小円",
+      "x": 1074,
+      "y": 655,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "劉[岩?]",
+      "symbol": "小円",
+      "x": 1130,
+      "y": 650,
+      "confidence": "低",
+      "note": "縦書きの二字目が不鮮明。"
+    },
+    {
+      "name": "尉氏屯",
+      "symbol": "小円",
+      "x": 1218,
+      "y": 704,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "北堤",
+      "symbol": "小円",
+      "x": 1430,
+      "y": 697,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "李相王",
+      "symbol": "小円",
+      "x": 1072,
+      "y": 740,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "瓦坡",
+      "symbol": "小円",
+      "x": 1462,
+      "y": 800,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "柳園口渡場",
+      "symbol": "その他",
+      "x": 1848,
+      "y": 703,
+      "confidence": "中",
+      "note": "河道内に小さな舟形状の輪郭記号がある。"
+    },
+    {
+      "name": "鄭州",
+      "symbol": "小円",
+      "x": 491,
+      "y": 864,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "圃田集",
+      "symbol": "小円",
+      "x": 760,
+      "y": 919,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "茶庵",
+      "symbol": "小円",
+      "x": 1023,
+      "y": 924,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "關家橋",
+      "symbol": "小円",
+      "x": 1237,
+      "y": 990,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "大井",
+      "symbol": "小円",
+      "x": 1527,
+      "y": 997,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "開封",
+      "symbol": "四角",
+      "x": 1838,
+      "y": 957,
+      "confidence": "高",
+      "note": "内部に斜線のある四角。"
+    },
+    {
+      "name": "李長庄",
+      "symbol": "小円",
+      "x": 1954,
+      "y": 960,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "十里鋪",
+      "symbol": "小円",
+      "x": 2016,
+      "y": 962,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "中牟",
+      "symbol": "小円",
+      "x": 1138,
+      "y": 1049,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "蘆花岡",
+      "symbol": "小円",
+      "x": 1789,
+      "y": 1061,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "丘店",
+      "symbol": "小円",
+      "x": 1744,
+      "y": 1140,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "雁台寺",
+      "symbol": "小円",
+      "x": 910,
+      "y": 1223,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "王家庄",
+      "symbol": "小円",
+      "x": 2078,
+      "y": 1260,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "陳留",
+      "symbol": "小円",
+      "x": 2171,
+      "y": 1327,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "朱仙鎮",
+      "symbol": "小円",
+      "x": 1642,
+      "y": 1397,
+      "confidence": "中",
+      "note": "記号が濃い描線と重なる。"
+    },
+    {
+      "name": "読めない",
+      "symbol": "小円",
+      "x": 2387,
+      "y": 1461,
+      "confidence": "低",
+      "note": "右端付近。付近の文字が切れており、地名を確定できない。"
+    },
+    {
+      "name": "双王府",
+      "symbol": "小円",
+      "x": 1552,
+      "y": 1528,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "小營",
+      "symbol": "小円",
+      "x": 1448,
+      "y": 1599,
+      "confidence": "高",
+      "note": ""
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "11日",
+      "text_x": 656,
+      "text_y": 426,
+      "has_arrow": true,
+      "tip_x": 583,
+      "tip_y": 529,
+      "points_to": "線",
+      "nearest_place": "京水鎮",
+      "confidence": "中",
+      "note": "決潰。対象側の端は河道付近の描線と重なり、位置は概測。"
+    },
+    {
+      "as_written": "7月11日",
+      "text_x": 1972,
+      "text_y": 516,
+      "has_arrow": true,
+      "tip_x": 1846,
+      "tip_y": 845,
+      "points_to": "線",
+      "nearest_place": "柳園口渡場",
+      "confidence": "中",
+      "note": "増水橋梁流失ス。対象側の端は開封北側の細かい刻線付近。"
+    },
+    {
+      "as_written": "10日",
+      "text_x": 1106,
+      "text_y": 528,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "劉[岩?]",
+      "confidence": "中",
+      "note": "決潰。直下に黒い楔形の描画があるが、注記の引出矢印とは確定できない。"
+    },
+    {
+      "as_written": "12日",
+      "text_x": 665,
+      "text_y": 661,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "京水鎮",
+      "confidence": "高",
+      "note": "破線に沿った位置に記載。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 845,
+      "text_y": 811,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "圃田集",
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "as_written": "12日",
+      "text_x": 1189,
+      "text_y": 830,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "劉[岩?]",
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "as_written": "7月11日",
+      "text_x": 2167,
+      "text_y": 849,
+      "has_arrow": true,
+      "tip_x": 2016,
+      "tip_y": 961,
+      "points_to": "地点",
+      "nearest_place": "十里鋪",
+      "confidence": "中",
+      "note": "[横?][大?]ス。対象側の端が十里鋪の小円付近と重なる。"
+    },
+    {
+      "as_written": "13日夕",
+      "text_x": 1279,
+      "text_y": 923,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "關家橋",
+      "confidence": "中",
+      "note": "「夕」は日付の下に記載。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 1619,
+      "text_y": 929,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "大井",
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "as_written": "13日夕",
+      "text_x": 1511,
+      "text_y": 939,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "大井",
+      "confidence": "中",
+      "note": "「夕」は日付の下に記載。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 826,
+      "text_y": 1117,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "雁台寺",
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "as_written": "25～28日",
+      "text_x": 2199,
+      "text_y": 1163,
+      "has_arrow": true,
+      "tip_x": 2039,
+      "tip_y": 1144,
+      "points_to": "線",
+      "nearest_place": "王家庄",
+      "confidence": "中",
+      "note": "対象側の端は開封南東側で屈曲する線付近。"
+    },
+    {
+      "as_written": "19日",
+      "text_x": 1834,
+      "text_y": 1219,
+      "has_arrow": true,
+      "tip_x": 1799,
+      "tip_y": 1162,
+      "points_to": "ハッチ領域",
+      "nearest_place": "丘店",
+      "confidence": "中",
+      "note": "対象側の端は丘店の右下にある細いハッチ領域。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 1548,
+      "text_y": 1227,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "朱仙鎮",
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "as_written": "13日夕",
+      "text_x": 1305,
+      "text_y": 1345,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "小營",
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "as_written": "15日",
+      "text_x": 1016,
+      "text_y": 1389,
+      "has_arrow": true,
+      "tip_x": 1234,
+      "tip_y": 1112,
+      "points_to": "ハッチ領域",
+      "nearest_place": "中牟",
+      "confidence": "中",
+      "note": "西岡大尉□偵察。対象側の端は中牟南東の細いハッチ領域の先端付近。"
+    },
+    {
+      "as_written": "24日",
+      "text_x": 1933,
+      "text_y": 1417,
+      "has_arrow": true,
+      "tip_x": 1780,
+      "tip_y": 1575,
+      "points_to": "線",
+      "nearest_place": "朱仙鎮",
+      "confidence": "中",
+      "note": "地上並空中偵察。対象側の端は画像下端近くの濃い帯の右側輪郭付近。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "なし。座標は目視による概測。"
+}

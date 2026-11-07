@@ -1,0 +1,82 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "新站",
+      "symbol": "小円",
+      "x": 976,
+      "y": 210,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "水寨集",
+      "symbol": "小円",
+      "x": 1104,
+      "y": 388,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "槐店",
+      "symbol": "小円",
+      "x": 1364,
+      "y": 535,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "[古?]錢",
+      "symbol": "小円",
+      "x": 1557,
+      "y": 332,
+      "confidence": "低",
+      "note": "円の右側の地名は不鮮明。"
+    },
+    {
+      "name": "新安集",
+      "symbol": "小円",
+      "x": 1608,
+      "y": 694,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "光武庙",
+      "symbol": "小円",
+      "x": 1963,
+      "y": 711,
+      "confidence": "中",
+      "note": "横書きを右から左に読んだ。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "7月2日",
+      "text_x": 2120,
+      "text_y": 622,
+      "has_arrow": true,
+      "tip_x": 1926,
+      "tip_y": 697,
+      "points_to": "ハッチ領域",
+      "nearest_place": "光武庙",
+      "confidence": "高",
+      "note": "対象側の端はハッチ領域の縁に接する。"
+    },
+    {
+      "as_written": "7月8日",
+      "text_x": 2172,
+      "text_y": 1372,
+      "has_arrow": true,
+      "tip_x": 2305,
+      "tip_y": 1294,
+      "points_to": "線",
+      "nearest_place": "光武庙",
+      "confidence": "中",
+      "note": "対象側の端は画面右下の曲線に接する。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "座標は添付画像上の目視による概算。画像上端に一部切れた注記があるが、日付として確実に判読できないため収録していない。"
+}

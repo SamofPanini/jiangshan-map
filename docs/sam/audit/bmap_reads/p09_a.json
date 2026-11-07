@@ -1,0 +1,190 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "小呉家",
+      "symbol": "小円",
+      "x": 559,
+      "y": 83,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "道陵岡",
+      "symbol": "小円",
+      "x": 339,
+      "y": 208,
+      "confidence": "中",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "陳賢店",
+      "symbol": "小円",
+      "x": 538,
+      "y": 231,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "夏亭",
+      "symbol": "小円",
+      "x": 584,
+      "y": 343,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "四個樓",
+      "symbol": "小円",
+      "x": 721,
+      "y": 372,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "大[蕭?]李",
+      "symbol": "小円",
+      "x": 413,
+      "y": 492,
+      "confidence": "低",
+      "note": "右から左へ読む。中央の字が不鮮明。"
+    },
+    {
+      "name": "清河驛",
+      "symbol": "小円",
+      "x": 620,
+      "y": 491,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "西華",
+      "symbol": "小円",
+      "x": 305,
+      "y": 539,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "陳州（淮陽）",
+      "symbol": "小円",
+      "x": 1181,
+      "y": 658,
+      "confidence": "高",
+      "note": "地名と括弧内をそれぞれ右から左へ読む。"
+    },
+    {
+      "name": "板[纜?]口舖",
+      "symbol": "小円",
+      "x": 891,
+      "y": 834,
+      "confidence": "低",
+      "note": "右から左へ読む。右から2字目が不鮮明。"
+    },
+    {
+      "name": "瓦□集",
+      "symbol": "小円",
+      "x": 1031,
+      "y": 883,
+      "confidence": "低",
+      "note": "右から左へ読む。中央の字は判読できない。"
+    },
+    {
+      "name": "周家口",
+      "symbol": "小円",
+      "x": 653,
+      "y": 943,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "新站",
+      "symbol": "小円",
+      "x": 958,
+      "y": 1121,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "錢圍",
+      "symbol": "小円",
+      "x": 1542,
+      "y": 1237,
+      "confidence": "中",
+      "note": "右から左へ読む。折れ目に近く、文字がやや不鮮明。"
+    },
+    {
+      "name": "水寨集",
+      "symbol": "小円",
+      "x": 1088,
+      "y": 1298,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "槐店",
+      "symbol": "小円",
+      "x": 1351,
+      "y": 1447,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "新[蔡?]",
+      "symbol": "小円",
+      "x": 1597,
+      "y": 1597,
+      "confidence": "低",
+      "note": "縦書き。下の字は画像下端で不鮮明。"
+    },
+    {
+      "name": "光武廟",
+      "symbol": "小円",
+      "x": 1955,
+      "y": 1612,
+      "confidence": "中",
+      "note": "右から左へ読む。画像下部の表示が文字に近接している。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "18日 15.00",
+      "text_x": 801,
+      "text_y": 171,
+      "has_arrow": true,
+      "tip_x": 619,
+      "tip_y": 210,
+      "points_to": "線",
+      "nearest_place": "陳賢店",
+      "confidence": "高",
+      "note": "根元側はハッチ領域の右側外縁線に接する。"
+    },
+    {
+      "as_written": "25日 12.00",
+      "text_x": 1630,
+      "text_y": 964,
+      "has_arrow": true,
+      "tip_x": 1386,
+      "tip_y": 1036,
+      "points_to": "線",
+      "nearest_place": "錢圍",
+      "confidence": "中",
+      "note": "左下へ延びる引出線の根元はハッチ領域の外縁。付近に「偵察」と旗状記号があるが、日付との対応は不確か。"
+    },
+    {
+      "as_written": "7月2日",
+      "text_x": 2111,
+      "text_y": 1517,
+      "has_arrow": true,
+      "tip_x": 1914,
+      "tip_y": 1592,
+      "points_to": "線",
+      "nearest_place": "光武廟",
+      "confidence": "高",
+      "note": "根元側は細いハッチ領域の斜めの外縁線に接する。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "なし"
+}

@@ -155,3 +155,5 @@
 | 2026-11-05 | RL0-1 验收通过（Range 独立抽查 g032/g021，sha256 与计数一致）；修正：y109 属杭州、edition 字段不可用；方案 §3/§4.1 按实测修订 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | RL0-1 分支按原样并入 main（44a8b14）；验收教训补入方案 §6.5 第 9–13 条 | Sam's Agent(Opus-5.5) |
 | 2026-11-05 | 寺观层经验教训与交接写入 RELIGION_LAYER_PLAN §6.5（含 Codex 任务单写 Notion 的派发通道）；`AGENTS.md` §6 对应两条待 Sam 自行写入 | Sam's Agent(Opus-5.5) |
+| 2026-11-04 | 上游同步到 7c5cfe3（S1 验收，研究 URL 参数与地形开关适配），记录见 UPSTREAM_TRACKING | Sam's Agent(Opus-5.5) |
+| 2026-11-07 | B 图 8 页读数与图例（P0b-8）：除两次侦察外，图上是逐日浸水范围；派 P1-4 拼接与配准 | Sam's Agent(Opus-5.5) |

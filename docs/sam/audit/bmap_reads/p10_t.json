@@ -1,0 +1,166 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "小呉家",
+      "symbol": "小円",
+      "x": 2100,
+      "y": 89,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "道陵岡",
+      "symbol": "小円",
+      "x": 1881,
+      "y": 215,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "陳賢店",
+      "symbol": "小円",
+      "x": 2076,
+      "y": 238,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "夏亭",
+      "symbol": "小円",
+      "x": 2117,
+      "y": 350,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "四個樓",
+      "symbol": "小円",
+      "x": 2254,
+      "y": 379,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "大春李",
+      "symbol": "小円",
+      "x": 1945,
+      "y": 498,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "清河驛",
+      "symbol": "小円",
+      "x": 2151,
+      "y": 497,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "西華",
+      "symbol": "小円",
+      "x": 1837,
+      "y": 546,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "周家口",
+      "symbol": "小円",
+      "x": 2186,
+      "y": 950,
+      "confidence": "高",
+      "note": ""
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "18日 15.0□",
+      "text_x": 2331,
+      "text_y": 177,
+      "has_arrow": true,
+      "tip_x": 2150,
+      "tip_y": 220,
+      "points_to": "線",
+      "nearest_place": "陳賢店",
+      "confidence": "中",
+      "note": "時刻の末尾は画像右端で切れている。線の端は概位置。"
+    },
+    {
+      "as_written": "六月十二日",
+      "text_x": 956,
+      "text_y": 1281,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の日付。"
+    },
+    {
+      "as_written": "六月十三日夕",
+      "text_x": 897,
+      "text_y": 1292,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の日付。"
+    },
+    {
+      "as_written": "六月十四日夕",
+      "text_x": 841,
+      "text_y": 1292,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の日付。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 954,
+      "text_y": 1592,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の日付。"
+    },
+    {
+      "as_written": "六月十七日",
+      "text_x": 893,
+      "text_y": 1579,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の日付。"
+    },
+    {
+      "as_written": "六月十八日",
+      "text_x": 837,
+      "text_y": 1579,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の日付。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "座標は表示画像から指定された元画像サイズに換算した概位置。右端の日付注記は一部が画像外に切れている。凡例の日付も記載した。"
+}

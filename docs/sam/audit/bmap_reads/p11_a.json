@@ -1,0 +1,94 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "新站",
+      "symbol": "小円",
+      "x": 976,
+      "y": 212,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "水寨集",
+      "symbol": "小円",
+      "x": 1103,
+      "y": 388,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "槐店",
+      "symbol": "小円",
+      "x": 1364,
+      "y": 536,
+      "confidence": "高",
+      "note": "右から左へ読む。"
+    },
+    {
+      "name": "[銭?]店",
+      "symbol": "小円",
+      "x": 1557,
+      "y": 332,
+      "confidence": "低",
+      "note": "右から左へ読む。右側の字の細部が不鮮明。"
+    },
+    {
+      "name": "新安集",
+      "symbol": "小円",
+      "x": 1608,
+      "y": 695,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "光武[廟?]",
+      "symbol": "小円",
+      "x": 1965,
+      "y": 712,
+      "confidence": "中",
+      "note": "右から左へ読む。末字の判読に不確実性がある。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "□ 12.00",
+      "text_x": 1645,
+      "text_y": 65,
+      "has_arrow": true,
+      "tip_x": 1402,
+      "tip_y": 129,
+      "points_to": "線",
+      "nearest_place": "[銭?]店",
+      "confidence": "低",
+      "note": "上端で日付部分が欠けている。12.00は読めるが、左下から伸びる矢印との対応は不確か。"
+    },
+    {
+      "as_written": "7月2日",
+      "text_x": 2122,
+      "text_y": 623,
+      "has_arrow": true,
+      "tip_x": 1926,
+      "tip_y": 697,
+      "points_to": "線",
+      "nearest_place": "光武[廟?]",
+      "confidence": "高",
+      "note": "根元は小さなハッチ領域の左上境界線上。"
+    },
+    {
+      "as_written": "7月8日",
+      "text_x": 2169,
+      "text_y": 1374,
+      "has_arrow": true,
+      "tip_x": 2311,
+      "tip_y": 1295,
+      "points_to": "線",
+      "nearest_place": "光武[廟?]",
+      "confidence": "高",
+      "note": "根元は画像右下の曲線上。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "上端の日時注記が一部欠けており、全文と矢印の対応を確定できない。座標は添付表示から元画像の2400×1697ピクセルへ換算した概測値。"
+}

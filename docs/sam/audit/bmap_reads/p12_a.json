@@ -1,0 +1,126 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "周家口",
+      "symbol": "小円",
+      "x": 2223,
+      "y": 104,
+      "confidence": "高",
+      "note": "画像右上。円の下に縦書き。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "六月十一日",
+      "text_x": 1031,
+      "text_y": 414,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の破線見本に付された日付。地図上の対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十二日夕",
+      "text_x": 975,
+      "text_y": 425,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "中",
+      "note": "凡例の線見本に付された日付。地図上の対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十四日夕",
+      "text_x": 919,
+      "text_y": 425,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の実線見本に付された日付。地図上の対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 1026,
+      "text_y": 699,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十七日",
+      "text_x": 966,
+      "text_y": 704,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十八日",
+      "text_x": 912,
+      "text_y": 705,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。"
+    },
+    {
+      "as_written": "六月二十四日",
+      "text_x": 1018,
+      "text_y": 1005,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例の塗り見本に付された日付。地図上の対象への注記ではない。"
+    },
+    {
+      "as_written": "六月二十五日－二十八日",
+      "text_x": 960,
+      "text_y": 1065,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "中",
+      "note": "凡例の交差模様見本に付された日付。地図上の対象への注記ではない。"
+    },
+    {
+      "as_written": "六月二十五日",
+      "text_x": 904,
+      "text_y": 1005,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "中",
+      "note": "凡例の格子模様見本に付された日付。地図上の対象への注記ではない。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "日付表示は凡例として採録した。備考本文中にも「六月十五日」「六月二十四日」があるが、独立した日付注記としては採録していない。座標は目視による概算。"
+}

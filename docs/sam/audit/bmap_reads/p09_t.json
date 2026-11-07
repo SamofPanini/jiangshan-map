@@ -1,0 +1,31 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {"name":"小呉家","symbol":"小円","x":560,"y":82,"confidence":"中","note":""},
+    {"name":"道陵岡","symbol":"小円","x":338,"y":208,"confidence":"中","note":""},
+    {"name":"陳賢店","symbol":"小円","x":539,"y":231,"confidence":"中","note":""},
+    {"name":"夏亭","symbol":"小円","x":584,"y":343,"confidence":"中","note":""},
+    {"name":"四個樓","symbol":"小円","x":721,"y":373,"confidence":"中","note":""},
+    {"name":"大春李","symbol":"小円","x":414,"y":492,"confidence":"中","note":""},
+    {"name":"清河驛","symbol":"小円","x":621,"y":491,"confidence":"中","note":""},
+    {"name":"西華","symbol":"小円","x":304,"y":539,"confidence":"中","note":""},
+    {"name":"陳州（淮陽）","symbol":"小円","x":1180,"y":659,"confidence":"高","note":""},
+    {"name":"板[繒?]口鋪","symbol":"小円","x":891,"y":835,"confidence":"低","note":""},
+    {"name":"瓦[罐?]集","symbol":"小円","x":1030,"y":886,"confidence":"中","note":""},
+    {"name":"周家口","symbol":"小円","x":654,"y":944,"confidence":"高","note":""},
+    {"name":"新站","symbol":"小円","x":956,"y":1122,"confidence":"中","note":""},
+    {"name":"[錢?]□","symbol":"小円","x":1543,"y":1236,"confidence":"低","note":"記号の右側の文字は一部判読困難。"},
+    {"name":"水寨集","symbol":"小円","x":1089,"y":1299,"confidence":"中","note":""},
+    {"name":"槐店","symbol":"小円","x":1352,"y":1446,"confidence":"中","note":""},
+    {"name":"新□","symbol":"小円","x":1598,"y":1597,"confidence":"低","note":"地名の下部が画像端で切れている。"},
+    {"name":"光武廟","symbol":"小円","x":1955,"y":1611,"confidence":"中","note":""}
+  ],
+  "date_marks": [
+    {"as_written":"18日 15.00","text_x":802,"text_y":170,"has_arrow":true,"tip_x":617,"tip_y":211,"points_to":"線","nearest_place":"陳賢店","confidence":"中","note":"引出線の根元は囲まれた領域の境界線上に見える。"},
+    {"as_written":"25日 12.00","text_x":1633,"text_y":965,"has_arrow":true,"tip_x":1387,"tip_y":1035,"points_to":"ハッチ領域","nearest_place":"[錢?]□","confidence":"中","note":"引出線の根元はハッチ領域の縁に見える。"},
+    {"as_written":"7月2日","text_x":2112,"text_y":1519,"has_arrow":true,"tip_x":1917,"tip_y":1598,"points_to":"ハッチ領域","nearest_place":"光武廟","confidence":"中","note":"引出線の根元はハッチ領域付近に見える。"}
+  ],
+  "visibility":"見えた",
+  "spec_issues":"画像は直接見えたが、一部の地名と記号は不鮮明または画像端で欠けており、判読と座標は概算。指定の画像寸法は幅2400、高さ1697として座標を換算した。"
+}

@@ -1,0 +1,306 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "雙王廟",
+      "symbol": "小円",
+      "x": 1585,
+      "y": 243,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "小營",
+      "symbol": "小円",
+      "x": 1471,
+      "y": 313,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "大雙溝",
+      "symbol": "小円",
+      "x": 1897,
+      "y": 382,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "尉氏",
+      "symbol": "小円",
+      "x": 1382,
+      "y": 540,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "大橋",
+      "symbol": "小円",
+      "x": 1302,
+      "y": 583,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "趙南[砦?]",
+      "symbol": "小円",
+      "x": 1527,
+      "y": 536,
+      "confidence": "低",
+      "note": "末字の細部が不鮮明。"
+    },
+    {
+      "name": "十八里集",
+      "symbol": "小円",
+      "x": 1612,
+      "y": 546,
+      "confidence": "高",
+      "note": "地名は記号の下に縦書き。"
+    },
+    {
+      "name": "[鄢?]崗",
+      "symbol": "小円",
+      "x": 1724,
+      "y": 553,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "劉庄",
+      "symbol": "小円",
+      "x": 1833,
+      "y": 551,
+      "confidence": "中",
+      "note": "記号付近に印刷番号が重なる。"
+    },
+    {
+      "name": "通許",
+      "symbol": "小円",
+      "x": 1930,
+      "y": 529,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "冠庄",
+      "symbol": "小円",
+      "x": 1904,
+      "y": 786,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "底[閣?]",
+      "symbol": "小円",
+      "x": 1940,
+      "y": 782,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "南曹集",
+      "symbol": "小円",
+      "x": 1400,
+      "y": 852,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "白潭",
+      "symbol": "小円",
+      "x": 1761,
+      "y": 969,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "崔橋",
+      "symbol": "小円",
+      "x": 2114,
+      "y": 1111,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "常營集",
+      "symbol": "小円",
+      "x": 2131,
+      "y": 1235,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "呂潭",
+      "symbol": "小円",
+      "x": 1773,
+      "y": 1307,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "扶溝",
+      "symbol": "小円",
+      "x": 1616,
+      "y": 1448,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "龍王廟",
+      "symbol": "小円",
+      "x": 2092,
+      "y": 1430,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "[通?][關?]口",
+      "symbol": "小円",
+      "x": 2178,
+      "y": 1457,
+      "confidence": "低",
+      "note": "右から左の読み順。上の地名文字が不鮮明。"
+    },
+    {
+      "name": "小吳家",
+      "symbol": "小円",
+      "x": 2144,
+      "y": 1530,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "□陵岡",
+      "symbol": "小円",
+      "x": 1922,
+      "y": 1660,
+      "confidence": "低",
+      "note": "画像下端。地名の一部と記号下部が透かしに重なる。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "13日夕",
+      "text_x": 1321,
+      "text_y": 52,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "小營",
+      "confidence": "中",
+      "note": "上端近くの破線に沿う注記。"
+    },
+    {
+      "as_written": "15日",
+      "text_x": 1027,
+      "text_y": 87,
+      "has_arrow": true,
+      "tip_x": 1449,
+      "tip_y": 302,
+      "points_to": "線",
+      "nearest_place": "小營",
+      "confidence": "低",
+      "note": "西岡大尉偵察。途中に記号あり。引出線が上端付近を通り、対象側端点の判定に不確かさがある。"
+    },
+    {
+      "as_written": "24日",
+      "text_x": 1974,
+      "text_y": 117,
+      "has_arrow": true,
+      "tip_x": 1759,
+      "tip_y": 319,
+      "points_to": "線",
+      "nearest_place": "大雙溝",
+      "confidence": "中",
+      "note": "地上並空中偵察。斜めの引出線の対象側端。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 1227,
+      "text_y": 515,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "大橋",
+      "confidence": "中",
+      "note": "西側の曲線に隣接。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 1736,
+      "text_y": 774,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "不明",
+      "nearest_place": "冠庄",
+      "confidence": "中",
+      "note": "複数の線・帯状領域の間にあり、対象を一意に定められない。"
+    },
+    {
+      "as_written": "29日",
+      "text_x": 2184,
+      "text_y": 725,
+      "has_arrow": true,
+      "tip_x": 2083,
+      "tip_y": 743,
+      "points_to": "ハッチ領域",
+      "nearest_place": "底[閣?]",
+      "confidence": "中",
+      "note": "東側の細い帯状領域から日付へ向かう矢印。"
+    },
+    {
+      "as_written": "25日\n｜\n28日",
+      "text_x": 1567,
+      "text_y": 1147,
+      "has_arrow": true,
+      "tip_x": 1659,
+      "tip_y": 1144,
+      "points_to": "ハッチ領域",
+      "nearest_place": "呂潭",
+      "confidence": "中",
+      "note": "日付は上下二段で、間に短い縦線が見える。矢じりと反対の右端を採った。"
+    },
+    {
+      "as_written": "17日夕",
+      "text_x": 2245,
+      "text_y": 1337,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "[通?][關?]口",
+      "confidence": "中",
+      "note": "東側の波状線に隣接。"
+    },
+    {
+      "as_written": "15日",
+      "text_x": 1454,
+      "text_y": 1455,
+      "has_arrow": true,
+      "tip_x": 1635,
+      "tip_y": 1473,
+      "points_to": "線",
+      "nearest_place": "扶溝",
+      "confidence": "中",
+      "note": "西岡大尉偵察。途中に記号あり。斜めの引出線の右上端を採った。"
+    },
+    {
+      "as_written": "18日",
+      "text_x": 2367,
+      "text_y": 1602,
+      "has_arrow": true,
+      "tip_x": 2205,
+      "tip_y": 1645,
+      "points_to": "不明",
+      "nearest_place": "小吳家",
+      "confidence": "低",
+      "note": "画像右下。線の対象側が透かしに重なり、端点座標は概略。日付の続きは確認できない。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "なし"
+}

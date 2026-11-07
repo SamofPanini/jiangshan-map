@@ -1,0 +1,198 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "小呉家",
+      "symbol": "小円",
+      "x": 559,
+      "y": 83,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "道陵岡",
+      "symbol": "小円",
+      "x": 339,
+      "y": 208,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "陳賢店",
+      "symbol": "小円",
+      "x": 538,
+      "y": 233,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "夏亭",
+      "symbol": "小円",
+      "x": 585,
+      "y": 343,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "四個樓",
+      "symbol": "小円",
+      "x": 721,
+      "y": 372,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "清河驛",
+      "symbol": "小円",
+      "x": 622,
+      "y": 489,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "大[蕃?]李",
+      "symbol": "小円",
+      "x": 413,
+      "y": 491,
+      "confidence": "中",
+      "note": "中央の字が不鮮明。"
+    },
+    {
+      "name": "西華",
+      "symbol": "小円",
+      "x": 305,
+      "y": 539,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "陳州（淮陽）",
+      "symbol": "小円",
+      "x": 1181,
+      "y": 658,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "板[纜?]口[鋪?]",
+      "symbol": "小円",
+      "x": 891,
+      "y": 834,
+      "confidence": "低",
+      "note": "第2字と末字の細部が不鮮明。"
+    },
+    {
+      "name": "瓦[墻?]集",
+      "symbol": "小円",
+      "x": 1031,
+      "y": 885,
+      "confidence": "低",
+      "note": "中央の字が不鮮明。"
+    },
+    {
+      "name": "周家口",
+      "symbol": "小円",
+      "x": 653,
+      "y": 943,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "新站",
+      "symbol": "小円",
+      "x": 958,
+      "y": 1121,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "錢[周?]",
+      "symbol": "小円",
+      "x": 1543,
+      "y": 1237,
+      "confidence": "低",
+      "note": "第2字が線と重なり不鮮明。"
+    },
+    {
+      "name": "水寨集",
+      "symbol": "小円",
+      "x": 1088,
+      "y": 1300,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "槐店",
+      "symbol": "小円",
+      "x": 1351,
+      "y": 1447,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "読めない",
+      "symbol": "読めない",
+      "x": 969,
+      "y": 1588,
+      "confidence": "低",
+      "note": "非常に薄い円弧状の印。地名は見えず、地点記号か画像の汚れか判別困難。"
+    },
+    {
+      "name": "新[蔡?]",
+      "symbol": "小円",
+      "x": 1598,
+      "y": 1597,
+      "confidence": "低",
+      "note": "縦書き。第2字が画像下端で不鮮明。"
+    },
+    {
+      "name": "光武廟",
+      "symbol": "小円",
+      "x": 1955,
+      "y": 1612,
+      "confidence": "高",
+      "note": ""
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "18日 15.00",
+      "text_x": 803,
+      "text_y": 174,
+      "has_arrow": true,
+      "tip_x": 617,
+      "tip_y": 211,
+      "points_to": "線",
+      "nearest_place": "陳賢店",
+      "confidence": "高",
+      "note": "根元はハッチ領域の右側境界線。"
+    },
+    {
+      "as_written": "25日 12.00",
+      "text_x": 1628,
+      "text_y": 965,
+      "has_arrow": true,
+      "tip_x": 1391,
+      "tip_y": 1037,
+      "points_to": "線",
+      "nearest_place": "錢[周?]",
+      "confidence": "高",
+      "note": "根元はハッチ領域の右側境界線。"
+    },
+    {
+      "as_written": "7月2日",
+      "text_x": 2108,
+      "text_y": 1520,
+      "has_arrow": true,
+      "tip_x": 1915,
+      "tip_y": 1594,
+      "points_to": "線",
+      "nearest_place": "光武廟",
+      "confidence": "高",
+      "note": "根元は光武廟の左上にあるハッチ領域の境界線。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "なし"
+}

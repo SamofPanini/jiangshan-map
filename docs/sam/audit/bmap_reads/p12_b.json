@@ -1,0 +1,150 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "周家口",
+      "symbol": "小円",
+      "x": 2222,
+      "y": 104,
+      "confidence": "高",
+      "note": "画像右上。地名は縦書き。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "六月十一日",
+      "text_x": 1031,
+      "text_y": 416,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例上段右。線種見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十[三?]日夕",
+      "text_x": 975,
+      "text_y": 427,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "低",
+      "note": "凡例上段中央。日の一の位が不鮮明。線種見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十四日夕",
+      "text_x": 920,
+      "text_y": 427,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例上段左。線種見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 1026,
+      "text_y": 701,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中段右。記号見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十七日",
+      "text_x": 965,
+      "text_y": 705,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中段中央。記号見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十八日",
+      "text_x": 912,
+      "text_y": 705,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中段左。記号見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月二十四日",
+      "text_x": 1019,
+      "text_y": 1007,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例下段右。模様見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月二十五日―二十八日",
+      "text_x": 962,
+      "text_y": 1064,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "中",
+      "note": "凡例下段中央。日付間に縦の連結線がある。模様見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月二十五日",
+      "text_x": 906,
+      "text_y": 1008,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "中",
+      "note": "凡例下段左。折り目と重なっている。模様見本の説明で、地図上の特定対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 1219,
+      "text_y": 332,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "「備考」本文中の日付。後続は「西岡大尉偵察」。地図上の特定対象を指していない。"
+    },
+    {
+      "as_written": "六月二十四日",
+      "text_x": 1211,
+      "text_y": 646,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "「備考」本文中の日付。後続は「地上並空中偵察」。地図上の特定対象を指していない。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "日付は凡例と備考本文にもあるため含めた。これらは地図上の個別対象を指さないのでNO_FITとした。座標は表示画像から元画像2400×1697に換算した概算。"
+}

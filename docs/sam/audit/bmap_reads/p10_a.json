@@ -1,0 +1,190 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "小呉家",
+      "symbol": "小円",
+      "x": 2100,
+      "y": 89,
+      "confidence": "中",
+      "note": "右から左に読む。"
+    },
+    {
+      "name": "道陵岡",
+      "symbol": "小円",
+      "x": 1883,
+      "y": 215,
+      "confidence": "中",
+      "note": "右から左に読む。"
+    },
+    {
+      "name": "陳賢店",
+      "symbol": "小円",
+      "x": 2077,
+      "y": 238,
+      "confidence": "高",
+      "note": "右から左に読む。"
+    },
+    {
+      "name": "夏亭",
+      "symbol": "小円",
+      "x": 2118,
+      "y": 351,
+      "confidence": "高",
+      "note": "右から左に読む。"
+    },
+    {
+      "name": "四個樓",
+      "symbol": "小円",
+      "x": 2254,
+      "y": 380,
+      "confidence": "高",
+      "note": "右から左に読む。"
+    },
+    {
+      "name": "大[春?]李",
+      "symbol": "小円",
+      "x": 1945,
+      "y": 498,
+      "confidence": "中",
+      "note": "右から左に読む。中央の字は不鮮明。"
+    },
+    {
+      "name": "清河驛",
+      "symbol": "小円",
+      "x": 2152,
+      "y": 497,
+      "confidence": "高",
+      "note": "右から左に読む。"
+    },
+    {
+      "name": "西華",
+      "symbol": "小円",
+      "x": 1837,
+      "y": 547,
+      "confidence": "高",
+      "note": "右から左に読む。"
+    },
+    {
+      "name": "周家口",
+      "symbol": "小円",
+      "x": 2185,
+      "y": 951,
+      "confidence": "高",
+      "note": "縦書き。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "18日 15.0[0?]",
+      "text_x": 2336,
+      "text_y": 178,
+      "has_arrow": true,
+      "tip_x": 2153,
+      "tip_y": 219,
+      "points_to": "線",
+      "nearest_place": "陳賢店",
+      "confidence": "中",
+      "note": "二段書き。時刻の末尾は不鮮明。対象側の端は夏亭北東側の境界線付近。"
+    },
+    {
+      "as_written": "六月十二日",
+      "text_x": 958,
+      "text_y": 1281,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "備考の線種凡例。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十三日夕",
+      "text_x": 899,
+      "text_y": 1297,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "備考の線種凡例。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十四日夕",
+      "text_x": 842,
+      "text_y": 1299,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "備考の線種凡例。地図上の個別対象への注記ではない。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 955,
+      "text_y": 1574,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "備考のハッチ凡例。地図上の個別領域への注記ではない。"
+    },
+    {
+      "as_written": "六月十七日",
+      "text_x": 895,
+      "text_y": 1589,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "備考のハッチ凡例。地図上の個別領域への注記ではない。"
+    },
+    {
+      "as_written": "六月十八日",
+      "text_x": 839,
+      "text_y": 1586,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "備考のハッチ凡例。地図上の個別領域への注記ではない。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 1150,
+      "text_y": 1214,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "中",
+      "note": "備考本文中の日付。後続に「西岡大尉偵察」。個別の図形を指さない。"
+    },
+    {
+      "as_written": "六月二十四日",
+      "text_x": 1145,
+      "text_y": 1542,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "中",
+      "note": "備考本文中の日付。後続の文章は画像下端で途切れる。個別の図形を指さない。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "日付は凡例・備考本文中のものも収録し、個別の注記対象がないためNO_FITとした。"
+}

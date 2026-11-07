@@ -1,0 +1,126 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "周家口",
+      "symbol": "小円",
+      "x": 2222,
+      "y": 103,
+      "confidence": "高",
+      "note": "画像右上の地点記号。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "六月十二日",
+      "text_x": 1033,
+      "text_y": 416,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中の日付で、地図上の対象を直接指していない。"
+    },
+    {
+      "as_written": "六月十三日夕",
+      "text_x": 979,
+      "text_y": 423,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中の日付。"
+    },
+    {
+      "as_written": "六月十四日夕",
+      "text_x": 921,
+      "text_y": 423,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中の日付。"
+    },
+    {
+      "as_written": "六月十五日",
+      "text_x": 1026,
+      "text_y": 696,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中の日付。"
+    },
+    {
+      "as_written": "六月十七日",
+      "text_x": 968,
+      "text_y": 702,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中の日付。"
+    },
+    {
+      "as_written": "六月十八日",
+      "text_x": 912,
+      "text_y": 702,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中の日付。"
+    },
+    {
+      "as_written": "六月二十四日",
+      "text_x": 1018,
+      "text_y": 1006,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中の日付。"
+    },
+    {
+      "as_written": "六月二十五日－二十八日",
+      "text_x": 961,
+      "text_y": 1063,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "高",
+      "note": "凡例中の日付。"
+    },
+    {
+      "as_written": "六月二十五日",
+      "text_x": 905,
+      "text_y": 1005,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "NO_FIT",
+      "nearest_place": "",
+      "confidence": "中",
+      "note": "凡例中の日付。下部は折れ目に重なる。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "日付は凡例中のものを含めた。凡例の日付は地図上の対象を直接指していないため、points_to を NO_FIT とした。座標は目視による概数。"
+}

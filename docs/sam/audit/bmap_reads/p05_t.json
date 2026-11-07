@@ -1,0 +1,214 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "開封",
+      "symbol": "四角",
+      "x": 422,
+      "y": 961,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "李長庄",
+      "symbol": "小円",
+      "x": 540,
+      "y": 964,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "十里舗",
+      "symbol": "小円",
+      "x": 608,
+      "y": 969,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "曲興集",
+      "symbol": "小円",
+      "x": 1088,
+      "y": 977,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "蘭封",
+      "symbol": "小円",
+      "x": 1342,
+      "y": 1014,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "大井",
+      "symbol": "小円",
+      "x": 93,
+      "y": 999,
+      "confidence": "中",
+      "note": "日付注記と線が近接する。"
+    },
+    {
+      "name": "蘆花岡",
+      "symbol": "小円",
+      "x": 371,
+      "y": 1066,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "岳店",
+      "symbol": "小円",
+      "x": 325,
+      "y": 1148,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "王家庄",
+      "symbol": "小円",
+      "x": 674,
+      "y": 1268,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "陳留",
+      "symbol": "小円",
+      "x": 773,
+      "y": 1340,
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "name": "張庄",
+      "symbol": "小円",
+      "x": 998,
+      "y": 1477,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "双王府",
+      "symbol": "小円",
+      "x": 130,
+      "y": 1547,
+      "confidence": "中",
+      "note": "縦書き。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "7月11日",
+      "text_x": 567,
+      "text_y": 509,
+      "has_arrow": true,
+      "tip_x": 432,
+      "tip_y": 847,
+      "points_to": "線",
+      "nearest_place": "開封",
+      "confidence": "中",
+      "note": "増水橋梁流失ス。矢印の根元は開封北側の線付近。"
+    },
+    {
+      "as_written": "7月11日",
+      "text_x": 773,
+      "text_y": 850,
+      "has_arrow": true,
+      "tip_x": 617,
+      "tip_y": 969,
+      "points_to": "ハッチ領域",
+      "nearest_place": "十里舗",
+      "confidence": "中",
+      "note": "擴大ス。根元付近で複数の線が交わる。"
+    },
+    {
+      "as_written": "13日夕",
+      "text_x": 72,
+      "text_y": 940,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "不明",
+      "nearest_place": "大井",
+      "confidence": "低",
+      "note": "日付と線が重なり、対象を特定しにくい。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 197,
+      "text_y": 930,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "不明",
+      "nearest_place": "大井",
+      "confidence": "中",
+      "note": "近くに複数の線があり、対象を特定しにくい。"
+    },
+    {
+      "as_written": "19日",
+      "text_x": 416,
+      "text_y": 1229,
+      "has_arrow": true,
+      "tip_x": 376,
+      "tip_y": 1175,
+      "points_to": "ハッチ領域",
+      "nearest_place": "岳店",
+      "confidence": "中",
+      "note": "根元は小さな網掛け状の部分付近。"
+    },
+    {
+      "as_written": "25～28日",
+      "text_x": 801,
+      "text_y": 1175,
+      "has_arrow": true,
+      "tip_x": 623,
+      "tip_y": 1160,
+      "points_to": "線",
+      "nearest_place": "王家庄",
+      "confidence": "中",
+      "note": "根元は曲線付近。"
+    },
+    {
+      "as_written": "14日",
+      "text_x": 104,
+      "text_y": 1240,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "不明",
+      "nearest_place": "双王府",
+      "confidence": "低",
+      "note": "末尾の小さな印と対象線の対応は判然としない。"
+    },
+    {
+      "as_written": "24日",
+      "text_x": 518,
+      "text_y": 1426,
+      "has_arrow": true,
+      "tip_x": 288,
+      "tip_y": 1640,
+      "points_to": "不明",
+      "nearest_place": "双王府",
+      "confidence": "低",
+      "note": "地上並空中偵察。根元は複数の線と網掛けが重なる部分にある。"
+    },
+    {
+      "as_written": "29日",
+      "text_x": 1064,
+      "text_y": 1435,
+      "has_arrow": true,
+      "tip_x": 965,
+      "tip_y": 1506,
+      "points_to": "ハッチ領域",
+      "nearest_place": "張庄",
+      "confidence": "中",
+      "note": "根元は張庄近くの網掛け状の部分。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "添付画像を直接見て判読した。座標は表示された画像上の位置から指定の元画像寸法へ換算した概算で、細い線が交差する箇所では矢印の根元と対象に不確実性がある。"
+}

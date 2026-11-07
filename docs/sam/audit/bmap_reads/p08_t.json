@@ -1,0 +1,42 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {"name":"朱仙鎮","symbol":"小円","x":1674,"y":102,"confidence":"高","note":""},
+    {"name":"双王府","symbol":"小円","x":1585,"y":242,"confidence":"高","note":""},
+    {"name":"小営","symbol":"小円","x":1472,"y":312,"confidence":"中","note":""},
+    {"name":"大双溝","symbol":"小円","x":1897,"y":382,"confidence":"高","note":""},
+    {"name":"大橋","symbol":"小円","x":1302,"y":583,"confidence":"高","note":""},
+    {"name":"尉氏","symbol":"小円","x":1382,"y":539,"confidence":"高","note":""},
+    {"name":"趙崗[巷?]","symbol":"小円","x":1527,"y":535,"confidence":"低","note":"最後の字は判読に自信がない。"},
+    {"name":"十八里集","symbol":"小円","x":1610,"y":547,"confidence":"中","note":"縦書き。"},
+    {"name":"監崗","symbol":"小円","x":1728,"y":552,"confidence":"中","note":""},
+    {"name":"劉庄","symbol":"小円","x":1832,"y":548,"confidence":"中","note":"数字の重なりで一部不鮮明。"},
+    {"name":"許通","symbol":"小円","x":1928,"y":529,"confidence":"中","note":"縦書き。"},
+    {"name":"南曹集","symbol":"小円","x":1399,"y":851,"confidence":"高","note":""},
+    {"name":"冠庄","symbol":"小円","x":1905,"y":784,"confidence":"中","note":""},
+    {"name":"関底","symbol":"小円","x":1940,"y":783,"confidence":"中","note":""},
+    {"name":"白潭","symbol":"小円","x":1760,"y":969,"confidence":"中","note":""},
+    {"name":"崔橋","symbol":"小円","x":2114,"y":1111,"confidence":"高","note":""},
+    {"name":"常営集","symbol":"小円","x":2131,"y":1234,"confidence":"中","note":""},
+    {"name":"呂潭","symbol":"小円","x":1772,"y":1307,"confidence":"中","note":""},
+    {"name":"扶溝","symbol":"小円","x":1618,"y":1447,"confidence":"高","note":""},
+    {"name":"龍王廟","symbol":"小円","x":2092,"y":1431,"confidence":"高","note":""},
+    {"name":"遜母口","symbol":"小円","x":2178,"y":1457,"confidence":"中","note":""},
+    {"name":"小呉家","symbol":"小円","x":2144,"y":1529,"confidence":"中","note":""}
+  ],
+  "date_marks": [
+    {"as_written":"13日夕","text_x":1327,"text_y":50,"has_arrow":false,"tip_x":null,"tip_y":null,"points_to":"不明","nearest_place":"朱仙鎮","confidence":"中","note":"画像上端に近く、注記との対応は不明。"},
+    {"as_written":"15日","text_x":1028,"text_y":85,"has_arrow":true,"tip_x":1086,"tip_y":34,"points_to":"不明","nearest_place":"小営","confidence":"低","note":"「西岡大尉[凵?]偵察」。線が画像上端で切れており、対象側の端を確定できない。"},
+    {"as_written":"24日","text_x":1976,"text_y":118,"has_arrow":true,"tip_x":1704,"tip_y":347,"points_to":"不明","nearest_place":"大双溝","confidence":"低","note":"「地上並空中偵察」。指示線と地図の線が交差しており、対象側の端は不確か。"},
+    {"as_written":"14日夕","text_x":1225,"text_y":514,"has_arrow":false,"tip_x":null,"tip_y":null,"points_to":"不明","nearest_place":"大橋","confidence":"中","note":"近傍の曲線との対応は不明。"},
+    {"as_written":"14日夕","text_x":1735,"text_y":775,"has_arrow":false,"tip_x":null,"tip_y":null,"points_to":"不明","nearest_place":"白潭","confidence":"中","note":"近傍の線との対応は不明。"},
+    {"as_written":"29日","text_x":2186,"text_y":726,"has_arrow":true,"tip_x":2092,"tip_y":738,"points_to":"線","nearest_place":"大双溝","confidence":"中","note":"細長い帯状部分付近を指す。"},
+    {"as_written":"25日～28日","text_x":1566,"text_y":1147,"has_arrow":true,"tip_x":1659,"tip_y":1143,"points_to":"ハッチ領域","nearest_place":"呂潭","confidence":"中","note":"画像上では「25日」と「28日」が上下に並ぶ。"},
+    {"as_written":"15日","text_x":1456,"text_y":1456,"has_arrow":true,"tip_x":1638,"tip_y":1452,"points_to":"不明","nearest_place":"扶溝","confidence":"低","note":"「西岡大尉[凵?]偵察」。指示線は他の線と重なり、対象側の端は不確か。"},
+    {"as_written":"17日夕","text_x":2245,"text_y":1336,"has_arrow":false,"tip_x":null,"tip_y":null,"points_to":"不明","nearest_place":"常営集","confidence":"中","note":""},
+    {"as_written":"18日","text_x":2368,"text_y":1603,"has_arrow":false,"tip_x":null,"tip_y":null,"points_to":"不明","nearest_place":"小呉家","confidence":"中","note":"画像右端に近く、続きは見えない。"}
+  ],
+  "visibility":"見えた",
+  "spec_issues":"添付画像を直接見て判読した。座標は表示画像から指定の 2400×1697 に換算した概算であり、重なりや画像端の切断により一部の地名・指示線の対象側の端は不確か。地点の網羅性は保証できない。"
+}

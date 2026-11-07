@@ -1,0 +1,94 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "新站",
+      "symbol": "小円",
+      "x": 975,
+      "y": 212,
+      "confidence": "高",
+      "note": "横書きを右から左に読んだ。"
+    },
+    {
+      "name": "水寨集",
+      "symbol": "小円",
+      "x": 1103,
+      "y": 388,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "[銭?]店",
+      "symbol": "小円",
+      "x": 1557,
+      "y": 332,
+      "confidence": "中",
+      "note": "横書きを右から左に読んだ。銭の字形は不確か。"
+    },
+    {
+      "name": "槐店",
+      "symbol": "小円",
+      "x": 1364,
+      "y": 536,
+      "confidence": "高",
+      "note": "横書きを右から左に読んだ。"
+    },
+    {
+      "name": "新安集",
+      "symbol": "小円",
+      "x": 1611,
+      "y": 694,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "光武廟",
+      "symbol": "小円",
+      "x": 1965,
+      "y": 712,
+      "confidence": "中",
+      "note": "横書きを右から左に読んだ。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "□日 12.00",
+      "text_x": 1645,
+      "text_y": 69,
+      "has_arrow": true,
+      "tip_x": 1395,
+      "tip_y": 130,
+      "points_to": "線",
+      "nearest_place": "[銭?]店",
+      "confidence": "低",
+      "note": "日付は画像上端で切れており、日より前の文字と文字数は判読できない。12.00は見える。対象側の端はハッチ領域の境界付近。"
+    },
+    {
+      "as_written": "7月2日",
+      "text_x": 2123,
+      "text_y": 621,
+      "has_arrow": true,
+      "tip_x": 1928,
+      "tip_y": 695,
+      "points_to": "線",
+      "nearest_place": "光武廟",
+      "confidence": "高",
+      "note": "対象側の端は小円の左上にあるハッチ領域の境界線上。"
+    },
+    {
+      "as_written": "7月8日",
+      "text_x": 2168,
+      "text_y": 1372,
+      "has_arrow": true,
+      "tip_x": 2312,
+      "tip_y": 1294,
+      "points_to": "線",
+      "nearest_place": "光武廟",
+      "confidence": "中",
+      "note": "対象側の端は画像右下の曲線との接点付近。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "上端の日付注記が切れているため、全文と文字数を確定できない。座標は元画像2400×1697に換算した概数。"
+}

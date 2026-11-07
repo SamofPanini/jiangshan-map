@@ -1,0 +1,306 @@
+{
+  "image_width": 2400,
+  "image_height": 1697,
+  "places": [
+    {
+      "name": "双王府",
+      "symbol": "小円",
+      "x": 1583,
+      "y": 246,
+      "confidence": "中",
+      "note": "記号が濃い描線と重なる。"
+    },
+    {
+      "name": "小營",
+      "symbol": "小円",
+      "x": 1469,
+      "y": 314,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "大[夏?]溝",
+      "symbol": "小円",
+      "x": 1898,
+      "y": 383,
+      "confidence": "低",
+      "note": "中央の字が不鮮明。右から左へ読んだ。"
+    },
+    {
+      "name": "尉氏",
+      "symbol": "小円",
+      "x": 1382,
+      "y": 541,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "大橋",
+      "symbol": "小円",
+      "x": 1303,
+      "y": 584,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "趙崗[砦?]",
+      "symbol": "小円",
+      "x": 1527,
+      "y": 536,
+      "confidence": "中",
+      "note": "右から左へ読んだ。末字に不確実性がある。"
+    },
+    {
+      "name": "十八里集",
+      "symbol": "小円",
+      "x": 1612,
+      "y": 546,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "[監?]崗",
+      "symbol": "小円",
+      "x": 1725,
+      "y": 553,
+      "confidence": "中",
+      "note": "右から左へ読んだ。"
+    },
+    {
+      "name": "劉庄",
+      "symbol": "小円",
+      "x": 1833,
+      "y": 550,
+      "confidence": "中",
+      "note": "数字の印字が近接している。"
+    },
+    {
+      "name": "通許",
+      "symbol": "小円",
+      "x": 1928,
+      "y": 530,
+      "confidence": "高",
+      "note": "縦書き。"
+    },
+    {
+      "name": "南曹集",
+      "symbol": "小円",
+      "x": 1399,
+      "y": 851,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "冠庄",
+      "symbol": "小円",
+      "x": 1906,
+      "y": 787,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "底[閣?]",
+      "symbol": "小円",
+      "x": 1941,
+      "y": 781,
+      "confidence": "低",
+      "note": "右から左へ読んだ。門構えの字が不鮮明。"
+    },
+    {
+      "name": "白潭",
+      "symbol": "小円",
+      "x": 1759,
+      "y": 971,
+      "confidence": "中",
+      "note": "記号内に濃い描線が重なる。"
+    },
+    {
+      "name": "崔橋",
+      "symbol": "小円",
+      "x": 2114,
+      "y": 1111,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "常營集",
+      "symbol": "小円",
+      "x": 2132,
+      "y": 1234,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "呂潭",
+      "symbol": "小円",
+      "x": 1771,
+      "y": 1306,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "扶溝",
+      "symbol": "小円",
+      "x": 1616,
+      "y": 1448,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "龍王廟",
+      "symbol": "小円",
+      "x": 2092,
+      "y": 1431,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "通[岡?]口",
+      "symbol": "小円",
+      "x": 2178,
+      "y": 1457,
+      "confidence": "中",
+      "note": "右から左へ読んだ。"
+    },
+    {
+      "name": "小吳家",
+      "symbol": "小円",
+      "x": 2143,
+      "y": 1529,
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "name": "[池?][陵?]岡",
+      "symbol": "小円",
+      "x": 1920,
+      "y": 1659,
+      "confidence": "低",
+      "note": "画像下端。記号の下部が切れ、文字も不鮮明。"
+    }
+  ],
+  "date_marks": [
+    {
+      "as_written": "13日夕",
+      "text_x": 1322,
+      "text_y": 51,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "小營",
+      "confidence": "中",
+      "note": "上端近くの破線に隣接。"
+    },
+    {
+      "as_written": "15日",
+      "text_x": 1025,
+      "text_y": 87,
+      "has_arrow": true,
+      "tip_x": 1439,
+      "tip_y": 277,
+      "points_to": "線",
+      "nearest_place": "小營",
+      "confidence": "低",
+      "note": "付記は「西岡大尉□偵察」。□は判別できない記号。斜線から湾曲部へ続く線の根元位置は概略。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 1228,
+      "text_y": 516,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "大橋",
+      "confidence": "高",
+      "note": "左側の湾曲した実線に隣接。"
+    },
+    {
+      "as_written": "24日",
+      "text_x": 1975,
+      "text_y": 118,
+      "has_arrow": true,
+      "tip_x": 1738,
+      "tip_y": 328,
+      "points_to": "ハッチ領域",
+      "nearest_place": "大[夏?]溝",
+      "confidence": "中",
+      "note": "付記は「地上並空中偵察」。斜めの指示線を日付と反対側へたどった端。"
+    },
+    {
+      "as_written": "29日",
+      "text_x": 2185,
+      "text_y": 726,
+      "has_arrow": true,
+      "tip_x": 2090,
+      "tip_y": 742,
+      "points_to": "線",
+      "nearest_place": "底[閣?]",
+      "confidence": "高",
+      "note": "右側の細長い区画から日付側へ向く矢印。"
+    },
+    {
+      "as_written": "14日夕",
+      "text_x": 1734,
+      "text_y": 776,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "不明",
+      "nearest_place": "冠庄",
+      "confidence": "中",
+      "note": "中央の細い帯状部分に近接するが、対象を限定できない。"
+    },
+    {
+      "as_written": "25日\n28日",
+      "text_x": 1566,
+      "text_y": 1149,
+      "has_arrow": true,
+      "tip_x": 1664,
+      "tip_y": 1140,
+      "points_to": "線",
+      "nearest_place": "呂潭",
+      "confidence": "中",
+      "note": "二つの日付が上下に並び、間に縦の短線がある。左向き矢印の右側の端を採った。"
+    },
+    {
+      "as_written": "17日夕",
+      "text_x": 2242,
+      "text_y": 1337,
+      "has_arrow": false,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "線",
+      "nearest_place": "常營集",
+      "confidence": "中",
+      "note": "右下の波状の線に隣接。"
+    },
+    {
+      "as_written": "15日",
+      "text_x": 1453,
+      "text_y": 1458,
+      "has_arrow": true,
+      "tip_x": 1635,
+      "tip_y": 1469,
+      "points_to": "線",
+      "nearest_place": "扶溝",
+      "confidence": "中",
+      "note": "付記は「西岡大尉□偵察」。□は判別できない記号。左下へ向く指示線の右上側の端を採った。"
+    },
+    {
+      "as_written": "18日",
+      "text_x": 2364,
+      "text_y": 1602,
+      "has_arrow": true,
+      "tip_x": null,
+      "tip_y": null,
+      "points_to": "不明",
+      "nearest_place": "小吳家",
+      "confidence": "低",
+      "note": "日付側へ向く矢印らしい線があるが、反対側は下端の透かしと重なり、根元を確定できない。"
+    }
+  ],
+  "visibility": "見えた",
+  "spec_issues": "18日の矢印は根元側の端を判別できないため、tip座標をnullとした。"
+}
