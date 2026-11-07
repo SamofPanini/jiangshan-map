@@ -1,0 +1,34 @@
+INPUT docs/sam/audit/bmap_reads/p05_t.json sha256=a9d8662d23acf5852c7b5c2ab1e379059e0a5211eb25d86540cdb10213264318 places=12 dates=9
+INPUT docs/sam/audit/bmap_reads/p05_a.json sha256=385c18b74472d10a0028ea489155d06271f00060341a5271099f53b6c3d0c339 places=14 dates=9
+INPUT docs/sam/audit/bmap_reads/p05_b.json sha256=d6792d2706731b04557466904ff02498fca95a258cde8dcf27dab165f36b8ddf places=14 dates=9
+INPUT docs/sam/files/pages/D5/p05.jpg sha256=24a821518cdd6368ff99bcba9f23c9af7c57e93a7d76809ef94eb0af074b631e images=1
+INPUT docs/sam/audit/bmap_reads/p06_t.json sha256=bdbb54007bf99a43033ca79a50e3ef762fe1ec04e3d54366782ceeb07638131e places=27 dates=17
+INPUT docs/sam/audit/bmap_reads/p06_a.json sha256=bef00b8f661533e7b90d7912270776265351e2888cf8f57ef8eb75882d17d663 places=29 dates=17
+INPUT docs/sam/audit/bmap_reads/p06_b.json sha256=6fe20d0d58f81c54c54d69b090b4440e58da34be1ce73dbc1f4261d096d77433 places=29 dates=17
+INPUT docs/sam/files/pages/D5/p06.jpg sha256=9a685e85e2e6e7a77ff383836344e8b001e1dba427b55b360e445c7ce5c05fcc images=1
+INPUT docs/sam/audit/bmap_reads/p07_t.json sha256=c7001547a0a7399c4efd6fd3be9a2cd1863e3fdb0c3aae631192d4a7f6ccf05a places=27 dates=7
+INPUT docs/sam/audit/bmap_reads/p07_a.json sha256=877ac4b2c69d0cd2e17cbb53bbd26807aedcabc9721a0f05f622dffbc6d4d1bf places=27 dates=7
+INPUT docs/sam/audit/bmap_reads/p07_b.json sha256=e904cdd06d610e4ebd9c9d5224387475370beb22b18989a4189b541e1abf6a3b places=27 dates=7
+INPUT docs/sam/files/pages/D5/p07.jpg sha256=936e8c7674f31b4b0a2e1b26bbccf93f8bb02d9c1801a6774615abdd3ef4248a images=1
+INPUT docs/sam/audit/bmap_reads/p08_t.json sha256=9692bd97887dda26bced7bbcad149d10e0fb16f2db0f3c1c6c5557527ef7cbc1 places=22 dates=10
+INPUT docs/sam/audit/bmap_reads/p08_a.json sha256=99b6e26c82cec3193a3f66ae886493de4b5d3eb21b6939ff1e9628b239516e58 places=22 dates=10
+INPUT docs/sam/audit/bmap_reads/p08_b.json sha256=6be517923345ed06bf60bb8fc556ecc2bd551269cd5e3c297c8f22658156f0e0 places=22 dates=10
+INPUT docs/sam/files/pages/D5/p08.jpg sha256=28e7565bfdef7e76c702ba41166628bece36949e9f1000f3daf32b02f2597b40 images=1
+INPUT docs/sam/audit/bmap_reads/p09_t.json sha256=ba8a4ade2dc4a913c2c8eb640803dbf3ffd4ccc0c1ce887d4c65dd901d49d4b3 places=18 dates=3
+INPUT docs/sam/audit/bmap_reads/p09_a.json sha256=f6067988eb7b196cf5c78c696b445c37d7db766f789f641c7a2a42c29ccbae13 places=18 dates=3
+INPUT docs/sam/audit/bmap_reads/p09_b.json sha256=4f70e96495920051f42368d222d8f8e248d2e142d8a7a6bd67dcb8c8b9e07fd5 places=19 dates=3
+INPUT docs/sam/files/pages/D5/p09.jpg sha256=9beb34cc4be4715ce3ed0c7e51df75003151f6619480fd485382e7c4800c77ee images=1
+INPUT docs/sam/audit/bmap_reads/p10_t.json sha256=d52e6e40cc84b7d7db0558922128187113a8d81927c32525844fd9c85bf4e5d9 places=9 dates=7
+INPUT docs/sam/audit/bmap_reads/p10_a.json sha256=2e91840c4d0a950a295b799d52865a78794321a18903f815d15b0cff5924376b places=9 dates=9
+INPUT docs/sam/audit/bmap_reads/p10_b.json sha256=164d33c9ad2563a8d9466571c3171389b018eb2b0d03c8ea943254a64945d804 places=9 dates=9
+INPUT docs/sam/files/pages/D5/p10.jpg sha256=a50b789492f3d2eeb770d67d1507a71d1025d793b5c7aee9801e08f9792daf89 images=1
+INPUT docs/sam/audit/bmap_reads/p11_t.json sha256=ecbaf989d4d275b7212e4e48a62f4f7bfecacb15bef10e48b373190580ce4821 places=6 dates=2
+INPUT docs/sam/audit/bmap_reads/p11_a.json sha256=7a2938d246f26d591b15089f5f6077a95ac793527b62b5cb9b7650ad9842d716 places=6 dates=3
+INPUT docs/sam/audit/bmap_reads/p11_b.json sha256=dde8be7fa8ae1e252a76785a470c1037056a52b5c28b3765fdddec4ce9825a79 places=6 dates=3
+INPUT docs/sam/files/pages/D5/p11.jpg sha256=48ca0ffad2fd08de0fcfabaaa3da3b38bcb97c6894ddf286ac6d9f39033b20a7 images=1
+INPUT docs/sam/audit/bmap_reads/p12_t.json sha256=fa2313d75dbb43a210e8fafc40c6ffd73cd45246a416ff79857ea13f8a873eb5 places=1 dates=9
+INPUT docs/sam/audit/bmap_reads/p12_a.json sha256=177083024e6ba6b3db287094c31c5a52b0b30c55be576afdb95e4f1a3c4c44a1 places=1 dates=9
+INPUT docs/sam/audit/bmap_reads/p12_b.json sha256=97d73a1ead3d4e8a45ae165a3a3dd932dd958ebcf5e04598baf7ec36ac635c1e places=1 dates=11
+INPUT docs/sam/files/pages/D5/p12.jpg sha256=1f54e4f9a8e4b53031f8693662a2884d7c12e97916aec5a95a565fa434eedddb images=1
+INPUT data/sam/gazetteer/huanghe1938_gazetteer.json sha256=2789bfbc37557db5a26b6c81124b6d957ac4eb32cc0e30d77594b2927008a5ed records=76
+DONE base=p09 connected=3 controls=8 recommended=affine candidates=154

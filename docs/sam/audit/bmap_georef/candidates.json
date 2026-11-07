@@ -1,0 +1,7499 @@
+{
+  "base": "p09",
+  "candidates": [
+    {
+      "displacement": 1.795,
+      "kind": "place",
+      "name": "李長庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p05",
+      "proposed": [
+        540,
+        964
+      ],
+      "radius": 9,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "李長庄",
+          "note": "地名は縦書き。",
+          "symbol": "小円",
+          "x": 543,
+          "y": 964
+        },
+        "b": {
+          "confidence": "高",
+          "name": "李長庄",
+          "note": "地名は縦書き。",
+          "symbol": "小円",
+          "x": 542,
+          "y": 966
+        },
+        "t": {
+          "confidence": "高",
+          "name": "李長庄",
+          "note": "縦書き。",
+          "symbol": "小円",
+          "x": 540,
+          "y": 964
+        }
+      },
+      "refine_failed": false,
+      "score": 162.356,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 540,
+      "y": 964
+    },
+    {
+      "displacement": 1.944,
+      "kind": "place",
+      "name": "十里鋪",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p05",
+      "proposed": [
+        607,
+        967
+      ],
+      "radius": 9,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "十里鋪",
+          "note": "",
+          "symbol": "小円",
+          "x": 608,
+          "y": 968
+        },
+        "b": {
+          "confidence": "高",
+          "name": "十里鋪",
+          "note": "",
+          "symbol": "小円",
+          "x": 608,
+          "y": 969
+        },
+        "t": {
+          "confidence": "高",
+          "name": "十里舗",
+          "note": "",
+          "symbol": "小円",
+          "x": 608,
+          "y": 969
+        }
+      },
+      "refine_failed": false,
+      "score": 161.746,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 607,
+      "y": 967
+    },
+    {
+      "displacement": 0.471,
+      "kind": "place",
+      "name": "大井",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p05",
+      "proposed": [
+        93,
+        999
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "大井",
+          "note": "",
+          "symbol": "小円",
+          "x": 94,
+          "y": 998
+        },
+        "b": {
+          "confidence": "中",
+          "name": "大井",
+          "note": "",
+          "symbol": "小円",
+          "x": 93,
+          "y": 1001
+        },
+        "t": {
+          "confidence": "中",
+          "name": "大井",
+          "note": "日付注記と線が近接する。",
+          "symbol": "小円",
+          "x": 93,
+          "y": 999
+        }
+      },
+      "refine_failed": false,
+      "score": 177.367,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 93,
+      "y": 999
+    },
+    {
+      "displacement": 0.745,
+      "kind": "place",
+      "name": "蘆花岡",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p05",
+      "proposed": [
+        371,
+        1066
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "蘆花[崗?]",
+          "note": "末字の細部が不鮮明。",
+          "symbol": "小円",
+          "x": 370,
+          "y": 1065
+        },
+        "b": {
+          "confidence": "高",
+          "name": "蘆花岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 370,
+          "y": 1066
+        },
+        "t": {
+          "confidence": "中",
+          "name": "蘆花岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 371,
+          "y": 1066
+        }
+      },
+      "refine_failed": false,
+      "score": 169.086,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 371,
+      "y": 1066
+    },
+    {
+      "displacement": 2.134,
+      "kind": "place",
+      "name": "岳店",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p05",
+      "proposed": [
+        325,
+        1146
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "岳店",
+          "note": "",
+          "symbol": "小円",
+          "x": 327,
+          "y": 1147
+        },
+        "b": {
+          "confidence": "中",
+          "name": "岳店",
+          "note": "",
+          "symbol": "小円",
+          "x": 327,
+          "y": 1148
+        },
+        "t": {
+          "confidence": "中",
+          "name": "岳店",
+          "note": "",
+          "symbol": "小円",
+          "x": 325,
+          "y": 1148
+        }
+      },
+      "refine_failed": false,
+      "score": 159.09,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 325,
+      "y": 1146
+    },
+    {
+      "displacement": 1.054,
+      "kind": "place",
+      "name": "王家庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p05",
+      "proposed": [
+        673,
+        1268
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "王家庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 673,
+          "y": 1267
+        },
+        "b": {
+          "confidence": "高",
+          "name": "王家庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 675,
+          "y": 1268
+        },
+        "t": {
+          "confidence": "高",
+          "name": "王家庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 674,
+          "y": 1268
+        }
+      },
+      "refine_failed": false,
+      "score": 169.799,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 673,
+      "y": 1268
+    },
+    {
+      "displacement": 0.667,
+      "kind": "place",
+      "name": "張庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p05",
+      "proposed": [
+        998,
+        1477
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "張庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 999,
+          "y": 1477
+        },
+        "b": {
+          "confidence": "高",
+          "name": "張庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 999,
+          "y": 1477
+        },
+        "t": {
+          "confidence": "高",
+          "name": "張庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 998,
+          "y": 1477
+        }
+      },
+      "refine_failed": false,
+      "score": 184.031,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 998,
+      "y": 1477
+    },
+    {
+      "displacement": 1.667,
+      "kind": "place",
+      "name": "双王府",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p05",
+      "proposed": [
+        131,
+        1546
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "双王府",
+          "note": "地名は縦書き。",
+          "symbol": "小円",
+          "x": 133,
+          "y": 1543
+        },
+        "b": {
+          "confidence": "中",
+          "name": "双王府",
+          "note": "地名は縦書き。",
+          "symbol": "小円",
+          "x": 135,
+          "y": 1548
+        },
+        "t": {
+          "confidence": "中",
+          "name": "双王府",
+          "note": "縦書き。",
+          "symbol": "小円",
+          "x": 130,
+          "y": 1547
+        }
+      },
+      "refine_failed": false,
+      "score": 159.179,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 131,
+      "y": 1546
+    },
+    {
+      "displacement": 0.0,
+      "kind": "place",
+      "name": "京水鎮",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        623,
+        593
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "京水鎮",
+          "note": "",
+          "symbol": "小円",
+          "x": 622,
+          "y": 594
+        },
+        "b": {
+          "confidence": "高",
+          "name": "京水鎮",
+          "note": "",
+          "symbol": "小円",
+          "x": 625,
+          "y": 594
+        },
+        "t": {
+          "confidence": "中",
+          "name": "京水鎮",
+          "note": "",
+          "symbol": "小円",
+          "x": 622,
+          "y": 591
+        }
+      },
+      "refine_failed": false,
+      "score": 184.997,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 623,
+      "y": 593
+    },
+    {
+      "displacement": 0.0,
+      "kind": "place",
+      "name": "鄭州",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        491,
+        864
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "鄭州",
+          "note": "",
+          "symbol": "小円",
+          "x": 491,
+          "y": 864
+        },
+        "b": {
+          "confidence": "高",
+          "name": "鄭州",
+          "note": "",
+          "symbol": "小円",
+          "x": 491,
+          "y": 864
+        },
+        "t": {
+          "confidence": "高",
+          "name": "鄭州",
+          "note": "",
+          "symbol": "小円",
+          "x": 491,
+          "y": 864
+        }
+      },
+      "refine_failed": false,
+      "score": 163.898,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 491,
+      "y": 864
+    },
+    {
+      "displacement": 0.0,
+      "kind": "place",
+      "name": "楊橋",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        890,
+        623
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "楊橋",
+          "note": "",
+          "symbol": "小円",
+          "x": 890,
+          "y": 623
+        },
+        "b": {
+          "confidence": "高",
+          "name": "楊橋",
+          "note": "",
+          "symbol": "小円",
+          "x": 890,
+          "y": 623
+        },
+        "t": {
+          "confidence": "高",
+          "name": "楊橋",
+          "note": "",
+          "symbol": "小円",
+          "x": 890,
+          "y": 623
+        }
+      },
+      "refine_failed": false,
+      "score": 165.633,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 890,
+      "y": 623
+    },
+    {
+      "displacement": 0.745,
+      "kind": "place",
+      "name": "蒲灘",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1074,
+        654
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "浦灘",
+          "note": "",
+          "symbol": "小円",
+          "x": 1074,
+          "y": 655
+        },
+        "b": {
+          "confidence": "中",
+          "name": "浦灘",
+          "note": "",
+          "symbol": "小円",
+          "x": 1073,
+          "y": 653
+        },
+        "t": {
+          "confidence": "中",
+          "name": "蒲灘",
+          "note": "",
+          "symbol": "小円",
+          "x": 1073,
+          "y": 655
+        }
+      },
+      "refine_failed": false,
+      "score": 170.685,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1074,
+      "y": 654
+    },
+    {
+      "displacement": 1.7,
+      "kind": "place",
+      "name": "李相王",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1069,
+        740
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "李相王",
+          "note": "",
+          "symbol": "小円",
+          "x": 1072,
+          "y": 740
+        },
+        "b": {
+          "confidence": "高",
+          "name": "李相王",
+          "note": "",
+          "symbol": "小円",
+          "x": 1070,
+          "y": 740
+        },
+        "t": {
+          "confidence": "中",
+          "name": "李相王",
+          "note": "",
+          "symbol": "小円",
+          "x": 1070,
+          "y": 739
+        }
+      },
+      "refine_failed": false,
+      "score": 164.707,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1069,
+      "y": 740
+    },
+    {
+      "displacement": 1.414,
+      "kind": "place",
+      "name": "三劉砦",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1132,
+        648
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "劉[岩?]",
+          "note": "縦書きの二字目が不鮮明。",
+          "symbol": "小円",
+          "x": 1130,
+          "y": 650
+        },
+        "b": {
+          "confidence": "低",
+          "name": "劉[岩?]",
+          "note": "縦書き。下の字が不鮮明。",
+          "symbol": "小円",
+          "x": 1130,
+          "y": 648
+        },
+        "t": {
+          "confidence": "中",
+          "name": "三劉砦",
+          "note": "縦書きの地名と円の対応はやや不確か。",
+          "symbol": "小円",
+          "x": 1133,
+          "y": 649
+        }
+      },
+      "refine_failed": false,
+      "score": 168.948,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1132,
+      "y": 648
+    },
+    {
+      "displacement": 0.471,
+      "kind": "place",
+      "name": "開市口",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1226,
+        633
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "開市口",
+          "note": "",
+          "symbol": "小円",
+          "x": 1227,
+          "y": 633
+        },
+        "b": {
+          "confidence": "高",
+          "name": "開市口",
+          "note": "",
+          "symbol": "小円",
+          "x": 1225,
+          "y": 633
+        },
+        "t": {
+          "confidence": "中",
+          "name": "開市口",
+          "note": "",
+          "symbol": "小円",
+          "x": 1225,
+          "y": 632
+        }
+      },
+      "refine_failed": false,
+      "score": 155.892,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1226,
+      "y": 633
+    },
+    {
+      "displacement": 0.667,
+      "kind": "place",
+      "name": "万庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1278,
+        585
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "万庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 1279,
+          "y": 585
+        },
+        "b": {
+          "confidence": "高",
+          "name": "万庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 1279,
+          "y": 585
+        },
+        "t": {
+          "confidence": "中",
+          "name": "万庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 1278,
+          "y": 585
+        }
+      },
+      "refine_failed": false,
+      "score": 190.315,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1278,
+      "y": 585
+    },
+    {
+      "displacement": 1.054,
+      "kind": "place",
+      "name": "耿氏屯",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1218,
+        705
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "尉氏屯",
+          "note": "",
+          "symbol": "小円",
+          "x": 1218,
+          "y": 704
+        },
+        "b": {
+          "confidence": "中",
+          "name": "耿氏屯",
+          "note": "",
+          "symbol": "小円",
+          "x": 1218,
+          "y": 704
+        },
+        "t": {
+          "confidence": "中",
+          "name": "耿氏屯",
+          "note": "",
+          "symbol": "小円",
+          "x": 1219,
+          "y": 704
+        }
+      },
+      "refine_failed": false,
+      "score": 172.012,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1218,
+      "y": 705
+    },
+    {
+      "displacement": 0.333,
+      "kind": "place",
+      "name": "北堤",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1430,
+        697
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "北堤",
+          "note": "",
+          "symbol": "小円",
+          "x": 1430,
+          "y": 697
+        },
+        "b": {
+          "confidence": "高",
+          "name": "北堤",
+          "note": "",
+          "symbol": "小円",
+          "x": 1430,
+          "y": 697
+        },
+        "t": {
+          "confidence": "高",
+          "name": "北堤",
+          "note": "",
+          "symbol": "小円",
+          "x": 1431,
+          "y": 697
+        }
+      },
+      "refine_failed": false,
+      "score": 174.485,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1430,
+      "y": 697
+    },
+    {
+      "displacement": 0.471,
+      "kind": "place",
+      "name": "瓦坡",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1462,
+        800
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "瓦坡",
+          "note": "",
+          "symbol": "小円",
+          "x": 1462,
+          "y": 800
+        },
+        "b": {
+          "confidence": "高",
+          "name": "瓦坡",
+          "note": "",
+          "symbol": "小円",
+          "x": 1463,
+          "y": 801
+        },
+        "t": {
+          "confidence": "高",
+          "name": "瓦坡",
+          "note": "",
+          "symbol": "小円",
+          "x": 1462,
+          "y": 800
+        }
+      },
+      "refine_failed": false,
+      "score": 167.361,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1462,
+      "y": 800
+    },
+    {
+      "displacement": 1.202,
+      "kind": "place",
+      "name": "茶庵",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1024,
+        923
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "茶庵",
+          "note": "",
+          "symbol": "小円",
+          "x": 1023,
+          "y": 924
+        },
+        "b": {
+          "confidence": "高",
+          "name": "茶庵",
+          "note": "",
+          "symbol": "小円",
+          "x": 1023,
+          "y": 924
+        },
+        "t": {
+          "confidence": "中",
+          "name": "茶庵",
+          "note": "",
+          "symbol": "小円",
+          "x": 1023,
+          "y": 923
+        }
+      },
+      "refine_failed": false,
+      "score": 158.772,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1024,
+      "y": 923
+    },
+    {
+      "displacement": 0.943,
+      "kind": "place",
+      "name": "關家橋",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1235,
+        992
+      ],
+      "radius": 9,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "關家橋",
+          "note": "",
+          "symbol": "小円",
+          "x": 1237,
+          "y": 990
+        },
+        "b": {
+          "confidence": "中",
+          "name": "[關?]家橋",
+          "note": "右端の字の内部が不鮮明。",
+          "symbol": "小円",
+          "x": 1234,
+          "y": 993
+        },
+        "t": {
+          "confidence": "中",
+          "name": "閻家橋",
+          "note": "",
+          "symbol": "小円",
+          "x": 1236,
+          "y": 991
+        }
+      },
+      "refine_failed": false,
+      "score": 180.175,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1235,
+      "y": 992
+    },
+    {
+      "displacement": 0.333,
+      "kind": "place",
+      "name": "中牟",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1138,
+        1048
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "中牟",
+          "note": "",
+          "symbol": "小円",
+          "x": 1138,
+          "y": 1049
+        },
+        "b": {
+          "confidence": "高",
+          "name": "中牟",
+          "note": "",
+          "symbol": "小円",
+          "x": 1139,
+          "y": 1047
+        },
+        "t": {
+          "confidence": "中",
+          "name": "中牟",
+          "note": "",
+          "symbol": "小円",
+          "x": 1138,
+          "y": 1048
+        }
+      },
+      "refine_failed": false,
+      "score": 164.324,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1138,
+      "y": 1048
+    },
+    {
+      "displacement": 0.745,
+      "kind": "place",
+      "name": "雁台寺",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        910,
+        1223
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "雁台寺",
+          "note": "",
+          "symbol": "小円",
+          "x": 910,
+          "y": 1223
+        },
+        "b": {
+          "confidence": "高",
+          "name": "雁台寺",
+          "note": "",
+          "symbol": "小円",
+          "x": 910,
+          "y": 1222
+        },
+        "t": {
+          "confidence": "中",
+          "name": "雁台寺",
+          "note": "",
+          "symbol": "小円",
+          "x": 911,
+          "y": 1222
+        }
+      },
+      "refine_failed": false,
+      "score": 92.87,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 910,
+      "y": 1223
+    },
+    {
+      "displacement": 0.943,
+      "kind": "place",
+      "name": "大井",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1525,
+        998
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "大井",
+          "note": "",
+          "symbol": "小円",
+          "x": 1527,
+          "y": 997
+        },
+        "b": {
+          "confidence": "高",
+          "name": "大井",
+          "note": "",
+          "symbol": "小円",
+          "x": 1525,
+          "y": 997
+        },
+        "t": {
+          "confidence": "中",
+          "name": "大井",
+          "note": "",
+          "symbol": "小円",
+          "x": 1525,
+          "y": 998
+        }
+      },
+      "refine_failed": false,
+      "score": 184.546,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1525,
+      "y": 998
+    },
+    {
+      "displacement": 0.0,
+      "kind": "place",
+      "name": "李長庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1953,
+        960
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "李長庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 1954,
+          "y": 960
+        },
+        "b": {
+          "confidence": "高",
+          "name": "李長庄",
+          "note": "縦書き。",
+          "symbol": "小円",
+          "x": 1953,
+          "y": 960
+        },
+        "t": {
+          "confidence": "中",
+          "name": "李長庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 1952,
+          "y": 960
+        }
+      },
+      "refine_failed": false,
+      "score": 156.843,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1953,
+      "y": 960
+    },
+    {
+      "displacement": 1.667,
+      "kind": "place",
+      "name": "十里鋪",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        2014,
+        963
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "十里鋪",
+          "note": "",
+          "symbol": "小円",
+          "x": 2016,
+          "y": 962
+        },
+        "b": {
+          "confidence": "高",
+          "name": "十里鋪",
+          "note": "",
+          "symbol": "小円",
+          "x": 2016,
+          "y": 962
+        },
+        "t": {
+          "confidence": "中",
+          "name": "十里鋪",
+          "note": "",
+          "symbol": "小円",
+          "x": 2014,
+          "y": 962
+        }
+      },
+      "refine_failed": false,
+      "score": 159.346,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2014,
+      "y": 963
+    },
+    {
+      "displacement": 0.667,
+      "kind": "place",
+      "name": "蘆花崗",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1788,
+        1061
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "蘆花岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 1789,
+          "y": 1061
+        },
+        "b": {
+          "confidence": "中",
+          "name": "蘆花[岡?]",
+          "note": "右から左へ読む。末字の字形に不確実性あり。",
+          "symbol": "小円",
+          "x": 1789,
+          "y": 1061
+        },
+        "t": {
+          "confidence": "中",
+          "name": "蘆花崗",
+          "note": "",
+          "symbol": "小円",
+          "x": 1788,
+          "y": 1061
+        }
+      },
+      "refine_failed": false,
+      "score": 157.262,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1788,
+      "y": 1061
+    },
+    {
+      "displacement": 1.054,
+      "kind": "place",
+      "name": "岳店",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1743,
+        1140
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "丘店",
+          "note": "",
+          "symbol": "小円",
+          "x": 1744,
+          "y": 1140
+        },
+        "b": {
+          "confidence": "高",
+          "name": "丘店",
+          "note": "",
+          "symbol": "小円",
+          "x": 1744,
+          "y": 1140
+        },
+        "t": {
+          "confidence": "中",
+          "name": "岳店",
+          "note": "",
+          "symbol": "小円",
+          "x": 1744,
+          "y": 1139
+        }
+      },
+      "refine_failed": false,
+      "score": 164.957,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1743,
+      "y": 1140
+    },
+    {
+      "displacement": 0.471,
+      "kind": "place",
+      "name": "王家庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        2079,
+        1258
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "王家庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 2078,
+          "y": 1260
+        },
+        "b": {
+          "confidence": "高",
+          "name": "王家庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 2078,
+          "y": 1258
+        },
+        "t": {
+          "confidence": "高",
+          "name": "王家庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 2080,
+          "y": 1257
+        }
+      },
+      "refine_failed": false,
+      "score": 166.093,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2079,
+      "y": 1258
+    },
+    {
+      "displacement": 0.667,
+      "kind": "place",
+      "name": "双王府",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1554,
+        1527
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "双王府",
+          "note": "",
+          "symbol": "小円",
+          "x": 1552,
+          "y": 1528
+        },
+        "b": {
+          "confidence": "中",
+          "name": "双王府",
+          "note": "縦書き。",
+          "symbol": "小円",
+          "x": 1555,
+          "y": 1528
+        },
+        "t": {
+          "confidence": "中",
+          "name": "双王府",
+          "note": "",
+          "symbol": "小円",
+          "x": 1553,
+          "y": 1525
+        }
+      },
+      "refine_failed": false,
+      "score": 165.222,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1554,
+      "y": 1527
+    },
+    {
+      "displacement": 1.333,
+      "kind": "place",
+      "name": "小營",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        1448,
+        1600
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "小營",
+          "note": "",
+          "symbol": "小円",
+          "x": 1448,
+          "y": 1599
+        },
+        "b": {
+          "confidence": "高",
+          "name": "小營",
+          "note": "",
+          "symbol": "小円",
+          "x": 1448,
+          "y": 1599
+        },
+        "t": {
+          "confidence": "中",
+          "name": "小営",
+          "note": "",
+          "symbol": "小円",
+          "x": 1448,
+          "y": 1598
+        }
+      },
+      "refine_failed": false,
+      "score": 174.059,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1448,
+      "y": 1600
+    },
+    {
+      "displacement": 1.0,
+      "kind": "place",
+      "name": "読めない",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p06",
+      "proposed": [
+        2387,
+        1460
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "読めない",
+          "note": "右端付近。付近の文字が切れており、地名を確定できない。",
+          "symbol": "小円",
+          "x": 2387,
+          "y": 1461
+        },
+        "b": {
+          "confidence": "中",
+          "name": "読めない",
+          "note": "画像右端の円。対応する地名は画面内で判読できない。",
+          "symbol": "小円",
+          "x": 2387,
+          "y": 1461
+        }
+      },
+      "refine_failed": false,
+      "score": 183.318,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2387,
+      "y": 1460
+    },
+    {
+      "displacement": 0.943,
+      "kind": "place",
+      "name": "張庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        989,
+        94
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "張庄",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 990,
+          "y": 93
+        },
+        "b": {
+          "confidence": "高",
+          "name": "張庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 989,
+          "y": 93
+        },
+        "t": {
+          "confidence": "中",
+          "name": "張庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 990,
+          "y": 94
+        }
+      },
+      "refine_failed": false,
+      "score": 173.346,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 989,
+      "y": 94
+    },
+    {
+      "displacement": 14.142,
+      "kind": "place",
+      "name": "小営",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        78,
+        220
+      ],
+      "radius": 7,
+      "readings": {
+        "t": {
+          "confidence": "中",
+          "name": "小営",
+          "note": "",
+          "symbol": "小円",
+          "x": 64,
+          "y": 218
+        }
+      },
+      "refine_failed": true,
+      "score": 117.883,
+      "single_reader": true,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 64.0,
+      "y": 218.0
+    },
+    {
+      "displacement": 1.667,
+      "kind": "place",
+      "name": "双王府",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        156,
+        169
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "双王府",
+          "note": "縦書き。",
+          "symbol": "小円",
+          "x": 155,
+          "y": 170
+        },
+        "b": {
+          "confidence": "高",
+          "name": "双王府",
+          "note": "",
+          "symbol": "小円",
+          "x": 156,
+          "y": 170
+        },
+        "t": {
+          "confidence": "中",
+          "name": "双王村",
+          "note": "",
+          "symbol": "小円",
+          "x": 153,
+          "y": 170
+        }
+      },
+      "refine_failed": false,
+      "score": 174.932,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 156,
+      "y": 169
+    },
+    {
+      "displacement": 14.472,
+      "kind": "place",
+      "name": "□庄",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        97,
+        269
+      ],
+      "radius": 7,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "[孫?]庄",
+          "note": "記号と文字が濃い網掛けに重なる。",
+          "symbol": "小円",
+          "x": 84,
+          "y": 261
+        },
+        "b": {
+          "confidence": "低",
+          "name": "[蔡?]庄",
+          "note": "記号が濃いハッチと重なる。",
+          "symbol": "小円",
+          "x": 86,
+          "y": 259
+        },
+        "t": {
+          "confidence": "低",
+          "name": "□庄",
+          "note": "地名の一部が重なっている。",
+          "symbol": "小円",
+          "x": 87,
+          "y": 260
+        }
+      },
+      "refine_failed": true,
+      "score": 98.547,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 85.66666666666667,
+      "y": 260.0
+    },
+    {
+      "displacement": 0.943,
+      "kind": "place",
+      "name": "大雙溝",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        452,
+        305
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "大[双?]溝",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 452,
+          "y": 304
+        },
+        "b": {
+          "confidence": "中",
+          "name": "大雙溝",
+          "note": "",
+          "symbol": "小円",
+          "x": 451,
+          "y": 303
+        },
+        "t": {
+          "confidence": "低",
+          "name": "大隻溝",
+          "note": "中央の字と記号の輪郭が不鮮明。",
+          "symbol": "小円",
+          "x": 451,
+          "y": 306
+        }
+      },
+      "refine_failed": false,
+      "score": 175.978,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 452,
+      "y": 305
+    },
+    {
+      "displacement": 0.0,
+      "kind": "place",
+      "name": "趙尚[営?]",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        103,
+        456
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "趙岡□",
+          "note": "右から左。末字は判読できない。",
+          "symbol": "小円",
+          "x": 103,
+          "y": 457
+        },
+        "b": {
+          "confidence": "中",
+          "name": "趙岡[砦?]",
+          "note": "",
+          "symbol": "小円",
+          "x": 103,
+          "y": 456
+        },
+        "t": {
+          "confidence": "低",
+          "name": "趙尚[営?]",
+          "note": "",
+          "symbol": "小円",
+          "x": 103,
+          "y": 455
+        }
+      },
+      "refine_failed": false,
+      "score": 168.784,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 103,
+      "y": 456
+    },
+    {
+      "displacement": 1.491,
+      "kind": "place",
+      "name": "十八里集",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        184,
+        465
+      ],
+      "radius": 7,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "十八里集",
+          "note": "記号の下に縦書き。",
+          "symbol": "小円",
+          "x": 182,
+          "y": 464
+        },
+        "b": {
+          "confidence": "高",
+          "name": "十八里集",
+          "note": "縦書き。",
+          "symbol": "小円",
+          "x": 183,
+          "y": 466
+        },
+        "t": {
+          "confidence": "中",
+          "name": "十八里集",
+          "note": "地名は縦書き。",
+          "symbol": "小円",
+          "x": 183,
+          "y": 463
+        }
+      },
+      "refine_failed": false,
+      "score": 114.391,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 184,
+      "y": 465
+    },
+    {
+      "displacement": 0.333,
+      "kind": "place",
+      "name": "監岡",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        291,
+        471
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "監岡",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 291,
+          "y": 472
+        },
+        "b": {
+          "confidence": "中",
+          "name": "監岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 291,
+          "y": 472
+        },
+        "t": {
+          "confidence": "中",
+          "name": "監崗",
+          "note": "",
+          "symbol": "小円",
+          "x": 291,
+          "y": 470
+        }
+      },
+      "refine_failed": false,
+      "score": 102.179,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 291,
+      "y": 471
+    },
+    {
+      "displacement": 13.924,
+      "kind": "place",
+      "name": "劉庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        406,
+        457
+      ],
+      "radius": 7,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "劉庄",
+          "note": "右から左。時刻らしき文字が近接する。",
+          "symbol": "小円",
+          "x": 395,
+          "y": 466
+        },
+        "b": {
+          "confidence": "高",
+          "name": "劉庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 398,
+          "y": 466
+        },
+        "t": {
+          "confidence": "中",
+          "name": "劉庄",
+          "note": "記号付近に数字が重なる。",
+          "symbol": "小円",
+          "x": 394,
+          "y": 467
+        }
+      },
+      "refine_failed": true,
+      "score": 110.896,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 395.6666666666667,
+      "y": 466.3333333333333
+    },
+    {
+      "displacement": 0.745,
+      "kind": "place",
+      "name": "冠庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        468,
+        695
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "冠庄",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 467,
+          "y": 695
+        },
+        "b": {
+          "confidence": "中",
+          "name": "冠庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 468,
+          "y": 697
+        },
+        "t": {
+          "confidence": "中",
+          "name": "冠庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 467,
+          "y": 694
+        }
+      },
+      "refine_failed": false,
+      "score": 152.373,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 468,
+      "y": 695
+    },
+    {
+      "displacement": 0.333,
+      "kind": "place",
+      "name": "楊廟",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        1331,
+        1114
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "楊廟",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 1331,
+          "y": 1114
+        },
+        "b": {
+          "confidence": "高",
+          "name": "楊廟",
+          "note": "",
+          "symbol": "小円",
+          "x": 1331,
+          "y": 1115
+        },
+        "t": {
+          "confidence": "中",
+          "name": "楊庙",
+          "note": "",
+          "symbol": "小円",
+          "x": 1331,
+          "y": 1114
+        }
+      },
+      "refine_failed": false,
+      "score": 172.33,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1331,
+      "y": 1114
+    },
+    {
+      "displacement": 0.745,
+      "kind": "place",
+      "name": "独塘集",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        957,
+        1194
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "獨墻集",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 957,
+          "y": 1193
+        },
+        "b": {
+          "confidence": "低",
+          "name": "獨[墻?]集",
+          "note": "",
+          "symbol": "小円",
+          "x": 958,
+          "y": 1194
+        },
+        "t": {
+          "confidence": "低",
+          "name": "独塘集",
+          "note": "文字が薄い。",
+          "symbol": "小円",
+          "x": 958,
+          "y": 1194
+        }
+      },
+      "refine_failed": false,
+      "score": 143.373,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 957,
+      "y": 1194
+    },
+    {
+      "displacement": 0.471,
+      "kind": "place",
+      "name": "龍王廟",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        639,
+        1316
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "龍王廟",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 638,
+          "y": 1317
+        },
+        "b": {
+          "confidence": "高",
+          "name": "龍王廟",
+          "note": "",
+          "symbol": "小円",
+          "x": 639,
+          "y": 1316
+        },
+        "t": {
+          "confidence": "高",
+          "name": "龍王庙",
+          "note": "",
+          "symbol": "小円",
+          "x": 639,
+          "y": 1316
+        }
+      },
+      "refine_failed": false,
+      "score": 169.753,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 639,
+      "y": 1316
+    },
+    {
+      "displacement": 0.943,
+      "kind": "place",
+      "name": "[逍?][遙?]口",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        724,
+        1341
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "[逍?][遙?]口",
+          "note": "右から左。口以外の字の細部が不鮮明。",
+          "symbol": "小円",
+          "x": 723,
+          "y": 1342
+        },
+        "b": {
+          "confidence": "低",
+          "name": "[逍?][遙?]口",
+          "note": "",
+          "symbol": "小円",
+          "x": 722,
+          "y": 1342
+        },
+        "t": {
+          "confidence": "低",
+          "name": "遥丹口",
+          "note": "地名の字形が不鮮明。",
+          "symbol": "小円",
+          "x": 725,
+          "y": 1341
+        }
+      },
+      "refine_failed": false,
+      "score": 183.549,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 724,
+      "y": 1341
+    },
+    {
+      "displacement": 1.054,
+      "kind": "place",
+      "name": "小吳家",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        694,
+        1410
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "小吳家",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 695,
+          "y": 1411
+        },
+        "b": {
+          "confidence": "高",
+          "name": "小吳家",
+          "note": "",
+          "symbol": "小円",
+          "x": 694,
+          "y": 1411
+        },
+        "t": {
+          "confidence": "中",
+          "name": "小呉家",
+          "note": "",
+          "symbol": "小円",
+          "x": 694,
+          "y": 1411
+        }
+      },
+      "refine_failed": false,
+      "score": 187.247,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 694,
+      "y": 1410
+    },
+    {
+      "displacement": 1.667,
+      "kind": "place",
+      "name": "道陵岡",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        481,
+        1531
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "道陵岡",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 482,
+          "y": 1534
+        },
+        "b": {
+          "confidence": "中",
+          "name": "道陵岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 483,
+          "y": 1532
+        },
+        "t": {
+          "confidence": "低",
+          "name": "道陵岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 482,
+          "y": 1530
+        }
+      },
+      "refine_failed": false,
+      "score": 149.694,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 481,
+      "y": 1531
+    },
+    {
+      "displacement": 0.745,
+      "kind": "place",
+      "name": "陳賢店",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        672,
+        1554
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "陳賢店",
+          "note": "右から左。",
+          "symbol": "小円",
+          "x": 671,
+          "y": 1555
+        },
+        "b": {
+          "confidence": "中",
+          "name": "陳賢店",
+          "note": "",
+          "symbol": "小円",
+          "x": 672,
+          "y": 1555
+        },
+        "t": {
+          "confidence": "中",
+          "name": "陳賢店",
+          "note": "",
+          "symbol": "小円",
+          "x": 672,
+          "y": 1554
+        }
+      },
+      "refine_failed": false,
+      "score": 182.358,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 672,
+      "y": 1554
+    },
+    {
+      "displacement": 2.693,
+      "kind": "place",
+      "name": "小營",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p07",
+      "proposed": [
+        45,
+        239
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "小營",
+          "note": "",
+          "symbol": "小円",
+          "x": 44,
+          "y": 242
+        },
+        "b": {
+          "confidence": "中",
+          "name": "小營",
+          "note": "",
+          "symbol": "小円",
+          "x": 44,
+          "y": 241
+        }
+      },
+      "refine_failed": false,
+      "score": 168.833,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 45,
+      "y": 239
+    },
+    {
+      "displacement": 2.867,
+      "kind": "place",
+      "name": "双王府",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1582,
+        242
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "雙王廟",
+          "note": "",
+          "symbol": "小円",
+          "x": 1585,
+          "y": 243
+        },
+        "b": {
+          "confidence": "中",
+          "name": "双王府",
+          "note": "記号が濃い描線と重なる。",
+          "symbol": "小円",
+          "x": 1583,
+          "y": 246
+        },
+        "t": {
+          "confidence": "高",
+          "name": "双王府",
+          "note": "",
+          "symbol": "小円",
+          "x": 1585,
+          "y": 242
+        }
+      },
+      "refine_failed": false,
+      "score": 189.105,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1582,
+      "y": 242
+    },
+    {
+      "displacement": 0.667,
+      "kind": "place",
+      "name": "小營",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1470,
+        313
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "小營",
+          "note": "",
+          "symbol": "小円",
+          "x": 1471,
+          "y": 313
+        },
+        "b": {
+          "confidence": "高",
+          "name": "小營",
+          "note": "",
+          "symbol": "小円",
+          "x": 1469,
+          "y": 314
+        },
+        "t": {
+          "confidence": "中",
+          "name": "小営",
+          "note": "",
+          "symbol": "小円",
+          "x": 1472,
+          "y": 312
+        }
+      },
+      "refine_failed": false,
+      "score": 171.503,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1470,
+      "y": 313
+    },
+    {
+      "displacement": 1.491,
+      "kind": "place",
+      "name": "大雙溝",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1896,
+        383
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "大雙溝",
+          "note": "",
+          "symbol": "小円",
+          "x": 1897,
+          "y": 382
+        },
+        "b": {
+          "confidence": "低",
+          "name": "大[夏?]溝",
+          "note": "中央の字が不鮮明。右から左へ読んだ。",
+          "symbol": "小円",
+          "x": 1898,
+          "y": 383
+        },
+        "t": {
+          "confidence": "高",
+          "name": "大双溝",
+          "note": "",
+          "symbol": "小円",
+          "x": 1897,
+          "y": 382
+        }
+      },
+      "refine_failed": false,
+      "score": 166.145,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1896,
+      "y": 383
+    },
+    {
+      "displacement": 1.374,
+      "kind": "place",
+      "name": "大橋",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1301,
+        583
+      ],
+      "radius": 9,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "大橋",
+          "note": "",
+          "symbol": "小円",
+          "x": 1302,
+          "y": 583
+        },
+        "b": {
+          "confidence": "高",
+          "name": "大橋",
+          "note": "",
+          "symbol": "小円",
+          "x": 1303,
+          "y": 584
+        },
+        "t": {
+          "confidence": "高",
+          "name": "大橋",
+          "note": "",
+          "symbol": "小円",
+          "x": 1302,
+          "y": 583
+        }
+      },
+      "refine_failed": false,
+      "score": 110.525,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1301,
+      "y": 583
+    },
+    {
+      "displacement": 1.202,
+      "kind": "place",
+      "name": "趙崗砦",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1526,
+        535
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "趙南[砦?]",
+          "note": "末字の細部が不鮮明。",
+          "symbol": "小円",
+          "x": 1527,
+          "y": 536
+        },
+        "b": {
+          "confidence": "中",
+          "name": "趙崗[砦?]",
+          "note": "右から左へ読んだ。末字に不確実性がある。",
+          "symbol": "小円",
+          "x": 1527,
+          "y": 536
+        },
+        "t": {
+          "confidence": "低",
+          "name": "趙崗[巷?]",
+          "note": "最後の字は判読に自信がない。",
+          "symbol": "小円",
+          "x": 1527,
+          "y": 535
+        }
+      },
+      "refine_failed": false,
+      "score": 159.651,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1526,
+      "y": 535
+    },
+    {
+      "displacement": 0.745,
+      "kind": "place",
+      "name": "十八里集",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1612,
+        546
+      ],
+      "radius": 7,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "十八里集",
+          "note": "地名は記号の下に縦書き。",
+          "symbol": "小円",
+          "x": 1612,
+          "y": 546
+        },
+        "b": {
+          "confidence": "高",
+          "name": "十八里集",
+          "note": "縦書き。",
+          "symbol": "小円",
+          "x": 1612,
+          "y": 546
+        },
+        "t": {
+          "confidence": "中",
+          "name": "十八里集",
+          "note": "縦書き。",
+          "symbol": "小円",
+          "x": 1610,
+          "y": 547
+        }
+      },
+      "refine_failed": false,
+      "score": 170.938,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1612,
+      "y": 546
+    },
+    {
+      "displacement": 14.162,
+      "kind": "place",
+      "name": "監崗",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1713,
+        559
+      ],
+      "radius": 7,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "[鄢?]崗",
+          "note": "",
+          "symbol": "小円",
+          "x": 1724,
+          "y": 553
+        },
+        "b": {
+          "confidence": "中",
+          "name": "[監?]崗",
+          "note": "右から左へ読んだ。",
+          "symbol": "小円",
+          "x": 1725,
+          "y": 553
+        },
+        "t": {
+          "confidence": "中",
+          "name": "監崗",
+          "note": "",
+          "symbol": "小円",
+          "x": 1728,
+          "y": 552
+        }
+      },
+      "refine_failed": true,
+      "score": 86.531,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1725.6666666666667,
+      "y": 552.6666666666666
+    },
+    {
+      "displacement": 14.896,
+      "kind": "place",
+      "name": "劉庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1844,
+        540
+      ],
+      "radius": 7,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "劉庄",
+          "note": "記号付近に印刷番号が重なる。",
+          "symbol": "小円",
+          "x": 1833,
+          "y": 551
+        },
+        "b": {
+          "confidence": "中",
+          "name": "劉庄",
+          "note": "数字の印字が近接している。",
+          "symbol": "小円",
+          "x": 1833,
+          "y": 550
+        },
+        "t": {
+          "confidence": "中",
+          "name": "劉庄",
+          "note": "数字の重なりで一部不鮮明。",
+          "symbol": "小円",
+          "x": 1832,
+          "y": 548
+        }
+      },
+      "refine_failed": true,
+      "score": 106.287,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1832.6666666666667,
+      "y": 549.6666666666666
+    },
+    {
+      "displacement": 0.667,
+      "kind": "place",
+      "name": "冠庄",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1905,
+        785
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "冠庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 1904,
+          "y": 786
+        },
+        "b": {
+          "confidence": "高",
+          "name": "冠庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 1906,
+          "y": 787
+        },
+        "t": {
+          "confidence": "中",
+          "name": "冠庄",
+          "note": "",
+          "symbol": "小円",
+          "x": 1905,
+          "y": 784
+        }
+      },
+      "refine_failed": false,
+      "score": 146.688,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1905,
+      "y": 785
+    },
+    {
+      "displacement": 0.667,
+      "kind": "place",
+      "name": "龍王廟",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        2092,
+        1430
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "龍王廟",
+          "note": "",
+          "symbol": "小円",
+          "x": 2092,
+          "y": 1430
+        },
+        "b": {
+          "confidence": "高",
+          "name": "龍王廟",
+          "note": "",
+          "symbol": "小円",
+          "x": 2092,
+          "y": 1431
+        },
+        "t": {
+          "confidence": "高",
+          "name": "龍王廟",
+          "note": "",
+          "symbol": "小円",
+          "x": 2092,
+          "y": 1431
+        }
+      },
+      "refine_failed": false,
+      "score": 158.861,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2092,
+      "y": 1430
+    },
+    {
+      "displacement": 1.414,
+      "kind": "place",
+      "name": "遜母口",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        2177,
+        1456
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "[通?][關?]口",
+          "note": "右から左の読み順。上の地名文字が不鮮明。",
+          "symbol": "小円",
+          "x": 2178,
+          "y": 1457
+        },
+        "b": {
+          "confidence": "中",
+          "name": "通[岡?]口",
+          "note": "右から左へ読んだ。",
+          "symbol": "小円",
+          "x": 2178,
+          "y": 1457
+        },
+        "t": {
+          "confidence": "中",
+          "name": "遜母口",
+          "note": "",
+          "symbol": "小円",
+          "x": 2178,
+          "y": 1457
+        }
+      },
+      "refine_failed": false,
+      "score": 161.231,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2177,
+      "y": 1456
+    },
+    {
+      "displacement": 0.471,
+      "kind": "place",
+      "name": "小吳家",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        2144,
+        1529
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "小吳家",
+          "note": "",
+          "symbol": "小円",
+          "x": 2144,
+          "y": 1530
+        },
+        "b": {
+          "confidence": "高",
+          "name": "小吳家",
+          "note": "",
+          "symbol": "小円",
+          "x": 2143,
+          "y": 1529
+        },
+        "t": {
+          "confidence": "中",
+          "name": "小呉家",
+          "note": "",
+          "symbol": "小円",
+          "x": 2144,
+          "y": 1529
+        }
+      },
+      "refine_failed": false,
+      "score": 156.957,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2144,
+      "y": 1529
+    },
+    {
+      "displacement": 4.031,
+      "kind": "place",
+      "name": "□陵岡",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p08",
+      "proposed": [
+        1923,
+        1656
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "□陵岡",
+          "note": "画像下端。地名の一部と記号下部が透かしに重なる。",
+          "symbol": "小円",
+          "x": 1922,
+          "y": 1660
+        },
+        "b": {
+          "confidence": "低",
+          "name": "[池?][陵?]岡",
+          "note": "画像下端。記号の下部が切れ、文字も不鮮明。",
+          "symbol": "小円",
+          "x": 1920,
+          "y": 1659
+        }
+      },
+      "refine_failed": false,
+      "score": 82.602,
+      "single_reader": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1923,
+      "y": 1656
+    },
+    {
+      "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "小呉家",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        559,
+        82
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "小呉家",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 559,
+          "y": 83
+        },
+        "b": {
+          "confidence": "高",
+          "name": "小呉家",
+          "note": "",
+          "symbol": "小円",
+          "x": 559,
+          "y": 83
+        },
+        "t": {
+          "confidence": "中",
+          "name": "小呉家",
+          "note": "",
+          "symbol": "小円",
+          "x": 560,
+          "y": 82
+        }
+      },
+      "refine_failed": false,
+      "score": 163.219,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.9817486616525,
+        "lon": 114.57930919928775
+      },
+      "x": 559,
+      "y": 82
+    },
+    {
+      "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "道陵岡",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        338,
+        208
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "道陵岡",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 339,
+          "y": 208
+        },
+        "b": {
+          "confidence": "中",
+          "name": "道陵岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 339,
+          "y": 208
+        },
+        "t": {
+          "confidence": "中",
+          "name": "道陵岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 338,
+          "y": 208
+        }
+      },
+      "refine_failed": false,
+      "score": 140.441,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.92891327960834,
+        "lon": 114.48993365674265
+      },
+      "x": 338,
+      "y": 208
+    },
+    {
+      "displacement": 0.471,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "陳賢店",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        538,
+        232
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "陳賢店",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 538,
+          "y": 231
+        },
+        "b": {
+          "confidence": "高",
+          "name": "陳賢店",
+          "note": "",
+          "symbol": "小円",
+          "x": 538,
+          "y": 233
+        },
+        "t": {
+          "confidence": "中",
+          "name": "陳賢店",
+          "note": "",
+          "symbol": "小円",
+          "x": 539,
+          "y": 231
+        }
+      },
+      "refine_failed": false,
+      "score": 177.901,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.918239984026506,
+        "lon": 114.58219173177852
+      },
+      "x": 538,
+      "y": 232
+    },
+    {
+      "displacement": 1.054,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "夏亭",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        584,
+        344
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "夏亭",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 584,
+          "y": 343
+        },
+        "b": {
+          "confidence": "高",
+          "name": "夏亭",
+          "note": "",
+          "symbol": "小円",
+          "x": 585,
+          "y": 343
+        },
+        "t": {
+          "confidence": "中",
+          "name": "夏亭",
+          "note": "",
+          "symbol": "小円",
+          "x": 584,
+          "y": 343
+        }
+      },
+      "refine_failed": false,
+      "score": 161.633,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.87066490766124,
+        "lon": 114.61218642500421
+      },
+      "x": 584,
+      "y": 344
+    },
+    {
+      "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "四個樓",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        721,
+        373
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "四個樓",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 721,
+          "y": 372
+        },
+        "b": {
+          "confidence": "高",
+          "name": "四個樓",
+          "note": "",
+          "symbol": "小円",
+          "x": 721,
+          "y": 372
+        },
+        "t": {
+          "confidence": "中",
+          "name": "四個樓",
+          "note": "",
+          "symbol": "小円",
+          "x": 721,
+          "y": 373
+        }
+      },
+      "refine_failed": false,
+      "score": 164.182,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.858031480588956,
+        "lon": 114.67641831365164
+      },
+      "x": 721,
+      "y": 373
+    },
+    {
+      "displacement": 0.943,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "大春李",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        414,
+        491
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "大[蕭?]李",
+          "note": "右から左へ読む。中央の字が不鮮明。",
+          "symbol": "小円",
+          "x": 413,
+          "y": 492
+        },
+        "b": {
+          "confidence": "中",
+          "name": "大[蕃?]李",
+          "note": "中央の字が不鮮明。",
+          "symbol": "小円",
+          "x": 413,
+          "y": 491
+        },
+        "t": {
+          "confidence": "中",
+          "name": "大春李",
+          "note": "",
+          "symbol": "小円",
+          "x": 414,
+          "y": 492
+        }
+      },
+      "refine_failed": false,
+      "score": 146.836,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.808802530496195,
+        "lon": 114.54756299699515
+      },
+      "x": 414,
+      "y": 491
+    },
+    {
+      "displacement": 0.333,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "板[繒?]口鋪",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        891,
+        834
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "板[纜?]口舖",
+          "note": "右から左へ読む。右から2字目が不鮮明。",
+          "symbol": "小円",
+          "x": 891,
+          "y": 834
+        },
+        "b": {
+          "confidence": "低",
+          "name": "板[纜?]口[鋪?]",
+          "note": "第2字と末字の細部が不鮮明。",
+          "symbol": "小円",
+          "x": 891,
+          "y": 834
+        },
+        "t": {
+          "confidence": "低",
+          "name": "板[繒?]口鋪",
+          "note": "",
+          "symbol": "小円",
+          "x": 891,
+          "y": 835
+        }
+      },
+      "refine_failed": false,
+      "score": 184.373,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.662257749790804,
+        "lon": 114.79114884410419
+      },
+      "x": 891,
+      "y": 834
+    },
+    {
+      "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "瓦[罐?]集",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        1030,
+        885
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "瓦□集",
+          "note": "右から左へ読む。中央の字は判読できない。",
+          "symbol": "小円",
+          "x": 1031,
+          "y": 883
+        },
+        "b": {
+          "confidence": "低",
+          "name": "瓦[墻?]集",
+          "note": "中央の字が不鮮明。",
+          "symbol": "小円",
+          "x": 1031,
+          "y": 885
+        },
+        "t": {
+          "confidence": "中",
+          "name": "瓦[罐?]集",
+          "note": "",
+          "symbol": "小円",
+          "x": 1030,
+          "y": 886
+        }
+      },
+      "refine_failed": false,
+      "score": 168.235,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.64029692905667,
+        "lon": 114.85809662032628
+      },
+      "x": 1030,
+      "y": 885
+    },
+    {
+      "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "[錢?]□",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        1542,
+        1237
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "錢圍",
+          "note": "右から左へ読む。折れ目に近く、文字がやや不鮮明。",
+          "symbol": "小円",
+          "x": 1542,
+          "y": 1237
+        },
+        "b": {
+          "confidence": "低",
+          "name": "錢[周?]",
+          "note": "第2字が線と重なり不鮮明。",
+          "symbol": "小円",
+          "x": 1543,
+          "y": 1237
+        },
+        "t": {
+          "confidence": "低",
+          "name": "[錢?]□",
+          "note": "記号の右側の文字は一部判読困難。",
+          "symbol": "小円",
+          "x": 1543,
+          "y": 1236
+        }
+      },
+      "refine_failed": false,
+      "score": 155.83,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.48985035235106,
+        "lon": 115.11822321295432
+      },
+      "x": 1542,
+      "y": 1237
+    },
+    {
+      "displacement": 0.333,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "新[蔡?]",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        1598,
+        1597
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "低",
+          "name": "新[蔡?]",
+          "note": "縦書き。下の字は画像下端で不鮮明。",
+          "symbol": "小円",
+          "x": 1597,
+          "y": 1597
+        },
+        "b": {
+          "confidence": "低",
+          "name": "新[蔡?]",
+          "note": "縦書き。第2字が画像下端で不鮮明。",
+          "symbol": "小円",
+          "x": 1598,
+          "y": 1597
+        },
+        "t": {
+          "confidence": "低",
+          "name": "新□",
+          "note": "地名の下部が画像端で切れている。",
+          "symbol": "小円",
+          "x": 1598,
+          "y": 1597
+        }
+      },
+      "refine_failed": false,
+      "score": 179.404,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.33716169106638,
+        "lon": 115.17317033769997
+      },
+      "x": 1598,
+      "y": 1597
+    },
+    {
+      "displacement": 1.202,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "光武廟",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p09",
+      "proposed": [
+        1954,
+        1611
+      ],
+      "radius": 9,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "光武廟",
+          "note": "右から左へ読む。画像下部の表示が文字に近接している。",
+          "symbol": "小円",
+          "x": 1955,
+          "y": 1612
+        },
+        "b": {
+          "confidence": "高",
+          "name": "光武廟",
+          "note": "",
+          "symbol": "小円",
+          "x": 1955,
+          "y": 1612
+        },
+        "t": {
+          "confidence": "中",
+          "name": "光武廟",
+          "note": "",
+          "symbol": "小円",
+          "x": 1955,
+          "y": 1611
+        }
+      },
+      "refine_failed": false,
+      "score": 152.779,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.33033314108317,
+        "lon": 115.33502280997739
+      },
+      "x": 1954,
+      "y": 1611
+    },
+    {
+      "displacement": 0.333,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "小呉家",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p10",
+      "proposed": [
+        2100,
+        89
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "小呉家",
+          "note": "右から左に読む。",
+          "symbol": "小円",
+          "x": 2100,
+          "y": 89
+        },
+        "b": {
+          "confidence": "高",
+          "name": "小呉家",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 2101,
+          "y": 89
+        },
+        "t": {
+          "confidence": "高",
+          "name": "小呉家",
+          "note": "",
+          "symbol": "小円",
+          "x": 2100,
+          "y": 89
+        }
+      },
+      "refine_failed": false,
+      "score": 155.012,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.98166610161742,
+        "lon": 114.58016778336528
+      },
+      "x": 2100,
+      "y": 89
+    },
+    {
+      "displacement": 1.054,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "道陵岡",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p10",
+      "proposed": [
+        1881,
+        215
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "道陵岡",
+          "note": "右から左に読む。",
+          "symbol": "小円",
+          "x": 1883,
+          "y": 215
+        },
+        "b": {
+          "confidence": "中",
+          "name": "道陵岡",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 1882,
+          "y": 216
+        },
+        "t": {
+          "confidence": "中",
+          "name": "道陵岡",
+          "note": "",
+          "symbol": "小円",
+          "x": 1881,
+          "y": 215
+        }
+      },
+      "refine_failed": false,
+      "score": 136.84,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.928866414527924,
+        "lon": 114.49162918643674
+      },
+      "x": 1881,
+      "y": 215
+    },
+    {
+      "displacement": 0.943,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "陳賢店",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p10",
+      "proposed": [
+        2076,
+        239
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "陳賢店",
+          "note": "右から左に読む。",
+          "symbol": "小円",
+          "x": 2077,
+          "y": 238
+        },
+        "b": {
+          "confidence": "中",
+          "name": "陳賢店",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 2077,
+          "y": 239
+        },
+        "t": {
+          "confidence": "中",
+          "name": "陳賢店",
+          "note": "",
+          "symbol": "小円",
+          "x": 2076,
+          "y": 238
+        }
+      },
+      "refine_failed": false,
+      "score": 176.386,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.91817412503544,
+        "lon": 114.58247260507554
+      },
+      "x": 2076,
+      "y": 239
+    },
+    {
+      "displacement": 0.943,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "夏亭",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p10",
+      "proposed": [
+        2117,
+        350
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "夏亭",
+          "note": "右から左に読む。",
+          "symbol": "小円",
+          "x": 2118,
+          "y": 351
+        },
+        "b": {
+          "confidence": "高",
+          "name": "夏亭",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 2118,
+          "y": 351
+        },
+        "t": {
+          "confidence": "高",
+          "name": "夏亭",
+          "note": "",
+          "symbol": "小円",
+          "x": 2117,
+          "y": 350
+        }
+      },
+      "refine_failed": false,
+      "score": 175.568,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.871032384012615,
+        "lon": 114.61091469631263
+      },
+      "x": 2117,
+      "y": 350
+    },
+    {
+      "displacement": 0.333,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "四個樓",
+      "name_disputed": false,
+      "non_circle": false,
+      "page": "p10",
+      "proposed": [
+        2254,
+        380
+      ],
+      "radius": 9,
+      "readings": {
+        "a": {
+          "confidence": "高",
+          "name": "四個樓",
+          "note": "右から左に読む。",
+          "symbol": "小円",
+          "x": 2254,
+          "y": 380
+        },
+        "b": {
+          "confidence": "高",
+          "name": "四個樓",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 2254,
+          "y": 380
+        },
+        "t": {
+          "confidence": "高",
+          "name": "四個樓",
+          "note": "",
+          "symbol": "小円",
+          "x": 2254,
+          "y": 379
+        }
+      },
+      "refine_failed": false,
+      "score": 148.75,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.85795347830926,
+        "lon": 114.67589640581672
+      },
+      "x": 2254,
+      "y": 380
+    },
+    {
+      "displacement": 0.333,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "大春李",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p10",
+      "proposed": [
+        1945,
+        498
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "大[春?]李",
+          "note": "右から左に読む。中央の字は不鮮明。",
+          "symbol": "小円",
+          "x": 1945,
+          "y": 498
+        },
+        "b": {
+          "confidence": "中",
+          "name": "大春李",
+          "note": "右から左へ読む。",
+          "symbol": "小円",
+          "x": 1945,
+          "y": 499
+        },
+        "t": {
+          "confidence": "高",
+          "name": "大春李",
+          "note": "",
+          "symbol": "小円",
+          "x": 1945,
+          "y": 498
+        }
+      },
+      "refine_failed": false,
+      "score": 153.54,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.80878497346954,
+        "lon": 114.54570136166171
+      },
+      "x": 1945,
+      "y": 498
+    },
+    {
+      "displacement": 0.471,
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "place",
+      "name": "光武庙",
+      "name_disputed": true,
+      "non_circle": false,
+      "page": "p11",
+      "proposed": [
+        1964,
+        712
+      ],
+      "radius": 8,
+      "readings": {
+        "a": {
+          "confidence": "中",
+          "name": "光武[廟?]",
+          "note": "右から左へ読む。末字の判読に不確実性がある。",
+          "symbol": "小円",
+          "x": 1965,
+          "y": 712
+        },
+        "b": {
+          "confidence": "中",
+          "name": "光武廟",
+          "note": "横書きを右から左に読んだ。",
+          "symbol": "小円",
+          "x": 1965,
+          "y": 712
+        },
+        "t": {
+          "confidence": "中",
+          "name": "光武庙",
+          "note": "横書きを右から左に読んだ。",
+          "symbol": "小円",
+          "x": 1963,
+          "y": 711
+        }
+      },
+      "refine_failed": false,
+      "score": 172.549,
+      "single_reader": false,
+      "wgs84": {
+        "lat": 33.329730887894705,
+        "lon": 115.33808046188747
+      },
+      "x": 1964,
+      "y": 712
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "開封",
+          "note": "増水橋梁流失ス。対象側の端は開封北側の短線を伴う輪郭付近。",
+          "points_to": "線",
+          "text_x": 566,
+          "text_y": 510,
+          "tip_x": 433,
+          "tip_y": 847,
+          "x": 566,
+          "y": 510
+        },
+        "b": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "開封",
+          "note": "増水橋梁流失ス。対象側の端は開封北側の線付近。",
+          "points_to": "線",
+          "text_x": 567,
+          "text_y": 510,
+          "tip_x": 433,
+          "tip_y": 846,
+          "x": 567,
+          "y": 510
+        },
+        "t": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "開封",
+          "note": "増水橋梁流失ス。矢印の根元は開封北側の線付近。",
+          "points_to": "線",
+          "text_x": 567,
+          "text_y": 509,
+          "tip_x": 432,
+          "tip_y": 847,
+          "x": 567,
+          "y": 509
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 566.6666666666666,
+      "y": 509.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "十里鋪",
+          "note": "擴大ス。対象側の端は十里鋪のすぐ右下付近。",
+          "points_to": "線",
+          "text_x": 774,
+          "text_y": 850,
+          "tip_x": 615,
+          "tip_y": 980,
+          "x": 774,
+          "y": 850
+        },
+        "b": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "十里鋪",
+          "note": "擴大ス。対象側の端は十里鋪の円に近接する線付近で、円との区別は不鮮明。",
+          "points_to": "線",
+          "text_x": 774,
+          "text_y": 851,
+          "tip_x": 609,
+          "tip_y": 978,
+          "x": 774,
+          "y": 851
+        },
+        "t": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "十里舗",
+          "note": "擴大ス。根元付近で複数の線が交わる。",
+          "points_to": "ハッチ領域",
+          "text_x": 773,
+          "text_y": 850,
+          "tip_x": 617,
+          "tip_y": 969,
+          "x": 773,
+          "y": 850
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 773.6666666666666,
+      "y": 850.3333333333334
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "13日夕",
+          "confidence": "低",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "複数の線が重なる。独立した引出矢印は判別できず、対応する一本も特定できない。",
+          "points_to": "線",
+          "text_x": 73,
+          "text_y": 946,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 73,
+          "y": 946
+        },
+        "b": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "文字付近に複数の線が重なる。独立した引出し矢印は確認できない。",
+          "points_to": "線",
+          "text_x": 72,
+          "text_y": 941,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 72,
+          "y": 941
+        },
+        "t": {
+          "as_written": "13日夕",
+          "confidence": "低",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "日付と線が重なり、対象を特定しにくい。",
+          "points_to": "不明",
+          "text_x": 72,
+          "text_y": 940,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 72,
+          "y": 940
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 72.33333333333333,
+      "y": 942.3333333333334
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "大井の右上にある線群の傍記。",
+          "points_to": "線",
+          "text_x": 197,
+          "text_y": 933,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 197,
+          "y": 933
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "大井の右上にある日付。",
+          "points_to": "線",
+          "text_x": 197,
+          "text_y": 932,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 197,
+          "y": 932
+        },
+        "t": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "近くに複数の線があり、対象を特定しにくい。",
+          "points_to": "不明",
+          "text_x": 197,
+          "text_y": 930,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 197,
+          "y": 930
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 197.0,
+      "y": 931.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "19日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "岳店",
+          "note": "対象側の端は岳店右下の細長いハッチ付近。",
+          "points_to": "ハッチ領域",
+          "text_x": 418,
+          "text_y": 1230,
+          "tip_x": 386,
+          "tip_y": 1177,
+          "x": 418,
+          "y": 1230
+        },
+        "b": {
+          "as_written": "19日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "岳店",
+          "note": "対象側の端は岳店東側の小さなハッチ付近。",
+          "points_to": "ハッチ領域",
+          "text_x": 417,
+          "text_y": 1229,
+          "tip_x": 386,
+          "tip_y": 1177,
+          "x": 417,
+          "y": 1229
+        },
+        "t": {
+          "as_written": "19日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "岳店",
+          "note": "根元は小さな網掛け状の部分付近。",
+          "points_to": "ハッチ領域",
+          "text_x": 416,
+          "text_y": 1229,
+          "tip_x": 376,
+          "tip_y": 1175,
+          "x": 416,
+          "y": 1229
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 417.0,
+      "y": 1229.3333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "25～28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "王家庄",
+          "note": "薄い破線状の引出線。対象側の端の位置は概略。",
+          "points_to": "線",
+          "text_x": 802,
+          "text_y": 1176,
+          "tip_x": 600,
+          "tip_y": 1158,
+          "x": 802,
+          "y": 1176
+        },
+        "b": {
+          "as_written": "25～28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "十里鋪",
+          "note": "破線状の引出し線。対象側の端が薄く、座標は概略。",
+          "points_to": "線",
+          "text_x": 805,
+          "text_y": 1174,
+          "tip_x": 620,
+          "tip_y": 1159,
+          "x": 805,
+          "y": 1174
+        },
+        "t": {
+          "as_written": "25～28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "王家庄",
+          "note": "根元は曲線付近。",
+          "points_to": "線",
+          "text_x": 801,
+          "text_y": 1175,
+          "tip_x": 623,
+          "tip_y": 1160,
+          "x": 801,
+          "y": 1175
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 802.6666666666666,
+      "y": 1175.0
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "t": {
+          "as_written": "14日",
+          "confidence": "低",
+          "has_arrow": false,
+          "nearest_place": "双王府",
+          "note": "末尾の小さな印と対象線の対応は判然としない。",
+          "points_to": "不明",
+          "text_x": 104,
+          "text_y": 1240,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 104,
+          "y": 1240
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 104.0,
+      "y": 1240.0
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "24日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "朱仙鎮",
+          "note": "地上並空中偵察。対象側の端は朱仙鎮南東のハッチ付近。",
+          "points_to": "ハッチ領域",
+          "text_x": 519,
+          "text_y": 1427,
+          "tip_x": 362,
+          "tip_y": 1594,
+          "x": 519,
+          "y": 1427
+        },
+        "b": {
+          "as_written": "24日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "朱仙鎮",
+          "note": "地上並空中偵察。対象側の端は朱仙鎮南側、画像下端に近い線付近。",
+          "points_to": "線",
+          "text_x": 521,
+          "text_y": 1427,
+          "tip_x": 291,
+          "tip_y": 1637,
+          "x": 521,
+          "y": 1427
+        },
+        "t": {
+          "as_written": "24日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "双王府",
+          "note": "地上並空中偵察。根元は複数の線と網掛けが重なる部分にある。",
+          "points_to": "不明",
+          "text_x": 518,
+          "text_y": 1426,
+          "tip_x": 288,
+          "tip_y": 1640,
+          "x": 518,
+          "y": 1426
+        }
+      },
+      "tip_unstable": true,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 519.3333333333334,
+      "y": 1426.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "29日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "張庄",
+          "note": "対象側の端は張庄の円記号左下に接する短線群付近。",
+          "points_to": "線",
+          "text_x": 1067,
+          "text_y": 1435,
+          "tip_x": 984,
+          "tip_y": 1482,
+          "x": 1067,
+          "y": 1435
+        },
+        "b": {
+          "as_written": "29日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "張庄",
+          "note": "対象側の端は張庄の円の左上にある線付近。円・ハッチとの接触部分は不鮮明。",
+          "points_to": "線",
+          "text_x": 1065,
+          "text_y": 1434,
+          "tip_x": 989,
+          "tip_y": 1474,
+          "x": 1065,
+          "y": 1434
+        },
+        "t": {
+          "as_written": "29日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "張庄",
+          "note": "根元は張庄近くの網掛け状の部分。",
+          "points_to": "ハッチ領域",
+          "text_x": 1064,
+          "text_y": 1435,
+          "tip_x": 965,
+          "tip_y": 1506,
+          "x": 1064,
+          "y": 1435
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1065.3333333333333,
+      "y": 1434.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p05",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "岳店",
+          "note": "画像左側を南下する線群の傍記。",
+          "points_to": "線",
+          "text_x": 114,
+          "text_y": 1238,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 114,
+          "y": 1238
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "岳店",
+          "note": "画像左側の下方にある日付。",
+          "points_to": "線",
+          "text_x": 117,
+          "text_y": 1240,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 117,
+          "y": 1240
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 115.5,
+      "y": 1239.0
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "京水鎮",
+          "note": "決潰。対象側の端は河道付近の描線と重なり、位置は概測。",
+          "points_to": "線",
+          "text_x": 656,
+          "text_y": 426,
+          "tip_x": 583,
+          "tip_y": 529,
+          "x": 656,
+          "y": 426
+        },
+        "b": {
+          "as_written": "11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "京水鎮",
+          "note": "決潰。斜めの引出線の対象側端を採った。",
+          "points_to": "線",
+          "text_x": 656,
+          "text_y": 425,
+          "tip_x": 578,
+          "tip_y": 533,
+          "x": 656,
+          "y": 425
+        },
+        "t": {
+          "as_written": "11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "京水鎮",
+          "note": "決潰",
+          "points_to": "線",
+          "text_x": 657,
+          "text_y": 426,
+          "tip_x": 578,
+          "tip_y": 530,
+          "x": 657,
+          "y": 426
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 656.3333333333334,
+      "y": 425.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "10日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "劉[岩?]",
+          "note": "決潰。直下に黒い楔形の描画があるが、注記の引出矢印とは確定できない。",
+          "points_to": "線",
+          "text_x": 1106,
+          "text_y": 528,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1106,
+          "y": 528
+        },
+        "b": {
+          "as_written": "10日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "劉[岩?]",
+          "note": "決潰。直下の短い黒い矢印との対応および根元位置が不鮮明。",
+          "points_to": "線",
+          "text_x": 1105,
+          "text_y": 528,
+          "tip_x": 1122,
+          "tip_y": 623,
+          "x": 1105,
+          "y": 528
+        },
+        "t": {
+          "as_written": "10日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "三劉砦",
+          "note": "決潰",
+          "points_to": "線",
+          "text_x": 1103,
+          "text_y": 527,
+          "tip_x": 1121,
+          "tip_y": 626,
+          "x": 1103,
+          "y": 527
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1104.6666666666667,
+      "y": 527.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "12日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "京水鎮",
+          "note": "破線に沿った位置に記載。",
+          "points_to": "線",
+          "text_x": 665,
+          "text_y": 661,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 665,
+          "y": 661
+        },
+        "b": {
+          "as_written": "12日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "京水鎮",
+          "note": "破線群のそばに記載。",
+          "points_to": "線",
+          "text_x": 666,
+          "text_y": 661,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 666,
+          "y": 661
+        },
+        "t": {
+          "as_written": "12日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "京水鎮",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 661,
+          "text_y": 663,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 661,
+          "y": 663
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 664.0,
+      "y": 661.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "圃田集",
+          "note": "",
+          "points_to": "線",
+          "text_x": 845,
+          "text_y": 811,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 845,
+          "y": 811
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "圃田集",
+          "note": "",
+          "points_to": "線",
+          "text_x": 842,
+          "text_y": 812,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 842,
+          "y": 812
+        },
+        "t": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "圃田集",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 840,
+          "text_y": 811,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 840,
+          "y": 811
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 842.3333333333334,
+      "y": 811.3333333333334
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "12日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "劉[岩?]",
+          "note": "",
+          "points_to": "線",
+          "text_x": 1189,
+          "text_y": 830,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1189,
+          "y": 830
+        },
+        "b": {
+          "as_written": "12日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "劉[岩?]",
+          "note": "",
+          "points_to": "線",
+          "text_x": 1185,
+          "text_y": 830,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1185,
+          "y": 830
+        },
+        "t": {
+          "as_written": "12日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "三劉砦",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 1183,
+          "text_y": 829,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1183,
+          "y": 829
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1185.6666666666667,
+      "y": 829.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "關家橋",
+          "note": "「夕」は日付の下に記載。",
+          "points_to": "線",
+          "text_x": 1279,
+          "text_y": 923,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1279,
+          "y": 923
+        },
+        "b": {
+          "as_written": "13日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "[關?]家橋",
+          "note": "「夕」は日付の下に記載。",
+          "points_to": "線",
+          "text_x": 1276,
+          "text_y": 924,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1276,
+          "y": 924
+        },
+        "t": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "閻家橋",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 1276,
+          "text_y": 921,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1276,
+          "y": 921
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1277.0,
+      "y": 922.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "「夕」は日付の下に記載。",
+          "points_to": "線",
+          "text_x": 1511,
+          "text_y": 939,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1511,
+          "y": 939
+        },
+        "b": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "地名の縦書きと近接。",
+          "points_to": "線",
+          "text_x": 1511,
+          "text_y": 944,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1511,
+          "y": 944
+        },
+        "t": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 1506,
+          "text_y": 943,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1506,
+          "y": 943
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1509.3333333333333,
+      "y": 942.0
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "",
+          "points_to": "線",
+          "text_x": 1619,
+          "text_y": 929,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1619,
+          "y": 929
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "",
+          "points_to": "線",
+          "text_x": 1622,
+          "text_y": 930,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1622,
+          "y": 930
+        },
+        "t": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大井",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 1620,
+          "text_y": 929,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1620,
+          "y": 929
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1620.3333333333333,
+      "y": 929.3333333333334
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "雁台寺",
+          "note": "",
+          "points_to": "線",
+          "text_x": 826,
+          "text_y": 1117,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 826,
+          "y": 1117
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "雁台寺",
+          "note": "",
+          "points_to": "線",
+          "text_x": 822,
+          "text_y": 1117,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 822,
+          "y": 1117
+        },
+        "t": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "雁台寺",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 825,
+          "text_y": 1118,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 825,
+          "y": 1118
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 824.3333333333334,
+      "y": 1117.3333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "13日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "小營",
+          "note": "",
+          "points_to": "線",
+          "text_x": 1305,
+          "text_y": 1345,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1305,
+          "y": 1345
+        },
+        "b": {
+          "as_written": "13日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "小營",
+          "note": "",
+          "points_to": "線",
+          "text_x": 1311,
+          "text_y": 1344,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1311,
+          "y": 1344
+        },
+        "t": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "中牟",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 1305,
+          "text_y": 1344,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1305,
+          "y": 1344
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1307.0,
+      "y": 1344.3333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "朱仙鎮",
+          "note": "",
+          "points_to": "線",
+          "text_x": 1548,
+          "text_y": 1227,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1548,
+          "y": 1227
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "朱仙鎮",
+          "note": "",
+          "points_to": "線",
+          "text_x": 1547,
+          "text_y": 1227,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1547,
+          "y": 1227
+        },
+        "t": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "朱仙鎮",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 1546,
+          "text_y": 1229,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1546,
+          "y": 1229
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1547.0,
+      "y": 1227.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "15日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "中牟",
+          "note": "西岡大尉□偵察。対象側の端は中牟南東の細いハッチ領域の先端付近。",
+          "points_to": "ハッチ領域",
+          "text_x": 1016,
+          "text_y": 1389,
+          "tip_x": 1234,
+          "tip_y": 1112,
+          "x": 1016,
+          "y": 1389
+        },
+        "b": {
+          "as_written": "15日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "中牟",
+          "note": "西[岡?]大尉偵察。対象側端は中牟の南東にある線上。",
+          "points_to": "線",
+          "text_x": 1018,
+          "text_y": 1389,
+          "tip_x": 1232,
+          "tip_y": 1116,
+          "x": 1018,
+          "y": 1389
+        },
+        "t": {
+          "as_written": "15日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "中牟",
+          "note": "西岡大尉地上偵察",
+          "points_to": "線",
+          "text_x": 1018,
+          "text_y": 1387,
+          "tip_x": 1230,
+          "tip_y": 1113,
+          "x": 1018,
+          "y": 1387
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1017.3333333333334,
+      "y": 1388.3333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "柳園口渡場",
+          "note": "増水橋梁流失ス。対象側の端は開封北側の細かい刻線付近。",
+          "points_to": "線",
+          "text_x": 1972,
+          "text_y": 516,
+          "tip_x": 1846,
+          "tip_y": 845,
+          "x": 1972,
+          "y": 516
+        },
+        "b": {
+          "as_written": "7月11日",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "開封",
+          "note": "増水橋梁流失ス。対象側端は開封の北側の囲み線付近。",
+          "points_to": "線",
+          "text_x": 1972,
+          "text_y": 517,
+          "tip_x": 1846,
+          "tip_y": 847,
+          "x": 1972,
+          "y": 517
+        },
+        "t": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "開封",
+          "note": "増水橋梁流失ス",
+          "points_to": "ハッチ領域",
+          "text_x": 1973,
+          "text_y": 516,
+          "tip_x": 1848,
+          "tip_y": 847,
+          "x": 1973,
+          "y": 516
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1972.3333333333333,
+      "y": 516.3333333333334
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "十里鋪",
+          "note": "[横?][大?]ス。対象側の端が十里鋪の小円付近と重なる。",
+          "points_to": "地点",
+          "text_x": 2167,
+          "text_y": 849,
+          "tip_x": 2016,
+          "tip_y": 961,
+          "x": 2167,
+          "y": 849
+        },
+        "b": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "十里鋪",
+          "note": "[擴?]大ス。対象側端は十里鋪の円記号付近。",
+          "points_to": "地点",
+          "text_x": 2171,
+          "text_y": 852,
+          "tip_x": 2016,
+          "tip_y": 962,
+          "x": 2171,
+          "y": 852
+        },
+        "t": {
+          "as_written": "7月11日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "十里鋪",
+          "note": "擴大ス",
+          "points_to": "線",
+          "text_x": 2172,
+          "text_y": 847,
+          "tip_x": 2017,
+          "tip_y": 965,
+          "x": 2172,
+          "y": 847
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2170.0,
+      "y": 849.3333333333334
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "19日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "丘店",
+          "note": "対象側の端は丘店の右下にある細いハッチ領域。",
+          "points_to": "ハッチ領域",
+          "text_x": 1834,
+          "text_y": 1219,
+          "tip_x": 1799,
+          "tip_y": 1162,
+          "x": 1834,
+          "y": 1219
+        },
+        "b": {
+          "as_written": "19日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "丘店",
+          "note": "丘店の東側にある小さなハッチ部分から引出線。",
+          "points_to": "ハッチ領域",
+          "text_x": 1836,
+          "text_y": 1222,
+          "tip_x": 1799,
+          "tip_y": 1159,
+          "x": 1836,
+          "y": 1222
+        },
+        "t": {
+          "as_written": "19日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "岳店",
+          "note": "",
+          "points_to": "ハッチ領域",
+          "text_x": 1835,
+          "text_y": 1221,
+          "tip_x": 1796,
+          "tip_y": 1157,
+          "x": 1835,
+          "y": 1221
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1835.0,
+      "y": 1220.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "25～28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "王家庄",
+          "note": "対象側の端は開封南東側で屈曲する線付近。",
+          "points_to": "線",
+          "text_x": 2199,
+          "text_y": 1163,
+          "tip_x": 2039,
+          "tip_y": 1144,
+          "x": 2199,
+          "y": 1163
+        },
+        "b": {
+          "as_written": "25～28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "王家庄",
+          "note": "開封の東側を南へ延びる帯の境界付近から引出線。",
+          "points_to": "線",
+          "text_x": 2194,
+          "text_y": 1163,
+          "tip_x": 2043,
+          "tip_y": 1153,
+          "x": 2194,
+          "y": 1163
+        },
+        "t": {
+          "as_written": "25～28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "王家庄",
+          "note": "",
+          "points_to": "線",
+          "text_x": 2202,
+          "text_y": 1162,
+          "tip_x": 2024,
+          "tip_y": 1151,
+          "x": 2202,
+          "y": 1162
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2198.3333333333335,
+      "y": 1162.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p06",
+      "readings": {
+        "a": {
+          "as_written": "24日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "朱仙鎮",
+          "note": "地上並空中偵察。対象側の端は画像下端近くの濃い帯の右側輪郭付近。",
+          "points_to": "線",
+          "text_x": 1933,
+          "text_y": 1417,
+          "tip_x": 1780,
+          "tip_y": 1575,
+          "x": 1933,
+          "y": 1417
+        },
+        "b": {
+          "as_written": "24日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "朱仙鎮",
+          "note": "地上並空中偵察。対象側端は濃いハッチの縁付近。",
+          "points_to": "ハッチ領域",
+          "text_x": 1939,
+          "text_y": 1420,
+          "tip_x": 1776,
+          "tip_y": 1581,
+          "x": 1939,
+          "y": 1420
+        },
+        "t": {
+          "as_written": "24日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "朱仙鎮",
+          "note": "地上並空中偵察。線の対象は画像下端付近で不鮮明。",
+          "points_to": "線",
+          "text_x": 1933,
+          "text_y": 1415,
+          "tip_x": 1708,
+          "tip_y": 1630,
+          "x": 1933,
+          "y": 1415
+        }
+      },
+      "tip_unstable": true,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1935.0,
+      "y": 1417.3333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "冠庄",
+          "note": "指示矢印は確認できない。",
+          "points_to": "不明",
+          "text_x": 299,
+          "text_y": 687,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 299,
+          "y": 687
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "冠庄",
+          "note": "対応する矢印を確認できない。",
+          "points_to": "不明",
+          "text_x": 301,
+          "text_y": 687,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 301,
+          "y": 687
+        },
+        "t": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "白潭",
+          "note": "日付の近くに複数の線があり、対象を特定できない。",
+          "points_to": "不明",
+          "text_x": 303,
+          "text_y": 686,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 303,
+          "y": 686
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 301.0,
+      "y": 686.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "a": {
+          "as_written": "29日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "底[閣?]",
+          "note": "日付側へ向く矢じりの反対端。細いハッチ帯付近を起点とする。",
+          "points_to": "ハッチ領域",
+          "text_x": 737,
+          "text_y": 636,
+          "tip_x": 632,
+          "tip_y": 640,
+          "x": 737,
+          "y": 636
+        },
+        "b": {
+          "as_written": "29日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "底[閣?]",
+          "note": "日付の左側に伸びる引出線の対象側端。",
+          "points_to": "ハッチ領域",
+          "text_x": 737,
+          "text_y": 636,
+          "tip_x": 631,
+          "tip_y": 636,
+          "x": 737,
+          "y": 636
+        },
+        "t": {
+          "as_written": "29日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "大隻溝",
+          "note": "矢印の根元側は細長い帯状部分に接する。",
+          "points_to": "線",
+          "text_x": 737,
+          "text_y": 634,
+          "tip_x": 633,
+          "tip_y": 640,
+          "x": 737,
+          "y": 634
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 737.0,
+      "y": 635.3333333333334
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "t": {
+          "as_written": "25日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "白潭",
+          "note": "28日と縦に並び、矢印は両注記の間にあるため対応は不確実。",
+          "points_to": "ハッチ領域",
+          "text_x": 142,
+          "text_y": 1025,
+          "tip_x": 226,
+          "tip_y": 1040,
+          "x": 142,
+          "y": 1025
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 142.0,
+      "y": 1025.0
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "t": {
+          "as_written": "28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "呂潭",
+          "note": "25日と縦に並び、同じ矢印との対応は不確実。",
+          "points_to": "ハッチ領域",
+          "text_x": 141,
+          "text_y": 1066,
+          "tip_x": 226,
+          "tip_y": 1040,
+          "x": 141,
+          "y": 1066
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 141.0,
+      "y": 1066.0
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "a": {
+          "as_written": "15日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "扶溝",
+          "note": "付随文は「西岡大尉[水?]偵察」と読める。左下向き指示線の根元は河道付近だが、交差する線との区別が不鮮明。",
+          "points_to": "線",
+          "text_x": 27,
+          "text_y": 1346,
+          "tip_x": 243,
+          "tip_y": 1342,
+          "x": 27,
+          "y": 1346
+        },
+        "b": {
+          "as_written": "15日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "扶溝",
+          "note": "付記は「西岡大尉[林?]偵察」。斜めの引出線の対象側端は不鮮明。",
+          "points_to": "線",
+          "text_x": 26,
+          "text_y": 1345,
+          "tip_x": 222,
+          "tip_y": 1358,
+          "x": 26,
+          "y": 1345
+        },
+        "t": {
+          "as_written": "15日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "扶溝",
+          "note": "付随する縦書きは「西岡大尉以下偵察」と見える。",
+          "points_to": "ハッチ領域",
+          "text_x": 26,
+          "text_y": 1343,
+          "tip_x": 205,
+          "tip_y": 1350,
+          "x": 26,
+          "y": 1343
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 26.333333333333332,
+      "y": 1344.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "a": {
+          "as_written": "17日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "[逍?][遙?]口",
+          "note": "直下に波線があるが、日付の指示矢印とは確認できない。",
+          "points_to": "不明",
+          "text_x": 787,
+          "text_y": 1225,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 787,
+          "y": 1225
+        },
+        "b": {
+          "as_written": "17日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "獨[墻?]集",
+          "note": "対応する矢印を確認できない。",
+          "points_to": "不明",
+          "text_x": 786,
+          "text_y": 1225,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 786,
+          "y": 1225
+        },
+        "t": {
+          "as_written": "17日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "独塘集",
+          "note": "日付は領域境界の近くにあるが、対象を特定できない。",
+          "points_to": "不明",
+          "text_x": 790,
+          "text_y": 1226,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 790,
+          "y": 1226
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 787.6666666666666,
+      "y": 1225.3333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "a": {
+          "as_written": "18日 15.00",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "破線の指示線。日付側の矢じりと反対の端はハッチ領域の右縁付近。",
+          "points_to": "線",
+          "text_x": 924,
+          "text_y": 1499,
+          "tip_x": 751,
+          "tip_y": 1535,
+          "x": 924,
+          "y": 1499
+        },
+        "b": {
+          "as_written": "18日 15.00",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "二段書き。破線の対象側端はハッチ領域の右縁付近。",
+          "points_to": "線",
+          "text_x": 925,
+          "text_y": 1500,
+          "tip_x": 750,
+          "tip_y": 1537,
+          "x": 925,
+          "y": 1500
+        },
+        "t": {
+          "as_written": "18日 15.00",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "根元側は領域境界付近にある。",
+          "points_to": "線",
+          "text_x": 931,
+          "text_y": 1497,
+          "tip_x": 739,
+          "tip_y": 1538,
+          "x": 931,
+          "y": 1497
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 926.6666666666666,
+      "y": 1498.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "a": {
+          "as_written": "18.30",
+          "confidence": "低",
+          "has_arrow": false,
+          "nearest_place": "劉庄",
+          "note": "日付を伴わない時刻らしき記載。文字と地点記号が近接しており、対象も確定できない。",
+          "points_to": "NO_FIT",
+          "text_x": 439,
+          "text_y": 453,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 439,
+          "y": 453
+        },
+        "b": {
+          "as_written": "18[.?]□0",
+          "confidence": "低",
+          "has_arrow": false,
+          "nearest_place": "通許",
+          "note": "太い数字の注記。日付か時刻か確定できないため併記。",
+          "points_to": "不明",
+          "text_x": 442,
+          "text_y": 454,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 442,
+          "y": 454
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 440.5,
+      "y": 453.5
+    },
+    {
+      "kind": "date",
+      "page": "p07",
+      "readings": {
+        "a": {
+          "as_written": "25日\n28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "呂潭",
+          "note": "上下二段の記載。両日を結ぶ範囲記号は確認できない。共通の左向き矢印として読んだ。",
+          "points_to": "ハッチ領域",
+          "text_x": 141,
+          "text_y": 1045,
+          "tip_x": 238,
+          "tip_y": 1041,
+          "x": 141,
+          "y": 1045
+        },
+        "b": {
+          "as_written": "25日\n28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "呂潭",
+          "note": "二段書き。両日を結ぶ範囲記号は確認できない。",
+          "points_to": "ハッチ領域",
+          "text_x": 141,
+          "text_y": 1045,
+          "tip_x": 249,
+          "tip_y": 1039,
+          "x": 141,
+          "y": 1045
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 141.0,
+      "y": 1045.0
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "小營",
+          "note": "上端近くの破線に沿う注記。",
+          "points_to": "線",
+          "text_x": 1321,
+          "text_y": 52,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1321,
+          "y": 52
+        },
+        "b": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "小營",
+          "note": "上端近くの破線に隣接。",
+          "points_to": "線",
+          "text_x": 1322,
+          "text_y": 51,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1322,
+          "y": 51
+        },
+        "t": {
+          "as_written": "13日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "朱仙鎮",
+          "note": "画像上端に近く、注記との対応は不明。",
+          "points_to": "不明",
+          "text_x": 1327,
+          "text_y": 50,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1327,
+          "y": 50
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1323.3333333333333,
+      "y": 51.0
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "15日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "小營",
+          "note": "西岡大尉偵察。途中に記号あり。引出線が上端付近を通り、対象側端点の判定に不確かさがある。",
+          "points_to": "線",
+          "text_x": 1027,
+          "text_y": 87,
+          "tip_x": 1449,
+          "tip_y": 302,
+          "x": 1027,
+          "y": 87
+        },
+        "b": {
+          "as_written": "15日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "小營",
+          "note": "付記は「西岡大尉□偵察」。□は判別できない記号。斜線から湾曲部へ続く線の根元位置は概略。",
+          "points_to": "線",
+          "text_x": 1025,
+          "text_y": 87,
+          "tip_x": 1439,
+          "tip_y": 277,
+          "x": 1025,
+          "y": 87
+        },
+        "t": {
+          "as_written": "15日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "小営",
+          "note": "「西岡大尉[凵?]偵察」。線が画像上端で切れており、対象側の端を確定できない。",
+          "points_to": "不明",
+          "text_x": 1028,
+          "text_y": 85,
+          "tip_x": 1086,
+          "tip_y": 34,
+          "x": 1028,
+          "y": 85
+        }
+      },
+      "tip_unstable": true,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1026.6666666666667,
+      "y": 86.33333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "24日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "大雙溝",
+          "note": "地上並空中偵察。斜めの引出線の対象側端。",
+          "points_to": "線",
+          "text_x": 1974,
+          "text_y": 117,
+          "tip_x": 1759,
+          "tip_y": 319,
+          "x": 1974,
+          "y": 117
+        },
+        "b": {
+          "as_written": "24日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "大[夏?]溝",
+          "note": "付記は「地上並空中偵察」。斜めの指示線を日付と反対側へたどった端。",
+          "points_to": "ハッチ領域",
+          "text_x": 1975,
+          "text_y": 118,
+          "tip_x": 1738,
+          "tip_y": 328,
+          "x": 1975,
+          "y": 118
+        },
+        "t": {
+          "as_written": "24日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "大双溝",
+          "note": "「地上並空中偵察」。指示線と地図の線が交差しており、対象側の端は不確か。",
+          "points_to": "不明",
+          "text_x": 1976,
+          "text_y": 118,
+          "tip_x": 1704,
+          "tip_y": 347,
+          "x": 1976,
+          "y": 118
+        }
+      },
+      "tip_unstable": true,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1975.0,
+      "y": 117.66666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大橋",
+          "note": "西側の曲線に隣接。",
+          "points_to": "線",
+          "text_x": 1227,
+          "text_y": 515,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1227,
+          "y": 515
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "大橋",
+          "note": "左側の湾曲した実線に隣接。",
+          "points_to": "線",
+          "text_x": 1228,
+          "text_y": 516,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1228,
+          "y": 516
+        },
+        "t": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "大橋",
+          "note": "近傍の曲線との対応は不明。",
+          "points_to": "不明",
+          "text_x": 1225,
+          "text_y": 514,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1225,
+          "y": 514
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1226.6666666666667,
+      "y": 515.0
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "冠庄",
+          "note": "複数の線・帯状領域の間にあり、対象を一意に定められない。",
+          "points_to": "不明",
+          "text_x": 1736,
+          "text_y": 774,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1736,
+          "y": 774
+        },
+        "b": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "冠庄",
+          "note": "中央の細い帯状部分に近接するが、対象を限定できない。",
+          "points_to": "不明",
+          "text_x": 1734,
+          "text_y": 776,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1734,
+          "y": 776
+        },
+        "t": {
+          "as_written": "14日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "白潭",
+          "note": "近傍の線との対応は不明。",
+          "points_to": "不明",
+          "text_x": 1735,
+          "text_y": 775,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1735,
+          "y": 775
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1735.0,
+      "y": 775.0
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "29日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "底[閣?]",
+          "note": "東側の細い帯状領域から日付へ向かう矢印。",
+          "points_to": "ハッチ領域",
+          "text_x": 2184,
+          "text_y": 725,
+          "tip_x": 2083,
+          "tip_y": 743,
+          "x": 2184,
+          "y": 725
+        },
+        "b": {
+          "as_written": "29日",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "底[閣?]",
+          "note": "右側の細長い区画から日付側へ向く矢印。",
+          "points_to": "線",
+          "text_x": 2185,
+          "text_y": 726,
+          "tip_x": 2090,
+          "tip_y": 742,
+          "x": 2185,
+          "y": 726
+        },
+        "t": {
+          "as_written": "29日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "大双溝",
+          "note": "細長い帯状部分付近を指す。",
+          "points_to": "線",
+          "text_x": 2186,
+          "text_y": 726,
+          "tip_x": 2092,
+          "tip_y": 738,
+          "x": 2186,
+          "y": 726
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2185.0,
+      "y": 725.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "25日\n｜\n28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "呂潭",
+          "note": "日付は上下二段で、間に短い縦線が見える。矢じりと反対の右端を採った。",
+          "points_to": "ハッチ領域",
+          "text_x": 1567,
+          "text_y": 1147,
+          "tip_x": 1659,
+          "tip_y": 1144,
+          "x": 1567,
+          "y": 1147
+        },
+        "b": {
+          "as_written": "25日\n28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "呂潭",
+          "note": "二つの日付が上下に並び、間に縦の短線がある。左向き矢印の右側の端を採った。",
+          "points_to": "線",
+          "text_x": 1566,
+          "text_y": 1149,
+          "tip_x": 1664,
+          "tip_y": 1140,
+          "x": 1566,
+          "y": 1149
+        },
+        "t": {
+          "as_written": "25日～28日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "呂潭",
+          "note": "画像上では「25日」と「28日」が上下に並ぶ。",
+          "points_to": "ハッチ領域",
+          "text_x": 1566,
+          "text_y": 1147,
+          "tip_x": 1659,
+          "tip_y": 1143,
+          "x": 1566,
+          "y": 1147
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1566.3333333333333,
+      "y": 1147.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "15日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "扶溝",
+          "note": "西岡大尉偵察。途中に記号あり。斜めの引出線の右上端を採った。",
+          "points_to": "線",
+          "text_x": 1454,
+          "text_y": 1455,
+          "tip_x": 1635,
+          "tip_y": 1473,
+          "x": 1454,
+          "y": 1455
+        },
+        "b": {
+          "as_written": "15日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "扶溝",
+          "note": "付記は「西岡大尉□偵察」。□は判別できない記号。左下へ向く指示線の右上側の端を採った。",
+          "points_to": "線",
+          "text_x": 1453,
+          "text_y": 1458,
+          "tip_x": 1635,
+          "tip_y": 1469,
+          "x": 1453,
+          "y": 1458
+        },
+        "t": {
+          "as_written": "15日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "扶溝",
+          "note": "「西岡大尉[凵?]偵察」。指示線は他の線と重なり、対象側の端は不確か。",
+          "points_to": "不明",
+          "text_x": 1456,
+          "text_y": 1456,
+          "tip_x": 1638,
+          "tip_y": 1452,
+          "x": 1456,
+          "y": 1456
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1454.3333333333333,
+      "y": 1456.3333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "17日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "[通?][關?]口",
+          "note": "東側の波状線に隣接。",
+          "points_to": "線",
+          "text_x": 2245,
+          "text_y": 1337,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 2245,
+          "y": 1337
+        },
+        "b": {
+          "as_written": "17日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "常營集",
+          "note": "右下の波状の線に隣接。",
+          "points_to": "線",
+          "text_x": 2242,
+          "text_y": 1337,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 2242,
+          "y": 1337
+        },
+        "t": {
+          "as_written": "17日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "常営集",
+          "note": "",
+          "points_to": "不明",
+          "text_x": 2245,
+          "text_y": 1336,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 2245,
+          "y": 1336
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2244.0,
+      "y": 1336.6666666666667
+    },
+    {
+      "kind": "date",
+      "page": "p08",
+      "readings": {
+        "a": {
+          "as_written": "18日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "小吳家",
+          "note": "画像右下。線の対象側が透かしに重なり、端点座標は概略。日付の続きは確認できない。",
+          "points_to": "不明",
+          "text_x": 2367,
+          "text_y": 1602,
+          "tip_x": 2205,
+          "tip_y": 1645,
+          "x": 2367,
+          "y": 1602
+        },
+        "b": {
+          "as_written": "18日",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "小吳家",
+          "note": "日付側へ向く矢印らしい線があるが、反対側は下端の透かしと重なり、根元を確定できない。",
+          "points_to": "不明",
+          "text_x": 2364,
+          "text_y": 1602,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 2364,
+          "y": 1602
+        },
+        "t": {
+          "as_written": "18日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "小呉家",
+          "note": "画像右端に近く、続きは見えない。",
+          "points_to": "不明",
+          "text_x": 2368,
+          "text_y": 1603,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 2368,
+          "y": 1603
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 2366.3333333333335,
+      "y": 1602.3333333333333
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p09",
+      "readings": {
+        "a": {
+          "as_written": "18日 15.00",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "根元側はハッチ領域の右側外縁線に接する。",
+          "points_to": "線",
+          "text_x": 801,
+          "text_y": 171,
+          "tip_x": 619,
+          "tip_y": 210,
+          "x": 801,
+          "y": 171
+        },
+        "b": {
+          "as_written": "18日 15.00",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "根元はハッチ領域の右側境界線。",
+          "points_to": "線",
+          "text_x": 803,
+          "text_y": 174,
+          "tip_x": 617,
+          "tip_y": 211,
+          "x": 803,
+          "y": 174
+        },
+        "t": {
+          "as_written": "18日 15.00",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "引出線の根元は囲まれた領域の境界線上に見える。",
+          "points_to": "線",
+          "text_x": 802,
+          "text_y": 170,
+          "tip_x": 617,
+          "tip_y": 211,
+          "x": 802,
+          "y": 170
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.943141294846505,
+        "lon": 114.69638929622147
+      },
+      "x": 802.0,
+      "y": 171.66666666666666
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p09",
+      "readings": {
+        "a": {
+          "as_written": "25日 12.00",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "錢圍",
+          "note": "左下へ延びる引出線の根元はハッチ領域の外縁。付近に「偵察」と旗状記号があるが、日付との対応は不確か。",
+          "points_to": "線",
+          "text_x": 1630,
+          "text_y": 964,
+          "tip_x": 1386,
+          "tip_y": 1036,
+          "x": 1630,
+          "y": 964
+        },
+        "b": {
+          "as_written": "25日 12.00",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "錢[周?]",
+          "note": "根元はハッチ領域の右側境界線。",
+          "points_to": "線",
+          "text_x": 1628,
+          "text_y": 965,
+          "tip_x": 1391,
+          "tip_y": 1037,
+          "x": 1628,
+          "y": 965
+        },
+        "t": {
+          "as_written": "25日 12.00",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "[錢?]□",
+          "note": "引出線の根元はハッチ領域の縁に見える。",
+          "points_to": "ハッチ領域",
+          "text_x": 1633,
+          "text_y": 965,
+          "tip_x": 1387,
+          "tip_y": 1035,
+          "x": 1633,
+          "y": 965
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.60502750230635,
+        "lon": 115.13565314535283
+      },
+      "x": 1630.3333333333333,
+      "y": 964.6666666666666
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p09",
+      "readings": {
+        "a": {
+          "as_written": "7月2日",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "光武廟",
+          "note": "根元側は細いハッチ領域の斜めの外縁線に接する。",
+          "points_to": "線",
+          "text_x": 2111,
+          "text_y": 1517,
+          "tip_x": 1914,
+          "tip_y": 1592,
+          "x": 2111,
+          "y": 1517
+        },
+        "b": {
+          "as_written": "7月2日",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "光武廟",
+          "note": "根元は光武廟の左上にあるハッチ領域の境界線。",
+          "points_to": "線",
+          "text_x": 2108,
+          "text_y": 1520,
+          "tip_x": 1915,
+          "tip_y": 1594,
+          "x": 2108,
+          "y": 1520
+        },
+        "t": {
+          "as_written": "7月2日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "光武廟",
+          "note": "引出線の根元はハッチ領域付近に見える。",
+          "points_to": "ハッチ領域",
+          "text_x": 2112,
+          "text_y": 1519,
+          "tip_x": 1917,
+          "tip_y": 1598,
+          "x": 2112,
+          "y": 1519
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.369065270553136,
+        "lon": 115.39798233736818
+      },
+      "x": 2110.3333333333335,
+      "y": 1518.6666666666667
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "18日 15.0[0?]",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "二段書き。時刻の末尾は不鮮明。対象側の端は夏亭北東側の境界線付近。",
+          "points_to": "線",
+          "text_x": 2336,
+          "text_y": 178,
+          "tip_x": 2153,
+          "tip_y": 219,
+          "x": 2336,
+          "y": 178
+        },
+        "b": {
+          "as_written": "18日 15.0[0?]",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "時刻の末尾は不鮮明。対象側の端は、夏亭北東の曲線付近。",
+          "points_to": "線",
+          "text_x": 2335,
+          "text_y": 178,
+          "tip_x": 2154,
+          "tip_y": 218,
+          "x": 2335,
+          "y": 178
+        },
+        "t": {
+          "as_written": "18日 15.0□",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "陳賢店",
+          "note": "時刻の末尾は画像右端で切れている。線の端は概位置。",
+          "points_to": "線",
+          "text_x": 2331,
+          "text_y": 177,
+          "tip_x": 2150,
+          "tip_y": 220,
+          "x": 2331,
+          "y": 177
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.9434692972238,
+        "lon": 114.6944581769055
+      },
+      "x": 2334.0,
+      "y": 177.66666666666666
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "六月十二日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考の線種凡例。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 958,
+          "text_y": 1281,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 958,
+          "y": 1281
+        },
+        "b": {
+          "as_written": "六月十二日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の線見本に付いた日付。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 957,
+          "text_y": 1282,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 957,
+          "y": 1282
+        },
+        "t": {
+          "as_written": "六月十二日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 956,
+          "text_y": 1281,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 956,
+          "y": 1281
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.47953066812246,
+        "lon": 114.16521370246416
+      },
+      "x": 957.0,
+      "y": 1281.3333333333333
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "六月十三日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考の線種凡例。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 899,
+          "text_y": 1297,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 899,
+          "y": 1297
+        },
+        "b": {
+          "as_written": "六月十三日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の線見本に付いた日付。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 899,
+          "text_y": 1296,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 899,
+          "y": 1296
+        },
+        "t": {
+          "as_written": "六月十三日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 897,
+          "text_y": 1292,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 897,
+          "y": 1292
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.47389740372099,
+        "lon": 114.13972460222001
+      },
+      "x": 898.3333333333334,
+      "y": 1295.0
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "六月十四日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考の線種凡例。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 842,
+          "text_y": 1299,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 842,
+          "y": 1299
+        },
+        "b": {
+          "as_written": "六月十四日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の線見本に付いた日付。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 839,
+          "text_y": 1296,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 839,
+          "y": 1296
+        },
+        "t": {
+          "as_written": "六月十四日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 841,
+          "text_y": 1292,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 841,
+          "y": 1292
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.473769675394465,
+        "lon": 114.11354433746918
+      },
+      "x": 840.6666666666666,
+      "y": 1295.6666666666667
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "t": {
+          "as_written": "六月十五日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 954,
+          "text_y": 1592,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 954,
+          "y": 1592
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.34790639588232,
+        "lon": 114.19123935247936
+      },
+      "x": 954.0,
+      "y": 1592.0
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "六月十七日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考のハッチ凡例。地図上の個別領域への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 895,
+          "text_y": 1589,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 895,
+          "y": 1589
+        },
+        "b": {
+          "as_written": "六月十七日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例のハッチ見本に付いた日付。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 896,
+          "text_y": 1580,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 896,
+          "y": 1580
+        },
+        "t": {
+          "as_written": "六月十七日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 893,
+          "text_y": 1579,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 893,
+          "y": 1579
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.35202023186622,
+        "lon": 114.16341905941097
+      },
+      "x": 894.6666666666666,
+      "y": 1582.6666666666667
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "六月十八日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考のハッチ凡例。地図上の個別領域への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 839,
+          "text_y": 1586,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 839,
+          "y": 1586
+        },
+        "b": {
+          "as_written": "六月十八日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例のハッチ見本に付いた日付。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 838,
+          "text_y": 1587,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 838,
+          "y": 1587
+        },
+        "t": {
+          "as_written": "六月十八日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 837,
+          "text_y": 1579,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 837,
+          "y": 1579
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.35160734731447,
+        "lon": 114.1377525852655
+      },
+      "x": 838.0,
+      "y": 1584.0
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "六月十五日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考のハッチ凡例。地図上の個別領域への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 955,
+          "text_y": 1574,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 955,
+          "y": 1574
+        },
+        "b": {
+          "as_written": "六月十五日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例のハッチ見本に付いた日付。地図上の個別対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 957,
+          "text_y": 1576,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 957,
+          "y": 1576
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.35510408529794,
+        "lon": 114.19065053049101
+      },
+      "x": 956.0,
+      "y": 1575.0
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "六月十五日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考本文中の日付。後続に「西岡大尉偵察」。個別の図形を指さない。",
+          "points_to": "NO_FIT",
+          "text_x": 1150,
+          "text_y": 1214,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1150,
+          "y": 1214
+        },
+        "b": {
+          "as_written": "六月十五日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考本文中の日付。「西岡大尉偵察」に伴う。地図上の個別対象を指さない。",
+          "points_to": "NO_FIT",
+          "text_x": 1151,
+          "text_y": 1213,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1151,
+          "y": 1213
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.507753031304226,
+        "lon": 114.24727789207229
+      },
+      "x": 1150.5,
+      "y": 1213.5
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p10",
+      "readings": {
+        "a": {
+          "as_written": "六月二十四日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考本文中の日付。後続の文章は画像下端で途切れる。個別の図形を指さない。",
+          "points_to": "NO_FIT",
+          "text_x": 1145,
+          "text_y": 1542,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1145,
+          "y": 1542
+        },
+        "b": {
+          "as_written": "六月二十四日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "備考本文中の日付。地図上の個別対象を指さない。",
+          "points_to": "NO_FIT",
+          "text_x": 1145,
+          "text_y": 1542,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1145,
+          "y": 1542
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.3685793203696,
+        "lon": 114.27373833079493
+      },
+      "x": 1145.0,
+      "y": 1542.0
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p11",
+      "readings": {
+        "a": {
+          "as_written": "7月2日",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "光武[廟?]",
+          "note": "根元は小さなハッチ領域の左上境界線上。",
+          "points_to": "線",
+          "text_x": 2122,
+          "text_y": 623,
+          "tip_x": 1926,
+          "tip_y": 697,
+          "x": 2122,
+          "y": 623
+        },
+        "b": {
+          "as_written": "7月2日",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "光武廟",
+          "note": "対象側の端は小円の左上にあるハッチ領域の境界線上。",
+          "points_to": "線",
+          "text_x": 2123,
+          "text_y": 621,
+          "tip_x": 1928,
+          "tip_y": 695,
+          "x": 2123,
+          "y": 621
+        },
+        "t": {
+          "as_written": "7月2日",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "光武庙",
+          "note": "対象側の端はハッチ領域の縁に接する。",
+          "points_to": "ハッチ領域",
+          "text_x": 2120,
+          "text_y": 622,
+          "tip_x": 1926,
+          "tip_y": 697,
+          "x": 2120,
+          "y": 622
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.370249722971074,
+        "lon": 115.40155457781285
+      },
+      "x": 2121.6666666666665,
+      "y": 622.0
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p11",
+      "readings": {
+        "a": {
+          "as_written": "7月8日",
+          "confidence": "高",
+          "has_arrow": true,
+          "nearest_place": "光武[廟?]",
+          "note": "根元は画像右下の曲線上。",
+          "points_to": "線",
+          "text_x": 2169,
+          "text_y": 1374,
+          "tip_x": 2311,
+          "tip_y": 1295,
+          "x": 2169,
+          "y": 1374
+        },
+        "b": {
+          "as_written": "7月8日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "光武廟",
+          "note": "対象側の端は画像右下の曲線との接点付近。",
+          "points_to": "線",
+          "text_x": 2168,
+          "text_y": 1372,
+          "tip_x": 2312,
+          "tip_y": 1294,
+          "x": 2168,
+          "y": 1372
+        },
+        "t": {
+          "as_written": "7月8日",
+          "confidence": "中",
+          "has_arrow": true,
+          "nearest_place": "光武庙",
+          "note": "対象側の端は画面右下の曲線に接する。",
+          "points_to": "線",
+          "text_x": 2172,
+          "text_y": 1372,
+          "tip_x": 2305,
+          "tip_y": 1294,
+          "x": 2172,
+          "y": 1372
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.04308749853652,
+        "lon": 115.49049994688527
+      },
+      "x": 2169.6666666666665,
+      "y": 1372.6666666666667
+    },
+    {
+      "error_reference": {
+        "loo_max_m": 10334.36419875304,
+        "loo_median_m": 4448.361958071488
+      },
+      "kind": "date",
+      "page": "p11",
+      "readings": {
+        "a": {
+          "as_written": "□ 12.00",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "[銭?]店",
+          "note": "上端で日付部分が欠けている。12.00は読めるが、左下から伸びる矢印との対応は不確か。",
+          "points_to": "線",
+          "text_x": 1645,
+          "text_y": 65,
+          "tip_x": 1402,
+          "tip_y": 129,
+          "x": 1645,
+          "y": 65
+        },
+        "b": {
+          "as_written": "□日 12.00",
+          "confidence": "低",
+          "has_arrow": true,
+          "nearest_place": "[銭?]店",
+          "note": "日付は画像上端で切れており、日より前の文字と文字数は判読できない。12.00は見える。対象側の端はハッチ領域の境界付近。",
+          "points_to": "線",
+          "text_x": 1645,
+          "text_y": 69,
+          "tip_x": 1395,
+          "tip_y": 130,
+          "x": 1645,
+          "y": 69
+        }
+      },
+      "tip_unstable": false,
+      "wgs84": {
+        "lat": 33.6086408020887,
+        "lon": 115.13564784891723
+      },
+      "x": 1645.0,
+      "y": 67.0
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月十一日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の破線見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 1031,
+          "text_y": 414,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1031,
+          "y": 414
+        },
+        "b": {
+          "as_written": "六月十一日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例上段右。線種見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 1031,
+          "text_y": 416,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1031,
+          "y": 416
+        },
+        "t": {
+          "as_written": "六月十二日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付で、地図上の対象を直接指していない。",
+          "points_to": "NO_FIT",
+          "text_x": 1033,
+          "text_y": 416,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1033,
+          "y": 416
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1031.6666666666667,
+      "y": 415.3333333333333
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月十二日夕",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の線見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 975,
+          "text_y": 425,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 975,
+          "y": 425
+        },
+        "b": {
+          "as_written": "六月十[三?]日夕",
+          "confidence": "低",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例上段中央。日の一の位が不鮮明。線種見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 975,
+          "text_y": 427,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 975,
+          "y": 427
+        },
+        "t": {
+          "as_written": "六月十三日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 979,
+          "text_y": 423,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 979,
+          "y": 423
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 976.3333333333334,
+      "y": 425.0
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月十四日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の実線見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 919,
+          "text_y": 425,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 919,
+          "y": 425
+        },
+        "b": {
+          "as_written": "六月十四日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例上段左。線種見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 920,
+          "text_y": 427,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 920,
+          "y": 427
+        },
+        "t": {
+          "as_written": "六月十四日夕",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 921,
+          "text_y": 423,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 921,
+          "y": 423
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 920.0,
+      "y": 425.0
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月十五日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 1026,
+          "text_y": 699,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1026,
+          "y": 699
+        },
+        "b": {
+          "as_written": "六月十五日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中段右。記号見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 1026,
+          "text_y": 701,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1026,
+          "y": 701
+        },
+        "t": {
+          "as_written": "六月十五日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 1026,
+          "text_y": 696,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1026,
+          "y": 696
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1026.0,
+      "y": 698.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月十七日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 966,
+          "text_y": 704,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 966,
+          "y": 704
+        },
+        "b": {
+          "as_written": "六月十七日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中段中央。記号見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 965,
+          "text_y": 705,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 965,
+          "y": 705
+        },
+        "t": {
+          "as_written": "六月十七日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 968,
+          "text_y": 702,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 968,
+          "y": 702
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 966.3333333333334,
+      "y": 703.6666666666666
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月十八日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 912,
+          "text_y": 705,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 912,
+          "y": 705
+        },
+        "b": {
+          "as_written": "六月十八日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中段左。記号見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 912,
+          "text_y": 705,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 912,
+          "y": 705
+        },
+        "t": {
+          "as_written": "六月十八日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 912,
+          "text_y": 702,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 912,
+          "y": 702
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 912.0,
+      "y": 704.0
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月二十四日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の塗り見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 1018,
+          "text_y": 1005,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1018,
+          "y": 1005
+        },
+        "b": {
+          "as_written": "六月二十四日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例下段右。模様見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 1019,
+          "text_y": 1007,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1019,
+          "y": 1007
+        },
+        "t": {
+          "as_written": "六月二十四日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 1018,
+          "text_y": 1006,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1018,
+          "y": 1006
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1018.3333333333334,
+      "y": 1006.0
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月二十五日－二十八日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の交差模様見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 960,
+          "text_y": 1065,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 960,
+          "y": 1065
+        },
+        "b": {
+          "as_written": "六月二十五日―二十八日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例下段中央。日付間に縦の連結線がある。模様見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 962,
+          "text_y": 1064,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 962,
+          "y": 1064
+        },
+        "t": {
+          "as_written": "六月二十五日－二十八日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付。",
+          "points_to": "NO_FIT",
+          "text_x": 961,
+          "text_y": 1063,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 961,
+          "y": 1063
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 961.0,
+      "y": 1064.0
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "a": {
+          "as_written": "六月二十五日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例の格子模様見本に付された日付。地図上の対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 904,
+          "text_y": 1005,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 904,
+          "y": 1005
+        },
+        "b": {
+          "as_written": "六月二十五日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例下段左。折り目と重なっている。模様見本の説明で、地図上の特定対象への注記ではない。",
+          "points_to": "NO_FIT",
+          "text_x": 906,
+          "text_y": 1008,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 906,
+          "y": 1008
+        },
+        "t": {
+          "as_written": "六月二十五日",
+          "confidence": "中",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "凡例中の日付。下部は折れ目に重なる。",
+          "points_to": "NO_FIT",
+          "text_x": 905,
+          "text_y": 1005,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 905,
+          "y": 1005
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 905.0,
+      "y": 1006.0
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "b": {
+          "as_written": "六月十五日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "「備考」本文中の日付。後続は「西岡大尉偵察」。地図上の特定対象を指していない。",
+          "points_to": "NO_FIT",
+          "text_x": 1219,
+          "text_y": 332,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1219,
+          "y": 332
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1219.0,
+      "y": 332.0
+    },
+    {
+      "kind": "date",
+      "page": "p12",
+      "readings": {
+        "b": {
+          "as_written": "六月二十四日",
+          "confidence": "高",
+          "has_arrow": false,
+          "nearest_place": "",
+          "note": "「備考」本文中の日付。後続は「地上並空中偵察」。地図上の特定対象を指していない。",
+          "points_to": "NO_FIT",
+          "text_x": 1211,
+          "text_y": 646,
+          "tip_x": null,
+          "tip_y": null,
+          "x": 1211,
+          "y": 646
+        }
+      },
+      "tip_unstable": false,
+      "unavailable": "page unconnected",
+      "wgs84": null,
+      "x": 1211.0,
+      "y": 646.0
+    }
+  ],
+  "recommended": "affine"
+}

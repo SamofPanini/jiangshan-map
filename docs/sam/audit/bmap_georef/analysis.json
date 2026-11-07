@@ -1,0 +1,6300 @@
+{
+  "base": "p09",
+  "controls": [
+    {
+      "id": "p09:清河驛",
+      "lat": 33.81111111,
+      "local_x": 620,
+      "local_y": 490,
+      "lon": 114.66638889,
+      "name": "清河驛",
+      "page": "p09",
+      "x": 620,
+      "y": 490
+    },
+    {
+      "id": "p09:西華",
+      "lat": 33.78772306,
+      "local_x": 305,
+      "local_y": 539,
+      "lon": 114.529185,
+      "name": "西華",
+      "page": "p09",
+      "x": 305,
+      "y": 539
+    },
+    {
+      "id": "p09:陳州",
+      "lat": 33.73222222,
+      "local_x": 1180,
+      "local_y": 659,
+      "lon": 114.8825,
+      "name": "陳州",
+      "page": "p09",
+      "x": 1180,
+      "y": 659
+    },
+    {
+      "id": "p09:周家口",
+      "lat": 33.625,
+      "local_x": 654,
+      "local_y": 943,
+      "lon": 114.64166667,
+      "name": "周家口",
+      "page": "p09",
+      "x": 654,
+      "y": 943
+    },
+    {
+      "id": "p09:新站",
+      "lat": 33.5475,
+      "local_x": 957,
+      "local_y": 1123,
+      "lon": 114.8475,
+      "name": "新站",
+      "page": "p09",
+      "x": 957,
+      "y": 1123
+    },
+    {
+      "id": "p09:水寨集",
+      "lat": 33.449345,
+      "local_x": 1088,
+      "local_y": 1299,
+      "lon": 114.90145694,
+      "name": "水寨集",
+      "page": "p09",
+      "x": 1088,
+      "y": 1299
+    },
+    {
+      "id": "p09:槐店",
+      "lat": 33.38305556,
+      "local_x": 1352,
+      "local_y": 1446,
+      "lon": 115.07305556,
+      "name": "槐店",
+      "page": "p09",
+      "x": 1352,
+      "y": 1446
+    },
+    {
+      "id": "p11:新安",
+      "lat": 33.35472222,
+      "local_x": 1608,
+      "local_y": 694,
+      "lon": 115.18916667,
+      "name": "新安",
+      "page": "p11",
+      "x": 1600.949442066645,
+      "y": 1602.6371904616237
+    }
+  ],
+  "pages": {
+    "p05": [
+      {
+        "name": "開封",
+        "name_disputed": false,
+        "non_circle": true,
+        "page": "p05",
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "開封",
+            "note": "内部に斜線のある四角。",
+            "symbol": "四角",
+            "x": 422,
+            "y": 960
+          },
+          "b": {
+            "confidence": "高",
+            "name": "開封",
+            "note": "斜線入りの四角。",
+            "symbol": "四角",
+            "x": 422,
+            "y": 962
+          },
+          "t": {
+            "confidence": "高",
+            "name": "開封",
+            "note": "",
+            "symbol": "四角",
+            "x": 422,
+            "y": 961
+          }
+        },
+        "single_reader": false,
+        "x": 422.0,
+        "y": 961.0
+      },
+      {
+        "displacement": 1.795,
+        "name": "李長庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          540,
+          964
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "李長庄",
+            "note": "地名は縦書き。",
+            "symbol": "小円",
+            "x": 543,
+            "y": 964
+          },
+          "b": {
+            "confidence": "高",
+            "name": "李長庄",
+            "note": "地名は縦書き。",
+            "symbol": "小円",
+            "x": 542,
+            "y": 966
+          },
+          "t": {
+            "confidence": "高",
+            "name": "李長庄",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 540,
+            "y": 964
+          }
+        },
+        "refine_failed": false,
+        "score": 162.356,
+        "single_reader": false,
+        "x": 540,
+        "y": 964
+      },
+      {
+        "displacement": 1.944,
+        "name": "十里鋪",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          607,
+          967
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "十里鋪",
+            "note": "",
+            "symbol": "小円",
+            "x": 608,
+            "y": 968
+          },
+          "b": {
+            "confidence": "高",
+            "name": "十里鋪",
+            "note": "",
+            "symbol": "小円",
+            "x": 608,
+            "y": 969
+          },
+          "t": {
+            "confidence": "高",
+            "name": "十里舗",
+            "note": "",
+            "symbol": "小円",
+            "x": 608,
+            "y": 969
+          }
+        },
+        "refine_failed": false,
+        "score": 161.746,
+        "single_reader": false,
+        "x": 607,
+        "y": 967
+      },
+      {
+        "displacement": 1.054,
+        "name": "曲興集",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          1088,
+          976
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "曲興集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1087,
+            "y": 977
+          },
+          "b": {
+            "confidence": "高",
+            "name": "曲興集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1088,
+            "y": 977
+          },
+          "t": {
+            "confidence": "高",
+            "name": "曲興集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1088,
+            "y": 977
+          }
+        },
+        "refine_failed": false,
+        "score": 179.426,
+        "single_reader": false,
+        "x": 1088,
+        "y": 976
+      },
+      {
+        "displacement": 1.491,
+        "name": "蘭封",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          1342,
+          1013
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "蘭封",
+            "note": "",
+            "symbol": "小円",
+            "x": 1344,
+            "y": 1013
+          },
+          "b": {
+            "confidence": "高",
+            "name": "蘭封",
+            "note": "",
+            "symbol": "小円",
+            "x": 1344,
+            "y": 1014
+          },
+          "t": {
+            "confidence": "高",
+            "name": "蘭封",
+            "note": "",
+            "symbol": "小円",
+            "x": 1342,
+            "y": 1014
+          }
+        },
+        "refine_failed": false,
+        "score": 160.747,
+        "single_reader": false,
+        "x": 1342,
+        "y": 1013
+      },
+      {
+        "displacement": 0.471,
+        "name": "大井",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          93,
+          999
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "大井",
+            "note": "",
+            "symbol": "小円",
+            "x": 94,
+            "y": 998
+          },
+          "b": {
+            "confidence": "中",
+            "name": "大井",
+            "note": "",
+            "symbol": "小円",
+            "x": 93,
+            "y": 1001
+          },
+          "t": {
+            "confidence": "中",
+            "name": "大井",
+            "note": "日付注記と線が近接する。",
+            "symbol": "小円",
+            "x": 93,
+            "y": 999
+          }
+        },
+        "refine_failed": false,
+        "score": 177.367,
+        "single_reader": false,
+        "x": 93,
+        "y": 999
+      },
+      {
+        "displacement": 0.745,
+        "name": "蘆花岡",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          371,
+          1066
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "蘆花[崗?]",
+            "note": "末字の細部が不鮮明。",
+            "symbol": "小円",
+            "x": 370,
+            "y": 1065
+          },
+          "b": {
+            "confidence": "高",
+            "name": "蘆花岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 370,
+            "y": 1066
+          },
+          "t": {
+            "confidence": "中",
+            "name": "蘆花岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 371,
+            "y": 1066
+          }
+        },
+        "refine_failed": false,
+        "score": 169.086,
+        "single_reader": false,
+        "x": 371,
+        "y": 1066
+      },
+      {
+        "displacement": 2.134,
+        "name": "岳店",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          325,
+          1146
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "岳店",
+            "note": "",
+            "symbol": "小円",
+            "x": 327,
+            "y": 1147
+          },
+          "b": {
+            "confidence": "中",
+            "name": "岳店",
+            "note": "",
+            "symbol": "小円",
+            "x": 327,
+            "y": 1148
+          },
+          "t": {
+            "confidence": "中",
+            "name": "岳店",
+            "note": "",
+            "symbol": "小円",
+            "x": 325,
+            "y": 1148
+          }
+        },
+        "refine_failed": false,
+        "score": 159.09,
+        "single_reader": false,
+        "x": 325,
+        "y": 1146
+      },
+      {
+        "displacement": 1.054,
+        "name": "王家庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          673,
+          1268
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "王家庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 673,
+            "y": 1267
+          },
+          "b": {
+            "confidence": "高",
+            "name": "王家庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 675,
+            "y": 1268
+          },
+          "t": {
+            "confidence": "高",
+            "name": "王家庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 674,
+            "y": 1268
+          }
+        },
+        "refine_failed": false,
+        "score": 169.799,
+        "single_reader": false,
+        "x": 673,
+        "y": 1268
+      },
+      {
+        "displacement": 1.667,
+        "name": "陳留",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          773,
+          1339
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "陳留",
+            "note": "",
+            "symbol": "小円",
+            "x": 775,
+            "y": 1339
+          },
+          "b": {
+            "confidence": "高",
+            "name": "陳留",
+            "note": "",
+            "symbol": "小円",
+            "x": 775,
+            "y": 1341
+          },
+          "t": {
+            "confidence": "中",
+            "name": "陳留",
+            "note": "",
+            "symbol": "小円",
+            "x": 773,
+            "y": 1340
+          }
+        },
+        "refine_failed": false,
+        "score": 181.339,
+        "single_reader": false,
+        "x": 773,
+        "y": 1339
+      },
+      {
+        "displacement": 0.667,
+        "name": "張庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          998,
+          1477
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "張庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 999,
+            "y": 1477
+          },
+          "b": {
+            "confidence": "高",
+            "name": "張庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 999,
+            "y": 1477
+          },
+          "t": {
+            "confidence": "高",
+            "name": "張庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 998,
+            "y": 1477
+          }
+        },
+        "refine_failed": false,
+        "score": 184.031,
+        "single_reader": false,
+        "x": 998,
+        "y": 1477
+      },
+      {
+        "displacement": 1.667,
+        "name": "双王府",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          131,
+          1546
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "双王府",
+            "note": "地名は縦書き。",
+            "symbol": "小円",
+            "x": 133,
+            "y": 1543
+          },
+          "b": {
+            "confidence": "中",
+            "name": "双王府",
+            "note": "地名は縦書き。",
+            "symbol": "小円",
+            "x": 135,
+            "y": 1548
+          },
+          "t": {
+            "confidence": "中",
+            "name": "双王府",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 130,
+            "y": 1547
+          }
+        },
+        "refine_failed": false,
+        "score": 159.179,
+        "single_reader": false,
+        "x": 131,
+        "y": 1546
+      },
+      {
+        "name": "柳園口渡場",
+        "name_disputed": false,
+        "non_circle": true,
+        "page": "p05",
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "柳園口渡場",
+            "note": "舟形に見える渡場記号。",
+            "symbol": "その他",
+            "x": 437,
+            "y": 700
+          },
+          "b": {
+            "confidence": "中",
+            "name": "柳園口渡場",
+            "note": "舟形に見える記号。",
+            "symbol": "その他",
+            "x": 436,
+            "y": 701
+          }
+        },
+        "single_reader": false,
+        "x": 436.5,
+        "y": 700.5
+      },
+      {
+        "displacement": 17.205,
+        "name": "朱仙鎮",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p05",
+        "proposed": [
+          235,
+          1403
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "朱仙鎮",
+            "note": "記号がハッチと重なる。",
+            "symbol": "小円",
+            "x": 221,
+            "y": 1413
+          },
+          "b": {
+            "confidence": "中",
+            "name": "朱仙鎮",
+            "note": "記号が濃いハッチと重なる。",
+            "symbol": "小円",
+            "x": 221,
+            "y": 1413
+          }
+        },
+        "refine_failed": true,
+        "score": 94.459,
+        "single_reader": false,
+        "x": 221.0,
+        "y": 1413.0
+      }
+    ],
+    "p06": [
+      {
+        "displacement": 0.0,
+        "name": "京水鎮",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          623,
+          593
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "京水鎮",
+            "note": "",
+            "symbol": "小円",
+            "x": 622,
+            "y": 594
+          },
+          "b": {
+            "confidence": "高",
+            "name": "京水鎮",
+            "note": "",
+            "symbol": "小円",
+            "x": 625,
+            "y": 594
+          },
+          "t": {
+            "confidence": "中",
+            "name": "京水鎮",
+            "note": "",
+            "symbol": "小円",
+            "x": 622,
+            "y": 591
+          }
+        },
+        "refine_failed": false,
+        "score": 184.997,
+        "single_reader": false,
+        "x": 623,
+        "y": 593
+      },
+      {
+        "displacement": 0.0,
+        "name": "鄭州",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          491,
+          864
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "鄭州",
+            "note": "",
+            "symbol": "小円",
+            "x": 491,
+            "y": 864
+          },
+          "b": {
+            "confidence": "高",
+            "name": "鄭州",
+            "note": "",
+            "symbol": "小円",
+            "x": 491,
+            "y": 864
+          },
+          "t": {
+            "confidence": "高",
+            "name": "鄭州",
+            "note": "",
+            "symbol": "小円",
+            "x": 491,
+            "y": 864
+          }
+        },
+        "refine_failed": false,
+        "score": 163.898,
+        "single_reader": false,
+        "x": 491,
+        "y": 864
+      },
+      {
+        "displacement": 0.333,
+        "name": "圃田集",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          760,
+          919
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "圃田集",
+            "note": "",
+            "symbol": "小円",
+            "x": 760,
+            "y": 919
+          },
+          "b": {
+            "confidence": "高",
+            "name": "圃田集",
+            "note": "",
+            "symbol": "小円",
+            "x": 760,
+            "y": 919
+          },
+          "t": {
+            "confidence": "中",
+            "name": "圃田集",
+            "note": "",
+            "symbol": "小円",
+            "x": 760,
+            "y": 918
+          }
+        },
+        "refine_failed": false,
+        "score": 180.164,
+        "single_reader": false,
+        "x": 760,
+        "y": 919
+      },
+      {
+        "displacement": 0.0,
+        "name": "楊橋",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          890,
+          623
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "楊橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 890,
+            "y": 623
+          },
+          "b": {
+            "confidence": "高",
+            "name": "楊橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 890,
+            "y": 623
+          },
+          "t": {
+            "confidence": "高",
+            "name": "楊橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 890,
+            "y": 623
+          }
+        },
+        "refine_failed": false,
+        "score": 165.633,
+        "single_reader": false,
+        "x": 890,
+        "y": 623
+      },
+      {
+        "displacement": 0.745,
+        "name": "蒲灘",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1074,
+          654
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "浦灘",
+            "note": "",
+            "symbol": "小円",
+            "x": 1074,
+            "y": 655
+          },
+          "b": {
+            "confidence": "中",
+            "name": "浦灘",
+            "note": "",
+            "symbol": "小円",
+            "x": 1073,
+            "y": 653
+          },
+          "t": {
+            "confidence": "中",
+            "name": "蒲灘",
+            "note": "",
+            "symbol": "小円",
+            "x": 1073,
+            "y": 655
+          }
+        },
+        "refine_failed": false,
+        "score": 170.685,
+        "single_reader": false,
+        "x": 1074,
+        "y": 654
+      },
+      {
+        "displacement": 1.7,
+        "name": "李相王",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1069,
+          740
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "李相王",
+            "note": "",
+            "symbol": "小円",
+            "x": 1072,
+            "y": 740
+          },
+          "b": {
+            "confidence": "高",
+            "name": "李相王",
+            "note": "",
+            "symbol": "小円",
+            "x": 1070,
+            "y": 740
+          },
+          "t": {
+            "confidence": "中",
+            "name": "李相王",
+            "note": "",
+            "symbol": "小円",
+            "x": 1070,
+            "y": 739
+          }
+        },
+        "refine_failed": false,
+        "score": 164.707,
+        "single_reader": false,
+        "x": 1069,
+        "y": 740
+      },
+      {
+        "displacement": 1.414,
+        "name": "三劉砦",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1132,
+          648
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "劉[岩?]",
+            "note": "縦書きの二字目が不鮮明。",
+            "symbol": "小円",
+            "x": 1130,
+            "y": 650
+          },
+          "b": {
+            "confidence": "低",
+            "name": "劉[岩?]",
+            "note": "縦書き。下の字が不鮮明。",
+            "symbol": "小円",
+            "x": 1130,
+            "y": 648
+          },
+          "t": {
+            "confidence": "中",
+            "name": "三劉砦",
+            "note": "縦書きの地名と円の対応はやや不確か。",
+            "symbol": "小円",
+            "x": 1133,
+            "y": 649
+          }
+        },
+        "refine_failed": false,
+        "score": 168.948,
+        "single_reader": false,
+        "x": 1132,
+        "y": 648
+      },
+      {
+        "displacement": 0.471,
+        "name": "開市口",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1226,
+          633
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "開市口",
+            "note": "",
+            "symbol": "小円",
+            "x": 1227,
+            "y": 633
+          },
+          "b": {
+            "confidence": "高",
+            "name": "開市口",
+            "note": "",
+            "symbol": "小円",
+            "x": 1225,
+            "y": 633
+          },
+          "t": {
+            "confidence": "中",
+            "name": "開市口",
+            "note": "",
+            "symbol": "小円",
+            "x": 1225,
+            "y": 632
+          }
+        },
+        "refine_failed": false,
+        "score": 155.892,
+        "single_reader": false,
+        "x": 1226,
+        "y": 633
+      },
+      {
+        "displacement": 0.667,
+        "name": "万庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1278,
+          585
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "万庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 1279,
+            "y": 585
+          },
+          "b": {
+            "confidence": "高",
+            "name": "万庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 1279,
+            "y": 585
+          },
+          "t": {
+            "confidence": "中",
+            "name": "万庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 1278,
+            "y": 585
+          }
+        },
+        "refine_failed": false,
+        "score": 190.315,
+        "single_reader": false,
+        "x": 1278,
+        "y": 585
+      },
+      {
+        "displacement": 1.054,
+        "name": "耿氏屯",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1218,
+          705
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "尉氏屯",
+            "note": "",
+            "symbol": "小円",
+            "x": 1218,
+            "y": 704
+          },
+          "b": {
+            "confidence": "中",
+            "name": "耿氏屯",
+            "note": "",
+            "symbol": "小円",
+            "x": 1218,
+            "y": 704
+          },
+          "t": {
+            "confidence": "中",
+            "name": "耿氏屯",
+            "note": "",
+            "symbol": "小円",
+            "x": 1219,
+            "y": 704
+          }
+        },
+        "refine_failed": false,
+        "score": 172.012,
+        "single_reader": false,
+        "x": 1218,
+        "y": 705
+      },
+      {
+        "displacement": 0.333,
+        "name": "北堤",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1430,
+          697
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "北堤",
+            "note": "",
+            "symbol": "小円",
+            "x": 1430,
+            "y": 697
+          },
+          "b": {
+            "confidence": "高",
+            "name": "北堤",
+            "note": "",
+            "symbol": "小円",
+            "x": 1430,
+            "y": 697
+          },
+          "t": {
+            "confidence": "高",
+            "name": "北堤",
+            "note": "",
+            "symbol": "小円",
+            "x": 1431,
+            "y": 697
+          }
+        },
+        "refine_failed": false,
+        "score": 174.485,
+        "single_reader": false,
+        "x": 1430,
+        "y": 697
+      },
+      {
+        "displacement": 0.471,
+        "name": "瓦坡",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1462,
+          800
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "瓦坡",
+            "note": "",
+            "symbol": "小円",
+            "x": 1462,
+            "y": 800
+          },
+          "b": {
+            "confidence": "高",
+            "name": "瓦坡",
+            "note": "",
+            "symbol": "小円",
+            "x": 1463,
+            "y": 801
+          },
+          "t": {
+            "confidence": "高",
+            "name": "瓦坡",
+            "note": "",
+            "symbol": "小円",
+            "x": 1462,
+            "y": 800
+          }
+        },
+        "refine_failed": false,
+        "score": 167.361,
+        "single_reader": false,
+        "x": 1462,
+        "y": 800
+      },
+      {
+        "displacement": 1.202,
+        "name": "茶庵",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1024,
+          923
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "茶庵",
+            "note": "",
+            "symbol": "小円",
+            "x": 1023,
+            "y": 924
+          },
+          "b": {
+            "confidence": "高",
+            "name": "茶庵",
+            "note": "",
+            "symbol": "小円",
+            "x": 1023,
+            "y": 924
+          },
+          "t": {
+            "confidence": "中",
+            "name": "茶庵",
+            "note": "",
+            "symbol": "小円",
+            "x": 1023,
+            "y": 923
+          }
+        },
+        "refine_failed": false,
+        "score": 158.772,
+        "single_reader": false,
+        "x": 1024,
+        "y": 923
+      },
+      {
+        "displacement": 0.943,
+        "name": "關家橋",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1235,
+          992
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "關家橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 1237,
+            "y": 990
+          },
+          "b": {
+            "confidence": "中",
+            "name": "[關?]家橋",
+            "note": "右端の字の内部が不鮮明。",
+            "symbol": "小円",
+            "x": 1234,
+            "y": 993
+          },
+          "t": {
+            "confidence": "中",
+            "name": "閻家橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 1236,
+            "y": 991
+          }
+        },
+        "refine_failed": false,
+        "score": 180.175,
+        "single_reader": false,
+        "x": 1235,
+        "y": 992
+      },
+      {
+        "displacement": 0.333,
+        "name": "中牟",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1138,
+          1048
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "中牟",
+            "note": "",
+            "symbol": "小円",
+            "x": 1138,
+            "y": 1049
+          },
+          "b": {
+            "confidence": "高",
+            "name": "中牟",
+            "note": "",
+            "symbol": "小円",
+            "x": 1139,
+            "y": 1047
+          },
+          "t": {
+            "confidence": "中",
+            "name": "中牟",
+            "note": "",
+            "symbol": "小円",
+            "x": 1138,
+            "y": 1048
+          }
+        },
+        "refine_failed": false,
+        "score": 164.324,
+        "single_reader": false,
+        "x": 1138,
+        "y": 1048
+      },
+      {
+        "displacement": 0.745,
+        "name": "雁台寺",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          910,
+          1223
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "雁台寺",
+            "note": "",
+            "symbol": "小円",
+            "x": 910,
+            "y": 1223
+          },
+          "b": {
+            "confidence": "高",
+            "name": "雁台寺",
+            "note": "",
+            "symbol": "小円",
+            "x": 910,
+            "y": 1222
+          },
+          "t": {
+            "confidence": "中",
+            "name": "雁台寺",
+            "note": "",
+            "symbol": "小円",
+            "x": 911,
+            "y": 1222
+          }
+        },
+        "refine_failed": false,
+        "score": 92.87,
+        "single_reader": false,
+        "x": 910,
+        "y": 1223
+      },
+      {
+        "displacement": 0.943,
+        "name": "大井",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1525,
+          998
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "大井",
+            "note": "",
+            "symbol": "小円",
+            "x": 1527,
+            "y": 997
+          },
+          "b": {
+            "confidence": "高",
+            "name": "大井",
+            "note": "",
+            "symbol": "小円",
+            "x": 1525,
+            "y": 997
+          },
+          "t": {
+            "confidence": "中",
+            "name": "大井",
+            "note": "",
+            "symbol": "小円",
+            "x": 1525,
+            "y": 998
+          }
+        },
+        "refine_failed": false,
+        "score": 184.546,
+        "single_reader": false,
+        "x": 1525,
+        "y": 998
+      },
+      {
+        "name": "開封",
+        "name_disputed": false,
+        "non_circle": true,
+        "page": "p06",
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "開封",
+            "note": "内部に斜線のある四角。",
+            "symbol": "四角",
+            "x": 1838,
+            "y": 957
+          },
+          "b": {
+            "confidence": "高",
+            "name": "開封",
+            "note": "斜線入りの四角。",
+            "symbol": "四角",
+            "x": 1837,
+            "y": 956
+          },
+          "t": {
+            "confidence": "高",
+            "name": "開封",
+            "note": "",
+            "symbol": "四角",
+            "x": 1836,
+            "y": 957
+          }
+        },
+        "single_reader": false,
+        "x": 1837.0,
+        "y": 956.6666666666666
+      },
+      {
+        "displacement": 0.0,
+        "name": "李長庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1953,
+          960
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "李長庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 1954,
+            "y": 960
+          },
+          "b": {
+            "confidence": "高",
+            "name": "李長庄",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1953,
+            "y": 960
+          },
+          "t": {
+            "confidence": "中",
+            "name": "李長庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 1952,
+            "y": 960
+          }
+        },
+        "refine_failed": false,
+        "score": 156.843,
+        "single_reader": false,
+        "x": 1953,
+        "y": 960
+      },
+      {
+        "displacement": 1.667,
+        "name": "十里鋪",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          2014,
+          963
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "十里鋪",
+            "note": "",
+            "symbol": "小円",
+            "x": 2016,
+            "y": 962
+          },
+          "b": {
+            "confidence": "高",
+            "name": "十里鋪",
+            "note": "",
+            "symbol": "小円",
+            "x": 2016,
+            "y": 962
+          },
+          "t": {
+            "confidence": "中",
+            "name": "十里鋪",
+            "note": "",
+            "symbol": "小円",
+            "x": 2014,
+            "y": 962
+          }
+        },
+        "refine_failed": false,
+        "score": 159.346,
+        "single_reader": false,
+        "x": 2014,
+        "y": 963
+      },
+      {
+        "displacement": 0.667,
+        "name": "蘆花崗",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1788,
+          1061
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "蘆花岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 1789,
+            "y": 1061
+          },
+          "b": {
+            "confidence": "中",
+            "name": "蘆花[岡?]",
+            "note": "右から左へ読む。末字の字形に不確実性あり。",
+            "symbol": "小円",
+            "x": 1789,
+            "y": 1061
+          },
+          "t": {
+            "confidence": "中",
+            "name": "蘆花崗",
+            "note": "",
+            "symbol": "小円",
+            "x": 1788,
+            "y": 1061
+          }
+        },
+        "refine_failed": false,
+        "score": 157.262,
+        "single_reader": false,
+        "x": 1788,
+        "y": 1061
+      },
+      {
+        "displacement": 1.054,
+        "name": "岳店",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1743,
+          1140
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "丘店",
+            "note": "",
+            "symbol": "小円",
+            "x": 1744,
+            "y": 1140
+          },
+          "b": {
+            "confidence": "高",
+            "name": "丘店",
+            "note": "",
+            "symbol": "小円",
+            "x": 1744,
+            "y": 1140
+          },
+          "t": {
+            "confidence": "中",
+            "name": "岳店",
+            "note": "",
+            "symbol": "小円",
+            "x": 1744,
+            "y": 1139
+          }
+        },
+        "refine_failed": false,
+        "score": 164.957,
+        "single_reader": false,
+        "x": 1743,
+        "y": 1140
+      },
+      {
+        "displacement": 15.366,
+        "name": "朱仙鎮",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1656,
+          1391
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "朱仙鎮",
+            "note": "記号が濃い描線と重なる。",
+            "symbol": "小円",
+            "x": 1642,
+            "y": 1397
+          },
+          "b": {
+            "confidence": "高",
+            "name": "朱仙鎮",
+            "note": "濃いハッチと記号が重なる。",
+            "symbol": "小円",
+            "x": 1644,
+            "y": 1398
+          },
+          "t": {
+            "confidence": "中",
+            "name": "朱仙鎮",
+            "note": "黒い領域と重なり、記号の中心が不鮮明。",
+            "symbol": "小円",
+            "x": 1640,
+            "y": 1397
+          }
+        },
+        "refine_failed": true,
+        "score": 78.778,
+        "single_reader": false,
+        "x": 1642.0,
+        "y": 1397.3333333333333
+      },
+      {
+        "displacement": 0.471,
+        "name": "王家庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          2079,
+          1258
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "王家庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 2078,
+            "y": 1260
+          },
+          "b": {
+            "confidence": "高",
+            "name": "王家庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 2078,
+            "y": 1258
+          },
+          "t": {
+            "confidence": "高",
+            "name": "王家庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 2080,
+            "y": 1257
+          }
+        },
+        "refine_failed": false,
+        "score": 166.093,
+        "single_reader": false,
+        "x": 2079,
+        "y": 1258
+      },
+      {
+        "displacement": 1.054,
+        "name": "陳留",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          2171,
+          1328
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "陳留",
+            "note": "",
+            "symbol": "小円",
+            "x": 2171,
+            "y": 1327
+          },
+          "b": {
+            "confidence": "高",
+            "name": "陳留",
+            "note": "",
+            "symbol": "小円",
+            "x": 2172,
+            "y": 1327
+          },
+          "t": {
+            "confidence": "高",
+            "name": "陳留",
+            "note": "",
+            "symbol": "小円",
+            "x": 2171,
+            "y": 1327
+          }
+        },
+        "refine_failed": false,
+        "score": 172.744,
+        "single_reader": false,
+        "x": 2171,
+        "y": 1328
+      },
+      {
+        "displacement": 0.667,
+        "name": "双王府",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1554,
+          1527
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "双王府",
+            "note": "",
+            "symbol": "小円",
+            "x": 1552,
+            "y": 1528
+          },
+          "b": {
+            "confidence": "中",
+            "name": "双王府",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1555,
+            "y": 1528
+          },
+          "t": {
+            "confidence": "中",
+            "name": "双王府",
+            "note": "",
+            "symbol": "小円",
+            "x": 1553,
+            "y": 1525
+          }
+        },
+        "refine_failed": false,
+        "score": 165.222,
+        "single_reader": false,
+        "x": 1554,
+        "y": 1527
+      },
+      {
+        "displacement": 1.333,
+        "name": "小營",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          1448,
+          1600
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "小營",
+            "note": "",
+            "symbol": "小円",
+            "x": 1448,
+            "y": 1599
+          },
+          "b": {
+            "confidence": "高",
+            "name": "小營",
+            "note": "",
+            "symbol": "小円",
+            "x": 1448,
+            "y": 1599
+          },
+          "t": {
+            "confidence": "中",
+            "name": "小営",
+            "note": "",
+            "symbol": "小円",
+            "x": 1448,
+            "y": 1598
+          }
+        },
+        "refine_failed": false,
+        "score": 174.059,
+        "single_reader": false,
+        "x": 1448,
+        "y": 1600
+      },
+      {
+        "name": "柳園口渡場",
+        "name_disputed": false,
+        "non_circle": true,
+        "page": "p06",
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "柳園口渡場",
+            "note": "河道内に小さな舟形状の輪郭記号がある。",
+            "symbol": "その他",
+            "x": 1848,
+            "y": 703
+          },
+          "b": {
+            "confidence": "高",
+            "name": "柳園口渡場",
+            "note": "小さな舟形状の輪郭記号。",
+            "symbol": "その他",
+            "x": 1850,
+            "y": 703
+          }
+        },
+        "single_reader": false,
+        "x": 1849.0,
+        "y": 703.0
+      },
+      {
+        "displacement": 1.0,
+        "name": "読めない",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p06",
+        "proposed": [
+          2387,
+          1460
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "読めない",
+            "note": "右端付近。付近の文字が切れており、地名を確定できない。",
+            "symbol": "小円",
+            "x": 2387,
+            "y": 1461
+          },
+          "b": {
+            "confidence": "中",
+            "name": "読めない",
+            "note": "画像右端の円。対応する地名は画面内で判読できない。",
+            "symbol": "小円",
+            "x": 2387,
+            "y": 1461
+          }
+        },
+        "refine_failed": false,
+        "score": 183.318,
+        "single_reader": false,
+        "x": 2387,
+        "y": 1460
+      }
+    ],
+    "p07": [
+      {
+        "displacement": 0.943,
+        "name": "張庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          989,
+          94
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "張庄",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 990,
+            "y": 93
+          },
+          "b": {
+            "confidence": "高",
+            "name": "張庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 989,
+            "y": 93
+          },
+          "t": {
+            "confidence": "中",
+            "name": "張庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 990,
+            "y": 94
+          }
+        },
+        "refine_failed": false,
+        "score": 173.346,
+        "single_reader": false,
+        "x": 989,
+        "y": 94
+      },
+      {
+        "displacement": 14.142,
+        "name": "小営",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          78,
+          220
+        ],
+        "radius": 7,
+        "readings": {
+          "t": {
+            "confidence": "中",
+            "name": "小営",
+            "note": "",
+            "symbol": "小円",
+            "x": 64,
+            "y": 218
+          }
+        },
+        "refine_failed": true,
+        "score": 117.883,
+        "single_reader": true,
+        "x": 64.0,
+        "y": 218.0
+      },
+      {
+        "displacement": 1.667,
+        "name": "双王府",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          156,
+          169
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "双王府",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 155,
+            "y": 170
+          },
+          "b": {
+            "confidence": "高",
+            "name": "双王府",
+            "note": "",
+            "symbol": "小円",
+            "x": 156,
+            "y": 170
+          },
+          "t": {
+            "confidence": "中",
+            "name": "双王村",
+            "note": "",
+            "symbol": "小円",
+            "x": 153,
+            "y": 170
+          }
+        },
+        "refine_failed": false,
+        "score": 174.932,
+        "single_reader": false,
+        "x": 156,
+        "y": 169
+      },
+      {
+        "displacement": 14.472,
+        "name": "□庄",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          97,
+          269
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "[孫?]庄",
+            "note": "記号と文字が濃い網掛けに重なる。",
+            "symbol": "小円",
+            "x": 84,
+            "y": 261
+          },
+          "b": {
+            "confidence": "低",
+            "name": "[蔡?]庄",
+            "note": "記号が濃いハッチと重なる。",
+            "symbol": "小円",
+            "x": 86,
+            "y": 259
+          },
+          "t": {
+            "confidence": "低",
+            "name": "□庄",
+            "note": "地名の一部が重なっている。",
+            "symbol": "小円",
+            "x": 87,
+            "y": 260
+          }
+        },
+        "refine_failed": true,
+        "score": 98.547,
+        "single_reader": false,
+        "x": 85.66666666666667,
+        "y": 260.0
+      },
+      {
+        "displacement": 0.943,
+        "name": "大雙溝",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          452,
+          305
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "大[双?]溝",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 452,
+            "y": 304
+          },
+          "b": {
+            "confidence": "中",
+            "name": "大雙溝",
+            "note": "",
+            "symbol": "小円",
+            "x": 451,
+            "y": 303
+          },
+          "t": {
+            "confidence": "低",
+            "name": "大隻溝",
+            "note": "中央の字と記号の輪郭が不鮮明。",
+            "symbol": "小円",
+            "x": 451,
+            "y": 306
+          }
+        },
+        "refine_failed": false,
+        "score": 175.978,
+        "single_reader": false,
+        "x": 452,
+        "y": 305
+      },
+      {
+        "displacement": 0.0,
+        "name": "趙尚[営?]",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          103,
+          456
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "趙岡□",
+            "note": "右から左。末字は判読できない。",
+            "symbol": "小円",
+            "x": 103,
+            "y": 457
+          },
+          "b": {
+            "confidence": "中",
+            "name": "趙岡[砦?]",
+            "note": "",
+            "symbol": "小円",
+            "x": 103,
+            "y": 456
+          },
+          "t": {
+            "confidence": "低",
+            "name": "趙尚[営?]",
+            "note": "",
+            "symbol": "小円",
+            "x": 103,
+            "y": 455
+          }
+        },
+        "refine_failed": false,
+        "score": 168.784,
+        "single_reader": false,
+        "x": 103,
+        "y": 456
+      },
+      {
+        "displacement": 1.491,
+        "name": "十八里集",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          184,
+          465
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "十八里集",
+            "note": "記号の下に縦書き。",
+            "symbol": "小円",
+            "x": 182,
+            "y": 464
+          },
+          "b": {
+            "confidence": "高",
+            "name": "十八里集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 183,
+            "y": 466
+          },
+          "t": {
+            "confidence": "中",
+            "name": "十八里集",
+            "note": "地名は縦書き。",
+            "symbol": "小円",
+            "x": 183,
+            "y": 463
+          }
+        },
+        "refine_failed": false,
+        "score": 114.391,
+        "single_reader": false,
+        "x": 184,
+        "y": 465
+      },
+      {
+        "displacement": 0.333,
+        "name": "監岡",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          291,
+          471
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "監岡",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 291,
+            "y": 472
+          },
+          "b": {
+            "confidence": "中",
+            "name": "監岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 291,
+            "y": 472
+          },
+          "t": {
+            "confidence": "中",
+            "name": "監崗",
+            "note": "",
+            "symbol": "小円",
+            "x": 291,
+            "y": 470
+          }
+        },
+        "refine_failed": false,
+        "score": 102.179,
+        "single_reader": false,
+        "x": 291,
+        "y": 471
+      },
+      {
+        "displacement": 13.924,
+        "name": "劉庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          406,
+          457
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "劉庄",
+            "note": "右から左。時刻らしき文字が近接する。",
+            "symbol": "小円",
+            "x": 395,
+            "y": 466
+          },
+          "b": {
+            "confidence": "高",
+            "name": "劉庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 398,
+            "y": 466
+          },
+          "t": {
+            "confidence": "中",
+            "name": "劉庄",
+            "note": "記号付近に数字が重なる。",
+            "symbol": "小円",
+            "x": 394,
+            "y": 467
+          }
+        },
+        "refine_failed": true,
+        "score": 110.896,
+        "single_reader": false,
+        "x": 395.6666666666667,
+        "y": 466.3333333333333
+      },
+      {
+        "displacement": 1.491,
+        "name": "通許",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          486,
+          447
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "通許",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 488,
+            "y": 449
+          },
+          "b": {
+            "confidence": "高",
+            "name": "通許",
+            "note": "",
+            "symbol": "小円",
+            "x": 487,
+            "y": 448
+          },
+          "t": {
+            "confidence": "低",
+            "name": "許通",
+            "note": "地名は縦書き。",
+            "symbol": "小円",
+            "x": 487,
+            "y": 446
+          }
+        },
+        "refine_failed": false,
+        "score": 184.207,
+        "single_reader": false,
+        "x": 486,
+        "y": 447
+      },
+      {
+        "displacement": 0.667,
+        "name": "杞縣",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          1156,
+          353
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "杞縣",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1156,
+            "y": 354
+          },
+          "b": {
+            "confidence": "高",
+            "name": "杞縣",
+            "note": "",
+            "symbol": "小円",
+            "x": 1156,
+            "y": 354
+          },
+          "t": {
+            "confidence": "高",
+            "name": "杞県",
+            "note": "地名は縦書き。",
+            "symbol": "小円",
+            "x": 1156,
+            "y": 353
+          }
+        },
+        "refine_failed": false,
+        "score": 193.481,
+        "single_reader": false,
+        "x": 1156,
+        "y": 353
+      },
+      {
+        "displacement": 0.745,
+        "name": "睢縣",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          1739,
+          597
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "睢縣",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 1739,
+            "y": 598
+          },
+          "b": {
+            "confidence": "高",
+            "name": "睢縣",
+            "note": "",
+            "symbol": "小円",
+            "x": 1739,
+            "y": 598
+          },
+          "t": {
+            "confidence": "中",
+            "name": "睢県",
+            "note": "",
+            "symbol": "小円",
+            "x": 1740,
+            "y": 597
+          }
+        },
+        "refine_failed": false,
+        "score": 188.306,
+        "single_reader": false,
+        "x": 1739,
+        "y": 597
+      },
+      {
+        "displacement": 0.745,
+        "name": "冠庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          468,
+          695
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "冠庄",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 467,
+            "y": 695
+          },
+          "b": {
+            "confidence": "中",
+            "name": "冠庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 468,
+            "y": 697
+          },
+          "t": {
+            "confidence": "中",
+            "name": "冠庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 467,
+            "y": 694
+          }
+        },
+        "refine_failed": false,
+        "score": 152.373,
+        "single_reader": false,
+        "x": 468,
+        "y": 695
+      },
+      {
+        "displacement": 1.054,
+        "name": "底閣",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          501,
+          691
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "底[閣?]",
+            "note": "右から左。門構えの字の内部が不鮮明。",
+            "symbol": "小円",
+            "x": 502,
+            "y": 692
+          },
+          "b": {
+            "confidence": "低",
+            "name": "底[閣?]",
+            "note": "",
+            "symbol": "小円",
+            "x": 502,
+            "y": 691
+          },
+          "t": {
+            "confidence": "中",
+            "name": "底閣",
+            "note": "",
+            "symbol": "小円",
+            "x": 502,
+            "y": 691
+          }
+        },
+        "refine_failed": false,
+        "score": 177.568,
+        "single_reader": false,
+        "x": 501,
+        "y": 691
+      },
+      {
+        "displacement": 13.703,
+        "name": "白潭",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          330,
+          859
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "白潭",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 329,
+            "y": 873
+          },
+          "b": {
+            "confidence": "中",
+            "name": "白潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 328,
+            "y": 872
+          },
+          "t": {
+            "confidence": "中",
+            "name": "白潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 330,
+            "y": 873
+          }
+        },
+        "refine_failed": true,
+        "score": 100.747,
+        "single_reader": false,
+        "x": 329.0,
+        "y": 872.6666666666666
+      },
+      {
+        "displacement": 0.943,
+        "name": "崔橋",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          667,
+          1009
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "崔橋",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 667,
+            "y": 1010
+          },
+          "b": {
+            "confidence": "高",
+            "name": "崔橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 669,
+            "y": 1010
+          },
+          "t": {
+            "confidence": "中",
+            "name": "崔橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 667,
+            "y": 1009
+          }
+        },
+        "refine_failed": false,
+        "score": 174.231,
+        "single_reader": false,
+        "x": 667,
+        "y": 1009
+      },
+      {
+        "displacement": 1.054,
+        "name": "常営集",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          679,
+          1128
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "常營[集?]",
+            "note": "右から左。末字付近に線が重なる。",
+            "symbol": "小円",
+            "x": 679,
+            "y": 1127
+          },
+          "b": {
+            "confidence": "中",
+            "name": "常營[寨?]",
+            "note": "",
+            "symbol": "小円",
+            "x": 680,
+            "y": 1127
+          },
+          "t": {
+            "confidence": "中",
+            "name": "常営集",
+            "note": "",
+            "symbol": "小円",
+            "x": 679,
+            "y": 1127
+          }
+        },
+        "refine_failed": false,
+        "score": 135.302,
+        "single_reader": false,
+        "x": 679,
+        "y": 1128
+      },
+      {
+        "displacement": 0.333,
+        "name": "楊廟",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          1331,
+          1114
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "楊廟",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 1331,
+            "y": 1114
+          },
+          "b": {
+            "confidence": "高",
+            "name": "楊廟",
+            "note": "",
+            "symbol": "小円",
+            "x": 1331,
+            "y": 1115
+          },
+          "t": {
+            "confidence": "中",
+            "name": "楊庙",
+            "note": "",
+            "symbol": "小円",
+            "x": 1331,
+            "y": 1114
+          }
+        },
+        "refine_failed": false,
+        "score": 172.33,
+        "single_reader": false,
+        "x": 1331,
+        "y": 1114
+      },
+      {
+        "displacement": 0.745,
+        "name": "独塘集",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          957,
+          1194
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "獨墻集",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 957,
+            "y": 1193
+          },
+          "b": {
+            "confidence": "低",
+            "name": "獨[墻?]集",
+            "note": "",
+            "symbol": "小円",
+            "x": 958,
+            "y": 1194
+          },
+          "t": {
+            "confidence": "低",
+            "name": "独塘集",
+            "note": "文字が薄い。",
+            "symbol": "小円",
+            "x": 958,
+            "y": 1194
+          }
+        },
+        "refine_failed": false,
+        "score": 143.373,
+        "single_reader": false,
+        "x": 957,
+        "y": 1194
+      },
+      {
+        "displacement": 1.795,
+        "name": "呂潭",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          330,
+          1200
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "呂潭",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 328,
+            "y": 1203
+          },
+          "b": {
+            "confidence": "高",
+            "name": "呂潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 330,
+            "y": 1201
+          },
+          "t": {
+            "confidence": "中",
+            "name": "呂潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 330,
+            "y": 1201
+          }
+        },
+        "refine_failed": false,
+        "score": 129.753,
+        "single_reader": false,
+        "x": 330,
+        "y": 1200
+      },
+      {
+        "displacement": 1.491,
+        "name": "扶溝",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          183,
+          1334
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "扶溝",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 183,
+            "y": 1336
+          },
+          "b": {
+            "confidence": "高",
+            "name": "扶溝",
+            "note": "",
+            "symbol": "小円",
+            "x": 182,
+            "y": 1336
+          },
+          "t": {
+            "confidence": "高",
+            "name": "扶溝",
+            "note": "",
+            "symbol": "小円",
+            "x": 182,
+            "y": 1334
+          }
+        },
+        "refine_failed": false,
+        "score": 172.009,
+        "single_reader": false,
+        "x": 183,
+        "y": 1334
+      },
+      {
+        "displacement": 0.471,
+        "name": "龍王廟",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          639,
+          1316
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "龍王廟",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 638,
+            "y": 1317
+          },
+          "b": {
+            "confidence": "高",
+            "name": "龍王廟",
+            "note": "",
+            "symbol": "小円",
+            "x": 639,
+            "y": 1316
+          },
+          "t": {
+            "confidence": "高",
+            "name": "龍王庙",
+            "note": "",
+            "symbol": "小円",
+            "x": 639,
+            "y": 1316
+          }
+        },
+        "refine_failed": false,
+        "score": 169.753,
+        "single_reader": false,
+        "x": 639,
+        "y": 1316
+      },
+      {
+        "displacement": 0.943,
+        "name": "[逍?][遙?]口",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          724,
+          1341
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "[逍?][遙?]口",
+            "note": "右から左。口以外の字の細部が不鮮明。",
+            "symbol": "小円",
+            "x": 723,
+            "y": 1342
+          },
+          "b": {
+            "confidence": "低",
+            "name": "[逍?][遙?]口",
+            "note": "",
+            "symbol": "小円",
+            "x": 722,
+            "y": 1342
+          },
+          "t": {
+            "confidence": "低",
+            "name": "遥丹口",
+            "note": "地名の字形が不鮮明。",
+            "symbol": "小円",
+            "x": 725,
+            "y": 1341
+          }
+        },
+        "refine_failed": false,
+        "score": 183.549,
+        "single_reader": false,
+        "x": 724,
+        "y": 1341
+      },
+      {
+        "displacement": 1.795,
+        "name": "太康",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          1179,
+          1340
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "太康",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 1181,
+            "y": 1341
+          },
+          "b": {
+            "confidence": "高",
+            "name": "太康",
+            "note": "",
+            "symbol": "小円",
+            "x": 1181,
+            "y": 1340
+          },
+          "t": {
+            "confidence": "高",
+            "name": "太康",
+            "note": "",
+            "symbol": "小円",
+            "x": 1180,
+            "y": 1341
+          }
+        },
+        "refine_failed": false,
+        "score": 183.062,
+        "single_reader": false,
+        "x": 1179,
+        "y": 1340
+      },
+      {
+        "displacement": 1.054,
+        "name": "小吳家",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          694,
+          1410
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "小吳家",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 695,
+            "y": 1411
+          },
+          "b": {
+            "confidence": "高",
+            "name": "小吳家",
+            "note": "",
+            "symbol": "小円",
+            "x": 694,
+            "y": 1411
+          },
+          "t": {
+            "confidence": "中",
+            "name": "小呉家",
+            "note": "",
+            "symbol": "小円",
+            "x": 694,
+            "y": 1411
+          }
+        },
+        "refine_failed": false,
+        "score": 187.247,
+        "single_reader": false,
+        "x": 694,
+        "y": 1410
+      },
+      {
+        "displacement": 1.667,
+        "name": "道陵岡",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          481,
+          1531
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "道陵岡",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 482,
+            "y": 1534
+          },
+          "b": {
+            "confidence": "中",
+            "name": "道陵岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 483,
+            "y": 1532
+          },
+          "t": {
+            "confidence": "低",
+            "name": "道陵岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 482,
+            "y": 1530
+          }
+        },
+        "refine_failed": false,
+        "score": 149.694,
+        "single_reader": false,
+        "x": 481,
+        "y": 1531
+      },
+      {
+        "displacement": 0.745,
+        "name": "陳賢店",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          672,
+          1554
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "陳賢店",
+            "note": "右から左。",
+            "symbol": "小円",
+            "x": 671,
+            "y": 1555
+          },
+          "b": {
+            "confidence": "中",
+            "name": "陳賢店",
+            "note": "",
+            "symbol": "小円",
+            "x": 672,
+            "y": 1555
+          },
+          "t": {
+            "confidence": "中",
+            "name": "陳賢店",
+            "note": "",
+            "symbol": "小円",
+            "x": 672,
+            "y": 1554
+          }
+        },
+        "refine_failed": false,
+        "score": 182.358,
+        "single_reader": false,
+        "x": 672,
+        "y": 1554
+      },
+      {
+        "displacement": 2.693,
+        "name": "小營",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p07",
+        "proposed": [
+          45,
+          239
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "小營",
+            "note": "",
+            "symbol": "小円",
+            "x": 44,
+            "y": 242
+          },
+          "b": {
+            "confidence": "中",
+            "name": "小營",
+            "note": "",
+            "symbol": "小円",
+            "x": 44,
+            "y": 241
+          }
+        },
+        "refine_failed": false,
+        "score": 168.833,
+        "single_reader": false,
+        "x": 45,
+        "y": 239
+      }
+    ],
+    "p08": [
+      {
+        "displacement": 2.236,
+        "name": "朱仙鎮",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1673,
+          104
+        ],
+        "radius": 9,
+        "readings": {
+          "t": {
+            "confidence": "高",
+            "name": "朱仙鎮",
+            "note": "",
+            "symbol": "小円",
+            "x": 1674,
+            "y": 102
+          }
+        },
+        "refine_failed": false,
+        "score": 100.831,
+        "single_reader": true,
+        "x": 1673,
+        "y": 104
+      },
+      {
+        "displacement": 2.867,
+        "name": "双王府",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1582,
+          242
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "雙王廟",
+            "note": "",
+            "symbol": "小円",
+            "x": 1585,
+            "y": 243
+          },
+          "b": {
+            "confidence": "中",
+            "name": "双王府",
+            "note": "記号が濃い描線と重なる。",
+            "symbol": "小円",
+            "x": 1583,
+            "y": 246
+          },
+          "t": {
+            "confidence": "高",
+            "name": "双王府",
+            "note": "",
+            "symbol": "小円",
+            "x": 1585,
+            "y": 242
+          }
+        },
+        "refine_failed": false,
+        "score": 189.105,
+        "single_reader": false,
+        "x": 1582,
+        "y": 242
+      },
+      {
+        "displacement": 0.667,
+        "name": "小營",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1470,
+          313
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "小營",
+            "note": "",
+            "symbol": "小円",
+            "x": 1471,
+            "y": 313
+          },
+          "b": {
+            "confidence": "高",
+            "name": "小營",
+            "note": "",
+            "symbol": "小円",
+            "x": 1469,
+            "y": 314
+          },
+          "t": {
+            "confidence": "中",
+            "name": "小営",
+            "note": "",
+            "symbol": "小円",
+            "x": 1472,
+            "y": 312
+          }
+        },
+        "refine_failed": false,
+        "score": 171.503,
+        "single_reader": false,
+        "x": 1470,
+        "y": 313
+      },
+      {
+        "displacement": 1.491,
+        "name": "大雙溝",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1896,
+          383
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "大雙溝",
+            "note": "",
+            "symbol": "小円",
+            "x": 1897,
+            "y": 382
+          },
+          "b": {
+            "confidence": "低",
+            "name": "大[夏?]溝",
+            "note": "中央の字が不鮮明。右から左へ読んだ。",
+            "symbol": "小円",
+            "x": 1898,
+            "y": 383
+          },
+          "t": {
+            "confidence": "高",
+            "name": "大双溝",
+            "note": "",
+            "symbol": "小円",
+            "x": 1897,
+            "y": 382
+          }
+        },
+        "refine_failed": false,
+        "score": 166.145,
+        "single_reader": false,
+        "x": 1896,
+        "y": 383
+      },
+      {
+        "displacement": 1.374,
+        "name": "大橋",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1301,
+          583
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "大橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 1302,
+            "y": 583
+          },
+          "b": {
+            "confidence": "高",
+            "name": "大橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 1303,
+            "y": 584
+          },
+          "t": {
+            "confidence": "高",
+            "name": "大橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 1302,
+            "y": 583
+          }
+        },
+        "refine_failed": false,
+        "score": 110.525,
+        "single_reader": false,
+        "x": 1301,
+        "y": 583
+      },
+      {
+        "displacement": 1.414,
+        "name": "尉氏",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1381,
+          539
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "尉氏",
+            "note": "",
+            "symbol": "小円",
+            "x": 1382,
+            "y": 540
+          },
+          "b": {
+            "confidence": "高",
+            "name": "尉氏",
+            "note": "",
+            "symbol": "小円",
+            "x": 1382,
+            "y": 541
+          },
+          "t": {
+            "confidence": "高",
+            "name": "尉氏",
+            "note": "",
+            "symbol": "小円",
+            "x": 1382,
+            "y": 539
+          }
+        },
+        "refine_failed": false,
+        "score": 146.714,
+        "single_reader": false,
+        "x": 1381,
+        "y": 539
+      },
+      {
+        "displacement": 1.202,
+        "name": "趙崗砦",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1526,
+          535
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "趙南[砦?]",
+            "note": "末字の細部が不鮮明。",
+            "symbol": "小円",
+            "x": 1527,
+            "y": 536
+          },
+          "b": {
+            "confidence": "中",
+            "name": "趙崗[砦?]",
+            "note": "右から左へ読んだ。末字に不確実性がある。",
+            "symbol": "小円",
+            "x": 1527,
+            "y": 536
+          },
+          "t": {
+            "confidence": "低",
+            "name": "趙崗[巷?]",
+            "note": "最後の字は判読に自信がない。",
+            "symbol": "小円",
+            "x": 1527,
+            "y": 535
+          }
+        },
+        "refine_failed": false,
+        "score": 159.651,
+        "single_reader": false,
+        "x": 1526,
+        "y": 535
+      },
+      {
+        "displacement": 0.745,
+        "name": "十八里集",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1612,
+          546
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "十八里集",
+            "note": "地名は記号の下に縦書き。",
+            "symbol": "小円",
+            "x": 1612,
+            "y": 546
+          },
+          "b": {
+            "confidence": "高",
+            "name": "十八里集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1612,
+            "y": 546
+          },
+          "t": {
+            "confidence": "中",
+            "name": "十八里集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1610,
+            "y": 547
+          }
+        },
+        "refine_failed": false,
+        "score": 170.938,
+        "single_reader": false,
+        "x": 1612,
+        "y": 546
+      },
+      {
+        "displacement": 14.162,
+        "name": "監崗",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1713,
+          559
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "[鄢?]崗",
+            "note": "",
+            "symbol": "小円",
+            "x": 1724,
+            "y": 553
+          },
+          "b": {
+            "confidence": "中",
+            "name": "[監?]崗",
+            "note": "右から左へ読んだ。",
+            "symbol": "小円",
+            "x": 1725,
+            "y": 553
+          },
+          "t": {
+            "confidence": "中",
+            "name": "監崗",
+            "note": "",
+            "symbol": "小円",
+            "x": 1728,
+            "y": 552
+          }
+        },
+        "refine_failed": true,
+        "score": 86.531,
+        "single_reader": false,
+        "x": 1725.6666666666667,
+        "y": 552.6666666666666
+      },
+      {
+        "displacement": 14.896,
+        "name": "劉庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1844,
+          540
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "劉庄",
+            "note": "記号付近に印刷番号が重なる。",
+            "symbol": "小円",
+            "x": 1833,
+            "y": 551
+          },
+          "b": {
+            "confidence": "中",
+            "name": "劉庄",
+            "note": "数字の印字が近接している。",
+            "symbol": "小円",
+            "x": 1833,
+            "y": 550
+          },
+          "t": {
+            "confidence": "中",
+            "name": "劉庄",
+            "note": "数字の重なりで一部不鮮明。",
+            "symbol": "小円",
+            "x": 1832,
+            "y": 548
+          }
+        },
+        "refine_failed": true,
+        "score": 106.287,
+        "single_reader": false,
+        "x": 1832.6666666666667,
+        "y": 549.6666666666666
+      },
+      {
+        "displacement": 0.943,
+        "name": "通許",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1928,
+          530
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "通許",
+            "note": "",
+            "symbol": "小円",
+            "x": 1930,
+            "y": 529
+          },
+          "b": {
+            "confidence": "高",
+            "name": "通許",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1928,
+            "y": 530
+          },
+          "t": {
+            "confidence": "中",
+            "name": "許通",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1928,
+            "y": 529
+          }
+        },
+        "refine_failed": false,
+        "score": 172.781,
+        "single_reader": false,
+        "x": 1928,
+        "y": 530
+      },
+      {
+        "displacement": 0.471,
+        "name": "南曹集",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1399,
+          851
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "南曹集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1400,
+            "y": 852
+          },
+          "b": {
+            "confidence": "高",
+            "name": "南曹集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1399,
+            "y": 851
+          },
+          "t": {
+            "confidence": "高",
+            "name": "南曹集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1399,
+            "y": 851
+          }
+        },
+        "refine_failed": false,
+        "score": 164.926,
+        "single_reader": false,
+        "x": 1399,
+        "y": 851
+      },
+      {
+        "displacement": 0.667,
+        "name": "冠庄",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1905,
+          785
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "冠庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 1904,
+            "y": 786
+          },
+          "b": {
+            "confidence": "高",
+            "name": "冠庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 1906,
+            "y": 787
+          },
+          "t": {
+            "confidence": "中",
+            "name": "冠庄",
+            "note": "",
+            "symbol": "小円",
+            "x": 1905,
+            "y": 784
+          }
+        },
+        "refine_failed": false,
+        "score": 146.688,
+        "single_reader": false,
+        "x": 1905,
+        "y": 785
+      },
+      {
+        "displacement": 1.667,
+        "name": "底閣",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1939,
+          781
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "底[閣?]",
+            "note": "",
+            "symbol": "小円",
+            "x": 1940,
+            "y": 782
+          },
+          "b": {
+            "confidence": "低",
+            "name": "底[閣?]",
+            "note": "右から左へ読んだ。門構えの字が不鮮明。",
+            "symbol": "小円",
+            "x": 1941,
+            "y": 781
+          },
+          "t": {
+            "confidence": "中",
+            "name": "関底",
+            "note": "",
+            "symbol": "小円",
+            "x": 1940,
+            "y": 783
+          }
+        },
+        "refine_failed": false,
+        "score": 154.743,
+        "single_reader": false,
+        "x": 1939,
+        "y": 781
+      },
+      {
+        "displacement": 13.812,
+        "name": "白潭",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1762,
+          956
+        ],
+        "radius": 7,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "白潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 1761,
+            "y": 969
+          },
+          "b": {
+            "confidence": "中",
+            "name": "白潭",
+            "note": "記号内に濃い描線が重なる。",
+            "symbol": "小円",
+            "x": 1759,
+            "y": 971
+          },
+          "t": {
+            "confidence": "中",
+            "name": "白潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 1760,
+            "y": 969
+          }
+        },
+        "refine_failed": true,
+        "score": 86.629,
+        "single_reader": false,
+        "x": 1760.0,
+        "y": 969.6666666666666
+      },
+      {
+        "displacement": 1.414,
+        "name": "崔橋",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          2113,
+          1110
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "崔橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 2114,
+            "y": 1111
+          },
+          "b": {
+            "confidence": "高",
+            "name": "崔橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 2114,
+            "y": 1111
+          },
+          "t": {
+            "confidence": "高",
+            "name": "崔橋",
+            "note": "",
+            "symbol": "小円",
+            "x": 2114,
+            "y": 1111
+          }
+        },
+        "refine_failed": false,
+        "score": 160.365,
+        "single_reader": false,
+        "x": 2113,
+        "y": 1110
+      },
+      {
+        "displacement": 0.471,
+        "name": "常營集",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          2131,
+          1234
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "常營集",
+            "note": "",
+            "symbol": "小円",
+            "x": 2131,
+            "y": 1235
+          },
+          "b": {
+            "confidence": "高",
+            "name": "常營集",
+            "note": "",
+            "symbol": "小円",
+            "x": 2132,
+            "y": 1234
+          },
+          "t": {
+            "confidence": "中",
+            "name": "常営集",
+            "note": "",
+            "symbol": "小円",
+            "x": 2131,
+            "y": 1234
+          }
+        },
+        "refine_failed": false,
+        "score": 111.716,
+        "single_reader": false,
+        "x": 2131,
+        "y": 1234
+      },
+      {
+        "displacement": 1.054,
+        "name": "呂潭",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1771,
+          1307
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "呂潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 1773,
+            "y": 1307
+          },
+          "b": {
+            "confidence": "高",
+            "name": "呂潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 1771,
+            "y": 1306
+          },
+          "t": {
+            "confidence": "中",
+            "name": "呂潭",
+            "note": "",
+            "symbol": "小円",
+            "x": 1772,
+            "y": 1307
+          }
+        },
+        "refine_failed": false,
+        "score": 134.682,
+        "single_reader": false,
+        "x": 1771,
+        "y": 1307
+      },
+      {
+        "displacement": 0.943,
+        "name": "扶溝",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1616,
+          1447
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "扶溝",
+            "note": "",
+            "symbol": "小円",
+            "x": 1616,
+            "y": 1448
+          },
+          "b": {
+            "confidence": "高",
+            "name": "扶溝",
+            "note": "",
+            "symbol": "小円",
+            "x": 1616,
+            "y": 1448
+          },
+          "t": {
+            "confidence": "高",
+            "name": "扶溝",
+            "note": "",
+            "symbol": "小円",
+            "x": 1618,
+            "y": 1447
+          }
+        },
+        "refine_failed": false,
+        "score": 162.343,
+        "single_reader": false,
+        "x": 1616,
+        "y": 1447
+      },
+      {
+        "displacement": 0.667,
+        "name": "龍王廟",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          2092,
+          1430
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "龍王廟",
+            "note": "",
+            "symbol": "小円",
+            "x": 2092,
+            "y": 1430
+          },
+          "b": {
+            "confidence": "高",
+            "name": "龍王廟",
+            "note": "",
+            "symbol": "小円",
+            "x": 2092,
+            "y": 1431
+          },
+          "t": {
+            "confidence": "高",
+            "name": "龍王廟",
+            "note": "",
+            "symbol": "小円",
+            "x": 2092,
+            "y": 1431
+          }
+        },
+        "refine_failed": false,
+        "score": 158.861,
+        "single_reader": false,
+        "x": 2092,
+        "y": 1430
+      },
+      {
+        "displacement": 1.414,
+        "name": "遜母口",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          2177,
+          1456
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "[通?][關?]口",
+            "note": "右から左の読み順。上の地名文字が不鮮明。",
+            "symbol": "小円",
+            "x": 2178,
+            "y": 1457
+          },
+          "b": {
+            "confidence": "中",
+            "name": "通[岡?]口",
+            "note": "右から左へ読んだ。",
+            "symbol": "小円",
+            "x": 2178,
+            "y": 1457
+          },
+          "t": {
+            "confidence": "中",
+            "name": "遜母口",
+            "note": "",
+            "symbol": "小円",
+            "x": 2178,
+            "y": 1457
+          }
+        },
+        "refine_failed": false,
+        "score": 161.231,
+        "single_reader": false,
+        "x": 2177,
+        "y": 1456
+      },
+      {
+        "displacement": 0.471,
+        "name": "小吳家",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          2144,
+          1529
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "小吳家",
+            "note": "",
+            "symbol": "小円",
+            "x": 2144,
+            "y": 1530
+          },
+          "b": {
+            "confidence": "高",
+            "name": "小吳家",
+            "note": "",
+            "symbol": "小円",
+            "x": 2143,
+            "y": 1529
+          },
+          "t": {
+            "confidence": "中",
+            "name": "小呉家",
+            "note": "",
+            "symbol": "小円",
+            "x": 2144,
+            "y": 1529
+          }
+        },
+        "refine_failed": false,
+        "score": 156.957,
+        "single_reader": false,
+        "x": 2144,
+        "y": 1529
+      },
+      {
+        "displacement": 4.031,
+        "name": "□陵岡",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p08",
+        "proposed": [
+          1923,
+          1656
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "□陵岡",
+            "note": "画像下端。地名の一部と記号下部が透かしに重なる。",
+            "symbol": "小円",
+            "x": 1922,
+            "y": 1660
+          },
+          "b": {
+            "confidence": "低",
+            "name": "[池?][陵?]岡",
+            "note": "画像下端。記号の下部が切れ、文字も不鮮明。",
+            "symbol": "小円",
+            "x": 1920,
+            "y": 1659
+          }
+        },
+        "refine_failed": false,
+        "score": 82.602,
+        "single_reader": false,
+        "x": 1923,
+        "y": 1656
+      }
+    ],
+    "p09": [
+      {
+        "displacement": 0.745,
+        "name": "小呉家",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          559,
+          82
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "小呉家",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 559,
+            "y": 83
+          },
+          "b": {
+            "confidence": "高",
+            "name": "小呉家",
+            "note": "",
+            "symbol": "小円",
+            "x": 559,
+            "y": 83
+          },
+          "t": {
+            "confidence": "中",
+            "name": "小呉家",
+            "note": "",
+            "symbol": "小円",
+            "x": 560,
+            "y": 82
+          }
+        },
+        "refine_failed": false,
+        "score": 163.219,
+        "single_reader": false,
+        "x": 559,
+        "y": 82
+      },
+      {
+        "displacement": 0.667,
+        "name": "道陵岡",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          338,
+          208
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "道陵岡",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 339,
+            "y": 208
+          },
+          "b": {
+            "confidence": "中",
+            "name": "道陵岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 339,
+            "y": 208
+          },
+          "t": {
+            "confidence": "中",
+            "name": "道陵岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 338,
+            "y": 208
+          }
+        },
+        "refine_failed": false,
+        "score": 140.441,
+        "single_reader": false,
+        "x": 338,
+        "y": 208
+      },
+      {
+        "displacement": 0.471,
+        "name": "陳賢店",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          538,
+          232
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "陳賢店",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 538,
+            "y": 231
+          },
+          "b": {
+            "confidence": "高",
+            "name": "陳賢店",
+            "note": "",
+            "symbol": "小円",
+            "x": 538,
+            "y": 233
+          },
+          "t": {
+            "confidence": "中",
+            "name": "陳賢店",
+            "note": "",
+            "symbol": "小円",
+            "x": 539,
+            "y": 231
+          }
+        },
+        "refine_failed": false,
+        "score": 177.901,
+        "single_reader": false,
+        "x": 538,
+        "y": 232
+      },
+      {
+        "displacement": 1.054,
+        "name": "夏亭",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          584,
+          344
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "夏亭",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 584,
+            "y": 343
+          },
+          "b": {
+            "confidence": "高",
+            "name": "夏亭",
+            "note": "",
+            "symbol": "小円",
+            "x": 585,
+            "y": 343
+          },
+          "t": {
+            "confidence": "中",
+            "name": "夏亭",
+            "note": "",
+            "symbol": "小円",
+            "x": 584,
+            "y": 343
+          }
+        },
+        "refine_failed": false,
+        "score": 161.633,
+        "single_reader": false,
+        "x": 584,
+        "y": 344
+      },
+      {
+        "displacement": 0.667,
+        "name": "四個樓",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          721,
+          373
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "四個樓",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 721,
+            "y": 372
+          },
+          "b": {
+            "confidence": "高",
+            "name": "四個樓",
+            "note": "",
+            "symbol": "小円",
+            "x": 721,
+            "y": 372
+          },
+          "t": {
+            "confidence": "中",
+            "name": "四個樓",
+            "note": "",
+            "symbol": "小円",
+            "x": 721,
+            "y": 373
+          }
+        },
+        "refine_failed": false,
+        "score": 164.182,
+        "single_reader": false,
+        "x": 721,
+        "y": 373
+      },
+      {
+        "displacement": 0.943,
+        "name": "大春李",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          414,
+          491
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "大[蕭?]李",
+            "note": "右から左へ読む。中央の字が不鮮明。",
+            "symbol": "小円",
+            "x": 413,
+            "y": 492
+          },
+          "b": {
+            "confidence": "中",
+            "name": "大[蕃?]李",
+            "note": "中央の字が不鮮明。",
+            "symbol": "小円",
+            "x": 413,
+            "y": 491
+          },
+          "t": {
+            "confidence": "中",
+            "name": "大春李",
+            "note": "",
+            "symbol": "小円",
+            "x": 414,
+            "y": 492
+          }
+        },
+        "refine_failed": false,
+        "score": 146.836,
+        "single_reader": false,
+        "x": 414,
+        "y": 491
+      },
+      {
+        "displacement": 1.054,
+        "name": "清河驛",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          620,
+          490
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "清河驛",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 620,
+            "y": 491
+          },
+          "b": {
+            "confidence": "高",
+            "name": "清河驛",
+            "note": "",
+            "symbol": "小円",
+            "x": 622,
+            "y": 489
+          },
+          "t": {
+            "confidence": "中",
+            "name": "清河驛",
+            "note": "",
+            "symbol": "小円",
+            "x": 621,
+            "y": 491
+          }
+        },
+        "refine_failed": false,
+        "score": 173.991,
+        "single_reader": false,
+        "x": 620,
+        "y": 490
+      },
+      {
+        "displacement": 0.333,
+        "name": "西華",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          305,
+          539
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "西華",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 305,
+            "y": 539
+          },
+          "b": {
+            "confidence": "高",
+            "name": "西華",
+            "note": "",
+            "symbol": "小円",
+            "x": 305,
+            "y": 539
+          },
+          "t": {
+            "confidence": "中",
+            "name": "西華",
+            "note": "",
+            "symbol": "小円",
+            "x": 304,
+            "y": 539
+          }
+        },
+        "refine_failed": false,
+        "score": 151.5,
+        "single_reader": false,
+        "x": 305,
+        "y": 539
+      },
+      {
+        "displacement": 0.943,
+        "name": "陳州",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          1180,
+          659
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "陳州（淮陽）",
+            "note": "地名と括弧内をそれぞれ右から左へ読む。",
+            "symbol": "小円",
+            "x": 1181,
+            "y": 658
+          },
+          "b": {
+            "confidence": "高",
+            "name": "陳州（淮陽）",
+            "note": "",
+            "symbol": "小円",
+            "x": 1181,
+            "y": 658
+          },
+          "t": {
+            "confidence": "高",
+            "name": "陳州（淮陽）",
+            "note": "",
+            "symbol": "小円",
+            "x": 1180,
+            "y": 659
+          }
+        },
+        "refine_failed": false,
+        "score": 168.38,
+        "single_reader": false,
+        "x": 1180,
+        "y": 659
+      },
+      {
+        "displacement": 0.333,
+        "name": "板[繒?]口鋪",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          891,
+          834
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "板[纜?]口舖",
+            "note": "右から左へ読む。右から2字目が不鮮明。",
+            "symbol": "小円",
+            "x": 891,
+            "y": 834
+          },
+          "b": {
+            "confidence": "低",
+            "name": "板[纜?]口[鋪?]",
+            "note": "第2字と末字の細部が不鮮明。",
+            "symbol": "小円",
+            "x": 891,
+            "y": 834
+          },
+          "t": {
+            "confidence": "低",
+            "name": "板[繒?]口鋪",
+            "note": "",
+            "symbol": "小円",
+            "x": 891,
+            "y": 835
+          }
+        },
+        "refine_failed": false,
+        "score": 184.373,
+        "single_reader": false,
+        "x": 891,
+        "y": 834
+      },
+      {
+        "displacement": 0.745,
+        "name": "瓦[罐?]集",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          1030,
+          885
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "瓦□集",
+            "note": "右から左へ読む。中央の字は判読できない。",
+            "symbol": "小円",
+            "x": 1031,
+            "y": 883
+          },
+          "b": {
+            "confidence": "低",
+            "name": "瓦[墻?]集",
+            "note": "中央の字が不鮮明。",
+            "symbol": "小円",
+            "x": 1031,
+            "y": 885
+          },
+          "t": {
+            "confidence": "中",
+            "name": "瓦[罐?]集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1030,
+            "y": 886
+          }
+        },
+        "refine_failed": false,
+        "score": 168.235,
+        "single_reader": false,
+        "x": 1030,
+        "y": 885
+      },
+      {
+        "displacement": 0.745,
+        "name": "周家口",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          654,
+          943
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 653,
+            "y": 943
+          },
+          "b": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 653,
+            "y": 943
+          },
+          "t": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "",
+            "symbol": "小円",
+            "x": 654,
+            "y": 944
+          }
+        },
+        "refine_failed": false,
+        "score": 162.188,
+        "single_reader": false,
+        "x": 654,
+        "y": 943
+      },
+      {
+        "displacement": 1.7,
+        "name": "新站",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          957,
+          1123
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "新站",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 958,
+            "y": 1121
+          },
+          "b": {
+            "confidence": "高",
+            "name": "新站",
+            "note": "",
+            "symbol": "小円",
+            "x": 958,
+            "y": 1121
+          },
+          "t": {
+            "confidence": "中",
+            "name": "新站",
+            "note": "",
+            "symbol": "小円",
+            "x": 956,
+            "y": 1122
+          }
+        },
+        "refine_failed": false,
+        "score": 123.327,
+        "single_reader": false,
+        "x": 957,
+        "y": 1123
+      },
+      {
+        "displacement": 0.745,
+        "name": "[錢?]□",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          1542,
+          1237
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "錢圍",
+            "note": "右から左へ読む。折れ目に近く、文字がやや不鮮明。",
+            "symbol": "小円",
+            "x": 1542,
+            "y": 1237
+          },
+          "b": {
+            "confidence": "低",
+            "name": "錢[周?]",
+            "note": "第2字が線と重なり不鮮明。",
+            "symbol": "小円",
+            "x": 1543,
+            "y": 1237
+          },
+          "t": {
+            "confidence": "低",
+            "name": "[錢?]□",
+            "note": "記号の右側の文字は一部判読困難。",
+            "symbol": "小円",
+            "x": 1543,
+            "y": 1236
+          }
+        },
+        "refine_failed": false,
+        "score": 155.83,
+        "single_reader": false,
+        "x": 1542,
+        "y": 1237
+      },
+      {
+        "displacement": 0.333,
+        "name": "水寨集",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          1088,
+          1299
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "水寨集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1088,
+            "y": 1298
+          },
+          "b": {
+            "confidence": "高",
+            "name": "水寨集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1088,
+            "y": 1300
+          },
+          "t": {
+            "confidence": "中",
+            "name": "水寨集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1089,
+            "y": 1299
+          }
+        },
+        "refine_failed": false,
+        "score": 159.463,
+        "single_reader": false,
+        "x": 1088,
+        "y": 1299
+      },
+      {
+        "displacement": 0.943,
+        "name": "槐店",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          1352,
+          1446
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "槐店",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 1351,
+            "y": 1447
+          },
+          "b": {
+            "confidence": "高",
+            "name": "槐店",
+            "note": "",
+            "symbol": "小円",
+            "x": 1351,
+            "y": 1447
+          },
+          "t": {
+            "confidence": "中",
+            "name": "槐店",
+            "note": "",
+            "symbol": "小円",
+            "x": 1352,
+            "y": 1446
+          }
+        },
+        "refine_failed": false,
+        "score": 147.719,
+        "single_reader": false,
+        "x": 1352,
+        "y": 1446
+      },
+      {
+        "displacement": 0.333,
+        "name": "新[蔡?]",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          1598,
+          1597
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "新[蔡?]",
+            "note": "縦書き。下の字は画像下端で不鮮明。",
+            "symbol": "小円",
+            "x": 1597,
+            "y": 1597
+          },
+          "b": {
+            "confidence": "低",
+            "name": "新[蔡?]",
+            "note": "縦書き。第2字が画像下端で不鮮明。",
+            "symbol": "小円",
+            "x": 1598,
+            "y": 1597
+          },
+          "t": {
+            "confidence": "低",
+            "name": "新□",
+            "note": "地名の下部が画像端で切れている。",
+            "symbol": "小円",
+            "x": 1598,
+            "y": 1597
+          }
+        },
+        "refine_failed": false,
+        "score": 179.404,
+        "single_reader": false,
+        "x": 1598,
+        "y": 1597
+      },
+      {
+        "displacement": 1.202,
+        "name": "光武廟",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p09",
+        "proposed": [
+          1954,
+          1611
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "光武廟",
+            "note": "右から左へ読む。画像下部の表示が文字に近接している。",
+            "symbol": "小円",
+            "x": 1955,
+            "y": 1612
+          },
+          "b": {
+            "confidence": "高",
+            "name": "光武廟",
+            "note": "",
+            "symbol": "小円",
+            "x": 1955,
+            "y": 1612
+          },
+          "t": {
+            "confidence": "中",
+            "name": "光武廟",
+            "note": "",
+            "symbol": "小円",
+            "x": 1955,
+            "y": 1611
+          }
+        },
+        "refine_failed": false,
+        "score": 152.779,
+        "single_reader": false,
+        "x": 1954,
+        "y": 1611
+      },
+      {
+        "name": "読めない",
+        "name_disputed": false,
+        "non_circle": true,
+        "page": "p09",
+        "readings": {
+          "b": {
+            "confidence": "低",
+            "name": "読めない",
+            "note": "非常に薄い円弧状の印。地名は見えず、地点記号か画像の汚れか判別困難。",
+            "symbol": "読めない",
+            "x": 969,
+            "y": 1588
+          }
+        },
+        "single_reader": true,
+        "x": 969.0,
+        "y": 1588.0
+      }
+    ],
+    "p10": [
+      {
+        "displacement": 0.333,
+        "name": "小呉家",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          2100,
+          89
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "小呉家",
+            "note": "右から左に読む。",
+            "symbol": "小円",
+            "x": 2100,
+            "y": 89
+          },
+          "b": {
+            "confidence": "高",
+            "name": "小呉家",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 2101,
+            "y": 89
+          },
+          "t": {
+            "confidence": "高",
+            "name": "小呉家",
+            "note": "",
+            "symbol": "小円",
+            "x": 2100,
+            "y": 89
+          }
+        },
+        "refine_failed": false,
+        "score": 155.012,
+        "single_reader": false,
+        "x": 2100,
+        "y": 89
+      },
+      {
+        "displacement": 1.054,
+        "name": "道陵岡",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          1881,
+          215
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "道陵岡",
+            "note": "右から左に読む。",
+            "symbol": "小円",
+            "x": 1883,
+            "y": 215
+          },
+          "b": {
+            "confidence": "中",
+            "name": "道陵岡",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 1882,
+            "y": 216
+          },
+          "t": {
+            "confidence": "中",
+            "name": "道陵岡",
+            "note": "",
+            "symbol": "小円",
+            "x": 1881,
+            "y": 215
+          }
+        },
+        "refine_failed": false,
+        "score": 136.84,
+        "single_reader": false,
+        "x": 1881,
+        "y": 215
+      },
+      {
+        "displacement": 0.943,
+        "name": "陳賢店",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          2076,
+          239
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "陳賢店",
+            "note": "右から左に読む。",
+            "symbol": "小円",
+            "x": 2077,
+            "y": 238
+          },
+          "b": {
+            "confidence": "中",
+            "name": "陳賢店",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 2077,
+            "y": 239
+          },
+          "t": {
+            "confidence": "中",
+            "name": "陳賢店",
+            "note": "",
+            "symbol": "小円",
+            "x": 2076,
+            "y": 238
+          }
+        },
+        "refine_failed": false,
+        "score": 176.386,
+        "single_reader": false,
+        "x": 2076,
+        "y": 239
+      },
+      {
+        "displacement": 0.943,
+        "name": "夏亭",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          2117,
+          350
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "夏亭",
+            "note": "右から左に読む。",
+            "symbol": "小円",
+            "x": 2118,
+            "y": 351
+          },
+          "b": {
+            "confidence": "高",
+            "name": "夏亭",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 2118,
+            "y": 351
+          },
+          "t": {
+            "confidence": "高",
+            "name": "夏亭",
+            "note": "",
+            "symbol": "小円",
+            "x": 2117,
+            "y": 350
+          }
+        },
+        "refine_failed": false,
+        "score": 175.568,
+        "single_reader": false,
+        "x": 2117,
+        "y": 350
+      },
+      {
+        "displacement": 0.333,
+        "name": "四個樓",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          2254,
+          380
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "四個樓",
+            "note": "右から左に読む。",
+            "symbol": "小円",
+            "x": 2254,
+            "y": 380
+          },
+          "b": {
+            "confidence": "高",
+            "name": "四個樓",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 2254,
+            "y": 380
+          },
+          "t": {
+            "confidence": "高",
+            "name": "四個樓",
+            "note": "",
+            "symbol": "小円",
+            "x": 2254,
+            "y": 379
+          }
+        },
+        "refine_failed": false,
+        "score": 148.75,
+        "single_reader": false,
+        "x": 2254,
+        "y": 380
+      },
+      {
+        "displacement": 0.333,
+        "name": "大春李",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          1945,
+          498
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "大[春?]李",
+            "note": "右から左に読む。中央の字は不鮮明。",
+            "symbol": "小円",
+            "x": 1945,
+            "y": 498
+          },
+          "b": {
+            "confidence": "中",
+            "name": "大春李",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 1945,
+            "y": 499
+          },
+          "t": {
+            "confidence": "高",
+            "name": "大春李",
+            "note": "",
+            "symbol": "小円",
+            "x": 1945,
+            "y": 498
+          }
+        },
+        "refine_failed": false,
+        "score": 153.54,
+        "single_reader": false,
+        "x": 1945,
+        "y": 498
+      },
+      {
+        "displacement": 0.333,
+        "name": "清河驛",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          2151,
+          497
+        ],
+        "radius": 9,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "清河驛",
+            "note": "右から左に読む。",
+            "symbol": "小円",
+            "x": 2152,
+            "y": 497
+          },
+          "b": {
+            "confidence": "高",
+            "name": "清河驛",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 2151,
+            "y": 497
+          },
+          "t": {
+            "confidence": "高",
+            "name": "清河驛",
+            "note": "",
+            "symbol": "小円",
+            "x": 2151,
+            "y": 497
+          }
+        },
+        "refine_failed": false,
+        "score": 167.471,
+        "single_reader": false,
+        "x": 2151,
+        "y": 497
+      },
+      {
+        "displacement": 0.333,
+        "name": "西華",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          1837,
+          546
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "西華",
+            "note": "右から左に読む。",
+            "symbol": "小円",
+            "x": 1837,
+            "y": 547
+          },
+          "b": {
+            "confidence": "高",
+            "name": "西華",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 1837,
+            "y": 546
+          },
+          "t": {
+            "confidence": "高",
+            "name": "西華",
+            "note": "",
+            "symbol": "小円",
+            "x": 1837,
+            "y": 546
+          }
+        },
+        "refine_failed": false,
+        "score": 155.657,
+        "single_reader": false,
+        "x": 1837,
+        "y": 546
+      },
+      {
+        "displacement": 0.745,
+        "name": "周家口",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p10",
+        "proposed": [
+          2185,
+          950
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 2185,
+            "y": 951
+          },
+          "b": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 2185,
+            "y": 951
+          },
+          "t": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "",
+            "symbol": "小円",
+            "x": 2186,
+            "y": 950
+          }
+        },
+        "refine_failed": false,
+        "score": 149.759,
+        "single_reader": false,
+        "x": 2185,
+        "y": 950
+      }
+    ],
+    "p11": [
+      {
+        "displacement": 1.795,
+        "name": "新站",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p11",
+        "proposed": [
+          975,
+          213
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "新站",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 976,
+            "y": 212
+          },
+          "b": {
+            "confidence": "高",
+            "name": "新站",
+            "note": "横書きを右から左に読んだ。",
+            "symbol": "小円",
+            "x": 975,
+            "y": 212
+          },
+          "t": {
+            "confidence": "中",
+            "name": "新站",
+            "note": "",
+            "symbol": "小円",
+            "x": 976,
+            "y": 210
+          }
+        },
+        "refine_failed": false,
+        "score": 111.333,
+        "single_reader": false,
+        "x": 975,
+        "y": 213
+      },
+      {
+        "displacement": 1.054,
+        "name": "水寨集",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p11",
+        "proposed": [
+          1103,
+          387
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "水寨集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1103,
+            "y": 388
+          },
+          "b": {
+            "confidence": "高",
+            "name": "水寨集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1103,
+            "y": 388
+          },
+          "t": {
+            "confidence": "中",
+            "name": "水寨集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1104,
+            "y": 388
+          }
+        },
+        "refine_failed": false,
+        "score": 169.318,
+        "single_reader": false,
+        "x": 1103,
+        "y": 387
+      },
+      {
+        "displacement": 1.054,
+        "name": "槐店",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p11",
+        "proposed": [
+          1363,
+          536
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "槐店",
+            "note": "右から左へ読む。",
+            "symbol": "小円",
+            "x": 1364,
+            "y": 536
+          },
+          "b": {
+            "confidence": "高",
+            "name": "槐店",
+            "note": "横書きを右から左に読んだ。",
+            "symbol": "小円",
+            "x": 1364,
+            "y": 536
+          },
+          "t": {
+            "confidence": "中",
+            "name": "槐店",
+            "note": "",
+            "symbol": "小円",
+            "x": 1364,
+            "y": 535
+          }
+        },
+        "refine_failed": false,
+        "score": 165.571,
+        "single_reader": false,
+        "x": 1363,
+        "y": 536
+      },
+      {
+        "displacement": 1.0,
+        "name": "錢店",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p11",
+        "proposed": [
+          1556,
+          332
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "低",
+            "name": "[銭?]店",
+            "note": "右から左へ読む。右側の字の細部が不鮮明。",
+            "symbol": "小円",
+            "x": 1557,
+            "y": 332
+          },
+          "b": {
+            "confidence": "中",
+            "name": "[銭?]店",
+            "note": "横書きを右から左に読んだ。銭の字形は不確か。",
+            "symbol": "小円",
+            "x": 1557,
+            "y": 332
+          },
+          "t": {
+            "confidence": "低",
+            "name": "[古?]錢",
+            "note": "円の右側の地名は不鮮明。",
+            "symbol": "小円",
+            "x": 1557,
+            "y": 332
+          }
+        },
+        "refine_failed": false,
+        "score": 174.253,
+        "single_reader": false,
+        "x": 1556,
+        "y": 332
+      },
+      {
+        "displacement": 1.054,
+        "name": "新安集",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p11",
+        "proposed": [
+          1608,
+          694
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "新安集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1608,
+            "y": 695
+          },
+          "b": {
+            "confidence": "高",
+            "name": "新安集",
+            "note": "縦書き。",
+            "symbol": "小円",
+            "x": 1611,
+            "y": 694
+          },
+          "t": {
+            "confidence": "高",
+            "name": "新安集",
+            "note": "",
+            "symbol": "小円",
+            "x": 1608,
+            "y": 694
+          }
+        },
+        "refine_failed": false,
+        "score": 175.145,
+        "single_reader": false,
+        "x": 1608,
+        "y": 694
+      },
+      {
+        "displacement": 0.471,
+        "name": "光武庙",
+        "name_disputed": true,
+        "non_circle": false,
+        "page": "p11",
+        "proposed": [
+          1964,
+          712
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "中",
+            "name": "光武[廟?]",
+            "note": "右から左へ読む。末字の判読に不確実性がある。",
+            "symbol": "小円",
+            "x": 1965,
+            "y": 712
+          },
+          "b": {
+            "confidence": "中",
+            "name": "光武廟",
+            "note": "横書きを右から左に読んだ。",
+            "symbol": "小円",
+            "x": 1965,
+            "y": 712
+          },
+          "t": {
+            "confidence": "中",
+            "name": "光武庙",
+            "note": "横書きを右から左に読んだ。",
+            "symbol": "小円",
+            "x": 1963,
+            "y": 711
+          }
+        },
+        "refine_failed": false,
+        "score": 172.549,
+        "single_reader": false,
+        "x": 1964,
+        "y": 712
+      }
+    ],
+    "p12": [
+      {
+        "displacement": 0.745,
+        "name": "周家口",
+        "name_disputed": false,
+        "non_circle": false,
+        "page": "p12",
+        "proposed": [
+          2222,
+          103
+        ],
+        "radius": 8,
+        "readings": {
+          "a": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "画像右上。円の下に縦書き。",
+            "symbol": "小円",
+            "x": 2223,
+            "y": 104
+          },
+          "b": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "画像右上。地名は縦書き。",
+            "symbol": "小円",
+            "x": 2222,
+            "y": 104
+          },
+          "t": {
+            "confidence": "高",
+            "name": "周家口",
+            "note": "画像右上の地点記号。",
+            "symbol": "小円",
+            "x": 2222,
+            "y": 103
+          }
+        },
+        "refine_failed": false,
+        "score": 154.818,
+        "single_reader": false,
+        "x": 2222,
+        "y": 103
+      }
+    ]
+  },
+  "pairs": [
+    {
+      "count": 5,
+      "names": [
+        "大井",
+        "李長庄",
+        "王家庄",
+        "陳留",
+        "双王府"
+      ],
+      "pages": [
+        "p05",
+        "p06"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 1,
+      "names": [
+        "張庄"
+      ],
+      "pages": [
+        "p05",
+        "p07"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p05",
+        "p08"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p05",
+        "p09"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p05",
+        "p10"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p05",
+        "p11"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p05",
+        "p12"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p06",
+        "p07"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p06",
+        "p08"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p06",
+        "p09"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p06",
+        "p10"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p06",
+        "p11"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p06",
+        "p12"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 5,
+      "names": [
+        "冠庄",
+        "十八里集",
+        "呂潭",
+        "崔橋",
+        "扶溝"
+      ],
+      "pages": [
+        "p07",
+        "p08"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 2,
+      "names": [
+        "道陵岡",
+        "陳賢店"
+      ],
+      "pages": [
+        "p07",
+        "p09"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 2,
+      "names": [
+        "道陵岡",
+        "陳賢店"
+      ],
+      "pages": [
+        "p07",
+        "p10"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p07",
+        "p11"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p07",
+        "p12"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p08",
+        "p09"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p08",
+        "p10"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p08",
+        "p11"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p08",
+        "p12"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 8,
+      "names": [
+        "周家口",
+        "四個樓",
+        "夏亭",
+        "小呉家",
+        "清河驛",
+        "西華",
+        "道陵岡",
+        "陳賢店"
+      ],
+      "pages": [
+        "p09",
+        "p10"
+      ],
+      "rms_px": 2.6807643727176504
+    },
+    {
+      "count": 3,
+      "names": [
+        "新站",
+        "槐店",
+        "水寨集"
+      ],
+      "pages": [
+        "p09",
+        "p11"
+      ],
+      "rms_px": 4.155923906834857e-12
+    },
+    {
+      "count": 1,
+      "names": [
+        "周家口"
+      ],
+      "pages": [
+        "p09",
+        "p12"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p10",
+        "p11"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 1,
+      "names": [
+        "周家口"
+      ],
+      "pages": [
+        "p10",
+        "p12"
+      ],
+      "rms_px": null
+    },
+    {
+      "count": 0,
+      "names": [],
+      "pages": [
+        "p11",
+        "p12"
+      ],
+      "rms_px": null
+    }
+  ],
+  "paths": {
+    "p09": [],
+    "p10": [
+      "p09"
+    ],
+    "p11": [
+      "p09"
+    ]
+  },
+  "recommended": "affine",
+  "results": {
+    "affine": {
+      "loo": [
+        {
+          "id": "p09:清河驛",
+          "index": 0,
+          "lat": 33.81111111,
+          "lon": 114.66638889,
+          "meters": 3730.625401547568,
+          "name": "清河驛",
+          "x": 620,
+          "y": 490
+        },
+        {
+          "id": "p09:西華",
+          "index": 1,
+          "lat": 33.78772306,
+          "lon": 114.529185,
+          "meters": 4794.853029863912,
+          "name": "西華",
+          "x": 305,
+          "y": 539
+        },
+        {
+          "id": "p09:陳州",
+          "index": 2,
+          "lat": 33.73222222,
+          "lon": 114.8825,
+          "meters": 10334.36419875304,
+          "name": "陳州",
+          "x": 1180,
+          "y": 659
+        },
+        {
+          "id": "p09:周家口",
+          "index": 3,
+          "lat": 33.625,
+          "lon": 114.64166667,
+          "meters": 6740.777050431689,
+          "name": "周家口",
+          "x": 654,
+          "y": 943
+        },
+        {
+          "id": "p09:新站",
+          "index": 4,
+          "lat": 33.5475,
+          "lon": 114.8475,
+          "meters": 1082.0881195261848,
+          "name": "新站",
+          "x": 957,
+          "y": 1123
+        },
+        {
+          "id": "p09:水寨集",
+          "index": 5,
+          "lat": 33.449345,
+          "lon": 114.90145694,
+          "meters": 2972.4235852268234,
+          "name": "水寨集",
+          "x": 1088,
+          "y": 1299
+        },
+        {
+          "id": "p09:槐店",
+          "index": 6,
+          "lat": 33.38305556,
+          "lon": 115.07305556,
+          "meters": 4155.954171068222,
+          "name": "槐店",
+          "x": 1352,
+          "y": 1446
+        },
+        {
+          "id": "p11:新安",
+          "index": 7,
+          "lat": 33.35472222,
+          "lon": 115.18916667,
+          "meters": 4740.769745074753,
+          "name": "新安",
+          "x": 1600.949442066645,
+          "y": 1602.6371904616237
+        }
+      ],
+      "residuals": [
+        {
+          "id": "p09:清河驛",
+          "index": 0,
+          "lat": 33.81111111,
+          "lon": 114.66638889,
+          "meters": 2409.608012662885,
+          "name": "清河驛",
+          "predicted": {
+            "lat": 33.8087077214035,
+            "lon": 114.64046915198796
+          },
+          "x": 620,
+          "y": 490
+        },
+        {
+          "id": "p09:西華",
+          "index": 1,
+          "lat": 33.78772306,
+          "lon": 114.529185,
+          "meters": 2485.6213866416574,
+          "name": "西華",
+          "predicted": {
+            "lat": 33.78873721758436,
+            "lon": 114.50231613198422
+          },
+          "x": 305,
+          "y": 539
+        },
+        {
+          "id": "p09:陳州",
+          "index": 2,
+          "lat": 33.73222222,
+          "lon": 114.8825,
+          "meters": 2314.6132267438347,
+          "name": "陳州",
+          "predicted": {
+            "lat": 33.735685395434466,
+            "lon": 114.90718140522785
+          },
+          "x": 1180,
+          "y": 659
+        },
+        {
+          "id": "p09:周家口",
+          "index": 3,
+          "lat": 33.625,
+          "lon": 114.64166667,
+          "meters": 4856.2862690827715,
+          "name": "周家口",
+          "predicted": {
+            "lat": 33.61666628486044,
+            "lon": 114.69314986755481
+          },
+          "x": 654,
+          "y": 943
+        },
+        {
+          "id": "p09:新站",
+          "index": 4,
+          "lat": 33.5475,
+          "lon": 114.8475,
+          "meters": 911.2695301637533,
+          "name": "新站",
+          "predicted": {
+            "lat": 33.539629711547654,
+            "lon": 114.84475865418648
+          },
+          "x": 957,
+          "y": 1123
+        },
+        {
+          "id": "p09:水寨集",
+          "index": 5,
+          "lat": 33.449345,
+          "lon": 114.90145694,
+          "meters": 2322.258811985348,
+          "name": "水寨集",
+          "predicted": {
+            "lat": 33.46472107895415,
+            "lon": 114.91839684856467
+          },
+          "x": 1088,
+          "y": 1299
+        },
+        {
+          "id": "p09:槐店",
+          "index": 6,
+          "lat": 33.38305556,
+          "lon": 115.07305556,
+          "meters": 3006.273785361703,
+          "name": "槐店",
+          "predicted": {
+            "lat": 33.40176621699284,
+            "lon": 115.04968137447682
+          },
+          "x": 1352,
+          "y": 1446
+        },
+        {
+          "id": "p11:新安",
+          "index": 7,
+          "lat": 33.35472222,
+          "lon": 115.18916667,
+          "meters": 2581.527940832988,
+          "name": "新安",
+          "predicted": {
+            "lat": 33.33476554322258,
+            "lon": 115.17496629601717
+          },
+          "x": 1600.949442066645,
+          "y": 1602.6371904616237
+        }
+      ],
+      "rms": 2802.9168266607066,
+      "transform": {
+        "count": 8,
+        "kind": "affine",
+        "lat": [
+          34.0179027772952,
+          -2.51724607434607e-06,
+          -0.0004237435986236809
+        ],
+        "lon": [
+          114.32021827764063,
+          0.0004514008154866578,
+          8.241299743998703e-05
+        ]
+      }
+    },
+    "poly2": {
+      "loo": [
+        {
+          "id": "p09:清河驛",
+          "index": 0,
+          "lat": 33.81111111,
+          "lon": 114.66638889,
+          "meters": 17760.13844022576,
+          "name": "清河驛",
+          "x": 620,
+          "y": 490
+        },
+        {
+          "id": "p09:西華",
+          "index": 1,
+          "lat": 33.78772306,
+          "lon": 114.529185,
+          "meters": 10427.404174923922,
+          "name": "西華",
+          "x": 305,
+          "y": 539
+        },
+        {
+          "id": "p09:陳州",
+          "index": 2,
+          "lat": 33.73222222,
+          "lon": 114.8825,
+          "meters": 55869.30864237584,
+          "name": "陳州",
+          "x": 1180,
+          "y": 659
+        },
+        {
+          "id": "p09:周家口",
+          "index": 3,
+          "lat": 33.625,
+          "lon": 114.64166667,
+          "meters": 4786.382236191109,
+          "name": "周家口",
+          "x": 654,
+          "y": 943
+        },
+        {
+          "id": "p09:新站",
+          "index": 4,
+          "lat": 33.5475,
+          "lon": 114.8475,
+          "meters": 4564.694852346069,
+          "name": "新站",
+          "x": 957,
+          "y": 1123
+        },
+        {
+          "id": "p09:水寨集",
+          "index": 5,
+          "lat": 33.449345,
+          "lon": 114.90145694,
+          "meters": 2536.502529397084,
+          "name": "水寨集",
+          "x": 1088,
+          "y": 1299
+        },
+        {
+          "id": "p09:槐店",
+          "index": 6,
+          "lat": 33.38305556,
+          "lon": 115.07305556,
+          "meters": 3641.067263585038,
+          "name": "槐店",
+          "x": 1352,
+          "y": 1446
+        },
+        {
+          "id": "p11:新安",
+          "index": 7,
+          "lat": 33.35472222,
+          "lon": 115.18916667,
+          "meters": 9295.510050770341,
+          "name": "新安",
+          "x": 1600.949442066645,
+          "y": 1602.6371904616237
+        }
+      ],
+      "residuals": [
+        {
+          "id": "p09:清河驛",
+          "index": 0,
+          "lat": 33.81111111,
+          "lon": 114.66638889,
+          "meters": 970.2192728726764,
+          "name": "清河驛",
+          "predicted": {
+            "lat": 33.80621439466752,
+            "lon": 114.67508042821196
+          },
+          "x": 620,
+          "y": 490
+        },
+        {
+          "id": "p09:西華",
+          "index": 1,
+          "lat": 33.78772306,
+          "lon": 114.529185,
+          "meters": 1597.3046079003366,
+          "name": "西華",
+          "predicted": {
+            "lat": 33.79566401742877,
+            "lon": 114.5147812819767
+          },
+          "x": 305,
+          "y": 539
+        },
+        {
+          "id": "p09:陳州",
+          "index": 2,
+          "lat": 33.73222222,
+          "lon": 114.8825,
+          "meters": 319.45881140117626,
+          "name": "陳州",
+          "predicted": {
+            "lat": 33.733861248041364,
+            "lon": 114.87966275448838
+          },
+          "x": 1180,
+          "y": 659
+        },
+        {
+          "id": "p09:周家口",
+          "index": 3,
+          "lat": 33.625,
+          "lon": 114.64166667,
+          "meters": 2559.953195244117,
+          "name": "周家口",
+          "predicted": {
+            "lat": 33.613736048646885,
+            "lon": 114.66577814850017
+          },
+          "x": 654,
+          "y": 943
+        },
+        {
+          "id": "p09:新站",
+          "index": 4,
+          "lat": 33.5475,
+          "lon": 114.8475,
+          "meters": 580.6593934637564,
+          "name": "新站",
+          "predicted": {
+            "lat": 33.54814059874283,
+            "lon": 114.84128162664035
+          },
+          "x": 957,
+          "y": 1123
+        },
+        {
+          "id": "p09:水寨集",
+          "index": 5,
+          "lat": 33.449345,
+          "lon": 114.90145694,
+          "meters": 585.5577708181412,
+          "name": "水寨集",
+          "predicted": {
+            "lat": 33.448642578131604,
+            "lon": 114.89520199288125
+          },
+          "x": 1088,
+          "y": 1299
+        },
+        {
+          "id": "p09:槐店",
+          "index": 6,
+          "lat": 33.38305556,
+          "lon": 115.07305556,
+          "meters": 2545.597721884092,
+          "name": "槐店",
+          "predicted": {
+            "lat": 33.40087680514688,
+            "lon": 115.05584446004326
+          },
+          "x": 1352,
+          "y": 1446
+        },
+        {
+          "id": "p11:新安",
+          "index": 7,
+          "lat": 33.35472222,
+          "lon": 115.18916667,
+          "meters": 1807.1567697174228,
+          "name": "新安",
+          "predicted": {
+            "lat": 33.343543479194125,
+            "lon": 115.20328903725785
+          },
+          "x": 1600.949442066645,
+          "y": 1602.6371904616237
+        }
+      ],
+      "rms": 1603.6695548053162,
+      "transform": {
+        "count": 8,
+        "kind": "poly2",
+        "lat": [
+          33.940783873299466,
+          -0.00017798905663432682,
+          -3.465734988318531e-05,
+          -1.1505798527264635e-07,
+          5.226916293574589e-07,
+          -5.072869201827684e-07
+        ],
+        "lon": [
+          114.37186511609116,
+          0.00037468679345217153,
+          0.00012462819588625134,
+          -3.2534223123557666e-07,
+          8.440124431134385e-07,
+          -5.060713966460324e-07
+        ]
+      }
+    }
+  },
+  "transforms": {
+    "p09": {
+      "kind": "affine",
+      "lat": [
+        0,
+        0,
+        1
+      ],
+      "lon": [
+        0,
+        1,
+        0
+      ]
+    },
+    "p10": {
+      "count": 8,
+      "kind": "affine",
+      "lat": [
+        -7.526840388614801,
+        0.00034502709956996114,
+        0.9998429051527559
+      ],
+      "lon": [
+        -1556.9376674222897,
+        1.0079376396331698,
+        0.012776663756296451
+      ]
+    },
+    "p11": {
+      "count": 3,
+      "kind": "affine",
+      "lat": [
+        927.7530571691359,
+        -0.024686640171308838,
+        1.0296545398961852
+      ],
+      "lon": [
+        -29.458995719950636,
+        1.0095154387037408,
+        0.010241516355879558
+      ]
+    }
+  }
+}

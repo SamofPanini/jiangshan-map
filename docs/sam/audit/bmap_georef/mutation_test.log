@@ -1,0 +1,13 @@
+F.
+======================================================================
+FAIL: test_black_window_fails_and_excluded (__main__.GeorefTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sam/Documents/Explore/project/jiangshan-map/scripts/sam/bmap_georef_test.py", line 11, in test_black_window_fails_and_excluded
+    self.assertFalse(b.eligible(dict(r,single_reader=False,name_disputed=False,non_circle=False)))
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.424s
+
+FAILED (failures=1)
