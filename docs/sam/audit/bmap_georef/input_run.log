@@ -31,4 +31,4 @@ INPUT docs/sam/audit/bmap_reads/p12_a.json sha256=177083024e6ba6b3db287094c31c5a
 INPUT docs/sam/audit/bmap_reads/p12_b.json sha256=97d73a1ead3d4e8a45ae165a3a3dd932dd958ebcf5e04598baf7ec36ac635c1e places=1 dates=11
 INPUT docs/sam/files/pages/D5/p12.jpg sha256=1f54e4f9a8e4b53031f8693662a2884d7c12e97916aec5a95a565fa434eedddb images=1
 INPUT data/sam/gazetteer/huanghe1938_gazetteer.json sha256=2789bfbc37557db5a26b6c81124b6d957ac4eb32cc0e30d77594b2927008a5ed records=76
-DONE base=p09 connected=3 controls=8 recommended=affine candidates=154
+DONE base=p07 full_pages=7 filtered_pages=7 outliers=0 recommended=full/poly2 controls=40 candidates=141

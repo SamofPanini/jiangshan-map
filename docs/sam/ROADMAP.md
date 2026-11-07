@@ -157,3 +157,4 @@
 | 2026-11-05 | 寺观层经验教训与交接写入 RELIGION_LAYER_PLAN §6.5（含 Codex 任务单写 Notion 的派发通道）；`AGENTS.md` §6 对应两条待 Sam 自行写入 | Sam's Agent(Opus-5.5) |
 | 2026-11-04 | 上游同步到 7c5cfe3（S1 验收，研究 URL 参数与地形开关适配），记录见 UPSTREAM_TRACKING | Sam's Agent(Opus-5.5) |
 | 2026-11-07 | B 图 8 页读数与图例（P0b-8）：除两次侦察外，图上是逐日浸水范围；派 P1-4 拼接与配准 | Sam's Agent(Opus-5.5) |
+| 2026-11-07 | P1-4 r2 验收：7 页拼接（连接点最大 5.5 px），26 个地点配准，留一法中位约 3 km、最大约 8 km；候选坐标未入库 | Sam's Agent(Opus-5.5) |

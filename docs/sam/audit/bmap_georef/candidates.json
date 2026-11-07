@@ -1,12 +1,21 @@
 {
-  "base": "p09",
+  "base": "p07",
   "candidates": [
     {
       "displacement": 1.795,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 541.6666666666666,
+      "mean_y": 964.6666666666666,
       "name": "李長庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p05",
       "proposed": [
         540,
@@ -42,17 +51,29 @@
       "refine_failed": false,
       "score": 162.356,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.80572539570315,
+        "lon": 114.40361233327195
+      },
       "x": 540,
       "y": 964
     },
     {
       "displacement": 1.944,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 608,
+      "mean_y": 968.6666666666666,
       "name": "十里鋪",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p05",
       "proposed": [
         607,
@@ -88,17 +109,29 @@
       "refine_failed": false,
       "score": 161.746,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.80794564046058,
+        "lon": 114.43521871417508
+      },
       "x": 607,
       "y": 967
     },
     {
       "displacement": 0.471,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 93.33333333333333,
+      "mean_y": 999.3333333333334,
       "name": "大井",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p05",
       "proposed": [
         93,
@@ -134,17 +167,29 @@
       "refine_failed": false,
       "score": 177.367,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.77019712008283,
+        "lon": 114.20064510494153
+      },
       "x": 93,
       "y": 999
     },
     {
       "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 370.3333333333333,
+      "mean_y": 1065.6666666666667,
       "name": "蘆花岡",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p05",
       "proposed": [
         371,
@@ -180,17 +225,29 @@
       "refine_failed": false,
       "score": 169.086,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.7588779144218,
+        "lon": 114.33414826818371
+      },
       "x": 371,
       "y": 1066
     },
     {
       "displacement": 2.134,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 326.3333333333333,
+      "mean_y": 1147.6666666666667,
       "name": "岳店",
       "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p05",
       "proposed": [
         325,
@@ -226,17 +283,29 @@
       "refine_failed": false,
       "score": 159.09,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.72616920921779,
+        "lon": 114.31983285051079
+      },
       "x": 325,
       "y": 1146
     },
     {
       "displacement": 1.054,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 674,
+      "mean_y": 1267.6666666666667,
       "name": "王家庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p05",
       "proposed": [
         673,
@@ -272,17 +341,29 @@
       "refine_failed": false,
       "score": 169.799,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.69719806338971,
+        "lon": 114.49189781165495
+      },
       "x": 673,
       "y": 1268
     },
     {
       "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 998.6666666666666,
+      "mean_y": 1477,
       "name": "張庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p05",
       "proposed": [
         998,
@@ -318,17 +399,29 @@
       "refine_failed": false,
       "score": 184.031,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.63302406733763,
+        "lon": 114.66205231686277
+      },
       "x": 998,
       "y": 1477
     },
     {
       "displacement": 1.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 132.66666666666666,
+      "mean_y": 1546,
       "name": "双王府",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p05",
       "proposed": [
         131,
@@ -364,17 +457,29 @@
       "refine_failed": false,
       "score": 159.179,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.560740230705356,
+        "lon": 114.26305752957136
+      },
       "x": 131,
       "y": 1546
     },
     {
       "displacement": 0.0,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 623,
+      "mean_y": 593,
       "name": "京水鎮",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         623,
@@ -410,17 +515,29 @@
       "refine_failed": false,
       "score": 184.997,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.87695907310903,
+        "lon": 113.74392380424042
+      },
       "x": 623,
       "y": 593
     },
     {
       "displacement": 0.0,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 491,
+      "mean_y": 864,
       "name": "鄭州",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         491,
@@ -456,17 +573,29 @@
       "refine_failed": false,
       "score": 163.898,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.76682476563208,
+        "lon": 113.71318265038045
+      },
       "x": 491,
       "y": 864
     },
     {
       "displacement": 0.0,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 890,
+      "mean_y": 623,
       "name": "楊橋",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         890,
@@ -502,17 +631,29 @@
       "refine_failed": false,
       "score": 165.633,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.87934111783557,
+        "lon": 113.86848644894312
+      },
       "x": 890,
       "y": 623
     },
     {
       "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1073.3333333333333,
+      "mean_y": 654.3333333333334,
       "name": "蒲灘",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p06",
       "proposed": [
         1074,
@@ -548,17 +689,29 @@
       "refine_failed": false,
       "score": 170.685,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.877100031094464,
+        "lon": 113.95653674323952
+      },
       "x": 1074,
       "y": 654
     },
     {
       "displacement": 1.7,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1070.6666666666667,
+      "mean_y": 739.6666666666666,
       "name": "李相王",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1069,
@@ -594,17 +747,29 @@
       "refine_failed": false,
       "score": 164.707,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.84435237881514,
+        "lon": 113.96322616032494
+      },
       "x": 1069,
       "y": 740
     },
     {
       "displacement": 1.414,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1131,
+      "mean_y": 649,
       "name": "三劉砦",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p06",
       "proposed": [
         1132,
@@ -640,17 +805,29 @@
       "refine_failed": false,
       "score": 168.948,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.88232395210424,
+        "lon": 113.98280727651229
+      },
       "x": 1132,
       "y": 648
     },
     {
       "displacement": 0.471,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1225.6666666666667,
+      "mean_y": 632.6666666666666,
       "name": "開市口",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1226,
@@ -686,17 +863,29 @@
       "refine_failed": false,
       "score": 155.892,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.892755406708716,
+        "lon": 114.02502365983247
+      },
       "x": 1226,
       "y": 633
     },
     {
       "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1278.6666666666667,
+      "mean_y": 585,
       "name": "万庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1278,
@@ -732,17 +921,29 @@
       "refine_failed": false,
       "score": 190.315,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.91334645855546,
+        "lon": 114.04424029510282
+      },
       "x": 1278,
       "y": 585
     },
     {
       "displacement": 1.054,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1218.3333333333333,
+      "mean_y": 704,
       "name": "耿氏屯",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p06",
       "proposed": [
         1218,
@@ -778,17 +979,29 @@
       "refine_failed": false,
       "score": 172.012,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.865264516479385,
+        "lon": 114.02885645633413
+      },
       "x": 1218,
       "y": 705
     },
     {
       "displacement": 0.333,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1430.3333333333333,
+      "mean_y": 697,
       "name": "北堤",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1430,
@@ -824,17 +1037,29 @@
       "refine_failed": false,
       "score": 174.485,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.87914978908548,
+        "lon": 114.12764656661285
+      },
       "x": 1430,
       "y": 697
     },
     {
       "displacement": 0.471,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1462.3333333333333,
+      "mean_y": 800.3333333333334,
       "name": "瓦坡",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1462,
@@ -870,17 +1095,29 @@
       "refine_failed": false,
       "score": 167.361,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.841857041889085,
+        "lon": 114.15332386927442
+      },
       "x": 1462,
       "y": 800
     },
     {
       "displacement": 1.202,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1023,
+      "mean_y": 923.6666666666666,
       "name": "茶庵",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1024,
@@ -916,17 +1153,29 @@
       "refine_failed": false,
       "score": 158.772,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.77196346117916,
+        "lon": 113.9608983523735
+      },
       "x": 1024,
       "y": 923
     },
     {
       "displacement": 0.943,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1235.6666666666667,
+      "mean_y": 991.3333333333334,
       "name": "關家橋",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p06",
       "proposed": [
         1235,
@@ -962,63 +1211,29 @@
       "refine_failed": false,
       "score": 180.175,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.75633604589074,
+        "lon": 114.06547115513058
+      },
       "x": 1235,
       "y": 992
     },
     {
-      "displacement": 0.333,
-      "kind": "place",
-      "name": "中牟",
-      "name_disputed": false,
-      "non_circle": false,
-      "page": "p06",
-      "proposed": [
-        1138,
-        1048
-      ],
-      "radius": 8,
-      "readings": {
-        "a": {
-          "confidence": "中",
-          "name": "中牟",
-          "note": "",
-          "symbol": "小円",
-          "x": 1138,
-          "y": 1049
-        },
-        "b": {
-          "confidence": "高",
-          "name": "中牟",
-          "note": "",
-          "symbol": "小円",
-          "x": 1139,
-          "y": 1047
-        },
-        "t": {
-          "confidence": "中",
-          "name": "中牟",
-          "note": "",
-          "symbol": "小円",
-          "x": 1138,
-          "y": 1048
-        }
-      },
-      "refine_failed": false,
-      "score": 164.324,
-      "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1138,
-      "y": 1048
-    },
-    {
       "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 910.3333333333334,
+      "mean_y": 1222.3333333333333,
       "name": "雁台寺",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         910,
@@ -1054,17 +1269,29 @@
       "refine_failed": false,
       "score": 92.87,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.64834688172717,
+        "lon": 113.93677775420514
+      },
       "x": 910,
       "y": 1223
     },
     {
       "displacement": 0.943,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1525.6666666666667,
+      "mean_y": 997.3333333333334,
       "name": "大井",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1525,
@@ -1100,17 +1327,29 @@
       "refine_failed": false,
       "score": 184.546,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.769244334638806,
+        "lon": 114.2025597421701
+      },
       "x": 1525,
       "y": 998
     },
     {
       "displacement": 0.0,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1953,
+      "mean_y": 960,
       "name": "李長庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1953,
@@ -1146,17 +1385,29 @@
       "refine_failed": false,
       "score": 156.843,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.80625113847965,
+        "lon": 114.4047169593822
+      },
       "x": 1953,
       "y": 960
     },
     {
       "displacement": 1.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 2015.3333333333333,
+      "mean_y": 962,
       "name": "十里鋪",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         2014,
@@ -1192,17 +1443,29 @@
       "refine_failed": false,
       "score": 159.346,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.80827712545497,
+        "lon": 114.43474404283758
+      },
       "x": 2014,
       "y": 963
     },
     {
       "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1788.6666666666667,
+      "mean_y": 1061,
       "name": "蘆花崗",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1788,
@@ -1238,17 +1501,29 @@
       "refine_failed": false,
       "score": 157.262,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.75865940466737,
+        "lon": 114.3342612234671
+      },
       "x": 1788,
       "y": 1061
     },
     {
       "displacement": 1.054,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1744,
+      "mean_y": 1139.6666666666667,
       "name": "岳店",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p06",
       "proposed": [
         1743,
@@ -1284,17 +1559,29 @@
       "refine_failed": false,
       "score": 164.957,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.72552006992952,
+        "lon": 114.31981992089787
+      },
       "x": 1743,
       "y": 1140
     },
     {
       "displacement": 0.471,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 2078.6666666666665,
+      "mean_y": 1258.3333333333333,
       "name": "王家庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         2079,
@@ -1330,17 +1617,29 @@
       "refine_failed": false,
       "score": 166.093,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.697076293889026,
+        "lon": 114.49317018425548
+      },
       "x": 2079,
       "y": 1258
     },
     {
       "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1553.3333333333333,
+      "mean_y": 1527,
       "name": "双王府",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1554,
@@ -1376,17 +1675,29 @@
       "refine_failed": false,
       "score": 165.222,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.56117010136413,
+        "lon": 114.26242461216651
+      },
       "x": 1554,
       "y": 1527
     },
     {
       "displacement": 1.333,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1448,
+      "mean_y": 1598.6666666666667,
       "name": "小營",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p06",
       "proposed": [
         1448,
@@ -1422,17 +1733,29 @@
       "refine_failed": false,
       "score": 174.059,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.52561053144977,
+        "lon": 114.21804909425373
+      },
       "x": 1448,
       "y": 1600
     },
     {
       "displacement": 1.0,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 2387,
+      "mean_y": 1461,
       "name": "読めない",
       "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": true,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p06",
       "proposed": [
         2387,
@@ -1460,17 +1783,29 @@
       "refine_failed": false,
       "score": 183.318,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.63346027794075,
+        "lon": 114.66187555488109
+      },
       "x": 2387,
       "y": 1460
     },
     {
       "displacement": 0.943,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 989.6666666666666,
+      "mean_y": 93.33333333333333,
       "name": "張庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         989,
@@ -1506,17 +1841,29 @@
       "refine_failed": false,
       "score": 173.346,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.63300244651634,
+        "lon": 114.66210138281687
+      },
       "x": 989,
       "y": 94
     },
     {
       "displacement": 14.142,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 64,
+      "mean_y": 218,
       "name": "小営",
       "name_disputed": false,
+      "name_source": "no_majority",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p07",
       "proposed": [
         78,
@@ -1536,17 +1883,29 @@
       "refine_failed": true,
       "score": 117.883,
       "single_reader": true,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 64.0,
-      "y": 218.0
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.53572590154532,
+        "lon": 114.22381217431902
+      },
+      "x": 64,
+      "y": 218
     },
     {
       "displacement": 1.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 154.66666666666666,
+      "mean_y": 170,
       "name": "双王府",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p07",
       "proposed": [
         156,
@@ -1582,17 +1941,29 @@
       "refine_failed": false,
       "score": 174.932,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.56136707542768,
+        "lon": 114.26267579717522
+      },
       "x": 156,
       "y": 169
     },
     {
       "displacement": 14.472,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 85.66666666666667,
+      "mean_y": 260,
       "name": "□庄",
       "name_disputed": true,
+      "name_source": "no_majority",
+      "name_uncertain": true,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p07",
       "proposed": [
         97,
@@ -1628,17 +1999,29 @@
       "refine_failed": true,
       "score": 98.547,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": true,
+      "wgs84": {
+        "lat": 34.518469107203806,
+        "lon": 114.2382233206857
+      },
       "x": 85.66666666666667,
-      "y": 260.0
+      "y": 260
     },
     {
       "displacement": 0.943,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 451.3333333333333,
+      "mean_y": 304.3333333333333,
       "name": "大雙溝",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p07",
       "proposed": [
         452,
@@ -1674,17 +2057,29 @@
       "refine_failed": false,
       "score": 175.978,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.516426338052234,
+        "lon": 114.4183263849017
+      },
       "x": 452,
       "y": 305
     },
     {
       "displacement": 0.0,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
-      "name": "趙尚[営?]",
-      "name_disputed": true,
+      "mean_x": 103,
+      "mean_y": 456,
+      "name": "趙崗砦",
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p07",
       "proposed": [
         103,
@@ -1720,17 +2115,29 @@
       "refine_failed": false,
       "score": 168.784,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.43298119781673,
+        "lon": 114.26494174291979
+      },
       "x": 103,
       "y": 456
     },
     {
       "displacement": 1.491,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 182.66666666666666,
+      "mean_y": 464.3333333333333,
       "name": "十八里集",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         184,
@@ -1766,17 +2173,29 @@
       "refine_failed": false,
       "score": 114.391,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.432934560405656,
+        "lon": 114.30430672382569
+      },
       "x": 184,
       "y": 465
     },
     {
       "displacement": 0.333,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 291,
+      "mean_y": 471.3333333333333,
       "name": "監岡",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         291,
@@ -1812,17 +2231,29 @@
       "refine_failed": false,
       "score": 102.179,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.43549024777188,
+        "lon": 114.35604773143181
+      },
       "x": 291,
       "y": 471
     },
     {
       "displacement": 13.924,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 395.6666666666667,
+      "mean_y": 466.3333333333333,
       "name": "劉庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         406,
@@ -1858,17 +2289,29 @@
       "refine_failed": true,
       "score": 110.896,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": true,
+      "wgs84": {
+        "lat": 34.4426668201652,
+        "lon": 114.40601774481975
+      },
       "x": 395.6666666666667,
       "y": 466.3333333333333
     },
     {
       "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 467.3333333333333,
+      "mean_y": 695.3333333333334,
       "name": "冠庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         468,
@@ -1904,17 +2347,29 @@
       "refine_failed": false,
       "score": 152.373,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.34371539222177,
+        "lon": 114.46069859786188
+      },
       "x": 468,
       "y": 695
     },
     {
       "displacement": 0.333,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1331,
+      "mean_y": 1114.3333333333333,
       "name": "楊廟",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         1331,
@@ -1950,17 +2405,29 @@
       "refine_failed": false,
       "score": 172.33,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.19446095585841,
+        "lon": 114.91979140214575
+      },
       "x": 1331,
       "y": 1114
     },
     {
       "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
-      "name": "独塘集",
-      "name_disputed": true,
+      "mean_x": 957.6666666666666,
+      "mean_y": 1193.6666666666667,
+      "name": "獨墻集",
+      "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p07",
       "proposed": [
         957,
@@ -1996,17 +2463,29 @@
       "refine_failed": false,
       "score": 143.373,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.13779075639131,
+        "lon": 114.73722313087397
+      },
       "x": 957,
       "y": 1194
     },
     {
       "displacement": 0.471,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 638.6666666666666,
+      "mean_y": 1316.3333333333333,
       "name": "龍王廟",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         639,
@@ -2042,17 +2521,29 @@
       "refine_failed": false,
       "score": 169.753,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.06344202838986,
+        "lon": 114.58833994012184
+      },
       "x": 639,
       "y": 1316
     },
     {
       "displacement": 0.943,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
-      "name": "[逍?][遙?]口",
-      "name_disputed": true,
+      "mean_x": 723.3333333333334,
+      "mean_y": 1341.6666666666667,
+      "name": "遜母口",
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p07",
       "proposed": [
         724,
@@ -2088,17 +2579,29 @@
       "refine_failed": false,
       "score": 183.549,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.05591247796077,
+        "lon": 114.63141085423749
+      },
       "x": 724,
       "y": 1341
     },
     {
       "displacement": 1.054,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 694.3333333333334,
+      "mean_y": 1411,
       "name": "小吳家",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         694,
@@ -2134,17 +2637,29 @@
       "refine_failed": false,
       "score": 187.247,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.02122918697097,
+        "lon": 114.6207963706291
+      },
       "x": 694,
       "y": 1410
     },
     {
       "displacement": 1.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 482.3333333333333,
+      "mean_y": 1532,
       "name": "道陵岡",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         481,
@@ -2180,17 +2695,29 @@
       "refine_failed": false,
       "score": 149.694,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 33.95141111046255,
+        "lon": 114.52408079152636
+      },
       "x": 481,
       "y": 1531
     },
     {
       "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 671.6666666666666,
+      "mean_y": 1554.6666666666667,
       "name": "陳賢店",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p07",
       "proposed": [
         672,
@@ -2226,17 +2753,29 @@
       "refine_failed": false,
       "score": 182.358,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 33.95031079770249,
+        "lon": 114.61804244410331
+      },
       "x": 672,
       "y": 1554
     },
     {
       "displacement": 2.693,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 44,
+      "mean_y": 241.5,
       "name": "小營",
       "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p07",
       "proposed": [
         45,
@@ -2264,17 +2803,29 @@
       "refine_failed": false,
       "score": 168.833,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.52567473241735,
+        "lon": 114.21688064301031
+      },
       "x": 45,
       "y": 239
     },
     {
       "displacement": 2.867,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1584.3333333333333,
+      "mean_y": 243.66666666666666,
       "name": "双王府",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p08",
       "proposed": [
         1582,
@@ -2310,17 +2861,29 @@
       "refine_failed": false,
       "score": 189.105,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.56062122368034,
+        "lon": 114.26269813811369
+      },
       "x": 1582,
       "y": 242
     },
     {
       "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1470.6666666666667,
+      "mean_y": 313,
       "name": "小營",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p08",
       "proposed": [
         1470,
@@ -2356,17 +2919,29 @@
       "refine_failed": false,
       "score": 171.503,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.52547547632009,
+        "lon": 114.21821683935592
+      },
       "x": 1470,
       "y": 313
     },
     {
       "displacement": 1.491,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1897.3333333333333,
+      "mean_y": 382.3333333333333,
       "name": "大雙溝",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p08",
       "proposed": [
         1896,
@@ -2402,17 +2977,29 @@
       "refine_failed": false,
       "score": 166.145,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.51642326400501,
+        "lon": 114.42101705601296
+      },
       "x": 1896,
       "y": 383
     },
     {
       "displacement": 1.374,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1302.3333333333333,
+      "mean_y": 583.3333333333334,
       "name": "大橋",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p08",
       "proposed": [
         1301,
@@ -2448,17 +3035,29 @@
       "refine_failed": false,
       "score": 110.525,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.402072929557804,
+        "lon": 114.16580328963985
+      },
       "x": 1301,
       "y": 583
     },
     {
       "displacement": 1.202,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1527,
+      "mean_y": 535.6666666666666,
       "name": "趙崗砦",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p08",
       "proposed": [
         1526,
@@ -2494,17 +3093,29 @@
       "refine_failed": false,
       "score": 159.651,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.43376695953979,
+        "lon": 114.26372904203214
+      },
       "x": 1526,
       "y": 535
     },
     {
       "displacement": 0.745,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1611.3333333333333,
+      "mean_y": 546.3333333333334,
       "name": "十八里集",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p08",
       "proposed": [
         1612,
@@ -2540,17 +3151,29 @@
       "refine_failed": false,
       "score": 170.938,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.43324091594679,
+        "lon": 114.30403169003648
+      },
       "x": 1612,
       "y": 546
     },
     {
       "displacement": 14.162,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1725.6666666666667,
+      "mean_y": 552.6666666666666,
       "name": "監崗",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p08",
       "proposed": [
         1713,
@@ -2586,17 +3209,29 @@
       "refine_failed": true,
       "score": 86.531,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": true,
+      "wgs84": {
+        "lat": 34.43592677779441,
+        "lon": 114.35690849392188
+      },
       "x": 1725.6666666666667,
       "y": 552.6666666666666
     },
     {
       "displacement": 14.896,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1832.6666666666667,
+      "mean_y": 549.6666666666666,
       "name": "劉庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p08",
       "proposed": [
         1844,
@@ -2632,17 +3267,29 @@
       "refine_failed": true,
       "score": 106.287,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": true,
+      "wgs84": {
+        "lat": 34.44243408269623,
+        "lon": 114.4061936106009
+      },
       "x": 1832.6666666666667,
       "y": 549.6666666666666
     },
     {
       "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1905,
+      "mean_y": 785.6666666666666,
       "name": "冠庄",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p08",
       "proposed": [
         1905,
@@ -2678,17 +3325,29 @@
       "refine_failed": false,
       "score": 146.688,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.34403376335228,
+        "lon": 114.45904684916935
+      },
       "x": 1905,
       "y": 785
     },
     {
       "displacement": 0.667,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 2092,
+      "mean_y": 1430.6666666666667,
       "name": "龍王廟",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p08",
       "proposed": [
         2092,
@@ -2724,17 +3383,29 @@
       "refine_failed": false,
       "score": 158.861,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.06348484186748,
+        "lon": 114.59012512006639
+      },
       "x": 2092,
       "y": 1430
     },
     {
       "displacement": 1.414,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 2178,
+      "mean_y": 1457,
       "name": "遜母口",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "adjudicated",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p08",
       "proposed": [
         2177,
@@ -2770,17 +3441,29 @@
       "refine_failed": false,
       "score": 161.231,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.055897037897296,
+        "lon": 114.63158297716059
+      },
       "x": 2177,
       "y": 1456
     },
     {
       "displacement": 0.471,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 2143.6666666666665,
+      "mean_y": 1529.3333333333333,
       "name": "小吳家",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p08",
       "proposed": [
         2144,
@@ -2816,17 +3499,29 @@
       "refine_failed": false,
       "score": 156.957,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 34.02030803857347,
+        "lon": 114.62008600561376
+      },
       "x": 2144,
       "y": 1529
     },
     {
       "displacement": 4.031,
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "place",
+      "mean_x": 1921,
+      "mean_y": 1659.5,
       "name": "□陵岡",
       "name_disputed": true,
+      "name_source": "no_majority",
+      "name_uncertain": true,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p08",
       "proposed": [
         1923,
@@ -2854,21 +3549,29 @@
       "refine_failed": false,
       "score": 82.602,
       "single_reader": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "unrefined_tie": false,
+      "wgs84": {
+        "lat": 33.94919786311358,
+        "lon": 114.52346090955592
+      },
       "x": 1923,
       "y": 1656
     },
     {
       "displacement": 0.745,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 559.3333333333334,
+      "mean_y": 82.66666666666667,
       "name": "小呉家",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p09",
       "proposed": [
         559,
@@ -2904,9 +3607,10 @@
       "refine_failed": false,
       "score": 163.219,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.9817486616525,
-        "lon": 114.57930919928775
+        "lat": 34.02075908439907,
+        "lon": 114.62015915698909
       },
       "x": 559,
       "y": 82
@@ -2914,13 +3618,18 @@
     {
       "displacement": 0.667,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 338.6666666666667,
+      "mean_y": 208,
       "name": "道陵岡",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p09",
       "proposed": [
         338,
@@ -2956,9 +3665,10 @@
       "refine_failed": false,
       "score": 140.441,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.92891327960834,
-        "lon": 114.48993365674265
+        "lat": 33.95134464151112,
+        "lon": 114.52349104063819
       },
       "x": 338,
       "y": 208
@@ -2966,13 +3676,18 @@
     {
       "displacement": 0.471,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 538.3333333333334,
+      "mean_y": 231.66666666666666,
       "name": "陳賢店",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p09",
       "proposed": [
         538,
@@ -3008,9 +3723,10 @@
       "refine_failed": false,
       "score": 177.901,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.918239984026506,
-        "lon": 114.58219173177852
+        "lat": 33.95035233373392,
+        "lon": 114.61794154693412
       },
       "x": 538,
       "y": 232
@@ -3018,13 +3734,18 @@
     {
       "displacement": 1.054,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 584.3333333333334,
+      "mean_y": 343,
       "name": "夏亭",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p09",
       "proposed": [
         584,
@@ -3060,9 +3781,10 @@
       "refine_failed": false,
       "score": 161.633,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.87066490766124,
-        "lon": 114.61218642500421
+        "lat": 33.90037784861571,
+        "lon": 114.64478687383436
       },
       "x": 584,
       "y": 344
@@ -3070,13 +3792,18 @@
     {
       "displacement": 0.667,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 721,
+      "mean_y": 372.3333333333333,
       "name": "四個樓",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p09",
       "proposed": [
         721,
@@ -3112,9 +3839,10 @@
       "refine_failed": false,
       "score": 164.182,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.858031480588956,
-        "lon": 114.67641831365164
+        "lat": 33.89378747026637,
+        "lon": 114.71068109010157
       },
       "x": 721,
       "y": 373
@@ -3122,13 +3850,18 @@
     {
       "displacement": 0.943,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 413.3333333333333,
+      "mean_y": 491.6666666666667,
       "name": "大春李",
       "name_disputed": true,
+      "name_source": "no_majority",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p09",
       "proposed": [
         414,
@@ -3164,9 +3897,10 @@
       "refine_failed": false,
       "score": 146.836,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.808802530496195,
-        "lon": 114.54756299699515
+        "lat": 33.82219489468749,
+        "lon": 114.5716569676183
       },
       "x": 414,
       "y": 491
@@ -3174,13 +3908,18 @@
     {
       "displacement": 0.333,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
-      "name": "板[繒?]口鋪",
-      "name_disputed": true,
+      "mean_x": 891,
+      "mean_y": 834.3333333333334,
+      "name": "板[纜?]口舖",
+      "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": true,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p09",
       "proposed": [
         891,
@@ -3216,9 +3955,10 @@
       "refine_failed": false,
       "score": 184.373,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.662257749790804,
-        "lon": 114.79114884410419
+        "lat": 33.68223287106058,
+        "lon": 114.80839563822126
       },
       "x": 891,
       "y": 834
@@ -3226,13 +3966,18 @@
     {
       "displacement": 0.745,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 1030.6666666666667,
+      "mean_y": 884.6666666666666,
       "name": "瓦[罐?]集",
       "name_disputed": true,
+      "name_source": "no_majority",
+      "name_uncertain": true,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p09",
       "proposed": [
         1030,
@@ -3268,75 +4013,29 @@
       "refine_failed": false,
       "score": 168.235,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.64029692905667,
-        "lon": 114.85809662032628
+        "lat": 33.66475219075787,
+        "lon": 114.87635036894054
       },
       "x": 1030,
       "y": 885
     },
     {
-      "displacement": 0.745,
-      "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
-      },
-      "kind": "place",
-      "name": "[錢?]□",
-      "name_disputed": true,
-      "non_circle": false,
-      "page": "p09",
-      "proposed": [
-        1542,
-        1237
-      ],
-      "radius": 8,
-      "readings": {
-        "a": {
-          "confidence": "中",
-          "name": "錢圍",
-          "note": "右から左へ読む。折れ目に近く、文字がやや不鮮明。",
-          "symbol": "小円",
-          "x": 1542,
-          "y": 1237
-        },
-        "b": {
-          "confidence": "低",
-          "name": "錢[周?]",
-          "note": "第2字が線と重なり不鮮明。",
-          "symbol": "小円",
-          "x": 1543,
-          "y": 1237
-        },
-        "t": {
-          "confidence": "低",
-          "name": "[錢?]□",
-          "note": "記号の右側の文字は一部判読困難。",
-          "symbol": "小円",
-          "x": 1543,
-          "y": 1236
-        }
-      },
-      "refine_failed": false,
-      "score": 155.83,
-      "single_reader": false,
-      "wgs84": {
-        "lat": 33.48985035235106,
-        "lon": 115.11822321295432
-      },
-      "x": 1542,
-      "y": 1237
-    },
-    {
       "displacement": 0.333,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 1597.6666666666667,
+      "mean_y": 1597,
       "name": "新[蔡?]",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "majority",
+      "name_uncertain": true,
       "non_circle": false,
+      "normalized_unanimous": false,
       "page": "p09",
       "proposed": [
         1598,
@@ -3372,9 +4071,10 @@
       "refine_failed": false,
       "score": 179.404,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.33716169106638,
-        "lon": 115.17317033769997
+        "lat": 33.33941964414208,
+        "lon": 115.16438983518394
       },
       "x": 1598,
       "y": 1597
@@ -3382,13 +4082,18 @@
     {
       "displacement": 1.202,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 1955,
+      "mean_y": 1611.6666666666667,
       "name": "光武廟",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p09",
       "proposed": [
         1954,
@@ -3424,9 +4129,10 @@
       "refine_failed": false,
       "score": 152.779,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.33033314108317,
-        "lon": 115.33502280997739
+        "lat": 33.3519731289572,
+        "lon": 115.34160926034778
       },
       "x": 1954,
       "y": 1611
@@ -3434,13 +4140,18 @@
     {
       "displacement": 0.333,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 2100.3333333333335,
+      "mean_y": 89,
       "name": "小呉家",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p10",
       "proposed": [
         2100,
@@ -3476,9 +4187,10 @@
       "refine_failed": false,
       "score": 155.012,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.98166610161742,
-        "lon": 114.58016778336528
+        "lat": 34.02076327453118,
+        "lon": 114.62072554631091
       },
       "x": 2100,
       "y": 89
@@ -3486,13 +4198,18 @@
     {
       "displacement": 1.054,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 1882,
+      "mean_y": 215.33333333333334,
       "name": "道陵岡",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p10",
       "proposed": [
         1881,
@@ -3528,9 +4245,10 @@
       "refine_failed": false,
       "score": 136.84,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.928866414527924,
-        "lon": 114.49162918643674
+        "lat": 33.951471548690634,
+        "lon": 114.52483259160829
       },
       "x": 1881,
       "y": 215
@@ -3538,13 +4256,18 @@
     {
       "displacement": 0.943,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 2076.6666666666665,
+      "mean_y": 238.33333333333334,
       "name": "陳賢店",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p10",
       "proposed": [
         2076,
@@ -3580,9 +4303,10 @@
       "refine_failed": false,
       "score": 176.386,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.91817412503544,
-        "lon": 114.58247260507554
+        "lat": 33.95030547185936,
+        "lon": 114.61797533310893
       },
       "x": 2076,
       "y": 239
@@ -3590,13 +4314,18 @@
     {
       "displacement": 0.943,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 2117.6666666666665,
+      "mean_y": 350.6666666666667,
       "name": "夏亭",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p10",
       "proposed": [
         2117,
@@ -3632,9 +4361,10 @@
       "refine_failed": false,
       "score": 175.568,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.871032384012615,
-        "lon": 114.61091469631263
+        "lat": 33.9006383702277,
+        "lon": 114.64333658862074
       },
       "x": 2117,
       "y": 350
@@ -3642,13 +4372,18 @@
     {
       "displacement": 0.333,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 2254,
+      "mean_y": 379.6666666666667,
       "name": "四個樓",
       "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p10",
       "proposed": [
         2254,
@@ -3684,9 +4419,10 @@
       "refine_failed": false,
       "score": 148.75,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.85795347830926,
-        "lon": 114.67589640581672
+        "lat": 33.893645227521546,
+        "lon": 114.71007682950159
       },
       "x": 2254,
       "y": 380
@@ -3694,13 +4430,18 @@
     {
       "displacement": 0.333,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 1945,
+      "mean_y": 498.3333333333333,
       "name": "大春李",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p10",
       "proposed": [
         1945,
@@ -3736,9 +4477,10 @@
       "refine_failed": false,
       "score": 153.54,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.80878497346954,
-        "lon": 114.54570136166171
+        "lat": 33.82193345519745,
+        "lon": 114.56954020106669
       },
       "x": 1945,
       "y": 498
@@ -3746,13 +4488,18 @@
     {
       "displacement": 0.471,
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "place",
+      "mean_x": 1964.3333333333333,
+      "mean_y": 711.6666666666666,
       "name": "光武庙",
-      "name_disputed": true,
+      "name_disputed": false,
+      "name_source": "unanimous",
+      "name_uncertain": false,
       "non_circle": false,
+      "normalized_unanimous": true,
       "page": "p11",
       "proposed": [
         1964,
@@ -3788,14 +4535,19 @@
       "refine_failed": false,
       "score": 172.549,
       "single_reader": false,
+      "unrefined_tie": false,
       "wgs84": {
-        "lat": 33.329730887894705,
-        "lon": 115.33808046188747
+        "lat": 33.351282025191395,
+        "lon": 115.34207246607238
       },
       "x": 1964,
       "y": 712
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -3843,12 +4595,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.97341726279251,
+        "lon": 114.3724053320318
+      },
       "x": 566.6666666666666,
       "y": 509.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -3896,12 +4654,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.85956468862806,
+        "lon": 114.50306602559984
+      },
       "x": 773.6666666666666,
       "y": 850.3333333333334
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -3949,12 +4713,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.79047865718981,
+        "lon": 114.18608989673683
+      },
       "x": 72.33333333333333,
       "y": 942.3333333333334
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -4002,12 +4772,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 197.0,
+      "wgs84": {
+        "lat": 34.80070702187258,
+        "lon": 114.24203186381503
+      },
+      "x": 197,
       "y": 931.6666666666666
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -4055,12 +4831,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 417.0,
+      "wgs84": {
+        "lat": 34.698974454345304,
+        "lon": 114.3693520154652
+      },
+      "x": 417,
       "y": 1229.3333333333333
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -4108,12 +4890,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.739334776794344,
+        "lon": 114.54534937152079
+      },
       "x": 802.6666666666666,
-      "y": 1175.0
+      "y": 1175
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -4133,12 +4921,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 104.0,
-      "y": 1240.0
+      "wgs84": {
+        "lat": 34.67887059178616,
+        "lon": 114.2265522503811
+      },
+      "x": 104,
+      "y": 1240
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -4186,12 +4980,18 @@
         }
       },
       "tip_unstable": true,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.62787550889733,
+        "lon": 114.4326520359156
+      },
       "x": 519.3333333333334,
       "y": 1426.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -4239,12 +5039,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.6529735291567,
+        "lon": 114.69106975155653
+      },
       "x": 1065.3333333333333,
       "y": 1434.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p05",
       "readings": {
@@ -4278,12 +5084,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.6798449077331,
+        "lon": 114.23170365958025
+      },
       "x": 115.5,
-      "y": 1239.0
+      "y": 1239
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4331,12 +5143,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.94104552284378,
+        "lon": 113.7403627495536
+      },
       "x": 656.3333333333334,
       "y": 425.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4384,12 +5202,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.92589395807726,
+        "lon": 113.95714579158235
+      },
       "x": 1104.6666666666667,
       "y": 527.6666666666666
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4437,12 +5261,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 664.0,
+      "wgs84": {
+        "lat": 34.85316619336061,
+        "lon": 113.76982311009108
+      },
+      "x": 664,
       "y": 661.6666666666666
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4490,12 +5320,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.805424709200494,
+        "lon": 113.86639780608077
+      },
       "x": 842.3333333333334,
       "y": 811.3333333333334
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4543,12 +5379,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.816248909066005,
+        "lon": 114.02653568534977
+      },
       "x": 1185.6666666666667,
       "y": 829.6666666666666
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4596,12 +5438,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1277.0,
+      "wgs84": {
+        "lat": 34.78533089146939,
+        "lon": 114.078397543868
+      },
+      "x": 1277,
       "y": 922.6666666666666
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4649,12 +5497,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.79002703195123,
+        "lon": 114.18976552115699
+      },
       "x": 1509.3333333333333,
-      "y": 942.0
+      "y": 942
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4702,12 +5556,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.800686047324845,
+        "lon": 114.24138110224979
+      },
       "x": 1620.3333333333333,
       "y": 929.3333333333334
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4755,12 +5615,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.685587322961375,
+        "lon": 113.88804060515302
+      },
       "x": 824.3333333333334,
       "y": 1117.3333333333333
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4808,12 +5674,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1307.0,
+      "wgs84": {
+        "lat": 34.62135001862422,
+        "lon": 114.13101912775473
+      },
+      "x": 1307,
       "y": 1344.3333333333333
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4861,12 +5733,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1547.0,
+      "wgs84": {
+        "lat": 34.68064149903574,
+        "lon": 114.23401980522387
+      },
+      "x": 1547,
       "y": 1227.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4914,12 +5792,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.58796263678185,
+        "lon": 114.00041809221503
+      },
       "x": 1017.3333333333334,
       "y": 1388.3333333333333
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -4967,12 +5851,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.97380183564791,
+        "lon": 114.36919200508281
+      },
       "x": 1972.3333333333333,
       "y": 516.3333333333334
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -5020,12 +5910,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 2170.0,
+      "wgs84": {
+        "lat": 34.85965564501289,
+        "lon": 114.50037186459906
+      },
+      "x": 2170,
       "y": 849.3333333333334
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -5073,12 +5969,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1835.0,
+      "wgs84": {
+        "lat": 34.69876873068161,
+        "lon": 114.37130467868636
+      },
+      "x": 1835,
       "y": 1220.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -5126,12 +6028,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.74075921293929,
+        "lon": 114.54348402033112
+      },
       "x": 2198.3333333333335,
       "y": 1162.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p06",
       "readings": {
@@ -5179,12 +6087,18 @@
         }
       },
       "tip_unstable": true,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1935.0,
+      "wgs84": {
+        "lat": 34.626094246005984,
+        "lon": 114.43635314837799
+      },
+      "x": 1935,
       "y": 1417.3333333333333
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5232,12 +6146,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 301.0,
+      "wgs84": {
+        "lat": 34.33920204977485,
+        "lon": 114.37950390990855
+      },
+      "x": 301,
       "y": 686.6666666666666
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5285,12 +6205,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 737.0,
+      "wgs84": {
+        "lat": 34.38393278718697,
+        "lon": 114.58707490282168
+      },
+      "x": 737,
       "y": 635.3333333333334
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5310,12 +6236,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 142.0,
-      "y": 1025.0
+      "wgs84": {
+        "lat": 34.17540797867346,
+        "lon": 114.32983689825089
+      },
+      "x": 142,
+      "y": 1025
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5335,12 +6267,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 141.0,
-      "y": 1066.0
+      "wgs84": {
+        "lat": 34.156144473748874,
+        "lon": 114.33228588318524
+      },
+      "x": 141,
+      "y": 1066
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5388,12 +6326,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.01772629892852,
+        "lon": 114.29652367889675
+      },
       "x": 26.333333333333332,
       "y": 1344.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5441,12 +6385,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.11426564665202,
+        "lon": 114.6555052889224
+      },
       "x": 787.6666666666666,
       "y": 1225.3333333333333
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5494,12 +6444,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 33.99063381256427,
+        "lon": 114.74028836788179
+      },
       "x": 926.6666666666666,
       "y": 1498.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5533,12 +6489,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.45054036605247,
+        "lon": 114.42653871213605
+      },
       "x": 440.5,
       "y": 453.5
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p07",
       "readings": {
@@ -5572,12 +6534,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 141.0,
-      "y": 1045.0
+      "wgs84": {
+        "lat": 34.165993658834594,
+        "lon": 114.33079546069494
+      },
+      "x": 141,
+      "y": 1045
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -5625,12 +6593,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.62760011166943,
+        "lon": 114.12604217661514
+      },
       "x": 1323.3333333333333,
-      "y": 51.0
+      "y": 51
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -5678,12 +6652,18 @@
         }
       },
       "tip_unstable": true,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.599021968775524,
+        "lon": 113.99660098072322
+      },
       "x": 1026.6666666666667,
       "y": 86.33333333333333
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -5731,12 +6711,18 @@
         }
       },
       "tip_unstable": true,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1975.0,
+      "wgs84": {
+        "lat": 34.63081063996879,
+        "lon": 114.43289527166311
+      },
+      "x": 1975,
       "y": 117.66666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -5784,12 +6770,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.42774239562018,
+        "lon": 114.12648658445164
+      },
       "x": 1226.6666666666667,
-      "y": 515.0
+      "y": 515
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -5837,12 +6829,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1735.0,
-      "y": 775.0
+      "wgs84": {
+        "lat": 34.33997135129973,
+        "lon": 114.37945547177641
+      },
+      "x": 1735,
+      "y": 775
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -5890,12 +6888,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 2185.0,
+      "wgs84": {
+        "lat": 34.383752300617985,
+        "lon": 114.58582812961502
+      },
+      "x": 2185,
       "y": 725.6666666666666
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -5943,12 +6947,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.165480180224975,
+        "lon": 114.32924983248535
+      },
       "x": 1566.3333333333333,
       "y": 1147.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -5996,12 +7006,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 34.01798494900002,
+        "lon": 114.29767997907699
+      },
       "x": 1454.3333333333333,
       "y": 1456.3333333333333
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -6049,12 +7065,18 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 2244.0,
+      "wgs84": {
+        "lat": 34.114266012674584,
+        "lon": 114.65627952786566
+      },
+      "x": 2244,
       "y": 1336.6666666666667
     },
     {
+      "error_reference": {
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
+      },
       "kind": "date",
       "page": "p08",
       "readings": {
@@ -6102,15 +7124,17 @@
         }
       },
       "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
+      "wgs84": {
+        "lat": 33.99778229425908,
+        "lon": 114.72916699921538
+      },
       "x": 2366.3333333333335,
       "y": 1602.3333333333333
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p09",
@@ -6160,16 +7184,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.943141294846505,
-        "lon": 114.69638929622147
+        "lat": 33.991704248962776,
+        "lon": 114.73966406889431
       },
-      "x": 802.0,
+      "x": 802,
       "y": 171.66666666666666
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p09",
@@ -6219,16 +7243,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.60502750230635,
-        "lon": 115.13565314535283
+        "lat": 33.65772728237721,
+        "lon": 115.1711911735898
       },
       "x": 1630.3333333333333,
       "y": 964.6666666666666
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p09",
@@ -6278,16 +7302,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.369065270553136,
-        "lon": 115.39798233736818
+        "lat": 33.40766587892223,
+        "lon": 115.4199870287923
       },
       "x": 2110.3333333333335,
       "y": 1518.6666666666667
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6337,16 +7361,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.9434692972238,
-        "lon": 114.6944581769055
+        "lat": 33.991854786996655,
+        "lon": 114.73754785986961
       },
-      "x": 2334.0,
+      "x": 2334,
       "y": 177.66666666666666
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6396,16 +7420,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.47953066812246,
-        "lon": 114.16521370246416
+        "lat": 33.384161375447555,
+        "lon": 114.14793520987168
       },
-      "x": 957.0,
+      "x": 957,
       "y": 1281.3333333333333
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6455,16 +7479,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.47389740372099,
-        "lon": 114.13972460222001
+        "lat": 33.37397080245969,
+        "lon": 114.12239204576098
       },
       "x": 898.3333333333334,
-      "y": 1295.0
+      "y": 1295
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6514,16 +7538,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.473769675394465,
-        "lon": 114.11354433746918
+        "lat": 33.37043490292046,
+        "lon": 114.097047112003
       },
       "x": 840.6666666666666,
       "y": 1295.6666666666667
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6545,16 +7569,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.34790639588232,
-        "lon": 114.19123935247936
+        "lat": 33.22452149824782,
+        "lon": 114.15311503246069
       },
-      "x": 954.0,
-      "y": 1592.0
+      "x": 954,
+      "y": 1592
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6604,16 +7628,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.35202023186622,
-        "lon": 114.16341905941097
+        "lat": 33.22601485678958,
+        "lon": 114.12681417188199
       },
       "x": 894.6666666666666,
       "y": 1582.6666666666667
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6663,16 +7687,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.35160734731447,
-        "lon": 114.1377525852655
+        "lat": 33.22212165683771,
+        "lon": 114.10194947707413
       },
-      "x": 838.0,
-      "y": 1584.0
+      "x": 838,
+      "y": 1584
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6708,16 +7732,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.35510408529794,
-        "lon": 114.19065053049101
+        "lat": 33.233454336597596,
+        "lon": 114.15371783855134
       },
-      "x": 956.0,
-      "y": 1575.0
+      "x": 956,
+      "y": 1575
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6753,16 +7777,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.507753031304226,
-        "lon": 114.24727789207229
+        "lat": 33.429158533883104,
+        "lon": 114.23218846384303
       },
       "x": 1150.5,
       "y": 1213.5
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p10",
@@ -6798,16 +7822,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.3685793203696,
-        "lon": 114.27373833079493
+        "lat": 33.261180263496186,
+        "lon": 114.23707875637909
       },
-      "x": 1145.0,
-      "y": 1542.0
+      "x": 1145,
+      "y": 1542
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p11",
@@ -6857,16 +7881,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.370249722971074,
-        "lon": 115.40155457781285
+        "lat": 33.40752493326341,
+        "lon": 115.4206340667795
       },
       "x": 2121.6666666666665,
-      "y": 622.0
+      "y": 622
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p11",
@@ -6916,16 +7940,16 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.04308749853652,
-        "lon": 115.49049994688527
+        "lat": 33.01592386320128,
+        "lon": 115.44601046895772
       },
       "x": 2169.6666666666665,
       "y": 1372.6666666666667
     },
     {
       "error_reference": {
-        "loo_max_m": 10334.36419875304,
-        "loo_median_m": 4448.361958071488
+        "loo_max_m": 8606.216886011847,
+        "loo_median_m": 2643.1348778976
       },
       "kind": "date",
       "page": "p11",
@@ -6961,539 +7985,13 @@
       },
       "tip_unstable": false,
       "wgs84": {
-        "lat": 33.6086408020887,
-        "lon": 115.13564784891723
+        "lat": 33.65651621465349,
+        "lon": 115.16951292497782
       },
-      "x": 1645.0,
-      "y": 67.0
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月十一日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の破線見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 1031,
-          "text_y": 414,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1031,
-          "y": 414
-        },
-        "b": {
-          "as_written": "六月十一日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例上段右。線種見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 1031,
-          "text_y": 416,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1031,
-          "y": 416
-        },
-        "t": {
-          "as_written": "六月十二日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付で、地図上の対象を直接指していない。",
-          "points_to": "NO_FIT",
-          "text_x": 1033,
-          "text_y": 416,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1033,
-          "y": 416
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1031.6666666666667,
-      "y": 415.3333333333333
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月十二日夕",
-          "confidence": "中",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の線見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 975,
-          "text_y": 425,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 975,
-          "y": 425
-        },
-        "b": {
-          "as_written": "六月十[三?]日夕",
-          "confidence": "低",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例上段中央。日の一の位が不鮮明。線種見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 975,
-          "text_y": 427,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 975,
-          "y": 427
-        },
-        "t": {
-          "as_written": "六月十三日夕",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付。",
-          "points_to": "NO_FIT",
-          "text_x": 979,
-          "text_y": 423,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 979,
-          "y": 423
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 976.3333333333334,
-      "y": 425.0
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月十四日夕",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の実線見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 919,
-          "text_y": 425,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 919,
-          "y": 425
-        },
-        "b": {
-          "as_written": "六月十四日夕",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例上段左。線種見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 920,
-          "text_y": 427,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 920,
-          "y": 427
-        },
-        "t": {
-          "as_written": "六月十四日夕",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付。",
-          "points_to": "NO_FIT",
-          "text_x": 921,
-          "text_y": 423,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 921,
-          "y": 423
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 920.0,
-      "y": 425.0
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月十五日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 1026,
-          "text_y": 699,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1026,
-          "y": 699
-        },
-        "b": {
-          "as_written": "六月十五日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中段右。記号見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 1026,
-          "text_y": 701,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1026,
-          "y": 701
-        },
-        "t": {
-          "as_written": "六月十五日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付。",
-          "points_to": "NO_FIT",
-          "text_x": 1026,
-          "text_y": 696,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1026,
-          "y": 696
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1026.0,
-      "y": 698.6666666666666
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月十七日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 966,
-          "text_y": 704,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 966,
-          "y": 704
-        },
-        "b": {
-          "as_written": "六月十七日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中段中央。記号見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 965,
-          "text_y": 705,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 965,
-          "y": 705
-        },
-        "t": {
-          "as_written": "六月十七日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付。",
-          "points_to": "NO_FIT",
-          "text_x": 968,
-          "text_y": 702,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 968,
-          "y": 702
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 966.3333333333334,
-      "y": 703.6666666666666
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月十八日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の模様見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 912,
-          "text_y": 705,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 912,
-          "y": 705
-        },
-        "b": {
-          "as_written": "六月十八日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中段左。記号見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 912,
-          "text_y": 705,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 912,
-          "y": 705
-        },
-        "t": {
-          "as_written": "六月十八日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付。",
-          "points_to": "NO_FIT",
-          "text_x": 912,
-          "text_y": 702,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 912,
-          "y": 702
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 912.0,
-      "y": 704.0
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月二十四日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の塗り見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 1018,
-          "text_y": 1005,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1018,
-          "y": 1005
-        },
-        "b": {
-          "as_written": "六月二十四日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例下段右。模様見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 1019,
-          "text_y": 1007,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1019,
-          "y": 1007
-        },
-        "t": {
-          "as_written": "六月二十四日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付。",
-          "points_to": "NO_FIT",
-          "text_x": 1018,
-          "text_y": 1006,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1018,
-          "y": 1006
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1018.3333333333334,
-      "y": 1006.0
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月二十五日－二十八日",
-          "confidence": "中",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の交差模様見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 960,
-          "text_y": 1065,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 960,
-          "y": 1065
-        },
-        "b": {
-          "as_written": "六月二十五日―二十八日",
-          "confidence": "中",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例下段中央。日付間に縦の連結線がある。模様見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 962,
-          "text_y": 1064,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 962,
-          "y": 1064
-        },
-        "t": {
-          "as_written": "六月二十五日－二十八日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付。",
-          "points_to": "NO_FIT",
-          "text_x": 961,
-          "text_y": 1063,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 961,
-          "y": 1063
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 961.0,
-      "y": 1064.0
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "a": {
-          "as_written": "六月二十五日",
-          "confidence": "中",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例の格子模様見本に付された日付。地図上の対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 904,
-          "text_y": 1005,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 904,
-          "y": 1005
-        },
-        "b": {
-          "as_written": "六月二十五日",
-          "confidence": "中",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例下段左。折り目と重なっている。模様見本の説明で、地図上の特定対象への注記ではない。",
-          "points_to": "NO_FIT",
-          "text_x": 906,
-          "text_y": 1008,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 906,
-          "y": 1008
-        },
-        "t": {
-          "as_written": "六月二十五日",
-          "confidence": "中",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "凡例中の日付。下部は折れ目に重なる。",
-          "points_to": "NO_FIT",
-          "text_x": 905,
-          "text_y": 1005,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 905,
-          "y": 1005
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 905.0,
-      "y": 1006.0
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "b": {
-          "as_written": "六月十五日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "「備考」本文中の日付。後続は「西岡大尉偵察」。地図上の特定対象を指していない。",
-          "points_to": "NO_FIT",
-          "text_x": 1219,
-          "text_y": 332,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1219,
-          "y": 332
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1219.0,
-      "y": 332.0
-    },
-    {
-      "kind": "date",
-      "page": "p12",
-      "readings": {
-        "b": {
-          "as_written": "六月二十四日",
-          "confidence": "高",
-          "has_arrow": false,
-          "nearest_place": "",
-          "note": "「備考」本文中の日付。後続は「地上並空中偵察」。地図上の特定対象を指していない。",
-          "points_to": "NO_FIT",
-          "text_x": 1211,
-          "text_y": 646,
-          "tip_x": null,
-          "tip_y": null,
-          "x": 1211,
-          "y": 646
-        }
-      },
-      "tip_unstable": false,
-      "unavailable": "page unconnected",
-      "wgs84": null,
-      "x": 1211.0,
-      "y": 646.0
+      "x": 1645,
+      "y": 67
     }
   ],
-  "recommended": "affine"
+  "recommended_stitch": "full",
+  "recommended_transform": "poly2"
 }

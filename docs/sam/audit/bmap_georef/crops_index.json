@@ -1,107 +1,27 @@
 [
   {
-    "name": "十里鋪",
-    "name_disputed": true,
-    "page": "p05",
-    "refine_failed": false,
-    "x": 607,
-    "y": 967
-  },
-  {
-    "name": "蘆花岡",
-    "name_disputed": true,
-    "page": "p05",
-    "refine_failed": false,
-    "x": 371,
-    "y": 1066
-  },
-  {
     "name": "朱仙鎮",
     "name_disputed": false,
     "page": "p05",
     "refine_failed": true,
-    "x": 221.0,
-    "y": 1413.0
-  },
-  {
-    "name": "蒲灘",
-    "name_disputed": true,
-    "page": "p06",
-    "refine_failed": false,
-    "x": 1074,
-    "y": 654
-  },
-  {
-    "name": "三劉砦",
-    "name_disputed": true,
-    "page": "p06",
-    "refine_failed": false,
-    "x": 1132,
-    "y": 648
-  },
-  {
-    "name": "耿氏屯",
-    "name_disputed": true,
-    "page": "p06",
-    "refine_failed": false,
-    "x": 1218,
-    "y": 705
-  },
-  {
-    "name": "關家橋",
-    "name_disputed": true,
-    "page": "p06",
-    "refine_failed": false,
-    "x": 1235,
-    "y": 992
-  },
-  {
-    "name": "蘆花崗",
-    "name_disputed": true,
-    "page": "p06",
-    "refine_failed": false,
-    "x": 1788,
-    "y": 1061
-  },
-  {
-    "name": "岳店",
-    "name_disputed": true,
-    "page": "p06",
-    "refine_failed": false,
-    "x": 1743,
-    "y": 1140
+    "x": 221,
+    "y": 1413
   },
   {
     "name": "朱仙鎮",
     "name_disputed": false,
     "page": "p06",
     "refine_failed": true,
-    "x": 1642.0,
+    "x": 1642,
     "y": 1397.3333333333333
-  },
-  {
-    "name": "小營",
-    "name_disputed": true,
-    "page": "p06",
-    "refine_failed": false,
-    "x": 1448,
-    "y": 1600
   },
   {
     "name": "小営",
     "name_disputed": false,
     "page": "p07",
     "refine_failed": true,
-    "x": 64.0,
-    "y": 218.0
-  },
-  {
-    "name": "双王府",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 156,
-    "y": 169
+    "x": 64,
+    "y": 218
   },
   {
     "name": "□庄",
@@ -109,31 +29,7 @@
     "page": "p07",
     "refine_failed": true,
     "x": 85.66666666666667,
-    "y": 260.0
-  },
-  {
-    "name": "大雙溝",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 452,
-    "y": 305
-  },
-  {
-    "name": "趙尚[営?]",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 103,
-    "y": 456
-  },
-  {
-    "name": "監岡",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 291,
-    "y": 471
+    "y": 260
   },
   {
     "name": "劉庄",
@@ -144,128 +40,16 @@
     "y": 466.3333333333333
   },
   {
-    "name": "通許",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 486,
-    "y": 447
-  },
-  {
-    "name": "杞縣",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 1156,
-    "y": 353
-  },
-  {
-    "name": "睢縣",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 1739,
-    "y": 597
-  },
-  {
-    "name": "底閣",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 501,
-    "y": 691
-  },
-  {
     "name": "白潭",
     "name_disputed": false,
     "page": "p07",
     "refine_failed": true,
-    "x": 329.0,
+    "x": 329,
     "y": 872.6666666666666
   },
   {
-    "name": "常営集",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 679,
-    "y": 1128
-  },
-  {
-    "name": "楊廟",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 1331,
-    "y": 1114
-  },
-  {
-    "name": "独塘集",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 957,
-    "y": 1194
-  },
-  {
-    "name": "龍王廟",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 639,
-    "y": 1316
-  },
-  {
-    "name": "[逍?][遙?]口",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 724,
-    "y": 1341
-  },
-  {
-    "name": "小吳家",
-    "name_disputed": true,
-    "page": "p07",
-    "refine_failed": false,
-    "x": 694,
-    "y": 1410
-  },
-  {
-    "name": "双王府",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 1582,
-    "y": 242
-  },
-  {
-    "name": "小營",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 1470,
-    "y": 313
-  },
-  {
-    "name": "大雙溝",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 1896,
-    "y": 383
-  },
-  {
-    "name": "趙崗砦",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 1526,
-    "y": 535
-  },
-  {
     "name": "監崗",
-    "name_disputed": true,
+    "name_disputed": false,
     "page": "p08",
     "refine_failed": true,
     "x": 1725.6666666666667,
@@ -280,52 +64,12 @@
     "y": 549.6666666666666
   },
   {
-    "name": "通許",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 1928,
-    "y": 530
-  },
-  {
-    "name": "底閣",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 1939,
-    "y": 781
-  },
-  {
     "name": "白潭",
     "name_disputed": false,
     "page": "p08",
     "refine_failed": true,
-    "x": 1760.0,
+    "x": 1760,
     "y": 969.6666666666666
-  },
-  {
-    "name": "常營集",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 2131,
-    "y": 1234
-  },
-  {
-    "name": "遜母口",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 2177,
-    "y": 1456
-  },
-  {
-    "name": "小吳家",
-    "name_disputed": true,
-    "page": "p08",
-    "refine_failed": false,
-    "x": 2144,
-    "y": 1529
   },
   {
     "name": "□陵岡",
@@ -344,14 +88,6 @@
     "y": 491
   },
   {
-    "name": "板[繒?]口鋪",
-    "name_disputed": true,
-    "page": "p09",
-    "refine_failed": false,
-    "x": 891,
-    "y": 834
-  },
-  {
     "name": "瓦[罐?]集",
     "name_disputed": true,
     "page": "p09",
@@ -360,78 +96,38 @@
     "y": 885
   },
   {
-    "name": "[錢?]□",
-    "name_disputed": true,
-    "page": "p09",
-    "refine_failed": false,
-    "x": 1542,
-    "y": 1237
-  },
-  {
-    "name": "新[蔡?]",
-    "name_disputed": true,
-    "page": "p09",
-    "refine_failed": false,
-    "x": 1598,
-    "y": 1597
-  },
-  {
-    "name": "大春李",
-    "name_disputed": true,
-    "page": "p10",
-    "refine_failed": false,
-    "x": 1945,
-    "y": 498
-  },
-  {
-    "name": "錢店",
-    "name_disputed": true,
-    "page": "p11",
-    "refine_failed": false,
-    "x": 1556,
-    "y": 332
-  },
-  {
-    "name": "光武庙",
-    "name_disputed": true,
-    "page": "p11",
-    "refine_failed": false,
-    "x": 1964,
-    "y": 712
-  },
-  {
-    "loo_top5_m": 10334.36419875304,
+    "loo_top5_m": 8606.216886011847,
     "name": "陳州",
     "page": "p09",
     "x": 1180,
     "y": 659
   },
   {
-    "loo_top5_m": 6740.777050431689,
+    "loo_top5_m": 7900.694826204914,
+    "name": "睢縣",
+    "page": "p07",
+    "x": 1739,
+    "y": 597
+  },
+  {
+    "loo_top5_m": 7115.967192750833,
+    "name": "圃田集",
+    "page": "p06",
+    "x": 760,
+    "y": 919
+  },
+  {
+    "loo_top5_m": 6397.776628023328,
+    "name": "呂潭",
+    "page": "p07",
+    "x": 330,
+    "y": 1200
+  },
+  {
+    "loo_top5_m": 6281.678951935612,
     "name": "周家口",
-    "page": "p09",
-    "x": 654,
-    "y": 943
-  },
-  {
-    "loo_top5_m": 4794.853029863912,
-    "name": "西華",
-    "page": "p09",
-    "x": 305,
-    "y": 539
-  },
-  {
-    "loo_top5_m": 4740.769745074753,
-    "name": "新安",
-    "page": "p11",
-    "x": 1608,
-    "y": 694
-  },
-  {
-    "loo_top5_m": 4155.954171068222,
-    "name": "槐店",
-    "page": "p09",
-    "x": 1352,
-    "y": 1446
+    "page": "p10",
+    "x": 2185,
+    "y": 950
   }
 ]

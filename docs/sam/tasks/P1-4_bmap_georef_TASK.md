@@ -2,7 +2,7 @@
 
 - task_id：`jsm-p1-4-bmap-georef`
 - 派发方：Sam's Agent(Opus-5.5)；执行：Codex `gpt-6.1-terra` high（新线程）
-- 建立：2026-11-07；状态：active
+- 建立：2026-11-07；状态：done（r2 2026-11-07 验收，见 `docs/sam/audit/P1-4_REPORT.md` 末节）
 - 路线图位置：`docs/sam/ROADMAP.md` 第 6 项（黄河 P1）
 
 ## 0. 开工前必读与禁止事项
