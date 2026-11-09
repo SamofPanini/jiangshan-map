@@ -1,0 +1,1797 @@
+{
+  "type": "FeatureCollection",
+  "meta": {
+    "schema_version": "0.3.0",
+    "dataset_id": "sam-huanghe1938-bmap-v3",
+    "dataset_revision": "r1-2026-11-10",
+    "region": "cn",
+    "stage": "draft",
+    "synthetic": false,
+    "description": "逐日前锋、范围边界及决口；范围线只有 14日夕 一个日期的试点。"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0612",
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            113.7627157630031,
+            34.85013082635737
+          ],
+          [
+            114.02706424979209,
+            34.81703743277018
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0612",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "12日",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 16200,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 5592.0 m + 文字中心 50 px 局部最大方向换算 2384.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0612-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p06 (664.0,661.7) [a:12日/b:12日/t:12日]；p06 (1185.7,829.7) [a:12日/b:12日/t:12日]"
+          },
+          {
+            "claim_id": "c-v2-front-0612-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0612-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-12",
+          "date_to": "1938-06-13",
+          "part_of_day": null,
+          "as_written": "12日"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p06 (664.0,661.7) [a:12日/b:12日/t:12日]：注记中心；仿射与二次相距 5592.0 m；p06 (1185.7,829.7) [a:12日/b:12日/t:12日]：注记中心；仿射与二次相距 3962.8 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0613",
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            114.1912519350786,
+            34.79227344119911
+          ],
+          [
+            114.07914935803569,
+            34.78590471817897
+          ],
+          [
+            114.12559342193255,
+            34.62174132896707
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0613",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "13日夕",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 14000,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 3309.6 m + 文字中心 50 px 局部最大方向换算 2453.6 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0613-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p05 (72.3,942.3) [a:13日夕/b:13日夕/t:13日夕]；p06 (1509.3,942.0) [a:13日夕/b:13日夕/t:13日夕]；p06 (1277.0,922.7) [a:13日夕/b:13日夕/t:13日夕]；p06 (1307.0,1344.3) [a:13日夕/b:13日夕/t:13日夕]；p08 (1323.3,51.0) [a:13日夕/b:13日夕/t:13日夕]"
+          },
+          {
+            "claim_id": "c-v2-front-0613-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0613-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-13",
+          "date_to": "1938-06-14",
+          "part_of_day": "夕",
+          "as_written": "13日夕"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p05 (72.3,942.3) [a:13日夕/b:13日夕/t:13日夕]；p06 (1509.3,942.0) [a:13日夕/b:13日夕/t:13日夕]：注记中心、注记中心；仿射与二次相距 2990.5 m；p06 (1277.0,922.7) [a:13日夕/b:13日夕/t:13日夕]：注记中心；仿射与二次相距 3309.6 m；p06 (1307.0,1344.3) [a:13日夕/b:13日夕/t:13日夕]；p08 (1323.3,51.0) [a:13日夕/b:13日夕/t:13日夕]：注记中心、注记中心；仿射与二次相距 1138.5 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0614",
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            114.24631511646749,
+            34.80355115795992
+          ],
+          [
+            114.2335379502776,
+            34.679688442356195
+          ],
+          [
+            113.86121896711472,
+            34.80300129725654
+          ],
+          [
+            113.87939800036371,
+            34.68045858160227
+          ],
+          [
+            114.37619543080419,
+            34.33529843512733
+          ],
+          [
+            114.11960822936248,
+            34.42249658092805
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0614",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "14日夕",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 15200,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 4414.2 m + 文字中心 50 px 局部最大方向换算 2558.2 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0614-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p05 (197.0,931.7) [a:14日夕/b:14日夕/t:14日夕]；p06 (1620.3,929.3) [a:14日夕/b:14日夕/t:14日夕]；p05 (115.5,1239.0) [a:14日夕/b:14日夕]；p06 (1547.0,1227.7) [a:14日夕/b:14日夕/t:14日夕]；p06 (842.3,811.3) [a:14日夕/b:14日夕/t:14日夕]；p06 (824.3,1117.3) [a:14日夕/b:14日夕/t:14日夕]；p07 (301.0,686.7) [a:14日夕/b:14日夕/t:14日夕]；p08 (1735.0,775.0) [a:14日夕/b:14日夕/t:14日夕]；p08 (1226.7,515.0) [a:14日夕/b:14日夕/t:14日夕]"
+          },
+          {
+            "claim_id": "c-v2-front-0614-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0614-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-14",
+          "date_to": "1938-06-15",
+          "part_of_day": "夕",
+          "as_written": "14日夕"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p05 (197.0,931.7) [a:14日夕/b:14日夕/t:14日夕]；p06 (1620.3,929.3) [a:14日夕/b:14日夕/t:14日夕]：注记中心、注记中心；仿射与二次相距 2948.2 m；p05 (115.5,1239.0) [a:14日夕/b:14日夕]；p06 (1547.0,1227.7) [a:14日夕/b:14日夕/t:14日夕]：注记中心、注记中心；仿射与二次相距 1434.5 m；p06 (842.3,811.3) [a:14日夕/b:14日夕/t:14日夕]：注记中心；仿射与二次相距 4414.2 m；p06 (824.3,1117.3) [a:14日夕/b:14日夕/t:14日夕]：注记中心；仿射与二次相距 2675.1 m；p07 (301.0,686.7) [a:14日夕/b:14日夕/t:14日夕]；p08 (1735.0,775.0) [a:14日夕/b:14日夕/t:14日夕]：注记中心、注记中心；仿射与二次相距 1521.9 m；p08 (1226.7,515.0) [a:14日夕/b:14日夕/t:14日夕]：注记中心；仿射与二次相距 552.0 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0617",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.65294070365442,
+          34.109220575698075
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0617",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "17日夕",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 13200,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 2297.6 m + 文字中心 50 px 局部最大方向换算 2642.3 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0617-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p07 (787.7,1225.3) [a:17日夕/b:17日夕/t:17日夕]；p08 (2244.0,1336.7) [a:17日夕/b:17日夕/t:17日夕]"
+          },
+          {
+            "claim_id": "c-v2-front-0617-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0617-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-17",
+          "date_to": "1938-06-18",
+          "part_of_day": "夕",
+          "as_written": "17日夕"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p07 (787.7,1225.3) [a:17日夕/b:17日夕/t:17日夕]；p08 (2244.0,1336.7) [a:17日夕/b:17日夕/t:17日夕]：注记中心、注记中心；仿射与二次相距 2297.6 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0618-1500",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.65151968887167,
+          33.95977169531564
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0618-1500",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "18日 15.00",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 10100,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1919.1 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0618-1500-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p07 (926.7,1498.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p08 (2366.3,1602.3) [a:18日/b:18日/t:18日]；p09 (802.0,171.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p10 (2334.0,177.7) [a:18日 15.0[0?]/b:18日 15.0[0?]/t:18日 15.0□]"
+          },
+          {
+            "claim_id": "c-v2-front-0618-1500-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0618-1500-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-18",
+          "date_to": "1938-06-19",
+          "part_of_day": "15.00",
+          "as_written": "18日 15.00"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p07 (926.7,1498.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p08 (2366.3,1602.3) [a:18日/b:18日/t:18日]；p09 (802.0,171.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p10 (2334.0,177.7) [a:18日 15.0[0?]/b:18日 15.0[0?]/t:18日 15.0□]：箭头端点（仅用至少两家且稳定的页；其余读数参与归类）；仿射与二次相距 1919.1 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0619",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.35189049759977,
+          34.72037624938338
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0619",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "19日",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 9700,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1523.5 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0619-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p05 (417.0,1229.3) [a:19日/b:19日/t:19日]；p06 (1835.0,1220.7) [a:19日/b:19日/t:19日]"
+          },
+          {
+            "claim_id": "c-v2-front-0619-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0619-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-19",
+          "date_to": "1938-06-20",
+          "part_of_day": null,
+          "as_written": "19日"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p05 (417.0,1229.3) [a:19日/b:19日/t:19日]；p06 (1835.0,1220.7) [a:19日/b:19日/t:19日]：箭头端点、箭头端点；仿射与二次相距 1523.5 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0625-0628",
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            114.46348883536994,
+            34.73865638782255
+          ],
+          [
+            114.37154126782038,
+            34.16898009578479
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0625-0628",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "25～28日",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 10100,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1867.8 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0625-0628-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p05 (802.7,1175.0) [a:25～28日/b:25～28日/t:25～28日]；p06 (2198.3,1162.7) [a:25～28日/b:25～28日/t:25～28日]；p07 (141.0,1045.0) [a:25日 28日/b:25日 28日]；p08 (1566.3,1147.7) [a:25日 ｜ 28日/b:25日 28日/t:25日～28日]；p07 (142.0,1025.0) [t:25日]；p07 (141.0,1066.0) [t:28日]"
+          },
+          {
+            "claim_id": "c-v2-front-0625-0628-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0625-0628-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-25",
+          "date_to": "1938-06-29",
+          "part_of_day": "06.28",
+          "as_written": "25～28日"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p05 (802.7,1175.0) [a:25～28日/b:25～28日/t:25～28日]；p06 (2198.3,1162.7) [a:25～28日/b:25～28日/t:25～28日]：箭头端点、箭头端点；仿射与二次相距 1361.8 m；p07 (141.0,1045.0) [a:25日 28日/b:25日 28日]；p08 (1566.3,1147.7) [a:25日 ｜ 28日/b:25日 28日/t:25日～28日]；p07 (142.0,1025.0) [t:25日]；p07 (141.0,1066.0) [t:28日]：箭头端点（仅用至少两家且稳定的页；其余读数参与归类）；仿射与二次相距 1867.8 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0625-1200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.04889651537658,
+          33.60563736836722
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0625-1200",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "25日 12.00",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 8500,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 316.4 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0625-1200-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p09 (1630.3,964.7) [a:25日 12.00/b:25日 12.00/t:25日 12.00]；p11 (1645.0,67.0) [a:□ 12.00/b:□日 12.00]"
+          },
+          {
+            "claim_id": "c-v2-front-0625-1200-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0625-1200-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-25",
+          "date_to": "1938-06-26",
+          "part_of_day": "12.00",
+          "as_written": "25日 12.00"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p09 (1630.3,964.7) [a:25日 12.00/b:25日 12.00/t:25日 12.00]；p11 (1645.0,67.0) [a:□ 12.00/b:□日 12.00]：箭头端点、箭头端点；仿射与二次相距 316.4 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0629",
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            114.6556903374538,
+            34.627061398490646
+          ],
+          [
+            114.53668519817161,
+            34.370550821725836
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0629",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "29日",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 10000,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1753.5 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0629-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p05 (1065.3,1434.7) [a:29日/b:29日/t:29日]；p07 (737.0,635.3) [a:29日/b:29日/t:29日]；p08 (2185.0,725.7) [a:29日/b:29日/t:29日]"
+          },
+          {
+            "claim_id": "c-v2-front-0629-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0629-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-29",
+          "date_to": "1938-06-30",
+          "part_of_day": null,
+          "as_written": "29日"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p05 (1065.3,1434.7) [a:29日/b:29日/t:29日]：箭头端点；仿射与二次相距 480.7 m；p07 (737.0,635.3) [a:29日/b:29日/t:29日]；p08 (2185.0,725.7) [a:29日/b:29日/t:29日]：箭头端点、箭头端点；仿射与二次相距 1753.5 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0702",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.31665490283955,
+          33.35129555059641
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0702",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "7月2日",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 11700,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 3437.4 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0702-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p09 (2110.3,1518.7) [a:7月2日/b:7月2日/t:7月2日]；p11 (2121.7,622.0) [a:7月2日/b:7月2日/t:7月2日]"
+          },
+          {
+            "claim_id": "c-v2-front-0702-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0702-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-07-02",
+          "date_to": "1938-07-03",
+          "part_of_day": null,
+          "as_written": "7月2日"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p09 (2110.3,1518.7) [a:7月2日/b:7月2日/t:7月2日]；p11 (2121.7,622.0) [a:7月2日/b:7月2日/t:7月2日]：箭头端点、箭头端点；仿射与二次相距 3437.4 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-front-0708",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.51114015933433,
+          33.06213361552286
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "front-0708",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "7月8日",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 16500,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 8251.1 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v2-front-0708-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p11 (2169.7,1372.7) [a:7月8日/b:7月8日/t:7月8日]"
+          },
+          {
+            "claim_id": "c-v2-front-0708-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v2-front-0708-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-07-08",
+          "date_to": "1938-07-09",
+          "part_of_day": null,
+          "as_written": "7月8日"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p11 (2169.7,1372.7) [a:7月8日/b:7月8日/t:7月8日]：箭头端点；仿射与二次相距 8251.1 m"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-extent-0614-reconstructed",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              113.87211545241873,
+              34.72767385635592
+            ],
+            [
+              113.87871871092537,
+              34.72155828535212
+            ],
+            [
+              113.88414682398607,
+              34.71495907424929
+            ],
+            [
+              113.88887500459873,
+              34.70794298205436
+            ],
+            [
+              113.8928277818743,
+              34.700587751702976
+            ],
+            [
+              113.89569339437315,
+              34.69286751753314
+            ],
+            [
+              113.89816672726589,
+              34.68501029190769
+            ],
+            [
+              113.90090819416434,
+              34.67723724170722
+            ],
+            [
+              113.90454819476626,
+              34.66977302656574
+            ],
+            [
+              113.90915951813162,
+              34.66267916478487
+            ],
+            [
+              113.91474684290111,
+              34.65609160613055
+            ],
+            [
+              113.92102917794767,
+              34.6499494186998
+            ],
+            [
+              113.92786351237903,
+              34.644221329586955
+            ],
+            [
+              113.93542556821161,
+              34.63930805108936
+            ],
+            [
+              113.94338234087263,
+              34.634769676288116
+            ],
+            [
+              113.95154210075144,
+              34.63048106714207
+            ],
+            [
+              113.95990509077268,
+              34.6265186166843
+            ],
+            [
+              113.96847597254002,
+              34.62282337728125
+            ],
+            [
+              113.97717162119275,
+              34.61934498889777
+            ],
+            [
+              113.98602857330248,
+              34.616114990248576
+            ],
+            [
+              113.99495392523016,
+              34.61308710373846
+            ],
+            [
+              114.00399972935342,
+              34.61034306202976
+            ],
+            [
+              114.01313784004262,
+              34.60787578284108
+            ],
+            [
+              114.02240076102086,
+              34.6055445478301
+            ],
+            [
+              114.03173780413817,
+              34.60345758780881
+            ],
+            [
+              114.04107600095871,
+              34.601537051939985
+            ],
+            [
+              114.05049256079369,
+              34.59978643552643
+            ],
+            [
+              114.05997024205318,
+              34.59821057061515
+            ],
+            [
+              114.06946402327232,
+              34.59680819970308
+            ],
+            [
+              114.07904515148472,
+              34.59554948661385
+            ],
+            [
+              114.08863208000504,
+              34.594303448913365
+            ],
+            [
+              114.09820518484959,
+              34.59307083005703
+            ],
+            [
+              114.10780403980674,
+              34.5918224191854
+            ],
+            [
+              114.11744288298142,
+              34.5904738798416
+            ],
+            [
+              114.12704330889167,
+              34.589041613739916
+            ]
+          ],
+          [
+            [
+              114.07158965915912,
+              34.469870629906495
+            ],
+            [
+              114.0770707660295,
+              34.46237752130285
+            ],
+            [
+              114.08503699790306,
+              34.45638875071535
+            ],
+            [
+              114.09415580808127,
+              34.452362695988924
+            ],
+            [
+              114.10373437834618,
+              34.44983956095878
+            ],
+            [
+              114.11283243418632,
+              34.44762068117034
+            ],
+            [
+              114.1213642447613,
+              34.44437683852343
+            ],
+            [
+              114.12883638033955,
+              34.43971121831348
+            ],
+            [
+              114.13512766244554,
+              34.43360503976154
+            ],
+            [
+              114.14039490865002,
+              34.42650966276001
+            ],
+            [
+              114.14531721217607,
+              34.41894615107474
+            ],
+            [
+              114.15013663347123,
+              34.4112455333005
+            ],
+            [
+              114.15498807738858,
+              34.40352317362533
+            ],
+            [
+              114.15982059739584,
+              34.39583102173003
+            ],
+            [
+              114.16463085828433,
+              34.38808524965345
+            ],
+            [
+              114.1694302022527,
+              34.38032599052367
+            ],
+            [
+              114.17413907596608,
+              34.37255131264162
+            ],
+            [
+              114.1788118304686,
+              34.364743477207185
+            ],
+            [
+              114.18345616972059,
+              34.356912864180664
+            ],
+            [
+              114.18809058671238,
+              34.349059512860094
+            ],
+            [
+              114.19280664040038,
+              34.34121438762985
+            ],
+            [
+              114.1976214572078,
+              34.333413486829386
+            ],
+            [
+              114.20268175429109,
+              34.32568520181017
+            ],
+            [
+              114.2078522680878,
+              34.31804788610287
+            ],
+            [
+              114.21321859546434,
+              34.31045598498658
+            ],
+            [
+              114.2189774675625,
+              34.30300487858091
+            ],
+            [
+              114.22507975471214,
+              34.29576024189561
+            ],
+            [
+              114.23190683225339,
+              34.28879228459954
+            ],
+            [
+              114.23934652435244,
+              34.28250226932579
+            ],
+            [
+              114.24718232526864,
+              34.27664612530169
+            ],
+            [
+              114.25527109877828,
+              34.271564959383866
+            ],
+            [
+              114.26353866266135,
+              34.266868386114986
+            ],
+            [
+              114.27206889060622,
+              34.26236124203473
+            ],
+            [
+              114.2806671825541,
+              34.25832450739583
+            ],
+            [
+              114.28936623958525,
+              34.254295514346936
+            ],
+            [
+              114.2979544981018,
+              34.250440352247075
+            ],
+            [
+              114.3065436961808,
+              34.24655186841375
+            ],
+            [
+              114.31528041458557,
+              34.24262035229056
+            ],
+            [
+              114.32393239411411,
+              34.23888320988174
+            ],
+            [
+              114.3325587261391,
+              34.23521975480531
+            ],
+            [
+              114.34112655520512,
+              34.231460948563296
+            ],
+            [
+              114.34966845410032,
+              34.22759452733074
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_extent",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "extent-0614-reconstructed",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "14日夕",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 12300,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 3298.5 m + 描线读数间最大距离 828.0 m；取整到百米；单家无互证不代表零误差。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v3-extent-0614-reconstructed-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p06 注记 (824,1117)；p08 注记 (1227,515)"
+          },
+          {
+            "claim_id": "c-v3-extent-0614-reconstructed-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图 14日夕 实线，模型描线，经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v3-extent-0614-reconstructed-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-14",
+          "date_to": "1938-06-15",
+          "part_of_day": "夕",
+          "as_written": "14日夕"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "g2 t1,t2,s1，裁去 33.6 px（含无共同覆盖端段）；g6 t1,s1，裁去 136.2 px（含无共同覆盖端段）"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-extent-0614-hypothesis",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              113.79411906532177,
+              34.8232584581957
+            ],
+            [
+              113.80109813511731,
+              34.81760659635665
+            ],
+            [
+              113.80802771472311,
+              34.81191035345046
+            ],
+            [
+              113.81530978186666,
+              34.80653125423236
+            ],
+            [
+              113.82287165887114,
+              34.801402852614196
+            ],
+            [
+              113.83042948231413,
+              34.79626728141491
+            ],
+            [
+              113.83823526187217,
+              34.79139343022697
+            ],
+            [
+              113.84610106872255,
+              34.786580310730145
+            ],
+            [
+              113.85395381888652,
+              34.78174947237916
+            ],
+            [
+              113.86228355273835,
+              34.7775305183623
+            ],
+            [
+              113.87096300650492,
+              34.773854521356455
+            ],
+            [
+              113.88003306582308,
+              34.770871788048346
+            ],
+            [
+              113.889541425175,
+              34.769272118998636
+            ],
+            [
+              113.8991669925581,
+              34.76862897685038
+            ],
+            [
+              113.90882243739978,
+              34.768891133656155
+            ],
+            [
+              113.91819968514913,
+              34.77072038388589
+            ],
+            [
+              113.92707689740294,
+              34.77367121810736
+            ],
+            [
+              113.93553942405272,
+              34.77735717564821
+            ],
+            [
+              113.94338804338597,
+              34.7818924025606
+            ],
+            [
+              113.95028946585239,
+              34.787345051153714
+            ],
+            [
+              113.95631675785347,
+              34.79340135685949
+            ],
+            [
+              113.96128358144387,
+              34.800140637189905
+            ],
+            [
+              113.96473840294128,
+              34.80747481980224
+            ],
+            [
+              113.96724600834351,
+              34.815069623529794
+            ],
+            [
+              113.96878094115645,
+              34.8228724697233
+            ],
+            [
+              113.96890886057258,
+              34.830787704704484
+            ],
+            [
+              113.96793752003435,
+              34.838656460332146
+            ],
+            [
+              113.96601187016832,
+              34.84644975618408
+            ],
+            [
+              113.96280130288805,
+              34.85398891415421
+            ],
+            [
+              113.95861519022523,
+              34.86120207264929
+            ],
+            [
+              113.95411240073412,
+              34.86830936711306
+            ],
+            [
+              113.94981374917059,
+              34.87548343267776
+            ],
+            [
+              113.94667591125791,
+              34.88300749289026
+            ],
+            [
+              113.94650574374315,
+              34.88341463673352
+            ]
+          ],
+          [
+            [
+              114.13884583206041,
+              34.83240606431073
+            ],
+            [
+              114.14791130841195,
+              34.82909670520367
+            ],
+            [
+              114.15703200199412,
+              34.825891165489935
+            ],
+            [
+              114.16622140751718,
+              34.822815523520596
+            ],
+            [
+              114.1752257946816,
+              34.81938421377452
+            ],
+            [
+              114.184142627904,
+              34.815793576395116
+            ],
+            [
+              114.19291136102528,
+              34.81195571288614
+            ],
+            [
+              114.20130999523313,
+              34.807612959840206
+            ],
+            [
+              114.20937550541828,
+              34.80286576878797
+            ],
+            [
+              114.21656382464973,
+              34.797240288710064
+            ],
+            [
+              114.22311882321925,
+              34.791148055212446
+            ],
+            [
+              114.22918556691741,
+              34.78471994295619
+            ],
+            [
+              114.23403127019449,
+              34.777638595577045
+            ],
+            [
+              114.23811894966775,
+              34.77027238791016
+            ],
+            [
+              114.24142111654503,
+              34.76266200231137
+            ],
+            [
+              114.24269489013572,
+              34.75465657335888
+            ],
+            [
+              114.24211426898474,
+              34.74665175880989
+            ],
+            [
+              114.23904841607369,
+              34.73913233641977
+            ],
+            [
+              114.23258037449091,
+              34.733533756793186
+            ],
+            [
+              114.22895905134398,
+              34.73152407604173
+            ]
+          ],
+          [
+            [
+              114.3359748944201,
+              34.361692997992684
+            ],
+            [
+              114.34217887703723,
+              34.354771789492936
+            ],
+            [
+              114.34837628018987,
+              34.34784148950699
+            ],
+            [
+              114.35456710387801,
+              34.3409020980348
+            ],
+            [
+              114.36082055827036,
+              34.33400713835605
+            ],
+            [
+              114.3670714116772,
+              34.32710615706324
+            ],
+            [
+              114.37331580402125,
+              34.320196168801914
+            ],
+            [
+              114.37964520945617,
+              34.31334998807035
+            ],
+            [
+              114.38597316905329,
+              34.30649877897474
+            ],
+            [
+              114.39219833459869,
+              34.2995618820681
+            ],
+            [
+              114.39769352569715,
+              34.292138871614334
+            ],
+            [
+              114.40228884561,
+              34.285055382788094
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_extent",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "extent-0614-hypothesis",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "14日夕",
+        "evidence_mode": "hypothesis",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 13600,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 5352.6 m + 描线读数间最大距离 0.0 m；取整到百米；单家无互证不代表零误差。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v3-extent-0614-hypothesis-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p06 注记 (842,811)；p06 注记 (1620,929)；p08 注记 (1735,775)"
+          },
+          {
+            "claim_id": "c-v3-extent-0614-hypothesis-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图 14日夕 实线，模型描线，经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v3-extent-0614-hypothesis-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-14",
+          "date_to": "1938-06-15",
+          "part_of_day": "夕",
+          "as_written": "14日夕"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "g1 s1，裁去 0.0 px（含无共同覆盖端段）；g3 s1，裁去 0.0 px（含无共同覆盖端段）；g5 s1，裁去 0.0 px（含无共同覆盖端段）"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-breach-0610",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.97756798578732,
+          34.89316889199899
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "breach",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "breach-0610",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "10日 決潰",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 13600,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次差 5388.2 m + 箭头端点估计 0 m；取整到百米。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v3-breach-0610-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p06 注记 (1104.7,527.7)"
+          },
+          {
+            "claim_id": "c-v3-breach-0610-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图决口注记箭头端点经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v3-breach-0610-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-10",
+          "date_to": "1938-06-11",
+          "part_of_day": null,
+          "as_written": "10日 決潰"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "图上注记的日期；与通行史述（6 月 9 日花园口掘堤）的关系未核，不在本数据里推断"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hh1938-v3-breach-0611",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.71021674432602,
+          34.89538432942205
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "breach",
+        "waterbody_id": "huanghe-1938-flood",
+        "segment_id": "breach-0611",
+        "interpretation_id": "bmap-georef-v3",
+        "valid": {
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known",
+          "from": 1938
+        },
+        "original_dating": "11日 決潰",
+        "evidence_mode": "reconstructed",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": 0,
+          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
+        },
+        "spatial_error": {
+          "meters": 14800,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次差 6616.3 m + 箭头端点估计 0 m；取整到百米。"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "c-v3-breach-0611-dating",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "dating",
+              "existence"
+            ],
+            "locator": "p06 注记 (656.3,425.7)"
+          },
+          {
+            "claim_id": "c-v3-breach-0611-geometry",
+            "source_id": "src-jacar-d5-1939",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "B 图决口注记箭头端点经 bmap-r2-dedup 二次配准"
+          },
+          {
+            "claim_id": "c-v3-breach-0611-gcp",
+            "source_id": "src-wikidata",
+            "supports": [
+              "geometry"
+            ],
+            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-11",
+          "date_to": "1938-06-12",
+          "part_of_day": null,
+          "as_written": "11日 決潰"
+        },
+        "derivation": {
+          "method": "georef_polynomial",
+          "gcp_set_id": "bmap-r2-dedup",
+          "note": "图上注记的日期；与通行史述（6 月 9 日花园口掘堤）的关系未核，不在本数据里推断"
+        }
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 - task_id：`jsm-p1-8-bmap-v3`
 - 派发方：Sam's Agent(Opus-5.5)；执行：Codex `gpt-6.1-terra` high（新线程）
-- 建立：2026-11-10；状态：active
+- 建立：2026-11-10；状态：done（2026-11-10 验收，见 `docs/sam/audit/P1-8_REPORT.md` 末节）
 - 路线图位置：`docs/sam/ROADMAP.md` 第 6 项（黄河 P1）
 - 依据：Sam 2026-11-09 采纳「决口另建事件点；范围边界存成线；先拿 14日夕 做一个日期的试点」。契约 v0.3 见 P1-7。
 
