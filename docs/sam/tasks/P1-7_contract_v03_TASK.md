@@ -2,7 +2,7 @@
 
 - task_id：`jsm-p1-7-contract03`
 - 派发方：Sam's Agent(Opus-5.5)；执行：Codex `gpt-6.1-terra` high（新线程）
-- 建立：2026-11-09；状态：active
+- 建立：2026-11-09；状态：active（r1 已交付；r2 返工见 §8）
 - 路线图位置：`docs/sam/ROADMAP.md` 第 6 项（黄河 P1）
 - 依据：Sam 2026-11-09 采纳「决口另建事件点；6/15、6/24 主流侦察作新类型随 v0.3 定；逐日范围边界存成线、注明不闭合」。
 
@@ -97,3 +97,24 @@ B 图（1938 年 6–7 月）上有三种东西现行 v0.2 放不下或放得不
 4. 你认为 §2 设计有缺陷的地方，给具体反例，不要擅自换方案。
 
 **完工标记**：最后一行写 `P1-7 DONE` 或 `P1-7 BLOCKED`。
+
+## 8. r2 返工（2026-11-09·派发方浏览器终验）
+
+契约、测试、变异自检都通过；问题只在显示。主会话在浏览器里用 `demo_v03.geojson` 实测（1280×860，镜头 `{x:615,y:360,w:72,h:50}`，研究组 `getScreenCTM().a ≈ 13`）：
+
+| 元素 | 计算样式 | 屏幕上 |
+|---|---|---|
+| `flood_extent` 线 | `stroke-width: 1.2px`，`vector-effect: none` | 约 16 px 宽的粗条 |
+| `flood_mainstream` 线 | `1.8px`，虚线 `5px 3px` | 约 23 px 宽，虚线看不出 |
+| `breach` × | `stroke-width: .8` | 约 14 px 的 ×，笔画约 10 px，糊成一团 |
+
+原因：线宽是地图单位，镜头放大就跟着变粗。§3.3 写的「约 1.2px，随缩放」有歧义，这是派发方的问题；本意是「屏幕上约 1.2px，不随镜头变粗」。
+
+| # | 改动 |
+|---|---|
+| R2-1 | 研究图层所有线和面的描边（含 P0a-3 原有的 `.sam-research-line`／`.sam-research-polygon`、本单的 `flood_extent`／`flood_mainstream`、`breach` 的 ×）改为**屏幕像素宽**：用 `vector-effect: non-scaling-stroke`。目标屏幕宽：原有研究线 2px，`flood_extent` 1.2px，`flood_mainstream` 1.6px，虚线 `5 3`（屏幕像素），`breach` 1.2px。 |
+| R2-2 | `breach` 的 × 半边长在屏幕上约 4px（沿用现有 `researchMarkerScale` 机制或等效做法），不得随镜头放大到 10px 以上。 |
+| R2-3 | 测试：DOM 桩里断言这些元素的样式含 `non-scaling-stroke`，以及 × 的路径尺寸按缩放因子变化。变异自检改做 R2-1：去掉 `non-scaling-stroke`，确认测试失败。 |
+| R2-4 | 报告里写明：两种镜头（全国、上面那个省级镜头）下，各元素预期的屏幕宽度。浏览器终验仍由主会话做。 |
+
+白名单不变。报告末尾追加「## r2」节。**完工标记**：最后一行写 `P1-7 r2 DONE` 或 `P1-7 r2 BLOCKED`。
