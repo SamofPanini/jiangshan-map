@@ -54,10 +54,12 @@ function makeGlueHarness({ dataset = demo, failInsert = false, deferredFetch = f
   const errors = [];
   const document = { head: node('head'), body: node('body'), createElement: (name) => node(name), createElementNS: (_namespace, name) => node(name) };
   const svg = node('svg');
+  svg.screenScale = 1;
   svg.querySelector = (selector) => svg.children.find((child) => selector === '#grp-sam-research' && child.id === 'grp-sam-research') || null;
   const riverParent = node('river-parent');
   riverParent.insertBefore = (child) => {
     if (failInsert) throw new Error('insert failed after legacy draw');
+    child.getScreenCTM = () => ({ a: svg.screenScale, b: 0, c: 0, d: svg.screenScale });
     child.parentNode = riverParent; svg.appendChild(child); return child;
   };
   const rivers = node('rivers');
@@ -139,11 +141,26 @@ async function main() {
   assert.match(v03Harness.document.body.children[0].children[0].textContent, /flood_front 1 个；flood_extent 2 个；flood_mainstream 1 个；breach 1 个/);
   const all03 = makeGlueHarness({ dataset: v03 }); await flush();
   const allGroup = all03.svg.querySelector('#grp-sam-research');
-  assert.match(allGroup.children.find((child) => child.attributes['data-feature-id'] === 'demo-v03-2').attributes.class, /sam-type-flood_mainstream/);
+  assert.match(allGroup.children.find((child) => child.attributes['data-feature-id'] === 'demo-v03-2').attributes.class, /sam-research-line.*sam-type-flood_mainstream/);
+  assert.match(allGroup.children.find((child) => child.attributes['data-feature-id'] === 'demo-v03-3').attributes.class, /sam-research-line.*sam-type-flood_extent/);
   assert.equal(allGroup.children.filter((child) => child.name === 'text').length, 5);
   const css = all03.document.head.children.map((child) => child.textContent).join(' ');
   assert.match(css, /sam-type-flood_extent\{[^}]*stroke-width:1\.2;stroke-dasharray:none/);
   assert.match(css, /sam-type-flood_mainstream\{[^}]*stroke-dasharray:5 3/);
+  const baseRule = css.match(/\.sam-research-line,\.sam-research-polygon\{([^}]*)\}/);
+  const breachRule = css.match(/\.sam-research-breach\{([^}]*)\}/);
+  assert.ok(baseRule && /stroke-width:2;/.test(baseRule[1]) && /vector-effect:non-scaling-stroke/.test(baseRule[1]), 'line and polygon must have 2px non-scaling stroke');
+  assert.ok(breachRule && /stroke-width:1\.2;/.test(breachRule[1]) && /vector-effect:non-scaling-stroke/.test(breachRule[1]), 'breach must have 1.2px non-scaling stroke');
+  assert.match(css, /sam-type-flood_mainstream\{[^}]*stroke-width:1\.6;stroke-dasharray:5 3/);
+  const breach = allGroup.children.find((child) => child.attributes['data-feature-id'] === 'demo-v03-1');
+  assert.equal(breach.attributes.d, 'M-4 -4L4 4M-4 4L4 -4', 'unit screen CTM must give 4px half-size');
+  all03.svg.screenScale = 13; all03.app.camera.w = 72; all03.app._rescaleSvgTypography();
+  const half = 4 / 13;
+  assert.equal(breach.attributes.d, `M${-half} ${-half}L${half} ${half}M${-half} ${half}L${half} ${-half}`, 'province zoom must retain 4px half-size');
+  assert.ok(half * all03.svg.screenScale < 10);
+  all03.svg.screenScale = 0; all03.app._rescaleSvgTypography();
+  assert.equal(breach.attributes.d, '', 'unavailable scale must not produce an oversized mark');
+  process.stdout.write('PASS P1-7 r2 non-scaling strokes + breach screen size at CTM 1 and 13 + invalid CTM\n');
   process.stdout.write('PASS P1-7 date filters + labels + aliases + rendered marks, styles, counts\n');
 
   const timed = demo.features[0];

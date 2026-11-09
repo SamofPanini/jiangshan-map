@@ -209,3 +209,86 @@ EXIT 0
 - §2 的表达局限：若原资料只说事件发生在 6/25–6/28 某一天，`observed` 写 `[1938-06-25, 1938-06-29)` 同样可以表示其间持续；契约不能区分两者。按 §3 的 `date_from` 累积显示，在 6/25 即显示可能使读者误以为当日已确定发生。按任务单照原设计实现，未自行更改。
 
 P1-7 DONE
+
+
+## r2
+
+### 交付物清单
+
+- `js/sam/research_layer.js`：研究线、面和决口 × 描边采用 `non-scaling-stroke`；普通线/面 2px、范围线 1.2px、主流线 1.6px（虚线 5 3）、决口 1.2px。移除假说线单独的 1.2px 线宽覆盖，使普通研究线依规格为 2px，虚线及透明度保留。
+- 决口 × 的半边长通过研究组 `getScreenCTM()` 计算为屏幕约 4px；相机变化时重算。矩阵不可用、非有限或退化时，路径暂时置空，避免异常尺寸；下次重算时恢复。
+- `scripts/sam/research_layer_core.test.js`：DOM 桩检查样式、图形类别及变换矩阵倍率 1 和 13 下的路径，另测退化矩阵。
+
+### 验证结果（逐项）
+
+R2-1、R2-2、R2-3：
+
+```text
+$ node scripts/sam/research_layer_core.test.js
+PASS P1-7 r2 non-scaling strokes + breach screen size at CTM 1 and 13 + invalid CTM
+PASS P1-7 date filters + labels + aliases + rendered marks, styles, counts
+PASS research-layer regressions: R2-01/R2-02/R2-03/R2-04/R2-05/R2-06/R2-07/R2-09 + intervals + real HYDRO_DATA
+EXIT 0
+
+$ node scripts/sam/validate_research.test.js
+PASS P1-7 version enums + v0.2 extent Point + v0.3 geometry and observed negative/positive cases
+PASS valid + 25 error codes + v0.1 compatibility + v0.2 observed/derivation/point validation + CLI fail-closed + determinism + direct API + browser export + documentation parity
+EXIT 0
+```
+
+R2-3 变异自检：临时将 `js/sam/research_layer.js` 中注入 CSS 的所有 `vector-effect:non-scaling-stroke;` 删除，运行测试；在 `finally` 中逐字节恢复原文件后重跑，恢复后的 PASS 见上。
+
+```text
+$ 去掉注入 CSS 所有 vector-effect:non-scaling-stroke 声明；node scripts/sam/research_layer_core.test.js
+exit 1
+AssertionError [ERR_ASSERTION]: line and polygon must have 2px non-scaling stroke
+    at main (/Users/sam/Documents/Explore/project/jiangshan-map/scripts/sam/research_layer_core.test.js:152:10) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+```
+
+上游回归：
+
+```text
+$ node scripts/validate_atlas.js
+  [perf #196] modern provinces: fillL 23997 -> 9511 (-60.4%), boundaryL=6194 (M=253, intBytes=42366, outBytes=34810, tiles=10)
+✓ Jiangshan Atlas validation (full) passed in 43241.1 ms:
+  - 18 dynasties, 189 snapshots (187 phase-linked), 2430 timeline years swept
+  - 21829 historical polygons (3,683,211 vertices) verified lossless & collision-free
+  - 35 modern provinces (314 rings)
+  - 1760 ancient settlements & 485 historical milestones
+  - 7 journeys (74 bilingual stops), 351 era spans, 694 landmark events & 186 gazetteer landmarks verified across 40 E2E CUJs
+  - 110 curated regional/rival regime profiles verified
+EXIT 0
+```
+
+R2-4：两种镜头下的预期屏幕值如下，均为 CSS 像素，**不是浏览器实测**：
+
+| 元素 | 全国镜头 | 省级镜头（任务单 `w=72`，研究组 CTM 约 13） |
+|---|---:|---:|
+| 原有研究线及面描边 | 2px | 2px |
+| flood_extent 线 | 1.2px，实线 | 1.2px，实线 |
+| flood_mainstream 线 | 1.6px，虚线 5px / 3px | 1.6px，虚线 5px / 3px |
+| breach × 笔画 | 1.2px | 1.2px |
+| breach × 半边长 | 约 4px | 约 4px |
+
+DOM 桩以倍率 1 和 13 实测的路径半边分别为 4 和 4/13 地图单位，乘各自倍率均为 4px。待主会话浏览器终验：沿用 r1 的 demo URL，分别检查全国及任务单指定的省级镜头，实测上述宽度、虚线和 ×；DOM 桩不验证浏览器真实渲染。
+
+### 规格偏差
+
+无。任务单数字与本次 DOM 桩数值无出入；任务单中的原浏览器测量是主会话提供的数据，本次未自行复测。浏览器终验仍待主会话。
+
+P1-7 r2 DONE
+
+## 派发方验收与处置（2026-11-10）
+
+- **结论：r2 验收通过。** 契约 0.3.0 生效：读取方接受 0.1／0.2／0.3，写入方写 0.3.0；旧版四份数据校验输出前后逐字相同。
+- 浏览器终验（主会话，1280×860，`demo_v03.geojson`，省级镜头 CTM≈13）：范围线 1.2px、主流线 1.6px 虚线 `5px 3px`、决口 × 约 8×8 px，均为 `non-scaling-stroke`；r1 时同一镜头下是 16–23 px 的粗条。`research_date=1938-06-14` 只剩 6/13 决口、6/14 范围线与前锋点，6/15 主流与 6/17 范围线隐藏，符合 §3.1。
+- r1 的粗线是派发方规格措辞（「约 1.2px，随缩放」）有歧义造成的。
+- 留作观察、不返工：日期标签字号沿用 P1-1，在省级镜头下偏大，密集处会重叠（v0.2 起就不做避让）；范围线和主流线不再用虚线表示 `evidence_mode`，靠类型区分。执行者指出 `observed` 区间分不清「其间某一天」和「持续」，是 v0.4 的候选议题。
+

@@ -121,7 +121,14 @@
     const viewportWidth = typeof window.innerWidth === 'number' ? window.innerWidth : 1280;
     const scale = Core.researchMarkerScale(controller.camera && controller.camera.w, viewportWidth);
     group.querySelectorAll('.sam-research-point').forEach((point) => point.setAttribute('r', (2.8 * scale).toFixed(3)));
-    group.querySelectorAll('.sam-research-breach').forEach((mark) => { const size = 2 * scale; mark.setAttribute('d', `M${-size} ${-size}L${size} ${size}M${-size} ${size}L${size} ${-size}`); });
+    const matrix = typeof group.getScreenCTM === 'function' ? group.getScreenCTM() : null;
+    const screenX = matrix && Math.hypot(matrix.a, matrix.b);
+    const screenY = matrix && Math.hypot(matrix.c, matrix.d);
+    group.querySelectorAll('.sam-research-breach').forEach((mark) => {
+      if (!(screenX > 0 && screenY > 0 && Number.isFinite(screenX) && Number.isFinite(screenY))) { mark.setAttribute('d', ''); return; }
+      const x = 4 / screenX; const y = 4 / screenY;
+      mark.setAttribute('d', `M${-x} ${-y}L${x} ${y}M${-x} ${y}L${x} ${-y}`);
+    });
     group.querySelectorAll('.sam-research-front-label').forEach((label) => { label.style.fontSize = `${(6.2 * scale).toFixed(3)}px`; });
   };
   const wrappedRescaleSvgTypography = function wrappedRescaleSvgTypography(...args) {
@@ -235,7 +242,7 @@
   Controller.prototype._buildTerrainRivers = wrappedBuildTerrainRivers;
 
   const style = document.createElement('style');
-  style.textContent = '.sam-research-line,.sam-research-polygon{fill:none;stroke:#9d1f31;stroke-width:2.2;pointer-events:stroke}.sam-research-polygon{fill:#9d1f3133;pointer-events:all}.sam-research-point{fill:var(--sam-front-fill,#d98f9a);stroke:#9d1f31;stroke-width:.65;vector-effect:non-scaling-stroke;pointer-events:all}.sam-research-front-label{font-family:var(--serif-stack);font-size:6.2px;font-weight:600;fill:#9d1f31;pointer-events:none;paint-order:stroke fill;stroke:#fff7e6;stroke-width:1.3px;stroke-linejoin:round}.sam-research-breach{fill:none;stroke:var(--sam-front-fill,#9d1f31);stroke-width:.8;pointer-events:stroke}.sam-evidence-reconstructed{stroke-dasharray:12 6}.sam-evidence-schematic{stroke-dasharray:2 5}.sam-evidence-hypothesis{stroke-dasharray:1 5;stroke-width:1.2;opacity:.55}.sam-research-line.sam-type-flood_extent{stroke:var(--sam-observed-color,#9d1f31);stroke-width:1.2;stroke-dasharray:none;opacity:1}.sam-research-line.sam-type-flood_mainstream{stroke:var(--sam-observed-color,#9d1f31);stroke-width:1.8;stroke-dasharray:5 3;opacity:1;filter:brightness(.75)}';
+  style.textContent = '.sam-research-line,.sam-research-polygon{fill:none;stroke:#9d1f31;stroke-width:2;vector-effect:non-scaling-stroke;pointer-events:stroke}.sam-research-polygon{fill:#9d1f3133;pointer-events:all}.sam-research-point{fill:var(--sam-front-fill,#d98f9a);stroke:#9d1f31;stroke-width:.65;vector-effect:non-scaling-stroke;pointer-events:all}.sam-research-front-label{font-family:var(--serif-stack);font-size:6.2px;font-weight:600;fill:#9d1f31;pointer-events:none;paint-order:stroke fill;stroke:#fff7e6;stroke-width:1.3px;stroke-linejoin:round}.sam-research-breach{fill:none;stroke:var(--sam-front-fill,#9d1f31);stroke-width:1.2;vector-effect:non-scaling-stroke;pointer-events:stroke}.sam-evidence-reconstructed{stroke-dasharray:12 6}.sam-evidence-schematic{stroke-dasharray:2 5}.sam-evidence-hypothesis{stroke-dasharray:1 5;opacity:.55}.sam-research-line.sam-type-flood_extent{stroke:var(--sam-observed-color,#9d1f31);stroke-width:1.2;stroke-dasharray:none;opacity:1}.sam-research-line.sam-type-flood_mainstream{stroke:var(--sam-observed-color,#9d1f31);stroke-width:1.6;stroke-dasharray:5 3;opacity:1;filter:brightness(.75)}';
   document.head.appendChild(style);
 
   let urls;
