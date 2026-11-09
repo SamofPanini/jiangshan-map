@@ -168,6 +168,39 @@ nullFront.features[0].geometry = null;
 nullFront.features[0].properties.geometry_absent_reason = 'not_located';
 assert.ok(!resultCodes(nullFront).has('E_GEOM_FEATURE'), 'v0.2 flood_front null geometry remains allowed with an absent reason');
 
+// P1-7: isolate each type/version so unrelated errors cannot mask failures.
+for (const version of ['0.1.0', '0.2.0']) for (const type of ['breach', 'flood_mainstream']) {
+  const item = version === '0.2.0' ? v02Dataset() : JSON.parse(fs.readFileSync(data, 'utf8'));
+  item.features[0].properties.feature_type = type;
+  assert.deepEqual(resultCodes(item), new Set(['E_ENUM']), `${version} ${type} must be rejected`);
+}
+const v02ExtentPoint = v02Dataset();
+v02ExtentPoint.features[0].properties.feature_type = 'flood_extent';
+v02ExtentPoint.features[0].geometry = { type: 'Point', coordinates: [114, 35] };
+assert.deepEqual(resultCodes(v02ExtentPoint), new Set(), 'v0.2 extent Point remains valid');
+function v03Feature(type, geometry, observed = { date_from: '1938-06-14', date_to: '1938-06-15', part_of_day: null, as_written: '14日' }) {
+  const item = structuredClone(observedDataset);
+  item.meta.schema_version = '0.3.0';
+  item.features[0].properties.feature_type = type;
+  item.features[0].geometry = geometry;
+  item.features[0].properties.observed = observed;
+  return item;
+}
+assert.deepEqual(resultCodes(v03Feature('__proto__', { type: 'Point', coordinates: [114, 35] })), new Set(['E_ENUM']), 'unknown inherited property name must fail closed');
+const point03 = { type: 'Point', coordinates: [114, 35] };
+const line03 = { type: 'LineString', coordinates: [[114, 35], [115, 35]] };
+const multi03 = { type: 'MultiLineString', coordinates: [[[114, 35], [115, 35]]] };
+for (const [type, geometry] of [['breach', line03], ['flood_mainstream', point03], ['flood_extent', point03]]) {
+  assert.deepEqual(resultCodes(v03Feature(type, geometry)), new Set(['E_GEOM_FEATURE']), `${type} invalid geometry`);
+}
+for (const [type, geometry] of [['breach', point03], ['flood_mainstream', line03]]) {
+  assert.deepEqual(resultCodes(v03Feature(type, geometry, null)), new Set(['E_OBSERVED']), `${type} needs observed`);
+  assert.deepEqual(resultCodes(v03Feature(type, geometry)), new Set(), `${type} valid geometry`);
+}
+assert.deepEqual(resultCodes(v03Feature('flood_extent', multi03)), new Set());
+assert.deepEqual(resultCodes(v03Feature('flood_extent', multi03, null)), new Set());
+process.stdout.write('PASS P1-7 version enums + v0.2 extent Point + v0.3 geometry and observed negative/positive cases\n');
+
 const releaseWithNullClaim = JSON.parse(fs.readFileSync(data, 'utf8'));
 const releaseSources = JSON.parse(fs.readFileSync(sources, 'utf8'));
 releaseWithNullClaim.meta.stage = 'release';

@@ -1,4 +1,4 @@
-# 研究数据契约 v0.2.0
+# 研究数据契约 v0.3.0
 
 以 `scripts/sam/research_contract.js` 为准，两者冲突时改本文件。
 
@@ -6,9 +6,9 @@
 
 ## 顶层与区域
 
-数据集是 GeoJSON `FeatureCollection`，严格键为 `type`、`meta`、`features`。`meta` 的严格键为 `schema_version`（读取方接受 `0.1.0` 与 `0.2.0`；写入方只写 `0.2.0`）、`dataset_id`、`dataset_revision`、`region`、`stage`（`draft` 或 `release`）、`synthetic`、`description`。区域表的唯一机读位置是 `REGIONS`；当前仅 `cn`，bbox 为 `[70, 15, 140, 56]`。不得在别处把 `cn` 当作有效区域表。
+数据集是 GeoJSON `FeatureCollection`，严格键为 `type`、`meta`、`features`。`meta` 的严格键为 `schema_version`（读取方接受 `0.1.0`、`0.2.0` 与 `0.3.0`；写入方只写 `0.3.0`）、`dataset_id`、`dataset_revision`、`region`、`stage`（`draft` 或 `release`）、`synthetic`、`description`。区域表的唯一机读位置是 `REGIONS`；当前仅 `cn`，bbox 为 `[70, 15, 140, 56]`。不得在别处把 `cn` 当作有效区域表。
 
-`0.1.0` 完全按 v0.1 规则校验：本版新增键仍为 `E_UNKNOWN_KEY`，`Point`／`MultiPoint` 仍为 `E_GEOM_TYPE`，`flood_front` 仍为 `E_ENUM`。`0.2.0` 才启用下列新增对象。
+`0.1.0` 完全按 v0.1 规则校验：本版新增键仍为 `E_UNKNOWN_KEY`，`Point`／`MultiPoint` 仍为 `E_GEOM_TYPE`，`flood_front` 仍为 `E_ENUM`。`0.2.0` 启用 v0.2 对象；`breach` 和 `flood_mainstream` 在 `0.1.0`、`0.2.0` 中报 `E_ENUM`。`0.2.0` 的 `flood_extent` 几何规则不变。
 
 ## 机器可读枚举
 
@@ -16,11 +16,11 @@
 
 | 导出 | 值 |
 |---|---|
-| `SUPPORTED_SCHEMA_VERSIONS` | `0.1.0`, `0.2.0` |
+| `SUPPORTED_SCHEMA_VERSIONS` | `0.1.0`, `0.2.0`, `0.3.0` |
 | `STAGES` | `draft`, `release` |
 | `INTERVALS` | `half_open` |
 | `ENDPOINT_STATUSES` | `known`, `open`, `unknown` |
-| `FEATURE_TYPES` | `river_course`, `river_branch`, `flood_extent`, `flood_front`, `lake`, `wetland`, `canal`, `coastline` |
+| `FEATURE_TYPES` | `river_course`, `river_branch`, `flood_extent`, `flood_front`, `lake`, `wetland`, `canal`, `coastline`, `breach`, `flood_mainstream` |
 | `EVIDENCE_MODES` | `attested`, `reconstructed`, `schematic`, `hypothesis` |
 | `REVIEW_STATES` | `proposed`, `under_review`, `accepted`, `rejected`, `superseded` |
 | `LICENSE_STATUSES` | `unknown`, `restricted`, `cleared` |
@@ -35,19 +35,31 @@
 | 位置 | 必填字段 | 规则 |
 |---|---|---|
 | Feature | `type`, `id`, `geometry`, `properties` | `type` 为 `Feature`；`id` 全文件唯一。geometry 可为 null。 |
-| properties | `region`, `feature_type`, `waterbody_id`, `segment_id`, `interpretation_id` | region 必须与 meta 一致；feature_type 为 `river_course`、`river_branch`、`flood_extent`、`flood_front`、`lake`、`wetland`、`canal`、`coastline` 之一。`flood_front` 是某一观测时刻泛滥水边已到达的位置（Point、MultiPoint、LineString、MultiLineString 或 null）；它不是泛区范围（那是 `flood_extent`），两者不得互相推导。`flood_front` 若有其他非 null geometry 类型，报 `E_GEOM_FEATURE`。 |
+| properties | `region`, `feature_type`, `waterbody_id`, `segment_id`, `interpretation_id` | region 必须与 meta 一致；feature_type 为 `river_course`、`river_branch`、`flood_extent`、`flood_front`、`lake`、`wetland`、`canal`、`coastline`、`breach`、`flood_mainstream` 之一（后两类仅 v0.3）。`flood_front` 是某一观测时刻泛滥水边已到达的位置（Point、MultiPoint、LineString、MultiLineString 或 null）；它不是泛区范围（那是 `flood_extent`），两者不得互相推导。`flood_front` 若有其他非 null geometry 类型，报 `E_GEOM_FEATURE`。 |
 | properties | `valid`, `original_dating`, `evidence_mode`, `review_state` | original_dating 为 string 或 null；evidence_mode 为 `attested`、`reconstructed`、`schematic`、`hypothesis`；review_state 为 `proposed`、`under_review`、`accepted`、`rejected`、`superseded`。 |
 | properties | `dating_uncertainty`, `spatial_error`, `geometry_absent_reason`, `license_status` | 两个误差对象均有数值（或 null）和 reason（或 null），但不能同时 null；缺图理由为 null 或 `not_located`、`unknown_extent`、`restricted`；许可为 `unknown`、`restricted`、`cleared`。 |
 | properties | `claims`, `supersedes` | claim 有唯一 `claim_id`、`source_id`、`supports`、`locator`；supports 只能为 `geometry`、`dating`、`name`、`existence`。supersedes 的每项必须命中传入 legacy inventory 的 `legacy_id`。 |
-| v0.2 properties | `observed`, `derivation` | 两键均必填、值可为 null；规则见下。 |
+| v0.2/v0.3 properties | `observed`, `derivation` | 两键均必填、值可为 null；规则见下。 |
 
-v0.2 geometry 支持 `Point`、`MultiPoint`、`LineString`、`MultiLineString`、`Polygon`、`MultiPolygon`；v0.1 仅支持后四种。坐标为经度在前的两项有限数，全球范围为 [-180,180] / [-90,90]，并需在区域 bbox 内。线至少两点且没有连续重复点；面环至少四点、闭合、非相邻边不得相交；Multi 类型不得有零个部件。`MultiPoint` 至少一个点且不得有完全重复的点（`E_POINT_DUP`）。
+v0.2/v0.3 geometry 支持 `Point`、`MultiPoint`、`LineString`、`MultiLineString`、`Polygon`、`MultiPolygon`；v0.1 仅支持后四种。坐标为经度在前的两项有限数，全球范围为 [-180,180] / [-90,90]，并需在区域 bbox 内。线至少两点且没有连续重复点；面环至少四点、闭合、非相邻边不得相交；Multi 类型不得有零个部件。`MultiPoint` 至少一个点且不得有完全重复的点（`E_POINT_DUP`）。
+
+## v0.3 要素类型与几何
+
+- `breach`：堤防决口事件的位置。几何允许 `Point`、`MultiPoint`、null；`observed` 必须非 null。
+- `flood_mainstream`：某次观测（侦察）所见泛区内主流的路线。几何允许 `LineString`、`MultiLineString`、null；`observed` 必须非 null。
+- `flood_extent`：几何允许 `Polygon`、`MultiPolygon`、`LineString`、`MultiLineString`、null；`observed` 可为 null。不符合类型的几何报 `E_GEOM_FEATURE`。
+
+`flood_extent` 的线几何只表示原图画出的边界段；不得据此补成面，也不得据此判断某地是否在泛区内。
+
+`flood_front`（水边到达的位置）、`flood_extent`（浸水范围或其边界）、`flood_mainstream`（泛区内主流路线）、`breach`（决口）是四种不同的观测，不得互相推导。
+
+v0.3 继承 v0.2 的观测与派生规则；上述两类的 `observed: null` 报 `E_OBSERVED`。
 
 ## v0.2 观测与派生
 
 `observed` 为 null 或严格对象 `{date_from, date_to, part_of_day, as_written}`。`date_from` 和 `date_to` 是 0001–9999 年内真实存在的公历 `YYYY-MM-DD` 日期，且是半开区间 `[date_from, date_to)` 的两端；单日 d 写为 `[d, d+1)`。`part_of_day` 是 string/null，保留原图时段写法；`as_written` 是原图日期写法的 string。`date_to` 必须大于 `date_from`。`flood_front` 的 `observed` 必须非 null。观测区间整体必须落在该 feature 的 `valid` 内：若 `from_status` 为 known，`date_from` 年份不得早于 `valid.from`；若 `to_status` 为 known，`date_to` 不得晚于 `valid.to` 年 1 月 1 日。unknown 或 open 的端点只跳过该端检查，不跳过另一已知端。日期格式/日期真实性/端点顺序/上述范围关系不合格都报 `E_OBSERVED`。
 
-`derivation` 为 null 或严格对象 `{method, gcp_set_id, note}`。`method` 是 `DERIVATION_METHODS`；`gcp_set_id` 与 `note` 均为 string/null。`georef_affine` 和 `georef_polynomial` 必须给出 string `gcp_set_id`，否则 `E_DERIVATION`。v0.2 的非空 geometry 若 `derivation: null`，draft 报 `W_NO_DERIVATION`；release 报 `E_RELEASE`。
+`derivation` 为 null 或严格对象 `{method, gcp_set_id, note}`。`method` 是 `DERIVATION_METHODS`；`gcp_set_id` 与 `note` 均为 string/null。`georef_affine` 和 `georef_polynomial` 必须给出 string `gcp_set_id`，否则 `E_DERIVATION`。v0.2/v0.3 的非空 geometry 若 `derivation: null`，draft 报 `W_NO_DERIVATION`；release 报 `E_RELEASE`。
 
 来源文件是严格的 JSON 数组。每个来源都有 `source_id`（唯一）、`title`、`author_or_org`、`edition`（string/null）、`url`（string/null）、`source_kind`（`original_map`、`editor_reconstruction`、`modern_baseline`、`text`、`dataset`）、`license_status`、`accessed`（string/null）、`synthetic`（boolean）。
 
@@ -63,7 +75,7 @@ v0.2 geometry 支持 `Point`、`MultiPoint`、`LineString`、`MultiLineString`�
 
 - Feature 的 `id` 即 `geometry_id`，不另设 `geometry_id` 字段。
 - 已知不存在、未调查、无权限、未加载四态属于覆盖层（数据集级）的显示状态；单个要素的 `geometry_absent_reason` 保持 `not_located`、`unknown_extent`、`restricted` 三值。
-- 派生方法已在 v0.2 落地（触发条件：P0b 出现第一条真实几何）。审核记录继续推迟到 v0.3；触发条件＝第一个要素由 `proposed` 走到 `accepted`。
+- 派生方法已在 v0.2 落地（触发条件：P0b 出现第一条真实几何）。审核记录继续推迟，触发条件不变；触发条件＝第一个要素由 `proposed` 走到 `accepted`。
 
 ## 错误优先级
 
@@ -85,7 +97,7 @@ v0.2 geometry 支持 `Point`、`MultiPoint`、`LineString`、`MultiLineString`�
 | `E_NULL_REASON` | 误差数值/reason 同空，或数值为负/非有限。 |
 | `E_GEOM_ABSENT` | geometry 与缺图理由不一致。 |
 | `E_GEOM_TYPE` | 几何类型未获支持。 |
-| `E_GEOM_FEATURE` | flood_front 使用了该要素类型不允许的非 null geometry。 |
+| `E_GEOM_FEATURE` | 要素使用了该类型不允许的非 null geometry。 |
 | `E_EMPTY` | 坐标或 Multi 部件为空。 |
 | `E_COORD` | 坐标不是两个有限数或越出全球坐标范围。 |
 | `E_REGION_BBOX` | 坐标越出该区域 bbox。 |
@@ -95,7 +107,7 @@ v0.2 geometry 支持 `Point`、`MultiPoint`、`LineString`、`MultiLineString`�
 | `E_SELF_INTERSECT` | 面环的非相邻边相交。 |
 | `E_SOURCE_REF` | claim 引用不存在的 source_id。 |
 | `E_LEGACY_REF` | supersedes 引用不存在的 legacy_id。 |
-| `E_OBSERVED` | observed 的日期、半开区间、valid 年份关系不成立，或 flood_front 未给观测时刻。 |
+| `E_OBSERVED` | observed 的日期、半开区间、valid 年份关系不成立，或 flood_front、breach、flood_mainstream 未给观测时刻。 |
 | `E_DERIVATION` | 派生方法要求的控制点集合标识缺失。 |
 | `E_RELEASE` | release 限制不满足。 |
 

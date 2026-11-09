@@ -116,6 +116,36 @@ async function main() {
   assert.deepEqual(Core.pointMarks({ type: 'MultiPoint', coordinates: [[114, 35], [115, 36]] }, (x, y) => [x + 1, y + 2]), [[115, 37], [116, 38]]);
   assert.deepEqual(Core.featureLabelAnchor({ type: 'LineString', coordinates: [[114, 35], [115, 36]] }, (x, y) => [x + 1, y + 2]), [115, 37]);
 
+  for (const type of ['flood_front', 'flood_extent', 'flood_mainstream', 'breach']) {
+    const f = { properties: { feature_type: type, observed: { date_from: '1938-06-14', as_written: '14日', part_of_day: null } } };
+    assert.equal(Core.isObservedVisibleOn(f, '1938-06-13'), false, type);
+    assert.equal(Core.isObservedVisibleOn(f, '1938-06-14'), true, type);
+  }
+  assert.equal(Core.isObservedVisibleOn({ properties: { feature_type: 'flood_extent', observed: null } }, '1938-06-13'), true);
+  assert.equal(Core.isObservedVisibleOn({ properties: { feature_type: 'river_course', observed: { date_from: '1938-06-14' } } }, '1938-06-13'), true);
+  assert.equal(Core.isFrontVisibleOn, Core.isObservedVisibleOn);
+  assert.equal(Core.frontLabel, Core.observedLabel);
+  assert.equal(Core.observedLabel(front), '13日夕');
+  assert.equal(Core.observedLabel({ properties: { observed: { as_written: '18日', part_of_day: '15:00' } } }), '18日 15:00');
+  assert.equal(Core.observedLabel({ properties: { feature_type: 'flood_mainstream', observed: { as_written: '15日', part_of_day: '夕' } } }), '15日 夕');
+  const v03 = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures/research_demo/demo_v03.geojson'), 'utf8'));
+  const v03Harness = makeGlueHarness({ dataset: v03, search: '?research=demo.geojson&research_sources=sources.json&research_date=1938-06-14' });
+  await flush();
+  const v03Group = v03Harness.svg.querySelector('#grp-sam-research');
+  assert.ok(v03Group, v03Harness.errors.join('\n'));
+  assert.deepEqual(v03Group.children.filter((child) => child.attributes['data-feature-id']).map((child) => child.attributes['data-feature-id']), ['demo-v03-1', 'demo-v03-3', 'demo-v03-5']);
+  assert.equal(v03Group.children.find((child) => child.attributes['data-feature-id'] === 'demo-v03-1').attributes.class, 'sam-research-breach');
+  assert.equal(v03Group.children.filter((child) => child.name === 'text').length, 3);
+  assert.match(v03Harness.document.body.children[0].children[0].textContent, /flood_front 1 个；flood_extent 2 个；flood_mainstream 1 个；breach 1 个/);
+  const all03 = makeGlueHarness({ dataset: v03 }); await flush();
+  const allGroup = all03.svg.querySelector('#grp-sam-research');
+  assert.match(allGroup.children.find((child) => child.attributes['data-feature-id'] === 'demo-v03-2').attributes.class, /sam-type-flood_mainstream/);
+  assert.equal(allGroup.children.filter((child) => child.name === 'text').length, 5);
+  const css = all03.document.head.children.map((child) => child.textContent).join(' ');
+  assert.match(css, /sam-type-flood_extent\{[^}]*stroke-width:1\.2;stroke-dasharray:none/);
+  assert.match(css, /sam-type-flood_mainstream\{[^}]*stroke-dasharray:5 3/);
+  process.stdout.write('PASS P1-7 date filters + labels + aliases + rendered marks, styles, counts\n');
+
   const timed = demo.features[0];
   assert.equal(Core.isFeatureVisible(timed, 1937), false);
   assert.equal(Core.isFeatureVisible(timed, 1938), true);

@@ -1,12 +1,12 @@
 'use strict';
 
-const SCHEMA_VERSION = '0.2.0';
-const SUPPORTED_SCHEMA_VERSIONS = Object.freeze(['0.1.0', '0.2.0']);
+const SCHEMA_VERSION = '0.3.0';
+const SUPPORTED_SCHEMA_VERSIONS = Object.freeze(['0.1.0', '0.2.0', '0.3.0']);
 const REGIONS = Object.freeze({ cn: Object.freeze({ bbox: Object.freeze([70, 15, 140, 56]) }) });
 const STAGES = Object.freeze(['draft', 'release']);
 const INTERVALS = Object.freeze(['half_open']);
 const ENDPOINT_STATUSES = Object.freeze(['known', 'open', 'unknown']);
-const FEATURE_TYPES = Object.freeze(['river_course', 'river_branch', 'flood_extent', 'flood_front', 'lake', 'wetland', 'canal', 'coastline']);
+const FEATURE_TYPES = Object.freeze(['river_course', 'river_branch', 'flood_extent', 'flood_front', 'lake', 'wetland', 'canal', 'coastline', 'breach', 'flood_mainstream']);
 const EVIDENCE_MODES = Object.freeze(['attested', 'reconstructed', 'schematic', 'hypothesis']);
 const REVIEW_STATES = Object.freeze(['proposed', 'under_review', 'accepted', 'rejected', 'superseded']);
 const LICENSE_STATUSES = Object.freeze(['unknown', 'restricted', 'cleared']);
@@ -73,7 +73,8 @@ function validateDataset({ dataset, sources, legacyInventory }) {
   unknown(meta, META_KEYS, '/meta');
   required(meta, META_KEYS, '/meta');
   const schemaVersion = meta.schema_version;
-  const isV02 = schemaVersion === SCHEMA_VERSION;
+  const isV03 = schemaVersion === '0.3.0';
+  const isV02 = schemaVersion === '0.2.0' || isV03;
   if (own(meta, 'schema_version') && !SUPPORTED_SCHEMA_VERSIONS.includes(schemaVersion)) add('E_SCHEMA_VERSION', '/meta/schema_version', `must be one of: ${SUPPORTED_SCHEMA_VERSIONS.join(', ')}`);
   for (const key of ['dataset_id', 'dataset_revision', 'description']) if (own(meta, key)) string(meta[key], pointer('/meta', key));
   if (own(meta, 'stage')) enumeration(meta.stage, STAGES, '/meta/stage');
@@ -145,12 +146,17 @@ function validateDataset({ dataset, sources, legacyInventory }) {
     for (const key of ['region', 'waterbody_id', 'segment_id', 'interpretation_id']) if (own(properties, key)) string(properties[key], pointer(propsPath, key));
     if (own(properties, 'original_dating')) string(properties.original_dating, `${propsPath}/original_dating`, true);
     if (own(properties, 'feature_type')) {
-      const featureTypes = isV02 ? FEATURE_TYPES : FEATURE_TYPES.filter((type) => type !== 'flood_front');
+      const featureTypes = FEATURE_TYPES.filter((type) => (isV03 || !['breach', 'flood_mainstream'].includes(type)) && (isV02 || type !== 'flood_front'));
       enumeration(properties.feature_type, featureTypes, `${propsPath}/feature_type`);
     }
     if (isV02 && properties.feature_type === 'flood_front' && feature.geometry !== null
       && !['Point', 'MultiPoint', 'LineString', 'MultiLineString'].includes(feature.geometry && feature.geometry.type)) {
       add('E_GEOM_FEATURE', `${path}/geometry/type`, 'flood_front geometry must be Point, MultiPoint, LineString, MultiLineString, or null');
+    }
+    if (isV03 && feature.geometry !== null) {
+      const allowed = { breach: ['Point', 'MultiPoint'], flood_mainstream: ['LineString', 'MultiLineString'], flood_extent: ['Polygon', 'MultiPolygon', 'LineString', 'MultiLineString'] };
+      const types = own(allowed, properties.feature_type) ? allowed[properties.feature_type] : null;
+      if (types && !types.includes(feature.geometry && feature.geometry.type)) add('E_GEOM_FEATURE', `${path}/geometry/type`, `${properties.feature_type} geometry must be ${types.join(', ')}, or null`);
     }
     if (own(properties, 'evidence_mode')) enumeration(properties.evidence_mode, EVIDENCE_MODES, `${propsPath}/evidence_mode`);
     if (own(properties, 'review_state')) enumeration(properties.review_state, REVIEW_STATES, `${propsPath}/review_state`);
@@ -158,7 +164,7 @@ function validateDataset({ dataset, sources, legacyInventory }) {
     if (properties.region !== meta.region) add('E_REGION', `${propsPath}/region`, 'feature region must equal meta.region');
     validateValid(properties.valid, `${propsPath}/valid`, add, object, unknown, required, integer);
     if (isV02) {
-      validateObserved(properties.observed, `${propsPath}/observed`, properties, add, object, unknown, required);
+      validateObserved(properties.observed, `${propsPath}/observed`, properties, add, object, unknown, required, isV03);
       validateDerivation(properties.derivation, `${propsPath}/derivation`, add, object, unknown, required);
       if (meta.stage === 'draft' && feature.geometry !== null && properties.derivation === null) warn('W_NO_DERIVATION', `${propsPath}/derivation`, 'draft feature geometry has no derivation');
     }
@@ -221,9 +227,10 @@ function validateRelease(feature, properties, featurePath, isV02, add) {
   if (isV02 && feature.geometry !== null && properties.derivation === null) add('E_RELEASE', `${featurePath}/properties/derivation`, 'release feature geometry requires derivation');
 }
 
-function validateObserved(observed, path, properties, add, object, unknown, required) {
+function validateObserved(observed, path, properties, add, object, unknown, required, isV03) {
   if (observed === null) {
     if (properties.feature_type === 'flood_front') add('E_OBSERVED', path, 'flood_front requires a non-null observed value');
+    if (isV03 && ['breach', 'flood_mainstream'].includes(properties.feature_type)) add('E_OBSERVED', path, `${properties.feature_type} requires a non-null observed value`);
     return;
   }
   if (!object(observed)) {

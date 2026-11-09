@@ -34,21 +34,24 @@
   }
 
   function computeVisible(dataset, year, isoDate = null) {
-    return (dataset && Array.isArray(dataset.features) ? dataset.features : []).filter((feature) => isFeatureVisible(feature, year) && isFrontVisibleOn(feature, isoDate));
+    return (dataset && Array.isArray(dataset.features) ? dataset.features : []).filter((feature) => isFeatureVisible(feature, year) && isObservedVisibleOn(feature, isoDate));
   }
 
-  function isFrontVisibleOn(feature, isoDate) {
+  function isObservedVisibleOn(feature, isoDate) {
     const props = feature && feature.properties;
-    if (!isoDate || !props || props.feature_type !== 'flood_front') return true;
+    if (!isoDate || !props || !['flood_front', 'flood_extent', 'flood_mainstream', 'breach'].includes(props.feature_type) || props.observed == null) return true;
     return Boolean(props.observed && typeof props.observed.date_from === 'string' && props.observed.date_from <= isoDate);
   }
 
-  function frontLabel(feature) {
+  function observedLabel(feature) {
     const observed = feature && feature.properties && feature.properties.observed;
     if (!observed || typeof observed.as_written !== 'string') return '';
     if (!observed.part_of_day || observed.as_written.includes(observed.part_of_day)) return observed.as_written;
     return `${observed.as_written} ${observed.part_of_day}`;
   }
+
+  const isFrontVisibleOn = isObservedVisibleOn;
+  const frontLabel = observedLabel;
 
   function pointMarks(geometry, toScreen) {
     if (!geometry || typeof toScreen !== 'function') return [];
@@ -155,7 +158,7 @@
     return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day;
   }
 
-  const api = { parseResearchParams, parseResearchDate, isFeatureVisible, computeVisible, isFrontVisibleOn, frontLabel, pointMarks, featureLabelAnchor, researchMarkerScale, computeSuppressed, checkLegacyDrift, researchMask, featurePathData };
+  const api = { parseResearchParams, parseResearchDate, isFeatureVisible, computeVisible, isObservedVisibleOn, observedLabel, isFrontVisibleOn, frontLabel, pointMarks, featureLabelAnchor, researchMarkerScale, computeSuppressed, checkLegacyDrift, researchMask, featurePathData };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.SamResearchLayerCore = api;
 })(globalThis);

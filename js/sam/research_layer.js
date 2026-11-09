@@ -53,7 +53,8 @@
     const ends = yearFronts.map((feature) => feature.properties.observed.date_to).filter(Boolean).sort();
     const visibleFronts = visible.filter((feature) => feature.properties.feature_type === 'flood_front' && feature.properties.observed);
     const frontSummary = `本年 flood_front ${yearFronts.length} 个（日期范围 ${starts.length ? `[${starts[0]}, ${ends[ends.length - 1]}) 半开` : '无'}）${state.researchDate ? `；${state.researchDate} 可见 ${visibleFronts.length} 个` : ''}`;
-    return `${meta.dataset_id}\nrevision ${meta.dataset_revision}; ${meta.stage}${meta.synthetic === true ? '\nSYNTHETIC / 非史料' : ''}\n年份 ${year}；可见 ${visible.length}；可绘制要素 ${drawable.length}；无几何要素 ${withoutGeometry}；压制旧条目 ${suppressed.length}；年代未知未显示 ${unknown}\n${frontSummary}${drawable.length === 0 ? '\n本年无研究数据' : ''}`;
+    const counts = ['flood_front', 'flood_extent', 'flood_mainstream', 'breach'].map((type) => `${type} ${yearVisible.filter((feature) => feature.properties.feature_type === type).length} 个`).join('；');
+    return `${meta.dataset_id}\nrevision ${meta.dataset_revision}; ${meta.stage}${meta.synthetic === true ? '\nSYNTHETIC / 非史料' : ''}\n年份 ${year}；可见 ${visible.length}；可绘制要素 ${drawable.length}；无几何要素 ${withoutGeometry}；压制旧条目 ${suppressed.length}；年代未知未显示 ${unknown}\n${frontSummary}\n本年 ${counts}${drawable.length === 0 ? '\n本年无研究数据' : ''}`;
   }
 
   function renderPanel() {
@@ -120,6 +121,7 @@
     const viewportWidth = typeof window.innerWidth === 'number' ? window.innerWidth : 1280;
     const scale = Core.researchMarkerScale(controller.camera && controller.camera.w, viewportWidth);
     group.querySelectorAll('.sam-research-point').forEach((point) => point.setAttribute('r', (2.8 * scale).toFixed(3)));
+    group.querySelectorAll('.sam-research-breach').forEach((mark) => { const size = 2 * scale; mark.setAttribute('d', `M${-size} ${-size}L${size} ${size}M${-size} ${size}L${size} ${-size}`); });
     group.querySelectorAll('.sam-research-front-label').forEach((label) => { label.style.fontSize = `${(6.2 * scale).toFixed(3)}px`; });
   };
   const wrappedRescaleSvgTypography = function wrappedRescaleSvgTypography(...args) {
@@ -148,9 +150,9 @@
         if (!group) { group = document.createElementNS('http://www.w3.org/2000/svg', 'g'); group.id = 'grp-sam-research'; this.grpRivers.parentNode.insertBefore(group, this.grpRivers.nextSibling); }
         group.replaceChildren();
         const sourceById = new Map(state.sources.map((source) => [source.source_id, source]));
-        const frontDates = visible.filter((feature) => feature.properties.feature_type === 'flood_front' && feature.properties.observed).map((feature) => feature.properties.observed.date_from).filter(Boolean).sort();
+        const frontDates = visible.filter((feature) => ['flood_front', 'flood_extent', 'flood_mainstream', 'breach'].includes(feature.properties.feature_type) && feature.properties.observed).map((feature) => feature.properties.observed.date_from).filter(Boolean).sort();
         const frontColor = (feature) => {
-          if (feature.properties.feature_type !== 'flood_front' || !frontDates.length) return '#c96b79';
+          if (!feature.properties.observed || !frontDates.length) return '#c96b79';
           const index = frontDates.indexOf(feature.properties.observed.date_from);
           const factor = frontDates.length < 2 ? 0.5 : index / (frontDates.length - 1);
           const channel = (light, dark) => Math.round(light + (dark - light) * factor).toString(16).padStart(2, '0');
@@ -176,12 +178,14 @@
           if (!state.enabled || !feature.geometry) continue;
           if (feature.geometry.type === 'Point' || feature.geometry.type === 'MultiPoint') {
             for (const mark of Core.pointMarks(feature.geometry, (lon, lat) => this.projector.toScreen(lon, lat))) {
-              const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-              circle.setAttribute('cx', mark[0]); circle.setAttribute('cy', mark[1]); circle.setAttribute('r', '2.8');
-              circle.setAttribute('data-feature-id', feature.id); circle.setAttribute('class', 'sam-research-point');
+              const breach = feature.properties.feature_type === 'breach';
+              const circle = document.createElementNS('http://www.w3.org/2000/svg', breach ? 'path' : 'circle');
+              if (breach) circle.setAttribute('transform', `translate(${mark[0]} ${mark[1]})`);
+              else { circle.setAttribute('cx', mark[0]); circle.setAttribute('cy', mark[1]); circle.setAttribute('r', '2.8'); }
+              circle.setAttribute('data-feature-id', feature.id); circle.setAttribute('class', breach ? 'sam-research-breach' : 'sam-research-point');
               circle.setAttribute('style', `--sam-front-fill:${frontColor(feature)}`);
               appendTitle(circle, feature); group.appendChild(circle);
-              const labelText = feature.properties.feature_type === 'flood_front' ? Core.frontLabel(feature) : '';
+              const labelText = ['flood_front', 'flood_extent', 'flood_mainstream', 'breach'].includes(feature.properties.feature_type) ? Core.observedLabel(feature) : '';
               if (labelText) {
                 const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
                 label.setAttribute('x', mark[0] + 4.5); label.setAttribute('y', mark[1] - 4.5);
@@ -196,10 +200,11 @@
           const shape = feature.geometry.type.includes('Polygon') ? 'polygon' : 'line';
           const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
           path.setAttribute('d', d); path.setAttribute('data-feature-id', feature.id);
-          path.setAttribute('class', `sam-research-${shape} sam-evidence-${feature.properties.evidence_mode}`);
+          path.setAttribute('class', `sam-research-${shape} sam-evidence-${feature.properties.evidence_mode} sam-type-${feature.properties.feature_type}`);
+          if (['flood_extent', 'flood_mainstream'].includes(feature.properties.feature_type)) path.setAttribute('style', `--sam-observed-color:${frontColor(feature)}`);
           if (shape === 'polygon') path.setAttribute('fill-rule', 'evenodd');
           appendTitle(path, feature); group.appendChild(path);
-          const labelText = feature.properties.feature_type === 'flood_front' ? Core.frontLabel(feature) : '';
+          const labelText = ['flood_front', 'flood_extent', 'flood_mainstream', 'breach'].includes(feature.properties.feature_type) ? Core.observedLabel(feature) : '';
           const labelMark = labelText ? Core.featureLabelAnchor(feature.geometry, (lon, lat) => this.projector.toScreen(lon, lat)) : null;
           if (labelMark) {
             const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
@@ -230,7 +235,7 @@
   Controller.prototype._buildTerrainRivers = wrappedBuildTerrainRivers;
 
   const style = document.createElement('style');
-  style.textContent = '.sam-research-line,.sam-research-polygon{fill:none;stroke:#9d1f31;stroke-width:2.2;pointer-events:stroke}.sam-research-polygon{fill:#9d1f3133;pointer-events:all}.sam-research-point{fill:var(--sam-front-fill,#d98f9a);stroke:#9d1f31;stroke-width:.65;vector-effect:non-scaling-stroke;pointer-events:all}.sam-research-front-label{font-family:var(--serif-stack);font-size:6.2px;font-weight:600;fill:#9d1f31;pointer-events:none;paint-order:stroke fill;stroke:#fff7e6;stroke-width:1.3px;stroke-linejoin:round}.sam-evidence-reconstructed{stroke-dasharray:12 6}.sam-evidence-schematic{stroke-dasharray:2 5}.sam-evidence-hypothesis{stroke-dasharray:1 5;stroke-width:1.2;opacity:.55}';
+  style.textContent = '.sam-research-line,.sam-research-polygon{fill:none;stroke:#9d1f31;stroke-width:2.2;pointer-events:stroke}.sam-research-polygon{fill:#9d1f3133;pointer-events:all}.sam-research-point{fill:var(--sam-front-fill,#d98f9a);stroke:#9d1f31;stroke-width:.65;vector-effect:non-scaling-stroke;pointer-events:all}.sam-research-front-label{font-family:var(--serif-stack);font-size:6.2px;font-weight:600;fill:#9d1f31;pointer-events:none;paint-order:stroke fill;stroke:#fff7e6;stroke-width:1.3px;stroke-linejoin:round}.sam-research-breach{fill:none;stroke:var(--sam-front-fill,#9d1f31);stroke-width:.8;pointer-events:stroke}.sam-evidence-reconstructed{stroke-dasharray:12 6}.sam-evidence-schematic{stroke-dasharray:2 5}.sam-evidence-hypothesis{stroke-dasharray:1 5;stroke-width:1.2;opacity:.55}.sam-research-line.sam-type-flood_extent{stroke:var(--sam-observed-color,#9d1f31);stroke-width:1.2;stroke-dasharray:none;opacity:1}.sam-research-line.sam-type-flood_mainstream{stroke:var(--sam-observed-color,#9d1f31);stroke-width:1.8;stroke-dasharray:5 3;opacity:1;filter:brightness(.75)}';
   document.head.appendChild(style);
 
   let urls;

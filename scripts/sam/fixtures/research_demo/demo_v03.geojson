@@ -1,0 +1,349 @@
+{
+  "type": "FeatureCollection",
+  "meta": {
+    "schema_version": "0.3.0",
+    "dataset_id": "demo_v03",
+    "dataset_revision": "demo-v03",
+    "region": "cn",
+    "stage": "draft",
+    "synthetic": true,
+    "description": "synthetic demo for v0.3 breach/mainstream/extent-line mechanics, not historical"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "demo-v03-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114,
+          35
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "breach",
+        "waterbody_id": "synthetic-front",
+        "segment_id": "front-0613",
+        "interpretation_id": "demo-fronts-v02",
+        "valid": {
+          "from": 1938,
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known"
+        },
+        "original_dating": "13日夕",
+        "evidence_mode": "schematic",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": null,
+          "reason": "synthetic demo"
+        },
+        "spatial_error": {
+          "meters": null,
+          "reason": "synthetic demo"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "v03-1-claim-demo-front-0613",
+            "source_id": "source-synthetic-demo",
+            "supports": [
+              "geometry",
+              "dating"
+            ],
+            "locator": "Synthetic front fixture"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-13",
+          "date_to": "1938-06-14",
+          "part_of_day": null,
+          "as_written": "1938-06-13"
+        },
+        "derivation": {
+          "method": "place_anchor",
+          "gcp_set_id": null,
+          "note": "synthetic grid point"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "demo-v03-2",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.5,
+            35
+          ],
+          [
+            115,
+            35.5
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_mainstream",
+        "waterbody_id": "synthetic-front",
+        "segment_id": "front-0613",
+        "interpretation_id": "demo-fronts-v02",
+        "valid": {
+          "from": 1938,
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known"
+        },
+        "original_dating": "13日夕",
+        "evidence_mode": "schematic",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": null,
+          "reason": "synthetic demo"
+        },
+        "spatial_error": {
+          "meters": null,
+          "reason": "synthetic demo"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "v03-2-claim-demo-front-0613",
+            "source_id": "source-synthetic-demo",
+            "supports": [
+              "geometry",
+              "dating"
+            ],
+            "locator": "Synthetic front fixture"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-15",
+          "date_to": "1938-06-16",
+          "part_of_day": null,
+          "as_written": "1938-06-15"
+        },
+        "derivation": {
+          "method": "place_anchor",
+          "gcp_set_id": null,
+          "note": "synthetic grid point"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "demo-v03-3",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.5,
+            34.5
+          ],
+          [
+            114,
+            34.5
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_extent",
+        "waterbody_id": "synthetic-front",
+        "segment_id": "front-0613",
+        "interpretation_id": "demo-fronts-v02",
+        "valid": {
+          "from": 1938,
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known"
+        },
+        "original_dating": "13日夕",
+        "evidence_mode": "schematic",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": null,
+          "reason": "synthetic demo"
+        },
+        "spatial_error": {
+          "meters": null,
+          "reason": "synthetic demo"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "v03-3-claim-demo-front-0613",
+            "source_id": "source-synthetic-demo",
+            "supports": [
+              "geometry",
+              "dating"
+            ],
+            "locator": "Synthetic front fixture"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-14",
+          "date_to": "1938-06-15",
+          "part_of_day": null,
+          "as_written": "1938-06-14"
+        },
+        "derivation": {
+          "method": "place_anchor",
+          "gcp_set_id": null,
+          "note": "synthetic grid point"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "demo-v03-4",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              115,
+              34.5
+            ],
+            [
+              115.5,
+              34.5
+            ]
+          ],
+          [
+            [
+              115.5,
+              35
+            ],
+            [
+              116,
+              35
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_extent",
+        "waterbody_id": "synthetic-front",
+        "segment_id": "front-0613",
+        "interpretation_id": "demo-fronts-v02",
+        "valid": {
+          "from": 1938,
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known"
+        },
+        "original_dating": "13日夕",
+        "evidence_mode": "schematic",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": null,
+          "reason": "synthetic demo"
+        },
+        "spatial_error": {
+          "meters": null,
+          "reason": "synthetic demo"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "v03-4-claim-demo-front-0613",
+            "source_id": "source-synthetic-demo",
+            "supports": [
+              "geometry",
+              "dating"
+            ],
+            "locator": "Synthetic front fixture"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-17",
+          "date_to": "1938-06-18",
+          "part_of_day": null,
+          "as_written": "1938-06-17"
+        },
+        "derivation": {
+          "method": "place_anchor",
+          "gcp_set_id": null,
+          "note": "synthetic grid point"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "demo-v03-5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.5,
+          34.5
+        ]
+      },
+      "properties": {
+        "region": "cn",
+        "feature_type": "flood_front",
+        "waterbody_id": "synthetic-front",
+        "segment_id": "front-0613",
+        "interpretation_id": "demo-fronts-v02",
+        "valid": {
+          "from": 1938,
+          "to": 1939,
+          "interval": "half_open",
+          "from_status": "known",
+          "to_status": "known"
+        },
+        "original_dating": "13日夕",
+        "evidence_mode": "schematic",
+        "review_state": "proposed",
+        "dating_uncertainty": {
+          "years": null,
+          "reason": "synthetic demo"
+        },
+        "spatial_error": {
+          "meters": null,
+          "reason": "synthetic demo"
+        },
+        "geometry_absent_reason": null,
+        "license_status": "unknown",
+        "claims": [
+          {
+            "claim_id": "v03-5-claim-demo-front-0613",
+            "source_id": "source-synthetic-demo",
+            "supports": [
+              "geometry",
+              "dating"
+            ],
+            "locator": "Synthetic front fixture"
+          }
+        ],
+        "supersedes": [],
+        "observed": {
+          "date_from": "1938-06-14",
+          "date_to": "1938-06-15",
+          "part_of_day": null,
+          "as_written": "1938-06-14"
+        },
+        "derivation": {
+          "method": "place_anchor",
+          "gcp_set_id": null,
+          "note": "synthetic grid point"
+        }
+      }
+    }
+  ]
+}
