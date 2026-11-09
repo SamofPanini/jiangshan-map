@@ -1,0 +1,13 @@
+{"type":"object","additionalProperties":false,"required":["image_seen","lines","missing_or_doubt"],
+ "properties":{
+  "image_seen":{"type":"boolean"},
+  "lines":{"type":"array","items":{"type":"object","additionalProperties":false,
+    "required":["label","label_x","label_y","line_style_seen","status","vertices","start_note","end_note","confidence","note"],
+    "properties":{
+      "label":{"type":"string"},"label_x":{"type":"integer"},"label_y":{"type":"integer"},
+      "line_style_seen":{"type":"string"},
+      "status":{"type":"string","enum":["traced","partly_traced","cannot_identify","読めない"]},
+      "vertices":{"type":"array","items":{"type":"array","items":{"type":"integer"},"minItems":2,"maxItems":2}},
+      "start_note":{"type":"string"},"end_note":{"type":"string"},
+      "confidence":{"type":"string","enum":["高","中","低"]},"note":{"type":"string"}}}},
+  "missing_or_doubt":{"type":"string"}}}

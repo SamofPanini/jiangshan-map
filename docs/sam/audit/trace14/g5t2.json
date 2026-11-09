@@ -1,0 +1,1 @@
+{"image_seen":true,"lines":[{"label":"14日夕","label_x":1735,"label_y":775,"line_style_seen":"実線の候補が複数ある","status":"cannot_identify","vertices":[],"start_note":"","end_note":"","confidence":"低","note":"注記の左側を斜めに走る細い実線と、注記の下方をほぼ縦に走る波状の細線が候補に見えるが、注記との対応を画像だけでは特定できない。"}],"missing_or_doubt":"指定された注記がどの線を指すか判別できないため、座標列は記載しなかった。"}

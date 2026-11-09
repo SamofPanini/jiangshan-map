@@ -1,0 +1,1 @@
+{"image_seen":true,"lines":[{"label":"14日夕","label_x":842,"label_y":811,"line_style_seen":"注記付近に細い実線と破線が複数接近している","status":"cannot_identify","vertices":[],"start_note":"注記と対象線の対応を特定できない。","end_note":"追跡していない。","confidence":"低","note":"候補は注記の左側を北西から南東に延びる細い線群。線が密集し、注記がどの実線を指すか判別できない。"}],"missing_or_doubt":"指定された注記から一本の実線を確実に選べないため、座標列は出力しない。"}

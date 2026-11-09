@@ -1,0 +1,1 @@
+{"image_seen":true,"lines":[{"label":"14日夕","label_x":1735,"label_y":775,"line_style_seen":"実線の候補が複数あり、注記との対応を特定できない","status":"cannot_identify","vertices":[],"start_note":"注記が指す線を確定できない。","end_note":"線を確定できないため追跡していない。","confidence":"低","note":"注記の左側を斜めに走る細い線と、注記の下方を曲がりながら南へ延びる細い線が候補。濃い帯や他の線との交差もあり、注記との対応を画像から確定できない。"}],"missing_or_doubt":"指定された注記から対象の実線を一意に識別できなかった。"}

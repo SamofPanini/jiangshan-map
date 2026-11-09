@@ -1,0 +1,1 @@
+{"image_seen":true,"lines":[{"label":"14日夕","label_x":842,"label_y":811,"line_style_seen":"注記付近に複数の実線と破線が接近している","status":"cannot_identify","vertices":[],"start_note":"注記に対応する一本を特定できない。","end_note":"線の取り違えを避けるため追跡していない。","confidence":"低","note":"候補は注記の左側を北西から南東へ通る細い実線群。線が接近・交差しており、注記との対応を判断できない。"}],"missing_or_doubt":"指定された注記に引き出し線は明確に確認できない。"}
