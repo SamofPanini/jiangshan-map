@@ -1,0 +1,309 @@
+{
+  "gcp_set_id": "bmap-r2-dedup",
+  "source": {
+    "path": "docs/sam/audit/bmap_georef/analysis.json",
+    "sha256": "3e158e1aed6a8a6714798dc94c68c2f3f1edf4d9e81301ca1e6b0e6248559290"
+  },
+  "points": [
+    {
+      "name": "中牟",
+      "mosaic_x": -245.20693738232936,
+      "mosaic_y": -271.5988398253427,
+      "lat": 34.73109,
+      "lon": 114.02546,
+      "pages": [
+        "p06"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "南曹集",
+      "mosaic_x": -22.437878258205544,
+      "mosaic_y": 759.8127970339262,
+      "lat": 34.29166667,
+      "lon": 114.20138889,
+      "pages": [
+        "p08"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "呂潭",
+      "mosaic_x": 332.04302208490924,
+      "mosaic_y": 1199.4048317117952,
+      "lat": 34.10694444,
+      "lon": 114.49611111,
+      "pages": [
+        "p07",
+        "p08"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "周家口",
+      "mosaic_x": 782.223409199415,
+      "mosaic_y": 2232.0970370492896,
+      "lat": 33.625,
+      "lon": 114.64166667,
+      "pages": [
+        "p09",
+        "p10"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "圃田集",
+      "mosaic_x": -618.5294288651496,
+      "mosaic_y": -385.9430425147443,
+      "lat": 34.74,
+      "lon": 113.81805556,
+      "pages": [
+        "p06"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "太康",
+      "mosaic_x": 1179,
+      "mosaic_y": 1340,
+      "lat": 34.06555556,
+      "lon": 114.86277778,
+      "pages": [
+        "p07"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "尉氏",
+      "mosaic_x": -38.73508800334077,
+      "mosaic_y": 458.46178473171483,
+      "lat": 34.41194444,
+      "lon": 114.19777778,
+      "pages": [
+        "p08"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "崔橋",
+      "mosaic_x": 665.4427739510725,
+      "mosaic_y": 1008.0311847350425,
+      "lat": 34.21444444,
+      "lon": 114.56472222,
+      "pages": [
+        "p07",
+        "p08"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "常營集",
+      "mosaic_x": 680.8013165847583,
+      "mosaic_y": 1126.7849234528258,
+      "lat": 34.1175,
+      "lon": 114.61222222,
+      "pages": [
+        "p08"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "底閣",
+      "mosaic_x": 499.2525335915958,
+      "mosaic_y": 690.4684927506426,
+      "lat": 34.35888889,
+      "lon": 114.46388889,
+      "pages": [
+        "p07",
+        "p08"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "扶溝",
+      "mosaic_x": 183.72432073855364,
+      "mosaic_y": 1334.3551066539094,
+      "lat": 34.05916667,
+      "lon": 114.38583333,
+      "pages": [
+        "p07",
+        "p08"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "新安",
+      "mosaic_x": 1684.5561974654481,
+      "mosaic_y": 2858.7240253233467,
+      "lat": 33.35472222,
+      "lon": 115.18916667,
+      "pages": [
+        "p11"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "新站",
+      "mosaic_x": 1071.0083255417007,
+      "mosaic_y": 2404.6434013273847,
+      "lat": 33.5475,
+      "lon": 114.8475,
+      "pages": [
+        "p09",
+        "p11"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "曲興集",
+      "mosaic_x": 1092.5583334936173,
+      "mosaic_y": -364.12009514565864,
+      "lat": 34.83472222,
+      "lon": 114.67555556,
+      "pages": [
+        "p05"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "杞縣",
+      "mosaic_x": 1156,
+      "mosaic_y": 353,
+      "lat": 34.55055556,
+      "lon": 114.76888889,
+      "pages": [
+        "p07"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "槐店",
+      "mosaic_x": 1448.1045518213787,
+      "mosaic_y": 2711.1189875401815,
+      "lat": 33.38305556,
+      "lon": 115.07305556,
+      "pages": [
+        "p09",
+        "p11"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "水寨集",
+      "mosaic_x": 1195.8904449539968,
+      "mosaic_y": 2571.321176575573,
+      "lat": 33.449345,
+      "lon": 114.90145694,
+      "pages": [
+        "p09",
+        "p11"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "清河驛",
+      "mosaic_x": 748.2452022223133,
+      "mosaic_y": 1800.0308254076463,
+      "lat": 33.81111111,
+      "lon": 114.66638889,
+      "pages": [
+        "p09",
+        "p10"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "睢縣",
+      "mosaic_x": 1739,
+      "mosaic_y": 597,
+      "lat": 34.42611111,
+      "lon": 115.06722222,
+      "pages": [
+        "p07"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "蘭封",
+      "mosaic_x": 1334.4340963389104,
+      "mosaic_y": -334.40169086613196,
+      "lat": 34.83361111,
+      "lon": 114.81527778,
+      "pages": [
+        "p05"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "西華",
+      "mosaic_x": 444.8312647891395,
+      "mosaic_y": 1846.7174675598399,
+      "lat": 33.78772306,
+      "lon": 114.529185,
+      "pages": [
+        "p09",
+        "p10"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "通許",
+      "mosaic_x": 486.8720851951954,
+      "mosaic_y": 447.2447340071558,
+      "lat": 34.47694444,
+      "lon": 114.47194444,
+      "pages": [
+        "p07",
+        "p08"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "錢店",
+      "mosaic_x": 1631.757933520052,
+      "mosaic_y": 2511.787933026574,
+      "lat": 33.56,
+      "lon": 115.13777778,
+      "pages": [
+        "p09",
+        "p11"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "開封",
+      "mosaic_x": 455.33318412734184,
+      "mosaic_y": -367.95185915667486,
+      "lat": 34.795,
+      "lon": 114.345,
+      "pages": [
+        "p05",
+        "p06"
+      ],
+      "unrefined_gcp": true
+    },
+    {
+      "name": "陳州",
+      "mosaic_x": 1286.7611657947632,
+      "mosaic_y": 1961.1604990402238,
+      "lat": 33.73222222,
+      "lon": 114.8825,
+      "pages": [
+        "p09"
+      ],
+      "unrefined_gcp": false
+    },
+    {
+      "name": "陳留",
+      "mosaic_x": 777.7715007317549,
+      "mosaic_y": -27.61700195591868,
+      "lat": 34.67111111,
+      "lon": 114.52916667,
+      "pages": [
+        "p05",
+        "p06"
+      ],
+      "unrefined_gcp": false
+    }
+  ]
+}
