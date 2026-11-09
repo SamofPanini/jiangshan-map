@@ -41,6 +41,31 @@ class Tests(unittest.TestCase):
             baseline,_=build(CA,'a'); augmented,report=build(candidate,'b')
             self.assertEqual(baseline,augmented)
             for i,(_,_,category,_) in enumerate(cases): self.assertIn(category+'：#'+str(original_count+i),report)
+    def test_r2_normalization(self):
+        for value in ('25日 28日','25日｜28日','25日\n28日','25日～28日','25～28日'):
+            with self.subTest(value=value):
+                self.assertEqual(m.normalize_date(value),'25～28日')
+                self.assertEqual(m.classify({'page':'p07','readings':{'a':{'as_written':value,'note':''}}}),('纳入','0625-0628'))
+        self.assertEqual(m.normalize_date('25日'), '25日')
+    def test_r2_single_reader_attach_or_exclude(self):
+        multi={'index':1,'page':'p07','center':(0,0),'key':'0612','category':'纳入','candidate':{'readings':{'a':{},'b':{}}}}
+        near={'index':2,'page':'p07','center':(40,0),'key':'0612','category':'纳入','candidate':{'readings':{'a':{}}}}
+        far={'index':3,'page':'p08','center':(41,0),'key':'0612','category':'纳入','candidate':{'readings':{'a':{}}}}
+        groups=[[multi]]; excluded=m.attach_singles(groups,[near,far])
+        self.assertEqual([r['index'] for r in groups[0]],[1,2])
+        self.assertEqual([(r['index'],r['category']) for r in excluded],[(3,'单家读数')])
+    def test_r2_actual_decisions(self):
+        with tempfile.TemporaryDirectory() as t:
+            p=pathlib.Path(t); out=p/'out'; rep=p/'report'
+            subprocess.run(['python3',MODULE,'--analysis',AN,'--candidates',CA,'--output',str(out),'--gcp',str(p/'gcp'),'--report',str(rep),'--v1',V1],cwd=ROOT,check=True,capture_output=True)
+            data=json.loads(out.read_text()); features={f['properties']['segment_id']:f for f in data['features']}
+            for key in ('front-0618','front-0625','front-0628'): self.assertNotIn(key,set(features))
+            p18=features['front-0618-1500']['properties']['derivation']['note']
+            for page in ('p07','p08','p09','p10'): self.assertIn(page,p18)
+            interval=features['front-0625-0628']; self.assertEqual(interval['geometry']['type'],'MultiPoint'); self.assertEqual(len(interval['geometry']['coordinates']),2)
+            note=interval['properties']['derivation']['note']
+            for text in ('p07 (141.0,1045.0)','p08 (1566.3,1147.7)','p07 (142.0,1025.0)','p07 (141.0,1066.0)'): self.assertIn(text,note)
+            self.assertIn('非注记（档案页码戳）：#34',rep.read_text())
     def test_bytes(self):
         with tempfile.TemporaryDirectory() as t:
             outputs=[]

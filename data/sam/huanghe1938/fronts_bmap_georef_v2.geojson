@@ -358,89 +358,12 @@
     },
     {
       "type": "Feature",
-      "id": "hh1938-v2-front-0618",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.72632893614742,
-          33.99288146414976
-        ]
-      },
-      "properties": {
-        "region": "cn",
-        "feature_type": "flood_front",
-        "waterbody_id": "huanghe-1938-flood",
-        "segment_id": "front-0618",
-        "interpretation_id": "bmap-georef-v2",
-        "valid": {
-          "to": 1939,
-          "interval": "half_open",
-          "from_status": "known",
-          "to_status": "known",
-          "from": 1938
-        },
-        "original_dating": "18日",
-        "evidence_mode": "reconstructed",
-        "review_state": "proposed",
-        "dating_uncertainty": {
-          "years": 0,
-          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
-        },
-        "spatial_error": {
-          "meters": 13000,
-          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 2124.0 m + 文字中心 50 px 局部最大方向换算 2683.2 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
-        },
-        "geometry_absent_reason": null,
-        "license_status": "unknown",
-        "claims": [
-          {
-            "claim_id": "c-v2-front-0618-dating",
-            "source_id": "src-jacar-d5-1939",
-            "supports": [
-              "dating",
-              "existence"
-            ],
-            "locator": "p08 (2366.3,1602.3) [a:18日/b:18日/t:18日]"
-          },
-          {
-            "claim_id": "c-v2-front-0618-geometry",
-            "source_id": "src-jacar-d5-1939",
-            "supports": [
-              "geometry"
-            ],
-            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
-          },
-          {
-            "claim_id": "c-v2-front-0618-gcp",
-            "source_id": "src-wikidata",
-            "supports": [
-              "geometry"
-            ],
-            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
-          }
-        ],
-        "supersedes": [],
-        "observed": {
-          "date_from": "1938-06-18",
-          "date_to": "1938-06-19",
-          "part_of_day": null,
-          "as_written": "18日"
-        },
-        "derivation": {
-          "method": "georef_polynomial",
-          "gcp_set_id": "bmap-r2-dedup",
-          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p08 (2366.3,1602.3) [a:18日/b:18日/t:18日]：注记中心；仿射与二次相距 2124.0 m"
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "hh1938-v2-front-0618-1500",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.65182349733443,
-          33.95977505840258
+          114.65151968887167,
+          33.95977169531564
         ]
       },
       "properties": {
@@ -465,7 +388,7 @@
         },
         "spatial_error": {
           "meters": 10100,
-          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1919.4 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1919.1 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
         },
         "geometry_absent_reason": null,
         "license_status": "unknown",
@@ -477,7 +400,7 @@
               "dating",
               "existence"
             ],
-            "locator": "p07 (926.7,1498.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p09 (802.0,171.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]"
+            "locator": "p07 (926.7,1498.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p08 (2366.3,1602.3) [a:18日/b:18日/t:18日]；p09 (802.0,171.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p10 (2334.0,177.7) [a:18日 15.0[0?]/b:18日 15.0[0?]/t:18日 15.0□]"
           },
           {
             "claim_id": "c-v2-front-0618-1500-geometry",
@@ -506,7 +429,7 @@
         "derivation": {
           "method": "georef_polynomial",
           "gcp_set_id": "bmap-r2-dedup",
-          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p07 (926.7,1498.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p09 (802.0,171.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]：箭头端点、箭头端点；仿射与二次相距 1919.4 m"
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p07 (926.7,1498.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p08 (2366.3,1602.3) [a:18日/b:18日/t:18日]；p09 (802.0,171.7) [a:18日 15.00/b:18日 15.00/t:18日 15.00]；p10 (2334.0,177.7) [a:18日 15.0[0?]/b:18日 15.0[0?]/t:18日 15.0□]：箭头端点（仅用至少两家且稳定的页；其余读数参与归类）；仿射与二次相距 1919.1 m"
         }
       }
     },
@@ -589,89 +512,18 @@
     },
     {
       "type": "Feature",
-      "id": "hh1938-v2-front-0625",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.32514462759957,
-          34.17119486006517
-        ]
-      },
-      "properties": {
-        "region": "cn",
-        "feature_type": "flood_front",
-        "waterbody_id": "huanghe-1938-flood",
-        "segment_id": "front-0625",
-        "interpretation_id": "bmap-georef-v2",
-        "valid": {
-          "to": 1939,
-          "interval": "half_open",
-          "from_status": "known",
-          "to_status": "known",
-          "from": 1938
-        },
-        "original_dating": "25日",
-        "evidence_mode": "reconstructed",
-        "review_state": "proposed",
-        "dating_uncertainty": {
-          "years": 0,
-          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
-        },
-        "spatial_error": {
-          "meters": 12600,
-          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1792.6 m + 文字中心 50 px 局部最大方向换算 2611.7 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
-        },
-        "geometry_absent_reason": null,
-        "license_status": "unknown",
-        "claims": [
-          {
-            "claim_id": "c-v2-front-0625-dating",
-            "source_id": "src-jacar-d5-1939",
-            "supports": [
-              "dating",
-              "existence"
-            ],
-            "locator": "p07 (142.0,1025.0) [t:25日]"
-          },
-          {
-            "claim_id": "c-v2-front-0625-geometry",
-            "source_id": "src-jacar-d5-1939",
-            "supports": [
-              "geometry"
-            ],
-            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
-          },
-          {
-            "claim_id": "c-v2-front-0625-gcp",
-            "source_id": "src-wikidata",
-            "supports": [
-              "geometry"
-            ],
-            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
-          }
-        ],
-        "supersedes": [],
-        "observed": {
-          "date_from": "1938-06-25",
-          "date_to": "1938-06-26",
-          "part_of_day": null,
-          "as_written": "25日"
-        },
-        "derivation": {
-          "method": "georef_polynomial",
-          "gcp_set_id": "bmap-r2-dedup",
-          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p07 (142.0,1025.0) [t:25日]：注记中心；仿射与二次相距 1792.6 m"
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "hh1938-v2-front-0625-0628",
       "geometry": {
-        "type": "Point",
+        "type": "MultiPoint",
         "coordinates": [
-          114.46348883536994,
-          34.73865638782255
+          [
+            114.46348883536994,
+            34.73865638782255
+          ],
+          [
+            114.37154126782038,
+            34.16898009578479
+          ]
         ]
       },
       "properties": {
@@ -695,8 +547,8 @@
           "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
         },
         "spatial_error": {
-          "meters": 9600,
-          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1361.8 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
+          "meters": 10100,
+          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1867.8 m + 文字中心 50 px 局部最大方向换算 0.0 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
         },
         "geometry_absent_reason": null,
         "license_status": "unknown",
@@ -708,7 +560,7 @@
               "dating",
               "existence"
             ],
-            "locator": "p05 (802.7,1175.0) [a:25～28日/b:25～28日/t:25～28日]；p06 (2198.3,1162.7) [a:25～28日/b:25～28日/t:25～28日]"
+            "locator": "p05 (802.7,1175.0) [a:25～28日/b:25～28日/t:25～28日]；p06 (2198.3,1162.7) [a:25～28日/b:25～28日/t:25～28日]；p07 (141.0,1045.0) [a:25日 28日/b:25日 28日]；p08 (1566.3,1147.7) [a:25日 ｜ 28日/b:25日 28日/t:25日～28日]；p07 (142.0,1025.0) [t:25日]；p07 (141.0,1066.0) [t:28日]"
           },
           {
             "claim_id": "c-v2-front-0625-0628-geometry",
@@ -737,7 +589,7 @@
         "derivation": {
           "method": "georef_polynomial",
           "gcp_set_id": "bmap-r2-dedup",
-          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p05 (802.7,1175.0) [a:25～28日/b:25～28日/t:25～28日]；p06 (2198.3,1162.7) [a:25～28日/b:25～28日/t:25～28日]：箭头端点、箭头端点；仿射与二次相距 1361.8 m"
+          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p05 (802.7,1175.0) [a:25～28日/b:25～28日/t:25～28日]；p06 (2198.3,1162.7) [a:25～28日/b:25～28日/t:25～28日]：箭头端点、箭头端点；仿射与二次相距 1361.8 m；p07 (141.0,1045.0) [a:25日 28日/b:25日 28日]；p08 (1566.3,1147.7) [a:25日 ｜ 28日/b:25日 28日/t:25日～28日]；p07 (142.0,1025.0) [t:25日]；p07 (141.0,1066.0) [t:28日]：箭头端点（仅用至少两家且稳定的页；其余读数参与归类）；仿射与二次相距 1867.8 m"
         }
       }
     },
@@ -815,83 +667,6 @@
           "method": "georef_polynomial",
           "gcp_set_id": "bmap-r2-dedup",
           "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p09 (1630.3,964.7) [a:25日 12.00/b:25日 12.00/t:25日 12.00]；p11 (1645.0,67.0) [a:□ 12.00/b:□日 12.00]：箭头端点、箭头端点；仿射与二次相距 316.4 m"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "hh1938-v2-front-0628",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.32761631342628,
-          34.15204435463589
-        ]
-      },
-      "properties": {
-        "region": "cn",
-        "feature_type": "flood_front",
-        "waterbody_id": "huanghe-1938-flood",
-        "segment_id": "front-0628",
-        "interpretation_id": "bmap-georef-v2",
-        "valid": {
-          "to": 1939,
-          "interval": "half_open",
-          "from_status": "known",
-          "to_status": "known",
-          "from": 1938
-        },
-        "original_dating": "28日",
-        "evidence_mode": "reconstructed",
-        "review_state": "proposed",
-        "dating_uncertainty": {
-          "years": 0,
-          "reason": "原图逐日标注；年份由图题「昭和十三年度」确定"
-        },
-        "spatial_error": {
-          "meters": 12600,
-          "reason": "二次留一最大 8215.5 m + 仿射与二次最大差 1810.0 m + 文字中心 50 px 局部最大方向换算 2618.2 m（估计）；取整到百米。文字中心为注记位置而非前锋线点；箭头端点据读数亦待核。"
-        },
-        "geometry_absent_reason": null,
-        "license_status": "unknown",
-        "claims": [
-          {
-            "claim_id": "c-v2-front-0628-dating",
-            "source_id": "src-jacar-d5-1939",
-            "supports": [
-              "dating",
-              "existence"
-            ],
-            "locator": "p07 (141.0,1066.0) [t:28日]"
-          },
-          {
-            "claim_id": "c-v2-front-0628-geometry",
-            "source_id": "src-jacar-d5-1939",
-            "supports": [
-              "geometry"
-            ],
-            "locator": "B 图注记位置经 bmap-r2-dedup 二次配准"
-          },
-          {
-            "claim_id": "c-v2-front-0628-gcp",
-            "source_id": "src-wikidata",
-            "supports": [
-              "geometry"
-            ],
-            "locator": "docs/sam/audit/bmap_georef/gcp_set_bmap-r2-dedup.json"
-          }
-        ],
-        "supersedes": [],
-        "observed": {
-          "date_from": "1938-06-28",
-          "date_to": "1938-06-29",
-          "part_of_day": null,
-          "as_written": "28日"
-        },
-        "derivation": {
-          "method": "georef_polynomial",
-          "gcp_set_id": "bmap-r2-dedup",
-          "note": "位置为注记中心或箭头端点，并非经确认的前锋线点；p07 (141.0,1066.0) [t:28日]：注记中心；仿射与二次相距 1810.0 m"
         }
       }
     },

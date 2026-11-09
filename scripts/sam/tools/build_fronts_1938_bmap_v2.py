@@ -16,8 +16,20 @@ def dedup(controls):
         out.append(dict(name=name, mosaic_x=statistics.mean(r['x'] for r in rows), mosaic_y=statistics.mean(r['y'] for r in rows), lat=lat, lon=lon, pages=sorted({r['page'] for r in rows}), unrefined_gcp=any(r['unrefined_gcp'] for r in rows)))
     return out
 
+def normalize_date(s):
+    import re
+    compact = re.sub(r'\s+', '', s)
+    if compact in ('25日28日', '25日｜28日', '25日～28日', '25～28日'):
+        return '25～28日'
+    return s
+
 def classify(c):
-    vals = [r['as_written'] for r in c['readings'].values()]
+    page, x, y = c['page'], c.get('x'), c.get('y')
+    if page == 'p07' and x is not None and abs(x-440.5)<2 and abs(y-453.5)<2:
+        return ('非注记（档案页码戳）', None)
+    if (page == 'p08' and x is not None and abs(x-2366.3)<2 and abs(y-1602.3)<2) or (page == 'p10' and x is not None and abs(x-2334)<2 and abs(y-177.7)<2):
+        return ('纳入', '0618-1500')
+    vals = [normalize_date(r['as_written']) for r in c['readings'].values()]
     if c['page']=='p10' and all(s.startswith('六月') for s in vals): return ('图例', None)
     if all(s in ('10日','11日') for s in vals) and any('決潰' in r['note'] for r in c['readings'].values()): return ('决口，另议', None)
     if all(s in ('15日','24日') for s in vals): return ('侦察，另议', None)
@@ -56,9 +68,23 @@ def merge(rows):
         else: groups.append([row])
     return groups,review
 
+def attach_singles(groups, rows):
+    excluded = []
+    for row in rows:
+        matches = [g for g in groups if any(math.dist(row['center'], r['center']) <= 40 and len(r['candidate']['readings']) >= 2 for r in g)]
+        if len(matches) > 1: raise ValueError('ambiguous single-reader match: '+str(row['index']))
+        if matches:
+            row['key'] = matches[0][0]['key']
+            matches[0].append(row)
+        else:
+            row['category'] = '单家读数'
+            excluded.append(row)
+    return excluded
+
 def error_m(loo, diff, estimate): return int(math.floor((loo+diff+estimate)/100+0.5))*100
 
 def run(analysis_path,candidate_path,out_path,gcp_path,report_path,v1_path):
+    if pathlib.Path(report_path).exists(): raise FileExistsError('report already exists; use a new staging path to preserve prior reports')
     raw=pathlib.Path(analysis_path).read_bytes(); analysis=json.loads(raw); cr=pathlib.Path(candidate_path).read_bytes(); candidates=json.loads(cr)['candidates']
     controls=analysis['full']['controls']; gcps=dedup(controls)
     print(f'input={analysis_path} sha256={hashlib.sha256(raw).hexdigest()} controls={len(controls)}')
@@ -77,20 +103,26 @@ def run(analysis_path,candidate_path,out_path,gcp_path,report_path,v1_path):
         eligible=[r for r in rows if r['category']=='纳入' and r['page']!=row['page'] and math.dist(r['center'],row['center'])<=40]
         # Only unreadable dates, never unsupported readable expressions, can inherit classification.
         if len(eligible)==1 and all('□' in v['as_written'] for v in row['candidate']['readings'].values()): row['key']=eligible[0]['key']; row['category']='纳入'
-    inc=[r for r in rows if r['category']=='纳入']; excluded=[r for r in rows if r['category']!='纳入']; groups,review=merge(inc)
+    inc=[r for r in rows if r['category']=='纳入' and len(r['candidate']['readings']) >= 2]
+    singles=[r for r in rows if r['category']=='纳入' and len(r['candidate']['readings']) < 2]
+    excluded=[r for r in rows if r['category']!='纳入']; groups,review=merge(inc)
+    excluded.extend(attach_singles(groups,singles))
     details=[]
     for group in groups:
-        locs=[]; methods=[]
+        centers=[]; arrows=[]
         for r in group:
-            c=r['candidate']; tips=[v for v in c['readings'].values() if v['has_arrow'] and v['tip_x'] is not None and v['tip_y'] is not None]
+            c=r['candidate']; t=analysis['full']['transforms'][r['page']]
+            centers.append(r['center'])
+            tips=[v for v in c['readings'].values() if v['has_arrow'] and v['tip_x'] is not None and v['tip_y'] is not None]
             if len(tips)>=2 and not c['tip_unstable']:
-                xy=(statistics.mean(v['tip_x'] for v in tips),statistics.mean(v['tip_y'] for v in tips)); methods.append('箭头端点')
-            else: xy=r['local']; methods.append('注记中心')
-            locs.append(mosaic(analysis['full']['transforms'][r['page']],*xy))
+                arrows.append(mosaic(t,statistics.mean(v['tip_x'] for v in tips),statistics.mean(v['tip_y'] for v in tips)))
+        locs=arrows if arrows else centers
+        method='箭头端点' if arrows else '注记中心'
         xy=tuple(statistics.mean(p[i] for p in locs) for i in (0,1)); q=apply(fits['poly2']['transform'],*xy); a=apply(fits['affine']['transform'],*xy); diff=distance(q,a)
         # Conservative isotropic 50 px estimate: largest local cardinal displacement.
-        estimate=max(distance(q,apply(fits['poly2']['transform'],xy[0]+dx,xy[1]+dy)) for dx,dy in ((50,0),(-50,0),(0,50),(0,-50))) if '注记中心' in methods else 0
-        details.append(dict(group=group,xy=xy,coord=q,diff=diff,estimate=estimate,method='、'.join(methods)))
+        estimate=max(distance(q,apply(fits['poly2']['transform'],xy[0]+dx,xy[1]+dy)) for dx,dy in ((50,0),(-50,0),(0,50),(0,-50))) if method=='注记中心' else 0
+        method_desc = '箭头端点（仅用至少两家且稳定的页；其余读数参与归类）' if arrows and len(arrows)<len(group) else '、'.join([method]*len(group))
+        details.append(dict(group=group,xy=xy,coord=q,diff=diff,estimate=estimate,method=method_desc))
     bykey=collections.defaultdict(list)
     for d in details: bykey[d['group'][0]['key']].append(d)
     features=[]; lines=[]
